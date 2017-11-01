@@ -1,0 +1,127 @@
+[
+{
+	"uri": "/api/account/",
+	"title": "Account",
+	"tags": [],
+	"description": "",
+	"content": " Account  "
+},
+{
+	"uri": "/getting-started/",
+	"title": "Getting Started",
+	"tags": [],
+	"description": "",
+	"content": " Getting Started  API Key  API Key  "
+},
+{
+	"uri": "/api/connectx/hotel/",
+	"title": "Hotel",
+	"tags": [],
+	"description": "",
+	"content": " Hotel  "
+},
+{
+	"uri": "/getting-started/_api_key/",
+	"title": "API Key",
+	"tags": [],
+	"description": "",
+	"content": " API Key  "
+},
+{
+	"uri": "/api/connectx/",
+	"title": "ConnectX",
+	"tags": [],
+	"description": "",
+	"content": " ConnectX  Hotel  Hotel  Flight  Flight  "
+},
+{
+	"uri": "/api/connectx/flight/",
+	"title": "Flight",
+	"tags": [],
+	"description": "",
+	"content": " Flight  "
+},
+{
+	"uri": "/api/mappea/",
+	"title": "Mappea",
+	"tags": [],
+	"description": "",
+	"content": " Mappea  "
+},
+{
+	"uri": "/api/stats/",
+	"title": "Stats",
+	"tags": [],
+	"description": "",
+	"content": " Stats  "
+},
+{
+	"uri": "/api/",
+	"title": "TravelgateX API Documentation",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL API Documentation  Account  Account  ConnectX  ConnectX Hotel Hotel Flight Flight  Mappea  Mappea  Stats  Stats  Insights  Insights  "
+},
+{
+	"uri": "/learning-graphql/",
+	"title": "Learning GraphQL",
+	"tags": [],
+	"description": "",
+	"content": " Learning GraphQL  "
+},
+{
+	"uri": "/api/insights/",
+	"title": "Insights",
+	"tags": [],
+	"description": "",
+	"content": " Insights  "
+},
+{
+	"uri": "/_footer/",
+	"title": "footer",
+	"tags": [],
+	"description": "",
+	"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
+},
+{
+	"uri": "/_header/",
+	"title": "header",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/credits/",
+	"title": "Credits",
+	"tags": [],
+	"description": "contributors and packages used by hugo-theme-docdock",
+	"content": " github contributors .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 225 commits   @matcornic 49 commits   @W-Floyd 24 commits   @gwleclerc 21 commits   @lierdakil 16 commits   @Pilskalns 12 commits   @SiamKreative 6 commits   @jose-oc 6 commits   @Xipas 5 commits   @altinnadmin 4 commits   @FMuro 2 commits   @Thiht 2 commits   @EnigmaCurry 2 commits   @adamlamar 1 commits   @byzheng 1 commits   @zivbk1 1 commits   @vielmetti 1 commits   @erikjasiak 1 commits   @giuliov 1 commits   @farmergreg 1 commits   @tarpdalton 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @shazic 1 commits   @viertaxa 1 commits   @uweschaefer 1 commits   @justin-yan 1 commits   @karlmacklin 1 commits   @petzi53 1 commits   @remi31000 1 commits   @xxxtonixxx 1 commits   Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester. clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support reveal-js - The HTML Presentation Framework  Tooling  Netlify - Continuous deployement and hosting of this documentation Hugo    "
+},
+{
+	"uri": "/showcase/",
+	"title": "Docdock-built Sites",
+	"tags": [],
+	"description": "Hugo-built Sites with docdock theme",
+	"content": " https://invincible.site/ by @shazic https://bitfan.io/ by @vjeantet "
+},
+{
+	"uri": "/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/",
+	"title": "TravelgateX Documentation",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
