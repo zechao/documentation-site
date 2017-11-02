@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>footer | TravelgateX Documentation</title>
+    <title>Basic Concepts | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
 
-<title>footer :: TravelgateX Documentation</title>
+<title>Basic Concepts :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 
     
   </head>
-  <body data-url="/_footer/">
+  <body data-url="/learning-graphql/basic_concepts/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="showVisitedLinks">
@@ -124,9 +124,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/learning-graphql/" class="dd-item">
+    <li data-nav-id="/learning-graphql/" class="dd-item parent">
       <a href="/learning-graphql/">
-        <span>Learning GraphQL</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+        <span>Learning GraphQL</span>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
       <li data-nav-id="/learning-graphql/overview/" class="dd-item">
@@ -134,7 +135,7 @@
           <span>GraphQL Overview</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
-      <li data-nav-id="/learning-graphql/basic_concepts/" class="dd-item">
+      <li data-nav-id="/learning-graphql/basic_concepts/" class="dd-item active">
         <a href="/learning-graphql/basic_concepts/">
           <span>Basic Concepts</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
@@ -201,7 +202,7 @@
       
       
     <div id="top-github-link">
-      <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/_footer.md" target="blank">
+      <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/learning-graphql/basic_concepts.md" target="blank">
         <i class="fa fa-code-fork"></i>
         Edit page
       </a>
@@ -215,7 +216,17 @@
         <span class="links">
         
 
- footer
+
+
+
+
+
+
+ <a href='/'>TravelgateX Documentation</a> > <a href='/learning-graphql/'>Learning GraphQL</a> > Basic Concepts
+
+ 
+
+ 
 
    
         </span>
@@ -224,7 +235,18 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#queries-and-mutations">Queries and Mutations</a>
+<ul>
+<li><a href="#queries-cite-http-graphql-org-learn-queries-utm-source-docs-travelgatex-com-cite">Queries <cite><a href="http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com">http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com</a></cite></a></li>
+<li><a href="#mutations-cite-http-graphql-org-learn-queries-mutations-utm-source-docs-travelgatex-com-cite">Mutations <cite><a href="http://graphql.org/learn/queries/#mutations?utm_source=docs.travelgatex.com">http://graphql.org/learn/queries/#mutations?utm_source=docs.travelgatex.com</a></cite></a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -234,7 +256,7 @@
 
 <div id="body-inner">
   
-    <h1>footer</h1>
+    <h1>Basic Concepts</h1>
   
 
 
@@ -242,12 +264,44 @@
     
     
     
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+
+<h2 id="queries-and-mutations">Queries and Mutations</h2>
+
+<blockquote>
+<p>At its simplest, GraphQL is about asking for specific fields on objects. Let&rsquo;s start by looking at a very simple query and the result we get when we run it <cite><a href="http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com">http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com</a></cite></p>
+</blockquote>
+
+<p>There are 2 basic operations in GraphQL schemas:</p>
+
+<h3 id="queries-cite-http-graphql-org-learn-queries-utm-source-docs-travelgatex-com-cite">Queries <cite><a href="http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com">http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com</a></cite></h3>
+
+<p>Just like a RESTful <em>Get</em> method, queries <em>query</em> the system. This operation reads values from the server using a Graph Object and gets a JSON as a response.</p>
+
+<p>Unlike a RESTful service, <em>queries</em> are interactive, it allows the user to choose exactly what he wants to get returned. This way, if the API owner makes a change to the API, the client will not be affected as long as the query does not change. Think of it like a good&rsquo;ol SQL query. As long as you send the same one, the results is always <em>predictable</em>.</p>
+
+<p>This fact makes versioning totally unnecessary in GraphQL APIs. There&rsquo;s no need to specify which version you want to consume, since it&rsquo;s you who are in charge of deciding which fields you want to retrieve.</p>
+
+<p>As a bonus, the GraphQL specification includes handling of <a href="http://facebook.github.io/graphql/October2016/#sec-Object-Field-deprecation?utm_source=docs.travelgatex.com"><code>deprecated</code></a> fields and marks a field as <code>is-deprecated</code> by adding a <a href="http://graphql.org/graphql-js/type/#graphqlobjecttype?utm_source=docs.travelgatex.com"><code>deprecationReason</code></a> to the field.</p>
+
+<p>An example query:</p>
+
+<p><code>EJEMPLO PEQUE DE DISPO</code>
+<div class="alert 
+alert-danger"
+ 
+role="alert"><strong>TODO: Falta ejemplo!!</strong></div>
+</p>
+
+<h3 id="mutations-cite-http-graphql-org-learn-queries-mutations-utm-source-docs-travelgatex-com-cite">Mutations <cite><a href="http://graphql.org/learn/queries/#mutations?utm_source=docs.travelgatex.com">http://graphql.org/learn/queries/#mutations?utm_source=docs.travelgatex.com</a></cite></h3>
+
+<p>Mutations are methods that <em>change</em> the server. It makes a physical change to the data. Could be inserting a new object in a database, deleting or updating. Queries take care of POST, PUT and DELETE methods in a REST API or INSERT, UPDATE and DELETE in SQL.</p>
+
+<div class="alert 
+alert-danger"
+ 
+role="alert"><strong>TODO: Falta chicha!!</strong></div>
+
 
 
     
@@ -259,7 +313,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/learning-graphql/overview/" title="GraphQL Overview"> <i class="fa fa-chevron-left"></i></a>
+    <a class="nav nav-next" href="/learning-graphql/thinking_in_graphql/" title="Thinking in GraphQL" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

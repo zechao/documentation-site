@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>footer | TravelgateX Documentation</title>
+    <title>Tooling | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
 
-<title>footer :: TravelgateX Documentation</title>
+<title>Tooling :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 
     
   </head>
-  <body data-url="/_footer/">
+  <body data-url="/learning-graphql/tooling/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="showVisitedLinks">
@@ -84,49 +84,12 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
-    <li data-nav-id="/api/account/" class="dd-item">
-      <a href="/api/account/">
-        <span>Account</span><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-    </li>
-    <li data-nav-id="/api/connectx/" class="dd-item alwaysopen">
-      <a href="/api/connectx/">
-        <span>ConnectX</span>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-    <li data-nav-id="/api/connectx/hotel/" class="dd-item">
-      <a href="/api/connectx/hotel/">
-        <span>Hotel</span><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-    </li>
-    <li data-nav-id="/api/connectx/flight/" class="dd-item">
-      <a href="/api/connectx/flight/">
-        <span>Flight</span><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-    </li>
         </ul>
     </li>
-    <li data-nav-id="/api/mappea/" class="dd-item">
-      <a href="/api/mappea/">
-        <span>Mappea</span><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-    </li>
-    <li data-nav-id="/api/stats/" class="dd-item">
-      <a href="/api/stats/">
-        <span>Stats</span><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-    </li>
-    <li data-nav-id="/api/insights/" class="dd-item">
-      <a href="/api/insights/">
-        <span>Insights</span><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/learning-graphql/" class="dd-item">
+    <li data-nav-id="/learning-graphql/" class="dd-item parent">
       <a href="/learning-graphql/">
-        <span>Learning GraphQL</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+        <span>Learning GraphQL</span>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
       <li data-nav-id="/learning-graphql/overview/" class="dd-item">
@@ -144,7 +107,7 @@
           <span>Thinking in GraphQL</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
-      <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
+      <li data-nav-id="/learning-graphql/tooling/" class="dd-item active">
         <a href="/learning-graphql/tooling/">
           <span>Tooling</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
@@ -201,7 +164,7 @@
       
       
     <div id="top-github-link">
-      <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/_footer.md" target="blank">
+      <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/learning-graphql/tooling.md" target="blank">
         <i class="fa fa-code-fork"></i>
         Edit page
       </a>
@@ -215,7 +178,17 @@
         <span class="links">
         
 
- footer
+
+
+
+
+
+
+ <a href='/'>TravelgateX Documentation</a> > <a href='/learning-graphql/'>Learning GraphQL</a> > Tooling
+
+ 
+
+ 
 
    
         </span>
@@ -224,7 +197,22 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#tooling">Tooling</a>
+<ul>
+<li><a href="#designing-schemas">Designing Schemas</a></li>
+<li><a href="#go-packages">Go Packages</a></li>
+<li><a href="#nodejs-packages">NodeJS Packages</a></li>
+<li><a href="#schema-visualizers">Schema Visualizers</a></li>
+<li><a href="#documentation-generators">Documentation Generators</a></li>
+<li><a href="#graphql-clients">GraphQL Clients</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -234,7 +222,7 @@
 
 <div id="body-inner">
   
-    <h1>footer</h1>
+    <h1>Tooling</h1>
   
 
 
@@ -242,12 +230,82 @@
     
     
     
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+
+<h2 id="tooling">Tooling</h2>
+
+<p>Please find below a collection of tools we&rsquo;ve been using to help us develop in GraphQL. We have curated this list with the different goals each of the tools is for:</p>
+
+<h3 id="designing-schemas">Designing Schemas</h3>
+
+<p>We follow the <strong>Schema First</strong> methodology. There are many tools, the ones we tried and like most nowadays are:</p>
+
+<ul>
+<li>APIs Guru&rsquo;s graphql-faker: <a href="https://github.com/APIs-guru/graphql-faker">https://github.com/APIs-guru/graphql-faker</a></li>
+</ul>
+
+<div class="alert 
+alert-danger"
+ 
+role="alert"><strong>TODO: Falta chicha!!</strong></div>
+
+
+<h3 id="go-packages">Go Packages</h3>
+
+<p>Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources. Also because of the ability to develop plugins. We&rsquo;ve used many libraries and packages to help us, hereby our list:</p>
+
+<ul>
+<li>Redis: <a href="https://godoc.org/github.com/garyburd/redigo/redis">https://godoc.org/github.com/garyburd/redigo/redis</a></li>
+</ul>
+
+<div class="alert 
+alert-danger"
+ 
+role="alert"><strong>TODO: Falta chicha!!</strong></div>
+
+
+<h3 id="nodejs-packages">NodeJS Packages</h3>
+
+<p>Other pieces of our software are written in NodeJS. Mainly because some packages are wither not avaialble in Go, or because the Go package is not as performant as the Node alternative. These are the packages we use:</p>
+
+<div class="alert 
+alert-danger"
+ 
+role="alert"><strong>TODO: Falta chicha!!</strong></div>
+
+
+<h3 id="schema-visualizers">Schema Visualizers</h3>
+
+<p>It&rsquo;s nice to be able to <em>see</em> your schema and be able to navigate through it.</p>
+
+<ul>
+<li><a href="https://apis.guru/graphql-voyager/">GraphQL Voyager</a> - Represent any GraphQL API as an interactive graph</li>
+</ul>
+
+<h3 id="documentation-generators">Documentation Generators</h3>
+
+<p>Generate beaultiful static documentation sites directly from schema or introspection query</p>
+
+<ul>
+<li><a href="https://graphql-docs.com/docs/?graphqlUrl=http://api-dev.travelgatex.com">Graph Docs</a></li>
+<li><a href="https://github.com/2fd/graphdoc">Graphdoc</a></li>
+</ul>
+
+<h3 id="graphql-clients">GraphQL Clients</h3>
+
+<p>Build, create and play with queries, it&rsquo;s fun!</p>
+
+<ul>
+<li><a href="https://insomnia.rest/">Insomnia</a>: our favorite &#9825;</li>
+<li><a href="https://github.com/graphcool/graphql-playground">graphql-playground</a>: favorite online client</li>
+<li><a href="https://github.com/graphql/graphiql">GraphiQL</a>: the original</li>
+</ul>
+
+<div class="alert 
+alert-danger"
+ 
+role="alert"><strong>TODO: Falta chicha!!</strong></div>
+
 
 
     
@@ -259,7 +317,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/learning-graphql/thinking_in_graphql/" title="Thinking in GraphQL"> <i class="fa fa-chevron-left"></i></a>
+    <a class="nav nav-next" href="/learning-graphql/tutorials_resources/" title="Tutorials &amp; Resources" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

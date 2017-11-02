@@ -21,7 +21,7 @@
 	"content": " Hotel  "
 },
 {
-	"uri": "/getting-started/_api_key/",
+	"uri": "/getting-started/api_key/",
 	"title": "API Key",
 	"tags": [],
 	"description": "",
@@ -42,11 +42,32 @@
 	"content": " Flight  "
 },
 {
+	"uri": "/learning-graphql/overview/",
+	"title": "GraphQL Overview",
+	"tags": [],
+	"description": "",
+	"content": " A query language for your API Designed by Facebook, GraphQL is a new way of dealing and managing APIs, specially useful for decoupling client\u0026rsquo;s from server\u0026rsquo;s logic.\nStraight from the horse\u0026rsquo;s mouth:  A GraphQL query is a string that is sent to a server to be interpreted and fulfilled, which then returns JSON back to the client. Lee Byron, Facebook\n Official Definition  GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools. graphql.org\n More specifically:  GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn\u0026rsquo;t tied to any specific database or storage engine and is instead backed by your existing code and data. graphql.org/learn\n GraphQL at travelgateX GraphQL fits perfectly each and every need of our applications:\n Scalable: we must be able to handle millions of requests. Stable: a change in the API must not break the client. Fast: GraphQL not only allows faster response times by letting you choose exactly what you want, but also is consumes less bandwidth which makes responses lighter.  We\u0026rsquo;re a company focused in providing APIs for our clients. SOAP APIs are long gone and modelling REST APIs to fit a vast variety of products is not only hard, but the bigger it gets the more unmanageable.\nAt travelgateX, we\u0026rsquo;re true believers of the Kaisen philosophy. We\u0026rsquo;re constantly researching for new ways of improvement.\n GraphQL allows us to think of our APIs as a whole, giving a coherence in all our products \u0026amp; services, accessible from one single endpoint. It\u0026rsquo;s like a showcase for our APIs. Oscar Perez, CTO\n "
+},
+{
+	"uri": "/learning-graphql/basic_concepts/",
+	"title": "Basic Concepts",
+	"tags": [],
+	"description": "",
+	"content": " Queries and Mutations  At its simplest, GraphQL is about asking for specific fields on objects. Let\u0026rsquo;s start by looking at a very simple query and the result we get when we run it http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com\n There are 2 basic operations in GraphQL schemas:\nQueries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com Just like a RESTful Get method, queries query the system. This operation reads values from the server using a Graph Object and gets a JSON as a response.\nUnlike a RESTful service, queries are interactive, it allows the user to choose exactly what he wants to get returned. This way, if the API owner makes a change to the API, the client will not be affected as long as the query does not change. Think of it like a good\u0026rsquo;ol SQL query. As long as you send the same one, the results is always predictable.\nThis fact makes versioning totally unnecessary in GraphQL APIs. There\u0026rsquo;s no need to specify which version you want to consume, since it\u0026rsquo;s you who are in charge of deciding which fields you want to retrieve.\nAs a bonus, the GraphQL specification includes handling of deprecated fields and marks a field as is-deprecated by adding a deprecationReason to the field.\nAn example query:\nEJEMPLO PEQUE DE DISPO TODO: Falta ejemplo!! Mutations http://graphql.org/learn/queries/#mutations?utm_source=docs.travelgatex.com Mutations are methods that change the server. It makes a physical change to the data. Could be inserting a new object in a database, deleting or updating. Queries take care of POST, PUT and DELETE methods in a REST API or INSERT, UPDATE and DELETE in SQL.\nTODO: Falta chicha!! "
+},
+{
 	"uri": "/api/mappea/",
 	"title": "Mappea",
 	"tags": [],
 	"description": "",
 	"content": " Mappea  "
+},
+{
+	"uri": "/learning-graphql/thinking_in_graphql/",
+	"title": "Thinking in GraphQL",
+	"tags": [],
+	"description": "",
+	"content": " A Paradigm Shift GraphQL is not a drop-in-replacement for REST APIs. It has to make sense to use it, it\u0026rsquo;s not a one size-fits-all technology.\nIn order to determine if it is the right tool for the job or not, we have to learn how to Think in GraphQL. GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. And we get to choose exactly what data we want to retrieve. As opposed to JSON, each piece of data has its own type, so we get to know exactly what to expect, it\u0026rsquo;s a typed language. This gives it a lot of predictability, something we can really appreciate, especially when dealing with third party APIs, where we have no control of what\u0026rsquo;s going on in the other side.\nBuilding GraphQL Schemas In GraphQL, the API specifications are called schemas. A GraphQL Schema is like a contract between the client and the server. It\u0026rsquo;s the definition of how they talk to each other, what they expect from each other so each of them can know exactly what they can and cannot send to each other and what they\u0026rsquo;ll get in response to that. This makes a lot of a difference when creating our schemas, we have to get used to think in a Schema First way.\n A particularly interesting pattern seems to be emerging. Over and over again, I hear developers describing a way of approaching product development we’re calling “GraphQL First.”https://dev-blog.apollodata.com/graphql-first-a-better-way-to-build-modern-apps-b5a04f7121a0\n First, we model our data, thinking of all the different uses we can give to it. And only then, we\u0026rsquo;ll think of where we going to get it from. It could even be from different services, like a database and another node from a third party provider.\nAnother great feature is that the GraphQL specification ensures we write documentation while writing the schema. Apart from being really cool to see your text in the GraphiQL window while you\u0026rsquo;re typing your query, it really helps you to think of each and every node and why you\u0026rsquo;re putting it there. We use APIs Guru\u0026rsquo;s graphql-faker. In one screen you write the schema, and in the other you try what you\u0026rsquo;ve just written, including the help text or documentation you\u0026rsquo;ve just created.\nFurthermore GraphQL schemas support inheritance, we can use the same objects for different queries. For example, in our business domain, and in most businesses for that matter, we have to return the price of the Hotel, or Flight. We can use exactly the same element in both, and just extend it if needed. This makes the job much easier and faster for the developer who\u0026rsquo;s implementing our service.\nBuilding Queries  Componentes de la query Componentes de la respuesta Respuesta Como lo hacemos Paginacion  Building Mutations  Componentes de la query Componentes de la respuesta Respuesta Como lo hacemos Paginacion  TODO: Falta chicha!! "
 },
 {
 	"uri": "/api/stats/",
@@ -60,14 +81,28 @@
 	"title": "TravelgateX API Documentation",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL API Documentation  Account  Account  ConnectX  ConnectX Hotel Hotel Flight Flight  Mappea  Mappea  Stats  Stats  Insights  Insights  "
+	"content": " GraphQL API Documentation  Account  Account  ConnectX  ConnectX Hotel Hotel Flight Flight  Mappea  Mappea  Stats  Stats  Insights \n "
 },
 {
 	"uri": "/learning-graphql/",
 	"title": "Learning GraphQL",
 	"tags": [],
 	"description": "",
-	"content": " Learning GraphQL  "
+	"content": " Learning GraphQL  GraphQL Overview A query language for your API Designed by Facebook, GraphQL is a new way of dealing and managing APIs, specially useful for decoupling client\u0026rsquo;s from server\u0026rsquo;s logic. Straight from the horse\u0026rsquo;s mouth: A GraphQL query is a string that is sent to a server to be interpreted and fulfilled, which then returns JSON back to the client. Lee Byron, Facebook Official Definition GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.\n Basic Concepts Queries and Mutations At its simplest, GraphQL is about asking for specific fields on objects. Let\u0026rsquo;s start by looking at a very simple query and the result we get when we run it http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com There are 2 basic operations in GraphQL schemas: Queries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com Just like a RESTful Get method, queries query the system. This operation reads values from the server using a Graph Object and gets a JSON as a response.\n Thinking in GraphQL A Paradigm Shift GraphQL is not a drop-in-replacement for REST APIs. It has to make sense to use it, it\u0026rsquo;s not a one size-fits-all technology. In order to determine if it is the right tool for the job or not, we have to learn how to Think in GraphQL. GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back.\n Tooling \n Tutorials \u0026amp; Resources \n "
+},
+{
+	"uri": "/learning-graphql/tooling/",
+	"title": "Tooling",
+	"tags": [],
+	"description": "",
+	"content": " Tooling Please find below a collection of tools we\u0026rsquo;ve been using to help us develop in GraphQL. We have curated this list with the different goals each of the tools is for:\nDesigning Schemas We follow the Schema First methodology. There are many tools, the ones we tried and like most nowadays are:\n APIs Guru\u0026rsquo;s graphql-faker: https://github.com/APIs-guru/graphql-faker  TODO: Falta chicha!! Go Packages Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources. Also because of the ability to develop plugins. We\u0026rsquo;ve used many libraries and packages to help us, hereby our list:\n Redis: https://godoc.org/github.com/garyburd/redigo/redis  TODO: Falta chicha!! NodeJS Packages Other pieces of our software are written in NodeJS. Mainly because some packages are wither not avaialble in Go, or because the Go package is not as performant as the Node alternative. These are the packages we use:\nTODO: Falta chicha!! Schema Visualizers It\u0026rsquo;s nice to be able to see your schema and be able to navigate through it.\n GraphQL Voyager - Represent any GraphQL API as an interactive graph  Documentation Generators Generate beaultiful static documentation sites directly from schema or introspection query\n Graph Docs Graphdoc  GraphQL Clients Build, create and play with queries, it\u0026rsquo;s fun!\n Insomnia: our favorite \u0026#9825; graphql-playground: favorite online client GraphiQL: the original  TODO: Falta chicha!! "
+},
+{
+	"uri": "/learning-graphql/tutorials_resources/",
+	"title": "Tutorials &amp; Resources",
+	"tags": [],
+	"description": "",
+	"content": " The GraphQL ecosystem is growing fast. Apart from facebook\u0026rsquo;s and Graphql.org\u0026rsquo;s official documentation, each day as more and more development teams embrace the technology new blog posts, articles, tutorials, videos and learning material in general is published online.\nThis list is intended to serve as a examples we\u0026rsquo;ve used and found useful when adopting the technology. We\u0026rsquo;ve separated between tutorials get-your-hands-dirty full action kind to resources, which are reading materials, podcasts or any other kind of documentation, written or not, which will help you to Think in GraphQL.\nWe hope you enjoy!\nTutorials  https://github.com/blog/2412-learn-graphql-with-github  TODO: Falta chicha!! Resources  Schema first development - Johannes Schickling Schema-first development with GraphQL GraphQL First in practice at Quri GraphQL First: A better way to build modern apps  TODO: Falta chicha!! "
 },
 {
 	"uri": "/api/insights/",
@@ -103,13 +138,6 @@
 	"tags": [],
 	"description": "contributors and packages used by hugo-theme-docdock",
 	"content": " github contributors .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 225 commits   @matcornic 49 commits   @W-Floyd 24 commits   @gwleclerc 21 commits   @lierdakil 16 commits   @Pilskalns 12 commits   @SiamKreative 6 commits   @jose-oc 6 commits   @Xipas 5 commits   @altinnadmin 4 commits   @FMuro 2 commits   @Thiht 2 commits   @EnigmaCurry 2 commits   @adamlamar 1 commits   @byzheng 1 commits   @zivbk1 1 commits   @vielmetti 1 commits   @erikjasiak 1 commits   @giuliov 1 commits   @farmergreg 1 commits   @tarpdalton 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @shazic 1 commits   @viertaxa 1 commits   @uweschaefer 1 commits   @justin-yan 1 commits   @karlmacklin 1 commits   @petzi53 1 commits   @remi31000 1 commits   @xxxtonixxx 1 commits   Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester. clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support reveal-js - The HTML Presentation Framework  Tooling  Netlify - Continuous deployement and hosting of this documentation Hugo    "
-},
-{
-	"uri": "/showcase/",
-	"title": "Docdock-built Sites",
-	"tags": [],
-	"description": "Hugo-built Sites with docdock theme",
-	"content": " https://invincible.site/ by @shazic https://bitfan.io/ by @vjeantet "
 },
 {
 	"uri": "/tags/",

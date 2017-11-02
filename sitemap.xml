@@ -15,7 +15,7 @@
   </url>
   
   <url>
-    <loc>/getting-started/_api_key/</loc>
+    <loc>/getting-started/api_key/</loc>
   </url>
   
   <url>
@@ -27,7 +27,19 @@
   </url>
   
   <url>
+    <loc>/learning-graphql/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/learning-graphql/basic_concepts/</loc>
+  </url>
+  
+  <url>
     <loc>/api/mappea/</loc>
+  </url>
+  
+  <url>
+    <loc>/learning-graphql/thinking_in_graphql/</loc>
   </url>
   
   <url>
@@ -40,6 +52,14 @@
   
   <url>
     <loc>/learning-graphql/</loc>
+  </url>
+  
+  <url>
+    <loc>/learning-graphql/tooling/</loc>
+  </url>
+  
+  <url>
+    <loc>/learning-graphql/tutorials_resources/</loc>
   </url>
   
   <url>
@@ -63,10 +83,6 @@
   
   <url>
     <loc>/credits/</loc>
-  </url>
-  
-  <url>
-    <loc>/showcase/</loc>
   </url>
   
   <url>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>footer | TravelgateX Documentation</title>
+    <title>Thinking in GraphQL | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
 
-<title>footer :: TravelgateX Documentation</title>
+<title>Thinking in GraphQL :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 
     
   </head>
-  <body data-url="/_footer/">
+  <body data-url="/learning-graphql/thinking_in_graphql/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="showVisitedLinks">
@@ -124,9 +124,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/learning-graphql/" class="dd-item">
+    <li data-nav-id="/learning-graphql/" class="dd-item parent">
       <a href="/learning-graphql/">
-        <span>Learning GraphQL</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+        <span>Learning GraphQL</span>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
       <li data-nav-id="/learning-graphql/overview/" class="dd-item">
@@ -139,7 +140,7 @@
           <span>Basic Concepts</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
-      <li data-nav-id="/learning-graphql/thinking_in_graphql/" class="dd-item">
+      <li data-nav-id="/learning-graphql/thinking_in_graphql/" class="dd-item active">
         <a href="/learning-graphql/thinking_in_graphql/">
           <span>Thinking in GraphQL</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
@@ -201,7 +202,7 @@
       
       
     <div id="top-github-link">
-      <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/_footer.md" target="blank">
+      <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/learning-graphql/thinking_in_graphql.md" target="blank">
         <i class="fa fa-code-fork"></i>
         Edit page
       </a>
@@ -215,7 +216,17 @@
         <span class="links">
         
 
- footer
+
+
+
+
+
+
+ <a href='/'>TravelgateX Documentation</a> > <a href='/learning-graphql/'>Learning GraphQL</a> > Thinking in GraphQL
+
+ 
+
+ 
 
    
         </span>
@@ -224,7 +235,19 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#a-paradigm-shift">A Paradigm Shift</a>
+<ul>
+<li><a href="#building-graphql-schemas">Building GraphQL Schemas</a></li>
+<li><a href="#building-queries">Building Queries</a></li>
+<li><a href="#building-mutations">Building Mutations</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -234,7 +257,7 @@
 
 <div id="body-inner">
   
-    <h1>footer</h1>
+    <h1>Thinking in GraphQL</h1>
   
 
 
@@ -242,12 +265,59 @@
     
     
     
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+
+<h2 id="a-paradigm-shift">A Paradigm Shift</h2>
+
+<p>GraphQL is not a drop-in-replacement for REST APIs. It has to make sense to use it, it&rsquo;s not a one size-fits-all technology.</p>
+
+<div class="alert 
+alert-info"
+ 
+role="alert">In order to determine if it is the right tool for the job or not, we have to learn how to <strong><em>Think in GraphQL</em></strong>.</div>
+
+
+<p>GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. And we get to <em>choose</em> exactly what data we want to retrieve. As opposed to JSON, each piece of data has its own type, so we get to <em>know</em> exactly what to expect, it&rsquo;s a <em>typed language</em>. This gives it a lot of predictability, something we can really appreciate, especially when dealing with third party APIs, where we have no control of what&rsquo;s going on in the other side.</p>
+
+<h3 id="building-graphql-schemas">Building GraphQL Schemas</h3>
+
+<p>In GraphQL, the API specifications are called <em>schemas</em>. A <em>GraphQL Schema</em> is like a contract between the client and the server. It&rsquo;s the definition of how they talk to each other, what they expect from each other so each of them can know exactly what they can <em>and cannot</em> send to each other and what they&rsquo;ll get in response to that. This makes a lot of a difference when creating our schemas, we have to get used to think in a <strong>Schema First</strong> way.</p>
+
+<blockquote>
+<p>A particularly interesting pattern seems to be emerging. Over and over again, I hear developers describing a way of approaching product development we’re calling “GraphQL First.”<cite><a href="https://dev-blog.apollodata.com/graphql-first-a-better-way-to-build-modern-apps-b5a04f7121a0">https://dev-blog.apollodata.com/graphql-first-a-better-way-to-build-modern-apps-b5a04f7121a0</a></cite></p>
+</blockquote>
+
+<p>First, we model our data, thinking of all the different uses we can give to it. And only then, we&rsquo;ll think of <em>where</em> we going to get it from. It could even be from different services, like a database and another <em>node</em> from a third party provider.</p>
+
+<p>Another great feature is that the GraphQL specification ensures we write documentation while writing the schema. Apart from being really cool to see your text in the GraphiQL window while you&rsquo;re typing your query, it really helps you to think of each and every node and why you&rsquo;re putting it there. We use APIs Guru&rsquo;s <a href="https://github.com/APIs-guru/graphql-faker">graphql-faker</a>. In one screen you write the schema, and in the other you try what you&rsquo;ve just written, including the help text <em>or documentation</em> you&rsquo;ve just created.</p>
+
+<p>Furthermore GraphQL schemas support inheritance, we can use the same objects for different queries. For example, in our business domain, and in most businesses for that matter, we have to return the price of the Hotel, or Flight. We can use exactly the same element in both, and just extend it if needed. This makes the job much easier <em>and faster</em> for the developer who&rsquo;s implementing our service.</p>
+
+<h3 id="building-queries">Building Queries</h3>
+
+<ul>
+<li>Componentes de la query</li>
+<li>Componentes de la respuesta</li>
+<li>Respuesta</li>
+<li>Como lo hacemos</li>
+<li>Paginacion</li>
+</ul>
+
+<h3 id="building-mutations">Building Mutations</h3>
+
+<ul>
+<li>Componentes de la query</li>
+<li>Componentes de la respuesta</li>
+<li>Respuesta</li>
+<li>Como lo hacemos</li>
+<li>Paginacion</li>
+</ul>
+
+<div class="alert 
+alert-danger"
+ 
+role="alert"><strong>TODO: Falta chicha!!</strong></div>
+
 
 
     
@@ -259,7 +329,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
 <div id="navigation">
-<a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/learning-graphql/basic_concepts/" title="Basic Concepts"> <i class="fa fa-chevron-left"></i></a>
+    <a class="nav nav-next" href="/learning-graphql/tooling/" title="Tooling" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">

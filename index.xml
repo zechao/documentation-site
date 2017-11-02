@@ -13,11 +13,64 @@
     
     <item>
       <title>API Key</title>
-      <link>/getting-started/_api_key/</link>
+      <link>/getting-started/api_key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/getting-started/_api_key/</guid>
+      <guid>/getting-started/api_key/</guid>
       <description> API Key  </description>
+    </item>
+    
+    <item>
+      <title>GraphQL Overview</title>
+      <link>/learning-graphql/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/learning-graphql/overview/</guid>
+      <description>A query language for your API Designed by Facebook, GraphQL is a new way of dealing and managing APIs, specially useful for decoupling client&amp;rsquo;s from server&amp;rsquo;s logic.
+Straight from the horse&amp;rsquo;s mouth:  A GraphQL query is a string that is sent to a server to be interpreted and fulfilled, which then returns JSON back to the client. Lee Byron, Facebook
+ Official Definition  GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.</description>
+    </item>
+    
+    <item>
+      <title>Basic Concepts</title>
+      <link>/learning-graphql/basic_concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/learning-graphql/basic_concepts/</guid>
+      <description>Queries and Mutations  At its simplest, GraphQL is about asking for specific fields on objects. Let&amp;rsquo;s start by looking at a very simple query and the result we get when we run it http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com
+ There are 2 basic operations in GraphQL schemas:
+Queries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com Just like a RESTful Get method, queries query the system. This operation reads values from the server using a Graph Object and gets a JSON as a response.</description>
+    </item>
+    
+    <item>
+      <title>Thinking in GraphQL</title>
+      <link>/learning-graphql/thinking_in_graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/learning-graphql/thinking_in_graphql/</guid>
+      <description>A Paradigm Shift GraphQL is not a drop-in-replacement for REST APIs. It has to make sense to use it, it&amp;rsquo;s not a one size-fits-all technology.
+In order to determine if it is the right tool for the job or not, we have to learn how to Think in GraphQL. GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back.</description>
+    </item>
+    
+    <item>
+      <title>Tooling</title>
+      <link>/learning-graphql/tooling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/learning-graphql/tooling/</guid>
+      <description>Tooling Please find below a collection of tools we&amp;rsquo;ve been using to help us develop in GraphQL. We have curated this list with the different goals each of the tools is for:
+Designing Schemas We follow the Schema First methodology. There are many tools, the ones we tried and like most nowadays are:
+ APIs Guru&amp;rsquo;s graphql-faker: https://github.com/APIs-guru/graphql-faker  TODO: Falta chicha!! Go Packages Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources.</description>
+    </item>
+    
+    <item>
+      <title>Tutorials &amp; Resources</title>
+      <link>/learning-graphql/tutorials_resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/learning-graphql/tutorials_resources/</guid>
+      <description>The GraphQL ecosystem is growing fast. Apart from facebook&amp;rsquo;s and Graphql.org&amp;rsquo;s official documentation, each day as more and more development teams embrace the technology new blog posts, articles, tutorials, videos and learning material in general is published online.
+This list is intended to serve as a examples we&amp;rsquo;ve used and found useful when adopting the technology. We&amp;rsquo;ve separated between tutorials get-your-hands-dirty full action kind to resources, which are reading materials, podcasts or any other kind of documentation, written or not, which will help you to Think in GraphQL.</description>
     </item>
     
     <item>
@@ -45,15 +98,6 @@
       
       <guid>/credits/</guid>
       <description>github contributors .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 225 commits   @matcornic 49 commits   @W-Floyd 24 commits   @gwleclerc 21 commits   @lierdakil 16 commits   @Pilskalns 12 commits   @SiamKreative 6 commits   @jose-oc 6 commits   @Xipas 5 commits   @altinnadmin 4 commits   @FMuro 2 commits   @Thiht 2 commits   @EnigmaCurry 2 commits   @adamlamar 1 commits   @byzheng 1 commits   @zivbk1 1 commits   @vielmetti 1 commits   @erikjasiak 1 commits   @giuliov 1 commits   @farmergreg 1 commits   @tarpdalton 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @shazic 1 commits   @viertaxa 1 commits   @uweschaefer 1 commits   @justin-yan 1 commits   @karlmacklin 1 commits   @petzi53 1 commits   @remi31000 1 commits   @xxxtonixxx 1 commits   Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services&amp;hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester.</description>
-    </item>
-    
-    <item>
-      <title>Docdock-built Sites</title>
-      <link>/showcase/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/showcase/</guid>
-      <description> https://invincible.site/ by @shazic https://bitfan.io/ by @vjeantet </description>
     </item>
     
   </channel>
