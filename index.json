@@ -32,7 +32,7 @@
 	"title": "ConnectX",
 	"tags": [],
 	"description": "",
-	"content": " ConnectX  Hotel  Hotel  Flight  Flight  "
+	"content": " ConnectX  Hotel  Hotel  Flight \n "
 },
 {
 	"uri": "/api/connectx/flight/",
@@ -63,13 +63,6 @@
 	"content": " Mappea  "
 },
 {
-	"uri": "/learning-graphql/thinking_in_graphql/",
-	"title": "Thinking in GraphQL",
-	"tags": [],
-	"description": "",
-	"content": " A Paradigm Shift GraphQL is not a drop-in-replacement for REST APIs. It has to make sense to use it, it\u0026rsquo;s not a one size-fits-all technology.\nIn order to determine if it is the right tool for the job or not, we have to learn how to Think in GraphQL. GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. And we get to choose exactly what data we want to retrieve. As opposed to JSON, each piece of data has its own type, so we get to know exactly what to expect, it\u0026rsquo;s a typed language. This gives it a lot of predictability, something we can really appreciate, especially when dealing with third party APIs, where we have no control of what\u0026rsquo;s going on in the other side.\nBuilding GraphQL Schemas In GraphQL, the API specifications are called schemas. A GraphQL Schema is like a contract between the client and the server. It\u0026rsquo;s the definition of how they talk to each other, what they expect from each other so each of them can know exactly what they can and cannot send to each other and what they\u0026rsquo;ll get in response to that. This makes a lot of a difference when creating our schemas, we have to get used to think in a Schema First way.\n A particularly interesting pattern seems to be emerging. Over and over again, I hear developers describing a way of approaching product development we’re calling “GraphQL First.”https://dev-blog.apollodata.com/graphql-first-a-better-way-to-build-modern-apps-b5a04f7121a0\n First, we model our data, thinking of all the different uses we can give to it. And only then, we\u0026rsquo;ll think of where we going to get it from. It could even be from different services, like a database and another node from a third party provider.\nAnother great feature is that the GraphQL specification ensures we write documentation while writing the schema. Apart from being really cool to see your text in the GraphiQL window while you\u0026rsquo;re typing your query, it really helps you to think of each and every node and why you\u0026rsquo;re putting it there. We use APIs Guru\u0026rsquo;s graphql-faker. In one screen you write the schema, and in the other you try what you\u0026rsquo;ve just written, including the help text or documentation you\u0026rsquo;ve just created.\nFurthermore GraphQL schemas support inheritance, we can use the same objects for different queries. For example, in our business domain, and in most businesses for that matter, we have to return the price of the Hotel, or Flight. We can use exactly the same element in both, and just extend it if needed. This makes the job much easier and faster for the developer who\u0026rsquo;s implementing our service.\nBuilding Queries  Componentes de la query Componentes de la respuesta Respuesta Como lo hacemos Paginacion  Building Mutations  Componentes de la query Componentes de la respuesta Respuesta Como lo hacemos Paginacion  TODO: Falta chicha!! "
-},
-{
 	"uri": "/api/stats/",
 	"title": "Stats",
 	"tags": [],
@@ -77,11 +70,18 @@
 	"content": " Stats  "
 },
 {
+	"uri": "/learning-graphql/thinking_in_graphql/",
+	"title": "Thinking in GraphQL",
+	"tags": [],
+	"description": "",
+	"content": " A Paradigm Shift GraphQL is not a drop-in-replacement for REST APIs. It has to make sense to use it, it\u0026rsquo;s not a one size-fits-all technology.\nIn order to determine if it is the right tool for the job or not, we have to learn how to Think in GraphQL. GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. And we get to choose exactly what data we want to retrieve. As opposed to JSON, each piece of data has its own type, so we get to know exactly what to expect, it\u0026rsquo;s a typed language. This gives it a lot of predictability, something we can really appreciate, especially when dealing with third party APIs, where we have no control of what\u0026rsquo;s going on in the other side.\nBuilding GraphQL Schemas In GraphQL, the API specifications are called schemas. A GraphQL Schema is like a contract between the client and the server. It\u0026rsquo;s the definition of how they talk to each other, what they expect from each other so each of them can know exactly what they can and cannot send to each other and what they\u0026rsquo;ll get in response to that. This makes a lot of a difference when creating our schemas, we have to get used to think in a Schema First way.\n A particularly interesting pattern seems to be emerging. Over and over again, I hear developers describing a way of approaching product development we’re calling “GraphQL First.”https://dev-blog.apollodata.com/graphql-first-a-better-way-to-build-modern-apps-b5a04f7121a0\n First, we model our data, thinking of all the different uses we can give to it. And only then, we\u0026rsquo;ll think of where we going to get it from. It could even be from different services, like a database and another node from a third party provider.\nAnother great feature is that the GraphQL specification ensures we write documentation while writing the schema. Apart from being really cool to see your text in the GraphiQL window while you\u0026rsquo;re typing your query, it really helps you to think of each and every node and why you\u0026rsquo;re putting it there. We use APIs Guru\u0026rsquo;s graphql-faker. In one screen you write the schema, and in the other you try what you\u0026rsquo;ve just written, including the help text or documentation you\u0026rsquo;ve just created.\nFurthermore GraphQL schemas support inheritance, we can use the same objects for different queries. For example, in our business domain, and in most businesses for that matter, we have to return the price of the Hotel, or Flight. We can use exactly the same element in both, and just extend it if needed. This makes the job much easier and faster for the developer who\u0026rsquo;s implementing our service.\nBuilding Queries  Componentes de la query Componentes de la respuesta Respuesta Como lo hacemos Paginacion  Building Mutations  Componentes de la query Componentes de la respuesta Respuesta Como lo hacemos Paginacion  TODO: Falta chicha!! "
+},
+{
 	"uri": "/api/",
 	"title": "TravelgateX API Documentation",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL API Documentation  Account  Account  ConnectX  ConnectX Hotel Hotel Flight Flight  Mappea  Mappea  Stats  Stats  Insights \n "
+	"content": " GraphQL API Documentation  Account  Account  ConnectX  ConnectX Hotel Hotel Flight  Mappea \n Stats  Stats  Insights \n "
 },
 {
 	"uri": "/learning-graphql/",
