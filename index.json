@@ -1,7 +1,7 @@
 [
 {
-	"uri": "/api/account/",
-	"title": "Account",
+	"uri": "/api/admin/",
+	"title": "Admin",
 	"tags": [],
 	"description": "",
 	"content": " Account  "
@@ -18,7 +18,7 @@
 	"title": "Hotel",
 	"tags": [],
 	"description": "",
-	"content": " Hotel  "
+	"content": " Hotel sdfsdf hotelssss "
 },
 {
 	"uri": "/getting-started/api_key/",
@@ -32,7 +32,7 @@
 	"title": "ConnectX",
 	"tags": [],
 	"description": "",
-	"content": " ConnectX  Hotel  Hotel  Flight \n "
+	"content": " ConnectX  Hotel  Hotel sdfsdf hotelssss  Flight  Flight  "
 },
 {
 	"uri": "/api/connectx/flight/",
@@ -81,7 +81,7 @@
 	"title": "TravelgateX API Documentation",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL API Documentation  Account  Account  ConnectX  ConnectX Hotel Hotel Flight  Mappea \n Stats  Stats  Insights \n "
+	"content": " GraphQL API Documentation  Admin  Account  ConnectX  ConnectX Hotel Hotel sdfsdf hotelssss Flight Flight  Mappea  Mappea  Stats  Stats  Insights \n "
 },
 {
 	"uri": "/learning-graphql/",
