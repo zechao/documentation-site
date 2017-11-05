@@ -12,12 +12,32 @@
     
     
     <item>
+      <title>What&#39;s ConnectX</title>
+      <link>/api/connectx/what-is-connectx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/api/connectx/what-is-connectx/</guid>
+      <description>What&amp;rsquo;s ConnectX? ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.
+ Each and every layer discribed in the this figure is explained as follows:
+GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.</description>
+    </item>
+    
+    <item>
       <title>API Key</title>
       <link>/getting-started/api_key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/api_key/</guid>
       <description> API Key  </description>
+    </item>
+    
+    <item>
+      <title>ConnectX Plugins</title>
+      <link>/api/connectx/connectx_plugins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/api/connectx/connectx_plugins/</guid>
+      <description>Overview ConnectX introduces a new concept to the industry: Plugins. In a nutshell, a plugin is a piece of code that is executed inside our application. There are a few points in the request lifetime where anyone can develop a plugin. It receives the request or response as an input and outputs the changed request or response. Plugins are a core package in the Go Programming language and more info about it can be found here.</description>
     </item>
     
     <item>
@@ -29,17 +49,6 @@
       <description>A query language for your API Designed by Facebook, GraphQL is a new way of dealing and managing APIs, specially useful for decoupling client&amp;rsquo;s from server&amp;rsquo;s logic.
 Straight from the horse&amp;rsquo;s mouth:  A GraphQL query is a string that is sent to a server to be interpreted and fulfilled, which then returns JSON back to the client. Lee Byron, Facebook
  Official Definition  GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.</description>
-    </item>
-    
-    <item>
-      <title>What&#39;s ConnectX</title>
-      <link>/api/connectx/what-is-connectx/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/api/connectx/what-is-connectx/</guid>
-      <description> What&amp;rsquo;s ConnectX? So, many of you must be asking, what&amp;rsquo;s ConnectX anyway? And why should I care?
-Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving many of the problems commonly found in the travel business in an elegant and efficient way.
- High Level ConnectX Architecture   </description>
     </item>
     
     <item>

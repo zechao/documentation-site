@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>/api/connectx/hotel/</loc>
+    <loc>/api/connectx/what-is-connectx/</loc>
   </url>
   
   <url>
@@ -23,15 +23,11 @@
   </url>
   
   <url>
-    <loc>/api/connectx/flight/</loc>
+    <loc>/api/connectx/connectx_plugins/</loc>
   </url>
   
   <url>
     <loc>/learning-graphql/overview/</loc>
-  </url>
-  
-  <url>
-    <loc>/api/connectx/what-is-connectx/</loc>
   </url>
   
   <url>
@@ -55,6 +51,10 @@
   </url>
   
   <url>
+    <loc>/api/connectx/hotel/</loc>
+  </url>
+  
+  <url>
     <loc>/learning-graphql/</loc>
   </url>
   
@@ -64,6 +64,10 @@
   
   <url>
     <loc>/learning-graphql/tutorials_resources/</loc>
+  </url>
+  
+  <url>
+    <loc>/api/connectx/flight/</loc>
   </url>
   
   <url>
