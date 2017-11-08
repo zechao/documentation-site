@@ -396,11 +396,11 @@
 travelgateX follow some conventions about schema definition:
  Relay schema requirements Definition of custom scalar types  </p><h2>
 	<a href="/graphql-api/relay/" >Relay</a></h2>
-<p>TravelgateX uses Relay schema requirements for own Resources. Other resources, like supplier search response, are not modeled with Relay practices.
-Relay helps travelgateX API in order to standarize:
- Standards for querying paginated collections (&ldquo;Connections&rdquo; and &ldquo;Edges&rdquo;) Identifying objects directly from the root of a query (avoiding long nested queries) Provide mutation input data  </p><h2>
-	<a href="/graphql-api/custom-scalar-types/" >Custom Scalar Types</a></h2>
 <p></p><h2>
+	<a href="/graphql-api/custom-scalar-types/" >Custom Scalar Types</a></h2>
+<p>TravelgateX GraphQL schema implementation defines custom scalar types.
+JSON Sometimes it&rsquo;s necessary to manage arbitrary JSON values for loosely structured data. The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.
+In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: &quot;{\&quot;int\&quot;: 1, \&quot;string\&quot;: \&quot;value\&quot;}&quot;.</p><h2>
 	<a href="/graphql-api/travelgatex-graphql-api/" >Using the API</a></h2>
 <p></p>
 </ul>

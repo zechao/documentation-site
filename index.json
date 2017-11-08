@@ -74,7 +74,7 @@
 	"title": "GraphQL API",
 	"tags": [],
 	"description": "",
-	"content": "  Overview The basic idea of travelgateX GraphQL API is to provide a single entry point to manage all products. travelgateX follow some conventions about schema definition: Relay schema requirements Definition of custom scalar types  Relay TravelgateX uses Relay schema requirements for own Resources. Other resources, like supplier search response, are not modeled with Relay practices. Relay helps travelgateX API in order to standarize: Standards for querying paginated collections (\u0026ldquo;Connections\u0026rdquo; and \u0026ldquo;Edges\u0026rdquo;) Identifying objects directly from the root of a query (avoiding long nested queries) Provide mutation input data  Custom Scalar Types \n Using the API \n "
+	"content": "  Overview The basic idea of travelgateX GraphQL API is to provide a single entry point to manage all products. travelgateX follow some conventions about schema definition: Relay schema requirements Definition of custom scalar types  Relay \n Custom Scalar Types TravelgateX GraphQL schema implementation defines custom scalar types. JSON Sometimes it\u0026rsquo;s necessary to manage arbitrary JSON values for loosely structured data. The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string. In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: \u0026quot;{\\\u0026quot;int\\\u0026quot;: 1, \\\u0026quot;string\\\u0026quot;: \\\u0026quot;value\\\u0026quot;}\u0026quot;.\n Using the API \n "
 },
 {
 	"uri": "/learning-graphql/overview/",
@@ -116,7 +116,7 @@
 	"title": "Products",
 	"tags": [],
 	"description": "",
-	"content": " Products  ConnectX ConnectX What\u0026#39;s ConnectX What\u0026rsquo;s ConnectX? ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Mappea  Mappea  Stats \n Insights \n "
+	"content": " Products  ConnectX \n Mappea  Mappea  Stats \n Insights \n "
 },
 {
 	"uri": "/graphql-api/relay/",
@@ -207,7 +207,7 @@
 	"title": "Hotel",
 	"tags": [],
 	"description": "",
-	"content": "ConnectX Hotel connects you to multiple suppliers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel suppliers. ConnectX Hotel has been desined to be fast, reliable and offer strong performance.\n Quickstarts Quickstart Using Playground This page shows you how to perform basic hotel book using GraphQL Playground. Before you begin Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key. Search Hotel Click on search tab Modify Query Variables with valid dates and send the request. Quote Hotel Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.\n Tutorials Tutorials links to quicstarts\n Concepts  Concepts  Reference \n Resources \n "
+	"content": "ConnectX Hotel connects you to multiple suppliers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel suppliers. ConnectX Hotel has been desined to be fast, reliable and offer strong performance.\n Quickstarts Quickstart Using Playground This page shows you how to perform basic hotel book using GraphQL Playground. Before you begin Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key. Search Hotel Click on search tab Modify Query Variables with valid dates and send the request. Quote Hotel Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.\n Tutorials Tutorials links to quicstarts\n Concepts  Concepts  Reference Reference links to quicstarts\n Resources \n "
 },
 {
 	"uri": "/learning-graphql/",
