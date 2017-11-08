@@ -12,31 +12,96 @@
     
     
     <item>
-      <title>What&#39;s ConnectX</title>
-      <link>/api/connectx/what-is-connectx/</link>
+      <title>Accesses, Suppliers and Context</title>
+      <link>/product/connectx/hotel/concepts/accesses-supplier-context/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/api/connectx/what-is-connectx/</guid>
+      <guid>/product/connectx/hotel/concepts/accesses-supplier-context/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Authentication</title>
+      <link>/admin/security/authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/admin/security/authentication/</guid>
+      <description>Authentication Authentication allows you to know who is the current user, to log user in and to register new users.
+Every request to travelgateX GraphQL API may contain a Authorization header with a JSON Web Token or API Key inside.
+JSON Web Tokens API Keys Creating an access token For development purposes you can use Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ</description>
+    </item>
+    
+    <item>
+      <title>Common Resources</title>
+      <link>/admin/resources/common-resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/admin/resources/common-resources/</guid>
+      <description> Suppliers Each and every supplier works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them.
+We connect seemlessly to more than 600 suppliers.
+Accesses Each supplier can be accessed in different ways.
+Context </description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/graphql-api/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphql-api/overview/</guid>
+      <description>The basic idea of travelgateX GraphQL API is to provide a single entry point to manage all products.
+travelgateX follow some conventions about schema definition:
+ Relay schema requirements Definition of custom scalar types  </description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/plattform/overview/plattform-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/plattform/overview/plattform-overview/</guid>
+      <description>TravelgateX offers a set of Products ready to be integrated using a single GraphQL endpoint.
+GraphQL API TravelgateX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we&amp;rsquo;ve integrated too many of them. The problems with that technology are well-known and we won&amp;rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned.</description>
+    </item>
+    
+    <item>
+      <title>Quickstart Using Playground</title>
+      <link>/product/connectx/hotel/quickstarts/using-playground/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/product/connectx/hotel/quickstarts/using-playground/</guid>
+      <description> This page shows you how to perform basic hotel book using GraphQL Playground.
+Before you begin  Follow the steps in Creating an access token to create a API Key. Check connectivity for your API Key.  Search Hotel Quote Hotel Book Hotel </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s ConnectX</title>
+      <link>/product/connectx/what-is-connectx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/product/connectx/what-is-connectx/</guid>
       <description>What&amp;rsquo;s ConnectX? ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.
  Each and every layer discribed in the this figure is explained as follows:
 GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.</description>
     </item>
     
     <item>
-      <title>API Key</title>
-      <link>/getting-started/api_key/</link>
+      <title>Authorization</title>
+      <link>/admin/security/authorization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/getting-started/api_key/</guid>
-      <description> API Key  </description>
+      <guid>/admin/security/authorization/</guid>
+      <description>Authorization An important part of the security of your application is authorization. You need to control what data which users can access in your app.
+Role based access control (RBAC) is the de facto standard for authorization. However, it introduces many complexities for practical applications: roles can be inflexible to change and additional mapping between users and roles must be maintained separately.
+TravelgateX permissions are Resource Group Assigned rules, defined using GraphQL API and make use of the data graph of the application the determine access at runtime.</description>
     </item>
     
     <item>
       <title>ConnectX Plugins</title>
-      <link>/api/connectx/connectx_plugins/</link>
+      <link>/product/connectx/connectx_plugins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/api/connectx/connectx_plugins/</guid>
+      <guid>/product/connectx/connectx_plugins/</guid>
       <description>Overview ConnectX introduces a new concept to the industry: Plugins. In a nutshell, a plugin is a piece of code that is executed inside our application. There are a few points in the request lifetime where anyone can develop a plugin. It receives the request or response as an input and outputs the changed request or response. Plugins are a core package in the Go Programming language and more info about it can be found here.</description>
     </item>
     
@@ -52,6 +117,15 @@ Straight from the horse&amp;rsquo;s mouth:  A GraphQL query is a string that is 
     </item>
     
     <item>
+      <title>Mappintgs</title>
+      <link>/product/connectx/hotel/concepts/mappings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/product/connectx/hotel/concepts/mappings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Basic Concepts</title>
       <link>/learning-graphql/basic_concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -63,6 +137,46 @@ Queries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com Just l
     </item>
     
     <item>
+      <title>Book Transactions</title>
+      <link>/product/connectx/hotel/concepts/book-transactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/product/connectx/hotel/concepts/book-transactions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Relay</title>
+      <link>/graphql-api/relay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphql-api/relay/</guid>
+      <description>Travelgatex uses Relay schema requirements for own Resources. Other resources, like supplier search response, are not modeled with Relay practices.
+Relay helps travelgateX API in order to standarize:
+ Pagination Object Identification Mutation naming  </description>
+    </item>
+    
+    <item>
+      <title>Custom Scalar Types</title>
+      <link>/graphql-api/custom-scalar-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphql-api/custom-scalar-types/</guid>
+      <description>TravelgateX GraphQL schema implementation defines custom scalar types.
+JSON Sometimes it&amp;rsquo;s necessary to manage arbitrary JSON values for loosely structured data. The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.
+In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: &amp;quot;{\&amp;quot;int\&amp;quot;: 1, \&amp;quot;string\&amp;quot;: \&amp;quot;value\&amp;quot;}&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Operative Transactions</title>
+      <link>/product/connectx/hotel/concepts/operative-transactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/product/connectx/hotel/concepts/operative-transactions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Thinking in GraphQL</title>
       <link>/learning-graphql/thinking_in_graphql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -70,6 +184,27 @@ Queries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com Just l
       <guid>/learning-graphql/thinking_in_graphql/</guid>
       <description>A Paradigm Shift GraphQL is not a drop-in-replacement for REST APIs. It has to make sense to use it, it&amp;rsquo;s not a one size-fits-all technology.
 In order to determine if it is the right tool for the job or not, we have to learn how to Think in GraphQL. GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back.</description>
+    </item>
+    
+    <item>
+      <title>Using the API</title>
+      <link>/graphql-api/travelgatex-graphql-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphql-api/travelgatex-graphql-api/</guid>
+      <description>Authenticating To communicate with the GraphQL server, you&amp;rsquo;ll need an access token with the right scopes.
+This access token could be an API Key or a JSON Web Token, and the correct way to send it to GraphQL server is via HTTP Header:
+ API key: &amp;quot;Authorization: Apikey xxxxxxxxx&amp;quot; JWT: &amp;quot;Authorization: Bearer xxxxxxxxx&amp;quot;  Follow the steps in Creating an access token to create a token.
+GraphQL Endpoint Single endpoint which remains constant no matter what operation you perform: https://api.</description>
+    </item>
+    
+    <item>
+      <title>Data Transactions</title>
+      <link>/product/connectx/hotel/concepts/data-transactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/product/connectx/hotel/concepts/data-transactions/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -99,7 +234,7 @@ This list is intended to serve as a examples we&amp;rsquo;ve used and found usef
       <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
       
       <guid>/_footer/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <description>Lorem ipsum dolor sit amet.</description>
     </item>
     
     <item>

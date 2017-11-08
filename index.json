@@ -1,45 +1,87 @@
 [
 {
-	"uri": "/api/admin/",
-	"title": "Admin",
+	"uri": "/product/connectx/hotel/concepts/accesses-supplier-context/",
+	"title": "Accesses, Suppliers and Context",
 	"tags": [],
 	"description": "",
-	"content": " Account  "
+	"content": ""
 },
 {
-	"uri": "/getting-started/",
-	"title": "Getting Started",
+	"uri": "/admin/security/authentication/",
+	"title": "Authentication",
 	"tags": [],
 	"description": "",
-	"content": " Getting Started  API Key  API Key  "
+	"content": " Authentication Authentication allows you to know who is the current user, to log user in and to register new users.\nEvery request to travelgateX GraphQL API may contain a Authorization header with a JSON Web Token or API Key inside.\nJSON Web Tokens API Keys Creating an access token For development purposes you can use Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\n"
 },
 {
-	"uri": "/api/connectx/what-is-connectx/",
+	"uri": "/admin/resources/common-resources/",
+	"title": "Common Resources",
+	"tags": [],
+	"description": "",
+	"content": " Suppliers Each and every supplier works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them.\nWe connect seemlessly to more than 600 suppliers.\nAccesses Each supplier can be accessed in different ways.\nContext "
+},
+{
+	"uri": "/graphql-api/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "",
+	"content": "The basic idea of travelgateX GraphQL API is to provide a single entry point to manage all products.\ntravelgateX follow some conventions about schema definition:\n Relay schema requirements Definition of custom scalar types  "
+},
+{
+	"uri": "/plattform/overview/plattform-overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "",
+	"content": " TravelgateX offers a set of Products ready to be integrated using a single GraphQL endpoint.\nGraphQL API TravelgateX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we\u0026rsquo;ve integrated too many of them. The problems with that technology are well-known and we won\u0026rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned.\nIt is a stable, secure and fault tolerant load balanced between many datacenters from 4 different cloud providers, namely Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime. For the full reasoning behind working with GraphQL please click here.\nFor explanation about using TravelgateX GraphQL API please clieck here.\nProducts TravelgateX organize resources and it\u0026rsquo;s business rules in order to make up products.\nFor detailed product information please click here.\nCommon Resources TravelgateX GraphQL manage resources. Resources can be granted to members wich belongs to organizations. Resources are used in different travelgateX products.\nTo know more about common resources please click here.\nSecurity Products and resources are granted to members which belongs to organizations. Authorized members can manage security rules to restrict resource and product permissions.\nFor security and authorization concerns please click here.\n"
+},
+{
+	"uri": "/product/connectx/hotel/quickstarts/using-playground/",
+	"title": "Quickstart Using Playground",
+	"tags": [],
+	"description": "",
+	"content": " This page shows you how to perform basic hotel book using GraphQL Playground.\nBefore you begin  Follow the steps in Creating an access token to create a API Key. Check connectivity for your API Key.  Search Hotel Quote Hotel Book Hotel "
+},
+{
+	"uri": "/plattform/",
+	"title": "The Basics",
+	"tags": [],
+	"description": "",
+	"content": "  Overview TravelgateX offers a set of Products ready to be integrated using a single GraphQL endpoint. GraphQL API TravelgateX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we\u0026rsquo;ve integrated too many of them. The problems with that technology are well-known and we won\u0026rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned.\n "
+},
+{
+	"uri": "/product/connectx/what-is-connectx/",
 	"title": "What&#39;s ConnectX",
 	"tags": [],
 	"description": "",
-	"content": " What\u0026rsquo;s ConnectX? ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\n Each and every layer discribed in the this figure is explained as follows:\nGraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we\u0026rsquo;ve integrated too many of them. The problems with that technology are well-known and we won\u0026rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned. For the full reasoning behind working with GraphQL please click here.\nThe architecture doest not differ from many modern APIs. There\u0026rsquo;s an API Gateway, which takes care of basic stuff like authentication and authorization. It also acts like a shield protecting us from DoS attacks and handles throttling. Analytics takes also an important part in the gateway. Moreover, our Gateway is the only endpoint to access all of our APIs.\nIt is written in NodeJS, fast, stable, secure and fault tolerant load balanced between many datacenters from 4 different cloud providers, namely Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime.\nBusiness Logic We\u0026rsquo;ve added a new layer of business logic in front of the pure transformation API, very fast and totally scalable. It\u0026rsquo;s very flexible, everything can be overridden at the request level, or be left as is. The API is completely written in Go and Redis for performance and scalability. There\u0026rsquo;s also the possibility of writing plugins (in Go) in order to add any logic or add an extra functionality. The main funcionalities of the business logic layer includes, but not limited to:\n Configuration and access management Hotel Mapping Room Type Mapping Sort \u0026amp; Filter results Add pricing/margins, on both purchasing side and distribution Currency Exchange Plugins: there\u0026rsquo;s a specific section about that here.  Transformation The transformation layer takes care of the actual trasformation into the supplier\u0026rsquo;s specific format and back. It generates requests to the supplier in an optimal way, we call it Optimal Connector. The Optimal connector is the result of years of interacting with the suppliers and learning from them and from experience how to send requests to them. Each different supplier has a different logic, and is more efficient in one way. We use this now how to send exactly the request which the supplier will handle more effectively, being that a per hotel list, or destination or anythign that over the time we0ve learned from their responses. The transformation layer keeps each and every supplier integration in an optimal level. If a new version is released, we will update our integration. Our team is constantly monitoring the traffic, both automatically and manually in order to make sure the connectivity just works.\n[Optional] Cache Layer Our cache layer, called Speed does exactly what the name says, it caches results so that we don\u0026rsquo;t knock out the suppliers. From a high level perspective it is just a cache. Our secret sauce is how we expire the cache. We use advanced Machine Learning models to predict how long each cached item will be valid from taking into account a large number of variables set in the request. The cache is hosted in Google\u0026rsquo;s BigTable, a \u0026ldquo;Massively Scalable NoSQL\u0026rdquo; database built with performance and scalability in mind.\nSuppliers Each and every supplier works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them.\nWe connect seemlessly to more than 600 suppliers.\n"
+	"content": " What\u0026rsquo;s ConnectX? ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\n Each and every layer discribed in the this figure is explained as follows:\nGraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we\u0026rsquo;ve integrated too many of them. The problems with that technology are well-known and we won\u0026rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned. For the full reasoning behind working with GraphQL please click here.\nThe architecture doest not differ from many modern APIs. There\u0026rsquo;s an API Gateway, which takes care of basic stuff like authentication and authorization. It also acts like a shield protecting us from DoS attacks and handles throttling. Analytics takes also an important part in the gateway. Moreover, our Gateway is the only endpoint to access all of our APIs.\nIt is written in NodeJS, fast, stable, secure and fault tolerant load balanced between many datacenters from 4 different cloud providers, namely Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime.\nBusiness Logic We\u0026rsquo;ve added a new layer of business logic in front of the pure transformation API, very fast and totally scalable. It\u0026rsquo;s very flexible, everything can be overridden at the request level, or be left as is. The API is completely written in Go and Redis for performance and scalability. There\u0026rsquo;s also the possibility of writing plugins (in Go) in order to add any logic or add an extra functionality. The main funcionalities of the business logic layer includes, but not limited to:\n Configuration and access management Hotel Mapping Room Type Mapping Sort \u0026amp; Filter results Add pricing/markups, on both purchasing side and distribution Currency Exchange Plugins: there\u0026rsquo;s a specific section about that here.  Transformation The transformation layer takes care of the actual trasformation into the supplier\u0026rsquo;s specific format and back. It generates requests to the supplier in an optimal way, we call it Optimal Connector. The Optimal connector is the result of years of interacting with the suppliers and learning from them and from experience how to send requests to them. Each different supplier has a different logic, and is more efficient in one way. We use this now how to send exactly the request which the supplier will handle more effectively, being that a per hotel list, or destination or anythign that over the time we0ve learned from their responses. The transformation layer keeps each and every supplier integration in an optimal level. If a new version is released, we will update our integration. Our team is constantly monitoring the traffic, both automatically and manually in order to make sure the connectivity just works.\n[Optional] Cache Layer Our cache layer, called Speed does exactly what the name says, it caches results so that we don\u0026rsquo;t knock out the suppliers. From a high level perspective it is just a cache. Our secret sauce is how we expire the cache. We use advanced Machine Learning models to predict how long each cached item will be valid from taking into account a large number of variables set in the request. The cache is hosted in Google\u0026rsquo;s BigTable, a \u0026ldquo;Massively Scalable NoSQL\u0026rdquo; database built with performance and scalability in mind.\nSuppliers Each and every supplier works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them.\nWe connect seemlessly to more than 600 suppliers.\n"
 },
 {
-	"uri": "/getting-started/api_key/",
-	"title": "API Key",
+	"uri": "/admin/security/authorization/",
+	"title": "Authorization",
 	"tags": [],
 	"description": "",
-	"content": " API Key  "
+	"content": " Authorization An important part of the security of your application is authorization. You need to control what data which users can access in your app.\nRole based access control (RBAC) is the de facto standard for authorization. However, it introduces many complexities for practical applications: roles can be inflexible to change and additional mapping between users and roles must be maintained separately.\nTravelgateX permissions are Resource Group Assigned rules, defined using GraphQL API and make use of the data graph of the application the determine access at runtime.\nOrganizations Any travelgateX resource belongs to one or more Organizations.\nA organization is made up of members, resources, settings, permissions, and other metadata allowing your applications to easily manage resources and allow other organizations to use your resources\nGroups Members "
 },
 {
-	"uri": "/api/connectx/",
+	"uri": "/product/connectx/",
 	"title": "ConnectX",
 	"tags": [],
 	"description": "",
-	"content": " ConnectX  What\u0026#39;s ConnectX What\u0026rsquo;s ConnectX? ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n ConnectX Plugins Overview ConnectX introduces a new concept to the industry: Plugins. In a nutshell, a plugin is a piece of code that is executed inside our application. There are a few points in the request lifetime where anyone can develop a plugin. It receives the request or response as an input and outputs the changed request or response. Plugins are a core package in the Go Programming language and more info about it can be found here.\n Hotel \n Flight \n "
+	"content": " ConnectX  What\u0026#39;s ConnectX What\u0026rsquo;s ConnectX? ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n ConnectX Plugins Overview ConnectX introduces a new concept to the industry: Plugins. In a nutshell, a plugin is a piece of code that is executed inside our application. There are a few points in the request lifetime where anyone can develop a plugin. It receives the request or response as an input and outputs the changed request or response. Plugins are a core package in the Go Programming language and more info about it can be found here.\n ConnectX Hotel \n Flight \n "
 },
 {
-	"uri": "/api/connectx/connectx_plugins/",
+	"uri": "/product/connectx/connectx_plugins/",
 	"title": "ConnectX Plugins",
 	"tags": [],
 	"description": "",
 	"content": " Overview ConnectX introduces a new concept to the industry: Plugins. In a nutshell, a plugin is a piece of code that is executed inside our application. There are a few points in the request lifetime where anyone can develop a plugin. It receives the request or response as an input and outputs the changed request or response. Plugins are a core package in the Go Programming language and more info about it can be found here.\nFor more information and how to write and build plugins please go to the relevant ConnectX Plugin Documentation Page: Hotel or Flight.\n"
+},
+{
+	"uri": "/graphql-api/",
+	"title": "GraphQL API",
+	"tags": [],
+	"description": "",
+	"content": "  Overview The basic idea of travelgateX GraphQL API is to provide a single entry point to manage all products. travelgateX follow some conventions about schema definition: Relay schema requirements Definition of custom scalar types  Relay \n Custom Scalar Types \n Using the API \n "
 },
 {
 	"uri": "/learning-graphql/overview/",
@@ -49,6 +91,20 @@
 	"content": " A query language for your API Designed by Facebook, GraphQL is a new way of dealing and managing APIs, specially useful for decoupling client\u0026rsquo;s from server\u0026rsquo;s logic.\nStraight from the horse\u0026rsquo;s mouth:  A GraphQL query is a string that is sent to a server to be interpreted and fulfilled, which then returns JSON back to the client. Lee Byron, Facebook\n Official Definition  GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools. graphql.org\n More specifically:  GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn\u0026rsquo;t tied to any specific database or storage engine and is instead backed by your existing code and data. graphql.org/learn\n GraphQL at travelgateX GraphQL is a perfect fit for each and every need of our applications:\n Scalable: we must be able to handle millions of requests. Stable: a change in the API must not break the client. Fast: GraphQL not only allows faster response times by letting you choose exactly what you want, but also is consumes less bandwidth which makes responses lighter.  We\u0026rsquo;re a company focused in providing APIs for our clients. SOAP APIs are long gone and modelling REST APIs to fit a vast variety of products is not only hard, but the bigger it gets, the more unmanageable it becomes.\nAt travelgateX, we\u0026rsquo;re true believers of the Kaisen philosophy. We\u0026rsquo;re constantly researching for new ways of improvement.\n GraphQL allows us to think of our APIs as a whole, giving a coherence in all our products \u0026amp; services, accessible from one single endpoint. It\u0026rsquo;s like a showcase for our APIs. Oscar Perez, CTO\n "
 },
 {
+	"uri": "/product/connectx/hotel/concepts/mappings/",
+	"title": "Mappintgs",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/product/connectx/hotel/quickstarts/",
+	"title": "Quickstarts",
+	"tags": [],
+	"description": "",
+	"content": "  Quickstart Using Playground  This page shows you how to perform basic hotel book using GraphQL Playground. Before you begin Follow the steps in Creating an access token to create a API Key. Check connectivity for your API Key. Search Hotel Quote Hotel Book Hotel  "
+},
+{
 	"uri": "/learning-graphql/basic_concepts/",
 	"title": "Basic Concepts",
 	"tags": [],
@@ -56,14 +112,84 @@
 	"content": " Queries and Mutations  At its simplest, GraphQL is about asking for specific fields on objects. Let\u0026rsquo;s start by looking at a very simple query and the result we get when we run it http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com\n There are 2 basic operations in GraphQL schemas:\nQueries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com Just like a RESTful Get method, queries query the system. This operation reads values from the server using a Graph Object and gets a JSON as a response.\nUnlike a RESTful service, queries are interactive, it allows the user to choose exactly what he wants to get returned. This way, if the API owner makes a change to the API, the client will not be affected as long as the query does not change. Think of it like a good\u0026rsquo;ol SQL query. As long as you send the same one, the results is always predictable.\nThis fact makes versioning totally unnecessary in GraphQL APIs. There\u0026rsquo;s no need to specify which version you want to consume, since it\u0026rsquo;s you who are in charge of deciding which fields you want to retrieve.\nAs a bonus, the GraphQL specification includes handling of deprecated fields and marks a field as is-deprecated by adding a deprecationReason to the field.\nAn example query:\nEJEMPLO PEQUE DE DISPO TODO: Falta ejemplo!! Mutations http://graphql.org/learn/queries/#mutations?utm_source=docs.travelgatex.com Mutations are methods that change the server. It makes a physical change to the data. Could be inserting a new object in a database, deleting or updating. Queries take care of POST, PUT and DELETE methods in a REST API or INSERT, UPDATE and DELETE in SQL.\nTODO: Falta chicha!! "
 },
 {
-	"uri": "/api/mappea/",
+	"uri": "/product/connectx/hotel/concepts/book-transactions/",
+	"title": "Book Transactions",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/product/mappea/",
 	"title": "Mappea",
 	"tags": [],
 	"description": "",
 	"content": " Mappea  "
 },
 {
-	"uri": "/api/stats/",
+	"uri": "/product/",
+	"title": "Products",
+	"tags": [],
+	"description": "",
+	"content": " Products  ConnectX ConnectX What\u0026#39;s ConnectX What\u0026rsquo;s ConnectX? ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Mappea  Mappea  Stats \n Insights \n "
+},
+{
+	"uri": "/graphql-api/relay/",
+	"title": "Relay",
+	"tags": [],
+	"description": "",
+	"content": "Travelgatex uses Relay schema requirements for own Resources. Other resources, like supplier search response, are not modeled with Relay practices.\nRelay helps travelgateX API in order to standarize:\n Pagination Object Identification Mutation naming  "
+},
+{
+	"uri": "/product/connectx/hotel/tutorials/",
+	"title": "Tutorials",
+	"tags": [],
+	"description": "",
+	"content": " Tutorials links to quicstarts\n"
+},
+{
+	"uri": "/admin/",
+	"title": "Admin",
+	"tags": [],
+	"description": "",
+	"content": "  Resources  Common Resources Suppliers Each and every supplier works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them. We connect seemlessly to more than 600 suppliers. Accesses Each supplier can be accessed in different ways. Context  Security \n "
+},
+{
+	"uri": "/product/connectx/hotel/concepts/",
+	"title": "Concepts",
+	"tags": [],
+	"description": "",
+	"content": " Concepts "
+},
+{
+	"uri": "/graphql-api/custom-scalar-types/",
+	"title": "Custom Scalar Types",
+	"tags": [],
+	"description": "",
+	"content": " TravelgateX GraphQL schema implementation defines custom scalar types.\nJSON Sometimes it\u0026rsquo;s necessary to manage arbitrary JSON values for loosely structured data. The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.\nIn queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: \u0026quot;{\\\u0026quot;int\\\u0026quot;: 1, \\\u0026quot;string\\\u0026quot;: \\\u0026quot;value\\\u0026quot;}\u0026quot;.\nDateTime The DateTime type represents DateTime values. A good example might be a transaction TimeSpan.\nIn queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: \u0026quot;2017-10-22T13:57:31.123Z\u0026quot;.\nDate The Date type represents Date values. A good example might be a Hotel CheckIn Date.\nIn queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: \u0026quot;2017-10-22\u0026quot;.\nURI The URI type represents a URI values. A good example mith be an Hotel Image URL.\nIn queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: \u0026quot;http:\\\\www.travelgatex.com\u0026quot;.\nCountry The Country type represents Country values. A good example might be a Passenger Nationality.\nIn queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes \u0026quot;ES\u0026quot;.\nLanguage The Language type represents Language values. A good example might be a Hotel Description Language.\nIn queries or mutations, Language fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes \u0026quot;es\u0026quot;.\nCurrency The Currenty type represents Currency values. A good example might be a Rate Price Currency.\nIn queries or mutations, Currency fields have to be specified in ISO 4217 format with enclosing double quotes \u0026quot;EUR\u0026quot;.\n"
+},
+{
+	"uri": "/product/connectx/hotel/concepts/operative-transactions/",
+	"title": "Operative Transactions",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/admin/resources/",
+	"title": "Resources",
+	"tags": [],
+	"description": "",
+	"content": "  Common Resources  Suppliers Each and every supplier works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them. We connect seemlessly to more than 600 suppliers. Accesses Each supplier can be accessed in different ways. Context  "
+},
+{
+	"uri": "/admin/security/",
+	"title": "Security",
+	"tags": [],
+	"description": "",
+	"content": " Security  Authentication Authentication Authentication allows you to know who is the current user, to log user in and to register new users. Every request to travelgateX GraphQL API may contain a Authorization header with a JSON Web Token or API Key inside. JSON Web Tokens API Keys Creating an access token For development purposes you can use Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\n Authorization Authorization An important part of the security of your application is authorization. You need to control what data which users can access in your app. Role based access control (RBAC) is the de facto standard for authorization. However, it introduces many complexities for practical applications: roles can be inflexible to change and additional mapping between users and roles must be maintained separately. TravelgateX permissions are Resource Group Assigned rules, defined using GraphQL API and make use of the data graph of the application the determine access at runtime.\n "
+},
+{
+	"uri": "/product/stats/",
 	"title": "Stats",
 	"tags": [],
 	"description": "",
@@ -77,25 +203,39 @@
 	"content": " A Paradigm Shift GraphQL is not a drop-in-replacement for REST APIs. It has to make sense to use it, it\u0026rsquo;s not a one size-fits-all technology.\nIn order to determine if it is the right tool for the job or not, we have to learn how to Think in GraphQL. GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. And we get to choose exactly what data we want to retrieve. As opposed to JSON, each piece of data has its own type, so we get to know exactly what to expect, it\u0026rsquo;s a typed language. This gives it a lot of predictability, something we can really appreciate, especially when dealing with third party APIs, where we have no control of what\u0026rsquo;s going on in the other side.\nBuilding GraphQL Schemas In GraphQL, the API specifications are called schemas. A GraphQL Schema is like a contract between the client and the server. It\u0026rsquo;s the definition of how they talk to each other, what they expect from each other so each of them can know exactly what they can and cannot send to each other and what they\u0026rsquo;ll get in response to that. This makes a lot of a difference when creating our schemas, we have to get used to think in a Schema First way.\n A particularly interesting pattern seems to be emerging. Over and over again, I hear developers describing a way of approaching product development we’re calling “GraphQL First.”https://dev-blog.apollodata.com/graphql-first-a-better-way-to-build-modern-apps-b5a04f7121a0\n First, we model our data, thinking of all the different uses we can give to it. And only then, we\u0026rsquo;ll think of where we going to get it from. It could even be from different services, like a database and another node from a third party provider.\nAnother great feature is that the GraphQL specification ensures we write documentation while writing the schema. Apart from being really cool to see your text in the GraphiQL window while you\u0026rsquo;re typing your query, it really helps you to think of each and every node and why you\u0026rsquo;re putting it there. We use APIs Guru\u0026rsquo;s graphql-faker. In one screen you write the schema, and in the other you try what you\u0026rsquo;ve just written, including the help text or documentation you\u0026rsquo;ve just created.\nFurthermore GraphQL schemas support inheritance, we can use the same objects for different queries. For example, in our business domain, and in most businesses for that matter, we have to return the price of the Hotel, or Flight. We can use exactly the same element in both, and just extend it if needed. This makes the job much easier and faster for the developer who\u0026rsquo;s implementing our service.\nBuilding Queries  Componentes de la query Componentes de la respuesta Respuesta Como lo hacemos Paginacion  Building Mutations  Componentes de la query Componentes de la respuesta Respuesta Como lo hacemos Paginacion  TODO: Falta chicha!! "
 },
 {
-	"uri": "/api/",
-	"title": "TravelgateX API Documentation",
+	"uri": "/graphql-api/travelgatex-graphql-api/",
+	"title": "Using the API",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL API Documentation  Admin  Account  ConnectX ConnectX What\u0026#39;s ConnectX What\u0026rsquo;s ConnectX? ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Mappea  Mappea  Stats  Stats  Insights \n "
+	"content": " Authenticating To communicate with the GraphQL server, you\u0026rsquo;ll need an access token with the right scopes.\nThis access token could be an API Key or a JSON Web Token, and the correct way to send it to GraphQL server is via HTTP Header:\n API key: \u0026quot;Authorization: Apikey xxxxxxxxx\u0026quot; JWT: \u0026quot;Authorization: Bearer xxxxxxxxx\u0026quot;  Follow the steps in Creating an access token to create a token.\nGraphQL Endpoint Single endpoint which remains constant no matter what operation you perform: https://api.travelgatex.com\nCommunicating with GraphQL Because GraphQL operations consist of multiple operations and schemas, XMLTravelgate recommends using the Explorer to make GraphQL calls. There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use cURL or any other HTTP-speaking library. It\u0026rsquo;s mandatory that production clients enable GZIP compression in HTTP header Accept-Encoding: gzip  To query GraphQL using cURL, make a POST request with a JSON payload. The payload must contain a string called query:\ncurl -X\\ POST\\ -H \u0026quot;Content-Type: application/json\u0026quot; \\ -H \u0026quot;Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\u0026quot; \\ --data '{\u0026quot;query\u0026quot;:\u0026quot;{searchStatusService{code description}}\u0026quot;}' \\ --compressed \\ https://api.travelgatex.com  Documentation Documentation is generated from GraphQL schema.You can use multiple columns and keyboard-based navigation via Schema Tag\u0026rsquo;s Playground\n  Using the API The two types of allowed operations in travelgateX GraphQL API are:\n Queries Mutations  For more information about using a GraphQL API click here.\nExamples TravelgateX shares GraphQL Playgrounds with common scenarios using products. Playgrounds are shared in product reference sections, for example you can use ConnectX Hotel Playground\nIt\u0026rsquo;s important to use the correct Headers. If you want to use test headers, insert \u0026quot;Authorization\u0026quot;:\u0026quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\u0026quot;\nYou can easily share your Queries with others by clicking on the \u0026ldquo;Share\u0026rdquo; button and sharing the generated link. You can think about GraphQL Bin like Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).\n"
 },
 {
-	"uri": "/api/connectx/hotel/",
-	"title": "Hotel",
+	"uri": "/product/connectx/hotel/",
+	"title": "ConnectX Hotel",
 	"tags": [],
 	"description": "",
-	"content": " Hotel sdfsdf hotelssss "
+	"content": "ConnectX Hotel connects you to multiple suppliers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel suppliers. ConnectX Hotel has been desined to be fast, reliable and offer strong performance.\n Quickstarts  Quickstart Using Playground This page shows you how to perform basic hotel book using GraphQL Playground. Before you begin Follow the steps in Creating an access token to create a API Key. Check connectivity for your API Key. Search Hotel Quote Hotel Book Hotel  Tutorials Tutorials links to quicstarts\n Concepts  Concepts  Reference \n Resources \n "
+},
+{
+	"uri": "/product/connectx/hotel/concepts/data-transactions/",
+	"title": "Data Transactions",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "/learning-graphql/",
 	"title": "Learning GraphQL",
 	"tags": [],
 	"description": "",
-	"content": " Learning GraphQL  GraphQL Overview A query language for your API Designed by Facebook, GraphQL is a new way of dealing and managing APIs, specially useful for decoupling client\u0026rsquo;s from server\u0026rsquo;s logic. Straight from the horse\u0026rsquo;s mouth: A GraphQL query is a string that is sent to a server to be interpreted and fulfilled, which then returns JSON back to the client. Lee Byron, Facebook Official Definition GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.\n Basic Concepts Queries and Mutations At its simplest, GraphQL is about asking for specific fields on objects. Let\u0026rsquo;s start by looking at a very simple query and the result we get when we run it http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com There are 2 basic operations in GraphQL schemas: Queries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com Just like a RESTful Get method, queries query the system. This operation reads values from the server using a Graph Object and gets a JSON as a response.\n Thinking in GraphQL \n Tooling \n Tutorials \u0026amp; Resources \n "
+	"content": "  GraphQL Overview A query language for your API Designed by Facebook, GraphQL is a new way of dealing and managing APIs, specially useful for decoupling client\u0026rsquo;s from server\u0026rsquo;s logic. Straight from the horse\u0026rsquo;s mouth: A GraphQL query is a string that is sent to a server to be interpreted and fulfilled, which then returns JSON back to the client. Lee Byron, Facebook Official Definition GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.\n Basic Concepts Queries and Mutations At its simplest, GraphQL is about asking for specific fields on objects. Let\u0026rsquo;s start by looking at a very simple query and the result we get when we run it http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com There are 2 basic operations in GraphQL schemas: Queries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com Just like a RESTful Get method, queries query the system. This operation reads values from the server using a Graph Object and gets a JSON as a response.\n Thinking in GraphQL A Paradigm Shift GraphQL is not a drop-in-replacement for REST APIs. It has to make sense to use it, it\u0026rsquo;s not a one size-fits-all technology. In order to determine if it is the right tool for the job or not, we have to learn how to Think in GraphQL. GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back.\n Tooling \n Tutorials \u0026amp; Resources \n "
+},
+{
+	"uri": "/product/connectx/hotel/reference/",
+	"title": "Reference",
+	"tags": [],
+	"description": "",
+	"content": " Reference links to quicstarts\n"
 },
 {
 	"uri": "/learning-graphql/tooling/",
@@ -105,21 +245,28 @@
 	"content": " Tooling Please find below a collection of tools we\u0026rsquo;ve been using to help us develop in GraphQL. We have curated this list with the different goals each of the tools is for:\nDesigning Schemas We follow the Schema First methodology. There are many tools, the ones we tried and like most nowadays are:\n APIs Guru\u0026rsquo;s graphql-faker: https://github.com/APIs-guru/graphql-faker  TODO: Falta chicha!! Go Packages Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources. Also because of the ability to develop plugins. We\u0026rsquo;ve used many libraries and packages to help us, hereby our list:\n Redis: https://godoc.org/github.com/garyburd/redigo/redis  TODO: Falta chicha!! NodeJS Packages Other pieces of our software are written in NodeJS. Mainly because some packages are wither not avaialble in Go, or because the Go package is not as performant as the Node alternative. These are the packages we use:\nTODO: Falta chicha!! Schema Visualizers It\u0026rsquo;s nice to be able to see your schema and be able to navigate through it.\n GraphQL Voyager - Represent any GraphQL API as an interactive graph  Documentation Generators Generate beaultiful static documentation sites directly from schema or introspection query\n Graph Docs Graphdoc  GraphQL Clients Build, create and play with queries, it\u0026rsquo;s fun!\n Insomnia: our favorite \u0026#9825; graphql-playground: favorite online client GraphiQL: the original  TODO: Falta chicha!! Big List Very curated list full of different tools, resources, etc\n Awesome GraphQL  "
 },
 {
+	"uri": "/product/connectx/hotel/resources/",
+	"title": "Resources",
+	"tags": [],
+	"description": "",
+	"content": " Resources links to quicstarts\n"
+},
+{
 	"uri": "/learning-graphql/tutorials_resources/",
 	"title": "Tutorials &amp; Resources",
 	"tags": [],
 	"description": "",
-	"content": " The GraphQL ecosystem is growing fast. Apart from facebook\u0026rsquo;s and Graphql.org\u0026rsquo;s official documentation, each day as more and more development teams embrace the technology new blog posts, articles, tutorials, videos and learning material in general is published online.\nThis list is intended to serve as a examples we\u0026rsquo;ve used and found useful when adopting the technology. We\u0026rsquo;ve separated between tutorials get-your-hands-dirty full action kind to resources, which are reading materials, podcasts or any other kind of documentation, written or not, which will help you to Think in GraphQL.\nWe hope you enjoy!\nTutorials  https://github.com/blog/2412-learn-graphql-with-github  TODO: Falta chicha!! Resources  Schema first development - Johannes Schickling Schema-first development with GraphQL GraphQL First in practice at Quri GraphQL First: A better way to build modern apps  TODO: Falta chicha!! "
+	"content": " The GraphQL ecosystem is growing fast. Apart from facebook\u0026rsquo;s and Graphql.org\u0026rsquo;s official documentation, each day as more and more development teams embrace the technology new blog posts, articles, tutorials, videos and learning material in general is published online.\nThis list is intended to serve as a examples we\u0026rsquo;ve used and found useful when adopting the technology. We\u0026rsquo;ve separated between tutorials get-your-hands-dirty full action kind to resources, which are reading materials, podcasts or any other kind of documentation, written or not, which will help you to Think in GraphQL.\nWe hope you enjoy!\nTutorials  https://github.com/blog/2412-learn-graphql-with-github  TODO: Falta chicha!! Resources  GraphQL official documentation Apollo Relay official documentation Schema first development - Johannes Schickling Schema-first development with GraphQL GraphQL First in practice at Quri GraphQL First: A better way to build modern apps  "
 },
 {
-	"uri": "/api/connectx/flight/",
+	"uri": "/product/connectx/flight/",
 	"title": "Flight",
 	"tags": [],
 	"description": "",
 	"content": " Flight  "
 },
 {
-	"uri": "/api/insights/",
+	"uri": "/product/insights/",
 	"title": "Insights",
 	"tags": [],
 	"description": "",
@@ -130,7 +277,7 @@
 	"title": "footer",
 	"tags": [],
 	"description": "",
-	"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
+	"content": "Lorem ipsum dolor sit amet.\n"
 },
 {
 	"uri": "/_header/",

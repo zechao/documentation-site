@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tooling | TravelgateX Documentation</title>
+    <title>Using the API | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
-<title>Tooling :: TravelgateX Documentation</title>
+<title>Using the API :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
 <link href="/css/tgx.css" rel="stylesheet">
     
   </head>
-  <body data-url="/learning-graphql/tooling/">
+  <body data-url="/graphql-api/travelgatex-graphql-api/">
     
       <header>
   <div class="logo">
@@ -67,9 +67,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/graphql-api/" class="dd-item">
+    <li data-nav-id="/graphql-api/" class="dd-item parent">
       <a href="/graphql-api/">
-        <span>GraphQL API</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+        <span>GraphQL API</span>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
       <li data-nav-id="/graphql-api/overview/" class="dd-item">
@@ -87,7 +88,7 @@
           <span>Custom Scalar Types</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
-      <li data-nav-id="/graphql-api/travelgatex-graphql-api/" class="dd-item">
+      <li data-nav-id="/graphql-api/travelgatex-graphql-api/" class="dd-item active">
         <a href="/graphql-api/travelgatex-graphql-api/">
           <span>Using the API</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
@@ -240,10 +241,9 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/learning-graphql/" class="dd-item parent">
+    <li data-nav-id="/learning-graphql/" class="dd-item">
       <a href="/learning-graphql/">
-        <span>Learning GraphQL</span>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+        <span>Learning GraphQL</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
       <li data-nav-id="/learning-graphql/overview/" class="dd-item">
@@ -261,7 +261,7 @@
           <span>Thinking in GraphQL</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
-      <li data-nav-id="/learning-graphql/tooling/" class="dd-item active">
+      <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
         <a href="/learning-graphql/tooling/">
           <span>Tooling</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
@@ -307,7 +307,7 @@
       <option value="/graphql-api/overview/" >- Overview</option>
       <option value="/graphql-api/relay/" >- Relay</option>
       <option value="/graphql-api/custom-scalar-types/" >- Custom Scalar Types</option>
-      <option value="/graphql-api/travelgatex-graphql-api/" >- Using the API</option>
+      <option value="/graphql-api/travelgatex-graphql-api/"  selected>- Using the API</option>
     <option value="/product/" >
    Products</option>
     <option value="/product/connectx/" >
@@ -367,7 +367,7 @@
       <option value="/learning-graphql/overview/" >- GraphQL Overview</option>
       <option value="/learning-graphql/basic_concepts/" >- Basic Concepts</option>
       <option value="/learning-graphql/thinking_in_graphql/" >- Thinking in GraphQL</option>
-      <option value="/learning-graphql/tooling/"  selected>- Tooling</option>
+      <option value="/learning-graphql/tooling/" >- Tooling</option>
       <option value="/learning-graphql/tutorials_resources/" >- Tutorials &amp; Resources</option>
 
 
@@ -389,94 +389,85 @@
         <script type="text/javascript" src="/js/search.js"></script>
     </aside>
     <article>
-    <h1>Tooling</h1>
+    <h1>Using the API</h1>
     
     
     
     
 
-<h2 id="tooling">Tooling</h2>
+<h3 id="authenticating">Authenticating</h3>
 
-<p>Please find below a collection of tools we&rsquo;ve been using to help us develop in GraphQL. We have curated this list with the different goals each of the tools is for:</p>
+<p>To communicate with the GraphQL server, you&rsquo;ll need an access token with the right scopes.</p>
 
-<h3 id="designing-schemas">Designing Schemas</h3>
-
-<p>We follow the <strong>Schema First</strong> methodology. There are many tools, the ones we tried and like most nowadays are:</p>
+<p>This access token could be an <a href="/admin/security/authentication/#api-keys">API Key</a> or a <a href="/admin/security/authentication/#json-web-tokens">JSON Web Token</a>, and the correct way to send it to GraphQL server is via HTTP Header:</p>
 
 <ul>
-<li>APIs Guru&rsquo;s graphql-faker: <a href="https://github.com/APIs-guru/graphql-faker">https://github.com/APIs-guru/graphql-faker</a></li>
+<li>API key: <code>&quot;Authorization: Apikey xxxxxxxxx&quot;</code></li>
+<li>JWT: <code>&quot;Authorization: Bearer xxxxxxxxx&quot;</code></li>
 </ul>
 
+<p>Follow the steps in <a href="/admin/security/authentication/#creating-an-access-token">Creating an access token</a> to create a token.</p>
+
+<h3 id="graphql-endpoint">GraphQL Endpoint</h3>
+
+<p>Single endpoint which remains constant no matter what operation you perform: <a href="https://api.travelgatex.com">https://api.travelgatex.com</a></p>
+
+<h3 id="communicating-with-graphql">Communicating with GraphQL</h3>
+
+<p>Because GraphQL operations consist of multiple operations and schemas, XMLTravelgate recommends using the Explorer to make GraphQL calls.
+There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use cURL or any other HTTP-speaking library.
 <div class="alert 
-alert-danger"
+alert-info"
  
-role="alert"><strong>TODO: Falta chicha!!</strong></div>
+role="alert">It&rsquo;s mandatory that production clients enable GZIP compression in HTTP header</div>
+</p>
+
+<pre><code class="language-javascript">Accept-Encoding: gzip
+</code></pre>
+
+<p>To query GraphQL using cURL, make a POST request with a JSON payload. The payload must contain a string called query:</p>
+
+<pre><code class="language-bash">curl -X\
+   POST\
+   -H &quot;Content-Type: application/json&quot; \
+   -H &quot;Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;  \
+   --data '{&quot;query&quot;:&quot;{searchStatusService{code description}}&quot;}' \
+   --compressed \
+   https://api.travelgatex.com
+</code></pre>
+
+<h3 id="documentation">Documentation</h3>
+
+<p>Documentation is generated from GraphQL schema.You can use multiple columns and keyboard-based navigation via <a href="https://api.travelgatex.com">Schema Tag&rsquo;s Playground</a></p>
 
 
-<h3 id="go-packages">Go Packages</h3>
-
-<p>Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources. Also because of the ability to develop plugins. We&rsquo;ve used many libraries and packages to help us, hereby our list:</p>
-
-<ul>
-<li>Redis: <a href="https://godoc.org/github.com/garyburd/redigo/redis">https://godoc.org/github.com/garyburd/redigo/redis</a></li>
-</ul>
-
-<div class="alert 
-alert-danger"
- 
-role="alert"><strong>TODO: Falta chicha!!</strong></div>
+<figure >
+    <a href="https://api.travelgatex.com">
+        <img src="/images/graphql_playground.gif" alt="travelgateX Schema Documenation" />
+    </a>
+    
+</figure>
 
 
-<h3 id="nodejs-packages">NodeJS Packages</h3>
+<h3 id="using-the-api">Using the API</h3>
 
-<p>Other pieces of our software are written in NodeJS. Mainly because some packages are wither not avaialble in Go, or because the Go package is not as performant as the Node alternative. These are the packages we use:</p>
-
-<div class="alert 
-alert-danger"
- 
-role="alert"><strong>TODO: Falta chicha!!</strong></div>
-
-
-<h3 id="schema-visualizers">Schema Visualizers</h3>
-
-<p>It&rsquo;s nice to be able to <em>see</em> your schema and be able to navigate through it.</p>
-
-<ul>
-<li><a href="https://apis.guru/graphql-voyager/">GraphQL Voyager</a> - Represent any GraphQL API as an interactive graph</li>
-</ul>
-
-<h3 id="documentation-generators">Documentation Generators</h3>
-
-<p>Generate beaultiful static documentation sites directly from schema or introspection query</p>
+<p>The two types of allowed operations in travelgateX GraphQL API are:</p>
 
 <ul>
-<li><a href="https://graphql-docs.com/docs/?graphqlUrl=http://api-dev.travelgatex.com">Graph Docs</a></li>
-<li><a href="https://github.com/2fd/graphdoc">Graphdoc</a></li>
+<li><a href="http://graphql.org/learn/queries/">Queries</a></li>
+<li><a href="http://graphql.org/learn/queries/">Mutations</a></li>
 </ul>
 
-<h3 id="graphql-clients">GraphQL Clients</h3>
+<p>For more information about using a GraphQL API click <a href="/learning-graphql/">here</a>.</p>
 
-<p>Build, create and play with queries, it&rsquo;s fun!</p>
+<h3 id="examples">Examples</h3>
 
-<ul>
-<li><a href="https://insomnia.rest/">Insomnia</a>: our favorite &#9825;</li>
-<li><a href="https://github.com/graphcool/graphql-playground">graphql-playground</a>: favorite online client</li>
-<li><a href="https://github.com/graphql/graphiql">GraphiQL</a>: the original</li>
-</ul>
+<p>TravelgateX shares <a href="https://github.com/graphcool/graphql-playground">GraphQL Playgrounds</a> with common scenarios using products.
+Playgrounds are shared in <a href="/product/">product</a> reference sections, for example you can use  <a href="https://graphqlbin.com/JYRtB">ConnectX Hotel Playground</a></p>
 
-<div class="alert 
-alert-danger"
- 
-role="alert"><strong>TODO: Falta chicha!!</strong></div>
+<p>It&rsquo;s important to use the correct Headers. If you want to use test headers, insert <code>&quot;Authorization&quot;:&quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;</code></p>
 
-
-<h3 id="big-list">Big List</h3>
-
-<p>Very curated list full of different tools, resources, etc</p>
-
-<ul>
-<li><a href="https://github.com/chentsulin/awesome-graphql">Awesome GraphQL</a></li>
-</ul>
+<p>You can easily <a href="https://github.com/graphcool/graphql-playground#how-does-graphql-bin-work">share</a> your Queries with others by clicking on the &ldquo;Share&rdquo; button and sharing the generated link. You can think about GraphQL Bin like Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).</p>
 
 
 <hr/>
@@ -506,14 +497,14 @@ role="alert"><strong>TODO: Falta chicha!!</strong></div>
 	
 
   	<div class="github-link">
-  		<a href="https://github.com/travelgateX/documentation-site/edit/master/content/learning-graphql/tooling.md" target="blank"><i class="fa fa-code-fork"></i>
+  		<a href="https://github.com/travelgateX/documentation-site/edit/master/content/graphql-api/travelgatex-graphql-api.md" target="blank"><i class="fa fa-code-fork"></i>
         Edit page</a>
     </div>
   </aside>
   <aside class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/learning-graphql/thinking_in_graphql/" title="Thinking in GraphQL"> <i class="fa fa-chevron-left"></i></a>
-    <a class="nav nav-next" href="/learning-graphql/tutorials_resources/" title="Tutorials &amp; Resources" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/graphql-api/custom-scalar-types/" title="Custom Scalar Types"> <i class="fa fa-chevron-left"></i></a>
+    <a class="nav nav-next" href="/product/" title="Products" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
   </aside>
   </section>
 </section>

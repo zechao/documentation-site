@@ -3,27 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/api/admin/</loc>
+    <loc>/product/connectx/hotel/concepts/accesses-supplier-context/</loc>
   </url>
   
   <url>
-    <loc>/getting-started/</loc>
+    <loc>/admin/security/authentication/</loc>
   </url>
   
   <url>
-    <loc>/api/connectx/what-is-connectx/</loc>
+    <loc>/admin/resources/common-resources/</loc>
   </url>
   
   <url>
-    <loc>/getting-started/api_key/</loc>
+    <loc>/graphql-api/overview/</loc>
   </url>
   
   <url>
-    <loc>/api/connectx/</loc>
+    <loc>/plattform/overview/plattform-overview/</loc>
   </url>
   
   <url>
-    <loc>/api/connectx/connectx_plugins/</loc>
+    <loc>/product/connectx/hotel/quickstarts/using-playground/</loc>
+  </url>
+  
+  <url>
+    <loc>/plattform/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/what-is-connectx/</loc>
+  </url>
+  
+  <url>
+    <loc>/admin/security/authorization/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/connectx_plugins/</loc>
+  </url>
+  
+  <url>
+    <loc>/graphql-api/</loc>
   </url>
   
   <url>
@@ -31,15 +55,63 @@
   </url>
   
   <url>
+    <loc>/product/connectx/hotel/concepts/mappings/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/hotel/quickstarts/</loc>
+  </url>
+  
+  <url>
     <loc>/learning-graphql/basic_concepts/</loc>
   </url>
   
   <url>
-    <loc>/api/mappea/</loc>
+    <loc>/product/connectx/hotel/concepts/book-transactions/</loc>
   </url>
   
   <url>
-    <loc>/api/stats/</loc>
+    <loc>/product/mappea/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/</loc>
+  </url>
+  
+  <url>
+    <loc>/graphql-api/relay/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/hotel/tutorials/</loc>
+  </url>
+  
+  <url>
+    <loc>/admin/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/hotel/concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>/graphql-api/custom-scalar-types/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/hotel/concepts/operative-transactions/</loc>
+  </url>
+  
+  <url>
+    <loc>/admin/resources/</loc>
+  </url>
+  
+  <url>
+    <loc>/admin/security/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/stats/</loc>
   </url>
   
   <url>
@@ -47,11 +119,15 @@
   </url>
   
   <url>
-    <loc>/api/</loc>
+    <loc>/graphql-api/travelgatex-graphql-api/</loc>
   </url>
   
   <url>
-    <loc>/api/connectx/hotel/</loc>
+    <loc>/product/connectx/hotel/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/hotel/concepts/data-transactions/</loc>
   </url>
   
   <url>
@@ -59,7 +135,15 @@
   </url>
   
   <url>
+    <loc>/product/connectx/hotel/reference/</loc>
+  </url>
+  
+  <url>
     <loc>/learning-graphql/tooling/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/hotel/resources/</loc>
   </url>
   
   <url>
@@ -67,11 +151,11 @@
   </url>
   
   <url>
-    <loc>/api/connectx/flight/</loc>
+    <loc>/product/connectx/flight/</loc>
   </url>
   
   <url>
-    <loc>/api/insights/</loc>
+    <loc>/product/insights/</loc>
   </url>
   
   <url>
