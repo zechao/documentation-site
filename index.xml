@@ -70,8 +70,8 @@ GraphQL API TravelgateX is the first-in-the-industry travel API completely based
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/product/connectx/hotel/quickstarts/using-playground/</guid>
-      <description> This page shows you how to perform basic hotel book using GraphQL Playground.
-Before you begin  Follow the steps in Creating an access token to create a API Key. Check connectivity for your API Key.  Search Hotel Quote Hotel Book Hotel </description>
+      <description>This page shows you how to perform basic hotel book using GraphQL Playground.
+Before you begin  Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key.  Search Hotel  Click on search tab Modify Query Variables with valid dates and send the request.  Quote Hotel  Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.</description>
     </item>
     
     <item>
@@ -97,15 +97,6 @@ TravelgateX permissions are Resource Group Assigned rules, defined using GraphQL
     </item>
     
     <item>
-      <title>ConnectX Plugins</title>
-      <link>/product/connectx/connectx_plugins/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/product/connectx/connectx_plugins/</guid>
-      <description>Overview ConnectX introduces a new concept to the industry: Plugins. In a nutshell, a plugin is a piece of code that is executed inside our application. There are a few points in the request lifetime where anyone can develop a plugin. It receives the request or response as an input and outputs the changed request or response. Plugins are a core package in the Go Programming language and more info about it can be found here.</description>
-    </item>
-    
-    <item>
       <title>GraphQL Overview</title>
       <link>/learning-graphql/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -114,15 +105,6 @@ TravelgateX permissions are Resource Group Assigned rules, defined using GraphQL
       <description>A query language for your API Designed by Facebook, GraphQL is a new way of dealing and managing APIs, specially useful for decoupling client&amp;rsquo;s from server&amp;rsquo;s logic.
 Straight from the horse&amp;rsquo;s mouth:  A GraphQL query is a string that is sent to a server to be interpreted and fulfilled, which then returns JSON back to the client. Lee Byron, Facebook
  Official Definition  GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.</description>
-    </item>
-    
-    <item>
-      <title>Mappintgs</title>
-      <link>/product/connectx/hotel/concepts/mappings/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/product/connectx/hotel/concepts/mappings/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -142,7 +124,11 @@ Queries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com Just l
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/product/connectx/hotel/concepts/book-transactions/</guid>
-      <description></description>
+      <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a supplier.
+Search Performs an hotel availability search over 1 or more supplier accesses
+Depending supplier, search operations implitiy use supplier&amp;rsquo;s cache.
+Operation { &amp;quot;query&amp;quot;: { &amp;quot;search&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  search  Quote Performs an hotel quote over an option returned in Search Response.
+Operation { &amp;quot;query&amp;quot;: { &amp;quot;quote&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  quote  Book Performs a book or reservation over an option returned in Quote Response</description>
     </item>
     
     <item>
@@ -151,9 +137,9 @@ Queries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com Just l
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/graphql-api/relay/</guid>
-      <description>Travelgatex uses Relay schema requirements for own Resources. Other resources, like supplier search response, are not modeled with Relay practices.
+      <description>TravelgateX uses Relay schema requirements for own Resources. Other resources, like supplier search response, are not modeled with Relay practices.
 Relay helps travelgateX API in order to standarize:
- Pagination Object Identification Mutation naming  </description>
+ Standards for querying paginated collections (&amp;ldquo;Connections&amp;rdquo; and &amp;ldquo;Edges&amp;rdquo;) Identifying objects directly from the root of a query (avoiding long nested queries) Provide mutation input data  </description>
     </item>
     
     <item>
@@ -173,7 +159,10 @@ In queries or mutations, JSON fields have to be specified with enclosing double 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/product/connectx/hotel/concepts/operative-transactions/</guid>
-      <description></description>
+      <description> Operative transactions can be used in order to operate above supplier&amp;rsquo;s bookings.
+Cancel Performs a supplier booking cancellation.
+Operation { &amp;quot;mutation&amp;quot;: { &amp;quot;hotelCancel&amp;quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a supplier booking list or detail.
+Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  booking  </description>
     </item>
     
     <item>
@@ -204,6 +193,15 @@ GraphQL Endpoint Single endpoint which remains constant no matter what operation
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/product/connectx/hotel/concepts/data-transactions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plugins</title>
+      <link>/product/connectx/hotel/concepts/plugins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/product/connectx/hotel/concepts/plugins/</guid>
       <description></description>
     </item>
     

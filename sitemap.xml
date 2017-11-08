@@ -43,19 +43,11 @@
   </url>
   
   <url>
-    <loc>/product/connectx/connectx_plugins/</loc>
-  </url>
-  
-  <url>
     <loc>/graphql-api/</loc>
   </url>
   
   <url>
     <loc>/learning-graphql/overview/</loc>
-  </url>
-  
-  <url>
-    <loc>/product/connectx/hotel/concepts/mappings/</loc>
   </url>
   
   <url>
@@ -123,15 +115,19 @@
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/</loc>
-  </url>
-  
-  <url>
     <loc>/product/connectx/hotel/concepts/data-transactions/</loc>
   </url>
   
   <url>
+    <loc>/product/connectx/hotel/</loc>
+  </url>
+  
+  <url>
     <loc>/learning-graphql/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/hotel/concepts/plugins/</loc>
   </url>
   
   <url>

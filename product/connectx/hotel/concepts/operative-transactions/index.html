@@ -111,14 +111,9 @@
           <span>What&#39;s ConnectX</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
-      <li data-nav-id="/product/connectx/connectx_plugins/" class="dd-item">
-        <a href="/product/connectx/connectx_plugins/">
-          <span>ConnectX Plugins</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
     <li data-nav-id="/product/connectx/hotel/" class="dd-item parent">
       <a href="/product/connectx/hotel/">
-        <span>ConnectX Hotel</span>
+        <span>Hotel</span>
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
@@ -150,11 +145,6 @@
           <span>Accesses, Suppliers and Context</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
-      <li data-nav-id="/product/connectx/hotel/concepts/mappings/" class="dd-item">
-        <a href="/product/connectx/hotel/concepts/mappings/">
-          <span>Mappintgs</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
       <li data-nav-id="/product/connectx/hotel/concepts/book-transactions/" class="dd-item">
         <a href="/product/connectx/hotel/concepts/book-transactions/">
           <span>Book Transactions</span><i class="fa fa-circle-thin read-icon"></i>
@@ -168,6 +158,11 @@
       <li data-nav-id="/product/connectx/hotel/concepts/data-transactions/" class="dd-item">
         <a href="/product/connectx/hotel/concepts/data-transactions/">
           <span>Data Transactions</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+      <li data-nav-id="/product/connectx/hotel/concepts/plugins/" class="dd-item">
+        <a href="/product/connectx/hotel/concepts/plugins/">
+          <span>Plugins</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -317,10 +312,9 @@
   - 
    ConnectX</option>
       <option value="/product/connectx/what-is-connectx/" >-- What&#39;s ConnectX</option>
-      <option value="/product/connectx/connectx_plugins/" >-- ConnectX Plugins</option>
     <option value="/product/connectx/hotel/" >
   -- 
-   ConnectX Hotel</option>
+   Hotel</option>
     <option value="/product/connectx/hotel/quickstarts/" >
   --- 
    Quickstarts</option>
@@ -332,10 +326,10 @@
   --- 
    Concepts</option>
       <option value="/product/connectx/hotel/concepts/accesses-supplier-context/" >---- Accesses, Suppliers and Context</option>
-      <option value="/product/connectx/hotel/concepts/mappings/" >---- Mappintgs</option>
       <option value="/product/connectx/hotel/concepts/book-transactions/" >---- Book Transactions</option>
       <option value="/product/connectx/hotel/concepts/operative-transactions/"  selected>---- Operative Transactions</option>
       <option value="/product/connectx/hotel/concepts/data-transactions/" >---- Data Transactions</option>
+      <option value="/product/connectx/hotel/concepts/plugins/" >---- Plugins</option>
     <option value="/product/connectx/hotel/reference/" >
   --- 
    Reference</option>
@@ -397,6 +391,52 @@
     
     
     
+
+<p>Operative transactions can be used in order to operate above supplier&rsquo;s bookings.</p>
+
+<h2 id="cancel">Cancel</h2>
+
+<p>Performs a supplier <a href="/product/connectx/hotel/concepts/book-transactions/#book">booking</a> cancellation.</p>
+
+<h3 id="operation">Operation</h3>
+
+<pre><code class="language-json">{
+  &quot;mutation&quot;: {
+    &quot;hotelCancel&quot;: {
+      }
+    }
+  }
+}
+</code></pre>
+
+<h3 id="playground-samples">PlayGround Samples</h3>
+
+<ul>
+<li><a href="https://graphqlbin.com/JYRtB">hotelCancel</a></li>
+</ul>
+
+<h2 id="booking">Booking</h2>
+
+<p>Performs a supplier booking list or detail.</p>
+
+<h3 id="operation-1">Operation</h3>
+
+<pre><code class="language-json">{
+  &quot;query&quot;: {
+    &quot;booking&quot;: {
+      &quot;hotel&quot;: {
+      }
+    }
+  }
+}
+</code></pre>
+
+<h3 id="playground-samples-1">PlayGround Samples</h3>
+
+<ul>
+<li><a href="https://graphqlbin.com/JYRtB">booking</a></li>
+</ul>
+
 
 <hr/>
     
