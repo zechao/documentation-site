@@ -3,11 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/product/connectx/hotel/reference/api-reference/</loc>
+  </url>
+  
+  <url>
     <loc>/product/connectx/hotel/concepts/accesses-supplier-context/</loc>
   </url>
   
   <url>
     <loc>/admin/security/authentication/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/hotel/howtos/howto-book/</loc>
   </url>
   
   <url>
@@ -24,6 +32,10 @@
   
   <url>
     <loc>/product/connectx/hotel/quickstarts/using-playground/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/hotel/resources/quotas-limits/</loc>
   </url>
   
   <url>
@@ -55,11 +67,19 @@
   </url>
   
   <url>
+    <loc>/product/connectx/hotel/resources/release-notes/</loc>
+  </url>
+  
+  <url>
     <loc>/learning-graphql/basic_concepts/</loc>
   </url>
   
   <url>
     <loc>/product/connectx/hotel/concepts/book-transactions/</loc>
+  </url>
+  
+  <url>
+    <loc>/product/connectx/hotel/howtos/</loc>
   </url>
   
   <url>
@@ -72,10 +92,6 @@
   
   <url>
     <loc>/graphql-api/relay/</loc>
-  </url>
-  
-  <url>
-    <loc>/product/connectx/hotel/tutorials/</loc>
   </url>
   
   <url>

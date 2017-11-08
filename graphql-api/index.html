@@ -127,10 +127,17 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/product/connectx/hotel/tutorials/" class="dd-item">
-      <a href="/product/connectx/hotel/tutorials/">
-        <span>Tutorials</span><i class="fa fa-circle-thin read-icon"></i>
+    <li data-nav-id="/product/connectx/hotel/howtos/" class="dd-item">
+      <a href="/product/connectx/hotel/howtos/">
+        <span>How-to Guides</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
+        <ul>
+      <li data-nav-id="/product/connectx/hotel/howtos/howto-book/" class="dd-item">
+        <a href="/product/connectx/hotel/howtos/howto-book/">
+          <span>Book</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+        </ul>
     </li>
     <li data-nav-id="/product/connectx/hotel/concepts/" class="dd-item">
       <a href="/product/connectx/hotel/concepts/">
@@ -166,13 +173,32 @@
     </li>
     <li data-nav-id="/product/connectx/hotel/reference/" class="dd-item">
       <a href="/product/connectx/hotel/reference/">
-        <span>Reference</span><i class="fa fa-circle-thin read-icon"></i>
+        <span>Reference</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
+        <ul>
+      <li data-nav-id="/product/connectx/hotel/reference/api-reference/" class="dd-item">
+        <a href="/product/connectx/hotel/reference/api-reference/">
+          <span>API Reference</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+        </ul>
     </li>
     <li data-nav-id="/product/connectx/hotel/resources/" class="dd-item">
       <a href="/product/connectx/hotel/resources/">
-        <span>Resources</span><i class="fa fa-circle-thin read-icon"></i>
+        <span>Resources</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
+        <ul>
+      <li data-nav-id="/product/connectx/hotel/resources/quotas-limits/" class="dd-item">
+        <a href="/product/connectx/hotel/resources/quotas-limits/">
+          <span>Quotas &amp; Limits</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+      <li data-nav-id="/product/connectx/hotel/resources/release-notes/" class="dd-item">
+        <a href="/product/connectx/hotel/resources/release-notes/">
+          <span>Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -316,9 +342,10 @@
   --- 
    Quickstarts</option>
       <option value="/product/connectx/hotel/quickstarts/using-playground/" >---- Quickstart Using Playground</option>
-    <option value="/product/connectx/hotel/tutorials/" >
+    <option value="/product/connectx/hotel/howtos/" >
   --- 
-   Tutorials</option>
+   How-to Guides</option>
+      <option value="/product/connectx/hotel/howtos/howto-book/" >---- Book</option>
     <option value="/product/connectx/hotel/concepts/" >
   --- 
    Concepts</option>
@@ -330,9 +357,12 @@
     <option value="/product/connectx/hotel/reference/" >
   --- 
    Reference</option>
+      <option value="/product/connectx/hotel/reference/api-reference/" >---- API Reference</option>
     <option value="/product/connectx/hotel/resources/" >
   --- 
    Resources</option>
+      <option value="/product/connectx/hotel/resources/quotas-limits/" >---- Quotas &amp; Limits</option>
+      <option value="/product/connectx/hotel/resources/release-notes/" >---- Release Notes</option>
     <option value="/product/connectx/flight/" >
   -- 
    Flight</option>
@@ -398,9 +428,7 @@ travelgateX follow some conventions about schema definition:
 	<a href="/graphql-api/relay/" >Relay</a></h2>
 <p></p><h2>
 	<a href="/graphql-api/custom-scalar-types/" >Custom Scalar Types</a></h2>
-<p>TravelgateX GraphQL schema implementation defines custom scalar types.
-JSON Sometimes it&rsquo;s necessary to manage arbitrary JSON values for loosely structured data. The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.
-In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: &quot;{\&quot;int\&quot;: 1, \&quot;string\&quot;: \&quot;value\&quot;}&quot;.</p><h2>
+<p></p><h2>
 	<a href="/graphql-api/travelgatex-graphql-api/" >Using the API</a></h2>
 <p></p>
 </ul>

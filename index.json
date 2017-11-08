@@ -1,5 +1,12 @@
 [
 {
+	"uri": "/product/connectx/hotel/reference/api-reference/",
+	"title": "API Reference",
+	"tags": [],
+	"description": "",
+	"content": " This API reference is organized by graphql operations related to product.\nQuery Operations Mutation Operations Documentation Schema documentation\nSamples  Search, Quote, Book, Cancel and Retrieve bookings  "
+},
+{
 	"uri": "/product/connectx/hotel/concepts/accesses-supplier-context/",
 	"title": "Accesses, Suppliers and Context",
 	"tags": [],
@@ -12,6 +19,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Authentication Authentication allows you to know who is the current user, to log user in and to register new users.\nEvery request to travelgateX GraphQL API may contain a Authorization header with a JSON Web Token or API Key inside.\nJSON Web Tokens API Keys Creating an access token For development purposes you can use Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\n"
+},
+{
+	"uri": "/product/connectx/hotel/howtos/howto-book/",
+	"title": "Book",
+	"tags": [],
+	"description": "",
+	"content": "Flow to book\n"
 },
 {
 	"uri": "/admin/resources/common-resources/",
@@ -40,6 +54,13 @@
 	"tags": [],
 	"description": "",
 	"content": " This page shows you how to perform basic hotel book using GraphQL Playground.\nBefore you begin  Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key.  Search Hotel  Click on search tab Modify Query Variables with valid dates and send the request.  Quote Hotel  Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.  Book Hotel  Click on hotelBook tab In Query Variables modify optionRefId with optionRefId value returned in quote response and send the request. Next other information you can chek for book supplier reference  "
+},
+{
+	"uri": "/product/connectx/hotel/resources/quotas-limits/",
+	"title": "Quotas &amp; Limits",
+	"tags": [],
+	"description": "",
+	"content": "ConnectX Hotel limits the maximum rate of requests adn graph deep. Specific policies vary depending on resource availability, user profile, service usage history, and other factors, and are subject to change without notice.\n"
 },
 {
 	"uri": "/plattform/",
@@ -74,7 +95,7 @@
 	"title": "GraphQL API",
 	"tags": [],
 	"description": "",
-	"content": "  Overview The basic idea of travelgateX GraphQL API is to provide a single entry point to manage all products. travelgateX follow some conventions about schema definition: Relay schema requirements Definition of custom scalar types  Relay \n Custom Scalar Types TravelgateX GraphQL schema implementation defines custom scalar types. JSON Sometimes it\u0026rsquo;s necessary to manage arbitrary JSON values for loosely structured data. The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string. In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: \u0026quot;{\\\u0026quot;int\\\u0026quot;: 1, \\\u0026quot;string\\\u0026quot;: \\\u0026quot;value\\\u0026quot;}\u0026quot;.\n Using the API \n "
+	"content": "  Overview The basic idea of travelgateX GraphQL API is to provide a single entry point to manage all products. travelgateX follow some conventions about schema definition: Relay schema requirements Definition of custom scalar types  Relay \n Custom Scalar Types \n Using the API \n "
 },
 {
 	"uri": "/learning-graphql/overview/",
@@ -91,6 +112,13 @@
 	"content": "  Quickstart Using Playground This page shows you how to perform basic hotel book using GraphQL Playground. Before you begin Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key. Search Hotel Click on search tab Modify Query Variables with valid dates and send the request. Quote Hotel Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.\n "
 },
 {
+	"uri": "/product/connectx/hotel/resources/release-notes/",
+	"title": "Release Notes",
+	"tags": [],
+	"description": "",
+	"content": "This page documents production updates to connectX Hotel. We recommend that connectX hotel developers periodically check this list for any new announcements.\n"
+},
+{
 	"uri": "/learning-graphql/basic_concepts/",
 	"title": "Basic Concepts",
 	"tags": [],
@@ -103,6 +131,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a supplier.\nSearch Performs an hotel availability search over 1 or more supplier accesses\nDepending supplier, search operations implitiy use supplier\u0026rsquo;s cache.\nOperation { \u0026quot;query\u0026quot;: { \u0026quot;search\u0026quot;: { \u0026quot;hotel\u0026quot;: { } } } }  PlayGround Samples  search  Quote Performs an hotel quote over an option returned in Search Response.\nOperation { \u0026quot;query\u0026quot;: { \u0026quot;quote\u0026quot;: { \u0026quot;hotel\u0026quot;: { } } } }  PlayGround Samples  quote  Book Performs a book or reservation over an option returned in Quote Response\nOperation { \u0026quot;mutation\u0026quot;: { \u0026quot;hotelBook\u0026quot;: { } } }  PlayGround Samples  hotelBook  "
+},
+{
+	"uri": "/product/connectx/hotel/howtos/",
+	"title": "How-to Guides",
+	"tags": [],
+	"description": "",
+	"content": "How-to Guides\n"
 },
 {
 	"uri": "/product/mappea/",
@@ -124,13 +159,6 @@
 	"tags": [],
 	"description": "",
 	"content": "TravelgateX uses Relay schema requirements for own Resources. Other resources, like supplier search response, are not modeled with Relay practices.\nRelay helps travelgateX API in order to standarize:\n Standards for querying paginated collections (\u0026ldquo;Connections\u0026rdquo; and \u0026ldquo;Edges\u0026rdquo;) Identifying objects directly from the root of a query (avoiding long nested queries) Provide mutation input data  "
-},
-{
-	"uri": "/product/connectx/hotel/tutorials/",
-	"title": "Tutorials",
-	"tags": [],
-	"description": "",
-	"content": " Tutorials links to quicstarts\n"
 },
 {
 	"uri": "/admin/",
@@ -207,7 +235,7 @@
 	"title": "Hotel",
 	"tags": [],
 	"description": "",
-	"content": "ConnectX Hotel connects you to multiple suppliers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel suppliers. ConnectX Hotel has been desined to be fast, reliable and offer strong performance.\n Quickstarts Quickstart Using Playground This page shows you how to perform basic hotel book using GraphQL Playground. Before you begin Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key. Search Hotel Click on search tab Modify Query Variables with valid dates and send the request. Quote Hotel Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.\n Tutorials Tutorials links to quicstarts\n Concepts  Concepts  Reference Reference links to quicstarts\n Resources \n "
+	"content": "ConnectX Hotel connects you to multiple suppliers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel suppliers. ConnectX Hotel has been desined to be fast, reliable and offer strong performance.\n Quickstarts Quickstart Using Playground This page shows you how to perform basic hotel book using GraphQL Playground. Before you begin Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key. Search Hotel Click on search tab Modify Query Variables with valid dates and send the request. Quote Hotel Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.\n How-to Guides How-to Guides\n Concepts  Concepts  Reference \n Resources \n "
 },
 {
 	"uri": "/learning-graphql/",
@@ -221,14 +249,14 @@
 	"title": "Plugins",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " Validators  Validate Request  Mapping  Mapping Hotel  Processor  Markup  Aggregator  Price Aggregate  "
 },
 {
 	"uri": "/product/connectx/hotel/reference/",
 	"title": "Reference",
 	"tags": [],
 	"description": "",
-	"content": " Reference links to quicstarts\n"
+	"content": " Reference "
 },
 {
 	"uri": "/learning-graphql/tooling/",
@@ -242,7 +270,7 @@
 	"title": "Resources",
 	"tags": [],
 	"description": "",
-	"content": " Resources links to quicstarts\n"
+	"content": " Resources "
 },
 {
 	"uri": "/learning-graphql/tutorials_resources/",

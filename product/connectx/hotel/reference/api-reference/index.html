@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hotel | TravelgateX Documentation</title>
+    <title>API Reference | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
-<title>Hotel :: TravelgateX Documentation</title>
+<title>API Reference :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
 <link href="/css/tgx.css" rel="stylesheet">
     
   </head>
-  <body data-url="/product/connectx/hotel/">
+  <body data-url="/product/connectx/hotel/reference/api-reference/">
     
       <header>
   <div class="logo">
@@ -111,7 +111,7 @@
           <span>What&#39;s ConnectX</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
-    <li data-nav-id="/product/connectx/hotel/" class="dd-item parent active">
+    <li data-nav-id="/product/connectx/hotel/" class="dd-item parent">
       <a href="/product/connectx/hotel/">
         <span>Hotel</span>
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
@@ -173,12 +173,13 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/product/connectx/hotel/reference/" class="dd-item">
+    <li data-nav-id="/product/connectx/hotel/reference/" class="dd-item parent">
       <a href="/product/connectx/hotel/reference/">
-        <span>Reference</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+        <span>Reference</span>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
-      <li data-nav-id="/product/connectx/hotel/reference/api-reference/" class="dd-item">
+      <li data-nav-id="/product/connectx/hotel/reference/api-reference/" class="dd-item active">
         <a href="/product/connectx/hotel/reference/api-reference/">
           <span>API Reference</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
@@ -337,7 +338,7 @@
   - 
    ConnectX</option>
       <option value="/product/connectx/what-is-connectx/" >-- What&#39;s ConnectX</option>
-    <option value="/product/connectx/hotel/"  selected>
+    <option value="/product/connectx/hotel/" >
   -- 
    Hotel</option>
     <option value="/product/connectx/hotel/quickstarts/" >
@@ -359,7 +360,7 @@
     <option value="/product/connectx/hotel/reference/" >
   --- 
    Reference</option>
-      <option value="/product/connectx/hotel/reference/api-reference/" >---- API Reference</option>
+      <option value="/product/connectx/hotel/reference/api-reference/"  selected>---- API Reference</option>
     <option value="/product/connectx/hotel/resources/" >
   --- 
    Resources</option>
@@ -415,35 +416,43 @@
         <script type="text/javascript" src="/js/search.js"></script>
     </aside>
     <article>
-    <h1>Hotel</h1>
+    <h1>API Reference</h1>
     
     
     
+    
 
-<p>ConnectX Hotel <em>connects</em> you to multiple suppliers <em>addding</em> business logic <em>solving</em> most of the problems commonly found in the travel business in an <strong>elegant and efficient</strong> way.</p>
+<p>This API reference is organized by graphql operations related to product.</p>
 
-<p>There are no integration investments and you can operate with hundreds of hotel suppliers. <em>ConnectX Hotel</em> has been desined to be fast, reliable and offer strong performance.</p>
+<h2 id="query-operations">Query Operations</h2>
 
+<h2 id="mutation-operations">Mutation Operations</h2>
 
+<h2 id="documentation">Documentation</h2>
 
-<ul class="children children-h2"><h2>
-	<a href="/product/connectx/hotel/quickstarts/" >Quickstarts</a></h2>
-<p>Quickstart Using Playground This page shows you how to perform basic hotel book using GraphQL Playground. Before you begin Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key. Search Hotel Click on search tab Modify Query Variables with valid dates and send the request. Quote Hotel Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.</p><h2>
-	<a href="/product/connectx/hotel/howtos/" >How-to Guides</a></h2>
-<p>How-to Guides</p><h2>
-	<a href="/product/connectx/hotel/concepts/" >Concepts</a></h2>
-<p> Concepts </p><h2>
-	<a href="/product/connectx/hotel/reference/" >Reference</a></h2>
-<p></p><h2>
-	<a href="/product/connectx/hotel/resources/" >Resources</a></h2>
-<p></p>
+<p><a href="/graphql-api/travelgatex-graphql-api/#documentation">Schema documentation</a></p>
+
+<h2 id="samples">Samples</h2>
+
+<ul>
+<li><a href="https://graphqlbin.com/JYRtB">Search, Quote, Book, Cancel and Retrieve bookings</a></li>
 </ul>
 
 
+<hr/>
+    
+<div id="discourse-comments"></div>
 
+<script type="text/javascript">
+  var discourseUrl = 'http:\/\/discourse.travelgatex.com\/',
+  discourseEmbedUrl =  window.location.href;
 
-
-
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+      d.src = discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
 
 
     
@@ -457,14 +466,14 @@
 	
 
   	<div class="github-link">
-  		<a href="https://github.com/travelgateX/documentation-site/edit/master/content/product/connectx/hotel/_index.md" target="blank"><i class="fa fa-code-fork"></i>
+  		<a href="https://github.com/travelgateX/documentation-site/edit/master/content/product/connectx/hotel/reference/api-reference.md" target="blank"><i class="fa fa-code-fork"></i>
         Edit page</a>
     </div>
   </aside>
   <aside class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/product/connectx/what-is-connectx/" title="What&#39;s ConnectX"> <i class="fa fa-chevron-left"></i></a>
-    <a class="nav nav-next" href="/product/connectx/hotel/quickstarts/" title="Quickstarts" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/product/connectx/hotel/reference/" title="Reference"> <i class="fa fa-chevron-left"></i></a>
+    <a class="nav nav-next" href="/product/connectx/hotel/resources/" title="Resources" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
   </aside>
   </section>
 </section>
