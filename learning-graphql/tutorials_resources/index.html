@@ -15,8 +15,6 @@
 <link href="/css/auto-complete.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
 
-	<link href="/theme-flex/variant-blue.css" rel="stylesheet">
-
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
 <script type="text/javascript">
@@ -24,399 +22,350 @@
 </script>
 
 <meta name="description" content="All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here.">
-<meta name="author" content="tgX ByXTG">
+<meta name="author" content="TravelgateX ByXTG">
 <link href="/css/tgx.css" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
   <body data-url="/learning-graphql/tutorials_resources/">
+    <div class="mo-header fixed-top">
+    <div class="top-header">
+        <nav class="navbar navbar-toggleable-sm navbar-light bg-primary flex-row align-items-center">
+            <a class="navbar-brand" href="/">
+                <img src="/images/xtg_logo.svg">
+            </a>
+            <div class="iso-input-search hidden-xs-down">
+                <div class="ico-label">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <input data-search-input class="form-control"  id="search-by" type="text" placeholder="">
+                <script type="text/javascript" src="/js/lunr.min.js"></script>
+                <script type="text/javascript" src="/js/auto-complete.js"></script>
+                <script type="text/javascript">
+                    
+                    var baseurl = "\/";
+                    
+                </script>
+                <script type="text/javascript" src="/js/search.js"></script>
+            </div>
+            <ul class="navbar-nav flex-row ml-auto">
     
-      <header>
-  <div class="logo">
+            </ul>
+        </nav>
+    </div>
+</div>
     
-	
-  
-    <p><img src="/images/header-logo.png" alt="XTG Logo" /></p>
+    <div class="container main">
+      <div class="row">
+        <div class="menu-left sticky">
+            <nav class="menu-nav material-box">
+  <ul class="topics">
+        <li data-nav-id="/the-basics/" class="dd-item">
 
-  
-
-  </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-    <section id="shortcuts">
-            <li class="" role="">
-                <a href="https://api.travelgatex.com" target="_blank" rel="noopener"><i class='fa fa-github'></i> GraphQL Playground</a>
-            </li>
-    </section>
-</header>
-<section class="main hbox space-between">
-  <nav>
-    <ul class="topics">
-          <li data-nav-id="/" class="dd-item">
-          <a href="/">
-            <i class="fa fa-fw fa-home"></i>
+            <a href="/the-basics/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                The Basics
+            </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
-          </li>
-    <li data-nav-id="/plattform/" class="dd-item">
-      <a href="/plattform/">
-        <span>The Basics</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-      <li data-nav-id="/plattform/overview/plattform-overview/" class="dd-item">
-        <a href="/plattform/overview/plattform-overview/">
-          <span>Overview</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/graphql-api/" class="dd-item">
-      <a href="/graphql-api/">
-        <span>GraphQL API</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-      <li data-nav-id="/graphql-api/overview/" class="dd-item">
-        <a href="/graphql-api/overview/">
-          <span>Overview</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/graphql-api/relay/" class="dd-item">
-        <a href="/graphql-api/relay/">
-          <span>Relay</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/graphql-api/custom-scalar-types/" class="dd-item">
-        <a href="/graphql-api/custom-scalar-types/">
-          <span>Custom Scalar Types</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/graphql-api/travelgatex-graphql-api/" class="dd-item">
-        <a href="/graphql-api/travelgatex-graphql-api/">
-          <span>Using the API</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/product/" class="dd-item">
-      <a href="/product/">
-        <span>Products</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-    <li data-nav-id="/product/connectx/" class="dd-item">
-      <a href="/product/connectx/">
-        <span>ConnectX</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-      <li data-nav-id="/product/connectx/what-is-connectx/" class="dd-item">
-        <a href="/product/connectx/what-is-connectx/">
-          <span>What&#39;s ConnectX</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-    <li data-nav-id="/product/connectx/hotel/" class="dd-item">
-      <a href="/product/connectx/hotel/">
-        <span>Hotel</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-    <li data-nav-id="/product/connectx/hotel/quickstarts/" class="dd-item">
-      <a href="/product/connectx/hotel/quickstarts/">
-        <span>Quickstarts</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-      <li data-nav-id="/product/connectx/hotel/quickstarts/using-playground/" class="dd-item">
-        <a href="/product/connectx/hotel/quickstarts/using-playground/">
-          <span>Quickstart Using Playground</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/product/connectx/hotel/howtos/" class="dd-item">
-      <a href="/product/connectx/hotel/howtos/">
-        <span>How-to Guides</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-      <li data-nav-id="/product/connectx/hotel/howtos/howto-book/" class="dd-item">
-        <a href="/product/connectx/hotel/howtos/howto-book/">
-          <span>Book</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/product/connectx/hotel/concepts/" class="dd-item">
-      <a href="/product/connectx/hotel/concepts/">
-        <span>Concepts</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-      <li data-nav-id="/product/connectx/hotel/concepts/accesses-supplier-context/" class="dd-item">
-        <a href="/product/connectx/hotel/concepts/accesses-supplier-context/">
-          <span>Accesses, Suppliers and Context</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/product/connectx/hotel/concepts/book-transactions/" class="dd-item">
-        <a href="/product/connectx/hotel/concepts/book-transactions/">
-          <span>Book Transactions</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/product/connectx/hotel/concepts/operative-transactions/" class="dd-item">
-        <a href="/product/connectx/hotel/concepts/operative-transactions/">
-          <span>Operative Transactions</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/product/connectx/hotel/concepts/data-transactions/" class="dd-item">
-        <a href="/product/connectx/hotel/concepts/data-transactions/">
-          <span>Data Transactions</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/product/connectx/hotel/concepts/plugins/" class="dd-item">
-        <a href="/product/connectx/hotel/concepts/plugins/">
-          <span>Plugins</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/product/connectx/hotel/reference/" class="dd-item">
-      <a href="/product/connectx/hotel/reference/">
-        <span>Reference</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-      <li data-nav-id="/product/connectx/hotel/reference/api-reference/" class="dd-item">
-        <a href="/product/connectx/hotel/reference/api-reference/">
-          <span>API Reference</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/product/connectx/hotel/resources/" class="dd-item">
-      <a href="/product/connectx/hotel/resources/">
-        <span>Resources</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-      <li data-nav-id="/product/connectx/hotel/resources/quotas-limits/" class="dd-item">
-        <a href="/product/connectx/hotel/resources/quotas-limits/">
-          <span>Quotas &amp; Limits</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/product/connectx/hotel/resources/release-notes/" class="dd-item">
-        <a href="/product/connectx/hotel/resources/release-notes/">
-          <span>Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-        </ul>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/product/connectx/flight/" class="dd-item">
-      <a href="/product/connectx/flight/">
-        <span>Flight</span><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/product/mappea/" class="dd-item">
-      <a href="/product/mappea/">
-        <span>Mappea</span><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-    </li>
-    <li data-nav-id="/product/stats/" class="dd-item">
-      <a href="/product/stats/">
-        <span>Stats</span><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-    </li>
-    <li data-nav-id="/product/insights/" class="dd-item">
-      <a href="/product/insights/">
-        <span>Insights</span><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/admin/" class="dd-item">
-      <a href="/admin/">
-        <span>Admin</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-    <li data-nav-id="/admin/resources/" class="dd-item">
-      <a href="/admin/resources/">
-        <span>Resources</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-      <li data-nav-id="/admin/resources/common-resources/" class="dd-item">
-        <a href="/admin/resources/common-resources/">
-          <span>Common Resources</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/admin/security/" class="dd-item">
-      <a href="/admin/security/">
-        <span>Security</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-      <li data-nav-id="/admin/security/authentication/" class="dd-item">
-        <a href="/admin/security/authentication/">
-          <span>Authentication</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/admin/security/authorization/" class="dd-item">
-        <a href="/admin/security/authorization/">
-          <span>Authorization</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-        </ul>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/learning-graphql/" class="dd-item parent">
-      <a href="/learning-graphql/">
-        <span>Learning GraphQL</span>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </a>
-        <ul>
-      <li data-nav-id="/learning-graphql/overview/" class="dd-item">
-        <a href="/learning-graphql/overview/">
-          <span>GraphQL Overview</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/learning-graphql/basic_concepts/" class="dd-item">
-        <a href="/learning-graphql/basic_concepts/">
-          <span>Basic Concepts</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/learning-graphql/thinking_in_graphql/" class="dd-item">
-        <a href="/learning-graphql/thinking_in_graphql/">
-          <span>Thinking in GraphQL</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
-        <a href="/learning-graphql/tooling/">
-          <span>Tooling</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/learning-graphql/tutorials_resources/" class="dd-item active">
-        <a href="/learning-graphql/tutorials_resources/">
-          <span>Tutorials &amp; Resources</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-        </ul>
-    </li>
+            <ul>
+          <li data-nav-id="/the-basics/overview/plattform-overview/" class="dd-item">
+            <a href="/the-basics/overview/plattform-overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/the-basics/resources/" class="dd-item">
+
+            <a href="/the-basics/resources/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Resources
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/the-basics/resources/common-resources/" class="dd-item">
+            <a href="/the-basics/resources/common-resources/">
+              <span style="padding-left: 8px;">Common Resources</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/the-basics/security/" class="dd-item">
+
+            <a href="/the-basics/security/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Security
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/the-basics/security/authentication/" class="dd-item">
+            <a href="/the-basics/security/authentication/">
+              <span style="padding-left: 8px;">Authentication</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/the-basics/security/authorization/" class="dd-item">
+            <a href="/the-basics/security/authorization/">
+              <span style="padding-left: 8px;">Authorization</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/api/" class="dd-item">
+
+            <a href="/api/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                API
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/api/graphql-api/" class="dd-item">
+            <a href="/api/graphql-api/">
+              <span style="padding-left: 8px;">GraphQL Implementation</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/api/using-api/" class="dd-item">
+            <a href="/api/using-api/">
+              <span style="padding-left: 8px;">Using the API</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/products/" class="dd-item">
+
+            <a href="/products/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Products
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+        <li data-nav-id="/products/connectx/" class="dd-item">
+
+            <a href="#" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                ConnectX
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/products/connectx/overview/" class="dd-item">
+            <a href="/products/connectx/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/products/connectx/hotel/" class="dd-item">
+
+            <a href="/products/connectx/hotel/" class="">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Hotel
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+        <li data-nav-id="/products/connectx/hotel/quickstarts/" class="dd-item">
+
+            <a href="/products/connectx/hotel/quickstarts/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Quickstarts
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/products/connectx/hotel/quickstarts/using-playground/" class="dd-item">
+            <a href="/products/connectx/hotel/quickstarts/using-playground/">
+              <span style="padding-left: 8px;">Quickstart Using Playground</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/products/connectx/hotel/howtos/" class="dd-item">
+
+            <a href="/products/connectx/hotel/howtos/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                How-to Guides
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/products/connectx/hotel/howtos/howto-book/" class="dd-item">
+            <a href="/products/connectx/hotel/howtos/howto-book/">
+              <span style="padding-left: 8px;">Book</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/products/connectx/hotel/concepts/" class="dd-item">
+
+            <a href="/products/connectx/hotel/concepts/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Concepts
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/products/connectx/hotel/concepts/accesses-supplier-context/" class="dd-item">
+            <a href="/products/connectx/hotel/concepts/accesses-supplier-context/">
+              <span style="padding-left: 8px;">Accesses, Suppliers and Context</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/products/connectx/hotel/concepts/book-transactions/" class="dd-item">
+            <a href="/products/connectx/hotel/concepts/book-transactions/">
+              <span style="padding-left: 8px;">Book Transactions</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/products/connectx/hotel/concepts/operative-transactions/" class="dd-item">
+            <a href="/products/connectx/hotel/concepts/operative-transactions/">
+              <span style="padding-left: 8px;">Operative Transactions</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/products/connectx/hotel/concepts/data-transactions/" class="dd-item">
+            <a href="/products/connectx/hotel/concepts/data-transactions/">
+              <span style="padding-left: 8px;">Data Transactions</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/products/connectx/hotel/concepts/plugins/" class="dd-item">
+            <a href="/products/connectx/hotel/concepts/plugins/">
+              <span style="padding-left: 8px;">Plugins</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/products/connectx/hotel/reference/" class="dd-item">
+
+            <a href="/products/connectx/hotel/reference/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Reference
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/products/connectx/hotel/reference/api-reference/" class="dd-item">
+            <a href="/products/connectx/hotel/reference/api-reference/">
+              <span style="padding-left: 8px;">API Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/products/connectx/hotel/resources/" class="dd-item">
+
+            <a href="/products/connectx/hotel/resources/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Resources
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/products/connectx/hotel/resources/quotas-limits/" class="dd-item">
+            <a href="/products/connectx/hotel/resources/quotas-limits/">
+              <span style="padding-left: 8px;">Quotas &amp; Limits</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/products/connectx/hotel/resources/release-notes/" class="dd-item">
+            <a href="/products/connectx/hotel/resources/release-notes/">
+              <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/products/connectx/flight/" class="dd-item">
+
+            <a href="/products/connectx/flight/" class="directory">
+       
+            <span>
+                Flight
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+        </li>
+            </ul>
+        </li>
+          <li data-nav-id="/products/mappea/mapea/" class="dd-item">
+            <a href="/products/mappea/mapea/">
+              <span style="padding-left: 8px;">Mappea</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/products/stats/stats/" class="dd-item">
+            <a href="/products/stats/stats/">
+              <span style="padding-left: 8px;">Stats</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/products/insights/insights/" class="dd-item">
+            <a href="/products/insights/insights/">
+              <span style="padding-left: 8px;">Insights</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/learning-graphql/" class="dd-item parent">
+
+            <a href="/learning-graphql/" class="directory">
+       
+            <span>
+                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
+                Learning GraphQL
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/learning-graphql/overview/" class="dd-item">
+            <a href="/learning-graphql/overview/">
+              <span style="padding-left: 8px;">GraphQL Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/learning-graphql/basic_concepts/" class="dd-item">
+            <a href="/learning-graphql/basic_concepts/">
+              <span style="padding-left: 8px;">Basic Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/learning-graphql/thinking_in_graphql/" class="dd-item">
+            <a href="/learning-graphql/thinking_in_graphql/">
+              <span style="padding-left: 8px;">Thinking in GraphQL</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
+            <a href="/learning-graphql/tooling/">
+              <span style="padding-left: 8px;">Tooling</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/learning-graphql/tutorials_resources/" class="dd-item active">
+            <a href="/learning-graphql/tutorials_resources/">
+              <span style="padding-left: 8px;">Tutorials &amp; Resources</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+    
+        
+      
+  </ul>
+</nav>
 
 
+<script type="text/javascript">
+  $(document).ready(()=>{
+    $('.directory').click((event)=>{
+      if($(event.currentTarget.parentElement).hasClass("parent")){
+        $(event.currentTarget.parentElement).removeClass("parent")
+        
+      }else{
+        event.currentTarget.parentElement.setAttribute("class","dd-item parent"); 
+      }
+     return false;
+    })
+  })
 
-
-    </ul>
-
-    <section class="footer"><center>
-
-<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download vjeantet/hugo-theme-docdock on GitHub">Download</a>
-
-
-<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock" data-icon="octicon-star" data-show-count="false" aria-label="Star vjeantet/hugo-theme-docdock on GitHub">Star</a>
-
-
-<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork vjeantet/hugo-theme-docdock on GitHub">Fork</a>
-
-</center>
-
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-    </section>
-  </nav>
-  <section class="page">
-    <section id="nav-select">
-      <center>Navigation : 
-            <select onchange="javascript:location.href = this.value;">
-              
-    <option value="/plattform/" >
-   The Basics</option>
-      <option value="/plattform/overview/plattform-overview/" >- Overview</option>
-    <option value="/graphql-api/" >
-   GraphQL API</option>
-      <option value="/graphql-api/overview/" >- Overview</option>
-      <option value="/graphql-api/relay/" >- Relay</option>
-      <option value="/graphql-api/custom-scalar-types/" >- Custom Scalar Types</option>
-      <option value="/graphql-api/travelgatex-graphql-api/" >- Using the API</option>
-    <option value="/product/" >
-   Products</option>
-    <option value="/product/connectx/" >
-  - 
-   ConnectX</option>
-      <option value="/product/connectx/what-is-connectx/" >-- What&#39;s ConnectX</option>
-    <option value="/product/connectx/hotel/" >
-  -- 
-   Hotel</option>
-    <option value="/product/connectx/hotel/quickstarts/" >
-  --- 
-   Quickstarts</option>
-      <option value="/product/connectx/hotel/quickstarts/using-playground/" >---- Quickstart Using Playground</option>
-    <option value="/product/connectx/hotel/howtos/" >
-  --- 
-   How-to Guides</option>
-      <option value="/product/connectx/hotel/howtos/howto-book/" >---- Book</option>
-    <option value="/product/connectx/hotel/concepts/" >
-  --- 
-   Concepts</option>
-      <option value="/product/connectx/hotel/concepts/accesses-supplier-context/" >---- Accesses, Suppliers and Context</option>
-      <option value="/product/connectx/hotel/concepts/book-transactions/" >---- Book Transactions</option>
-      <option value="/product/connectx/hotel/concepts/operative-transactions/" >---- Operative Transactions</option>
-      <option value="/product/connectx/hotel/concepts/data-transactions/" >---- Data Transactions</option>
-      <option value="/product/connectx/hotel/concepts/plugins/" >---- Plugins</option>
-    <option value="/product/connectx/hotel/reference/" >
-  --- 
-   Reference</option>
-      <option value="/product/connectx/hotel/reference/api-reference/" >---- API Reference</option>
-    <option value="/product/connectx/hotel/resources/" >
-  --- 
-   Resources</option>
-      <option value="/product/connectx/hotel/resources/quotas-limits/" >---- Quotas &amp; Limits</option>
-      <option value="/product/connectx/hotel/resources/release-notes/" >---- Release Notes</option>
-    <option value="/product/connectx/flight/" >
-  -- 
-   Flight</option>
-    <option value="/product/mappea/" >
-  - 
-   Mappea</option>
-    <option value="/product/stats/" >
-  - 
-   Stats</option>
-    <option value="/product/insights/" >
-  - 
-   Insights</option>
-    <option value="/admin/" >
-   Admin</option>
-    <option value="/admin/resources/" >
-  - 
-   Resources</option>
-      <option value="/admin/resources/common-resources/" >-- Common Resources</option>
-    <option value="/admin/security/" >
-  - 
-   Security</option>
-      <option value="/admin/security/authentication/" >-- Authentication</option>
-      <option value="/admin/security/authorization/" >-- Authorization</option>
-    <option value="/learning-graphql/" >
-   Learning GraphQL</option>
-      <option value="/learning-graphql/overview/" >- GraphQL Overview</option>
-      <option value="/learning-graphql/basic_concepts/" >- Basic Concepts</option>
-      <option value="/learning-graphql/thinking_in_graphql/" >- Thinking in GraphQL</option>
-      <option value="/learning-graphql/tooling/" >- Tooling</option>
-      <option value="/learning-graphql/tutorials_resources/"  selected>- Tutorials &amp; Resources</option>
-
-
-
-            </select></center>
-    </section>
-    <aside>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
-          <span data-search-clear=""><i class="fa fa-close"></i></span>
+</script>
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <script type="text/javascript">
-          
-              var baseurl = "\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-    </aside>
-    <article>
-    <h1>Tutorials &amp; Resources</h1>
-    
-    
-    
+        <div class="content-center">
+          <div class="material-box p-4">
+            <h1 class="pageTitle">Tutorials &amp; Resources</h1>
+            
+
+
     
 
 <p>The GraphQL ecosystem is growing <em>fast</em>. Apart from facebook&rsquo;s and Graphql.org&rsquo;s official documentation, each day as more and more development teams embrace the technology new blog posts, articles, tutorials, videos and learning material in general is published online.</p>
@@ -466,62 +415,27 @@ role="alert"><strong>TODO: Falta chicha!!</strong></div>
 </script>
 
 
-    
-    
-        </article>
-  <aside class="footline">
-  	
-
-  	
-
-	
-
-  	<div class="github-link">
-  		<a href="https://github.com/travelgateX/documentation-site/edit/master/content/learning-graphql/tutorials_resources.md" target="blank"><i class="fa fa-code-fork"></i>
-        Edit page</a>
+          </div>
+        </div>
+        <div class="menu-right">
+          <div>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
     </div>
-  </aside>
-  <aside class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/learning-graphql/tooling/" title="Tooling"> <i class="fa fa-chevron-left"></i></a>
-    <a class="nav nav-next" href="/learning-graphql/overview/" title="GraphQL Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
-  </aside>
-  </section>
-</section>
-<footer>
-	<div>
-
-
-  
-    <p>Lorem ipsum dolor sit amet.</p>
-
-  
-
-
-
-	</div>
-</footer>
-
-<script src="/js/clipboard.min.js"></script>
-<script src="/js/featherlight.min.js"></script>
-
-<script src="/js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-<script src="/theme-flex/script.js"></script>
     
-
-    
-    
-
-    
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106994170-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-106994170-2');
-</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </body>
 </html>

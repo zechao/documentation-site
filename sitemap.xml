@@ -3,59 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/product/connectx/hotel/reference/api-reference/</loc>
+    <loc>/products/connectx/hotel/reference/api-reference/</loc>
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/concepts/accesses-supplier-context/</loc>
+    <loc>/products/connectx/hotel/concepts/accesses-supplier-context/</loc>
   </url>
   
   <url>
-    <loc>/admin/security/authentication/</loc>
+    <loc>/the-basics/security/authentication/</loc>
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/howtos/howto-book/</loc>
+    <loc>/products/connectx/hotel/howtos/howto-book/</loc>
   </url>
   
   <url>
-    <loc>/admin/resources/common-resources/</loc>
+    <loc>/the-basics/resources/common-resources/</loc>
   </url>
   
   <url>
-    <loc>/graphql-api/overview/</loc>
+    <loc>/products/connectx/</loc>
   </url>
   
   <url>
-    <loc>/plattform/overview/plattform-overview/</loc>
+    <loc>/api/graphql-api/</loc>
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/quickstarts/using-playground/</loc>
+    <loc>/products/connectx/overview/</loc>
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/resources/quotas-limits/</loc>
+    <loc>/the-basics/overview/plattform-overview/</loc>
   </url>
   
   <url>
-    <loc>/plattform/</loc>
+    <loc>/products/connectx/hotel/quickstarts/using-playground/</loc>
   </url>
   
   <url>
-    <loc>/product/connectx/what-is-connectx/</loc>
+    <loc>/products/connectx/hotel/resources/quotas-limits/</loc>
   </url>
   
   <url>
-    <loc>/admin/security/authorization/</loc>
+    <loc>/the-basics/</loc>
   </url>
   
   <url>
-    <loc>/product/connectx/</loc>
+    <loc>/api/</loc>
   </url>
   
   <url>
-    <loc>/graphql-api/</loc>
+    <loc>/the-basics/security/authorization/</loc>
   </url>
   
   <url>
@@ -63,11 +63,19 @@
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/quickstarts/</loc>
+    <loc>/products/connectx/hotel/</loc>
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/resources/release-notes/</loc>
+    <loc>/products/connectx/hotel/quickstarts/</loc>
+  </url>
+  
+  <url>
+    <loc>/products/connectx/hotel/resources/release-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>/api/using-api/</loc>
   </url>
   
   <url>
@@ -75,51 +83,39 @@
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/concepts/book-transactions/</loc>
+    <loc>/products/connectx/hotel/concepts/book-transactions/</loc>
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/howtos/</loc>
+    <loc>/products/connectx/hotel/howtos/</loc>
   </url>
   
   <url>
-    <loc>/product/mappea/</loc>
+    <loc>/products/</loc>
   </url>
   
   <url>
-    <loc>/product/</loc>
+    <loc>/products/connectx/hotel/concepts/</loc>
   </url>
   
   <url>
-    <loc>/graphql-api/relay/</loc>
+    <loc>/products/mappea/mapea/</loc>
   </url>
   
   <url>
-    <loc>/admin/</loc>
+    <loc>/products/connectx/hotel/concepts/operative-transactions/</loc>
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/concepts/</loc>
+    <loc>/the-basics/resources/</loc>
   </url>
   
   <url>
-    <loc>/graphql-api/custom-scalar-types/</loc>
+    <loc>/the-basics/security/</loc>
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/concepts/operative-transactions/</loc>
-  </url>
-  
-  <url>
-    <loc>/admin/resources/</loc>
-  </url>
-  
-  <url>
-    <loc>/admin/security/</loc>
-  </url>
-  
-  <url>
-    <loc>/product/stats/</loc>
+    <loc>/products/stats/stats/</loc>
   </url>
   
   <url>
@@ -127,15 +123,7 @@
   </url>
   
   <url>
-    <loc>/graphql-api/travelgatex-graphql-api/</loc>
-  </url>
-  
-  <url>
-    <loc>/product/connectx/hotel/concepts/data-transactions/</loc>
-  </url>
-  
-  <url>
-    <loc>/product/connectx/hotel/</loc>
+    <loc>/products/connectx/hotel/concepts/data-transactions/</loc>
   </url>
   
   <url>
@@ -143,11 +131,11 @@
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/concepts/plugins/</loc>
+    <loc>/products/connectx/hotel/concepts/plugins/</loc>
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/reference/</loc>
+    <loc>/products/connectx/hotel/reference/</loc>
   </url>
   
   <url>
@@ -155,7 +143,7 @@
   </url>
   
   <url>
-    <loc>/product/connectx/hotel/resources/</loc>
+    <loc>/products/connectx/hotel/resources/</loc>
   </url>
   
   <url>
@@ -163,11 +151,11 @@
   </url>
   
   <url>
-    <loc>/product/connectx/flight/</loc>
+    <loc>/products/connectx/flight/</loc>
   </url>
   
   <url>
-    <loc>/product/insights/</loc>
+    <loc>/products/insights/insights/</loc>
   </url>
   
   <url>
