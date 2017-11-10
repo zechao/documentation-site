@@ -27,7 +27,7 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/quickstarts/using-playground/</loc>
+    <loc>/products/connectx/hotel/quickstart/</loc>
   </url>
   
   <url>
@@ -51,7 +51,7 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/quickstarts/</loc>
+    <loc>/getting-started/quickstart/</loc>
   </url>
   
   <url>
@@ -59,15 +59,11 @@
   </url>
   
   <url>
-    <loc>/getting-started/the-basics/</loc>
-  </url>
-  
-  <url>
     <loc>/learning-graphql/basic_concepts/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/concepts/book-transactions/</loc>
+    <loc>/products/connectx/hotel/concepts/booking-flow/</loc>
   </url>
   
   <url>
@@ -91,11 +87,11 @@
   </url>
   
   <url>
-    <loc>/products/mappea/mapea/</loc>
+    <loc>/products/connectx/hotel/concepts/management-flow/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/concepts/operative-transactions/</loc>
+    <loc>/products/mappea/mapea/</loc>
   </url>
   
   <url>
@@ -115,11 +111,11 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/concepts/data-transactions/</loc>
+    <loc>/getting-started/api/</loc>
   </url>
   
   <url>
-    <loc>/getting-started/graphql-travelgatex/</loc>
+    <loc>/products/connectx/hotel/concepts/content/</loc>
   </url>
   
   <url>

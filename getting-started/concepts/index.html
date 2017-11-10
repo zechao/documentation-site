@@ -38,7 +38,7 @@
                 <div class="ico-label">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
-                <input data-search-input class="form-control"  id="search-by" type="text" placeholder="">
+                <input data-search-input class="form-control"  id="search-by" type="text" placeholder="Search docs...">
                 <script type="text/javascript" src="/js/lunr.min.js"></script>
                 <script type="text/javascript" src="/js/auto-complete.js"></script>
                 <script type="text/javascript">
@@ -62,7 +62,7 @@
   <ul class="topics">
         <li data-nav-id="/getting-started/" class="dd-item parent">
 
-            <a href="/getting-started/" class="directory">
+            <a href="/getting-started/" class="">
        
             <span>
                     <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
@@ -70,9 +70,9 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/getting-started/the-basics/" class="dd-item">
-            <a href="/getting-started/the-basics/">
-              <span style="padding-left: 8px;">The Basics</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/getting-started/quickstart/" class="dd-item">
+            <a href="/getting-started/quickstart/">
+              <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/getting-started/concepts/" class="dd-item active">
@@ -85,9 +85,9 @@
               <span style="padding-left: 8px;">Security</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/getting-started/graphql-travelgatex/" class="dd-item">
-            <a href="/getting-started/graphql-travelgatex/">
-              <span style="padding-left: 8px;">GraphQL and TravelgateX</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/getting-started/api/" class="dd-item">
+            <a href="/getting-started/api/">
+              <span style="padding-left: 8px;">API</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
@@ -155,21 +155,10 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-        <li data-nav-id="/products/connectx/hotel/quickstarts/" class="dd-item">
-
-            <a href="/products/connectx/hotel/quickstarts/" class="directory">
-       
-            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
-                Quickstarts
-            </span><i class="fa fa-circle-thin read-icon"></i>
-          </a>
-            <ul>
-          <li data-nav-id="/products/connectx/hotel/quickstarts/using-playground/" class="dd-item">
-            <a href="/products/connectx/hotel/quickstarts/using-playground/">
-              <span style="padding-left: 8px;">Quickstart Using Playground</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/products/connectx/hotel/quickstart/" class="dd-item">
+            <a href="/products/connectx/hotel/quickstart/">
+              <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
-        </li>
-            </ul>
         </li>
         <li data-nav-id="/products/connectx/hotel/howtos/" class="dd-item">
 
@@ -201,19 +190,19 @@
               <span style="padding-left: 8px;">Accesses, Suppliers and Context</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/products/connectx/hotel/concepts/book-transactions/" class="dd-item">
-            <a href="/products/connectx/hotel/concepts/book-transactions/">
-              <span style="padding-left: 8px;">Book Transactions</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/products/connectx/hotel/concepts/booking-flow/" class="dd-item">
+            <a href="/products/connectx/hotel/concepts/booking-flow/">
+              <span style="padding-left: 8px;">Booking Flow</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/products/connectx/hotel/concepts/operative-transactions/" class="dd-item">
-            <a href="/products/connectx/hotel/concepts/operative-transactions/">
-              <span style="padding-left: 8px;">Operative Transactions</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/products/connectx/hotel/concepts/management-flow/" class="dd-item">
+            <a href="/products/connectx/hotel/concepts/management-flow/">
+              <span style="padding-left: 8px;">Manamgement Flow</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/products/connectx/hotel/concepts/data-transactions/" class="dd-item">
-            <a href="/products/connectx/hotel/concepts/data-transactions/">
-              <span style="padding-left: 8px;">Data Transactions</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/products/connectx/hotel/concepts/content/" class="dd-item">
+            <a href="/products/connectx/hotel/concepts/content/">
+              <span style="padding-left: 8px;">Content</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/products/connectx/hotel/concepts/plugins/" class="dd-item">
@@ -369,12 +358,11 @@ For the full reasoning behind working with GraphQL please click <a href="/learni
 
 <h2 id="partner">Partner</h2>
 
-<p>A <em>Partner</em> is someone or <em>something</em> that can interact with any TravelgateX APIs or apps. It can be either a user (person) or an API key.</p>
+<p>A <em>Partner</em> is someone or <em>something</em> that can interact with any TravelgateX APIs or apps. It can be either a <em>User</em>, which identifies a person, or <em>Service Account</em> which identifies an applicattion.</p>
 
-<h2 id="resources">Resources</h2>
+<h2 id="entities">Entities</h2>
 
-<p>Resources are entities that define common objects in all our API domains.
-We have 4 <em>Resources</em>:</p>
+<p>Entities or core resources are entities that define common objects in all our API domains.</p>
 
 <h3 id="1-supplier">1. Supplier</h3>
 
@@ -386,7 +374,7 @@ We have 4 <em>Resources</em>:</p>
 
 <h3 id="3-context">3. Context</h3>
 
-<p>A <em>Context</em> is one or more <em>Suppliers</em> which use the same <em>Integration</em>.</p>
+<p>A <em>Context</em> is one or more <em>Suppliers</em> which use the same <em>codes</em>.</p>
 
 <h2 id="organization">Organization</h2>
 
@@ -433,7 +421,7 @@ role="alert"><strong>TODO: Falta diseño del modelo de datos!!</strong></div>
 <ul>
 <li><a href="#graphql-api">GraphQL API</a></li>
 <li><a href="#partner">Partner</a></li>
-<li><a href="#resources">Resources</a>
+<li><a href="#entities">Entities</a>
 <ul>
 <li><a href="#1-supplier">1. Supplier</a></li>
 <li><a href="#2-access">2. Access</a></li>

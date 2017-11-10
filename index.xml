@@ -52,11 +52,11 @@ GraphQL Gateway ConnectX is the first-in-the-industry travel API completely base
     </item>
     
     <item>
-      <title>Quickstart Using Playground</title>
-      <link>/products/connectx/hotel/quickstarts/using-playground/</link>
+      <title>Quickstart</title>
+      <link>/products/connectx/hotel/quickstart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/quickstarts/using-playground/</guid>
+      <guid>/products/connectx/hotel/quickstart/</guid>
       <description>This page shows you how to perform basic hotel book using GraphQL Playground.
 Before you begin  Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key.  Search Hotel  Click on search tab Modify Query Variables with valid dates and send the request.  Quote Hotel  Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.</description>
     </item>
@@ -91,24 +91,24 @@ Straight from the horse&amp;rsquo;s mouth:  A GraphQL query is a string that is 
     </item>
     
     <item>
+      <title>Quickstart</title>
+      <link>/getting-started/quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/getting-started/quickstart/</guid>
+      <description>Become a TravelgateX Partner The first step towards building your next travel API is to become a TravelgateX registered partner.
+At this moment, please contact us in order to become a partner.
+We will be publishing a registration website so each developer can register for an account with us. Please bear with us.
+Communicate with GraphQL Server To communicate with the GraphQL server, you&amp;rsquo;ll need an access token with the right scopes.</description>
+    </item>
+    
+    <item>
       <title>Release Notes</title>
       <link>/products/connectx/hotel/resources/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/products/connectx/hotel/resources/release-notes/</guid>
       <description>This page documents production updates to connectX Hotel. We recommend that connectX hotel developers periodically check this list for any new announcements.</description>
-    </item>
-    
-    <item>
-      <title>The Basics</title>
-      <link>/getting-started/the-basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/getting-started/the-basics/</guid>
-      <description>Become a TravelgateX Partner The first step towards building your next travel API is to become a TravelgateX registered partner.
-At this moment, please contact us in order to become a partner.
-We will be publishing a registration website so each developer can register for an account with us. Please bear with us.
-Create your API key To communicate with the GraphQL server, you&amp;rsquo;ll need an access token with the right scopes.</description>
     </item>
     
     <item>
@@ -119,15 +119,16 @@ Create your API key To communicate with the GraphQL server, you&amp;rsquo;ll nee
       <guid>/learning-graphql/basic_concepts/</guid>
       <description>Queries and Mutations  At its simplest, GraphQL is about asking for specific fields on objects. Let&amp;rsquo;s start by looking at a very simple query and the result we get when we run it http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com
  There are 2 basic operations in GraphQL schemas:
-Queries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com Just like a RESTful Get method, queries query the system. This operation reads values from the server using a Graph Object and gets a JSON as a response.</description>
+Queries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com
+Just like a RESTful Get method, queries query the system. This operation reads values from the server using a Graph Object and gets a JSON as a response.</description>
     </item>
     
     <item>
-      <title>Book Transactions</title>
-      <link>/products/connectx/hotel/concepts/book-transactions/</link>
+      <title>Booking Flow</title>
+      <link>/products/connectx/hotel/concepts/booking-flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/concepts/book-transactions/</guid>
+      <guid>/products/connectx/hotel/concepts/booking-flow/</guid>
       <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a supplier.
 Search Performs an hotel availability search over 1 or more supplier accesses
 Depending supplier, search operations implitiy use supplier&amp;rsquo;s cache.
@@ -164,24 +165,24 @@ GraphQL API TravelgateX is the first-in-the-industry travel API completely based
     </item>
     
     <item>
+      <title>Manamgement Flow</title>
+      <link>/products/connectx/hotel/concepts/management-flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/products/connectx/hotel/concepts/management-flow/</guid>
+      <description> Manage operations can be used in order to operate above supplier&amp;rsquo;s bookings.
+Cancel Performs a supplier booking cancellation.
+Operation { &amp;quot;mutation&amp;quot;: { &amp;quot;hotelCancel&amp;quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a supplier booking list or detail.
+Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  booking  </description>
+    </item>
+    
+    <item>
       <title>Mappea</title>
       <link>/products/mappea/mapea/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/products/mappea/mapea/</guid>
       <description>  </description>
-    </item>
-    
-    <item>
-      <title>Operative Transactions</title>
-      <link>/products/connectx/hotel/concepts/operative-transactions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/products/connectx/hotel/concepts/operative-transactions/</guid>
-      <description> Operative transactions can be used in order to operate above supplier&amp;rsquo;s bookings.
-Cancel Performs a supplier booking cancellation.
-Operation { &amp;quot;mutation&amp;quot;: { &amp;quot;hotelCancel&amp;quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a supplier booking list or detail.
-Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  booking  </description>
     </item>
     
     <item>
@@ -215,24 +216,23 @@ Every request to TravelgateX GraphQL API must carry an Authorization header with
     </item>
     
     <item>
-      <title>Data Transactions</title>
-      <link>/products/connectx/hotel/concepts/data-transactions/</link>
+      <title>API</title>
+      <link>/getting-started/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/concepts/data-transactions/</guid>
-      <description></description>
+      <guid>/getting-started/api/</guid>
+      <description>Using the API The two types of allowed operations in TravelgateX GraphQL API are:
+ Queries Mutations  For more information about using a GraphQL API click here.
+Making Requests Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls. There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use cURL or any other HTTP-speaking library.</description>
     </item>
     
     <item>
-      <title>GraphQL and TravelgateX</title>
-      <link>/getting-started/graphql-travelgatex/</link>
+      <title>Content</title>
+      <link>/products/connectx/hotel/concepts/content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/getting-started/graphql-travelgatex/</guid>
-      <description>Using the API The two types of allowed operations in TravelgateX GraphQL API are:
- Queries Mutations  For more information about using a GraphQL API click here.
-Examples We share GraphQL Playgrounds with common scenarios using products. Playgrounds are shared in product reference sections, for example you can use ConnectX Hotel Playground
-It&amp;rsquo;s important to use the correct Headers. If you want to use test headers, insert &amp;quot;Authorization&amp;quot;:&amp;quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&amp;quot;</description>
+      <guid>/products/connectx/hotel/concepts/content/</guid>
+      <description></description>
     </item>
     
     <item>
