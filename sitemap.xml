@@ -11,15 +11,7 @@
   </url>
   
   <url>
-    <loc>/the-basics/security/authentication/</loc>
-  </url>
-  
-  <url>
     <loc>/products/connectx/hotel/howtos/howto-book/</loc>
-  </url>
-  
-  <url>
-    <loc>/the-basics/resources/common-resources/</loc>
   </url>
   
   <url>
@@ -27,15 +19,11 @@
   </url>
   
   <url>
-    <loc>/api/graphql-api/</loc>
+    <loc>/getting-started/</loc>
   </url>
   
   <url>
     <loc>/products/connectx/overview/</loc>
-  </url>
-  
-  <url>
-    <loc>/the-basics/overview/plattform-overview/</loc>
   </url>
   
   <url>
@@ -47,15 +35,11 @@
   </url>
   
   <url>
-    <loc>/the-basics/</loc>
+    <loc>/what-to-build/</loc>
   </url>
   
   <url>
-    <loc>/api/</loc>
-  </url>
-  
-  <url>
-    <loc>/the-basics/security/authorization/</loc>
+    <loc>/what-to-build/build-an-ota/</loc>
   </url>
   
   <url>
@@ -75,7 +59,7 @@
   </url>
   
   <url>
-    <loc>/api/using-api/</loc>
+    <loc>/getting-started/the-basics/</loc>
   </url>
   
   <url>
@@ -87,11 +71,19 @@
   </url>
   
   <url>
+    <loc>/what-to-build/build-sales-dashboard/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/concepts/</loc>
+  </url>
+  
+  <url>
     <loc>/products/connectx/hotel/howtos/</loc>
   </url>
   
   <url>
-    <loc>/products/</loc>
+    <loc>/what-to-build/build-mapping-solution/</loc>
   </url>
   
   <url>
@@ -107,11 +99,11 @@
   </url>
   
   <url>
-    <loc>/the-basics/resources/</loc>
+    <loc>/products/</loc>
   </url>
   
   <url>
-    <loc>/the-basics/security/</loc>
+    <loc>/getting-started/security/</loc>
   </url>
   
   <url>
@@ -127,7 +119,7 @@
   </url>
   
   <url>
-    <loc>/learning-graphql/</loc>
+    <loc>/getting-started/graphql-travelgatex/</loc>
   </url>
   
   <url>
@@ -156,6 +148,14 @@
   
   <url>
     <loc>/products/insights/insights/</loc>
+  </url>
+  
+  <url>
+    <loc>/learning-graphql/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/playground/</loc>
   </url>
   
   <url>
