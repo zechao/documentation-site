@@ -25,7 +25,7 @@
 	"title": "ConnectX",
 	"tags": [],
 	"description": "",
-	"content": "  Overview \n Hotel \n Flight \n "
+	"content": "  Overview Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Hotel \n Flight \n "
 },
 {
 	"uri": "/getting-started/",
@@ -60,7 +60,7 @@
 	"title": "What To Build",
 	"tags": [],
 	"description": "",
-	"content": " What you can build on TravelgateX\u0026rsquo;s platform  Build An OTA  Build Your Own Full Fledged OTA  Build Sales Dashboard \n Build Mapping Solution \n "
+	"content": " What you can build on TravelgateX\u0026rsquo;s platform  Build An OTA  Build Your Own Full Fledged OTA  Build Sales Dashboard  Build Your Sales Dashboard  Build Mapping Solution  Build Your Own Mapping Solution  "
 },
 {
 	"uri": "/what-to-build/build-an-ota/",
@@ -165,7 +165,7 @@
 	"title": "Products",
 	"tags": [],
 	"description": "",
-	"content": "  ConnectX  Overview Hotel Flight  Mappea   Stats   Insights \n "
+	"content": "  ConnectX Overview Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Mappea   Stats \n Insights \n "
 },
 {
 	"uri": "/getting-started/security/",
