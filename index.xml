@@ -99,7 +99,7 @@ Straight from the horse&amp;rsquo;s mouth:  A GraphQL query is a string that is 
       <description>Become a TravelgateX Partner The first step towards building your next travel API is to become a TravelgateX registered partner.
 At this moment, please contact us in order to become a partner.
 We will be publishing a registration website so each developer can register for an account with us. Please bear with us.
-Communicate with GraphQL Server To communicate with the GraphQL server, you&amp;rsquo;ll need an access token with the right scopes.</description>
+Product Quick Start Although there&amp;rsquo;s only one endpoint, our GraphQL API models all the products and services we offer.</description>
     </item>
     
     <item>
@@ -223,7 +223,8 @@ Every request to TravelgateX GraphQL API must carry an Authorization header with
       <guid>/getting-started/api/</guid>
       <description>Using the API The two types of allowed operations in TravelgateX GraphQL API are:
  Queries Mutations  For more information about using a GraphQL API click here.
-Making Requests Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls. There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use cURL or any other HTTP-speaking library.</description>
+GraphQL Endpoint One of the great things we love about GraphQL is that there&amp;rsquo;s only one single endpoint. Use this endpoint for all operations you want to perform:
+https://api.travelgatex.com Communicate with GraphQL Server To communicate with the GraphQL server, you&amp;rsquo;ll need an access token with the right scopes.</description>
     </item>
     
     <item>

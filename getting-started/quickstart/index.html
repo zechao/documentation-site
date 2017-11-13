@@ -353,30 +353,7 @@
 
 <p>We will be publishing a registration website so each developer can register for an account with us. Please bear with us.</p>
 
-<h2 id="communicate-with-graphql-server">Communicate with GraphQL Server</h2>
-
-<p>To communicate with the GraphQL server, you&rsquo;ll need an access token with the right scopes.</p>
-
-<p>This access token could be an <a href="/admin/security/authentication/#api-keys">API Key</a> or a <a href="/admin/security/authentication/#json-web-tokens">JSON Web Token</a>, and the correct way to send it to GraphQL server is via HTTP Header:</p>
-
-<ul>
-<li>API key: <code>&quot;Authorization: Apikey xxxxxxxxx&quot;</code></li>
-<li>JWT: <code>&quot;Authorization: Bearer xxxxxxxxx&quot;</code></li>
-</ul>
-
-<p>Follow the steps in <a href="/admin/security/authentication/#creating-an-access-token">Creating an access token</a> to create a token.</p>
-
-<h3 id="graphql-endpoint">GraphQL Endpoint</h3>
-
-<p>One of the great things we love about GraphQL is that there&rsquo;s only one single endpoint. Use this endpoint for all operations you want to perform:</p>
-
-<div class="alert 
-alert-warning"
- 
-role="alert"><a href="https://api.travelgatex.com">https://api.travelgatex.com</a></div>
-
-
-<h2 id="product-specific-quick-start">Product Specific Quick Start</h2>
+<h2 id="product-quick-start">Product Quick Start</h2>
 
 <p>Although there&rsquo;s only one endpoint, our GraphQL API models all the products and services we offer. Please navigate to the desired product documentation in order to start building your app.</p>
 
@@ -432,6 +409,7 @@ role="alert"><a href="https://api.travelgatex.com">https://api.travelgatex.com</
 </script>
 
 
+    
           </div>
         </div>
         <div class="menu-right">
@@ -441,11 +419,7 @@ role="alert"><a href="https://api.travelgatex.com">https://api.travelgatex.com</
 <li>
 <ul>
 <li><a href="#become-a-travelgatex-partner">Become a TravelgateX Partner</a></li>
-<li><a href="#communicate-with-graphql-server">Communicate with GraphQL Server</a>
-<ul>
-<li><a href="#graphql-endpoint">GraphQL Endpoint</a></li>
-</ul></li>
-<li><a href="#product-specific-quick-start">Product Specific Quick Start</a></li>
+<li><a href="#product-quick-start">Product Quick Start</a></li>
 <li><a href="#get-engaged">Get Engaged</a>
 <ul>
 <li><a href="#documentation">Documentation</a></li>
@@ -461,6 +435,13 @@ role="alert"><a href="https://api.travelgatex.com">https://api.travelgatex.com</
       </div>
     </div>
     
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/featherlight.min.js"></script>
+    
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script src="/theme-flex/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
