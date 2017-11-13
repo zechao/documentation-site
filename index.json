@@ -25,14 +25,14 @@
 	"title": "ConnectX",
 	"tags": [],
 	"description": "",
-	"content": "  Overview Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Hotel \n Flight \n "
+	"content": "  Overview \n Hotel \n Flight \n "
 },
 {
 	"uri": "/getting-started/",
 	"title": "Getting Started",
 	"tags": [],
 	"description": "",
-	"content": " \t Quickstart Learn in 5 minutes\n   \t Concepts Understand concepts\n   \t Security Learn Platform Security\n   \t API \u0026amp; Reference API and Reference documentation\n   \t Playground Test inline\n    Voyager Visually explore our GraphQL API\n    "
+	"content": " \t Quickstart Learn in 5 minutes\n   \t Concepts Understand concepts\n   \t Security Learn Platform Security\n   \t API \u0026amp; Reference Reference Documentation\n   \t Playground Test inline\n    Voyager Visually explore our GraphQL API\n    "
 },
 {
 	"uri": "/products/connectx/overview/",
@@ -45,7 +45,7 @@
 	"uri": "/products/connectx/hotel/quickstart/",
 	"title": "Quickstart",
 	"tags": [],
-	"description": "",
+	"description": "Playground Quickstart",
 	"content": " This page shows you how to perform basic hotel book using GraphQL Playground.\nBefore you begin  Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key.  Search Hotel  Click on search tab Modify Query Variables with valid dates and send the request.  Quote Hotel  Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.  Book Hotel  Click on hotelBook tab In Query Variables modify optionRefId with optionRefId value returned in quote response and send the request. Next other information you can chek for book supplier reference  "
 },
 {
@@ -60,7 +60,7 @@
 	"title": "What To Build",
 	"tags": [],
 	"description": "",
-	"content": " What you can build on TravelgateX\u0026rsquo;s platform  Build An OTA  Build Your Own Full Fledged OTA  Build Sales Dashboard  Build Your Sales Dashboard  Build Mapping Solution  Build Your Own Mapping Solution  "
+	"content": " What you can build on TravelgateX\u0026rsquo;s platform  Build An OTA  Build Your Own Full Fledged OTA  Build Sales Dashboard \n Build Mapping Solution \n "
 },
 {
 	"uri": "/what-to-build/build-an-ota/",
@@ -81,7 +81,7 @@
 	"title": "Hotel",
 	"tags": [],
 	"description": "",
-	"content": "ConnectX Hotel connects you to multiple suppliers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel suppliers. ConnectX Hotel has been desined to be fast, reliable and offer strong performance.\n Quickstart This page shows you how to perform basic hotel book using GraphQL Playground. Before you begin Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key. Search Hotel Click on search tab Modify Query Variables with valid dates and send the request. Quote Hotel Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.\n How-to Guides \n Concepts Understand travelgateX concepts\n Reference \n Resources \n "
+	"content": "ConnectX Hotel connects you to multiple suppliers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel suppliers. ConnectX Hotel has been desined to be fast, reliable and offer strong performance.\n\t Quickstart Playground Quickstart\n   \t How-to Guides Perform specific tasks\n   \t Concepts Understand travelgateX concepts\n   \t Reference Reference Documentation\n   \t Resources Quotas, release notes\n    "
 },
 {
 	"uri": "/getting-started/quickstart/",
@@ -129,7 +129,7 @@
 	"uri": "/products/connectx/hotel/howtos/",
 	"title": "How-to Guides",
 	"tags": [],
-	"description": "",
+	"description": "Perform specific tasks",
 	"content": "How-to Guides\n"
 },
 {
@@ -165,7 +165,7 @@
 	"title": "Products",
 	"tags": [],
 	"description": "",
-	"content": "  ConnectX Overview Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Mappea   Stats \n Insights \n "
+	"content": "  ConnectX  Overview Hotel Flight  Mappea   Stats   Insights \n "
 },
 {
 	"uri": "/getting-started/security/",
@@ -192,7 +192,7 @@
 	"uri": "/getting-started/api/",
 	"title": "API &amp; Reference",
 	"tags": [],
-	"description": "API and Reference documentation",
+	"description": "Reference Documentation",
 	"content": " Using the API The two types of allowed operations in TravelgateX GraphQL API are:\n Queries Mutations  For more information about using a GraphQL API click here.\nGraphQL Endpoint One of the great things we love about GraphQL is that there\u0026rsquo;s only one single endpoint. Use this endpoint for all operations you want to perform:\nhttps://api.travelgatex.com Communicate with GraphQL Server To communicate with the GraphQL server, you\u0026rsquo;ll need an access token with the right scopes.\nThis access token could be an API Key or a JSON Web Token, and the correct way to send it to GraphQL server is via HTTP Header:\n API key: \u0026quot;Authorization: Apikey xxxxxxxxx\u0026quot; JWT: \u0026quot;Authorization: Bearer xxxxxxxxx\u0026quot;  Follow the steps in Creating an access token to create a token.\nMaking Requests Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls. There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use cURL or any other HTTP-speaking library.\nAll LIVE traffic MUST enable GZIP compression in the HTTP header Accept-Encoding: gzip  To query GraphQL using cURL, make a POST request with a JSON payload. The payload must contain a string called query:\ncurl -X\\ POST\\ -H \u0026quot;Content-Type: application/json\u0026quot; \\ -H \u0026quot;Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\u0026quot; \\ --data '{\u0026quot;query\u0026quot;:\u0026quot;{searchStatusService{code description}}\u0026quot;}' \\ --compressed \\ https://api.travelgatex.com  Examples We share GraphQL Playgrounds with common scenarios using products. Playgrounds are shared in product reference sections, for example you can use ConnectX Hotel Playground\nIt\u0026rsquo;s important to use the correct Headers. If you want to use test headers, insert \u0026quot;Authorization\u0026quot;:\u0026quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\u0026quot;\nYou can easily share your Queries with others by clicking on the \u0026ldquo;Share\u0026rdquo; button and sharing the generated link. You can think about GraphQL Bin like Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).\nConventions TravelgateX follow some conventions about schema definition:\n Relay schema requirements Definition of custom scalar types Token Based Authentication  Relay Implementation TravelgateX uses Relay schema requirements for own Resources. Other resources, like supplier search response, are not modeled with Relay practices.\nRelay helps travelgateX API in order to standarize:\n Standards for querying paginated collections (\u0026ldquo;Connections\u0026rdquo; and \u0026ldquo;Edges\u0026rdquo;) Identifying objects directly from the root of a query (avoiding long nested queries) Provide mutation input data  Custom Scalar Types TravelgateX GraphQL schema implementation defines custom scalar types.\nJSON Sometimes it\u0026rsquo;s necessary to manage arbitrary JSON values for loosely structured data. The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.\nIn queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: \u0026quot;{\\\u0026quot;int\\\u0026quot;: 1, \\\u0026quot;string\\\u0026quot;: \\\u0026quot;value\\\u0026quot;}\u0026quot;.\nDateTime The DateTime type represents DateTime values. A good example might be a transaction TimeSpan.\nIn queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: \u0026quot;2017-10-22T13:57:31.123Z\u0026quot;.\nDate The Date type represents Date values. A good example might be a Hotel CheckIn Date.\nIn queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: \u0026quot;2017-10-22\u0026quot;.\nURI The URI type represents a URI values. A good example mith be an Hotel Image URL.\nIn queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: \u0026quot;http:\\\\www.travelgatex.com\u0026quot;.\nCountry The Country type represents Country values. A good example might be a Passenger Nationality.\nIn queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes \u0026quot;ES\u0026quot;.\nLanguage The Language type represents Language values. A good example might be a Hotel Description Language.\nIn queries or mutations, Language fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes \u0026quot;es\u0026quot;.\nCurrency The Currenty type represents Currency values. A good example might be a Rate Price Currency.\nIn queries or mutations, Currency fields have to be specified in ISO 4217 format with enclosing double quotes \u0026quot;EUR\u0026quot;.\n"
 },
 {
@@ -220,7 +220,7 @@
 	"uri": "/products/connectx/hotel/reference/",
 	"title": "Reference",
 	"tags": [],
-	"description": "",
+	"description": "Reference Documentation",
 	"content": " Reference "
 },
 {
@@ -234,7 +234,7 @@
 	"uri": "/products/connectx/hotel/resources/",
 	"title": "Resources",
 	"tags": [],
-	"description": "",
+	"description": "Quotas, release notes",
 	"content": " Resources "
 },
 {
