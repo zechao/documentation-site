@@ -86,12 +86,17 @@
         </li>
           <li data-nav-id="/getting-started/api/" class="dd-item">
             <a href="/getting-started/api/">
-              <span style="padding-left: 8px;">API</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">API &amp; Reference</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/getting-started/voyager/" class="dd-item">
+            <a href="/getting-started/voyager/">
+              <span style="padding-left: 8px;">Voyager</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -282,6 +287,22 @@
         </li>
             </ul>
         </li>
+        <li data-nav-id="/data-automation/" class="dd-item">
+
+            <a href="/data-automation/" class="">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Data Automation
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/data-automation/overview/" class="dd-item">
+            <a href="/data-automation/overview/">
+              <span style="padding-left: 8px;"></span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
         <li data-nav-id="/learning-graphql/" class="dd-item">
 
             <a href="/learning-graphql/" class="directory">
@@ -330,8 +351,9 @@
     $('.directory').click((event)=>{
       if($(event.currentTarget.parentElement).hasClass("parent")){
         $(event.currentTarget.parentElement).removeClass("parent")
-        
+        $(event.currentTarget).find('.category-icon')[0].setAttribute("class","fa fa-angle-right fa-lg category-icon");
       }else{
+        $(event.currentTarget).find('.category-icon')[0].setAttribute("class","fa fa-angle-down fa-lg category-icon"); 
         event.currentTarget.parentElement.setAttribute("class","dd-item parent"); 
       }
      return false;

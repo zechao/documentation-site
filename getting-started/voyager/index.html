@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tooling | TravelgateX Documentation</title>
+    <title>Voyager | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
-<title>Tooling :: TravelgateX Documentation</title>
+<title>Voyager :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -21,13 +21,13 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here.">
+<meta name="description" content="With graphql-voyager you can visually explore our GraphQL API as an interactive graph.">
 <meta name="author" content="TravelgateX ByXTG">
 <link href="/css/tgx.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
-  <body data-url="/learning-graphql/tooling/">
+  <body data-url="/getting-started/voyager/">
     <div class="mo-header fixed-top">
     <div class="top-header">
         <nav class="navbar navbar-toggleable-sm navbar-light bg-primary flex-row align-items-center">
@@ -60,11 +60,12 @@
         <div class="menu-left sticky">
             <nav class="menu-nav material-box">
   <ul class="topics">
-        <li data-nav-id="/getting-started/" class="dd-item">
+        <li data-nav-id="/getting-started/" class="dd-item parent">
 
             <a href="/getting-started/" class="">
        
-            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+            <span>
+                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
                 Getting Started
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -94,7 +95,7 @@
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/getting-started/voyager/" class="dd-item">
+          <li data-nav-id="/getting-started/voyager/" class="dd-item active">
             <a href="/getting-started/voyager/">
               <span style="padding-left: 8px;">Voyager</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
@@ -299,12 +300,11 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/learning-graphql/" class="dd-item parent">
+        <li data-nav-id="/learning-graphql/" class="dd-item">
 
             <a href="/learning-graphql/" class="directory">
        
-            <span>
-                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
                 Learning GraphQL
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -324,7 +324,7 @@
               <span style="padding-left: 8px;">Thinking in GraphQL</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/learning-graphql/tooling/" class="dd-item active">
+          <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
             <a href="/learning-graphql/tooling/">
               <span style="padding-left: 8px;">Tooling</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
@@ -361,94 +361,37 @@
         </div>
         <div class="content-center">
           <div class="material-box p-4">
-            <h1 class="pageTitle">Tooling</h1>
+            <h1 class="pageTitle">Voyager</h1>
             
 
 
     
 
-<h2 id="tooling">Tooling</h2>
+<h2 id="view-our-graph">View our Graph!!</h2>
 
-<p>Please find below a collection of tools we&rsquo;ve been using to help us develop in GraphQL. We have curated this list with the different goals each of the tools is for:</p>
+<p>Using <a href="https://github.com/APIs-guru/graphql-voyager">graphql-voyager</a>, we represent <a href="https://api.travelgatex.com">our GraphQL API</a> as an interactive graph.</p>
 
-<h3 id="designing-schemas">Designing Schemas</h3>
+<h5 id="features">Features</h5>
 
-<p>We follow the <strong>Schema First</strong> methodology. There are many tools, the ones we tried and like most nowadays are:</p>
-
+<blockquote>
 <ul>
-<li>APIs Guru&rsquo;s graphql-faker: <a href="https://github.com/APIs-guru/graphql-faker">https://github.com/APIs-guru/graphql-faker</a></li>
+<li>Quick navigation on graph</li>
+<li>Left panel which provides more detailed information about every type</li>
+<li>&ldquo;Skip Relay&rdquo; option that simplifies graph by removing Relay wrapper classes</li>
+<li>Ability to choose any type to be a root of the graph</li>
 </ul>
+</blockquote>
 
-<div class="alert 
-alert-danger"
- 
-role="alert"><strong>TODO: Falta chicha!!</strong></div>
+<p>Open in a new tab <a href="https://api.travelgatex.com/voyager">here</a></p>
 
 
-<h3 id="go-packages">Go Packages</h3>
+<figure >
+    <a href="https://api.travelgatex.com/voyager">
+        <img src="/images/voyager.gif" alt="travelgateX Schema Documentation" />
+    </a>
+    
+</figure>
 
-<p>Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources. Also because of the ability to develop plugins. We&rsquo;ve used many libraries and packages to help us, hereby our list:</p>
-
-<ul>
-<li>Redis: <a href="https://godoc.org/github.com/garyburd/redigo/redis">https://godoc.org/github.com/garyburd/redigo/redis</a></li>
-</ul>
-
-<div class="alert 
-alert-danger"
- 
-role="alert"><strong>TODO: Falta chicha!!</strong></div>
-
-
-<h3 id="nodejs-packages">NodeJS Packages</h3>
-
-<p>Other pieces of our software are written in NodeJS. Mainly because some packages are wither not avaialble in Go, or because the Go package is not as performant as the Node alternative. These are the packages we use:</p>
-
-<div class="alert 
-alert-danger"
- 
-role="alert"><strong>TODO: Falta chicha!!</strong></div>
-
-
-<h3 id="schema-visualizers">Schema Visualizers</h3>
-
-<p>It&rsquo;s nice to be able to <em>see</em> your schema and be able to navigate through it.</p>
-
-<ul>
-<li><a href="https://apis.guru/graphql-voyager/">GraphQL Voyager</a> - Represent any GraphQL API as an interactive graph</li>
-</ul>
-
-<h3 id="documentation-generators">Documentation Generators</h3>
-
-<p>Generate beaultiful static documentation sites directly from schema or introspection query</p>
-
-<ul>
-<li><a href="https://graphql-docs.com/docs/?graphqlUrl=http://api-dev.travelgatex.com">Graph Docs</a></li>
-<li><a href="https://github.com/2fd/graphdoc">Graphdoc</a></li>
-</ul>
-
-<h3 id="graphql-clients">GraphQL Clients</h3>
-
-<p>Build, create and play with queries, it&rsquo;s fun!</p>
-
-<ul>
-<li><a href="https://insomnia.rest/">Insomnia</a>: our favorite &#9825;</li>
-<li><a href="https://github.com/graphcool/graphql-playground">graphql-playground</a>: favorite online client</li>
-<li><a href="https://github.com/graphql/graphiql">GraphiQL</a>: the original</li>
-</ul>
-
-<div class="alert 
-alert-danger"
- 
-role="alert"><strong>TODO: Falta chicha!!</strong></div>
-
-
-<h3 id="big-list">Big List</h3>
-
-<p>Very curated list full of different tools, resources, etc</p>
-
-<ul>
-<li><a href="https://github.com/chentsulin/awesome-graphql">Awesome GraphQL</a></li>
-</ul>
 
 
 <hr/>
@@ -476,15 +419,15 @@ role="alert"><strong>TODO: Falta chicha!!</strong></div>
 <ul>
 <li>
 <ul>
-<li><a href="#tooling">Tooling</a>
+<li><a href="#view-our-graph">View our Graph!!</a>
 <ul>
-<li><a href="#designing-schemas">Designing Schemas</a></li>
-<li><a href="#go-packages">Go Packages</a></li>
-<li><a href="#nodejs-packages">NodeJS Packages</a></li>
-<li><a href="#schema-visualizers">Schema Visualizers</a></li>
-<li><a href="#documentation-generators">Documentation Generators</a></li>
-<li><a href="#graphql-clients">GraphQL Clients</a></li>
-<li><a href="#big-list">Big List</a></li>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#features">Features</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
