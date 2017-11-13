@@ -32,7 +32,7 @@
 	"title": "Getting Started",
 	"tags": [],
 	"description": "",
-	"content": " \t Quickstart Learn in 5 minutes\n   \t Concepts Understand travelgateX concepts\n   \t Security Learn Platform Security\n   \t API \u0026amp; Reference API and Reference documentation\n   \t Playground Test inline\n    Voyager With graphql-voyager you can visually explore our GraphQL API as an interactive graph.\n    "
+	"content": " \t Quickstart Learn in 5 minutes\n   \t Concepts Understand concepts\n   \t Security Learn Platform Security\n   \t API \u0026amp; Reference API and Reference documentation\n   \t Playground Test inline\n    Voyager Visually explore our GraphQL API\n    "
 },
 {
 	"uri": "/products/connectx/overview/",
@@ -60,7 +60,7 @@
 	"title": "What To Build",
 	"tags": [],
 	"description": "",
-	"content": " What you can build on TravelgateX\u0026rsquo;s platform  Build An OTA  Build Your Own Full Fledged OTA  Build Sales Dashboard \n Build Mapping Solution \n "
+	"content": " What you can build on TravelgateX\u0026rsquo;s platform  Build An OTA  Build Your Own Full Fledged OTA  Build Sales Dashboard  Build Your Sales Dashboard  Build Mapping Solution  Build Your Own Mapping Solution  "
 },
 {
 	"uri": "/what-to-build/build-an-ota/",
@@ -122,7 +122,7 @@
 	"uri": "/getting-started/concepts/",
 	"title": "Concepts",
 	"tags": [],
-	"description": "Understand travelgateX concepts",
+	"description": "Understand concepts",
 	"content": " TravelgateX offers a set of Products ready to be integrated using a single GraphQL endpoint.\nGraphQL API TravelgateX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we\u0026rsquo;ve integrated too many of them. The problems with that technology are well-known and we won\u0026rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned.\nIt is a stable, secure and fault tolerant load balanced between many datacenters from 4 different cloud providers, namely Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime. For the full reasoning behind working with GraphQL please click here.\nFor explanation about using TravelgateX GraphQL API please click here.\nPartner A Partner is someone or something that can interact with any TravelgateX APIs or apps. It can be either a User, which identifies a person, or Service Account which identifies an applicattion.\nOrganization Each Partner belongs to one or more Organizations.\nAn Organization is made up of Partners, Resources, Settings, Permissions and other Metadata.\nProduct We organize our APIs by similarity and common features. A Product is an API domain which is available for the consumption of Resources.\nFor detailed Product information please click here.\nEntities Entities or core resources are entities that define common objects in all our API domains.\nSupplier A Supplier is a physical connection or integration to a third party provider.\nAccess An Access is a set of credentials and configuration in order to access a Supplier.\n"
 },
 {
@@ -165,7 +165,7 @@
 	"title": "Products",
 	"tags": [],
 	"description": "",
-	"content": "  ConnectX Overview Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Mappea   Stats   Insights \n "
+	"content": "  ConnectX Overview Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Mappea   Stats \n Insights \n "
 },
 {
 	"uri": "/getting-started/security/",
@@ -276,7 +276,7 @@
 	"uri": "/getting-started/voyager/",
 	"title": "Voyager",
 	"tags": [],
-	"description": "With graphql-voyager you can visually explore our GraphQL API as an interactive graph.",
+	"description": "Visually explore our GraphQL API",
 	"content": " View our Graph!! Using graphql-voyager, we represent our GraphQL API as an interactive graph.\nFeatures   Quick navigation on graph Left panel which provides more detailed information about every type \u0026ldquo;Skip Relay\u0026rdquo; option that simplifies graph by removing Relay wrapper classes Ability to choose any type to be a root of the graph   Open in a new tab here\n  "
 },
 {
