@@ -60,6 +60,14 @@
   </url>
   
   <url>
+    <loc>/products/connectx/hotel/concepts/plugins/validators/</loc>
+  </url>
+  
+  <url>
+    <loc>/products/connectx/hotel/concepts/plugins/aggregation/</loc>
+  </url>
+  
+  <url>
     <loc>/learning-graphql/basic_concepts/</loc>
   </url>
   
@@ -96,6 +104,10 @@
   </url>
   
   <url>
+    <loc>/products/connectx/hotel/concepts/plugins/mappings/</loc>
+  </url>
+  
+  <url>
     <loc>/products/</loc>
   </url>
   
@@ -121,6 +133,10 @@
   
   <url>
     <loc>/data-automation/</loc>
+  </url>
+  
+  <url>
+    <loc>/products/connectx/hotel/concepts/plugins/markup/</loc>
   </url>
   
   <url>

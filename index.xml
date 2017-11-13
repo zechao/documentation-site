@@ -112,6 +112,24 @@ Product Quick Start Although there&amp;rsquo;s only one endpoint, our GraphQL AP
     </item>
     
     <item>
+      <title>Validators</title>
+      <link>/products/connectx/hotel/concepts/plugins/validators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/products/connectx/hotel/concepts/plugins/validators/</guid>
+      <description> Validators  Validate Request  </description>
+    </item>
+    
+    <item>
+      <title>Aggregation</title>
+      <link>/products/connectx/hotel/concepts/plugins/aggregation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/products/connectx/hotel/concepts/plugins/aggregation/</guid>
+      <description> Aggregator Access  Price Aggregate  Aggregator  Price Aggregate  </description>
+    </item>
+    
+    <item>
       <title>Basic Concepts</title>
       <link>/learning-graphql/basic_concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -186,6 +204,15 @@ Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quo
     </item>
     
     <item>
+      <title>Mappings</title>
+      <link>/products/connectx/hotel/concepts/plugins/mappings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/products/connectx/hotel/concepts/plugins/mappings/</guid>
+      <description> Input Mapping  Mapping Hotel  Output Mapping  Mapping Room  </description>
+    </item>
+    
+    <item>
       <title>Security</title>
       <link>/getting-started/security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -237,12 +264,12 @@ https://api.travelgatex.com Communicate with GraphQL Server To communicate with 
     </item>
     
     <item>
-      <title>Plugins</title>
-      <link>/products/connectx/hotel/concepts/plugins/</link>
+      <title>Markup</title>
+      <link>/products/connectx/hotel/concepts/plugins/markup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/concepts/plugins/</guid>
-      <description> Validators  Validate Request  Mapping Input  Mapping Hotel  Mapping Output  Mapping Room  Processor Access  Markup  Aggregator Access  Price Aggregate  Aggregator  Price Aggregate  </description>
+      <guid>/products/connectx/hotel/concepts/plugins/markup/</guid>
+      <description> Processor Access  Markup  </description>
     </item>
     
     <item>
