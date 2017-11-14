@@ -10,7 +10,7 @@
 	"uri": "/products/connectx/hotel/concepts/accesses-supplier-context/",
 	"title": "Accesses, Suppliers and Context",
 	"tags": [],
-	"description": "",
+	"description": "Learn about Core Entities used in travelgateX",
 	"content": ""
 },
 {
@@ -25,7 +25,7 @@
 	"title": "ConnectX",
 	"tags": [],
 	"description": "",
-	"content": "  Overview Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Hotel \n Flight \n "
+	"content": "  Overview \n Hotel \n Flight \n "
 },
 {
 	"uri": "/getting-started/",
@@ -60,7 +60,7 @@
 	"title": "What To Build",
 	"tags": [],
 	"description": "",
-	"content": " What you can build on TravelgateX\u0026rsquo;s platform  Build An OTA  Build Your Own Full Fledged OTA  Build Sales Dashboard \n Build Mapping Solution \n "
+	"content": " What you can build on TravelgateX\u0026rsquo;s platform  Build An OTA  Build Your Own Full Fledged OTA  Build Sales Dashboard  Build Your Sales Dashboard  Build Mapping Solution  Build Your Own Mapping Solution  "
 },
 {
 	"uri": "/what-to-build/build-an-ota/",
@@ -122,7 +122,7 @@
 	"uri": "/products/connectx/hotel/concepts/booking-flow/",
 	"title": "Booking Flow",
 	"tags": [],
-	"description": "",
+	"description": "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation",
 	"content": " Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a supplier.\nSearch Performs an hotel availability search over 1 or more supplier accesses\nDepending supplier, search operations implitiy use supplier\u0026rsquo;s cache.\nOperation { \u0026quot;query\u0026quot;: { \u0026quot;search\u0026quot;: { \u0026quot;hotel\u0026quot;: { } } } }  PlayGround Samples  search  Quote Performs an hotel quote over an option returned in Search Response.\nOperation { \u0026quot;query\u0026quot;: { \u0026quot;quote\u0026quot;: { \u0026quot;hotel\u0026quot;: { } } } }  PlayGround Samples  quote  Book Performs a book or reservation over an option returned in Quote Response\nOperation { \u0026quot;mutation\u0026quot;: { \u0026quot;hotelBook\u0026quot;: { } } }  PlayGround Samples  hotelBook  "
 },
 {
@@ -158,13 +158,13 @@
 	"title": "Concepts",
 	"tags": [],
 	"description": "Understand travelgateX concepts",
-	"content": " Concepts Each and every supplier works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them.\nWe connect seemlessly to more than 600 suppliers.\n"
+	"content": " Concepts Each and every supplier works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them.\nWe connect seemlessly to more than 600 suppliers.\nAccesses, Suppliers and Context Learn about Core Entities used in travelgateX\n   Booking Flow Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n   Management Flow Learn about Management Flow. Cancellations and Booking List\n   Content Learn about how manage content data to manage in your site. Hotel, Boards, Categories...\n    "
 },
 {
 	"uri": "/products/connectx/hotel/concepts/management-flow/",
-	"title": "Manamgement Flow",
+	"title": "Management Flow",
 	"tags": [],
-	"description": "",
+	"description": "Learn about Management Flow. Cancellations and Booking List",
 	"content": " Manage operations can be used in order to operate above supplier\u0026rsquo;s bookings.\nCancel Performs a supplier booking cancellation.\nOperation { \u0026quot;mutation\u0026quot;: { \u0026quot;hotelCancel\u0026quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a supplier booking list or detail.\nOperation { \u0026quot;query\u0026quot;: { \u0026quot;booking\u0026quot;: { \u0026quot;hotel\u0026quot;: { } } } }  PlayGround Samples  booking  "
 },
 {
@@ -186,7 +186,7 @@
 	"title": "Products",
 	"tags": [],
 	"description": "",
-	"content": "  ConnectX Overview Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Mappea   Stats   Insights \n "
+	"content": "  ConnectX  Overview Hotel Flight  Mappea   Stats   Insights \n "
 },
 {
 	"uri": "/getting-started/security/",
@@ -220,7 +220,7 @@
 	"uri": "/products/connectx/hotel/concepts/content/",
 	"title": "Content",
 	"tags": [],
-	"description": "",
+	"description": "Learn about how manage content data to manage in your site. Hotel, Boards, Categories...",
 	"content": ""
 },
 {
@@ -242,7 +242,7 @@
 	"title": "Plugins",
 	"tags": [],
 	"description": "Additional logic to your App",
-	"content": "  Validators     Aggregation     Mappings     Markup     "
+	"content": " Validators    Aggregation    Mappings    Markup     "
 },
 {
 	"uri": "/products/connectx/hotel/reference/",
