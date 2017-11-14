@@ -25,7 +25,7 @@
 	"title": "ConnectX",
 	"tags": [],
 	"description": "",
-	"content": "  Overview \n Hotel \n Flight \n "
+	"content": "  Overview Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Hotel \n Flight \n "
 },
 {
 	"uri": "/getting-started/",
@@ -33,6 +33,13 @@
 	"tags": [],
 	"description": "",
 	"content": " \t Quickstart Learn in 5 minutes\n   \t Concepts Understand concepts\n   \t Security Learn Platform Security\n   \t API \u0026amp; Reference Reference Documentation\n   \t Playground Test inline\n   \t Voyager Visually explore our GraphQL API\n    "
+},
+{
+	"uri": "/data-automation/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "",
+	"content": " SFTP, or Secure File Transfer Protocol, is a network protocol that provides completely secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in Finance, Technology, and Consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.\nSecurity To ensure the security of your data, we adhere to the highest standards in data security. The advanced security measures we take include:\n Password-based authentication. IP Whitelisting: We whitelist the IP Addresses you will be accessing your SFTP server from to ensure you, and only you, have access. Anomaly Detection: To ensure no loss of data, we detect anomalies in your uploads to the SFTP server and warn you when an upload would significantly change your account. Encryption: Data is encrypted, keeping your information safe and private.  Setup To get your FTP Credential Details raise a customer care request in Jira Service Desk.\n"
 },
 {
 	"uri": "/products/connectx/overview/",
@@ -60,7 +67,7 @@
 	"title": "What To Build",
 	"tags": [],
 	"description": "",
-	"content": " What you can build on TravelgateX\u0026rsquo;s platform  Build An OTA  Build Your Own Full Fledged OTA  Build Sales Dashboard  Build Your Sales Dashboard  Build Mapping Solution  Build Your Own Mapping Solution  "
+	"content": " What you can build on TravelgateX\u0026rsquo;s platform  Build An OTA \n Build Sales Dashboard \n Build Mapping Solution \n "
 },
 {
 	"uri": "/what-to-build/build-an-ota/",
@@ -186,7 +193,7 @@
 	"title": "Products",
 	"tags": [],
 	"description": "",
-	"content": "  ConnectX  Overview Hotel Flight  Mappea   Stats   Insights \n "
+	"content": "  ConnectX Overview Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Mappea \n Stats \n Insights \n "
 },
 {
 	"uri": "/getting-started/security/",
@@ -228,7 +235,7 @@
 	"title": "Data Automation",
 	"tags": [],
 	"description": "",
-	"content": "   \n "
+	"content": ""
 },
 {
 	"uri": "/products/connectx/hotel/plugins/markup/",
@@ -317,13 +324,6 @@
 {
 	"uri": "/_header/",
 	"title": "header",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/data-automation/overview/",
-	"title": "",
 	"tags": [],
 	"description": "",
 	"content": ""
