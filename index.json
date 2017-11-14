@@ -25,14 +25,14 @@
 	"title": "ConnectX",
 	"tags": [],
 	"description": "",
-	"content": "  Overview \n Hotel \n Flight \n "
+	"content": "  Overview Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Hotel \n Flight \n "
 },
 {
 	"uri": "/getting-started/",
 	"title": "Getting Started",
 	"tags": [],
 	"description": "",
-	"content": " \t Quickstart Learn in 5 minutes\n   \t Concepts Understand concepts\n   \t Security Learn Platform Security\n   \t API \u0026amp; Reference Reference Documentation\n   \t Playground Test inline\n    Voyager Visually explore our GraphQL API\n    "
+	"content": " \t Quickstart Learn in 5 minutes\n   \t Concepts Understand concepts\n   \t Security Learn Platform Security\n   \t API \u0026amp; Reference Reference Documentation\n   \t Playground Test inline\n   \t Voyager Visually explore our GraphQL API\n    "
 },
 {
 	"uri": "/products/connectx/overview/",
@@ -81,7 +81,7 @@
 	"title": "Hotel",
 	"tags": [],
 	"description": "",
-	"content": "ConnectX Hotel connects you to multiple suppliers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel suppliers. ConnectX Hotel has been desined to be fast, reliable and offer strong performance.\n\t Quickstart Playground Quickstart\n   \t How-to Guides Perform specific tasks\n   \t Concepts Understand travelgateX concepts\n   \t Reference Reference Documentation\n   \t Resources Quotas, release notes\n    "
+	"content": "ConnectX Hotel connects you to multiple suppliers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel suppliers. ConnectX Hotel has been desined to be fast, reliable and offer strong performance.\n\t Quickstart Playground Quickstart\n   \t How-to Guides Perform specific tasks\n   \t Concepts Understand travelgateX concepts\n   \t Plugins Additional logic to your App\n   \t Reference Reference Documentation\n   \t Resources Quotas, release notes\n    "
 },
 {
 	"uri": "/getting-started/quickstart/",
@@ -98,14 +98,14 @@
 	"content": "This page documents production updates to connectX Hotel. We recommend that connectX hotel developers periodically check this list for any new announcements.\n"
 },
 {
-	"uri": "/products/connectx/hotel/concepts/plugins/validators/",
+	"uri": "/products/connectx/hotel/plugins/validators/",
 	"title": "Validators",
 	"tags": [],
 	"description": "",
 	"content": " Validators  Validate Request  "
 },
 {
-	"uri": "/products/connectx/hotel/concepts/plugins/aggregation/",
+	"uri": "/products/connectx/hotel/plugins/aggregation/",
 	"title": "Aggregation",
 	"tags": [],
 	"description": "",
@@ -175,7 +175,7 @@
 	"content": "  "
 },
 {
-	"uri": "/products/connectx/hotel/concepts/plugins/mappings/",
+	"uri": "/products/connectx/hotel/plugins/mappings/",
 	"title": "Mappings",
 	"tags": [],
 	"description": "",
@@ -186,7 +186,7 @@
 	"title": "Products",
 	"tags": [],
 	"description": "",
-	"content": "  ConnectX  Overview Hotel Flight  Mappea   Stats   Insights \n "
+	"content": "  ConnectX Overview Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way. Each and every layer discribed in the this figure is explained as follows: GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.\n Mappea   Stats   Insights \n "
 },
 {
 	"uri": "/getting-started/security/",
@@ -231,17 +231,17 @@
 	"content": "   \n "
 },
 {
-	"uri": "/products/connectx/hotel/concepts/plugins/markup/",
+	"uri": "/products/connectx/hotel/plugins/markup/",
 	"title": "Markup",
 	"tags": [],
 	"description": "",
 	"content": " Processor Access  Markup  "
 },
 {
-	"uri": "/products/connectx/hotel/concepts/plugins/",
+	"uri": "/products/connectx/hotel/plugins/",
 	"title": "Plugins",
 	"tags": [],
-	"description": "",
+	"description": "Additional logic to your App",
 	"content": "  Validators     Aggregation     Mappings     Markup     "
 },
 {

@@ -60,11 +60,11 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/concepts/plugins/validators/</loc>
+    <loc>/products/connectx/hotel/plugins/validators/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/concepts/plugins/aggregation/</loc>
+    <loc>/products/connectx/hotel/plugins/aggregation/</loc>
   </url>
   
   <url>
@@ -104,7 +104,7 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/concepts/plugins/mappings/</loc>
+    <loc>/products/connectx/hotel/plugins/mappings/</loc>
   </url>
   
   <url>
@@ -136,11 +136,11 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/concepts/plugins/markup/</loc>
+    <loc>/products/connectx/hotel/plugins/markup/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/concepts/plugins/</loc>
+    <loc>/products/connectx/hotel/plugins/</loc>
   </url>
   
   <url>
