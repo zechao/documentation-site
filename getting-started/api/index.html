@@ -95,10 +95,21 @@
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/getting-started/voyager/" class="dd-item">
-            <a href="/getting-started/voyager/">
-              <span style="padding-left: 8px;">Voyager</span><i class="fa fa-circle-thin read-icon"></i>
+        <li data-nav-id="/getting-started/resources/" class="dd-item">
+
+            <a href="/getting-started/resources/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Resources
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/getting-started/resources/release-notes/" class="dd-item">
+            <a href="/getting-started/resources/release-notes/">
+              <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
+        </li>
+            </ul>
         </li>
             </ul>
         </li>
@@ -414,7 +425,7 @@ alert-warning"
 role="alert"><a href="https://api.travelgatex.com">https://api.travelgatex.com</a></div>
 
 
-<h2 id="communicate-with-graphql-server">Communicate with GraphQL Server</h2>
+<h2 id="communicate-with-server">Communicate with Server</h2>
 
 <p>To communicate with the GraphQL server, you&rsquo;ll need an access token with the right scopes.</p>
 
@@ -451,6 +462,30 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
    --compressed \
    https://api.travelgatex.com
 </code></pre>
+
+<h2 id="view-the-graph">View the Graph</h2>
+
+<p>Using <a href="https://github.com/APIs-guru/graphql-voyager">graphql-voyager</a>, we represent <a href="https://api.travelgatex.com">our GraphQL API</a> as an interactive graph.</p>
+
+<blockquote>
+<ul>
+<li>Quick navigation on graph</li>
+<li>Left panel which provides more detailed information about every type</li>
+<li>&ldquo;Skip Relay&rdquo; option that simplifies graph by removing Relay wrapper classes</li>
+<li>Ability to choose any type to be a root of the graph</li>
+</ul>
+</blockquote>
+
+<p>Open in a new tab <a href="https://api.travelgatex.com/voyager">here</a></p>
+
+
+<figure >
+    <a href="https://api.travelgatex.com/voyager">
+        <img src="/images/voyager.gif" alt="travelgateX Schema Documentation" />
+    </a>
+    
+</figure>
+
 
 <h2 id="examples">Examples</h2>
 
@@ -558,8 +593,9 @@ Other resources, like supplier search response, are not modeled with Relay pract
 <ul>
 <li><a href="#using-the-api">Using the API</a></li>
 <li><a href="#graphql-endpoint">GraphQL Endpoint</a></li>
-<li><a href="#communicate-with-graphql-server">Communicate with GraphQL Server</a></li>
+<li><a href="#communicate-with-server">Communicate with Server</a></li>
 <li><a href="#making-requests">Making Requests</a></li>
+<li><a href="#view-the-graph">View the Graph</a></li>
 <li><a href="#examples">Examples</a></li>
 <li><a href="#conventions">Conventions</a>
 <ul>
