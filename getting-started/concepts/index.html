@@ -224,7 +224,7 @@
             <ul>
           <li data-nav-id="/hotelx/concepts/accesses-supplier-context/" class="dd-item">
             <a href="/hotelx/concepts/accesses-supplier-context/">
-              <span style="padding-left: 8px;">Accesses, Suppliers and Context</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Accesses, `Sellers` and Context</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/concepts/booking-flow/" class="dd-item">
@@ -494,31 +494,43 @@ For the full reasoning behind working with GraphQL please click <a href="/learni
 
 <h2 id="partner">Partner</h2>
 
-<p>A <em>Partner</em> is someone or <em>something</em> that can interact with any TravelgateX APIs or apps. It can be either a <em>User</em>, which identifies a person, or <em>Service Account</em> which identifies an applicattion.</p>
+<p>A <code>Partner</code> is someone or <code>something</code> that can interact with any TravelgateX APIs or apps. It can be either a <code>User</code>, which identifies a person, or <code>Service Account</code> which is identified by an API Key.</p>
 
 <h2 id="organization">Organization</h2>
 
-<p>Each <a href="#Partner"><em>Partner</em></a> belongs to one or more <em>Organizations</em>.</p>
+<p>Each <a href="#Partner"><code>Partner</code></a> belongs to one or more <code>Organizations</code>.</p>
 
-<p>An <em>Organization</em> is made up of <em>Partners</em>, <em>Resources</em>, <em>Settings</em>, <em>Permissions</em> and other <em>Metadata</em>.</p>
+<p>An <code>Organization</code> is made up of <code>Partners</code>, <code>Resources</code>, <code>Settings</code>, <code>Permissions</code> and other <code>Metadata</code>.</p>
 
 <h2 id="product">Product</h2>
 
-<p>We organize our APIs by similarity and common features. A <em>Product</em> is an API domain which is available for the consumption of <em>Resources</em>.</p>
+<p>We organize our APIs by similarity and common features. A <code>Product</code> is an API domain which is available for the consumption of <code>Resources</code>.</p>
 
-<p>For detailed <em>Product</em> information please click <a href="/products">here</a>.</p>
+<p>For detailed <code>Product</code> information please click <a href="/products">here</a>.</p>
 
 <h2 id="entities">Entities</h2>
 
-<p><em>Entities</em> or core resources are entities that define common objects in all our API domains.</p>
+<p><code>Entities</code> or core resources are entities that define common objects in all our API domains.</p>
 
-<h3 id="supplier">Supplier</h3>
+<h3 id="buyer">Buyer</h3>
 
-<p>A <em>Supplier</em> is a physical connection or <em>integration</em> to a third party provider.</p>
+<p>A <code>Buyer</code> is a <code>Partner</code> who is connected to TravelgateX in the demand side in order to <strong>buy</strong> travel products from <code>Sellers</code>.</p>
+
+<h3 id="seller">Seller</h3>
+
+<p>A <code>Seller</code> is a <code>Partner</code> who is connected to TravelgateX on the supply side in order to <strong>sell</strong> their product to connected <code>Buyers</code>Ma.</p>
+
+<h3 id="tech-platform">Tech Platform</h3>
+
+<p>Many <code>Partners</code>, <code>Buyers</code> <em>or</em> <code>Sellers</code> use a third party platform in order to <strong>buy</strong> <em>or</em> <strong>sell</strong> travel products. These are usually tech companies specialized in developing custom software to other companies.</p>
+
+<h3 id="context">Context</h3>
+
+<p>A <code>Context</code> refers to the <code>Seller</code> codes the request is using. It&rsquo;s a way of specifiying which <code>Seller</code> codes is being used so it can be transformed and standardized.</p>
 
 <h3 id="access">Access</h3>
 
-<p>An <em>Access</em> is a set of credentials <em>and</em> configuration in order to access a <em>Supplier</em>.</p>
+<p>An <code>Access</code> is a set of credentials <strong>and</strong> configuration in order to access a <code>Seller</code>.</p>
 
 
 
@@ -554,7 +566,10 @@ For the full reasoning behind working with GraphQL please click <a href="/learni
 <li><a href="#product">Product</a></li>
 <li><a href="#entities">Entities</a>
 <ul>
-<li><a href="#supplier">Supplier</a></li>
+<li><a href="#buyer">Buyer</a></li>
+<li><a href="#seller">Seller</a></li>
+<li><a href="#tech-platform">Tech Platform</a></li>
+<li><a href="#context">Context</a></li>
 <li><a href="#access">Access</a></li>
 </ul></li>
 </ul></li>

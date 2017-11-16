@@ -35,7 +35,7 @@ In queries or mutations, JSON fields have to be specified with enclosing double 
     </item>
     
     <item>
-      <title>Accesses, Suppliers and Context</title>
+      <title>Accesses, `Sellers` and Context</title>
       <link>/hotelx/concepts/accesses-supplier-context/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -88,7 +88,7 @@ Product Quick Start Although there&amp;rsquo;s only one endpoint, our GraphQL AP
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/overview/</guid>
-      <description>Overview HotelX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.
+      <description>Overview HotelX is the ultimate connectivity solution, it not only connects you to multiple Sellers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.
  Each and every layer discribed in the this figure is explained as follows:
 Business Logic We&amp;rsquo;ve added a new layer of business logic in front of the pure transformation API, very fast and totally scalable.</description>
     </item>
@@ -254,9 +254,9 @@ Just like a RESTful Get method, queries query the system. This operation reads v
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/concepts/booking-flow/</guid>
-      <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a supplier.
-Search Performs an hotel availability search over 1 or more supplier accesses
-Depending supplier, search operations implitiy use supplier&amp;rsquo;s cache.
+      <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.
+Search Performs an hotel availability search over 1 or more Seller accesses
+Depending Seller, search operations implitiy use supplier&amp;rsquo;s cache.
 Operation { &amp;quot;query&amp;quot;: { &amp;quot;search&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  search  Quote Performs an hotel quote over an option returned in Search Response.
 Operation { &amp;quot;query&amp;quot;: { &amp;quot;quote&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  quote  Book Performs a book or reservation over an option returned in Quote Response</description>
     </item>
@@ -298,9 +298,9 @@ Every request to TravelgateX GraphQL API must carry an Authorization header with
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/concepts/management-flow/</guid>
-      <description> Manage operations can be used in order to operate above supplier&amp;rsquo;s bookings.
-Cancel Performs a supplier booking cancellation.
-Operation { &amp;quot;mutation&amp;quot;: { &amp;quot;hotelCancel&amp;quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a supplier booking list or detail.
+      <description> Manage operations can be used in order to operate above Seller&amp;rsquo;s bookings.
+Cancel Performs a Seller booking cancellation.
+Operation { &amp;quot;mutation&amp;quot;: { &amp;quot;hotelCancel&amp;quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a Seller booking list or detail.
 Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  booking  </description>
     </item>
     
