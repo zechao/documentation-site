@@ -119,6 +119,10 @@
   </url>
   
   <url>
+    <loc>/platform/security/authenticating/</loc>
+  </url>
+  
+  <url>
     <loc>/what-to-build/build-mapping-solution/</loc>
   </url>
   
@@ -136,10 +140,6 @@
   
   <url>
     <loc>/products/mappea/mapea/</loc>
-  </url>
-  
-  <url>
-    <loc>/platform/security/overview/</loc>
   </url>
   
   <url>

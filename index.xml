@@ -236,6 +236,18 @@ GraphQL API TravelgateX is the first-in-the-industry travel API completely based
     </item>
     
     <item>
+      <title>Authenticating</title>
+      <link>/platform/security/authenticating/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/platform/security/authenticating/</guid>
+      <description>Introduction Products and Resources are granted to Partners belonging to Organizations.
+Authorized Partners can manage security rules to allow or deny Resources and Products.
+Authentication Authentication is the process of authorizing or making sure that the Partner is who is supposed to be. This can be ensured either by login credentials or by API Key.
+Every request to TravelgateX GraphQL API must carry an Authorization header with a JSON Web Token or API Key inside.</description>
+    </item>
+    
+    <item>
       <title>Build Mapping Solution</title>
       <link>/what-to-build/build-mapping-solution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -263,18 +275,6 @@ Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quo
       
       <guid>/products/mappea/mapea/</guid>
       <description>  </description>
-    </item>
-    
-    <item>
-      <title>Overview</title>
-      <link>/platform/security/overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/platform/security/overview/</guid>
-      <description>Introduction Products and Resources are granted to Partners belonging to Organizations.
-Authorized Partners can manage security rules to allow or deny Resources and Products.
-Authentication Authentication is the process of authorizing or making sure that the Partner is who is supposed to be. This can be ensured either by login credentials or by API Key.
-Every request to TravelgateX GraphQL API must carry an Authorization header with a JSON Web Token or API Key inside.</description>
     </item>
     
     <item>
