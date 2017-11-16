@@ -13,6 +13,17 @@
     
     <item>
       <title>API Reference</title>
+      <link>/hotelx/reference/api-reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/api-reference/</guid>
+      <description> This API reference is organized by graphql operations related to product.
+Query Operations Mutation Operations Documentation Schema documentation
+Samples  Search, Quote, Book, Cancel and Retrieve bookings  </description>
+    </item>
+    
+    <item>
+      <title>API Reference</title>
       <link>/platform/reference/api-reference/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -24,32 +35,78 @@ In queries or mutations, JSON fields have to be specified with enclosing double 
     </item>
     
     <item>
-      <title>API Reference</title>
-      <link>/products/connectx/hotel/reference/api-reference/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/products/connectx/hotel/reference/api-reference/</guid>
-      <description> This API reference is organized by graphql operations related to product.
-Query Operations Mutation Operations Documentation Schema documentation
-Samples  Search, Quote, Book, Cancel and Retrieve bookings  </description>
-    </item>
-    
-    <item>
       <title>Accesses, Suppliers and Context</title>
-      <link>/products/connectx/hotel/concepts/accesses-supplier-context/</link>
+      <link>/hotelx/concepts/accesses-supplier-context/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/concepts/accesses-supplier-context/</guid>
+      <guid>/hotelx/concepts/accesses-supplier-context/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Book</title>
-      <link>/products/connectx/hotel/howtos/howto-book/</link>
+      <link>/hotelx/howtos/howto-book/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/howtos/howto-book/</guid>
+      <guid>/hotelx/howtos/howto-book/</guid>
       <description>Flow to book</description>
+    </item>
+    
+    <item>
+      <title>Build An OTA</title>
+      <link>/platform/tutorials/ota-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/platform/tutorials/ota-site/</guid>
+      <description> Build Your Own Full Fledged OTA </description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/flightx/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/flightx/overview/</guid>
+      <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/getting-started/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/getting-started/overview/</guid>
+      <description>Become a TravelgateX Partner The first step towards building your next travel API is to become a TravelgateX registered partner.
+At this moment, please contact us in order to become a partner.
+We will be publishing a registration website so each developer can register for an account with us. Please bear with us.
+Product Quick Start Although there&amp;rsquo;s only one endpoint, our GraphQL API models all the products and services we offer.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/hotelx/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/overview/</guid>
+      <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/insights/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/insights/overview/</guid>
+      <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/mappea/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mappea/overview/</guid>
+      <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
     </item>
     
     <item>
@@ -58,21 +115,16 @@ Samples  Search, Quote, Book, Cancel and Retrieve bookings  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/platform/overview/</guid>
-      <description>Using the API The two types of allowed operations in TravelgateX GraphQL API are:
- Queries Mutations  For more information about using a GraphQL API click here.
-GraphQL Endpoint One of the great things we love about GraphQL is that there&amp;rsquo;s only one single endpoint. Use this endpoint for all operations you want to perform:
-https://api.travelgatex.com Communicate with Server To communicate with the GraphQL server, you&amp;rsquo;ll need an access token with the right scopes.</description>
+      <description>GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we&amp;rsquo;ve integrated too many of them. The problems with that technology are well-known and we won&amp;rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned. For the full reasoning behind working with GraphQL please click here.</description>
     </item>
     
     <item>
       <title>Overview</title>
-      <link>/products/connectx/overview/</link>
+      <link>/stats/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/overview/</guid>
-      <description>Overview ConnectX is the ultimate connectivity solution, it not only connects you to multiple suppliers, but also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.
- Each and every layer discribed in the this figure is explained as follows:
-GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs.</description>
+      <guid>/stats/overview/</guid>
+      <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
     </item>
     
     <item>
@@ -88,21 +140,11 @@ Product Quick Start Although there&amp;rsquo;s only one endpoint, our GraphQL AP
     </item>
     
     <item>
-      <title>Quickstart</title>
-      <link>/products/connectx/hotel/quickstart/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/products/connectx/hotel/quickstart/</guid>
-      <description>This page shows you how to perform basic hotel book using GraphQL Playground.
-Before you begin  Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key.  Search Hotel  Click on search tab Modify Query Variables with valid dates and send the request.  Quote Hotel  Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.</description>
-    </item>
-    
-    <item>
       <title>Quotas &amp; Limits</title>
-      <link>/products/connectx/hotel/resources/quotas-limits/</link>
+      <link>/hotelx/resources/quotas-limits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/resources/quotas-limits/</guid>
+      <guid>/hotelx/resources/quotas-limits/</guid>
       <description>ConnectX Hotel limits the maximum rate of requests adn graph deep. Specific policies vary depending on resource availability, user profile, service usage history, and other factors, and are subject to change without notice.</description>
     </item>
     
@@ -118,19 +160,19 @@ Security To ensure the security of your data, we adhere to the highest standards
     
     <item>
       <title>Validator</title>
-      <link>/products/connectx/hotel/plugins/validators/</link>
+      <link>/hotelx/plugins/validators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/plugins/validators/</guid>
+      <guid>/hotelx/plugins/validators/</guid>
       <description> Validators  Validate Request  </description>
     </item>
     
     <item>
-      <title>Build An OTA</title>
-      <link>/what-to-build/build-an-ota/</link>
+      <title>Build a Dashboard</title>
+      <link>/platform/tutorials/stats-dashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/what-to-build/build-an-ota/</guid>
+      <guid>/platform/tutorials/stats-dashboard/</guid>
       <description> Build Your Own Full Fledged OTA </description>
     </item>
     
@@ -147,12 +189,31 @@ Straight from the horse&amp;rsquo;s mouth:  A GraphQL query is a string that is 
     
     <item>
       <title>Mapping</title>
-      <link>/products/connectx/hotel/plugins/mappings/</link>
+      <link>/hotelx/plugins/mappings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/plugins/mappings/</guid>
+      <guid>/hotelx/plugins/mappings/</guid>
       <description> Map plugins
 Input Mapping  Mapping Hotel  Output Mapping  Mapping Room  </description>
+    </item>
+    
+    <item>
+      <title>Quickstart</title>
+      <link>/hotelx/quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/quickstart/</guid>
+      <description>This page shows you how to perform basic hotel book using GraphQL Playground.
+Before you begin  Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key.  Search Hotel  Click on search tab Modify Query Variables with valid dates and send the request.  Quote Hotel  Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.</description>
+    </item>
+    
+    <item>
+      <title>Release Notes</title>
+      <link>/hotelx/resources/release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/resources/release-notes/</guid>
+      <description>This page documents production updates to connectX Hotel. We recommend that connectX hotel developers periodically check this list for any new announcements.</description>
     </item>
     
     <item>
@@ -165,20 +226,11 @@ Input Mapping  Mapping Hotel  Output Mapping  Mapping Room  </description>
     </item>
     
     <item>
-      <title>Release Notes</title>
-      <link>/products/connectx/hotel/resources/release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/products/connectx/hotel/resources/release-notes/</guid>
-      <description>This page documents production updates to connectX Hotel. We recommend that connectX hotel developers periodically check this list for any new announcements.</description>
-    </item>
-    
-    <item>
       <title>Aggregation</title>
-      <link>/products/connectx/hotel/plugins/aggregation/</link>
+      <link>/hotelx/plugins/aggregation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/plugins/aggregation/</guid>
+      <guid>/hotelx/plugins/aggregation/</guid>
       <description> Aggregator Access  Price Aggregate  Aggregator  Price Aggregate  </description>
     </item>
     
@@ -196,24 +248,15 @@ Just like a RESTful Get method, queries query the system. This operation reads v
     
     <item>
       <title>Booking Flow</title>
-      <link>/products/connectx/hotel/concepts/booking-flow/</link>
+      <link>/hotelx/concepts/booking-flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/concepts/booking-flow/</guid>
+      <guid>/hotelx/concepts/booking-flow/</guid>
       <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a supplier.
 Search Performs an hotel availability search over 1 or more supplier accesses
 Depending supplier, search operations implitiy use supplier&amp;rsquo;s cache.
 Operation { &amp;quot;query&amp;quot;: { &amp;quot;search&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  search  Quote Performs an hotel quote over an option returned in Search Response.
 Operation { &amp;quot;query&amp;quot;: { &amp;quot;quote&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  quote  Book Performs a book or reservation over an option returned in Quote Response</description>
-    </item>
-    
-    <item>
-      <title>Build Sales Dashboard</title>
-      <link>/what-to-build/build-sales-dashboard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/what-to-build/build-sales-dashboard/</guid>
-      <description> Build Your Sales Dashboard </description>
     </item>
     
     <item>
@@ -248,42 +291,15 @@ Every request to TravelgateX GraphQL API must carry an Authorization header with
     </item>
     
     <item>
-      <title>Build Mapping Solution</title>
-      <link>/what-to-build/build-mapping-solution/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/what-to-build/build-mapping-solution/</guid>
-      <description> Build Your Own Mapping Solution </description>
-    </item>
-    
-    <item>
       <title>Management Flow</title>
-      <link>/products/connectx/hotel/concepts/management-flow/</link>
+      <link>/hotelx/concepts/management-flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/concepts/management-flow/</guid>
+      <guid>/hotelx/concepts/management-flow/</guid>
       <description> Manage operations can be used in order to operate above supplier&amp;rsquo;s bookings.
 Cancel Performs a supplier booking cancellation.
 Operation { &amp;quot;mutation&amp;quot;: { &amp;quot;hotelCancel&amp;quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a supplier booking list or detail.
 Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  booking  </description>
-    </item>
-    
-    <item>
-      <title>Mappea</title>
-      <link>/products/mappea/mapea/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/products/mappea/mapea/</guid>
-      <description>  </description>
-    </item>
-    
-    <item>
-      <title>Stats</title>
-      <link>/products/stats/stats/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/products/stats/stats/</guid>
-      <description>  </description>
     </item>
     
     <item>
@@ -297,19 +313,19 @@ Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quo
     
     <item>
       <title>Content</title>
-      <link>/products/connectx/hotel/concepts/content/</link>
+      <link>/hotelx/concepts/content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/concepts/content/</guid>
+      <guid>/hotelx/concepts/content/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Exchange</title>
-      <link>/products/connectx/hotel/plugins/converter/</link>
+      <link>/hotelx/plugins/converter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/plugins/converter/</guid>
+      <guid>/hotelx/plugins/converter/</guid>
       <description> Aggregator Access  Price Aggregate  Aggregator  Price Aggregate  </description>
     </item>
     
@@ -326,10 +342,10 @@ Designing Schemas We follow the Schema First methodology. There are many tools, 
     
     <item>
       <title>Markup</title>
-      <link>/products/connectx/hotel/plugins/markup/</link>
+      <link>/hotelx/plugins/markup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/connectx/hotel/plugins/markup/</guid>
+      <guid>/hotelx/plugins/markup/</guid>
       <description> Processor Access  Markup  </description>
     </item>
     
@@ -341,15 +357,6 @@ Designing Schemas We follow the Schema First methodology. There are many tools, 
       <guid>/learning-graphql/tutorials_resources/</guid>
       <description>The GraphQL ecosystem is growing fast. Apart from facebook&amp;rsquo;s and Graphql.org&amp;rsquo;s official documentation, each day as more and more development teams embrace the technology new blog posts, articles, tutorials, videos and learning material in general is published online.
 This list is intended to serve as a examples we&amp;rsquo;ve used and found useful when adopting the technology. We&amp;rsquo;ve separated between tutorials get-your-hands-dirty full action kind to resources, which are reading materials, podcasts or any other kind of documentation, written or not, which will help you to Think in GraphQL.</description>
-    </item>
-    
-    <item>
-      <title>Insights</title>
-      <link>/products/insights/insights/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/products/insights/insights/</guid>
-      <description>  </description>
     </item>
     
     <item>
@@ -368,6 +375,24 @@ This list is intended to serve as a examples we&amp;rsquo;ve used and found usef
       
       <guid>/_header/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/guion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guion/</guid>
+      <description>Getting Started GOAL: información basica para empezar a desarrollar
+Overview GOAL: Explicar el who, why, how de la plataforma
+ WHO: Equipos tecnicos para consumir servicios de travel
+ WHY: search &amp;amp; book travel multi-products &amp;amp; multi-source
+ WHY: Using the Storefront API, you can:
+ HOW: Plataforma: Multi-Producto &amp;amp; Multi-Source
+ HOW: Diagrama Platforma
+ HOW: Utilización de GraphQL: EndPoint único
+ WHY: Fast. Scalable. Reliable.
+ Resumen: Ventajas GraphQL</description>
     </item>
     
     <item>

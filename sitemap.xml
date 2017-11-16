@@ -3,23 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/hotelx/reference/api-reference/</loc>
+  </url>
+  
+  <url>
     <loc>/platform/reference/api-reference/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/reference/api-reference/</loc>
+    <loc>/hotelx/concepts/accesses-supplier-context/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/concepts/accesses-supplier-context/</loc>
+    <loc>/hotelx/howtos/howto-book/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/howtos/howto-book/</loc>
-  </url>
-  
-  <url>
-    <loc>/products/connectx/</loc>
+    <loc>/platform/tutorials/ota-site/</loc>
   </url>
   
   <url>
@@ -27,11 +27,31 @@
   </url>
   
   <url>
+    <loc>/flightx/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/insights/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/overview/</loc>
+  </url>
+  
+  <url>
     <loc>/platform/overview/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/overview/</loc>
+    <loc>/stats/overview/</loc>
   </url>
   
   <url>
@@ -39,11 +59,7 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/quickstart/</loc>
-  </url>
-  
-  <url>
-    <loc>/products/connectx/hotel/resources/quotas-limits/</loc>
+    <loc>/hotelx/resources/quotas-limits/</loc>
   </url>
   
   <url>
@@ -51,11 +67,11 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/plugins/validators/</loc>
+    <loc>/hotelx/plugins/validators/</loc>
   </url>
   
   <url>
-    <loc>/what-to-build/build-an-ota/</loc>
+    <loc>/platform/tutorials/stats-dashboard/</loc>
   </url>
   
   <url>
@@ -63,11 +79,7 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/</loc>
-  </url>
-  
-  <url>
-    <loc>/products/connectx/hotel/plugins/mappings/</loc>
+    <loc>/hotelx/plugins/mappings/</loc>
   </url>
   
   <url>
@@ -75,11 +87,15 @@
   </url>
   
   <url>
-    <loc>/platform/resources/release-notes/</loc>
+    <loc>/hotelx/quickstart/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/resources/release-notes/</loc>
+    <loc>/hotelx/resources/release-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>/platform/resources/release-notes/</loc>
   </url>
   
   <url>
@@ -87,7 +103,7 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/plugins/aggregation/</loc>
+    <loc>/hotelx/plugins/aggregation/</loc>
   </url>
   
   <url>
@@ -95,11 +111,7 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/concepts/booking-flow/</loc>
-  </url>
-  
-  <url>
-    <loc>/what-to-build/build-sales-dashboard/</loc>
+    <loc>/hotelx/concepts/booking-flow/</loc>
   </url>
   
   <url>
@@ -107,7 +119,11 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/howtos/</loc>
+    <loc>/hotelx/concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/</loc>
   </url>
   
   <url>
@@ -115,19 +131,7 @@
   </url>
   
   <url>
-    <loc>/what-to-build/</loc>
-  </url>
-  
-  <url>
     <loc>/platform/security/authenticating/</loc>
-  </url>
-  
-  <url>
-    <loc>/what-to-build/build-mapping-solution/</loc>
-  </url>
-  
-  <url>
-    <loc>/products/connectx/hotel/concepts/</loc>
   </url>
   
   <url>
@@ -135,15 +139,15 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/concepts/management-flow/</loc>
+    <loc>/flightx/</loc>
   </url>
   
   <url>
-    <loc>/products/mappea/mapea/</loc>
+    <loc>/hotelx/howtos/</loc>
   </url>
   
   <url>
-    <loc>/products/</loc>
+    <loc>/hotelx/concepts/management-flow/</loc>
   </url>
   
   <url>
@@ -151,7 +155,7 @@
   </url>
   
   <url>
-    <loc>/products/stats/stats/</loc>
+    <loc>/stats/</loc>
   </url>
   
   <url>
@@ -159,23 +163,19 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/concepts/content/</loc>
+    <loc>/hotelx/concepts/content/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/plugins/converter/</loc>
+    <loc>/hotelx/plugins/converter/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/plugins/</loc>
+    <loc>/insights/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/reference/</loc>
-  </url>
-  
-  <url>
-    <loc>/platform/resources/</loc>
+    <loc>/hotelx/plugins/</loc>
   </url>
   
   <url>
@@ -183,11 +183,23 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/plugins/markup/</loc>
+    <loc>/platform/tutorials/</loc>
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/resources/</loc>
+    <loc>/mappea/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/markup/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>/platform/resources/</loc>
   </url>
   
   <url>
@@ -195,11 +207,7 @@
   </url>
   
   <url>
-    <loc>/products/connectx/flight/</loc>
-  </url>
-  
-  <url>
-    <loc>/products/insights/insights/</loc>
+    <loc>/hotelx/resources/</loc>
   </url>
   
   <url>
@@ -214,6 +222,10 @@
   <url>
     <loc>/_header/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guion/</loc>
   </url>
   
   <url>
