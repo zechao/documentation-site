@@ -21,16 +21,17 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here.">
+<meta name="description" content="Learn Platform Security">
 <meta name="author" content="TravelgateX ByXTG">
 <link href="/css/tgx.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
-  <body data-url="/data-automation/overview/">
+  <body data-url="/platform/security/overview/">
     <div class="mo-header fixed-top">
     <div class="top-header">
         <nav class="navbar navbar-toggleable-sm navbar-light bg-primary flex-row align-items-center">
+            <i id="menu" class="fa fa-bars "></i>
             <a class="navbar-brand" href="/">
                 <img src="/images/xtg_logo.svg">
             </a>
@@ -57,8 +58,8 @@
     
     <div class="container main">
       <div class="row">
-        <div class="menu-left sticky">
-            <nav class="menu-nav material-box">
+        <div id="navbar" class="menu-left hidden-xs hidden-sm">
+            <nav  class="navbar navbar-default menu-nav material-box">
   <ul class="topics">
         <li data-nav-id="/getting-started/" class="dd-item">
 
@@ -79,32 +80,88 @@
               <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/getting-started/security/" class="dd-item">
-            <a href="/getting-started/security/">
-              <span style="padding-left: 8px;">Security</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/api/" class="dd-item">
-            <a href="/getting-started/api/">
-              <span style="padding-left: 8px;">API &amp; Reference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-        <li data-nav-id="/getting-started/resources/" class="dd-item">
+            </ul>
+        </li>
+        <li data-nav-id="/platform/" class="dd-item parent">
 
-            <a href="/getting-started/resources/" class="directory">
+            <a href="/platform/" class="">
+       
+            <span>
+                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
+                Platform
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/platform/overview/" class="dd-item">
+            <a href="/platform/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/platform/security/" class="dd-item parent">
+
+            <a href="/platform/security/" class="directory">
+       
+            <span>
+                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
+                Security
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/platform/security/overview/" class="dd-item active">
+            <a href="/platform/security/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/platform/data-automation/" class="dd-item">
+
+            <a href="/platform/data-automation/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Data Automation
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/platform/data-automation/ftp/" class="dd-item">
+            <a href="/platform/data-automation/ftp/">
+              <span style="padding-left: 8px;">SFTP</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/platform/reference/" class="dd-item">
+
+            <a href="/platform/reference/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Reference
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/platform/reference/api-reference/" class="dd-item">
+            <a href="/platform/reference/api-reference/">
+              <span style="padding-left: 8px;">API Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/platform/resources/" class="dd-item">
+
+            <a href="/platform/resources/" class="directory">
        
             <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
                 Resources
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/getting-started/resources/release-notes/" class="dd-item">
-            <a href="/getting-started/resources/release-notes/">
+          <li data-nav-id="/platform/resources/release-notes/" class="dd-item">
+            <a href="/platform/resources/release-notes/">
               <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
@@ -233,7 +290,12 @@
             <ul>
           <li data-nav-id="/products/connectx/hotel/plugins/validators/" class="dd-item">
             <a href="/products/connectx/hotel/plugins/validators/">
-              <span style="padding-left: 8px;">Validators</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Validator</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/products/connectx/hotel/plugins/mappings/" class="dd-item">
+            <a href="/products/connectx/hotel/plugins/mappings/">
+              <span style="padding-left: 8px;">Mapping</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/products/connectx/hotel/plugins/aggregation/" class="dd-item">
@@ -241,9 +303,9 @@
               <span style="padding-left: 8px;">Aggregation</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/products/connectx/hotel/plugins/mappings/" class="dd-item">
-            <a href="/products/connectx/hotel/plugins/mappings/">
-              <span style="padding-left: 8px;">Mappings</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/products/connectx/hotel/plugins/converter/" class="dd-item">
+            <a href="/products/connectx/hotel/plugins/converter/">
+              <span style="padding-left: 8px;">Exchange</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/products/connectx/hotel/plugins/markup/" class="dd-item">
@@ -320,23 +382,6 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/data-automation/" class="dd-item parent">
-
-            <a href="/data-automation/" class="directory">
-       
-            <span>
-                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
-                Data Automation
-            </span><i class="fa fa-circle-thin read-icon"></i>
-          </a>
-            <ul>
-          <li data-nav-id="/data-automation/overview/" class="dd-item active">
-            <a href="/data-automation/overview/">
-              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
         <li data-nav-id="/learning-graphql/" class="dd-item">
 
             <a href="/learning-graphql/" class="directory">
@@ -392,6 +437,21 @@
       }
      return false;
     })
+
+    $('#menu').click((event)=>{
+      if($('#navbar').hasClass('toogled')){
+        $('#navbar').removeClass('toogled');
+        $('#backgroundMenu').removeClass('toogled');
+      }else{
+        $('#navbar').addClass('toogled');
+        $('#backgroundMenu').addClass('toogled');
+      }
+    });
+
+    $('#backgroundMenu').click((event)=>{
+      $('#navbar').removeClass('toogled');
+      $('#backgroundMenu').removeClass('toogled');
+    });
   })
 
 </script>
@@ -404,26 +464,46 @@
 
     
 
-<p>SFTP, or Secure File Transfer Protocol, is a network protocol that provides completely secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in Finance, Technology, and Consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.</p>
+<h2 id="introduction">Introduction</h2>
 
-<h2 id="security">Security</h2>
+<p><em>Products</em> and <em>Resources</em> are granted to <em>Partners</em> belonging to <em>Organizations</em>.</p>
 
-<p>To ensure the security of your data, we adhere to the highest standards in data security. The advanced security measures we take include:</p>
+<p>Authorized <em>Partners</em> can manage security rules to allow or deny <em>Resources</em> and <em>Products</em>.</p>
+
+<h2 id="authentication">Authentication</h2>
+
+<p>Authentication is the process of authorizing or making sure that the <em>Partner</em> is who is supposed to be. This can be ensured either by login credentials or by API Key.</p>
+
+<p>Every request to TravelgateX GraphQL API must carry an Authorization header with a JSON Web Token or API Key inside.</p>
+
+<h4 id="json-web-tokens">JSON Web Tokens</h4>
+
+<h4 id="api-keys">API Keys</h4>
+
+<h4 id="creating-an-access-token">Creating an access token</h4>
+
+<p>For development purposes please use the following test Api Key <code>q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ</code></p>
+
+<h2 id="authorization">Authorization</h2>
+
+<p>Once the <em>Partner</em> is authenticated we must authorize the partner to use the requested <em>Resource</em>.</p>
+
+<p>Role based access control (RBAC) is the de facto standard for authorization. However, it introduces many complexities for practical applications: roles can be inflexible to change and additional mapping between users and roles must be maintained separately.</p>
+
+<p>TravelgateX permissions are Resource Group Assigned rules, defined using GraphQL API and determined at runtime by the data graph of the application.</p>
+
+<h2 id="further-reading">Further Reading</h2>
 
 <ul>
-<li><strong>Password-based</strong> authentication.</li>
-<li><strong>IP Whitelisting</strong>: We whitelist the IP Addresses you will be accessing your SFTP server from to ensure you, and only you, have access.</li>
-<li><strong>Anomaly Detection</strong>: To ensure no loss of data, we detect anomalies in your uploads to the SFTP server and warn you when an upload would significantly change your account.</li>
-<li><strong>Encryption</strong>: Data is encrypted, keeping your information safe and private.</li>
+<li><a href="https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a">https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a</a></li>
+<li></li>
 </ul>
 
-<h2 id="setup">Setup</h2>
-
-<p>To get your FTP Credential Details raise a <em>customer care request</em> in <a href="/getting-started/quickstart/#jira-service-desk">Jira Service Desk</a>.</p>
 
 
-<hr/>
-    
+
+            <hr/>            
+            
 <div id="discourse-comments"></div>
 
 <script type="text/javascript">
@@ -436,10 +516,9 @@
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
   })();
 </script>
-
-
-    
+            
           </div>
+          <div id="backgroundMenu"></div>
         </div>
         <div class="menu-right">
           <div>
@@ -447,8 +526,18 @@
 <ul>
 <li>
 <ul>
-<li><a href="#security">Security</a></li>
-<li><a href="#setup">Setup</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#authentication">Authentication</a>
+<ul>
+<li>
+<ul>
+<li><a href="#json-web-tokens">JSON Web Tokens</a></li>
+<li><a href="#api-keys">API Keys</a></li>
+<li><a href="#creating-an-access-token">Creating an access token</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#authorization">Authorization</a></li>
+<li><a href="#further-reading">Further Reading</a></li>
 </ul></li>
 </ul>
 </nav>

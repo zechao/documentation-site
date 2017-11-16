@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/platform/reference/api-reference/</loc>
+  </url>
+  
+  <url>
     <loc>/products/connectx/hotel/reference/api-reference/</loc>
   </url>
   
@@ -23,11 +27,15 @@
   </url>
   
   <url>
-    <loc>/data-automation/overview/</loc>
+    <loc>/platform/overview/</loc>
   </url>
   
   <url>
     <loc>/products/connectx/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/quickstart/</loc>
   </url>
   
   <url>
@@ -39,7 +47,11 @@
   </url>
   
   <url>
-    <loc>/what-to-build/</loc>
+    <loc>/platform/data-automation/ftp/</loc>
+  </url>
+  
+  <url>
+    <loc>/products/connectx/hotel/plugins/validators/</loc>
   </url>
   
   <url>
@@ -55,11 +67,15 @@
   </url>
   
   <url>
-    <loc>/getting-started/quickstart/</loc>
+    <loc>/products/connectx/hotel/plugins/mappings/</loc>
   </url>
   
   <url>
-    <loc>/getting-started/resources/release-notes/</loc>
+    <loc>/platform/</loc>
+  </url>
+  
+  <url>
+    <loc>/platform/resources/release-notes/</loc>
   </url>
   
   <url>
@@ -67,7 +83,7 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/plugins/validators/</loc>
+    <loc>/platform/security/</loc>
   </url>
   
   <url>
@@ -95,11 +111,23 @@
   </url>
   
   <url>
+    <loc>/getting-started/playground/</loc>
+  </url>
+  
+  <url>
+    <loc>/what-to-build/</loc>
+  </url>
+  
+  <url>
     <loc>/what-to-build/build-mapping-solution/</loc>
   </url>
   
   <url>
     <loc>/products/connectx/hotel/concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>/platform/data-automation/</loc>
   </url>
   
   <url>
@@ -111,7 +139,7 @@
   </url>
   
   <url>
-    <loc>/products/connectx/hotel/plugins/mappings/</loc>
+    <loc>/platform/security/overview/</loc>
   </url>
   
   <url>
@@ -119,7 +147,7 @@
   </url>
   
   <url>
-    <loc>/getting-started/security/</loc>
+    <loc>/platform/reference/</loc>
   </url>
   
   <url>
@@ -131,23 +159,11 @@
   </url>
   
   <url>
-    <loc>/getting-started/api/</loc>
-  </url>
-  
-  <url>
     <loc>/products/connectx/hotel/concepts/content/</loc>
   </url>
   
   <url>
-    <loc>/data-automation/</loc>
-  </url>
-  
-  <url>
-    <loc>/products/connectx/hotel/plugins/markup/</loc>
-  </url>
-  
-  <url>
-    <loc>/getting-started/playground/</loc>
+    <loc>/products/connectx/hotel/plugins/converter/</loc>
   </url>
   
   <url>
@@ -159,11 +175,15 @@
   </url>
   
   <url>
+    <loc>/platform/resources/</loc>
+  </url>
+  
+  <url>
     <loc>/learning-graphql/tooling/</loc>
   </url>
   
   <url>
-    <loc>/getting-started/resources/</loc>
+    <loc>/products/connectx/hotel/plugins/markup/</loc>
   </url>
   
   <url>

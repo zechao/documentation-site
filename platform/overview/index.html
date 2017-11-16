@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Accesses, Suppliers and Context | TravelgateX Documentation</title>
+    <title>Overview | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
-<title>Accesses, Suppliers and Context :: TravelgateX Documentation</title>
+<title>Overview :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -21,13 +21,13 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="Learn about Core Entities used in travelgateX">
+<meta name="description" content="Platform information">
 <meta name="author" content="TravelgateX ByXTG">
 <link href="/css/tgx.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
-  <body data-url="/products/connectx/hotel/concepts/accesses-supplier-context/">
+  <body data-url="/platform/overview/">
     <div class="mo-header fixed-top">
     <div class="top-header">
         <nav class="navbar navbar-toggleable-sm navbar-light bg-primary flex-row align-items-center">
@@ -87,16 +87,17 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/platform/" class="dd-item">
+        <li data-nav-id="/platform/" class="dd-item parent">
 
             <a href="/platform/" class="">
        
-            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+            <span>
+                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
                 Platform
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/platform/overview/" class="dd-item">
+          <li data-nav-id="/platform/overview/" class="dd-item active">
             <a href="/platform/overview/">
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
@@ -193,22 +194,20 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/products/" class="dd-item parent">
+        <li data-nav-id="/products/" class="dd-item">
 
             <a href="/products/" class="directory">
        
-            <span>
-                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
                 Products
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-        <li data-nav-id="/products/connectx/" class="dd-item parent">
+        <li data-nav-id="/products/connectx/" class="dd-item">
 
             <a href="#" class="directory">
        
-            <span>
-                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
                 ConnectX
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -218,12 +217,11 @@
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-        <li data-nav-id="/products/connectx/hotel/" class="dd-item parent">
+        <li data-nav-id="/products/connectx/hotel/" class="dd-item">
 
             <a href="/products/connectx/hotel/" class="">
        
-            <span>
-                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
                 Hotel
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -249,17 +247,16 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/products/connectx/hotel/concepts/" class="dd-item parent">
+        <li data-nav-id="/products/connectx/hotel/concepts/" class="dd-item">
 
             <a href="/products/connectx/hotel/concepts/" class="directory">
        
-            <span>
-                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
                 Concepts
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/products/connectx/hotel/concepts/accesses-supplier-context/" class="dd-item active">
+          <li data-nav-id="/products/connectx/hotel/concepts/accesses-supplier-context/" class="dd-item">
             <a href="/products/connectx/hotel/concepts/accesses-supplier-context/">
               <span style="padding-left: 8px;">Accesses, Suppliers and Context</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
@@ -460,11 +457,127 @@
         </div>
         <div class="content-center">
           <div class="p-4">
-            <h1 class="pageTitle">Accesses, Suppliers and Context</h1>
+            <h1 class="pageTitle">Overview</h1>
             
 
 
     
+
+<h2 id="using-the-api">Using the API</h2>
+
+<p>The two types of allowed operations in TravelgateX GraphQL API are:</p>
+
+<ul>
+<li><a href="http://graphql.org/learn/queries/">Queries</a></li>
+<li><a href="http://graphql.org/learn/queries/">Mutations</a></li>
+</ul>
+
+<p>For more information about using a GraphQL API click <a href="/learning-graphql/">here</a>.</p>
+
+<h2 id="graphql-endpoint">GraphQL Endpoint</h2>
+
+<p>One of the great things we love about GraphQL is that there&rsquo;s only one single endpoint. Use this endpoint for all operations you want to perform:</p>
+
+<div class="alert 
+alert-warning"
+ 
+role="alert"><a href="https://api.travelgatex.com">https://api.travelgatex.com</a></div>
+
+
+<h2 id="communicate-with-server">Communicate with Server</h2>
+
+<p>To communicate with the GraphQL server, you&rsquo;ll need an access token with the right scopes.</p>
+
+<p>This access token could be an <a href="/admin/security/authentication/#api-keys">API Key</a> or a <a href="/admin/security/authentication/#json-web-tokens">JSON Web Token</a>, and the correct way to send it to GraphQL server is via HTTP Header:</p>
+
+<ul>
+<li>API key: <code>&quot;Authorization: Apikey xxxxxxxxx&quot;</code></li>
+<li>JWT: <code>&quot;Authorization: Bearer xxxxxxxxx&quot;</code></li>
+</ul>
+
+<p>Follow the steps in <a href="/admin/security/authentication/#creating-an-access-token">Creating an access token</a> to create a token.</p>
+
+<h2 id="making-requests">Making Requests</h2>
+
+<p>Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls.
+There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use cURL or any other HTTP-speaking library.</p>
+
+<div class="alert 
+alert-danger"
+ 
+role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP compression in the HTTP header</div>
+
+
+<pre><code class="language-html">Accept-Encoding: gzip
+</code></pre>
+
+<p>To query GraphQL using cURL, make a POST request with a JSON payload. The payload must contain a string called query:</p>
+
+<pre><code class="language-bash">curl -X\
+   POST\
+   -H &quot;Content-Type: application/json&quot; \
+   -H &quot;Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;  \
+   --data '{&quot;query&quot;:&quot;{searchStatusService{code description}}&quot;}' \
+   --compressed \
+   https://api.travelgatex.com
+</code></pre>
+
+<h2 id="view-the-graph">View the Graph</h2>
+
+<p>Using <a href="https://github.com/APIs-guru/graphql-voyager">graphql-voyager</a>, we represent <a href="https://api.travelgatex.com">our GraphQL API</a> as an interactive graph.</p>
+
+<blockquote>
+<ul>
+<li>Quick navigation on graph</li>
+<li>Left panel which provides more detailed information about every type</li>
+<li>&ldquo;Skip Relay&rdquo; option that simplifies graph by removing Relay wrapper classes</li>
+<li>Ability to choose any type to be a root of the graph</li>
+</ul>
+</blockquote>
+
+<p>Open in a new tab <a href="https://api.travelgatex.com/voyager">here</a></p>
+
+
+<figure >
+    <a href="https://api.travelgatex.com/voyager">
+        <img src="/images/voyager.gif" alt="travelgateX Schema Documentation" />
+    </a>
+    
+</figure>
+
+
+<h2 id="examples">Examples</h2>
+
+<p>We share <a href="https://github.com/graphcool/graphql-playground">GraphQL Playgrounds</a> with common scenarios using products.
+Playgrounds are shared in <a href="/product/">product</a> reference sections, for example you can use  <a href="https://graphqlbin.com/JYRtB">ConnectX Hotel Playground</a></p>
+
+<p>It&rsquo;s important to use the correct Headers. If you want to use test headers, insert <code>&quot;Authorization&quot;:&quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;</code></p>
+
+<p>You can easily <a href="https://github.com/graphcool/graphql-playground#how-does-graphql-bin-work">share</a> your Queries with others by clicking on the &ldquo;Share&rdquo; button and sharing the generated link. You can think about GraphQL Bin like Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).</p>
+
+<h2 id="conventions">Conventions</h2>
+
+<p>TravelgateX follow some conventions about schema definition:</p>
+
+<ul>
+<li><a href="#Relay Implementation">Relay schema requirements</a></li>
+<li><a href="#Custom Scalar Types">Definition of custom scalar types</a></li>
+<li><a href="/getting-started/security/#Authentication">Token Based Authentication</a></li>
+</ul>
+
+<h3 id="relay-implementation">Relay Implementation</h3>
+
+<p>TravelgateX uses <a href="https://facebook.github.io/relay/">Relay</a> schema requirements for own Resources.
+Other resources, like supplier search response, are not modeled with Relay practices.</p>
+
+<p>Relay helps travelgateX API in order to standarize:</p>
+
+<ul>
+<li>Standards for querying paginated collections (&ldquo;Connections&rdquo; and &ldquo;Edges&rdquo;)</li>
+<li>Identifying objects directly from the root of a query (avoiding long nested queries)</li>
+<li>Provide mutation input data</li>
+</ul>
+
 
 
 
@@ -488,7 +601,23 @@
         </div>
         <div class="menu-right">
           <div>
-            
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#using-the-api">Using the API</a></li>
+<li><a href="#graphql-endpoint">GraphQL Endpoint</a></li>
+<li><a href="#communicate-with-server">Communicate with Server</a></li>
+<li><a href="#making-requests">Making Requests</a></li>
+<li><a href="#view-the-graph">View the Graph</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#conventions">Conventions</a>
+<ul>
+<li><a href="#relay-implementation">Relay Implementation</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
           </div>
         </div>
         <div class="clear"></div>

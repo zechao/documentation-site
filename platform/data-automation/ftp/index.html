@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Data Automation | TravelgateX Documentation</title>
+    <title>SFTP | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
-<title>Data Automation :: TravelgateX Documentation</title>
+<title>SFTP :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,10 +27,11 @@
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
-  <body data-url="/data-automation/">
+  <body data-url="/platform/data-automation/ftp/">
     <div class="mo-header fixed-top">
     <div class="top-header">
         <nav class="navbar navbar-toggleable-sm navbar-light bg-primary flex-row align-items-center">
+            <i id="menu" class="fa fa-bars "></i>
             <a class="navbar-brand" href="/">
                 <img src="/images/xtg_logo.svg">
             </a>
@@ -57,8 +58,8 @@
     
     <div class="container main">
       <div class="row">
-        <div class="menu-left sticky">
-            <nav class="menu-nav material-box">
+        <div id="navbar" class="menu-left hidden-xs hidden-sm">
+            <nav  class="navbar navbar-default menu-nav material-box">
   <ul class="topics">
         <li data-nav-id="/getting-started/" class="dd-item">
 
@@ -79,32 +80,88 @@
               <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/getting-started/security/" class="dd-item">
-            <a href="/getting-started/security/">
-              <span style="padding-left: 8px;">Security</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/api/" class="dd-item">
-            <a href="/getting-started/api/">
-              <span style="padding-left: 8px;">API &amp; Reference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-        <li data-nav-id="/getting-started/resources/" class="dd-item">
+            </ul>
+        </li>
+        <li data-nav-id="/platform/" class="dd-item parent">
 
-            <a href="/getting-started/resources/" class="directory">
+            <a href="/platform/" class="">
+       
+            <span>
+                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
+                Platform
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/platform/overview/" class="dd-item">
+            <a href="/platform/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/platform/security/" class="dd-item">
+
+            <a href="/platform/security/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Security
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/platform/security/overview/" class="dd-item">
+            <a href="/platform/security/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/platform/data-automation/" class="dd-item parent">
+
+            <a href="/platform/data-automation/" class="directory">
+       
+            <span>
+                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
+                Data Automation
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/platform/data-automation/ftp/" class="dd-item active">
+            <a href="/platform/data-automation/ftp/">
+              <span style="padding-left: 8px;">SFTP</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/platform/reference/" class="dd-item">
+
+            <a href="/platform/reference/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Reference
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/platform/reference/api-reference/" class="dd-item">
+            <a href="/platform/reference/api-reference/">
+              <span style="padding-left: 8px;">API Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/platform/resources/" class="dd-item">
+
+            <a href="/platform/resources/" class="directory">
        
             <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
                 Resources
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/getting-started/resources/release-notes/" class="dd-item">
-            <a href="/getting-started/resources/release-notes/">
+          <li data-nav-id="/platform/resources/release-notes/" class="dd-item">
+            <a href="/platform/resources/release-notes/">
               <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
@@ -233,7 +290,12 @@
             <ul>
           <li data-nav-id="/products/connectx/hotel/plugins/validators/" class="dd-item">
             <a href="/products/connectx/hotel/plugins/validators/">
-              <span style="padding-left: 8px;">Validators</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Validator</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/products/connectx/hotel/plugins/mappings/" class="dd-item">
+            <a href="/products/connectx/hotel/plugins/mappings/">
+              <span style="padding-left: 8px;">Mapping</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/products/connectx/hotel/plugins/aggregation/" class="dd-item">
@@ -241,9 +303,9 @@
               <span style="padding-left: 8px;">Aggregation</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/products/connectx/hotel/plugins/mappings/" class="dd-item">
-            <a href="/products/connectx/hotel/plugins/mappings/">
-              <span style="padding-left: 8px;">Mappings</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/products/connectx/hotel/plugins/converter/" class="dd-item">
+            <a href="/products/connectx/hotel/plugins/converter/">
+              <span style="padding-left: 8px;">Exchange</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/products/connectx/hotel/plugins/markup/" class="dd-item">
@@ -320,23 +382,6 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/data-automation/" class="dd-item parent active">
-
-            <a href="/data-automation/" class="directory">
-       
-            <span>
-                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
-                Data Automation
-            </span><i class="fa fa-circle-thin read-icon"></i>
-          </a>
-            <ul>
-          <li data-nav-id="/data-automation/overview/" class="dd-item">
-            <a href="/data-automation/overview/">
-              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
         <li data-nav-id="/learning-graphql/" class="dd-item">
 
             <a href="/learning-graphql/" class="directory">
@@ -392,62 +437,85 @@
       }
      return false;
     })
+
+    $('#menu').click((event)=>{
+      if($('#navbar').hasClass('toogled')){
+        $('#navbar').removeClass('toogled');
+        $('#backgroundMenu').removeClass('toogled');
+      }else{
+        $('#navbar').addClass('toogled');
+        $('#backgroundMenu').addClass('toogled');
+      }
+    });
+
+    $('#backgroundMenu').click((event)=>{
+      $('#navbar').removeClass('toogled');
+      $('#backgroundMenu').removeClass('toogled');
+    });
   })
 
 </script>
         </div>
         <div class="content-center">
           <div class="p-4">
-            <h1 class="pageTitle">Data Automation</h1>
+            <h1 class="pageTitle">SFTP</h1>
             
 
 
+    
 
-<div class="extra-pagination inner">
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
+<h2 id="introduction">Introduction</h2>
 
-</div>
+<p>SFTP, or Secure File Transfer Protocol, is a network protocol that provides completely secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in Finance, Technology, and Consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.</p>
 
+<h2 id="security">Security</h2>
 
-   <article class="post data-automation">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/data-automation/overview/">Overview</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>SFTP, or Secure File Transfer Protocol, is a network protocol that provides completely secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in Finance, Technology, and Consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.
-Security To ensure the security of your data, we adhere to the highest standards in data security. The advanced security measures we take include: <a class="read-more" href="/data-automation/overview/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
+<p>To ensure the security of your data, we adhere to the highest standards in data security. The advanced security measures we take include:</p>
 
-        
-        
+<ul>
+<li><strong>Password-based</strong> authentication.</li>
+<li><strong>IP Whitelisting</strong>: We whitelist the IP Addresses you will be accessing your SFTP server from to ensure you, and only you, have access.</li>
+<li><strong>Anomaly Detection</strong>: To ensure no loss of data, we detect anomalies in your uploads to the SFTP server and warn you when an upload would significantly change your account.</li>
+<li><strong>Encryption</strong>: Data is encrypted, keeping your information safe and private.</li>
+</ul>
 
-    </footer>
-</article>
+<h2 id="setup">Setup</h2>
 
-
-<div style="margin-bottom:2rem"></div>
-
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
+<p>To get your FTP Credential Details raise a <em>customer care request</em> in <a href="/getting-started/quickstart/#jira-service-desk">Jira Service Desk</a>.</p>
 
 
 
 
+            <hr/>            
+            
+<div id="discourse-comments"></div>
+
+<script type="text/javascript">
+  var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+  discourseEmbedUrl =  window.location.href;
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+      d.src = discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
+            
           </div>
+          <div id="backgroundMenu"></div>
         </div>
         <div class="menu-right">
           <div>
-            
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#setup">Setup</a></li>
+</ul></li>
+</ul>
+</nav>
           </div>
         </div>
         <div class="clear"></div>
