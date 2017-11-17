@@ -7,7 +7,7 @@
   </url>
   
   <url>
-    <loc>/platform/reference/api-reference/</loc>
+    <loc>/platformx/reference/api-reference/</loc>
   </url>
   
   <url>
@@ -19,7 +19,7 @@
   </url>
   
   <url>
-    <loc>/platform/tutorials/ota-site/</loc>
+    <loc>/platformx/tutorials/ota-site/</loc>
   </url>
   
   <url>
@@ -39,19 +39,19 @@
   </url>
   
   <url>
-    <loc>/insights/overview/</loc>
+    <loc>/insightsx/overview/</loc>
   </url>
   
   <url>
-    <loc>/mappea/overview/</loc>
+    <loc>/mappeax/overview/</loc>
   </url>
   
   <url>
-    <loc>/platform/overview/</loc>
+    <loc>/platformx/overview/</loc>
   </url>
   
   <url>
-    <loc>/stats/overview/</loc>
+    <loc>/statsx/overview/</loc>
   </url>
   
   <url>
@@ -63,7 +63,7 @@
   </url>
   
   <url>
-    <loc>/platform/data-automation/ftp/</loc>
+    <loc>/platformx/data-automation/ftp/</loc>
   </url>
   
   <url>
@@ -71,7 +71,7 @@
   </url>
   
   <url>
-    <loc>/platform/tutorials/stats-dashboard/</loc>
+    <loc>/platformx/tutorials/stats-dashboard/</loc>
   </url>
   
   <url>
@@ -83,7 +83,120 @@
   </url>
   
   <url>
-    <loc>/platform/</loc>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
+  </url>
+  
+  <url>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
+  </url>
+  
+  <url>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
+  </url>
+  
+  <url>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
+  </url>
+  
+  <url>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
+  </url>
+  
+  <url>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
+  </url>
+  
+  <url>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
+  </url>
+  
+  <url>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
+  </url>
+  
+  <url>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
+  </url>
+  
+  <url>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
+  </url>
+  
+  <url>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
+  </url>
+  
+  <url>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
+  </url>
+  
+  <url>
+    <loc>/platformx/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/platformx/"
+                />
   </url>
   
   <url>
@@ -95,11 +208,11 @@
   </url>
   
   <url>
-    <loc>/platform/resources/release-notes/</loc>
+    <loc>/platformx/resources/release-notes/</loc>
   </url>
   
   <url>
-    <loc>/platform/security/</loc>
+    <loc>/platformx/security/</loc>
   </url>
   
   <url>
@@ -131,11 +244,11 @@
   </url>
   
   <url>
-    <loc>/platform/security/authenticating/</loc>
+    <loc>/platformx/security/authenticating/</loc>
   </url>
   
   <url>
-    <loc>/platform/data-automation/</loc>
+    <loc>/platformx/data-automation/</loc>
   </url>
   
   <url>
@@ -151,11 +264,11 @@
   </url>
   
   <url>
-    <loc>/platform/reference/</loc>
+    <loc>/platformx/reference/</loc>
   </url>
   
   <url>
-    <loc>/stats/</loc>
+    <loc>/statsx/</loc>
   </url>
   
   <url>
@@ -171,7 +284,7 @@
   </url>
   
   <url>
-    <loc>/insights/</loc>
+    <loc>/insightsx/</loc>
   </url>
   
   <url>
@@ -183,11 +296,11 @@
   </url>
   
   <url>
-    <loc>/platform/tutorials/</loc>
+    <loc>/platformx/tutorials/</loc>
   </url>
   
   <url>
-    <loc>/mappea/</loc>
+    <loc>/mappeax/</loc>
   </url>
   
   <url>
@@ -199,7 +312,7 @@
   </url>
   
   <url>
-    <loc>/platform/resources/</loc>
+    <loc>/platformx/resources/</loc>
   </url>
   
   <url>

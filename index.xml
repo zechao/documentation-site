@@ -24,10 +24,10 @@ Samples  Search, Quote, Book, Cancel and Retrieve bookings  </description>
     
     <item>
       <title>API Reference</title>
-      <link>/platform/reference/api-reference/</link>
+      <link>/platformx/reference/api-reference/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/platform/reference/api-reference/</guid>
+      <guid>/platformx/reference/api-reference/</guid>
       <description>This API reference is organized by graphql operations related to product.
 Query Operations Mutation Operations Custom Scalar Types TravelgateX GraphQL schema implementation defines custom scalar types.
 JSON Sometimes it&amp;rsquo;s necessary to manage arbitrary JSON values for loosely structured data. The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.
@@ -54,10 +54,10 @@ In queries or mutations, JSON fields have to be specified with enclosing double 
     
     <item>
       <title>Build An OTA</title>
-      <link>/platform/tutorials/ota-site/</link>
+      <link>/platformx/tutorials/ota-site/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/platform/tutorials/ota-site/</guid>
+      <guid>/platformx/tutorials/ota-site/</guid>
       <description> Build Your Own Full Fledged OTA </description>
     </item>
     
@@ -95,38 +95,38 @@ Business Logic We&amp;rsquo;ve added a new layer of business logic in front of t
     
     <item>
       <title>Overview</title>
-      <link>/insights/overview/</link>
+      <link>/insightsx/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/insights/overview/</guid>
+      <guid>/insightsx/overview/</guid>
       <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
     </item>
     
     <item>
       <title>Overview</title>
-      <link>/mappea/overview/</link>
+      <link>/mappeax/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/mappea/overview/</guid>
+      <guid>/mappeax/overview/</guid>
       <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
     </item>
     
     <item>
       <title>Overview</title>
-      <link>/platform/overview/</link>
+      <link>/platformx/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/platform/overview/</guid>
+      <guid>/platformx/overview/</guid>
       <description>This page provides an overview of travelgateX platform. It&amp;rsquo;s used as reference
 GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we&amp;rsquo;ve integrated too many of them. The problems with that technology are well-known and we won&amp;rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned.</description>
     </item>
     
     <item>
       <title>Overview</title>
-      <link>/stats/overview/</link>
+      <link>/statsx/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/stats/overview/</guid>
+      <guid>/statsx/overview/</guid>
       <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
     </item>
     
@@ -153,10 +153,10 @@ Product Quick Start Although there&amp;rsquo;s only one endpoint, our GraphQL AP
     
     <item>
       <title>SFTP</title>
-      <link>/platform/data-automation/ftp/</link>
+      <link>/platformx/data-automation/ftp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/platform/data-automation/ftp/</guid>
+      <guid>/platformx/data-automation/ftp/</guid>
       <description>Introduction SFTP, or Secure File Transfer Protocol, is a network protocol that provides completely secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in Finance, Technology, and Consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.
 Security To ensure the security of your data, we adhere to the highest standards in data security. The advanced security measures we take include:</description>
     </item>
@@ -172,10 +172,10 @@ Security To ensure the security of your data, we adhere to the highest standards
     
     <item>
       <title>Build a Dashboard</title>
-      <link>/platform/tutorials/stats-dashboard/</link>
+      <link>/platformx/tutorials/stats-dashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/platform/tutorials/stats-dashboard/</guid>
+      <guid>/platformx/tutorials/stats-dashboard/</guid>
       <description> Build Your Own Full Fledged OTA </description>
     </item>
     
@@ -221,10 +221,10 @@ Before you begin  Follow the steps in Creating an access token to create your AP
     
     <item>
       <title>Release Notes</title>
-      <link>/platform/resources/release-notes/</link>
+      <link>/platformx/resources/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/platform/resources/release-notes/</guid>
+      <guid>/platformx/resources/release-notes/</guid>
       <description>This page contains release notes for features and updates to the travelgaX GraphQL API.</description>
     </item>
     
@@ -283,10 +283,10 @@ GraphQL API TravelgateX is the first-in-the-industry travel API completely based
     
     <item>
       <title>Authenticating</title>
-      <link>/platform/security/authenticating/</link>
+      <link>/platformx/security/authenticating/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/platform/security/authenticating/</guid>
+      <guid>/platformx/security/authenticating/</guid>
       <description>Introduction Products and Resources are granted to Partners belonging to Organizations.
 Authorized Partners can manage security rules to allow or deny Resources and Products.
 Authentication Authentication is the process of authorizing or making sure that the Partner is who is supposed to be. This can be ensured either by login credentials or by API Key.
