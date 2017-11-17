@@ -7,7 +7,7 @@
   </url>
   
   <url>
-    <loc>/platformx/reference/api-reference/</loc>
+    <loc>/travelgatex/reference/api-reference/</loc>
   </url>
   
   <url>
@@ -19,11 +19,15 @@
   </url>
   
   <url>
-    <loc>/platformx/tutorials/ota-site/</loc>
+    <loc>/travelgatex/tutorials/ota-site/</loc>
   </url>
   
   <url>
     <loc>/getting-started/</loc>
+  </url>
+  
+  <url>
+    <loc>/adminx/overview/</loc>
   </url>
   
   <url>
@@ -47,11 +51,11 @@
   </url>
   
   <url>
-    <loc>/platformx/overview/</loc>
+    <loc>/statsx/overview/</loc>
   </url>
   
   <url>
-    <loc>/statsx/overview/</loc>
+    <loc>/travelgatex/overview/</loc>
   </url>
   
   <url>
@@ -63,7 +67,7 @@
   </url>
   
   <url>
-    <loc>/platformx/data-automation/ftp/</loc>
+    <loc>/travelgatex/data-automation/ftp/</loc>
   </url>
   
   <url>
@@ -71,7 +75,7 @@
   </url>
   
   <url>
-    <loc>/platformx/tutorials/stats-dashboard/</loc>
+    <loc>/travelgatex/tutorials/stats-dashboard/</loc>
   </url>
   
   <url>
@@ -83,123 +87,6 @@
   </url>
   
   <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
-    <loc>/platformx/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/platformx/"
-                />
-  </url>
-  
-  <url>
     <loc>/hotelx/quickstart/</loc>
   </url>
   
@@ -208,11 +95,19 @@
   </url>
   
   <url>
-    <loc>/platformx/resources/release-notes/</loc>
+    <loc>/travelgatex/resources/release-notes/</loc>
   </url>
   
   <url>
-    <loc>/platformx/security/</loc>
+    <loc>/travelgatex/security/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/</loc>
+  </url>
+  
+  <url>
+    <loc>/adminx/</loc>
   </url>
   
   <url>
@@ -236,23 +131,19 @@
   </url>
   
   <url>
-    <loc>/hotelx/</loc>
-  </url>
-  
-  <url>
     <loc>/getting-started/playground/</loc>
   </url>
   
   <url>
-    <loc>/platformx/security/authenticating/</loc>
+    <loc>/travelgatex/security/authenticating/</loc>
   </url>
   
   <url>
-    <loc>/platformx/data-automation/</loc>
+    <loc>/travelgatex/data-automation/</loc>
   </url>
   
   <url>
-    <loc>/flightx/</loc>
+    <loc>/hotelx/</loc>
   </url>
   
   <url>
@@ -264,11 +155,7 @@
   </url>
   
   <url>
-    <loc>/platformx/reference/</loc>
-  </url>
-  
-  <url>
-    <loc>/statsx/</loc>
+    <loc>/travelgatex/reference/</loc>
   </url>
   
   <url>
@@ -284,7 +171,7 @@
   </url>
   
   <url>
-    <loc>/insightsx/</loc>
+    <loc>/flightx/</loc>
   </url>
   
   <url>
@@ -292,11 +179,15 @@
   </url>
   
   <url>
+    <loc>/statsx/</loc>
+  </url>
+  
+  <url>
     <loc>/learning-graphql/tooling/</loc>
   </url>
   
   <url>
-    <loc>/platformx/tutorials/</loc>
+    <loc>/travelgatex/tutorials/</loc>
   </url>
   
   <url>
@@ -312,11 +203,15 @@
   </url>
   
   <url>
-    <loc>/platformx/resources/</loc>
+    <loc>/travelgatex/resources/</loc>
   </url>
   
   <url>
     <loc>/learning-graphql/tutorials_resources/</loc>
+  </url>
+  
+  <url>
+    <loc>/insightsx/</loc>
   </url>
   
   <url>

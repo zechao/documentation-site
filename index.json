@@ -7,7 +7,7 @@
 	"content": " This API reference is organized by graphql operations related to product.\nQuery Operations Mutation Operations Documentation Schema documentation\nSamples  Search, Quote, Book, Cancel and Retrieve bookings  "
 },
 {
-	"uri": "/platformx/reference/api-reference/",
+	"uri": "/travelgatex/reference/api-reference/",
 	"title": "API Reference",
 	"tags": [],
 	"description": "",
@@ -28,7 +28,7 @@
 	"content": "Flow to book\n"
 },
 {
-	"uri": "/platformx/tutorials/ota-site/",
+	"uri": "/travelgatex/tutorials/ota-site/",
 	"title": "Build An OTA",
 	"tags": [],
 	"description": "",
@@ -40,6 +40,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Information to start developing \t Overview TravelgateX Information\n   \t Quickstart Learn in 5 minutes\n   \t Concepts Understand concepts\n   \t Playground Test inline\n    "
+},
+{
+	"uri": "/adminx/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "AdminX Information",
+	"content": "This page shows you how to perform basic hotel book using GraphQL Playground.\n"
 },
 {
 	"uri": "/flightx/overview/",
@@ -77,18 +84,18 @@
 	"content": "This page shows you how to perform basic hotel book using GraphQL Playground.\n"
 },
 {
-	"uri": "/platformx/overview/",
-	"title": "Overview",
-	"tags": [],
-	"description": "Platform information",
-	"content": " This page provides an overview of travelgateX platform. It\u0026rsquo;s used as reference\nGraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we\u0026rsquo;ve integrated too many of them. The problems with that technology are well-known and we won\u0026rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned. For the full reasoning behind working with GraphQL please click here.\nThe architecture doest not differ from many modern APIs. There\u0026rsquo;s an API Gateway, which takes care of basic stuff like authentication and authorization. It also acts like a shield protecting us from DoS attacks and handles throttling. Analytics takes also an important part in the gateway. Moreover, our Gateway is the only endpoint to access all of our APIs.\nIt is written in NodeJS, fast, stable, secure and fault tolerant load balanced between many datacenters from 4 different cloud providers, namely Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime.\nUsing the API The two types of allowed operations in TravelgateX GraphQL API are:\n Queries Mutations  For more information about using a GraphQL API click here.\nGraphQL Endpoint One of the great things we love about GraphQL is that there\u0026rsquo;s only one single endpoint. Use this endpoint for all operations you want to perform:\nhttps://api.travelgatex.com Communicate with Server To communicate with the GraphQL server, you\u0026rsquo;ll need an access token with the right scopes.\nThis access token could be an API Key or a JSON Web Token, and the correct way to send it to GraphQL server is via HTTP Header:\n API key: \u0026quot;Authorization: Apikey xxxxxxxxx\u0026quot; JWT: \u0026quot;Authorization: Bearer xxxxxxxxx\u0026quot;  Follow the steps in Creating an access token to create a token.\nMaking Requests Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls. There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use cURL or any other HTTP-speaking library.\nAll LIVE traffic MUST enable GZIP compression in the HTTP header Accept-Encoding: gzip  To query GraphQL using cURL, make a POST request with a JSON payload. The payload must contain a string called query:\ncurl -X\\ POST\\ -H \u0026quot;Content-Type: application/json\u0026quot; \\ -H \u0026quot;Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\u0026quot; \\ --data '{\u0026quot;query\u0026quot;:\u0026quot;{searchStatusService{code description}}\u0026quot;}' \\ --compressed \\ https://api.travelgatex.com  View the Graph Using graphql-voyager, we represent our GraphQL API as an interactive graph.\n  Quick navigation on graph Left panel which provides more detailed information about every type \u0026ldquo;Skip Relay\u0026rdquo; option that simplifies graph by removing Relay wrapper classes Ability to choose any type to be a root of the graph   Open in a new tab here\n  Examples We share GraphQL Playgrounds with common scenarios using products. Playgrounds are shared in product reference sections, for example you can use ConnectX Hotel Playground\nIt\u0026rsquo;s important to use the correct Headers. If you want to use test headers, insert \u0026quot;Authorization\u0026quot;:\u0026quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\u0026quot;\nYou can easily share your Queries with others by clicking on the \u0026ldquo;Share\u0026rdquo; button and sharing the generated link. You can think about GraphQL Bin like Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).\nConventions TravelgateX follow some conventions about schema definition:\n Relay schema requirements Definition of custom scalar types Token Based Authentication  Relay Implementation TravelgateX uses Relay schema requirements for own Resources. Other resources, like Seller search response, are not modeled with Relay practices.\nRelay helps TravelgateX API in order to standarize:\n Standards for querying paginated collections (\u0026ldquo;Connections\u0026rdquo; and \u0026ldquo;Edges\u0026rdquo;) Identifying objects directly from the root of a query (avoiding long nested queries) Provide mutation input data  "
-},
-{
 	"uri": "/statsx/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "StatsX Information",
 	"content": "This page shows you how to perform basic hotel book using GraphQL Playground.\n"
+},
+{
+	"uri": "/travelgatex/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "Platform information",
+	"content": " This page provides an overview of travelgateX platform. It\u0026rsquo;s used as reference\nGraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we\u0026rsquo;ve integrated too many of them. The problems with that technology are well-known and we won\u0026rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned. For the full reasoning behind working with GraphQL please click here.\nThe architecture doest not differ from many modern APIs. There\u0026rsquo;s an API Gateway, which takes care of basic stuff like authentication and authorization. It also acts like a shield protecting us from DoS attacks and handles throttling. Analytics takes also an important part in the gateway. Moreover, our Gateway is the only endpoint to access all of our APIs.\nIt is written in NodeJS, fast, stable, secure and fault tolerant load balanced between many datacenters from 4 different cloud providers, namely Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime.\nUsing the API The two types of allowed operations in TravelgateX GraphQL API are:\n Queries Mutations  For more information about using a GraphQL API click here.\nGraphQL Endpoint One of the great things we love about GraphQL is that there\u0026rsquo;s only one single endpoint. Use this endpoint for all operations you want to perform:\nhttps://api.travelgatex.com Communicate with Server To communicate with the GraphQL server, you\u0026rsquo;ll need an access token with the right scopes.\nThis access token could be an API Key or a JSON Web Token, and the correct way to send it to GraphQL server is via HTTP Header:\n API key: \u0026quot;Authorization: Apikey xxxxxxxxx\u0026quot; JWT: \u0026quot;Authorization: Bearer xxxxxxxxx\u0026quot;  Follow the steps in Creating an access token to create a token.\nMaking Requests Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls. There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use cURL or any other HTTP-speaking library.\nAll LIVE traffic MUST enable GZIP compression in the HTTP header Accept-Encoding: gzip  To query GraphQL using cURL, make a POST request with a JSON payload. The payload must contain a string called query:\ncurl -X\\ POST\\ -H \u0026quot;Content-Type: application/json\u0026quot; \\ -H \u0026quot;Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\u0026quot; \\ --data '{\u0026quot;query\u0026quot;:\u0026quot;{searchStatusService{code description}}\u0026quot;}' \\ --compressed \\ https://api.travelgatex.com  View the Graph Using graphql-voyager, we represent our GraphQL API as an interactive graph.\n  Quick navigation on graph Left panel which provides more detailed information about every type \u0026ldquo;Skip Relay\u0026rdquo; option that simplifies graph by removing Relay wrapper classes Ability to choose any type to be a root of the graph   Open in a new tab here\n  Examples We share GraphQL Playgrounds with common scenarios using products. Playgrounds are shared in product reference sections, for example you can use ConnectX Hotel Playground\nIt\u0026rsquo;s important to use the correct Headers. If you want to use test headers, insert \u0026quot;Authorization\u0026quot;:\u0026quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\u0026quot;\nYou can easily share your Queries with others by clicking on the \u0026ldquo;Share\u0026rdquo; button and sharing the generated link. You can think about GraphQL Bin like Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).\nConventions TravelgateX follow some conventions about schema definition:\n Relay schema requirements Definition of custom scalar types Token Based Authentication  Relay Implementation TravelgateX uses Relay schema requirements for own Resources. Other resources, like Seller search response, are not modeled with Relay practices.\nRelay helps TravelgateX API in order to standarize:\n Standards for querying paginated collections (\u0026ldquo;Connections\u0026rdquo; and \u0026ldquo;Edges\u0026rdquo;) Identifying objects directly from the root of a query (avoiding long nested queries) Provide mutation input data  "
 },
 {
 	"uri": "/getting-started/quickstart/",
@@ -105,7 +112,7 @@
 	"content": "ConnectX Hotel limits the maximum rate of requests adn graph deep. Specific policies vary depending on resource availability, user profile, service usage history, and other factors, and are subject to change without notice.\n"
 },
 {
-	"uri": "/platformx/data-automation/ftp/",
+	"uri": "/travelgatex/data-automation/ftp/",
 	"title": "SFTP",
 	"tags": [],
 	"description": "",
@@ -119,7 +126,7 @@
 	"content": " Validators  Validate Request  "
 },
 {
-	"uri": "/platformx/tutorials/stats-dashboard/",
+	"uri": "/travelgatex/tutorials/stats-dashboard/",
 	"title": "Build a Dashboard",
 	"tags": [],
 	"description": "",
@@ -140,97 +147,6 @@
 	"content": " Map plugins\nInput Mapping  Mapping Hotel  Output Mapping  Mapping Room  "
 },
 {
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": "Run your applications using TravelgateX platform.  "
-},
-{
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": " \u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt; HEAD Run your applications using travelgateX platform.\n  How TravelgateX platform works  \u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt; e3d52855bb8dce9fe68f377d3d95e06bba0e5fc8\n"
-},
-{
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": " \u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt; HEAD Run your applications using travelgateX platform.\n  How TravelgateX platform works  \u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt; e3d52855bb8dce9fe68f377d3d95e06bba0e5fc8\n"
-},
-{
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": " \u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt; HEAD Run your applications using travelgateX platform.\n  How TravelgateX platform works  \u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt; e3d52855bb8dce9fe68f377d3d95e06bba0e5fc8\n"
-},
-{
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": "How travelgateX platform works  "
-},
-{
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": "How travelgateX platform works  "
-},
-{
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": "How travelgateX platform works  "
-},
-{
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": "Run your applications using travelgateX platform.  "
-},
-{
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": "Run your applications using travelgateX platform.  "
-},
-{
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": "Run your applications using travelgateX platform.  "
-},
-{
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": "How TravelgateX platform works  "
-},
-{
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": "How TravelgateX platform works  "
-},
-{
-	"uri": "/platformx/",
-	"title": "Platform",
-	"tags": [],
-	"description": "",
-	"content": "How TravelgateX platform works \t Overview Platform information\n   \t Security Authorization and authentication\n   \t Data Automation Automate data bulk operations\n   \t Reference Reference Documentation\n   \t Tutorials Walkthrouhgs of common applications\n   \t Resources Quotas, release notes\n    "
-},
-{
 	"uri": "/hotelx/quickstart/",
 	"title": "Quickstart",
 	"tags": [],
@@ -245,18 +161,32 @@
 	"content": "This page documents production updates to connectX Hotel. We recommend that connectX hotel developers periodically check this list for any new announcements.\n"
 },
 {
-	"uri": "/platformx/resources/release-notes/",
+	"uri": "/travelgatex/resources/release-notes/",
 	"title": "Release Notes",
 	"tags": [],
 	"description": "",
 	"content": "This page contains release notes for features and updates to the travelgaX GraphQL API.\n"
 },
 {
-	"uri": "/platformx/security/",
+	"uri": "/travelgatex/security/",
 	"title": "Security",
 	"tags": [],
 	"description": "Authorization and authentication",
 	"content": " Authenticating Learn Platform Security\n    "
+},
+{
+	"uri": "/travelgatex/",
+	"title": "TravelgateX",
+	"tags": [],
+	"description": "",
+	"content": "Run your applications using TravelgateX platform. \t Overview Platform information\n   \t Security Authorization and authentication\n   \t Data Automation Automate data bulk operations\n   \t Reference Reference Documentation\n   \t Tutorials Walkthrouhgs of common applications\n   \t Resources Quotas, release notes\n    "
+},
+{
+	"uri": "/adminx/",
+	"title": "AdminX",
+	"tags": [],
+	"description": "",
+	"content": "FlightX connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel sellers. FlightX has been desined to be fast, reliable and offer strong performance.\n\t Overview AdminX Information\n    "
 },
 {
 	"uri": "/hotelx/plugins/aggregation/",
@@ -294,13 +224,6 @@
 	"content": " Concepts Each and every Seller works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them.\nWe connect seemlessly to more than 600 Sellers.\nAccesses, `Sellers` and Context Learn about Core Entities used in TravelgateX\n   Booking Flow Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n   Management Flow Learn about Management Flow. Cancellations and Booking List\n   Content Learn about how manage content data to manage in your site. Hotel, Boards, Categories...\n    "
 },
 {
-	"uri": "/hotelx/",
-	"title": "HotelX",
-	"tags": [],
-	"description": "",
-	"content": "ConnectX Hotel connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel sellers. ConnectX Hotel has been desined to be fast, reliable and offer strong performance.\n\t Overview HotelX Information\n   \t Quickstart Playground Quickstart\n   \t Concepts Understand TravelgateX concepts\n   \t How-to Guides Perform specific tasks\n   \t Plugins Additional logic to your App\n   \t Reference Reference Documentation\n   \t Resources Quotas, release notes\n    "
-},
-{
 	"uri": "/getting-started/playground/",
 	"title": "Playground",
 	"tags": [],
@@ -308,25 +231,25 @@
 	"content": " Try it For Yourself Or open in a new tab here\n"
 },
 {
-	"uri": "/platformx/security/authenticating/",
+	"uri": "/travelgatex/security/authenticating/",
 	"title": "Authenticating",
 	"tags": [],
 	"description": "Learn Platform Security",
 	"content": " Introduction Products and Resources are granted to Partners belonging to Organizations.\nAuthorized Partners can manage security rules to allow or deny Resources and Products.\nAuthentication Authentication is the process of authorizing or making sure that the Partner is who is supposed to be. This can be ensured either by login credentials or by API Key.\nEvery request to TravelgateX GraphQL API must carry an Authorization header with a JSON Web Token or API Key inside.\nJSON Web Tokens API Keys Creating an access token For development purposes please use the following test Api Key q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\nAuthorization Once the Partner is authenticated we must authorize the partner to use the requested Resource.\nRole based access control (RBAC) is the de facto standard for authorization. However, it introduces many complexities for practical applications: roles can be inflexible to change and additional mapping between users and roles must be maintained separately.\nTravelgateX permissions are Resource Group Assigned rules, defined using GraphQL API and determined at runtime by the data graph of the application.\nFurther Reading  https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a   "
 },
 {
-	"uri": "/platformx/data-automation/",
+	"uri": "/travelgatex/data-automation/",
 	"title": "Data Automation",
 	"tags": [],
 	"description": "Automate data bulk operations",
 	"content": " SFTP     "
 },
 {
-	"uri": "/flightx/",
-	"title": "FlightX",
+	"uri": "/hotelx/",
+	"title": "HotelX",
 	"tags": [],
 	"description": "",
-	"content": "FlightX connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel sellers. FlightX has been desined to be fast, reliable and offer strong performance.\n\t Overview FlightX Information\n    "
+	"content": "ConnectX Hotel connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel sellers. ConnectX Hotel has been desined to be fast, reliable and offer strong performance.\n\t Overview HotelX Information\n   \t Quickstart Playground Quickstart\n   \t Concepts Understand TravelgateX concepts\n   \t How-to Guides Perform specific tasks\n   \t Plugins Additional logic to your App\n   \t Reference Reference Documentation\n   \t Resources Quotas, release notes\n    "
 },
 {
 	"uri": "/hotelx/howtos/",
@@ -343,18 +266,11 @@
 	"content": " Manage operations can be used in order to operate above Seller\u0026rsquo;s bookings.\nCancel Performs a Seller booking cancellation.\nOperation { \u0026quot;mutation\u0026quot;: { \u0026quot;hotelCancel\u0026quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a Seller booking list or detail.\nOperation { \u0026quot;query\u0026quot;: { \u0026quot;booking\u0026quot;: { \u0026quot;hotel\u0026quot;: { } } } }  PlayGround Samples  booking  "
 },
 {
-	"uri": "/platformx/reference/",
+	"uri": "/travelgatex/reference/",
 	"title": "Reference",
 	"tags": [],
 	"description": "Reference Documentation",
 	"content": " Reference "
-},
-{
-	"uri": "/statsx/",
-	"title": "StatsX",
-	"tags": [],
-	"description": "",
-	"content": " \t Overview StatsX Information\n    "
 },
 {
 	"uri": "/learning-graphql/thinking_in_graphql/",
@@ -378,11 +294,11 @@
 	"content": " Aggregator Access  Price Aggregate  Aggregator  Price Aggregate  "
 },
 {
-	"uri": "/insightsx/",
-	"title": "InsightsX",
+	"uri": "/flightx/",
+	"title": "FlightX",
 	"tags": [],
 	"description": "",
-	"content": " \t Overview FlightX Information\n    "
+	"content": "FlightX connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel sellers. FlightX has been desined to be fast, reliable and offer strong performance.\n\t Overview FlightX Information\n    "
 },
 {
 	"uri": "/hotelx/plugins/",
@@ -392,6 +308,13 @@
 	"content": " \t Validator Validate plugins\n   \t Mapping Map plugins\n   \t Aggregation Aggregate plugins\n   \t Exchange Exchange plugins\n   \t Markup Markup plugins\n    "
 },
 {
+	"uri": "/statsx/",
+	"title": "StatsX",
+	"tags": [],
+	"description": "",
+	"content": " \t Overview StatsX Information\n    "
+},
+{
 	"uri": "/learning-graphql/tooling/",
 	"title": "Tooling",
 	"tags": [],
@@ -399,7 +322,7 @@
 	"content": " Tooling Please find below a collection of tools we\u0026rsquo;ve been using to help us develop in GraphQL. We have curated this list with the different goals each of the tools is for:\nDesigning Schemas We follow the Schema First methodology. There are many tools, the ones we tried and like most nowadays are:\n APIs Guru\u0026rsquo;s graphql-faker: https://github.com/APIs-guru/graphql-faker  TODO: Falta chicha!! Go Packages Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources. Also because of the ability to develop plugins. We\u0026rsquo;ve used many libraries and packages to help us, hereby our list:\n Redis: https://godoc.org/github.com/garyburd/redigo/redis  TODO: Falta chicha!! NodeJS Packages Other pieces of our software are written in NodeJS. Mainly because some packages are wither not avaialble in Go, or because the Go package is not as performant as the Node alternative. These are the packages we use:\nTODO: Falta chicha!! Schema Visualizers It\u0026rsquo;s nice to be able to see your schema and be able to navigate through it.\n GraphQL Voyager - Represent any GraphQL API as an interactive graph  Documentation Generators Generate beaultiful static documentation sites directly from schema or introspection query\n Graph Docs Graphdoc  GraphQL Clients Build, create and play with queries, it\u0026rsquo;s fun!\n Insomnia: our favorite \u0026#9825; graphql-playground: favorite online client GraphiQL: the original  TODO: Falta chicha!! Big List Very curated list full of different tools, resources, etc\n Awesome GraphQL  "
 },
 {
-	"uri": "/platformx/tutorials/",
+	"uri": "/travelgatex/tutorials/",
 	"title": "Tutorials",
 	"tags": [],
 	"description": "Walkthrouhgs of common applications",
@@ -427,7 +350,7 @@
 	"content": " Reference "
 },
 {
-	"uri": "/platformx/resources/",
+	"uri": "/travelgatex/resources/",
 	"title": "Resources",
 	"tags": [],
 	"description": "Quotas, release notes",
@@ -439,6 +362,13 @@
 	"tags": [],
 	"description": "",
 	"content": " The GraphQL ecosystem is growing fast. Apart from facebook\u0026rsquo;s and Graphql.org\u0026rsquo;s official documentation, each day as more and more development teams embrace the technology new blog posts, articles, tutorials, videos and learning material in general is published online.\nThis list is intended to serve as a examples we\u0026rsquo;ve used and found useful when adopting the technology. We\u0026rsquo;ve separated between tutorials get-your-hands-dirty full action kind to resources, which are reading materials, podcasts or any other kind of documentation, written or not, which will help you to Think in GraphQL.\nWe hope you enjoy!\nTutorials  https://github.com/blog/2412-learn-graphql-with-github  TODO: Falta chicha!! Resources  GraphQL official documentation Apollo Relay official documentation Schema first development - Johannes Schickling Schema-first development with GraphQL GraphQL First in practice at Quri GraphQL First: A better way to build modern apps  "
+},
+{
+	"uri": "/insightsx/",
+	"title": "InsightsX",
+	"tags": [],
+	"description": "",
+	"content": " \t Overview FlightX Information\n    "
 },
 {
 	"uri": "/hotelx/resources/",
@@ -473,7 +403,7 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": " Getting Started GOAL: información basica para empezar a desarrollar\nOverview GOAL: Explicar el who, why, how de la plataforma\n WHO: Equipos tecnicos para consumir servicios de travel\n WHY: search \u0026amp; book travel multi-products \u0026amp; multi-source\n WHY: Using the Storefront API, you can:\n HOW: Plataforma: Multi-Producto \u0026amp; Multi-Source\n HOW: Diagrama Platforma\n HOW: Utilización de GraphQL: EndPoint único\n WHY: Fast. Scalable. Reliable.\n Resumen: Ventajas GraphQL\n Get Engaged: comunidad, docuemntación y jira\n CALL2ACTION: Quickstart busqueda hoteles\n  QuickStart GOAL: minimo indispensable para hacer una petición\n INTRO: empezar en 1min   API Key test Ejemplo de búsqueda de ConnectX inline   Product QuickStarts\n CALL2ACTION: Try ConnectX Playground\n  Concepts GOAL: Glosario de conceptos\nINTRO: Explicar pq necesitamos estos conceptos y donde se utilizan\n Partner API Organization Buyer Seller Access Product Permission Plugin  CALL2ACTION: Read More about the Platform\nPlatform GOAL: Como funciona la plataforma a nivel técnico\nOverview GOAL: explicar utilizacion de la plataforma con GraphQL\nINTRO: Explica lo que se necesita saber para utilizar un producto, se utiliza como referencia de la documentación de los demás productos\n WHO: Developers de empresas de travel que quieran integrarse para comprar/vender productos de travel\n WHY: unificar en 1 API sencilla todos los servicios que se puedan vender o comprar en una empresa de productos turisticos\n WHY: Que puede hacer con la plataforma: \u0026ndash; Fetch data about a single product or a collection of products to display on any website or device. \u0026ndash; Create unique checkout experiences with full control over the shopping cart. \u0026ndash; Connect to more than 600 sellers of travel products. \u0026ndash; Allow customers to search \u0026amp; book through a number of sellers \u0026ndash; Gain complete control of the number and quality of requests sent and received \u0026ndash; Map new sellers to your existing hotel codes\n HOW: implementación API en GraphQL\n HOW: como funciona? \u0026ndash; HOW: breve explicación GraphQL \u0026ndash; HOW: endpoint unico \u0026ndash; HOW: GraphQL requests \u0026ndash; HOW: Security \u0026ndash; HOW: Data Automation \u0026ndash; HOW: API Reference \u0026ndash; HOW: Resources \u0026mdash; HOW: Quotas \u0026amp; Limits \u0026mdash; HOW: Release Notes\n  CALL2ACTION: Get Started With our Products\nSecurity GOAL: Explicar en detalle como fuciona INTRO: CONTENIDO:\nData Automation GOAL: INTRO: CONTENIDO:\nAPI Reference GOAL: INTRO: CONTENIDO:\nQuotas \u0026amp; Limits GOAL: INTRO: CONTENIDO:\nRelease Notes GOAL: INTRO: CONTENIDO:\nTutorials TravelB2B Stats Dashboard HotelX GOAL: información basica para empezar a desarrollar\nOverview GOAL: Explicar el who, why, how de la hotelX\n WHO: Equipos tecnicos para consumir apis de diferentes proveedores de acomodación\n WHY: search \u0026amp; book travel hotels multi-source\n WHY: Using the Storefront API, you can:\n HOW: Plataforma: Multi-Producto \u0026amp; Multi-Source\n HOW: Diagrama Platforma\n HOW: Utilización de GraphQL: EndPoint único\n WHY: Fast. Scalable. Reliable.\n Resumen: Ventajas GraphQL\n Get Engaged: comunidad, docuemntación y jira\n CALL2ACTION: Quickstart busqueda hoteles\n  QuickStart GOAL: minimo indispensable para hacer una petición\n INTRO: empezar en 1min   API Key test Ejemplo de búsqueda de ConnectX inline   Product QuickStarts\n CALL2ACTION: Try ConnectX Playground\n  Concepts GOAL: Glosario de conceptos\nINTRO: Explicar pq necesitamos estos conceptos y donde se utilizan\n Partner API Organization Buyer Seller Access Product Permission Plugin  CALL2ACTION: Read More about the Platform\n"
+	"content": " Getting Started pagetitle = \u0026ldquo;\u0026rdquo; GOAL: información basica para empezar a desarrollar\nOverview GOAL: Explicar el who, why, how de la plataforma\n WHO: Equipos tecnicos para consumir servicios de travel\n WHY: search \u0026amp; book travel multi-products \u0026amp; multi-source\n WHY: Using the Storefront API, you can:\n HOW: Plataforma: Multi-Producto \u0026amp; Multi-Source\n HOW: Diagrama Platforma\n HOW: Utilización de GraphQL: EndPoint único\n WHY: Fast. Scalable. Reliable.\n Resumen: Ventajas GraphQL\n Get Engaged: comunidad, docuemntación y jira\n CALL2ACTION: Quickstart busqueda hoteles\n  QuickStart GOAL: minimo indispensable para hacer una petición\n INTRO: empezar en 1min   API Key test Ejemplo de búsqueda de ConnectX inline   Product QuickStarts\n CALL2ACTION: Try ConnectX Playground\n  Concepts GOAL: Glosario de conceptos\nINTRO: Explicar pq necesitamos estos conceptos y donde se utilizan\n Partner API Organization Buyer Seller Access Product Permission Plugin  CALL2ACTION: Read More about the Platform\nPlatform GOAL: Como funciona la plataforma a nivel técnico\nOverview GOAL: explicar utilizacion de la plataforma con GraphQL\nINTRO: Explica lo que se necesita saber para utilizar un producto, se utiliza como referencia de la documentación de los demás productos\n WHO: Developers de empresas de travel que quieran integrarse para comprar/vender productos de travel\n WHY: unificar en 1 API sencilla todos los servicios que se puedan vender o comprar en una empresa de productos turisticos\n WHY: Que puede hacer con la plataforma: \u0026ndash; Fetch data about a single product or a collection of products to display on any website or device. \u0026ndash; Create unique checkout experiences with full control over the shopping cart. \u0026ndash; Connect to more than 600 sellers of travel products. \u0026ndash; Allow customers to search \u0026amp; book through a number of sellers \u0026ndash; Gain complete control of the number and quality of requests sent and received \u0026ndash; Map new sellers to your existing hotel codes\n HOW: implementación API en GraphQL\n HOW: como funciona? \u0026ndash; HOW: breve explicación GraphQL \u0026ndash; HOW: endpoint unico \u0026ndash; HOW: GraphQL requests \u0026ndash; HOW: Security \u0026ndash; HOW: Data Automation \u0026ndash; HOW: API Reference \u0026ndash; HOW: Resources \u0026mdash; HOW: Quotas \u0026amp; Limits \u0026mdash; HOW: Release Notes\n  CALL2ACTION: Get Started With our Products\nSecurity GOAL: Explicar en detalle como fuciona INTRO: CONTENIDO:\nData Automation GOAL: INTRO: CONTENIDO:\nAPI Reference GOAL: INTRO: CONTENIDO:\nQuotas \u0026amp; Limits GOAL: INTRO: CONTENIDO:\nRelease Notes GOAL: INTRO: CONTENIDO:\nTutorials TravelB2B Stats Dashboard HotelX GOAL: información basica para empezar a desarrollar\nOverview GOAL: Explicar el who, why, how de la hotelX\n WHO: Equipos tecnicos para consumir apis de diferentes proveedores de acomodación\n WHY: search \u0026amp; book travel hotels multi-source\n WHY: Using the Storefront API, you can:\n HOW: Plataforma: Multi-Producto \u0026amp; Multi-Source\n HOW: Diagrama Platforma\n HOW: Utilización de GraphQL: EndPoint único\n WHY: Fast. Scalable. Reliable.\n Resumen: Ventajas GraphQL\n Get Engaged: comunidad, docuemntación y jira\n CALL2ACTION: Quickstart busqueda hoteles\n  QuickStart GOAL: minimo indispensable para hacer una petición\n INTRO: empezar en 1min   API Key test Ejemplo de búsqueda de ConnectX inline   Product QuickStarts\n CALL2ACTION: Try ConnectX Playground\n  Concepts GOAL: Glosario de conceptos\nINTRO: Explicar pq necesitamos estos conceptos y donde se utilizan\n Partner API Organization Buyer Seller Access Product Permission Plugin  CALL2ACTION: Read More about the Platform\n"
 },
 {
 	"uri": "/categories/",
