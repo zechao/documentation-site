@@ -23,11 +23,19 @@
   </url>
   
   <url>
+    <loc>/admin/connect/entities/</loc>
+  </url>
+  
+  <url>
     <loc>/getting-started/</loc>
   </url>
   
   <url>
-    <loc>/adminx/overview/</loc>
+    <loc>/admin/account/iam/</loc>
+  </url>
+  
+  <url>
+    <loc>/admin/overview/</loc>
   </url>
   
   <url>
@@ -107,7 +115,7 @@
   </url>
   
   <url>
-    <loc>/adminx/</loc>
+    <loc>/admin/account/</loc>
   </url>
   
   <url>
@@ -128,6 +136,10 @@
   
   <url>
     <loc>/hotelx/concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>/admin/connect/</loc>
   </url>
   
   <url>
@@ -216,6 +228,10 @@
   
   <url>
     <loc>/hotelx/resources/</loc>
+  </url>
+  
+  <url>
+    <loc>/admin/</loc>
   </url>
   
   <url>

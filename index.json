@@ -35,6 +35,13 @@
 	"content": " Build Your Own Full Fledged OTA "
 },
 {
+	"uri": "/admin/connect/entities/",
+	"title": "Entities",
+	"tags": [],
+	"description": "AdminX Information",
+	"content": "This page shows you how to perform basic hotel book using GraphQL Playground.\n"
+},
+{
 	"uri": "/getting-started/",
 	"title": "Getting Started",
 	"tags": [],
@@ -42,7 +49,14 @@
 	"content": "Information to start developing \t Overview TravelgateX Information\n   \t Quickstart Learn in 5 minutes\n   \t Concepts Understand concepts\n   \t Playground Test inline\n    "
 },
 {
-	"uri": "/adminx/overview/",
+	"uri": "/admin/account/iam/",
+	"title": "IAM",
+	"tags": [],
+	"description": "AdminX Information",
+	"content": "This page shows you how to perform basic hotel book using GraphQL Playground.\n"
+},
+{
+	"uri": "/admin/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "AdminX Information",
@@ -182,11 +196,11 @@
 	"content": "Run your applications using TravelgateX platform. \t Overview Platform information\n   \t Security Authorization and authentication\n   \t Data Automation Automate data bulk operations\n   \t Reference Reference Documentation\n   \t Tutorials Walkthrouhgs of common applications\n   \t Resources Quotas, release notes\n    "
 },
 {
-	"uri": "/adminx/",
-	"title": "AdminX",
+	"uri": "/admin/account/",
+	"title": "Account",
 	"tags": [],
-	"description": "",
-	"content": "FlightX connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel sellers. FlightX has been desined to be fast, reliable and offer strong performance.\n\t Overview AdminX Information\n    "
+	"description": "Understand TravelgateX concepts",
+	"content": " Concepts Each and every Seller works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them.\nWe connect seemlessly to more than 600 Sellers.\nIAM AdminX Information\n    "
 },
 {
 	"uri": "/hotelx/plugins/aggregation/",
@@ -222,6 +236,13 @@
 	"tags": [],
 	"description": "Understand TravelgateX concepts",
 	"content": " Concepts Each and every Seller works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them.\nWe connect seemlessly to more than 600 Sellers.\nAccesses, `Sellers` and Context Learn about Core Entities used in TravelgateX\n   Booking Flow Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n   Management Flow Learn about Management Flow. Cancellations and Booking List\n   Content Learn about how manage content data to manage in your site. Hotel, Boards, Categories...\n    "
+},
+{
+	"uri": "/admin/connect/",
+	"title": "Connect",
+	"tags": [],
+	"description": "Understand TravelgateX concepts",
+	"content": " Concepts Each and every Seller works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them.\nWe connect seemlessly to more than 600 Sellers.\nEntities AdminX Information\n    "
 },
 {
 	"uri": "/getting-started/playground/",
@@ -376,6 +397,13 @@
 	"tags": [],
 	"description": "Quotas, release notes",
 	"content": " Resources "
+},
+{
+	"uri": "/admin/",
+	"title": "Admin",
+	"tags": [],
+	"description": "",
+	"content": "FlightX connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel sellers. FlightX has been desined to be fast, reliable and offer strong performance.\n\t Overview AdminX Information\n   \t Account Understand TravelgateX concepts\n   \t Connect Understand TravelgateX concepts\n    "
 },
 {
 	"uri": "/learning-graphql/",

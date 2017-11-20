@@ -62,11 +62,29 @@ In queries or mutations, JSON fields have to be specified with enclosing double 
     </item>
     
     <item>
-      <title>Overview</title>
-      <link>/adminx/overview/</link>
+      <title>Entities</title>
+      <link>/admin/connect/entities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/adminx/overview/</guid>
+      <guid>/admin/connect/entities/</guid>
+      <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
+    </item>
+    
+    <item>
+      <title>IAM</title>
+      <link>/admin/account/iam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/admin/account/iam/</guid>
+      <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/admin/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/admin/overview/</guid>
       <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
     </item>
     

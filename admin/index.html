@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
-<title>Quickstart :: TravelgateX Documentation</title>
+<title>Admin :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -21,13 +21,13 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="Playground Quickstart">
+<meta name="description" content="All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here.">
 <meta name="author" content="TravelgateX ByXTG">
 <link href="/css/tgx.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
-  <body data-url="/hotelx/quickstart/">
+  <body data-url="/admin/">
     <div class="mo-header fixed-top">
     <div class="top-header">
         <nav class="navbar navbar-toggleable-sm navbar-light bg-primary flex-row align-items-center">
@@ -193,12 +193,11 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/hotelx/" class="dd-item parent">
+        <li data-nav-id="/hotelx/" class="dd-item">
 
             <a href="/hotelx/" class="">
        
-            <span>
-                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
                 HotelX
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -208,7 +207,7 @@
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/quickstart/" class="dd-item active">
+          <li data-nav-id="/hotelx/quickstart/" class="dd-item">
             <a href="/hotelx/quickstart/">
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
@@ -335,11 +334,12 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/admin/" class="dd-item">
+        <li data-nav-id="/admin/" class="dd-item parent active">
 
             <a href="/admin/" class="">
        
-            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+            <span>
+                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
                 Admin
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -462,58 +462,48 @@
             <h1 class="pageTitle"></h1>
             
 
+	<p><em>FlightX</em> <em>connects</em> you to multiple <code>sellers</code> <em>addding</em> business logic <em>solving</em> most of the problems commonly found in the travel business in an <strong>elegant and efficient</strong> way.</p>
 
-    
-
-<p>This page shows you how to perform basic hotel book using GraphQL Playground.</p>
-
-<h3 id="before-you-begin">Before you begin</h3>
-
-<ol>
-<li>Follow the steps in <a href="/platform/security/authenticating/#creating-an-access-token">Creating an access token</a> to create your API Key.</li>
-<li><a href="/platform/overview/#making-requests">Check connectivity</a> for your API Key.</li>
-<li>Open <a href="https://graphqlbin.com/JYRtB">Sample Playground</a> and modify <code>HTTP HEADERS</code> field Authorization with your API Key.</li>
-</ol>
-
-<h3 id="search-hotel">Search Hotel</h3>
-
-<ol>
-<li>Click on <code>search</code> tab</li>
-<li>Modify <code>Query Variables</code> with valid dates and send the request.</li>
-</ol>
-
-<h3 id="quote-hotel">Quote Hotel</h3>
-
-<ol>
-<li>Click on <code>quote</code> tab</li>
-<li>In <code>Query Variables</code> modify <code>optionRefId</code> with option <code>id</code> value returned in search response and send the request.</li>
-</ol>
-
-<h3 id="book-hotel">Book Hotel</h3>
-
-<ol>
-<li>Click on <code>hotelBook</code> tab</li>
-<li>In <code>Query Variables</code> modify <code>optionRefId</code> with <code>optionRefId</code> value returned in quote response and send the request.</li>
-<li>Next other information you can chek for book <code>Seller reference</code></li>
-</ol>
+<p>There are no integration investments and you can operate with hundreds of hotel <code>sellers</code>. <em>FlightX</em> has been desined to be fast, reliable and offer strong performance.</p>
 
 
 
-<hr/>            
-            
-<div id="discourse-comments"></div>
+<div class="flex">
+		
+	<a href="/admin/overview/" class="card">
+		<div class="inner-card">
+				<div class="material-icons fa fa-info-circle"></div>		
+			<div>
+				<h3 class="text-headline">Overview</h3>
+					<p>AdminX Information</p>
+			</div>
+		</div>
+	</a>
+	<a href="/admin/account/" class="card">
+		<div class="inner-card">
+				<div class="material-icons fa fa-question-circle"></div>		
+			<div>
+				<h3 class="text-headline">Account</h3>
+					<p>Understand TravelgateX concepts</p>
+			</div>
+		</div>
+	</a>
+	<a href="/admin/connect/" class="card">
+		<div class="inner-card">
+				<div class="material-icons fa fa-question-circle"></div>		
+			<div>
+				<h3 class="text-headline">Connect</h3>
+					<p>Understand TravelgateX concepts</p>
+			</div>
+		</div>
+	</a>
+</div>
 
-<script type="text/javascript">
-  var discourseUrl = 'http:\/\/community.travelgatex.com\/',
-  discourseEmbedUrl =  window.location.href;
 
-  (function() {
-    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-      d.src = discourseUrl + 'javascripts/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  })();
-</script>
-   
+
+
+
+
 
                      
           </div>
@@ -521,20 +511,7 @@
         </div>
         <div class="menu-right">
           <div>
-            <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#before-you-begin">Before you begin</a></li>
-<li><a href="#search-hotel">Search Hotel</a></li>
-<li><a href="#quote-hotel">Quote Hotel</a></li>
-<li><a href="#book-hotel">Book Hotel</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+            
           </div>
         </div>
         <div class="clear"></div>
