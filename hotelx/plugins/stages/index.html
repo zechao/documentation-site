@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
-<title>Validator :: TravelgateX Documentation</title>
+<title>Stages :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -21,13 +21,13 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="Validate plugins">
+<meta name="description" content="Plugin Execution Stages">
 <meta name="author" content="TravelgateX ByXTG">
 <link href="/css/tgx.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
-  <body data-url="/hotelx/plugins/validators/">
+  <body data-url="/hotelx/plugins/stages/">
     <div class="mo-header fixed-top">
     <div class="top-header">
         <nav class="navbar navbar-toggleable-sm navbar-light bg-primary flex-row align-items-center">
@@ -270,29 +270,14 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/hotelx/plugins/validators/" class="dd-item active">
-            <a href="/hotelx/plugins/validators/">
-              <span style="padding-left: 8px;">Validator</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/hotelx/plugins/stages/" class="dd-item active">
+            <a href="/hotelx/plugins/stages/">
+              <span style="padding-left: 8px;">Stages</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/plugins/mappings/" class="dd-item">
-            <a href="/hotelx/plugins/mappings/">
-              <span style="padding-left: 8px;">Mapping</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/hotelx/plugins/aggregation/" class="dd-item">
-            <a href="/hotelx/plugins/aggregation/">
-              <span style="padding-left: 8px;">Aggregation</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
-            <a href="/hotelx/plugins/converter/">
-              <span style="padding-left: 8px;">Exchange</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/hotelx/plugins/markup/" class="dd-item">
-            <a href="/hotelx/plugins/markup/">
-              <span style="padding-left: 8px;">Markup</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/hotelx/plugins/reference/" class="dd-item">
+            <a href="/hotelx/plugins/reference/">
+              <span style="padding-left: 8px;">Reference</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -466,11 +451,152 @@
 
     
 
-<h2 id="validators">Validators</h2>
+<h1 id="search-stages">Search Stages</h1>
 
-<ul>
-<li><a href="https://github.com/TravelgateX">Validate Request</a></li>
-</ul>
+<p><a href="/hotelx/concepts/booking-flow#search">Search Booking Flow</a> pipeline stages.</p>
+
+<h2 id="request">Request</h2>
+
+<p><em>After</em> <code>Buyer</code> requests <em>search hotel</em> message.</p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>HotelCriteriaSearchInput</td>
+<td><code>Buyer</code> HotelCriteriaSearchInput</td>
+</tr>
+
+<tr>
+<td>HotelSettingsInput</td>
+<td>Merged settings from Request and hotelX configuration</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="default-plugins">Default Plugins</h3>
+
+<ol>
+<li><a href="../reference">ValidateRequestX</a></li>
+<li><a href="../reference">MapRequestX</a></li>
+</ol>
+
+<h2 id="access-request">Access Request</h2>
+
+<p><em>After</em> <code>Accesses</code> has been resolved and <em>before</em> send request to <code>Supplier</code> using <code>Access</code> configuration.</p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>HotelCriteriaSearchInput</td>
+<td><code>Buyer</code> HotelCriteriaSearchInput</td>
+</tr>
+
+<tr>
+<td>HotelSettingsInput</td>
+<td>Merged settings from Request and hotelX configuration</td>
+</tr>
+
+<tr>
+<td>Access</td>
+<td><code>Access</code> configuration to supplier</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="default-plugins-1">Default Plugins</h3>
+
+<h2 id="option-response">Option Response</h2>
+
+<p><em>After</em> <code>Supplier</code> responses <em>search hotel</em> message. For every option returned by <code>Supplier</code></p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>HotelOptionSearch</td>
+<td>Option returned by <code>Supplier</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="default-plugins-2">Default Plugins</h3>
+
+<ol>
+<li><a href="../reference">MapResponseX</a></li>
+<li><a href="../reference">PriceResponseX</a></li>
+</ol>
+
+<h2 id="access-response">Access Response</h2>
+
+<p><em>After</em> <code>Access</code> <code>Supplier</code> responses <em>search hotel</em> message. For all options returned by <code>Supplier</code></p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>HotelOptionSearchResponse</td>
+<td>Search Response returned by <code>Supplier</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="default-plugins-3">Default Plugins</h3>
+
+<ol>
+<li><a href="../reference">AggregateResponseX</a></li>
+</ol>
+
+<h2 id="response">Response</h2>
+
+<p><em>Before</em> <code>Buyer</code> response <em>search hotel</em> message.</p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>HotelSearchReponse</td>
+<td>Search Response to be returned to <code>Supplier</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="default-plugins-4">Default Plugins</h3>
+
+<ol>
+<li><a href="../reference">AggregateResponseX</a></li>
+</ol>
 
 
 
@@ -498,9 +624,28 @@
           <div>
             <nav id="TableOfContents">
 <ul>
-<li>
+<li><a href="#search-stages">Search Stages</a>
 <ul>
-<li><a href="#validators">Validators</a></li>
+<li><a href="#request">Request</a>
+<ul>
+<li><a href="#default-plugins">Default Plugins</a></li>
+</ul></li>
+<li><a href="#access-request">Access Request</a>
+<ul>
+<li><a href="#default-plugins-1">Default Plugins</a></li>
+</ul></li>
+<li><a href="#option-response">Option Response</a>
+<ul>
+<li><a href="#default-plugins-2">Default Plugins</a></li>
+</ul></li>
+<li><a href="#access-response">Access Response</a>
+<ul>
+<li><a href="#default-plugins-3">Default Plugins</a></li>
+</ul></li>
+<li><a href="#response">Response</a>
+<ul>
+<li><a href="#default-plugins-4">Default Plugins</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>

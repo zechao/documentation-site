@@ -133,11 +133,11 @@
 	"content": " Introduction SFTP, or Secure File Transfer Protocol, is a network protocol that provides completely secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in Finance, Technology, and Consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.\nSecurity To ensure the security of your data, we adhere to the highest standards in data security. The advanced security measures we take include:\n Password-based authentication. IP Whitelisting: We whitelist the IP Addresses you will be accessing your SFTP server from to ensure you, and only you, have access. Anomaly Detection: To ensure no loss of data, we detect anomalies in your uploads to the SFTP server and warn you when an upload would significantly change your account. Encryption: Data is encrypted, keeping your information safe and private.  Setup To get your FTP Credential Details raise a customer care request in Jira Service Desk.\n"
 },
 {
-	"uri": "/hotelx/plugins/validators/",
-	"title": "Validator",
+	"uri": "/hotelx/plugins/stages/",
+	"title": "Stages",
 	"tags": [],
-	"description": "Validate plugins",
-	"content": " Validators  Validate Request  "
+	"description": "Plugin Execution Stages",
+	"content": " Search Stages Search Booking Flow pipeline stages.\nRequest After Buyer requests search hotel message.\n   Parameter Description     HotelCriteriaSearchInput Buyer HotelCriteriaSearchInput   HotelSettingsInput Merged settings from Request and hotelX configuration    Default Plugins  ValidateRequestX MapRequestX  Access Request After Accesses has been resolved and before send request to Supplier using Access configuration.\n   Parameter Description     HotelCriteriaSearchInput Buyer HotelCriteriaSearchInput   HotelSettingsInput Merged settings from Request and hotelX configuration   Access Access configuration to supplier    Default Plugins Option Response After Supplier responses search hotel message. For every option returned by Supplier\n   Parameter Description     HotelOptionSearch Option returned by Supplier    Default Plugins  MapResponseX PriceResponseX  Access Response After Access Supplier responses search hotel message. For all options returned by Supplier\n   Parameter Description     HotelOptionSearchResponse Search Response returned by Supplier    Default Plugins  AggregateResponseX  Response Before Buyer response search hotel message.\n   Parameter Description     HotelSearchReponse Search Response to be returned to Supplier    Default Plugins  AggregateResponseX  "
 },
 {
 	"uri": "/travelgatex/tutorials/stats-dashboard/",
@@ -154,18 +154,18 @@
 	"content": " A query language for your API Designed by Facebook, GraphQL is a new way of dealing and managing APIs, specially useful for decoupling client\u0026rsquo;s from server\u0026rsquo;s logic.\nStraight from the horse\u0026rsquo;s mouth:  A GraphQL query is a string that is sent to a server to be interpreted and fulfilled, which then returns JSON back to the client. Lee Byron, Facebook\n Official Definition  GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools. graphql.org\n More specifically:  GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn\u0026rsquo;t tied to any specific database or storage engine and is instead backed by your existing code and data. graphql.org/learn\n GraphQL at TravelgateX GraphQL is a perfect fit for each and every need of our applications:\n Scalable: we must be able to handle millions of requests. Stable: a change in the API must not break the client. Fast: GraphQL not only allows faster response times by letting you choose exactly what you want, but also is consumes less bandwidth which makes responses lighter.  We\u0026rsquo;re a company focused in providing APIs for our clients. SOAP APIs are long gone and modelling REST APIs to fit a vast variety of products is not only hard, but the bigger it gets, the more unmanageable it becomes.\nAt TravelgateX, we\u0026rsquo;re true believers of the Kaisen philosophy. We\u0026rsquo;re constantly researching for new ways of improvement.\n GraphQL allows us to think of our APIs as a whole, giving a coherence in all our products \u0026amp; services, accessible from one single endpoint. It\u0026rsquo;s like a showcase for our APIs. Oscar Perez, CTO\n "
 },
 {
-	"uri": "/hotelx/plugins/mappings/",
-	"title": "Mapping",
-	"tags": [],
-	"description": "Map plugins",
-	"content": " Map plugins\nInput Mapping  Mapping Hotel  Output Mapping  Mapping Room  "
-},
-{
 	"uri": "/hotelx/quickstart/",
 	"title": "Quickstart",
 	"tags": [],
 	"description": "Playground Quickstart",
 	"content": " This page shows you how to perform basic hotel book using GraphQL Playground.\nBefore you begin  Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key.  Search Hotel  Click on search tab Modify Query Variables with valid dates and send the request.  Quote Hotel  Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.  Book Hotel  Click on hotelBook tab In Query Variables modify optionRefId with optionRefId value returned in quote response and send the request. Next other information you can chek for book Seller reference  "
+},
+{
+	"uri": "/hotelx/plugins/reference/",
+	"title": "Reference",
+	"tags": [],
+	"description": "Available Plugins to use",
+	"content": "   Name Description Parameters     ValidateRequestPluginX Validate user request    MapRequestPluginX Map Hotels    SplitAccessesPluginX Split requests to multiple Suppliers    MapResponsePluginX Map Hotels, Rooms and Boards mapHotels bool mapRooms bool mapBoards bool   PriceResponsePluginX Currency conversion and markups currencyConversion bool applyMarkups bool   AggregateResponsePluginX Aggregates options based on Primary Key and Price Comparer primaryKey string priceComparer string    "
 },
 {
 	"uri": "/hotelx/resources/release-notes/",
@@ -201,13 +201,6 @@
 	"tags": [],
 	"description": "Understand TravelgateX concepts",
 	"content": " Concepts Each and every Seller works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them.\nWe connect seemlessly to more than 600 Sellers.\nIAM AdminX Information\n    "
-},
-{
-	"uri": "/hotelx/plugins/aggregation/",
-	"title": "Aggregation",
-	"tags": [],
-	"description": "Aggregate plugins",
-	"content": " Aggregator Access  Price Aggregate  Aggregator  Price Aggregate  "
 },
 {
 	"uri": "/learning-graphql/basic_concepts/",
@@ -308,13 +301,6 @@
 	"content": ""
 },
 {
-	"uri": "/hotelx/plugins/converter/",
-	"title": "Exchange",
-	"tags": [],
-	"description": "Exchange plugins",
-	"content": " Aggregator Access  Price Aggregate  Aggregator  Price Aggregate  "
-},
-{
 	"uri": "/flightx/",
 	"title": "FlightX",
 	"tags": [],
@@ -326,7 +312,7 @@
 	"title": "Plugins",
 	"tags": [],
 	"description": "Additional logic to your App",
-	"content": " \t Validator Validate plugins\n   \t Mapping Map plugins\n   \t Aggregation Aggregate plugins\n   \t Exchange Exchange plugins\n   \t Markup Markup plugins\n    "
+	"content": "Manage your additional business logic.\n\t Stages Plugin Execution Stages\n   \t Reference Available Plugins to use\n    "
 },
 {
 	"uri": "/statsx/",
@@ -355,13 +341,6 @@
 	"tags": [],
 	"description": "",
 	"content": " \t Overview FlightX Information\n    "
-},
-{
-	"uri": "/hotelx/plugins/markup/",
-	"title": "Markup",
-	"tags": [],
-	"description": "Markup plugins",
-	"content": " Processor Access  Markup  "
 },
 {
 	"uri": "/hotelx/reference/",

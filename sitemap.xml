@@ -79,7 +79,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/validators/</loc>
+    <loc>/hotelx/plugins/stages/</loc>
   </url>
   
   <url>
@@ -91,11 +91,11 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/mappings/</loc>
+    <loc>/hotelx/quickstart/</loc>
   </url>
   
   <url>
-    <loc>/hotelx/quickstart/</loc>
+    <loc>/hotelx/plugins/reference/</loc>
   </url>
   
   <url>
@@ -116,10 +116,6 @@
   
   <url>
     <loc>/admin/account/</loc>
-  </url>
-  
-  <url>
-    <loc>/hotelx/plugins/aggregation/</loc>
   </url>
   
   <url>
@@ -179,10 +175,6 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/converter/</loc>
-  </url>
-  
-  <url>
     <loc>/flightx/</loc>
   </url>
   
@@ -204,10 +196,6 @@
   
   <url>
     <loc>/mappeax/</loc>
-  </url>
-  
-  <url>
-    <loc>/hotelx/plugins/markup/</loc>
   </url>
   
   <url>

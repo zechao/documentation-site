@@ -189,12 +189,15 @@ Security To ensure the security of your data, we adhere to the highest standards
     </item>
     
     <item>
-      <title>Validator</title>
-      <link>/hotelx/plugins/validators/</link>
+      <title>Stages</title>
+      <link>/hotelx/plugins/stages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotelx/plugins/validators/</guid>
-      <description> Validators  Validate Request  </description>
+      <guid>/hotelx/plugins/stages/</guid>
+      <description>Search Stages Search Booking Flow pipeline stages.
+Request After Buyer requests search hotel message.
+   Parameter Description     HotelCriteriaSearchInput Buyer HotelCriteriaSearchInput   HotelSettingsInput Merged settings from Request and hotelX configuration    Default Plugins  ValidateRequestX MapRequestX  Access Request After Accesses has been resolved and before send request to Supplier using Access configuration.
+   Parameter Description     HotelCriteriaSearchInput Buyer HotelCriteriaSearchInput   HotelSettingsInput Merged settings from Request and hotelX configuration   Access Access configuration to supplier    Default Plugins Option Response After Supplier responses search hotel message.</description>
     </item>
     
     <item>
@@ -218,16 +221,6 @@ Straight from the horse&amp;rsquo;s mouth:  A GraphQL query is a string that is 
     </item>
     
     <item>
-      <title>Mapping</title>
-      <link>/hotelx/plugins/mappings/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/plugins/mappings/</guid>
-      <description> Map plugins
-Input Mapping  Mapping Hotel  Output Mapping  Mapping Room  </description>
-    </item>
-    
-    <item>
       <title>Quickstart</title>
       <link>/hotelx/quickstart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -235,6 +228,15 @@ Input Mapping  Mapping Hotel  Output Mapping  Mapping Room  </description>
       <guid>/hotelx/quickstart/</guid>
       <description>This page shows you how to perform basic hotel book using GraphQL Playground.
 Before you begin  Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key.  Search Hotel  Click on search tab Modify Query Variables with valid dates and send the request.  Quote Hotel  Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.</description>
+    </item>
+    
+    <item>
+      <title>Reference</title>
+      <link>/hotelx/plugins/reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/reference/</guid>
+      <description>   Name Description Parameters     ValidateRequestPluginX Validate user request    MapRequestPluginX Map Hotels    SplitAccessesPluginX Split requests to multiple Suppliers    MapResponsePluginX Map Hotels, Rooms and Boards mapHotels bool mapRooms bool mapBoards bool   PriceResponsePluginX Currency conversion and markups currencyConversion bool applyMarkups bool   AggregateResponsePluginX Aggregates options based on Primary Key and Price Comparer primaryKey string priceComparer string    </description>
     </item>
     
     <item>
@@ -253,15 +255,6 @@ Before you begin  Follow the steps in Creating an access token to create your AP
       
       <guid>/travelgatex/resources/release-notes/</guid>
       <description>This page contains release notes for features and updates to the travelgaX GraphQL API.</description>
-    </item>
-    
-    <item>
-      <title>Aggregation</title>
-      <link>/hotelx/plugins/aggregation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/plugins/aggregation/</guid>
-      <description> Aggregator Access  Price Aggregate  Aggregator  Price Aggregate  </description>
     </item>
     
     <item>
@@ -351,15 +344,6 @@ Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quo
     </item>
     
     <item>
-      <title>Exchange</title>
-      <link>/hotelx/plugins/converter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/plugins/converter/</guid>
-      <description> Aggregator Access  Price Aggregate  Aggregator  Price Aggregate  </description>
-    </item>
-    
-    <item>
       <title>Tooling</title>
       <link>/learning-graphql/tooling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -368,15 +352,6 @@ Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quo
       <description>Tooling Please find below a collection of tools we&amp;rsquo;ve been using to help us develop in GraphQL. We have curated this list with the different goals each of the tools is for:
 Designing Schemas We follow the Schema First methodology. There are many tools, the ones we tried and like most nowadays are:
  APIs Guru&amp;rsquo;s graphql-faker: https://github.com/APIs-guru/graphql-faker  TODO: Falta chicha!! Go Packages Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources.</description>
-    </item>
-    
-    <item>
-      <title>Markup</title>
-      <link>/hotelx/plugins/markup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/plugins/markup/</guid>
-      <description> Processor Access  Markup  </description>
     </item>
     
     <item>
