@@ -196,7 +196,7 @@ Security To ensure the security of your data, we adhere to the highest standards
       <guid>/hotelx/plugins/stages/</guid>
       <description>Search Stages Search Booking Flow pipeline stages.
 Request After Buyer requests search hotel message.
-   Parameter Description     HotelCriteriaSearchInput Buyer HotelCriteriaSearchInput   HotelSettingsInput Merged settings from Request and hotelX configuration    Default Plugins  ValidateRequestX MapRequestX  Access Request After Accesses has been resolved and before send request to Supplier using Access configuration.
+   Parameter Description     HotelCriteriaSearchInput Buyer HotelCriteriaSearchInput   HotelSettingsInput Merged settings from Request and hotelX configuration    Default Plugins  ValidateRequest MapRequest  Access Request After Accesses has been resolved and before send request to Supplier using Access configuration.
    Parameter Description     HotelCriteriaSearchInput Buyer HotelCriteriaSearchInput   HotelSettingsInput Merged settings from Request and hotelX configuration   Access Access configuration to supplier    Default Plugins Option Response After Supplier responses search hotel message.</description>
     </item>
     
@@ -236,7 +236,7 @@ Before you begin  Follow the steps in Creating an access token to create your AP
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/reference/</guid>
-      <description>   Name Description Parameters     ValidateRequestPluginX Validate user request    MapRequestPluginX Map Hotels    SplitAccessesPluginX Split requests to multiple Suppliers    MapResponsePluginX Map Hotels, Rooms and Boards mapHotels bool mapRooms bool mapBoards bool   PriceResponsePluginX Currency conversion and markups currencyConversion bool applyMarkups bool   AggregateResponsePluginX Aggregates options based on Primary Key and Price Comparer primaryKey string priceComparer string    </description>
+      <description>   Name Description Parameters     ValidateRequest Validate user request    MapRequest Map Hotels    SplitAccesses Split requests to multiple Suppliers    MapResponse Map Hotels, Rooms and Boards mapHotels bool mapRooms bool mapBoards bool   PriceResponse Currency conversion and markups currencyConversion bool applyMarkups bool   AggregateResponse Aggregates options based on Primary Key and Price Comparer primaryKey string priceComparer string    </description>
     </item>
     
     <item>
