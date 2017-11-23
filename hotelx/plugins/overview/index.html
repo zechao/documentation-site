@@ -1141,6 +1141,21 @@
               <span style="padding-left: 8px;">Aggregation</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/hotelx/plugins/markup/" class="dd-item">
+            <a href="/hotelx/plugins/markup/">
+              <span style="padding-left: 8px;">Markup</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
+            <a href="/hotelx/plugins/converter/">
+              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/processor./" class="dd-item">
+            <a href="/hotelx/plugins/processor./">
+              <span style="padding-left: 8px;">Processor</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/hotelx/plugins/development/" class="dd-item">
             <a href="/hotelx/plugins/development/">
               <span style="padding-left: 8px;">Development</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1387,14 +1402,14 @@
 <p><a href="/hotelx/">HotelX</a> supports different plugin types:</p>
 
 <ol>
-<li><a href="../pre-step">Pre Step</a>: First execution on every <em>step</em>.</li>
-<li><a href="../hotel-map">Hotel Map</a>: Hotel mapping codes.</li>
-<li><a href="../board-map">Board Map</a>: Board mapping codes.</li>
-<li><a href="../room-map">Room Map</a>: Room mapping codes.</li>
-<li><a href="../currency-conversion">Currency Conversion</a>: Currency rate conversion.</li>
+<li><a href="../processor">Pre Step</a>: First execution on every <em>step</em>.</li>
+<li><a href="../mapping">Hotel Map</a>: Hotel mapping codes.</li>
+<li><a href="../mapping">Board Map</a>: Board mapping codes.</li>
+<li><a href="../mapping">Room Map</a>: Room mapping codes.</li>
+<li><a href="../converter">Currency Conversion</a>: Currency rate conversion.</li>
 <li><a href="../markup">Markup</a>: Markups to <code>supplier</code> price.</li>
 <li><a href="../aggregation">Aggregation</a>: Aggregate multiple <code>supplier</code> options.</li>
-<li><a href="../post-step">Post Step</a>: Last execution on every <em>step</em>.</li>
+<li><a href="../processor">Post Step</a>: Last execution on every <em>step</em>.</li>
 </ol>
 
 <h1 id="plugin-context-execution">Plugin Context Execution</h1>
@@ -1428,7 +1443,7 @@
 <tbody>
 <tr>
 <td><em>Request</em></td>
-<td><a href="../pre-step">Pre Step</a><br><a href="../hotel-map">Hotel Map</a><br><a href="../post-step">Post Step</a></td>
+<td><a href="../pre-step">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../post-step">Post Step</a></td>
 <td><a href="../pre-step">Pre Step</a><br><a href="../post-step">Post Step</a></td>
 <td><a href="../pre-step">Pre Step</a><br><a href="../post-step">Post Step</a></td>
 <td><a href="../pre-step">Pre Step</a> <br><a href="../post-step">Post Step</a></td>
@@ -1444,7 +1459,7 @@
 
 <tr>
 <td><em>Response Option</em></td>
-<td><a href="../pre-step">Pre Step</a><br><a href="../hotel-map">Hotel Map</a><br><a href="../hotel-map">Board Map</a><br><a href="../room-map">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../markup">Markup</a><br><a href="../aggregation">Aggregation</a><br><a href="../post-step">Post Step</a></td>
+<td><a href="../pre-step">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../markup">Markup</a><br><a href="../aggregation">Aggregation</a><br><a href="../post-step">Post Step</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1453,9 +1468,9 @@
 <tr>
 <td><em>Response Access</em></td>
 <td><a href="../pre-step">Pre Step</a><br><a href="../post-step">Post Step</a></td>
-<td><a href="../pre-step">Pre Step</a><br><a href="../hotel-map">Hotel Map</a><br><a href="../hotel-map">Board Map</a><br><a href="../room-map">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../markup">Markup</a><br><a href="../post-step">Post Step</a></td>
-<td><a href="../pre-step">Pre Step</a><br><a href="../hotel-map">Hotel Map</a><br><a href="../hotel-map">Board Map</a><br><a href="../room-map">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../post-step">Post Step</a></td>
-<td><a href="../pre-step">Pre Step</a><br><a href="../hotel-map">Hotel Map</a><br><a href="../hotel-map">Board Map</a><br><a href="../room-map">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../post-step">Post Step</a></td>
+<td><a href="../pre-step">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../markup">Markup</a><br><a href="../post-step">Post Step</a></td>
+<td><a href="../pre-step">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../post-step">Post Step</a></td>
+<td><a href="../pre-step">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../post-step">Post Step</a></td>
 </tr>
 
 <tr>

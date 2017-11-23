@@ -783,6 +783,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/plugins/markup/</loc>
+  </url>
+  
+  <url>
     <loc>/getting-started/playground/</loc>
   </url>
   
@@ -792,6 +796,10 @@
   
   <url>
     <loc>/travelgatex/security/authenticating/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/converter/</loc>
   </url>
   
   <url>
@@ -812,6 +820,10 @@
   
   <url>
     <loc>/hotelx/concepts/management-flow/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/processor./</loc>
   </url>
   
   <url>

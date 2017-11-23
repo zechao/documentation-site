@@ -1817,13 +1817,10 @@ Straight from the horse&amp;rsquo;s mouth:  A GraphQL query is a string that is 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/mapping/</guid>
-      <description>Overview Aggregation plugins extends HotelX allowing filtering Supplier options and respones using different business rules.
-KeyFilter Filters Supplier options based on field keys applying a selector function over field values.
-It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
- Field Keys as a combination of:
- SupplierCode HotelCode BoardCode RoomCode Refundable  Functions:
- Min Max  Field Values:
- PriceNet PriceGross   Configuration { }  Parameters keys: [String!</description>
+      <description>Overview Map plugins extends HotelX allowing to match Seller and Buyer codes based on contexts.
+HotelCodeMatching Matches Seller hotel codes based on file code mapping.
+File Requirements The file should be in the below format:
+ Encoding: UTF-8 File Name: [Code Context Buyer]_hotel_map.csv Header Row: Code Context, Seller Context, Code Seller Context Delimiter: Comma  Code Context, Seller Context, Code Seller Context 10,GUE,c11#10 10000,JCB,7604 10000,TOU,1274249  File must be uploaded to your organization directory SFTP</description>
     </item>
     
     <item>
@@ -1905,6 +1902,15 @@ GraphQL API TravelgateX is the first-in-the-industry travel API completely based
     </item>
     
     <item>
+      <title>Markup</title>
+      <link>/hotelx/plugins/markup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/markup/</guid>
+      <description> Overview </description>
+    </item>
+    
+    <item>
       <title>Playground</title>
       <link>/getting-started/playground/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1926,6 +1932,15 @@ Every request to TravelgateX GraphQL API must carry an Authorization header with
     </item>
     
     <item>
+      <title>Converter</title>
+      <link>/hotelx/plugins/converter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/converter/</guid>
+      <description> Overview </description>
+    </item>
+    
+    <item>
       <title>Management Flow</title>
       <link>/hotelx/concepts/management-flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1935,6 +1950,17 @@ Every request to TravelgateX GraphQL API must carry an Authorization header with
 Cancel Performs a Seller booking cancellation.
 Operation { &amp;quot;mutation&amp;quot;: { &amp;quot;hotelCancel&amp;quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a Seller booking list or detail.
 Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  booking  </description>
+    </item>
+    
+    <item>
+      <title>Processor</title>
+      <link>/hotelx/plugins/processor./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/processor./</guid>
+      <description> Overview Processor plugins extends HotelX allowing multiple operation types.
+Processor plugins can modify request and response message, allowing a full range of operations:
+ Split arrays Join arrays Modify object values Add or remove object instances  </description>
     </item>
     
     <item>

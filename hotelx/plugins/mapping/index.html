@@ -21,7 +21,7 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="Mapper plugins">
+<meta name="description" content="Map plugins">
 <meta name="author" content="TravelgateX ByXTG">
 <link href="/css/tgx.css" rel="stylesheet">
     
@@ -1141,6 +1141,21 @@
               <span style="padding-left: 8px;">Aggregation</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/hotelx/plugins/markup/" class="dd-item">
+            <a href="/hotelx/plugins/markup/">
+              <span style="padding-left: 8px;">Markup</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
+            <a href="/hotelx/plugins/converter/">
+              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/processor./" class="dd-item">
+            <a href="/hotelx/plugins/processor./">
+              <span style="padding-left: 8px;">Processor</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/hotelx/plugins/development/" class="dd-item">
             <a href="/hotelx/plugins/development/">
               <span style="padding-left: 8px;">Development</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1329,61 +1344,47 @@
 
 <h1 id="overview">Overview</h1>
 
-<p>Aggregation plugins extends <a href="/hotelx/">HotelX</a> allowing filtering <code>Supplier</code> options and respones using different business rules.</p>
+<p>Map plugins extends <a href="/hotelx/">HotelX</a> allowing to match <code>Seller</code> and <code>Buyer</code> codes based on contexts.</p>
 
-<h1 id="keyfilter">KeyFilter</h1>
+<h1 id="hotelcodematching">HotelCodeMatching</h1>
 
-<p>Filters <code>Supplier</code> options based on <em>field keys</em> applying a selector <em>function</em> over <em>field values</em>.</p>
+<p>Matches <code>Seller</code> hotel codes based on file code mapping.</p>
 
-<p>It&rsquo;s based on <a href="https://www.postgresql.org/docs/current/static/functions-aggregate.html">SQL Aggregate Functions</a> but filtering, not aggregating.</p>
+<h2 id="file-requirements">File Requirements</h2>
 
-<ul>
-<li><p><strong><em>Field Keys</em></strong> as a combination of:</p>
-
-<ul>
-<li>SupplierCode</li>
-<li>HotelCode</li>
-<li>BoardCode</li>
-<li>RoomCode</li>
-<li>Refundable</li>
-</ul></li>
-
-<li><p><strong><em>Functions</em></strong>:</p>
+<p>The file should be in the below format:</p>
 
 <ul>
-<li>Min</li>
-<li>Max</li>
-</ul></li>
-
-<li><p><strong><em>Field Values</em></strong>:</p>
-
-<ul>
-<li>PriceNet</li>
-<li>PriceGross</li>
-</ul></li>
+<li><strong>Encoding</strong>: UTF-8</li>
+<li><strong>File Name</strong>: [Code Context Buyer]_hotel_map.csv</li>
+<li><strong>Header Row</strong>: Code Context, Seller Context, Code Seller Context</li>
+<li><strong>Delimiter</strong>: Comma</li>
 </ul>
+
+<pre><code class="language-text">Code Context, Seller Context, Code Seller Context
+10,GUE,c11#10
+10000,JCB,7604
+10000,TOU,1274249
+</code></pre>
+
+<p>File must be uploaded to your organization directory <a href="/travelgatex/data-automation/ftp">SFTP</a></p>
 
 <h2 id="configuration">Configuration</h2>
 
 <pre><code class="language-json">{
+
 }
 </code></pre>
 
 <h2 id="parameters">Parameters</h2>
 
-<h3 id="keys-string">keys: [String!]</h3>
+<h3 id="stopsonmatcherror-boolean">stopsOnMatchError: [Boolean]</h3>
 
-<p>Values must be a valid Field Key.</p>
+<p>Stops message execution when hotel matching can not be done. Default value <em>False</em></p>
 
-<h3 id="function-string">function: String!</h3>
+<h1 id="boardcodematching">BoardCodeMatching</h1>
 
-<p>Value must be a valid Function.</p>
-
-<h3 id="value-string">value: String!</h3>
-
-<p>Value must be a valid Field Value.</p>
-
-<h2 id="faq">FAQ</h2>
+<h1 id="roomsemanticmatching">RoomSemanticMatching</h1>
 
 
 
@@ -1411,17 +1412,17 @@
             <nav id="TableOfContents">
 <ul>
 <li><a href="#overview">Overview</a></li>
-<li><a href="#keyfilter">KeyFilter</a>
+<li><a href="#hotelcodematching">HotelCodeMatching</a>
 <ul>
+<li><a href="#file-requirements">File Requirements</a></li>
 <li><a href="#configuration">Configuration</a></li>
 <li><a href="#parameters">Parameters</a>
 <ul>
-<li><a href="#keys-string">keys: [String!]</a></li>
-<li><a href="#function-string">function: String!</a></li>
-<li><a href="#value-string">value: String!</a></li>
+<li><a href="#stopsonmatcherror-boolean">stopsOnMatchError: [Boolean]</a></li>
 </ul></li>
-<li><a href="#faq">FAQ</a></li>
 </ul></li>
+<li><a href="#boardcodematching">BoardCodeMatching</a></li>
+<li><a href="#roomsemanticmatching">RoomSemanticMatching</a></li>
 </ul>
 </nav>
           </div>

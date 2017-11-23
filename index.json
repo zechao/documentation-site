@@ -1270,8 +1270,8 @@
 	"uri": "/hotelx/plugins/mapping/",
 	"title": "Mapping",
 	"tags": [],
-	"description": "Mapper plugins",
-	"content": " Overview Aggregation plugins extends HotelX allowing filtering Supplier options and respones using different business rules.\nKeyFilter Filters Supplier options based on field keys applying a selector function over field values.\nIt\u0026rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.\n Field Keys as a combination of:\n SupplierCode HotelCode BoardCode RoomCode Refundable  Functions:\n Min Max  Field Values:\n PriceNet PriceGross   Configuration { }  Parameters keys: [String!] Values must be a valid Field Key.\nfunction: String! Value must be a valid Function.\nvalue: String! Value must be a valid Field Value.\nFAQ "
+	"description": "Map plugins",
+	"content": " Overview Map plugins extends HotelX allowing to match Seller and Buyer codes based on contexts.\nHotelCodeMatching Matches Seller hotel codes based on file code mapping.\nFile Requirements The file should be in the below format:\n Encoding: UTF-8 File Name: [Code Context Buyer]_hotel_map.csv Header Row: Code Context, Seller Context, Code Seller Context Delimiter: Comma  Code Context, Seller Context, Code Seller Context 10,GUE,c11#10 10000,JCB,7604 10000,TOU,1274249  File must be uploaded to your organization directory SFTP\nConfiguration { }  Parameters stopsOnMatchError: [Boolean] Stops message execution when hotel matching can not be done. Default value False\nBoardCodeMatching RoomSemanticMatching "
 },
 {
 	"uri": "/travelgatex/reference/objects/",
@@ -1327,7 +1327,7 @@
 	"title": "Aggregation",
 	"tags": [],
 	"description": "Aggregation plugins",
-	"content": " Overview Aggregation plugins extends HotelX allowing filtering Supplier options and respones using different business rules.\nKeyFilter Filters Supplier options based on field keys applying a selector function over field values.\nIt\u0026rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.\n Field Keys as a combination of:\n SupplierCode HotelCode BoardCode RoomCode Refundable  Functions:\n Min Max  Field Values:\n PriceNet PriceGross   Configuration { }  Parameters keys: [String!] Values must be a valid Field Key.\nfunction: String! Value must be a valid Function.\nvalue: String! Value must be a valid Field Value.\nFAQ "
+	"content": " Overview Aggregation plugins extends HotelX allowing filtering Supplier options and respones using different business rules.\nKeyFilter Filters Supplier options based on field keys applying a selector function over field values.\nIt\u0026rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.\n Field Keys as a combination of:\n SupplierCode HotelCode BoardCode RoomCode Refundable  Functions:\n Min Max  Field Values:\n PriceNet PriceGross   Configuration { }  Parameters keys: [String!] Values must be a valid Field Key.\nfunction: String! Value must be a valid Function.\nvalue: String! Value must be a valid Field Value.\n"
 },
 {
 	"uri": "/learning-graphql/basic_concepts/",
@@ -1365,6 +1365,13 @@
 	"content": " Concepts Each and every Seller works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and suffered learned from all of them.\nWe connect seemlessly to more than 600 Sellers.\nEntities AdminX Information\n    "
 },
 {
+	"uri": "/hotelx/plugins/markup/",
+	"title": "Markup",
+	"tags": [],
+	"description": "Markup plugins",
+	"content": " Overview "
+},
+{
 	"uri": "/getting-started/playground/",
 	"title": "Playground",
 	"tags": [],
@@ -1384,6 +1391,13 @@
 	"tags": [],
 	"description": "Learn Platform Security",
 	"content": " Introduction Products and Resources are granted to Partners belonging to Organizations.\nAuthorized Partners can manage security rules to allow or deny Resources and Products.\nAuthentication Authentication is the process of authorizing or making sure that the Partner is who is supposed to be. This can be ensured either by login credentials or by API Key.\nEvery request to TravelgateX GraphQL API must carry an Authorization header with a JSON Web Token or API Key inside.\nJSON Web Tokens API Keys Creating an access token For development purposes please use the following test Api Key q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\nAuthorization Once the Partner is authenticated we must authorize the partner to use the requested Resource.\nRole based access control (RBAC) is the de facto standard for authorization. However, it introduces many complexities for practical applications: roles can be inflexible to change and additional mapping between users and roles must be maintained separately.\nTravelgateX permissions are Resource Group Assigned rules, defined using GraphQL API and determined at runtime by the data graph of the application.\nFurther Reading  https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a   "
+},
+{
+	"uri": "/hotelx/plugins/converter/",
+	"title": "Converter",
+	"tags": [],
+	"description": "Converter plugins",
+	"content": " Overview "
 },
 {
 	"uri": "/travelgatex/data-automation/",
@@ -1419,6 +1433,13 @@
 	"tags": [],
 	"description": "Learn about Management Flow. Cancellations and Booking List",
 	"content": " Manage operations can be used in order to operate above Seller\u0026rsquo;s bookings.\nCancel Performs a Seller booking cancellation.\nOperation { \u0026quot;mutation\u0026quot;: { \u0026quot;hotelCancel\u0026quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a Seller booking list or detail.\nOperation { \u0026quot;query\u0026quot;: { \u0026quot;booking\u0026quot;: { \u0026quot;hotel\u0026quot;: { } } } }  PlayGround Samples  booking  "
+},
+{
+	"uri": "/hotelx/plugins/processor./",
+	"title": "Processor",
+	"tags": [],
+	"description": "Processor plugins",
+	"content": " Overview Processor plugins extends HotelX allowing multiple operation types.\nProcessor plugins can modify request and response message, allowing a full range of operations:\n Split arrays Join arrays Modify object values Add or remove object instances  "
 },
 {
 	"uri": "/travelgatex/reference/",
@@ -1467,7 +1488,7 @@
 	"title": "Plugins",
 	"tags": [],
 	"description": "Additional logic to your App",
-	"content": "Customize your additional features.\n\t Overview Plugins workflow execution\n   \t Mapping Mapper plugins\n   \t Aggregation Aggregation plugins\n   \t Development Develop your own plugins\n    "
+	"content": "Customize your additional features.\n\t Overview Plugins workflow execution\n   \t Mapping Map plugins\n   \t Aggregation Aggregation plugins\n   \t Markup Markup plugins\n   \t Converter Converter plugins\n   \t Processor Processor plugins\n   \t Development Develop your own plugins\n    "
 },
 {
 	"uri": "/statsx/",
