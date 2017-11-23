@@ -1435,7 +1435,7 @@
 	"content": " Manage operations can be used in order to operate above Seller\u0026rsquo;s bookings.\nCancel Performs a Seller booking cancellation.\nOperation { \u0026quot;mutation\u0026quot;: { \u0026quot;hotelCancel\u0026quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a Seller booking list or detail.\nOperation { \u0026quot;query\u0026quot;: { \u0026quot;booking\u0026quot;: { \u0026quot;hotel\u0026quot;: { } } } }  PlayGround Samples  booking  "
 },
 {
-	"uri": "/hotelx/plugins/processor./",
+	"uri": "/hotelx/plugins/processor/",
 	"title": "Processor",
 	"tags": [],
 	"description": "Processor plugins",

@@ -1954,10 +1954,10 @@ Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quo
     
     <item>
       <title>Processor</title>
-      <link>/hotelx/plugins/processor./</link>
+      <link>/hotelx/plugins/processor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotelx/plugins/processor./</guid>
+      <guid>/hotelx/plugins/processor/</guid>
       <description> Overview Processor plugins extends HotelX allowing multiple operation types.
 Processor plugins can modify request and response message, allowing a full range of operations:
  Split arrays Join arrays Modify object values Add or remove object instances  </description>
