@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HotelX: NextGen Hotel Search API | TravelgateX Documentation</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.30.2" />
+<title>HotelX :: TravelgateX Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "\/";
+</script>
+
+<meta name="description" content="HotelX: NextGen Hotel Search API">
+<meta name="author" content="TravelgateX ByXTG">
+<link href="/css/tgx.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body data-url="/hotelx/">
+    <div class="mo-header fixed-top">
+    <div class="top-header">
+        <nav class="navbar navbar-toggleable-sm navbar-light bg-primary flex-row align-items-center">
+            <i id="menu" class="fa fa-bars "></i>
+            <a class="navbar-brand" href="/">
+                <img src="/images/xtg_logo.svg">
+            </a>
+            <div class="iso-input-search hidden-xs-down">
+                <div class="ico-label">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <input data-search-input class="form-control"  id="search-by" type="text" placeholder="Search docs...">
+                <script type="text/javascript" src="/js/lunr.min.js"></script>
+                <script type="text/javascript" src="/js/auto-complete.js"></script>
+                <script type="text/javascript">
+                    
+                    var baseurl = "\/";
+                    
+                </script>
+                <script type="text/javascript" src="/js/search.js"></script>
+            </div>
+            <ul class="navbar-nav flex-row ml-auto">
+    
+            </ul>
+        </nav>
+    </div>
+</div>
+    
+    <div class="container main">
+      <div class="row">
+        <div id="navbar" class="menu-left hidden-xs hidden-sm">
+            <nav  class="menu-nav material-box">
+  <ul class="topics">
+        <li data-nav-id="/getting-started/" class="dd-item">
+
+            <a href="/getting-started/" class="">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Getting Started
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/getting-started/overview/" class="dd-item">
+            <a href="/getting-started/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/getting-started/quickstart/" class="dd-item">
+            <a href="/getting-started/quickstart/">
+              <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/getting-started/playground/" class="dd-item">
+            <a href="/getting-started/playground/">
+              <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/travelgatex/" class="dd-item">
+
+            <a href="/travelgatex/" class="">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                TravelgateX
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/travelgatex/overview/" class="dd-item">
+            <a href="/travelgatex/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/travelgatex/reference/" class="dd-item">
+
+            <a href="/travelgatex/reference/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Reference
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/travelgatex/reference/api-reference/" class="dd-item">
+            <a href="/travelgatex/reference/api-reference/">
+              <span style="padding-left: 8px;">API Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/travelgatex/reference/schema/" class="dd-item">
+
+            <a href="/travelgatex/reference/schema/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Schema
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/travelgatex/reference/schema/mutation/" class="dd-item">
+            <a href="/travelgatex/reference/schema/mutation/">
+              <span style="padding-left: 8px;">Mutation</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/schema/query/" class="dd-item">
+            <a href="/travelgatex/reference/schema/query/">
+              <span style="padding-left: 8px;">Query</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/travelgatex/reference/objects/" class="dd-item">
+
+            <a href="/travelgatex/reference/objects/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Objects
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/travelgatex/reference/objects/access/" class="dd-item">
+            <a href="/travelgatex/reference/objects/access/">
+              <span style="padding-left: 8px;">Access</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/accessconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/accessconnection/">
+              <span style="padding-left: 8px;">AccessConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/accessdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/accessdata/">
+              <span style="padding-left: 8px;">AccessData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/accessedge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/accessedge/">
+              <span style="padding-left: 8px;">AccessEdge</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/addons/" class="dd-item">
+            <a href="/travelgatex/reference/objects/addons/">
+              <span style="padding-left: 8px;">AddOns</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/amenity/" class="dd-item">
+            <a href="/travelgatex/reference/objects/amenity/">
+              <span style="padding-left: 8px;">Amenity</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/amenityconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/amenityconnection/">
+              <span style="padding-left: 8px;">AmenityConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/amenitydata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/amenitydata/">
+              <span style="padding-left: 8px;">AmenityData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/amenityedge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/amenityedge/">
+              <span style="padding-left: 8px;">AmenityEdge</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/auditdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/auditdata/">
+              <span style="padding-left: 8px;">AuditData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/bed/" class="dd-item">
+            <a href="/travelgatex/reference/objects/bed/">
+              <span style="padding-left: 8px;">Bed</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/booking/" class="dd-item">
+            <a href="/travelgatex/reference/objects/booking/">
+              <span style="padding-left: 8px;">Booking</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/bookinghotel/" class="dd-item">
+            <a href="/travelgatex/reference/objects/bookinghotel/">
+              <span style="padding-left: 8px;">BookingHotel</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/bookingroom/" class="dd-item">
+            <a href="/travelgatex/reference/objects/bookingroom/">
+              <span style="padding-left: 8px;">BookingRoom</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/businessrules/" class="dd-item">
+            <a href="/travelgatex/reference/objects/businessrules/">
+              <span style="padding-left: 8px;">BusinessRules</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/cancelpenalty/" class="dd-item">
+            <a href="/travelgatex/reference/objects/cancelpenalty/">
+              <span style="padding-left: 8px;">CancelPenalty</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/cancelpolicy/" class="dd-item">
+            <a href="/travelgatex/reference/objects/cancelpolicy/">
+              <span style="padding-left: 8px;">CancelPolicy</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/connectuser/" class="dd-item">
+            <a href="/travelgatex/reference/objects/connectuser/">
+              <span style="padding-left: 8px;">ConnectUser</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/connectusergroup/" class="dd-item">
+            <a href="/travelgatex/reference/objects/connectusergroup/">
+              <span style="padding-left: 8px;">ConnectUserGroup</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/contact/" class="dd-item">
+            <a href="/travelgatex/reference/objects/contact/">
+              <span style="padding-left: 8px;">Contact</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/criteriasearch/" class="dd-item">
+            <a href="/travelgatex/reference/objects/criteriasearch/">
+              <span style="padding-left: 8px;">CriteriaSearch</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/defaultsettings/" class="dd-item">
+            <a href="/travelgatex/reference/objects/defaultsettings/">
+              <span style="padding-left: 8px;">DefaultSettings</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/destination/" class="dd-item">
+            <a href="/travelgatex/reference/objects/destination/">
+              <span style="padding-left: 8px;">Destination</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/error/" class="dd-item">
+            <a href="/travelgatex/reference/objects/error/">
+              <span style="padding-left: 8px;">Error</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/exchange/" class="dd-item">
+            <a href="/travelgatex/reference/objects/exchange/">
+              <span style="padding-left: 8px;">Exchange</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/geocode/" class="dd-item">
+            <a href="/travelgatex/reference/objects/geocode/">
+              <span style="padding-left: 8px;">Geocode</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/groupaccess/" class="dd-item">
+            <a href="/travelgatex/reference/objects/groupaccess/">
+              <span style="padding-left: 8px;">GroupAccess</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/holder/" class="dd-item">
+            <a href="/travelgatex/reference/objects/holder/">
+              <span style="padding-left: 8px;">Holder</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hotel/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hotel/">
+              <span style="padding-left: 8px;">Hotel</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hotelbookpayload/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hotelbookpayload/">
+              <span style="padding-left: 8px;">HotelBookPayload</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hotelbooking/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hotelbooking/">
+              <span style="padding-left: 8px;">HotelBooking</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hotelbookingdetail/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hotelbookingdetail/">
+              <span style="padding-left: 8px;">HotelBookingDetail</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hotelcanceldetail/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hotelcanceldetail/">
+              <span style="padding-left: 8px;">HotelCancelDetail</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hotelcancelpayload/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hotelcancelpayload/">
+              <span style="padding-left: 8px;">HotelCancelPayload</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hotelconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hotelconnection/">
+              <span style="padding-left: 8px;">HotelConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hoteldata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hoteldata/">
+              <span style="padding-left: 8px;">HotelData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hoteledge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hoteledge/">
+              <span style="padding-left: 8px;">HotelEdge</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hoteloptionquote/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hoteloptionquote/">
+              <span style="padding-left: 8px;">HotelOptionQuote</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hoteloptionsearch/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hoteloptionsearch/">
+              <span style="padding-left: 8px;">HotelOptionSearch</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hotelquote/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hotelquote/">
+              <span style="padding-left: 8px;">HotelQuote</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hotelsearch/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hotelsearch/">
+              <span style="padding-left: 8px;">HotelSearch</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/location/" class="dd-item">
+            <a href="/travelgatex/reference/objects/location/">
+              <span style="padding-left: 8px;">Location</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/map/" class="dd-item">
+            <a href="/travelgatex/reference/objects/map/">
+              <span style="padding-left: 8px;">Map</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/mapping/" class="dd-item">
+            <a href="/travelgatex/reference/objects/mapping/">
+              <span style="padding-left: 8px;">Mapping</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/mappingcontext/" class="dd-item">
+            <a href="/travelgatex/reference/objects/mappingcontext/">
+              <span style="padding-left: 8px;">MappingContext</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/mappingentity/" class="dd-item">
+            <a href="/travelgatex/reference/objects/mappingentity/">
+              <span style="padding-left: 8px;">MappingEntity</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/markup/" class="dd-item">
+            <a href="/travelgatex/reference/objects/markup/">
+              <span style="padding-left: 8px;">Markup</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/media/" class="dd-item">
+            <a href="/travelgatex/reference/objects/media/">
+              <span style="padding-left: 8px;">Media</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/mediaconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/mediaconnection/">
+              <span style="padding-left: 8px;">MediaConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/mediadata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/mediadata/">
+              <span style="padding-left: 8px;">MediaData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/mediaedge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/mediaedge/">
+              <span style="padding-left: 8px;">MediaEdge</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/occupancy/" class="dd-item">
+            <a href="/travelgatex/reference/objects/occupancy/">
+              <span style="padding-left: 8px;">Occupancy</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/pageinfo/" class="dd-item">
+            <a href="/travelgatex/reference/objects/pageinfo/">
+              <span style="padding-left: 8px;">PageInfo</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/parameter/" class="dd-item">
+            <a href="/travelgatex/reference/objects/parameter/">
+              <span style="padding-left: 8px;">Parameter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/pax/" class="dd-item">
+            <a href="/travelgatex/reference/objects/pax/">
+              <span style="padding-left: 8px;">Pax</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/price/" class="dd-item">
+            <a href="/travelgatex/reference/objects/price/">
+              <span style="padding-left: 8px;">Price</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/pricebreakdown/" class="dd-item">
+            <a href="/travelgatex/reference/objects/pricebreakdown/">
+              <span style="padding-left: 8px;">PriceBreakdown</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/promotion/" class="dd-item">
+            <a href="/travelgatex/reference/objects/promotion/">
+              <span style="padding-left: 8px;">Promotion</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/quote/" class="dd-item">
+            <a href="/travelgatex/reference/objects/quote/">
+              <span style="padding-left: 8px;">Quote</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/rateplan/" class="dd-item">
+            <a href="/travelgatex/reference/objects/rateplan/">
+              <span style="padding-left: 8px;">RatePlan</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/reference/" class="dd-item">
+            <a href="/travelgatex/reference/objects/reference/">
+              <span style="padding-left: 8px;">Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/requeststats/" class="dd-item">
+            <a href="/travelgatex/reference/objects/requeststats/">
+              <span style="padding-left: 8px;">RequestStats</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/resort/" class="dd-item">
+            <a href="/travelgatex/reference/objects/resort/">
+              <span style="padding-left: 8px;">Resort</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/room/" class="dd-item">
+            <a href="/travelgatex/reference/objects/room/">
+              <span style="padding-left: 8px;">Room</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/roomcriteria/" class="dd-item">
+            <a href="/travelgatex/reference/objects/roomcriteria/">
+              <span style="padding-left: 8px;">RoomCriteria</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/roomprice/" class="dd-item">
+            <a href="/travelgatex/reference/objects/roomprice/">
+              <span style="padding-left: 8px;">RoomPrice</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/rule/" class="dd-item">
+            <a href="/travelgatex/reference/objects/rule/">
+              <span style="padding-left: 8px;">Rule</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/search/" class="dd-item">
+            <a href="/travelgatex/reference/objects/search/">
+              <span style="padding-left: 8px;">Search</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/servicestatus/" class="dd-item">
+            <a href="/travelgatex/reference/objects/servicestatus/">
+              <span style="padding-left: 8px;">ServiceStatus</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/stat/" class="dd-item">
+            <a href="/travelgatex/reference/objects/stat/">
+              <span style="padding-left: 8px;">Stat</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/stataccess/" class="dd-item">
+            <a href="/travelgatex/reference/objects/stataccess/">
+              <span style="padding-left: 8px;">StatAccess</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/stattransaction/" class="dd-item">
+            <a href="/travelgatex/reference/objects/stattransaction/">
+              <span style="padding-left: 8px;">StatTransaction</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/supplement/" class="dd-item">
+            <a href="/travelgatex/reference/objects/supplement/">
+              <span style="padding-left: 8px;">Supplement</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/supplier/" class="dd-item">
+            <a href="/travelgatex/reference/objects/supplier/">
+              <span style="padding-left: 8px;">Supplier</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/supplierdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/supplierdata/">
+              <span style="padding-left: 8px;">SupplierData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/suppliergroup/" class="dd-item">
+            <a href="/travelgatex/reference/objects/suppliergroup/">
+              <span style="padding-left: 8px;">SupplierGroup</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/surcharge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/surcharge/">
+              <span style="padding-left: 8px;">Surcharge</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/timeout/" class="dd-item">
+            <a href="/travelgatex/reference/objects/timeout/">
+              <span style="padding-left: 8px;">Timeout</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/transactions/" class="dd-item">
+            <a href="/travelgatex/reference/objects/transactions/">
+              <span style="padding-left: 8px;">Transactions</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/urls/" class="dd-item">
+            <a href="/travelgatex/reference/objects/urls/">
+              <span style="padding-left: 8px;">Urls</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/warning/" class="dd-item">
+            <a href="/travelgatex/reference/objects/warning/">
+              <span style="padding-left: 8px;">Warning</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/travelgatex/reference/scalars/" class="dd-item">
+
+            <a href="/travelgatex/reference/scalars/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Scalars
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/travelgatex/reference/scalars/boolean/" class="dd-item">
+            <a href="/travelgatex/reference/scalars/boolean/">
+              <span style="padding-left: 8px;">Boolean</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/scalars/country/" class="dd-item">
+            <a href="/travelgatex/reference/scalars/country/">
+              <span style="padding-left: 8px;">Country</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/scalars/currency/" class="dd-item">
+            <a href="/travelgatex/reference/scalars/currency/">
+              <span style="padding-left: 8px;">Currency</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/scalars/date/" class="dd-item">
+            <a href="/travelgatex/reference/scalars/date/">
+              <span style="padding-left: 8px;">Date</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/scalars/datetime/" class="dd-item">
+            <a href="/travelgatex/reference/scalars/datetime/">
+              <span style="padding-left: 8px;">DateTime</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/scalars/float/" class="dd-item">
+            <a href="/travelgatex/reference/scalars/float/">
+              <span style="padding-left: 8px;">Float</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/scalars/id/" class="dd-item">
+            <a href="/travelgatex/reference/scalars/id/">
+              <span style="padding-left: 8px;">ID</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/scalars/int/" class="dd-item">
+            <a href="/travelgatex/reference/scalars/int/">
+              <span style="padding-left: 8px;">Int</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/scalars/json/" class="dd-item">
+            <a href="/travelgatex/reference/scalars/json/">
+              <span style="padding-left: 8px;">JSON</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/scalars/language/" class="dd-item">
+            <a href="/travelgatex/reference/scalars/language/">
+              <span style="padding-left: 8px;">Language</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/scalars/string/" class="dd-item">
+            <a href="/travelgatex/reference/scalars/string/">
+              <span style="padding-left: 8px;">String</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/scalars/uri/" class="dd-item">
+            <a href="/travelgatex/reference/scalars/uri/">
+              <span style="padding-left: 8px;">URI</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/travelgatex/reference/interfaces/" class="dd-item">
+
+            <a href="/travelgatex/reference/interfaces/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Interfaces
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/travelgatex/reference/interfaces/advisemessage/" class="dd-item">
+            <a href="/travelgatex/reference/interfaces/advisemessage/">
+              <span style="padding-left: 8px;">AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/interfaces/bookableoptionsearch/" class="dd-item">
+            <a href="/travelgatex/reference/interfaces/bookableoptionsearch/">
+              <span style="padding-left: 8px;">BookableOptionSearch</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/interfaces/information/" class="dd-item">
+            <a href="/travelgatex/reference/interfaces/information/">
+              <span style="padding-left: 8px;">Information</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/interfaces/node/" class="dd-item">
+            <a href="/travelgatex/reference/interfaces/node/">
+              <span style="padding-left: 8px;">Node</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/interfaces/priceable/" class="dd-item">
+            <a href="/travelgatex/reference/interfaces/priceable/">
+              <span style="padding-left: 8px;">Priceable</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/interfaces/response/" class="dd-item">
+            <a href="/travelgatex/reference/interfaces/response/">
+              <span style="padding-left: 8px;">Response</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/travelgatex/reference/inputobjects/" class="dd-item">
+
+            <a href="/travelgatex/reference/inputobjects/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Input objects
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/travelgatex/reference/inputobjects/accessconfigurationinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/accessconfigurationinput/">
+              <span style="padding-left: 8px;">AccessConfigurationInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/accessconnectuserinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/accessconnectuserinput/">
+              <span style="padding-left: 8px;">AccessConnectUserInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/accessfilterinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/accessfilterinput/">
+              <span style="padding-left: 8px;">AccessFilterInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/accessinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/accessinput/">
+              <span style="padding-left: 8px;">AccessInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/accesssupplierinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/accesssupplierinput/">
+              <span style="padding-left: 8px;">AccessSupplierInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/bookpaxinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/bookpaxinput/">
+              <span style="padding-left: 8px;">BookPaxInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/bookreferenceinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/bookreferenceinput/">
+              <span style="padding-left: 8px;">BookReferenceInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/bookroominput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/bookroominput/">
+              <span style="padding-left: 8px;">BookRoomInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/businessrulesinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/businessrulesinput/">
+              <span style="padding-left: 8px;">BusinessRulesInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/configurationinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/configurationinput/">
+              <span style="padding-left: 8px;">ConfigurationInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/connectusergroupinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/connectusergroupinput/">
+              <span style="padding-left: 8px;">ConnectUserGroupInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/criteriabookingdatesinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/criteriabookingdatesinput/">
+              <span style="padding-left: 8px;">CriteriaBookingDatesInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/criteriabookingreferencesinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/criteriabookingreferencesinput/">
+              <span style="padding-left: 8px;">CriteriaBookingReferencesInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput/">
+              <span style="padding-left: 8px;">DefaultSettingsBusinessRulesInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/defaultsettingsinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/defaultsettingsinput/">
+              <span style="padding-left: 8px;">DefaultSettingsInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/deltapriceinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/deltapriceinput/">
+              <span style="padding-left: 8px;">DeltaPriceInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/expiredateinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/expiredateinput/">
+              <span style="padding-left: 8px;">ExpireDateInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/filterinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/filterinput/">
+              <span style="padding-left: 8px;">FilterInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/groupaccessinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/groupaccessinput/">
+              <span style="padding-left: 8px;">GroupAccessInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/holderinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/holderinput/">
+              <span style="padding-left: 8px;">HolderInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/hotelbookinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/hotelbookinput/">
+              <span style="padding-left: 8px;">HotelBookInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/hotelcancelinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/hotelcancelinput/">
+              <span style="padding-left: 8px;">HotelCancelInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/hotelcriteriabookinginput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/hotelcriteriabookinginput/">
+              <span style="padding-left: 8px;">HotelCriteriaBookingInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/hotelcriteriaquoteinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/hotelcriteriaquoteinput/">
+              <span style="padding-left: 8px;">HotelCriteriaQuoteInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/hotelcriteriasearchinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/hotelcriteriasearchinput/">
+              <span style="padding-left: 8px;">HotelCriteriaSearchInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/hotelinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/hotelinput/">
+              <span style="padding-left: 8px;">HotelInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/hotelsettingsinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/hotelsettingsinput/">
+              <span style="padding-left: 8px;">HotelSettingsInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/idaccessconfigurationinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/idaccessconfigurationinput/">
+              <span style="padding-left: 8px;">IdAccessConfigurationInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/idgroupaccessinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/idgroupaccessinput/">
+              <span style="padding-left: 8px;">IdGroupAccessInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/parameterinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/parameterinput/">
+              <span style="padding-left: 8px;">ParameterInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/paxinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/paxinput/">
+              <span style="padding-left: 8px;">PaxInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/paymentcardinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/paymentcardinput/">
+              <span style="padding-left: 8px;">PaymentCardInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/pluginstepinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/pluginstepinput/">
+              <span style="padding-left: 8px;">PluginStepInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/pluginsinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/pluginsinput/">
+              <span style="padding-left: 8px;">PluginsInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/raterulesfilterinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/raterulesfilterinput/">
+              <span style="padding-left: 8px;">RateRulesFilterInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/roominput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/roominput/">
+              <span style="padding-left: 8px;">RoomInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/settingsbaseinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/settingsbaseinput/">
+              <span style="padding-left: 8px;">SettingsBaseInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/suppliergroupinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/suppliergroupinput/">
+              <span style="padding-left: 8px;">SupplierGroupInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/supplierinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/supplierinput/">
+              <span style="padding-left: 8px;">SupplierInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/timeoutinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/timeoutinput/">
+              <span style="padding-left: 8px;">TimeoutInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/urlsinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/urlsinput/">
+              <span style="padding-left: 8px;">UrlsInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/travelgatex/reference/enums/" class="dd-item">
+
+            <a href="/travelgatex/reference/enums/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Enums
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/travelgatex/reference/enums/applicationarea/" class="dd-item">
+            <a href="/travelgatex/reference/enums/applicationarea/">
+              <span style="padding-left: 8px;">ApplicationArea</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/bookstatustype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/bookstatustype/">
+              <span style="padding-left: 8px;">BookStatusType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/bookingcriteriatype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/bookingcriteriatype/">
+              <span style="padding-left: 8px;">BookingCriteriaType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/businessrulestype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/businessrulestype/">
+              <span style="padding-left: 8px;">BusinessRulesType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/cancelpenaltytype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/cancelpenaltytype/">
+              <span style="padding-left: 8px;">CancelPenaltyType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/chargetype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/chargetype/">
+              <span style="padding-left: 8px;">ChargeType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/datetype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/datetype/">
+              <span style="padding-left: 8px;">DateType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/durationtype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/durationtype/">
+              <span style="padding-left: 8px;">DurationType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/markupruletype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/markupruletype/">
+              <span style="padding-left: 8px;">MarkupRuleType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/paymenttype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/paymenttype/">
+              <span style="padding-left: 8px;">PaymentType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/pluginsteptype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/pluginsteptype/">
+              <span style="padding-left: 8px;">PluginStepType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/pricetype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/pricetype/">
+              <span style="padding-left: 8px;">PriceType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/raterulestype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/raterulestype/">
+              <span style="padding-left: 8px;">RateRulesType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/servicetype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/servicetype/">
+              <span style="padding-left: 8px;">ServiceType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/statustype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/statustype/">
+              <span style="padding-left: 8px;">StatusType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/supplementtype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/supplementtype/">
+              <span style="padding-left: 8px;">SupplementType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/unittimetype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/unittimetype/">
+              <span style="padding-left: 8px;">UnitTimeType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/travelgatex/security/" class="dd-item">
+
+            <a href="/travelgatex/security/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Security
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/travelgatex/security/authenticating/" class="dd-item">
+            <a href="/travelgatex/security/authenticating/">
+              <span style="padding-left: 8px;">Authenticating</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/travelgatex/data-automation/" class="dd-item">
+
+            <a href="/travelgatex/data-automation/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Data Automation
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/travelgatex/data-automation/sftp/" class="dd-item">
+            <a href="/travelgatex/data-automation/sftp/">
+              <span style="padding-left: 8px;">SFTP</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/travelgatex/tutorials/" class="dd-item">
+
+            <a href="/travelgatex/tutorials/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Tutorials
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/travelgatex/tutorials/ota-site/" class="dd-item">
+            <a href="/travelgatex/tutorials/ota-site/">
+              <span style="padding-left: 8px;">Build An OTA</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/tutorials/stats-dashboard/" class="dd-item">
+            <a href="/travelgatex/tutorials/stats-dashboard/">
+              <span style="padding-left: 8px;">Build a Dashboard</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/travelgatex/resources/" class="dd-item">
+
+            <a href="/travelgatex/resources/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Resources
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/travelgatex/resources/release-notes/" class="dd-item">
+            <a href="/travelgatex/resources/release-notes/">
+              <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/hotelx/" class="dd-item parent active">
+
+            <a href="/hotelx/" class="">
+       
+            <span>
+                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
+                HotelX
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/overview/" class="dd-item">
+            <a href="/hotelx/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/quickstart/" class="dd-item">
+            <a href="/hotelx/quickstart/">
+              <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/hotelx/concepts/" class="dd-item">
+
+            <a href="/hotelx/concepts/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Concepts
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/concepts/accesses-supplier-context/" class="dd-item">
+            <a href="/hotelx/concepts/accesses-supplier-context/">
+              <span style="padding-left: 8px;">Accesses, Sellers and Context</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/concepts/booking-flow/" class="dd-item">
+            <a href="/hotelx/concepts/booking-flow/">
+              <span style="padding-left: 8px;">Booking Flow</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/concepts/management-flow/" class="dd-item">
+            <a href="/hotelx/concepts/management-flow/">
+              <span style="padding-left: 8px;">Management Flow</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/concepts/content/" class="dd-item">
+            <a href="/hotelx/concepts/content/">
+              <span style="padding-left: 8px;">Content</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/hotelx/howtos/" class="dd-item">
+
+            <a href="/hotelx/howtos/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                How-to Guides
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/howtos/howto-book/" class="dd-item">
+            <a href="/hotelx/howtos/howto-book/">
+              <span style="padding-left: 8px;">Book</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/hotelx/plugins/" class="dd-item">
+
+            <a href="/hotelx/plugins/" class="">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Plugins
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/plugins/overview/" class="dd-item">
+            <a href="/hotelx/plugins/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/mapping/" class="dd-item">
+            <a href="/hotelx/plugins/mapping/">
+              <span style="padding-left: 8px;">Mapping</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/aggregation/" class="dd-item">
+            <a href="/hotelx/plugins/aggregation/">
+              <span style="padding-left: 8px;">Aggregation</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/markup/" class="dd-item">
+            <a href="/hotelx/plugins/markup/">
+              <span style="padding-left: 8px;">Markup</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
+            <a href="/hotelx/plugins/converter/">
+              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
+            <a href="/hotelx/plugins/processor/">
+              <span style="padding-left: 8px;">Processor</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/development/" class="dd-item">
+            <a href="/hotelx/plugins/development/">
+              <span style="padding-left: 8px;">Development</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/hotelx/reference/" class="dd-item">
+
+            <a href="/hotelx/reference/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Reference
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/reference/api-reference/" class="dd-item">
+            <a href="/hotelx/reference/api-reference/">
+              <span style="padding-left: 8px;">API Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/hotelx/resources/" class="dd-item">
+
+            <a href="/hotelx/resources/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Resources
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/resources/quotas-limits/" class="dd-item">
+            <a href="/hotelx/resources/quotas-limits/">
+              <span style="padding-left: 8px;">Quotas &amp; Limits</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/resources/release-notes/" class="dd-item">
+            <a href="/hotelx/resources/release-notes/">
+              <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/admin/" class="dd-item">
+
+            <a href="/admin/" class="">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Admin
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/admin/overview/" class="dd-item">
+            <a href="/admin/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/admin/account/" class="dd-item">
+
+            <a href="/admin/account/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Account
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/admin/account/iam/" class="dd-item">
+            <a href="/admin/account/iam/">
+              <span style="padding-left: 8px;">IAM</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/admin/connect/" class="dd-item">
+
+            <a href="/admin/connect/" class="directory">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Connect
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/admin/connect/entities/" class="dd-item">
+            <a href="/admin/connect/entities/">
+              <span style="padding-left: 8px;">Entities</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/learning-graphql/" class="dd-item">
+
+            <a href="/learning-graphql/" class="">
+       
+            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+                Learning GraphQL
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/learning-graphql/overview/" class="dd-item">
+            <a href="/learning-graphql/overview/">
+              <span style="padding-left: 8px;">GraphQL Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/learning-graphql/basic_concepts/" class="dd-item">
+            <a href="/learning-graphql/basic_concepts/">
+              <span style="padding-left: 8px;">Basic Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/learning-graphql/thinking_in_graphql/" class="dd-item">
+            <a href="/learning-graphql/thinking_in_graphql/">
+              <span style="padding-left: 8px;">Thinking in GraphQL</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
+            <a href="/learning-graphql/tooling/">
+              <span style="padding-left: 8px;">Tooling</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/learning-graphql/tutorials_resources/" class="dd-item">
+            <a href="/learning-graphql/tutorials_resources/">
+              <span style="padding-left: 8px;">Tutorials &amp; Resources</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+    
+        
+      
+  </ul>
+</nav>
+
+
+<script type="text/javascript">
+  $(document).ready(()=>{
+    $('.directory').click((event)=>{
+      if($(event.currentTarget.parentElement).hasClass("parent")){
+        $(event.currentTarget.parentElement).removeClass("parent")
+        $(event.currentTarget).find('.category-icon')[0].setAttribute("class","fa fa-angle-right fa-lg category-icon");
+      }else{
+        $(event.currentTarget).find('.category-icon')[0].setAttribute("class","fa fa-angle-down fa-lg category-icon"); 
+        event.currentTarget.parentElement.setAttribute("class","dd-item parent"); 
+      }
+     return false;
+    })
+
+    $('#menu').click((event)=>{
+      if($('#navbar').hasClass('toogled')){
+        $('#navbar').removeClass('toogled');
+        $('#backgroundMenu').removeClass('toogled');
+      }else{
+        $('#navbar').addClass('toogled');
+        $('#backgroundMenu').addClass('toogled');
+      }
+    });
+
+    $('#backgroundMenu').click((event)=>{
+      $('#navbar').removeClass('toogled');
+      $('#backgroundMenu').removeClass('toogled');
+    });
+
+    $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+      $('html, body').animate({
+        scrollTop: $target.offset().top - 60
+      }, 500);
+	});
+  })
+
+</script>
+        </div>
+        <div class="content-center">
+          <div class="p-4">
+            <h1 class="pageTitle">HotelX: HotelX: NextGen Hotel Search API</h1>
+            
+
+	<p>ConnectX Hotel <em>connects</em> you to multiple <code>sellers</code> <em>addding</em> business logic <em>solving</em> most of the problems commonly found in the travel business in an <strong>elegant and efficient</strong> way.</p>
+
+<p>There are no integration investments and you can operate with hundreds of hotel <code>sellers</code>. <em>ConnectX Hotel</em> has been desined to be fast, reliable and offer strong performance.</p>
+
+
+
+<div class="flex">
+		
+	<a href="/hotelx/overview/" class="card">
+		<div class="inner-card">
+				<div class="material-icons fa fa-info-circle"></div>		
+			<div>
+				<h3 class="text-headline">Overview</h3>
+					<p>HotelX Information</p>
+			</div>
+		</div>
+	</a>
+	<a href="/hotelx/quickstart/" class="card">
+		<div class="inner-card">
+				<div class="material-icons fa fa-clock-o"></div>		
+			<div>
+				<h3 class="text-headline">Quickstart</h3>
+					<p>HotelX Quickstart</p>
+			</div>
+		</div>
+	</a>
+	<a href="/hotelx/concepts/" class="card">
+		<div class="inner-card">
+				<div class="material-icons fa fa-question-circle"></div>		
+			<div>
+				<h3 class="text-headline">Concepts</h3>
+					<p>Understand TravelgateX basic concepts</p>
+			</div>
+		</div>
+	</a>
+	<a href="/hotelx/howtos/" class="card">
+		<div class="inner-card">
+				<div class="material-icons fa fa-list"></div>		
+			<div>
+				<h3 class="text-headline">How-to Guides</h3>
+					<p>Perform specific tasks</p>
+			</div>
+		</div>
+	</a>
+	<a href="/hotelx/plugins/" class="card">
+		<div class="inner-card">
+				<div class="material-icons fa fa-plug"></div>		
+			<div>
+				<h3 class="text-headline">Plugins</h3>
+					<p>Additional logic to your App</p>
+			</div>
+		</div>
+	</a>
+	<a href="/hotelx/reference/" class="card">
+		<div class="inner-card">
+				<div class="material-icons fa fa-book"></div>		
+			<div>
+				<h3 class="text-headline">Reference</h3>
+					<p>Reference Documentation</p>
+			</div>
+		</div>
+	</a>
+	<a href="/hotelx/resources/" class="card">
+		<div class="inner-card">
+				<div class="material-icons fa fa-file-text"></div>		
+			<div>
+				<h3 class="text-headline">Resources</h3>
+					<p>Quotas, release notes</p>
+			</div>
+		</div>
+	</a>
+</div>
+
+
+
+
+
+
+    
+          </div>
+          <div id="backgroundMenu"></div>
+        </div>
+        <div class="menu-right">
+          <div>
+            
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/featherlight.min.js"></script>
+    
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script src="/theme-flex/script.js"></script>
+    <script src="/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106994170-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-106994170-2');
+  </script>
+  </body>
+</html>
