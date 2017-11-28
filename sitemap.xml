@@ -3,11 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/travelgatex/reference/objects/api/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/api-reference/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/api-reference/</loc>
+    <loc>/travelgatex/reference/objects/apiconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/apidata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/apiedge/</loc>
   </url>
   
   <url>
@@ -52,6 +64,14 @@
   
   <url>
     <loc>/travelgatex/reference/objects/addons/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/adminmutation/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/adminquery/</loc>
   </url>
   
   <url>
@@ -187,6 +207,14 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/inputobjects/creategroupinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/creatememberinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/criteriabookingdatesinput/</loc>
   </url>
   
@@ -224,6 +252,14 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/defaultsettingsinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/deletegroupinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/deletememberinput/</loc>
   </url>
   
   <url>
@@ -271,11 +307,39 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/giataid/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/group/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/groupaccess/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/inputobjects/groupaccessinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/interfaces/groupcommondata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/groupconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/groupdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/groupedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/grouptype/</loc>
   </url>
   
   <url>
@@ -367,6 +431,14 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/hotelxmutation/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/hotelxquery/</loc>
+  </url>
+  
+  <url>
     <loc>/admin/account/iam/</loc>
   </url>
   
@@ -443,6 +515,30 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/member/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/memberconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/memberdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/memberedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/membertype/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/method/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/schema/mutation/</loc>
   </url>
   
@@ -452,6 +548,22 @@
   
   <url>
     <loc>/travelgatex/reference/objects/occupancy/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/organization/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/organizationconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/organizationdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/organizationedge/</loc>
   </url>
   
   <url>
@@ -547,6 +659,22 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/product/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/productconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/productdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/productedge/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/promotion/</loc>
   </url>
   
@@ -591,7 +719,39 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/resource/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/resourceconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/resourcedata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/resourceedge/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/interfaces/response/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/role/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/roleconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/roledata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/roleedge/</loc>
   </url>
   
   <url>
@@ -708,6 +868,14 @@
   
   <url>
     <loc>/travelgatex/reference/enums/unittimetype/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/updategroupinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/updatememberinput/</loc>
   </url>
   
   <url>

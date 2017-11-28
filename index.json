@@ -1,5 +1,12 @@
 [
 {
+	"uri": "/travelgatex/reference/objects/api/",
+	"title": "API",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type API {  code: ID!    error: [Error!]    apiData: APIData    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   error([Error!]):   apiData(APIData):   createdAt(DateTime!):   updatedAt(DateTime!):   \nRequire by APIEdge:    \n"
+},
+{
 	"uri": "/hotelx/reference/api-reference/",
 	"title": "API Reference",
 	"tags": [],
@@ -7,18 +14,32 @@
 	"content": " This API reference is organized by graphql operations related to product.\nQuery Operations Mutation Operations Documentation Schema documentation\nSamples  Search, Quote, Book, Cancel and Retrieve bookings  "
 },
 {
-	"uri": "/travelgatex/reference/api-reference/",
-	"title": "API Reference",
+	"uri": "/travelgatex/reference/objects/apiconnection/",
+	"title": "APIConnection",
 	"tags": [],
-	"description": "Platform-wide API Reference",
-	"content": " This API reference is organized by graphql operations related to product.\nQuery Operations Mutation Operations Custom Scalar Types TravelgateX GraphQL schema implementation defines custom scalar types.\nJSON Sometimes it\u0026rsquo;s necessary to manage arbitrary JSON values for loosely structured data. The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.\nIn queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: \u0026quot;{\\\u0026quot;int\\\u0026quot;: 1, \\\u0026quot;string\\\u0026quot;: \\\u0026quot;value\\\u0026quot;}\u0026quot;.\nDateTime The DateTime type represents DateTime values. A good example might be a transaction TimeSpan.\nIn queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: \u0026quot;2017-10-22T13:57:31.123Z\u0026quot;.\nDate The Date type represents Date values. A good example might be a Hotel CheckIn Date.\nIn queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: \u0026quot;2017-10-22\u0026quot;.\nURI The URI type represents a URI values. A good example mith be an Hotel Image URL.\nIn queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: \u0026quot;http:\\\\www.travelgatex.com\u0026quot;.\nCountry The Country type represents Country values. A good example might be a Passenger Nationality.\nIn queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes \u0026quot;ES\u0026quot;.\nLanguage The Language type represents Language values. A good example might be a Hotel Description Language.\nIn queries or mutations, Language fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes \u0026quot;es\u0026quot;.\nCurrency The Currenty type represents Currency values. A good example might be a Rate Price Currency.\nIn queries or mutations, Currency fields have to be specified in ISO 4217 format with enclosing double quotes \u0026quot;EUR\u0026quot;.\nDocumentation Schema documentation\nSamples  Search, Quote, Book, Cancel and Retrieve bookings  "
+	"description": "",
+	"content": " GraphQL Schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   }   Fields edges([APIEdge]):   pageInfo(PageInfo!):   \nRequire by GroupCommonData:    GroupData:    ResourceData:    AdminQuery:    OrganizationData:    ProductData:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/apidata/",
+	"title": "APIData",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type APIData {  id: ID!    code: ID!    groups(    first: Int,     last: Int,     before: String,     after: String,     codes: [String!],     ): GroupConnection    resources(    first: Int,     last: Int,     before: String,     after: String,     codes: [String!],     ): ResourceConnection   }   Fields id(ID!):   code(ID!):   groups(GroupConnection):   resources(ResourceConnection):   \nRequire by API:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/apiedge/",
+	"title": "APIEdge",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type APIEdge {  cursor: String!    node: API   }   Fields cursor(String!):   node(API):   \nRequire by APIConnection:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/access/",
 	"title": "Access",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type Access {  code: ID!    accessData: AccessData!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   accessData(AccessData!):   error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date   updatedAt(DateTime!): Update date  \n"
+	"content": " GraphQL Schema definition type Access {  code: ID!    accessData: AccessData!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   accessData(AccessData!):   error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date  updatedAt(DateTime!): Update date  \n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/accessconfigurationinput/",
@@ -88,14 +109,28 @@
 	"title": "AddOns",
 	"tags": [],
 	"description": "",
-	"content": " Extra information about the option.\nGraphQL Schema definition type AddOns {  distribute: JSON   }   Fields distribute(JSON): Extra information from the distribution layer  \nRequire by HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description.  \n"
+	"content": " Extra information about the option.\nGraphQL Schema definition type AddOns {  distribute: JSON   }   Fields distribute(JSON): Extra information from the distribution layer  \nRequire by HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description.  HotelOptionQuote:  Contains information about quote.  \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/adminmutation/",
+	"title": "AdminMutation",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type AdminMutation {  createMember( member: CreateMemberInput!, ): Member!    createGroup( group: CreateGroupInput!, ): Group!    updateMember( member: UpdateMemberInput!, ): Member!    updateGroup( group: UpdateGroupInput!, ): Group!    deleteMember( member: [DeleteMemberInput!]!, ): Member!    deleteGroup( group: DeleteGroupInput!, ): Group!   }   Fields createMember(Member!):   createGroup(Group!):   updateMember(Member!):   updateGroup(Group!):   deleteMember(Member!):   deleteGroup(Group!):   \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/adminquery/",
+	"title": "AdminQuery",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type AdminQuery {  organizations(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): OrganizationConnection!    catalog(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): ProductConnection!    members(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection!    groups(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection!    apis(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): APIConnection!    resources(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): ResourceConnection!    roles(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): RoleConnection!   }   Fields organizations(OrganizationConnection!):   catalog(ProductConnection!):   members(MemberConnection!):   groups(GroupConnection!):   apis(APIConnection!):   resources(ResourceConnection!):   roles(RoleConnection!):   \n"
 },
 {
 	"uri": "/travelgatex/reference/interfaces/advisemessage/",
 	"title": "AdviseMessage",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition interface AdviseMessage {  code: String!    type: String!    description: String!   }   Fields code(String!): TODO: Error code: The following codes can be returned: XXX: XXXXXXXXX XXXXXX  type(String!): TODO: Error type: The following types are valid: XXX: asd asdÃ±oajskd lÃ±a ld   description(String!): Error description  \n"
+	"content": " GraphQL Schema definition interface AdviseMessage {  code: String!    type: String!    description: String!   }   Fields code(String!): TODO: Error code: The following codes can be returned: XXX: XXXXXXXXX XXXXXX  type(String!): TODO: Error type: The following types are valid:  description(String!): Error description  \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/amenity/",
@@ -193,7 +228,7 @@
 	"title": "Booking",
 	"tags": [],
 	"description": "",
-	"content": " Returns detailed information about books.\nGraphQL Schema definition type Booking {  hotel( criteria: HotelCriteriaBookingInput!, settings: HotelSettingsInput, ): HotelBooking   }   Fields hotel(HotelBooking): Returns detailed information about books, you can indicated a list of locators or a range date.  \nRequire by Query:  The query type, represents all of the entry points into our object graph.  \n"
+	"content": " Returns detailed information about books.\nGraphQL Schema definition type Booking {  hotel( criteria: HotelCriteriaBookingInput!, settings: HotelSettingsInput, ): HotelBooking   }   Fields hotel(HotelBooking): Returns detailed information about books, you can indicated a list of locators or a range date.  \nRequire by Query:    \n"
 },
 {
 	"uri": "/travelgatex/reference/enums/bookingcriteriatype/",
@@ -221,7 +256,7 @@
 	"title": "Boolean",
 	"tags": [],
 	"description": "",
-	"content": " The Boolean scalar type represents true or false.\nGraphQL Schema definition scalar Boolean   Require by HotelSettingsInput:  Settings that you can edit for this avail. Values are loaded by default in our Back Office.  SettingsBaseInput:  Contains the time out and business rules of a supplier or an access.  Room:  Contains the room information of the option returned.  Price:  Price indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.  Priceable:    Markup:  Informs markup applied over supplier price.  Bed:  Contains information about a bed.  Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  Surcharge:  Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.  CancelPolicy:  Contains information about a cancel policy.  AccessData:    SupplierData:    SupplierGroup:  group related to a supplier  ConnectUser:  data related to a connect user and its groups  ConnectUserGroup:  group related to a connect user  HotelData:  Hotel data  PageInfo:    Destination:  Destination type  Mutation:  Mutations are operations that change or update data in the server.  DeltaPriceInput:  Input delta price, indicates price variation permitted by the client  AccessConfigurationInput:  The information required to access the supplier\u0026#39;s system.  IdAccessConfigurationInput:    AccessSupplierInput:  Supplier input for data access management API  SupplierGroupInput:  group related to a supplier  AccessConnectUserInput:  Connect user input for data access management API  ConnectUserGroupInput:  group related to a connect user   "
+	"content": " The Boolean scalar type represents true or false.\nGraphQL Schema definition scalar Boolean   Require by HotelSettingsInput:  Settings that you can edit for this avail. Values are loaded by default in our Back Office.  SettingsBaseInput:  Contains the time out and business rules of a supplier or an access.  Room:  Contains the room information of the option returned.  Price:  Price indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.  Priceable:    Markup:  Informs markup applied over supplier price.  Bed:  Contains information about a bed.  Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  Surcharge:  Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.  CancelPolicy:  Contains information about a cancel policy.  HotelData:  Hotel data  PageInfo:    Destination:  Destination type  Mutation:  Mutations are operations that change or update data in the server.  DeltaPriceInput:  Input delta price, indicates price variation permitted by the client  SupplierData:    SupplierGroup:  group related to a supplier  AccessData:    ConnectUser:  data related to a connect user and its groups  ConnectUserGroup:  group related to a connect user  AccessConfigurationInput:  The information required to access the supplier\u0026#39;s system.  AccessConnectUserInput:  Connect user input for data access management API  ConnectUserGroupInput:  group related to a connect user  AccessSupplierInput:  Supplier input for data access management API  SupplierGroupInput:  group related to a supplier  IdAccessConfigurationInput:    Member:    RoleData:     "
 },
 {
 	"uri": "/travelgatex/tutorials/ota-site/",
@@ -291,7 +326,7 @@
 	"title": "ConnectUser",
 	"tags": [],
 	"description": "",
-	"content": " data related to a connect user and its groups\nGraphQL Schema definition type ConnectUser {  code: String!    isActive: Boolean!    connectUserGroups: [ConnectUserGroup!]   }   Fields code(String!): unique connect user of a supplier  isActive(Boolean!): indicates whether a connect user is active  connectUserGroups([ConnectUserGroup!]): connect user\u0026#39;s related data of its groups  \nRequire by Mutation:  Mutations are operations that change or update data in the server.  \n"
+	"content": " data related to a connect user and its groups\nGraphQL Schema definition type ConnectUser {  code: String!    isActive: Boolean!    connectUserGroups: [ConnectUserGroup!]   }   Fields code(String!): unique connect user of a supplier  isActive(Boolean!): indicates whether a connect user is active  connectUserGroups([ConnectUserGroup!]): connect user\u0026#39;s related data of its groups  \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/connectusergroup/",
@@ -319,7 +354,21 @@
 	"title": "Country",
 	"tags": [],
 	"description": "",
-	"content": " ISO 3166-1 alpha-2\nGraphQL Schema definition scalar Country   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  DefaultSettings:    Location:  Location  DefaultSettingsInput:    \n"
+	"content": " ISO 3166-1 alpha-2\nGraphQL Schema definition scalar Country   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  Location:  Location  DefaultSettings:    DefaultSettingsInput:    \n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/creategroupinput/",
+	"title": "CreateGroupInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type CreateGroupInput {  user: String    code: String!    type: GroupType!    info: String    parent: ID!   }   Fields user(String):   code(String!):   type(GroupType!):   info(String):   parent(ID!):   \n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/creatememberinput/",
+	"title": "CreateMemberInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type CreateMemberInput {  code: String    info: String    type: MemberType!    group: String!    roles: [String!]!    resource: String!   }   Fields code(String):   info(String):   type(MemberType!):   group(String!):   roles([String!]!):   resource(String!):   \n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/criteriabookingdatesinput/",
@@ -361,7 +410,7 @@
 	"title": "DateTime",
 	"tags": [],
 	"description": "",
-	"content": " In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: datetime: \u0026ldquo;2015-11-22T13:57:31.123Z\u0026rdquo;.\nGraphQL Schema definition scalar DateTime   Require by Stat:    AuditData:  Data sent \u0026amp; received in the supplierâ€™s native format.  Transactions:  Supplier transaction  Access:    Node:    Supplier:    Hotel:  Hotel type  Media:    Amenity:     "
+	"content": " In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: datetime: \u0026ldquo;2015-11-22T13:57:31.123Z\u0026rdquo;.\nGraphQL Schema definition scalar DateTime   Require by Stat:    AuditData:  Data sent \u0026amp; received in the supplierâ€™s native format.  Transactions:  Supplier transaction  Hotel:  Hotel type  Node:    Media:    Amenity:    Supplier:    Access:    Member:    Group:    API:    Resource:    Role:    Organization:    Product:     "
 },
 {
 	"uri": "/travelgatex/reference/enums/datetype/",
@@ -375,7 +424,7 @@
 	"title": "DefaultSettings",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type DefaultSettings {  connectUser: String!    context: String    language: Language!    currency: Currency!    nationality: Country!    market: String!    timeouts: Timeout!    businessRules: BusinessRules!   }   Fields connectUser(String!): This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload.  context(String): Indicates the context of the I/O codes (hotel, board, room and rates)  language(Language!): Language to be used in request.  currency(Currency!): Currency requested if supported by supplier.  nationality(Country!): Nationality of the guest (use ISO3166_1_alfa_2).  market(String!): Targeted zone, country or point of sale to be used in request.  timeouts(Timeout!): Group of timeouts to be used in the differents services  businessRules(BusinessRules!): Business rules.  \nRequire by Query:  The query type, represents all of the entry points into our object graph.  Mutation:  Mutations are operations that change or update data in the server.  \n"
+	"content": " GraphQL Schema definition type DefaultSettings {  connectUser: String!    context: String    language: Language!    currency: Currency!    nationality: Country!    market: String!    timeouts: Timeout!    businessRules: BusinessRules!   }   Fields connectUser(String!): This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload.  context(String): Indicates the context of the I/O codes (hotel, board, room and rates)  language(Language!): Language to be used in request.  currency(Currency!): Currency requested if supported by supplier.  nationality(Country!): Nationality of the guest (use ISO3166_1_alfa_2).  market(String!): Targeted zone, country or point of sale to be used in request.  timeouts(Timeout!): Group of timeouts to be used in the differents services  businessRules(BusinessRules!): Business rules.  \nRequire by Query:    Mutation:  Mutations are operations that change or update data in the server.  \n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput/",
@@ -390,6 +439,20 @@
 	"tags": [],
 	"description": "",
 	"content": " GraphQL Schema definition type DefaultSettingsInput {  groupCode: String!    connectUser: String!    context: String    language: Language!    currency: Currency!    nationality: Country!    market: String!    timeout: TimeoutInput!    businessRules: DefaultSettingsBusinessRulesInput!   }   Fields groupCode(String!): Unique Id  connectUser(String!): This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload.  context(String): Indicates the context of the I/O codes (hotel, board, room and rates)  language(Language!): Language to be used in request.  currency(Currency!): Currency requested if supported by supplier.  nationality(Country!): Nationality of the guest (use ISO3166_1_alfa_2).  market(String!): Targeted zone, country or point of sale to be used in request.  timeout(TimeoutInput!): Group of timeouts to be used in the differents services  businessRules(DefaultSettingsBusinessRulesInput!): Business rules.  \n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/deletegroupinput/",
+	"title": "DeleteGroupInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type DeleteGroupInput {  codes: [String!]!   }   Fields codes([String!]!):   \n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/deletememberinput/",
+	"title": "DeleteMemberInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type DeleteMemberInput {  code: ID!    group: ID!   }   Fields code(ID!):   group(ID!):   \n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/deltapriceinput/",
@@ -469,11 +532,25 @@
 	"content": "Welcome to TravelgateX! Get familiar with the TravelgateX products and explore their features:\n\t Overview Learn The Basics\n   \t Quickstart Try the API now\n   \t Concepts Understand Concepts\n   \t Playground Embedded GraphQL Client\n    "
 },
 {
+	"uri": "/travelgatex/reference/objects/giataid/",
+	"title": "GiataID",
+	"tags": [],
+	"description": "",
+	"content": " Giata System ID.\nGraphQL Schema definition type GiataID {  code: String   }   Fields code(String): Giata url. source: URI! Giata code  \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/group/",
+	"title": "Group",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type Group {  code: ID!    error: [Error!]    groupData: GroupData    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   error([Error!]):   groupData(GroupData):   createdAt(DateTime!):   updatedAt(DateTime!):   \nRequire by GroupEdge:    AdminMutation:    \n"
+},
+{
 	"uri": "/travelgatex/reference/objects/groupaccess/",
 	"title": "GroupAccess",
 	"tags": [],
 	"description": "",
-	"content": " Pair of groups and accesses. All accesses returned will belong to all the groups in groupCodes\nGraphQL Schema definition type GroupAccess {  groupCodes: [String!]!    accesses: [Access!]   }   Fields groupCodes([String!]!): group identifiers  accesses([Access!]):   \nRequire by Mutation:  Mutations are operations that change or update data in the server.  \n"
+	"content": " Pair of groups and accesses. All accesses returned will belong to all the groups in groupCodes\nGraphQL Schema definition type GroupAccess {  groupCodes: [String!]!    accesses: [Access!]   }   Fields groupCodes([String!]!): group identifiers  accesses([Access!]):   \n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/groupaccessinput/",
@@ -481,6 +558,41 @@
 	"tags": [],
 	"description": "",
 	"content": " GraphQL Schema definition type GroupAccessInput {  groupCodes: [String!]    accesses: [AccessConfigurationInput!]!   }   Fields groupCodes([String!]): groups identifiers in which the access will be associated  accesses([AccessConfigurationInput!]!): access related data  \n"
+},
+{
+	"uri": "/travelgatex/reference/interfaces/groupcommondata/",
+	"title": "GroupCommonData",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition interface GroupCommonData {  id: ID!    code: ID!    members(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection    apis(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): APIConnection   }   Fields id(ID!):   code(ID!):   members(MemberConnection):   apis(APIConnection):   \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/groupconnection/",
+	"title": "GroupConnection",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type GroupConnection {  edges: [GroupEdge]    pageInfo: PageInfo!   }   Fields edges([GroupEdge]):   pageInfo(PageInfo!):   \nRequire by MemberData:    APIData:    AdminQuery:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/groupdata/",
+	"title": "GroupData",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type GroupData {  id: ID!    code: ID!    type: GroupType!    parent: Int!    members(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection    apis(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): APIConnection   }   Fields id(ID!):   code(ID!):   type(GroupType!):   parent(Int!):   members(MemberConnection):   apis(APIConnection):   \nRequire by Group:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/groupedge/",
+	"title": "GroupEdge",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type GroupEdge {  cursor: String!    node: Group   }   Fields cursor(String!):   node(Group):   \nRequire by GroupConnection:    \n"
+},
+{
+	"uri": "/travelgatex/reference/enums/grouptype/",
+	"title": "GroupType",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,   }   Require by GroupData:    CreateGroupInput:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/holder/",
@@ -515,14 +627,14 @@
 	"title": "HotelBookPayload",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type HotelBookPayload {  stats( token: String!, ): RequestStats    auditData: AuditData    booking: HotelBookingDetail    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent \u0026amp; received in the supplier\u0026#39;s native format.  booking(HotelBookingDetail): Information about booking  errors([Error!]): Errors that will lead the service to abort  warnings([Warning!]): Potentially harmful situations or errors that won\u0026#39;t force the service to abort  \nRequire by Mutation:  Mutations are operations that change or update data in the server.  \n"
+	"content": " GraphQL Schema definition type HotelBookPayload {  stats( token: String!, ): RequestStats    auditData: AuditData    booking: HotelBookingDetail    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent \u0026amp; received in the supplier\u0026#39;s native format.  booking(HotelBookingDetail): Information about booking  errors([Error!]): Errors that will lead the service to abort  warnings([Warning!]): Potentially harmful situations or errors that won\u0026#39;t force the service to abort  \nRequire by Mutation:  Mutations are operations that change or update data in the server.  HotelXMutation:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hotelbooking/",
 	"title": "HotelBooking",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type HotelBooking {  stats( token: String!, ): RequestStats    auditData: AuditData    bookings: [HotelBookingDetail!]    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent \u0026amp; received in the supplier\u0026#39;s native format.  bookings([HotelBookingDetail!]): Details about booking  errors([Error!]): Errors that will lead the service to abort  warnings([Warning!]): Potentially harmful situations or errors that won\u0026#39;t force the service to abort  \nRequire by Booking:  Returns detailed information about books.  \n"
+	"content": " GraphQL Schema definition type HotelBooking {  stats( token: String!, ): RequestStats    auditData: AuditData    bookings: [HotelBookingDetail!]    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent \u0026amp; received in the supplier\u0026#39;s native format.  bookings([HotelBookingDetail!]): Details about booking  errors([Error!]): Errors that will lead the service to abort  warnings([Warning!]): Potentially harmful situations or errors that won\u0026#39;t force the service to abort  \nRequire by HotelXQuery:  A Query is an entry point into the object graph.  Booking:  Returns detailed information about books.  \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hotelbookingdetail/",
@@ -550,14 +662,14 @@
 	"title": "HotelCancelPayload",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type HotelCancelPayload {  stats( token: String!, ): RequestStats    auditData: AuditData    cancellation: HotelCancelDetail    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent \u0026amp; received in the supplier\u0026#39;s native format.  cancellation(HotelCancelDetail): Information about cancel  errors([Error!]): Errors that will lead the service to abort  warnings([Warning!]): Potentially harmful situations or errors that won\u0026#39;t force the service to abort  \nRequire by Mutation:  Mutations are operations that change or update data in the server.  \n"
+	"content": " GraphQL Schema definition type HotelCancelPayload {  stats( token: String!, ): RequestStats    auditData: AuditData    cancellation: HotelCancelDetail    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent \u0026amp; received in the supplier\u0026#39;s native format.  cancellation(HotelCancelDetail): Information about cancel  errors([Error!]): Errors that will lead the service to abort  warnings([Warning!]): Potentially harmful situations or errors that won\u0026#39;t force the service to abort  \nRequire by Mutation:  Mutations are operations that change or update data in the server.  HotelXMutation:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hotelconnection/",
 	"title": "HotelConnection",
 	"tags": [],
 	"description": "",
-	"content": " HotelList definition\nGraphQL Schema definition type HotelConnection {  edges: [HotelEdge]    pageInfo: PageInfo!   }   Fields edges([HotelEdge]):   pageInfo(PageInfo!):   \nRequire by Query:  The query type, represents all of the entry points into our object graph.  \n"
+	"content": " HotelList definition\nGraphQL Schema definition type HotelConnection {  edges: [HotelEdge]    pageInfo: PageInfo!   }   Fields edges([HotelEdge]):   pageInfo(PageInfo!):   \nRequire by HotelXQuery:  A Query is an entry point into the object graph.  \n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/hotelcriteriabookinginput/",
@@ -585,7 +697,7 @@
 	"title": "HotelData",
 	"tags": [],
 	"description": "",
-	"content": " Hotel data\nGraphQL Schema definition type HotelData {  code: ID!    name: String!    categoryCode: String!    exclusiveDeal: Boolean!    medias(    type: ApplicationArea,     first: Int,     Last: Int,     before: String,     after: String,     ): MediaConnection    amenities(    language: Language,     first: Int,     Last: Int,     before: String,     after: String,     ): AmenityConnection    additionalInformation( language: Language, ): Information!    generalDescription( language: Language, ): Information!    location: Location!    contact: Contact!    destination: Destination!   }   Fields code(ID!): Internal code to perform availability and/or supplier code.  name(String!): Name.  categoryCode(String!): Hotel category (for example number of stars).  exclusiveDeal(Boolean!): Indicates that the Hotel has an Exclusive Deal.  medias(MediaConnection):   amenities(AmenityConnection):   additionalInformation(Information!):   generalDescription(Information!):   location(Location!):   contact(Contact!): Contact information.  destination(Destination!): Destination information.  \nRequire by Hotel:  Hotel type  \n"
+	"content": " Hotel data\nGraphQL Schema definition type HotelData {  code: ID!    name: String!    categoryCode: String!    exclusiveDeal: Boolean!    medias(    type: ApplicationArea,     first: Int,     last: Int,     before: String,     after: String,     ): MediaConnection    amenities(    language: Language,     first: Int,     last: Int,     before: String,     after: String,     ): AmenityConnection    additionalInformation( language: Language, ): Information!    generalDescription( language: Language, ): Information!    location: Location!    contact: Contact!    destination: Destination!   }   Fields code(ID!): Internal code to perform availability and/or supplier code.  name(String!): Name.  categoryCode(String!): Hotel category (for example number of stars).  exclusiveDeal(Boolean!): Indicates that the Hotel has an Exclusive Deal.  medias(MediaConnection):   amenities(AmenityConnection):   additionalInformation(Information!):   generalDescription(Information!):   location(Location!):   contact(Contact!): Contact information.  destination(Destination!): Destination information.  \nRequire by Hotel:  Hotel type  \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hoteledge/",
@@ -606,7 +718,7 @@
 	"title": "HotelOptionQuote",
 	"tags": [],
 	"description": "",
-	"content": " Contains information about quote.\nGraphQL Schema definition type HotelOptionQuote {  optionRefId: String!    status: StatusType!    price: Price!    cancelPolicy: CancelPolicy!    remarks: String    surcharges: [Surcharge!]    cardTypes: [String!]   }   Fields optionRefId(String!): Indicates the valuation key  status(StatusType!): The possible values in status in response are Available (OK) or On Request (RQ).  price(Price!): Specifies the prices (Gross, Net and Amount) of the option returned.  cancelPolicy(CancelPolicy!): Specifies cancel policies of the option returned.  remarks(String): Additional information about the option.  surcharges([Surcharge!]): List of surcharges of the option returned.  cardTypes([String!]): List of credit cards  \nRequire by HotelQuote:    \n"
+	"content": " Contains information about quote.\nGraphQL Schema definition type HotelOptionQuote {  optionRefId: String!    status: StatusType!    price: Price!    cancelPolicy: CancelPolicy!    remarks: String    surcharges: [Surcharge!]    cardTypes: [String!]    addOns: AddOns   }   Fields optionRefId(String!): Indicates the valuation key  status(StatusType!): The possible values in status in response are Available (OK) or On Request (RQ).  price(Price!): Specifies the prices (Gross, Net and Amount) of the option returned.  cancelPolicy(CancelPolicy!): Specifies cancel policies of the option returned.  remarks(String): Additional information about the option.  surcharges([Surcharge!]): List of surcharges of the option returned.  cardTypes([String!]): List of credit cards  addOns(AddOns): Extra information about the option.  \nRequire by HotelQuote:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hoteloptionsearch/",
@@ -620,14 +732,14 @@
 	"title": "HotelQuote",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type HotelQuote {  stats( token: String!, ): RequestStats    auditData: AuditData    optionQuote: HotelOptionQuote    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent \u0026amp; received in the supplier\u0026#39;s native format.  optionQuote(HotelOptionQuote): Information about quote.  errors([Error!]): Errors that will lead the service to abort  warnings([Warning!]): Potentially harmful situations or errors that won\u0026#39;t force the service to abort  \nRequire by Quote:  Returns the total price and cancellation policies of the Option selected in the previous step (Search).  \n"
+	"content": " GraphQL Schema definition type HotelQuote {  stats( token: String!, ): RequestStats    auditData: AuditData    optionQuote: HotelOptionQuote    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent \u0026amp; received in the supplier\u0026#39;s native format.  optionQuote(HotelOptionQuote): Information about quote.  errors([Error!]): Errors that will lead the service to abort  warnings([Warning!]): Potentially harmful situations or errors that won\u0026#39;t force the service to abort  \nRequire by HotelXQuery:  A Query is an entry point into the object graph.  Quote:  Returns the total price and cancellation policies of the Option selected in the previous step (Search).  \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hotelsearch/",
 	"title": "HotelSearch",
 	"tags": [],
 	"description": "",
-	"content": " Results of Avail Hotel. Contains all the available options for a given date and itinerary.\nGraphQL Schema definition type HotelSearch {  context: String    stats( token: String!, ): RequestStats    auditData: AuditData    requestCriteria: CriteriaSearch!    options: [HotelOptionSearch!]    errors: [Error!]    warnings: [Warning!]   }   Fields context(String): Indicates the context of the response.  stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent \u0026amp; received in the supplier\u0026#39;s native format.  requestCriteria(CriteriaSearch!): Request Criteria  options([HotelOptionSearch!]): List of options returned according to the request.  errors([Error!]): Errors that will lead the service to abort  warnings([Warning!]): Potentially harmful situations or errors that won\u0026#39;t force the service to abort  \nRequire by Search:  Available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.  \n"
+	"content": " Results of Avail Hotel. Contains all the available options for a given date and itinerary.\nGraphQL Schema definition type HotelSearch {  context: String    stats( token: String!, ): RequestStats    auditData: AuditData    requestCriteria: CriteriaSearch!    options: [HotelOptionSearch!]    errors: [Error!]    warnings: [Warning!]   }   Fields context(String): Indicates the context of the response.  stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent \u0026amp; received in the supplier\u0026#39;s native format.  requestCriteria(CriteriaSearch!): Request Criteria  options([HotelOptionSearch!]): List of options returned according to the request.  errors([Error!]): Errors that will lead the service to abort  warnings([Warning!]): Potentially harmful situations or errors that won\u0026#39;t force the service to abort  \nRequire by HotelXQuery:  A Query is an entry point into the object graph.  Search:  Available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.  \n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/hotelsettingsinput/",
@@ -635,6 +747,20 @@
 	"tags": [],
 	"description": "",
 	"content": " Settings that you can edit for this avail. Values are loaded by default in our Back Office.\nGraphQL Schema definition type HotelSettingsInput {  context: String    useContext: Boolean    connectUser: String    timeout: Int    auditTransactions: Boolean    businessRules: BusinessRulesInput    suppliers: [SupplierInput!]    plugins: [PluginStepInput!]   }   Fields context(String): Indicates the context of the I/O codes (hotel, board, room and rates)  useContext(Boolean): Indicates if you want use context, or not, by default is true.  connectUser(String): This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload.  timeout(Int): Milliseconds before the connection is closed.  auditTransactions(Boolean): Returns all the transactions exchanged with the supplier.  businessRules(BusinessRulesInput): Business rules.  suppliers([SupplierInput!]): Array of suppliers. Each one contains its own code, settings and accesses.  plugins([PluginStepInput!]): Array of pluggins to execute.  \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/hotelxmutation/",
+	"title": "HotelXMutation",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type HotelXMutation {  book( input: HotelBookInput!, settings: HotelSettingsInput, ): HotelBookPayload    cancel( input: HotelCancelInput!, settings: HotelSettingsInput, ): HotelCancelPayload   }   Fields book(HotelBookPayload): Creates a new hotel booking consisting of an option of 1 or more rooms.  cancel(HotelCancelPayload): Cancels an existing hotel booking consisting of an option of 1 or more rooms.  \nRequire by Mutation:  Mutations are operations that change or update data in the server.  \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/hotelxquery/",
+	"title": "HotelXQuery",
+	"tags": [],
+	"description": "",
+	"content": " A Query is an entry point into the object graph.\nGraphQL Schema definition type HotelXQuery {  search(    token: String,     criteria: HotelCriteriaSearchInput,     settings: HotelSettingsInput,     filter: FilterInput,     ): HotelSearch    quote( criteria: HotelCriteriaQuoteInput!, settings: HotelSettingsInput, ): HotelQuote    booking( criteria: HotelCriteriaBookingInput!, settings: HotelSettingsInput, ): HotelBooking    searchStatusService: ServiceStatus!    quoteStatusService: ServiceStatus!    bookStatusService: ServiceStatus!    cancelStatusService: ServiceStatus!    bookingStatusService: ServiceStatus!    hotels(    codes: [String!],     language: String,     first: Int,     last: Int,     before: String,     after: String,     ): HotelConnection!   }   Fields search(HotelSearch): Available options of an hotel for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward. It only requires the criteria of search (destination, travel dates and the number of pax in each room). But you must preload the other fields in our system by complete the fields absents.  quote(HotelQuote): Returns the total price and cancellation policies of the Option selected in the previous step (Search).  booking(HotelBooking): Returns detailed information about books, you can indicated a list of locators or a range date.  searchStatusService(ServiceStatus!): Returns status of the search service.  quoteStatusService(ServiceStatus!): Returns status of the quote service.  bookStatusService(ServiceStatus!): Returns status of the new booking service.  cancelStatusService(ServiceStatus!): Returns status of the cancellation service.  bookingStatusService(ServiceStatus!): TODO: me no understand... Returns status of the booking service.  hotels(HotelConnection!): Query to obtain Hotels  \nRequire by Query:    \n"
 },
 {
 	"uri": "/admin/account/iam/",
@@ -648,7 +774,7 @@
 	"title": "ID",
 	"tags": [],
 	"description": "",
-	"content": " The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as \u0026quot;4\u0026quot;) or integer (such as 4) input value will be accepted as an ID.\nGraphQL Schema definition scalar ID   Require by AccessInput:  AccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.  Access:    Node:    AccessData:    Supplier:    SupplierData:    Hotel:  Hotel type  HotelData:  Hotel data  Media:    Amenity:    AmenityData:    IdAccessConfigurationInput:     "
+	"content": " The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as \u0026quot;4\u0026quot;) or integer (such as 4) input value will be accepted as an ID.\nGraphQL Schema definition scalar ID   Require by AccessInput:  AccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.  Hotel:  Hotel type  Node:    HotelData:  Hotel data  Media:    Amenity:    AmenityData:    Supplier:    SupplierData:    Access:    AccessData:    IdAccessConfigurationInput:    GroupCommonData:    Member:    MemberData:    Group:    GroupData:    API:    APIData:    Resource:    ResourceData:    Role:    RoleData:    CreateGroupInput:    DeleteMemberInput:    Organization:    OrganizationData:    Product:    ProductData:     "
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/idaccessconfigurationinput/",
@@ -676,7 +802,7 @@
 	"title": "Int",
 	"tags": [],
 	"description": "",
-	"content": " The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.\nGraphQL Schema definition scalar Int   Require by PaxInput:  Pax object that contains the pax age.  HotelSettingsInput:  Settings that you can edit for this avail. Values are loaded by default in our Back Office.  BusinessRulesInput:  List of business rules to use as filter on the options.  SettingsBaseInput:  Contains the time out and business rules of a supplier or an access.  Pax:  Specifies the age pax. The range of what is considered an adult, infant or baby is particular to each supplier.  Occupancy:  Information about occupancy.  Room:  Contains the room information of the option returned.  Bed:  Contains information about a bed.  Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  CancelPenalty:  Contains information about a cancel penalty.  BookingRoom:    Timeout:    BusinessRules:  List of business rules to filter the options that you are interested.  ExpireDateInput:  The card expiration date  BookRoomInput:  Input BookRoom contains list of pax and the room\u0026#39;s reference.  BookPaxInput:  Input BookPax contains basic information abaout pax suach as name, surname and age.  TimeoutInput:    DefaultSettingsBusinessRulesInput:  Input delta price, indicates the price variation permitted by the client before failing the booking.   "
+	"content": " The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.\nGraphQL Schema definition scalar Int   Require by PaxInput:  Pax object that contains the pax age.  HotelSettingsInput:  Settings that you can edit for this avail. Values are loaded by default in our Back Office.  BusinessRulesInput:  List of business rules to use as filter on the options.  SettingsBaseInput:  Contains the time out and business rules of a supplier or an access.  Pax:  Specifies the age pax. The range of what is considered an adult, infant or baby is particular to each supplier.  Occupancy:  Information about occupancy.  Room:  Contains the room information of the option returned.  Bed:  Contains information about a bed.  Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  CancelPenalty:  Contains information about a cancel penalty.  BookingRoom:    Timeout:    BusinessRules:  List of business rules to filter the options that you are interested.  ExpireDateInput:  The card expiration date  BookRoomInput:  Input BookRoom contains list of pax and the room\u0026#39;s reference.  BookPaxInput:  Input BookPax contains basic information abaout pax suach as name, surname and age.  TimeoutInput:    DefaultSettingsBusinessRulesInput:  Input delta price, indicates the price variation permitted by the client before failing the booking.  GroupData:     "
 },
 {
 	"uri": "/travelgatex/reference/scalars/json/",
@@ -690,7 +816,7 @@
 	"title": "Language",
 	"tags": [],
 	"description": "",
-	"content": " ISO 3166-1 alpha-2\nGraphQL Schema definition scalar Language   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  HotelCriteriaQuoteInput:  The quote criteria contains the option reference id, block and language.  HotelCriteriaBookingInput:  Criteria of book contains basic information to find a book or books.  DefaultSettings:    Information:    HotelBookInput:  Criteria of book.  HotelCancelInput:  Cancellation Criteria.  DefaultSettingsInput:    HotelInput:    \n"
+	"content": " ISO 3166-1 alpha-2\nGraphQL Schema definition scalar Language   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  HotelCriteriaQuoteInput:  The quote criteria contains the option reference id, block and language.  HotelCriteriaBookingInput:  Criteria of book contains basic information to find a book or books.  Information:    DefaultSettings:    HotelBookInput:  Criteria of book.  HotelCancelInput:  Cancellation Criteria.  DefaultSettingsInput:    HotelInput:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/location/",
@@ -711,7 +837,7 @@
 	"title": "Mapping",
 	"tags": [],
 	"description": "",
-	"content": " Returns the mapping for a group.\nGraphQL Schema definition type Mapping {  contexts( contextCodes: [String!], supplierCodes: [String!], ): [MappingContext!]   }   Fields contexts([MappingContext!]): Returns the differents group contexts, you can filter by some contexts.  \nRequire by Query:  The query type, represents all of the entry points into our object graph.  \n"
+	"content": " Returns the mapping for a group.\nGraphQL Schema definition type Mapping {  contexts( contextCodes: [String!], supplierCodes: [String!], ): [MappingContext!]   }   Fields contexts([MappingContext!]): Returns the differents group contexts, you can filter by some contexts.  \nRequire by Query:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/mappingcontext/",
@@ -770,11 +896,53 @@
 	"content": " HotelList Edge definition\nGraphQL Schema definition type MediaEdge {  cursor: String!    node: Media   }   Fields cursor(String!):   node(Media):   \nRequire by MediaConnection:    \n"
 },
 {
+	"uri": "/travelgatex/reference/objects/member/",
+	"title": "Member",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type Member {  code: ID!    memberData: MemberData    error: [Error!]    isActive: Boolean!    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   memberData(MemberData):   error([Error!]):   isActive(Boolean!):   createdAt(DateTime!):   updatedAt(DateTime!):   \nRequire by MemberEdge:    AdminMutation:    OrganizationData:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/memberconnection/",
+	"title": "MemberConnection",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type MemberConnection {  edges: [MemberEdge]    pageInfo: PageInfo!   }   Fields edges([MemberEdge]):   pageInfo(PageInfo!):   \nRequire by GroupCommonData:    GroupData:    AdminQuery:    OrganizationData:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/memberdata/",
+	"title": "MemberData",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type MemberData {  id: ID!    code: ID!    roles: String    memberType: String    groups(    first: Int,     last: Int,     before: String,     after: String,     codes: [String!],     ): GroupConnection   }   Fields id(ID!):   code(ID!):   roles(String):   memberType(String):   groups(GroupConnection):   \nRequire by Member:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/memberedge/",
+	"title": "MemberEdge",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type MemberEdge {  cursor: String!    node: Member   }   Fields cursor(String!):   node(Member):   \nRequire by MemberConnection:    \n"
+},
+{
+	"uri": "/travelgatex/reference/enums/membertype/",
+	"title": "MemberType",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition  enum MemberType{   USER,    SERVICE_ACCOUNT,   }   Require by CreateMemberInput:    \n"
+},
+{
+	"uri": "/travelgatex/reference/enums/method/",
+	"title": "Method",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition  enum Method{   ADD,    DEL,   }   Require by UpdateMemberInput:    UpdateGroupInput:    \n"
+},
+{
 	"uri": "/travelgatex/reference/schema/mutation/",
 	"title": "Mutation",
 	"tags": [],
 	"description": "",
-	"content": " Mutations are operations that change or update data in the server.\nGraphQL Schema definition type Mutation {  loadFile( input: String!, ): String!    hotelBook( input: HotelBookInput!, settings: HotelSettingsInput, ): HotelBookPayload    hotelCancel( input: HotelCancelInput!, settings: HotelSettingsInput, ): HotelCancelPayload    createAccess( input: GroupAccessInput!, ): GroupAccess    updateAccess( input: IdGroupAccessInput!, ): GroupAccess    deleteAccesses( input: [String!]!, ): [GroupAccess!]    createDefaultSettings( input: DefaultSettingsInput!, ): DefaultSettings    updateDefaultSettings( input: DefaultSettingsInput!, ): DefaultSettings    deleteDefaultSettings( input: String!, ): Boolean!    updateSupplier( input: AccessSupplierInput!, ): Supplier    updateConnectUser( input: AccessConnectUserInput!, ): ConnectUser   }   Fields loadFile(String!): Load mapping files for a group.  hotelBook(HotelBookPayload): Creates a new hotel booking consisting of an option of 1 or more rooms.  hotelCancel(HotelCancelPayload): Cancels an existing hotel booking consisting of an option of 1 or more rooms.  createAccess(GroupAccess): Creates accesses If groups are sent in input, every access will be assigned to them.  updateAccess(GroupAccess): Updates existing accesses. Assigment/dissociation of groups will be done depening of the \u0026#39;groups\u0026#39; input. Note that if \u0026#39;groups\u0026#39; is sent as empty, these accesses will be dissociated from all groups.  deleteAccesses([GroupAccess!]): Deletes accesses and their relation with groups. Accesses Id are expected as input.  createDefaultSettings(DefaultSettings): Creates a defaultSettings for a given group  updateDefaultSettings(DefaultSettings): Updates a defaultSettings for a given group  deleteDefaultSettings(Boolean!): Deletes a defaultSettings for a given group  updateSupplier(Supplier): Updates existing suppliers. Assigment/dissociation of groups cannot be done.  updateConnectUser(ConnectUser): Updates existing connectUser. Assigment/dissociation of groups cannot be done.  \n"
+	"content": " Mutations are operations that change or update data in the server.\nGraphQL Schema definition type Mutation {  hotelX: HotelXMutation    hotelBook( input: HotelBookInput!, settings: HotelSettingsInput, ): HotelBookPayload    hotelCancel( input: HotelCancelInput!, settings: HotelSettingsInput, ): HotelCancelPayload    loadFile( input: String!, ): String!    createDefaultSettings( input: DefaultSettingsInput!, ): DefaultSettings    updateDefaultSettings( input: DefaultSettingsInput!, ): DefaultSettings    deleteDefaultSettings( input: String!, ): Boolean!   }   Fields hotelX(HotelXMutation):   hotelBook(HotelBookPayload): Creates a new hotel booking consisting of an option of 1 or more rooms.  hotelCancel(HotelCancelPayload): Cancels an existing hotel booking consisting of an option of 1 or more rooms.  loadFile(String!): Load mapping files for a group.  createDefaultSettings(DefaultSettings): Creates a defaultSettings for a given group  updateDefaultSettings(DefaultSettings): Updates a defaultSettings for a given group  deleteDefaultSettings(Boolean!): Deletes a defaultSettings for a given group  \n"
 },
 {
 	"uri": "/travelgatex/reference/interfaces/node/",
@@ -789,6 +957,34 @@
 	"tags": [],
 	"description": "",
 	"content": " Information about occupancy.\nGraphQL Schema definition type Occupancy {  id: Int!    paxes: [Pax!]!   }   Fields id(Int!): Unique ID room in this option.  paxes([Pax!]!): List of pax of this occupancy.  \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/organization/",
+	"title": "Organization",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type Organization {  code: ID!    organizationData: OrganizationData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   organizationData(OrganizationData):   error([Error!]):   createdAt(DateTime!):   updatedAt(DateTime!):   \nRequire by OrganizationEdge:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/organizationconnection/",
+	"title": "OrganizationConnection",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type OrganizationConnection {  edges: [OrganizationEdge]    pageInfo: PageInfo!   }   Fields edges([OrganizationEdge]):   pageInfo(PageInfo!):   \nRequire by AdminQuery:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/organizationdata/",
+	"title": "OrganizationData",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type OrganizationData {  id: ID!    code: ID!    members(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection    apis(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): APIConnection    products(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): ProductConnection    owner: Member!   }   Fields id(ID!):   code(ID!):   members(MemberConnection):   apis(APIConnection):   products(ProductConnection):   owner(Member!):   \nRequire by Organization:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/organizationedge/",
+	"title": "OrganizationEdge",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type OrganizationEdge {  cursor: String!    node: Organization   }   Fields cursor(String!):   node(Organization):   \nRequire by OrganizationConnection:    \n"
 },
 {
 	"uri": "/admin/overview/",
@@ -858,7 +1054,7 @@
 	"title": "PageInfo",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type PageInfo {  hasNextPage: Boolean!    hasPreviousPage: Boolean!    startCursor: String!    endCursor: String!   }   Fields hasNextPage(Boolean!):   hasPreviousPage(Boolean!):   startCursor(String!):   endCursor(String!):   \nRequire by HotelConnection:  HotelList definition  MediaConnection:    AmenityConnection:    AccessConnection:    \n"
+	"content": " GraphQL Schema definition type PageInfo {  hasNextPage: Boolean!    hasPreviousPage: Boolean!    startCursor: String!    endCursor: String!   }   Fields hasNextPage(Boolean!):   hasPreviousPage(Boolean!):   startCursor(String!):   endCursor(String!):   \nRequire by HotelConnection:  HotelList definition  MediaConnection:    AmenityConnection:    AccessConnection:    MemberConnection:    GroupConnection:    APIConnection:    ResourceConnection:    RoleConnection:    OrganizationConnection:    ProductConnection:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/parameter/",
@@ -952,6 +1148,34 @@
 	"content": " GraphQL Schema definition interface Priceable {  currency: Currency!    binding: Boolean!    net: Float!    gross: Float    exchange: Exchange!   }   Fields currency(Currency!): Specifies the currency.  binding(Boolean!): Is binding.  net(Float!): Specifies the import net.  gross(Float): Specifies the import gross.  exchange(Exchange!): Specifies the exchange.  \n"
 },
 {
+	"uri": "/travelgatex/reference/objects/product/",
+	"title": "Product",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type Product {  code: ID!    productData: ProductData!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   productData(ProductData!):   error([Error!]):   createdAt(DateTime!):   updatedAt(DateTime!):   \nRequire by ProductEdge:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/productconnection/",
+	"title": "ProductConnection",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type ProductConnection {  edges: [ProductEdge]    pageInfo: PageInfo!   }   Fields edges([ProductEdge]):   pageInfo(PageInfo!):   \nRequire by AdminQuery:    OrganizationData:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/productdata/",
+	"title": "ProductData",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type ProductData {  id: ID!    code: ID!    apis(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): APIConnection   }   Fields id(ID!):   code(ID!):   apis(APIConnection):   \nRequire by Product:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/productedge/",
+	"title": "ProductEdge",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type ProductEdge {  cursor: String!    node: Product   }   Fields cursor(String!):   node(Product):   \nRequire by ProductConnection:    \n"
+},
+{
 	"uri": "/travelgatex/reference/objects/promotion/",
 	"title": "Promotion",
 	"tags": [],
@@ -963,7 +1187,7 @@
 	"title": "Query",
 	"tags": [],
 	"description": "",
-	"content": " The query type, represents all of the entry points into our object graph.\nGraphQL Schema definition type Query {  search: Search!    quote: Quote!    booking: Booking    access( ids: [String!], groupCodes: [String!], ): [GroupAccess!]    defaultSettings( groupCode: String!, ): DefaultSettings    supplier( ids: [String!], groupCodes: [String!], ): [Supplier!]    connectUser( ids: [String!], groupCodes: [String!], ): [ConnectUser!]    mapping( groupCode: String!, ): Mapping!    searchStatusService: ServiceStatus!    quoteStatusService: ServiceStatus!    bookStatusService: ServiceStatus!    cancelStatusService: ServiceStatus!    bookingStatusService: ServiceStatus!    hotels(    codes: [String!],     language: String,     first: Int,     Last: Int,     before: String,     after: String,     ): HotelConnection!   }   Fields search(Search!): Available options for a given date and itinerary.  quote(Quote!): Returns the total price and cancellation policies of the Option selected in the previous step (Search).  booking(Booking): Returns detailed information about books.  access([GroupAccess!]): Returns accesses grouped by \u0026#39;groups\u0026#39;. If access identifiers \u0026#39;ids\u0026#39; are sent, only those accesses will be read. If \u0026#39;groupsCodes\u0026#39; are sent, only accesses for these groups will be read Requesting this query without any of these filters will provide all requestor accesses  defaultSettings(DefaultSettings): Reads defaultSettings of the given group  supplier([Supplier!]): Returns suppliers and their groups. If supplier identifiers \u0026#39;ids\u0026#39; are sent, only those will be read. If \u0026#39;groupsCodes\u0026#39; are sent, only suppliers for these groups will be read Requesting this query without any of these filters will provide all requestor suppliers  connectUser([ConnectUser!]): Returns connect users and their groups. If connect user identifiers \u0026#39;ids\u0026#39; are sent, only those will be read. If \u0026#39;groupsCodes\u0026#39; are sent, only connect user for these groups will be read Requesting this query without any of these filters will provide all requestor connect users  mapping(Mapping!): Returns the mapping for a group, is necessary specify the group.  searchStatusService(ServiceStatus!): Returns status of the search service.  quoteStatusService(ServiceStatus!): Returns status of the quote service.  bookStatusService(ServiceStatus!): Returns status of the new booking service.  cancelStatusService(ServiceStatus!): Returns status of the cancellation service.  bookingStatusService(ServiceStatus!): TODO: me no understand... Returns status of the booking service.  hotels(HotelConnection!): Query to obtain Hotels  \n"
+	"content": " GraphQL Schema definition type Query {  hotelX: HotelXQuery    search: Search!    quote: Quote!    booking: Booking    defaultSettings( groupCode: String!, ): DefaultSettings    mapping( groupCode: String!, ): Mapping!   }   Fields hotelX(HotelXQuery):   search(Search!): Available options for a given date and itinerary.  quote(Quote!): Returns the total price and cancellation policies of the Option selected in the previous step (Search).  booking(Booking): Returns detailed information about books.  defaultSettings(DefaultSettings): Reads defaultSettings of the given group  mapping(Mapping!): Returns the mapping for a group, is necessary specify the group.  \n"
 },
 {
 	"uri": "/getting-started/quickstart/",
@@ -984,7 +1208,7 @@
 	"title": "Quote",
 	"tags": [],
 	"description": "",
-	"content": " Returns the total price and cancellation policies of the Option selected in the previous step (Search).\nGraphQL Schema definition type Quote {  hotel( criteria: HotelCriteriaQuoteInput!, settings: HotelSettingsInput, ): HotelQuote   }   Fields hotel(HotelQuote): Returns the total price and cancellation policies of the Option selected in the previous step (Search).  \nRequire by Query:  The query type, represents all of the entry points into our object graph.  \n"
+	"content": " Returns the total price and cancellation policies of the Option selected in the previous step (Search).\nGraphQL Schema definition type Quote {  hotel( criteria: HotelCriteriaQuoteInput!, settings: HotelSettingsInput, ): HotelQuote   }   Fields hotel(HotelQuote): Returns the total price and cancellation policies of the Option selected in the previous step (Search).  \nRequire by Query:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/rateplan/",
@@ -1005,7 +1229,7 @@
 	"title": "RateRulesType",
 	"tags": [],
 	"description": "",
-	"content": " Rate Rules\nGraphQL Schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,   }   "
+	"content": " Rate Rules\nGraphQL Schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,    NORMAL,    NON_REFUNDABLE,   }   "
 },
 {
 	"uri": "/travelgatex/reference/objects/reference/",
@@ -1029,11 +1253,67 @@
 	"content": " Contains information about the Resort.\nGraphQL Schema definition type Resort {  code: String!    name: String    description: String   }   Fields code(String!): Specifies the resort code.  name(String): Specifies the resort name.  description(String): Specifies the resort description.  \nRequire by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  \n"
 },
 {
+	"uri": "/travelgatex/reference/objects/resource/",
+	"title": "Resource",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type Resource {  code: ID!    error: [Error!]    resourceData: ResourceData    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   error([Error!]):   resourceData(ResourceData):   createdAt(DateTime!):   updatedAt(DateTime!):   \nRequire by ResourceEdge:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/resourceconnection/",
+	"title": "ResourceConnection",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type ResourceConnection {  edges: [ResourceEdge]    pageInfo: PageInfo!   }   Fields edges([ResourceEdge]):   pageInfo(PageInfo!):   \nRequire by APIData:    RoleData:    AdminQuery:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/resourcedata/",
+	"title": "ResourceData",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type ResourceData {  id: ID!    code: ID!    apis(    first: Int,     last: Int,     before: String,     after: String,     codes: [String!],     ): APIConnection    roles(    first: Int,     last: Int,     before: String,     after: String,     codes: [String!],     ): RoleConnection   }   Fields id(ID!):   code(ID!):   apis(APIConnection):   roles(RoleConnection):   \nRequire by Resource:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/resourceedge/",
+	"title": "ResourceEdge",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type ResourceEdge {  cursor: String!    node: Resource   }   Fields cursor(String!):   node(Resource):   \nRequire by ResourceConnection:    \n"
+},
+{
 	"uri": "/travelgatex/reference/interfaces/response/",
 	"title": "Response",
 	"tags": [],
 	"description": "",
 	"content": " GraphQL Schema definition interface Response {  stats( token: String!, ): RequestStats    auditData: AuditData    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent \u0026amp; received in the supplierâ€™s original format.  errors([Error!]): Errors that lead the service to stop  warnings([Warning!]): Potentially harmful situations or errors that do not stop the service  \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/role/",
+	"title": "Role",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type Role {  code: ID!    error: [Error!]    roleData: RoleData    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   error([Error!]):   roleData(RoleData):   createdAt(DateTime!):   updatedAt(DateTime!):   \nRequire by RoleEdge:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/roleconnection/",
+	"title": "RoleConnection",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type RoleConnection {  edges: [RoleEdge]    pageInfo: PageInfo!   }   Fields edges([RoleEdge]):   pageInfo(PageInfo!):   \nRequire by ResourceData:    AdminQuery:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/roledata/",
+	"title": "RoleData",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type RoleData {  id: ID!    code: ID!    label: String!    isCreate: Boolean!    isRead: Boolean!    isUpdate: Boolean!    isDelete: Boolean!    isEnable: Boolean!    isExecutable: Boolean!    isEspecial: Boolean!    especial: String    resources(    first: Int,     last: Int,     before: String,     after: String,     codes: [String!],     ): ResourceConnection   }   Fields id(ID!):   code(ID!):   label(String!):   isCreate(Boolean!):   isRead(Boolean!):   isUpdate(Boolean!):   isDelete(Boolean!):   isEnable(Boolean!):   isExecutable(Boolean!):   isEspecial(Boolean!):   especial(String):   resources(ResourceConnection):   \nRequire by Role:    \n"
+},
+{
+	"uri": "/travelgatex/reference/objects/roleedge/",
+	"title": "RoleEdge",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type RoleEdge {  cursor: String!    node: Role   }   Fields cursor(String!):   node(Role):   \nRequire by RoleConnection:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/room/",
@@ -1089,14 +1369,14 @@
 	"title": "Search",
 	"tags": [],
 	"description": "",
-	"content": " Available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.\nGraphQL Schema definition type Search {  hotel(    token: String,     criteria: HotelCriteriaSearchInput,     settings: HotelSettingsInput,     filter: FilterInput,     ): HotelSearch   }   Fields hotel(HotelSearch): Available options of an hotel for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward. It only requires the criteria of search (destination, travel dates and the number of pax in each room). But you must preload the other fields in our system by complete the fields absents.  \nRequire by Query:  The query type, represents all of the entry points into our object graph.  \n"
+	"content": " Available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.\nGraphQL Schema definition type Search {  hotel(    token: String,     criteria: HotelCriteriaSearchInput,     settings: HotelSettingsInput,     filter: FilterInput,     ): HotelSearch   }   Fields hotel(HotelSearch): Available options of an hotel for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward. It only requires the criteria of search (destination, travel dates and the number of pax in each room). But you must preload the other fields in our system by complete the fields absents.  \nRequire by Query:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/servicestatus/",
 	"title": "ServiceStatus",
 	"tags": [],
 	"description": "",
-	"content": " Indicates the status of the service\nGraphQL Schema definition type ServiceStatus {  code: String    type: String    description: String   }   Fields code(String): Status code  type(String): Status type  description(String): Status description  \nRequire by Query:  The query type, represents all of the entry points into our object graph.  \n"
+	"content": " Indicates the status of the service\nGraphQL Schema definition type ServiceStatus {  code: String    type: String    description: String   }   Fields code(String): Status code  type(String): Status type  description(String): Status description  \nRequire by HotelXQuery:  A Query is an entry point into the object graph.  \n"
 },
 {
 	"uri": "/travelgatex/reference/enums/servicetype/",
@@ -1145,7 +1425,7 @@
 	"title": "String",
 	"tags": [],
 	"description": "",
-	"content": " The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.\nGraphQL Schema definition scalar String   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  HotelSettingsInput:  Settings that you can edit for this avail. Values are loaded by default in our Back Office.  SupplierInput:  Supplier object. Contains its own settings, code and access.  ConfigurationInput:  The information and credentials required to access the supplierâ€™s system.  ParameterInput:  Parameters for additional information for the supplier\u0026#39;s configuration.  PluginsInput:  Plugin to execute.  HotelSearch:  Results of Avail Hotel. Contains all the available options for a given date and itinerary.  RequestStats:  Contains internal information.  StatAccess:    StatTransaction:    Transactions:  Supplier transaction  Error:  Application errors  AdviseMessage:    Warning:  Application warnings  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description.  BookableOptionSearch:    Room:  Contains the room information of the option returned.  Markup:  Informs markup applied over supplier price.  Rule:    Bed:  Contains information about a bed.  RatePlan:  Information about the rate of the option returned.  Promotion:  Information about room promotions(offers).  Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  Resort:  Contains information about the Resort.  Surcharge:  Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.  HotelCriteriaQuoteInput:  The quote criteria contains the option reference id, block and language.  HotelOptionQuote:  Contains information about quote.  HotelCriteriaBookingInput:  Criteria of book contains basic information to find a book or books.  CriteriaBookingReferencesInput:  Criteria by references  BookReferenceInput:  Reference object that contains the client reference and/or supplier reference.  HotelBookingDetail:  Contains information about booking.  Reference:  Contains reference codes.  Holder:  Holder object that contains the pax name and surname.  BookingHotel:    BookingRoom:    AccessData:    SupplierData:    SupplierGroup:  group related to a supplier  Parameter:  Parameters for additional information for the supplier\u0026#39;s configuration.  DefaultSettings:    ConnectUser:  data related to a connect user and its groups  ConnectUserGroup:  group related to a connect user  MappingContext:  Returns the differents group contexts  MappingEntity:  Mapping about client codes with the equivalence per supplier.  Map:  Map codes.  ServiceStatus:  Indicates the status of the service  HotelEdge:  HotelList Edge definition  HotelData:  Hotel data  MediaEdge:  HotelList Edge definition  PageInfo:    AmenityEdge:  HotelList Edge definition  Information:    Location:  Location  Geocode:  Geocode type  Contact:  Contact type  Destination:  Destination type  Mutation:  Mutations are operations that change or update data in the server.  HotelBookInput:  Criteria of book.  PaymentCardInput:  Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information  HolderInput:  Holder object that contains the pax name and surname.  BookPaxInput:  Input BookPax contains basic information abaout pax suach as name, surname and age.  HotelCancelInput:  Cancellation Criteria.  HotelCancelDetail:  Contains information about cancel  AccessConfigurationInput:  The information required to access the supplier\u0026#39;s system.  IdAccessConfigurationInput:    DefaultSettingsInput:    AccessSupplierInput:  Supplier input for data access management API  SupplierGroupInput:  group related to a supplier  AccessConnectUserInput:  Connect user input for data access management API  ConnectUserGroupInput:  group related to a connect user  AccessEdge:     "
+	"content": " The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.\nGraphQL Schema definition scalar String   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  HotelSettingsInput:  Settings that you can edit for this avail. Values are loaded by default in our Back Office.  SupplierInput:  Supplier object. Contains its own settings, code and access.  ConfigurationInput:  The information and credentials required to access the supplierâ€™s system.  ParameterInput:  Parameters for additional information for the supplier\u0026#39;s configuration.  PluginsInput:  Plugin to execute.  HotelSearch:  Results of Avail Hotel. Contains all the available options for a given date and itinerary.  RequestStats:  Contains internal information.  StatAccess:    StatTransaction:    Transactions:  Supplier transaction  Error:  Application errors  AdviseMessage:    Warning:  Application warnings  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description.  BookableOptionSearch:    Room:  Contains the room information of the option returned.  Markup:  Informs markup applied over supplier price.  Rule:    Bed:  Contains information about a bed.  RatePlan:  Information about the rate of the option returned.  Promotion:  Information about room promotions(offers).  Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  Resort:  Contains information about the Resort.  Surcharge:  Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.  HotelCriteriaQuoteInput:  The quote criteria contains the option reference id, block and language.  HotelOptionQuote:  Contains information about quote.  HotelCriteriaBookingInput:  Criteria of book contains basic information to find a book or books.  CriteriaBookingReferencesInput:  Criteria by references  BookReferenceInput:  Reference object that contains the client reference and/or supplier reference.  HotelBookingDetail:  Contains information about booking.  Reference:  Contains reference codes.  Holder:  Holder object that contains the pax name and surname.  BookingHotel:    BookingRoom:    ServiceStatus:  Indicates the status of the service  HotelEdge:  HotelList Edge definition  HotelData:  Hotel data  MediaEdge:  HotelList Edge definition  PageInfo:    AmenityEdge:  HotelList Edge definition  Information:    Location:  Location  Geocode:  Geocode type  Contact:  Contact type  Destination:  Destination type  DefaultSettings:    MappingContext:  Returns the differents group contexts  MappingEntity:  Mapping about client codes with the equivalence per supplier.  Map:  Map codes.  Mutation:  Mutations are operations that change or update data in the server.  HotelBookInput:  Criteria of book.  PaymentCardInput:  Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information  HolderInput:  Holder object that contains the pax name and surname.  BookPaxInput:  Input BookPax contains basic information abaout pax suach as name, surname and age.  HotelCancelInput:  Cancellation Criteria.  HotelCancelDetail:  Contains information about cancel  DefaultSettingsInput:    Parameter:  Parameters for additional information for the supplier\u0026#39;s configuration.  SupplierData:    SupplierGroup:  group related to a supplier  AccessData:    AccessEdge:    GiataID:  Giata System ID.  ConnectUser:  data related to a connect user and its groups  ConnectUserGroup:  group related to a connect user  AccessConfigurationInput:  The information required to access the supplier\u0026#39;s system.  AccessConnectUserInput:  Connect user input for data access management API  ConnectUserGroupInput:  group related to a connect user  AccessSupplierInput:  Supplier input for data access management API  SupplierGroupInput:  group related to a supplier  IdAccessConfigurationInput:    MemberEdge:    MemberData:    GroupEdge:    APIEdge:    ResourceEdge:    RoleEdge:    RoleData:    CreateMemberInput:    CreateGroupInput:    UpdateMemberInput:    UpdateGroupInput:    OrganizationEdge:    ProductEdge:     "
 },
 {
 	"uri": "/travelgatex/reference/objects/supplement/",
@@ -1166,14 +1446,14 @@
 	"title": "Supplier",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type Supplier {  code: ID!    supplierData: SupplierData!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   supplierData(SupplierData!):   error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date   updatedAt(DateTime!): Update date  \nRequire by AccessData:    Mutation:  Mutations are operations that change or update data in the server.  AccessEdge:    \n"
+	"content": " GraphQL Schema definition type Supplier {  code: ID!    supplierData: SupplierData!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   supplierData(SupplierData!):   error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date   updatedAt(DateTime!): Update date  \nRequire by AccessData:    AccessEdge:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/supplierdata/",
 	"title": "SupplierData",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type SupplierData {  code: String!    isActive: Boolean!    dll: String!    hotelCodes( hotel: ID!, ): ID!    supplierGroups: [SupplierGroup!]   }   Fields code(String!): unique identifier of a supplier  isActive(Boolean!): indicates whether a supplier is active  dll(String!): instance to which this supllier is connected  hotelCodes(ID!): accesses(first: Int, Last: Int, before: String, after:String, criterial: criterialInput): AccessConnection  supplierGroups([SupplierGroup!]): supplier\u0026#39;s related data of its groups  \nRequire by Supplier:    \n"
+	"content": " GraphQL Schema definition type SupplierData {  code: String!    isActive: Boolean!    dll: String!    hotelCodes( hotel: ID!, ): ID!    supplierGroups: [SupplierGroup!]   }   Fields code(String!): unique identifier of a supplier  isActive(Boolean!): indicates whether a supplier is active  dll(String!): instance to which this supllier is connected  hotelCodes(ID!): accesses(first: Int, last: Int, before: String, after:String, criterial: criterialInput): AccessConnection  supplierGroups([SupplierGroup!]): supplier\u0026#39;s related data of its groups  \nRequire by Supplier:    \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/suppliergroup/",
@@ -1229,7 +1509,7 @@
 	"title": "URI",
 	"tags": [],
 	"description": "",
-	"content": " An RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string.\nGraphQL Schema definition scalar URI   Require by UrlsInput:  Url\u0026#39;s  Urls:  Url\u0026#39;s  MediaData:    Contact:  Contact type   "
+	"content": " An RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string.\nGraphQL Schema definition scalar URI   Require by UrlsInput:  Url\u0026#39;s  MediaData:    Contact:  Contact type  Urls:  Url\u0026#39;s   "
 },
 {
 	"uri": "/travelgatex/reference/enums/unittimetype/",
@@ -1239,11 +1519,25 @@
 	"content": " Unit Time Type\nGraphQL Schema definition  enum UnitTimeType{   DAY,    HOUR,   }   Require by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  \n"
 },
 {
+	"uri": "/travelgatex/reference/inputobjects/updategroupinput/",
+	"title": "UpdateGroupInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type UpdateGroupInput {  api: String!    code: String!    info: String    method: Method!   }   Fields api(String!):   code(String!):   info(String):   method(Method!):   \n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/updatememberinput/",
+	"title": "UpdateMemberInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type UpdateMemberInput {  code: String!    info: String    group: String!    roles: [String!]!    resource: String!    method: Method!   }   Fields code(String!):   info(String):   group(String!):   roles([String!]!):   resource(String!):   method(Method!):   \n"
+},
+{
 	"uri": "/travelgatex/reference/objects/urls/",
 	"title": "Urls",
 	"tags": [],
 	"description": "",
-	"content": " Url\u0026rsquo;s\nGraphQL Schema definition type Urls {  search: URI    quote: URI    book: URI    generic: URI   }   Fields search(URI): Specific Url for Availability method.  quote(URI): Specific Url for Reservation method.  book(URI): Specific Url for Valuation method.  generic(URI): Supplier URL used for multiple methods.  \nRequire by AccessData:    \n"
+	"content": " Url\u0026rsquo;s\nGraphQL Schema definition type Urls {  search: URI!    quote: URI!    book: URI!    generic: URI!   }   Fields search(URI!): Specific Url for Availability method.  quote(URI!): Specific Url for Reservation method.  book(URI!): Specific Url for Valuation method.  generic(URI!): Supplier URL used for multiple methods.  \nRequire by AccessData:    \n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/urlsinput/",

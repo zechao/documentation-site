@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>API</title>
+      <link>/travelgatex/reference/objects/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/api/</guid>
+      <description>GraphQL Schema definition type API {  code: ID!    error: [Error!]    apiData: APIData    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   error([Error!]):   apiData(APIData):   createdAt(DateTime!):   updatedAt(DateTime!):   
+Require by APIEdge:</description>
+    </item>
+    
+    <item>
       <title>API Reference</title>
       <link>/hotelx/reference/api-reference/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -23,15 +33,32 @@ Samples  Search, Quote, Book, Cancel and Retrieve bookings  </description>
     </item>
     
     <item>
-      <title>API Reference</title>
-      <link>/travelgatex/reference/api-reference/</link>
+      <title>APIConnection</title>
+      <link>/travelgatex/reference/objects/apiconnection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/api-reference/</guid>
-      <description>This API reference is organized by graphql operations related to product.
-Query Operations Mutation Operations Custom Scalar Types TravelgateX GraphQL schema implementation defines custom scalar types.
-JSON Sometimes it&amp;rsquo;s necessary to manage arbitrary JSON values for loosely structured data. The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.
-In queries or mutations, JSON fields have to be specified with enclosing double quotes.</description>
+      <guid>/travelgatex/reference/objects/apiconnection/</guid>
+      <description>GraphQL Schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   }   Fields edges([APIEdge]):   pageInfo(PageInfo!):   
+Require by GroupCommonData:    GroupData:    ResourceData:    AdminQuery:    OrganizationData:    ProductData:</description>
+    </item>
+    
+    <item>
+      <title>APIData</title>
+      <link>/travelgatex/reference/objects/apidata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/apidata/</guid>
+      <description>GraphQL Schema definition type APIData {  id: ID!    code: ID!    groups(    first: Int,     last: Int,     before: String,     after: String,     codes: [String!],     ): GroupConnection    resources(    first: Int,     last: Int,     before: String,     after: String,     codes: [String!</description>
+    </item>
+    
+    <item>
+      <title>APIEdge</title>
+      <link>/travelgatex/reference/objects/apiedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/apiedge/</guid>
+      <description>GraphQL Schema definition type APIEdge {  cursor: String!    node: API   }   Fields cursor(String!):   node(API):   
+Require by APIConnection:</description>
     </item>
     
     <item>
@@ -40,7 +67,7 @@ In queries or mutations, JSON fields have to be specified with enclosing double 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/access/</guid>
-      <description>GraphQL Schema definition type Access {  code: ID!    accessData: AccessData!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   accessData(AccessData!):   error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date   updatedAt(DateTime!): Update date</description>
+      <description>GraphQL Schema definition type Access {  code: ID!    accessData: AccessData!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   accessData(AccessData!):   error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date  updatedAt(DateTime!): Update date</description>
     </item>
     
     <item>
@@ -141,7 +168,25 @@ Context apply to:
       <guid>/travelgatex/reference/objects/addons/</guid>
       <description>Extra information about the option.
 GraphQL Schema definition type AddOns {  distribute: JSON   }   Fields distribute(JSON): Extra information from the distribution layer  
-Require by HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description.</description>
+Require by HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description.  HotelOptionQuote:  Contains information about quote.</description>
+    </item>
+    
+    <item>
+      <title>AdminMutation</title>
+      <link>/travelgatex/reference/objects/adminmutation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/adminmutation/</guid>
+      <description>GraphQL Schema definition type AdminMutation {  createMember( member: CreateMemberInput!, ): Member!    createGroup( group: CreateGroupInput!, ): Group!    updateMember( member: UpdateMemberInput!, ): Member!    updateGroup( group: UpdateGroupInput!, ): Group!    deleteMember( member: [DeleteMemberInput!]!, ): Member!    deleteGroup( group: DeleteGroupInput!, ): Group!   }   Fields createMember(Member!):   createGroup(Group!):   updateMember(Member!):   updateGroup(Group!):   deleteMember(Member!</description>
+    </item>
+    
+    <item>
+      <title>AdminQuery</title>
+      <link>/travelgatex/reference/objects/adminquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/adminquery/</guid>
+      <description>GraphQL Schema definition type AdminQuery {  organizations(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): OrganizationConnection!    catalog(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): ProductConnection!</description>
     </item>
     
     <item>
@@ -150,7 +195,7 @@ Require by HotelOptionSearch:  An option includes hotel information, meal plan, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/interfaces/advisemessage/</guid>
-      <description>GraphQL Schema definition interface AdviseMessage {  code: String!    type: String!    description: String!   }   Fields code(String!): TODO: Error code: The following codes can be returned: XXX: XXXXXXXXX XXXXXX  type(String!): TODO: Error type: The following types are valid: XXX: asd asdÃ±oajskd lÃ±a ld   description(String!): Error description</description>
+      <description>GraphQL Schema definition interface AdviseMessage {  code: String!    type: String!    description: String!   }   Fields code(String!): TODO: Error code: The following codes can be returned: XXX: XXXXXXXXX XXXXXX  type(String!): TODO: Error type: The following types are valid:  description(String!): Error description</description>
     </item>
     
     <item>
@@ -292,7 +337,7 @@ GraphQL Schema definition  enum BookStatusType{   OK,    KO,    ON_REQUEST,    C
       <guid>/travelgatex/reference/objects/booking/</guid>
       <description>Returns detailed information about books.
 GraphQL Schema definition type Booking {  hotel( criteria: HotelCriteriaBookingInput!, settings: HotelSettingsInput, ): HotelBooking   }   Fields hotel(HotelBooking): Returns detailed information about books, you can indicated a list of locators or a range date.  
-Require by Query:  The query type, represents all of the entry points into our object graph.</description>
+Require by Query:</description>
     </item>
     
     <item>
@@ -432,8 +477,7 @@ GraphQL Schema definition type ConfigurationInput {  username: String    passwor
       
       <guid>/travelgatex/reference/objects/connectuser/</guid>
       <description>data related to a connect user and its groups
-GraphQL Schema definition type ConnectUser {  code: String!    isActive: Boolean!    connectUserGroups: [ConnectUserGroup!]   }   Fields code(String!): unique connect user of a supplier  isActive(Boolean!): indicates whether a connect user is active  connectUserGroups([ConnectUserGroup!]): connect user&amp;#39;s related data of its groups  
-Require by Mutation:  Mutations are operations that change or update data in the server.</description>
+GraphQL Schema definition type ConnectUser {  code: String!    isActive: Boolean!    connectUserGroups: [ConnectUserGroup!]   }   Fields code(String!): unique connect user of a supplier  isActive(Boolean!): indicates whether a connect user is active  connectUserGroups([ConnectUserGroup!]): connect user&amp;#39;s related data of its groups</description>
     </item>
     
     <item>
@@ -474,7 +518,25 @@ Require by HotelData:  Hotel data</description>
       
       <guid>/travelgatex/reference/scalars/country/</guid>
       <description>ISO 3166-1 alpha-2
-GraphQL Schema definition scalar Country   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  DefaultSettings:    Location:  Location  DefaultSettingsInput:</description>
+GraphQL Schema definition scalar Country   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  Location:  Location  DefaultSettings:    DefaultSettingsInput:</description>
+    </item>
+    
+    <item>
+      <title>CreateGroupInput</title>
+      <link>/travelgatex/reference/inputobjects/creategroupinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/creategroupinput/</guid>
+      <description>GraphQL Schema definition type CreateGroupInput {  user: String    code: String!    type: GroupType!    info: String    parent: ID!   }   Fields user(String):   code(String!):   type(GroupType!):   info(String):   parent(ID!):</description>
+    </item>
+    
+    <item>
+      <title>CreateMemberInput</title>
+      <link>/travelgatex/reference/inputobjects/creatememberinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/creatememberinput/</guid>
+      <description>GraphQL Schema definition type CreateMemberInput {  code: String    info: String    type: MemberType!    group: String!    roles: [String!]!    resource: String!   }   Fields code(String):   info(String):   type(MemberType!):   group(String!):   roles([String!]!):   resource(String!):</description>
     </item>
     
     <item>
@@ -536,7 +598,7 @@ GraphQL Schema definition scalar Date   Require by HotelCriteriaSearchInput:  Cr
       
       <guid>/travelgatex/reference/scalars/datetime/</guid>
       <description> In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: datetime: &amp;ldquo;2015-11-22T13:57:31.123Z&amp;rdquo;.
-GraphQL Schema definition scalar DateTime   Require by Stat:    AuditData:  Data sent &amp;amp; received in the supplierâ€™s native format.  Transactions:  Supplier transaction  Access:    Node:    Supplier:    Hotel:  Hotel type  Media:    Amenity:     </description>
+GraphQL Schema definition scalar DateTime   Require by Stat:    AuditData:  Data sent &amp;amp; received in the supplierâ€™s native format.  Transactions:  Supplier transaction  Hotel:  Hotel type  Node:    Media:    Amenity:    Supplier:    Access:    Member:    Group:    API:    Resource:    Role:    Organization:    Product:     </description>
     </item>
     
     <item>
@@ -576,6 +638,24 @@ Require by DefaultSettingsInput:</description>
       
       <guid>/travelgatex/reference/inputobjects/defaultsettingsinput/</guid>
       <description>GraphQL Schema definition type DefaultSettingsInput {  groupCode: String!    connectUser: String!    context: String    language: Language!    currency: Currency!    nationality: Country!    market: String!    timeout: TimeoutInput!    businessRules: DefaultSettingsBusinessRulesInput!   }   Fields groupCode(String!): Unique Id  connectUser(String!): This field is got only if the authorization header is of the type JWT.</description>
+    </item>
+    
+    <item>
+      <title>DeleteGroupInput</title>
+      <link>/travelgatex/reference/inputobjects/deletegroupinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/deletegroupinput/</guid>
+      <description>GraphQL Schema definition type DeleteGroupInput {  codes: [String!]!   }   Fields codes([String!]!):</description>
+    </item>
+    
+    <item>
+      <title>DeleteMemberInput</title>
+      <link>/travelgatex/reference/inputobjects/deletememberinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/deletememberinput/</guid>
+      <description>GraphQL Schema definition type DeleteMemberInput {  code: ID!    group: ID!   }   Fields code(ID!):   group(ID!):</description>
     </item>
     
     <item>
@@ -682,14 +762,33 @@ Require by Location:  Location</description>
     </item>
     
     <item>
+      <title>GiataID</title>
+      <link>/travelgatex/reference/objects/giataid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/giataid/</guid>
+      <description>Giata System ID.
+GraphQL Schema definition type GiataID {  code: String   }   Fields code(String): Giata url. source: URI! Giata code</description>
+    </item>
+    
+    <item>
+      <title>Group</title>
+      <link>/travelgatex/reference/objects/group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/group/</guid>
+      <description>GraphQL Schema definition type Group {  code: ID!    error: [Error!]    groupData: GroupData    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   error([Error!]):   groupData(GroupData):   createdAt(DateTime!):   updatedAt(DateTime!):   
+Require by GroupEdge:    AdminMutation:</description>
+    </item>
+    
+    <item>
       <title>GroupAccess</title>
       <link>/travelgatex/reference/objects/groupaccess/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/groupaccess/</guid>
       <description>Pair of groups and accesses. All accesses returned will belong to all the groups in groupCodes
-GraphQL Schema definition type GroupAccess {  groupCodes: [String!]!    accesses: [Access!]   }   Fields groupCodes([String!]!): group identifiers  accesses([Access!]):   
-Require by Mutation:  Mutations are operations that change or update data in the server.</description>
+GraphQL Schema definition type GroupAccess {  groupCodes: [String!]!    accesses: [Access!]   }   Fields groupCodes([String!]!): group identifiers  accesses([Access!]):</description>
     </item>
     
     <item>
@@ -699,6 +798,53 @@ Require by Mutation:  Mutations are operations that change or update data in the
       
       <guid>/travelgatex/reference/inputobjects/groupaccessinput/</guid>
       <description>GraphQL Schema definition type GroupAccessInput {  groupCodes: [String!]    accesses: [AccessConfigurationInput!]!   }   Fields groupCodes([String!]): groups identifiers in which the access will be associated  accesses([AccessConfigurationInput!]!): access related data</description>
+    </item>
+    
+    <item>
+      <title>GroupCommonData</title>
+      <link>/travelgatex/reference/interfaces/groupcommondata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/interfaces/groupcommondata/</guid>
+      <description>GraphQL Schema definition interface GroupCommonData {  id: ID!    code: ID!    members(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection    apis(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): APIConnection   }   Fields id(ID!</description>
+    </item>
+    
+    <item>
+      <title>GroupConnection</title>
+      <link>/travelgatex/reference/objects/groupconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/groupconnection/</guid>
+      <description>GraphQL Schema definition type GroupConnection {  edges: [GroupEdge]    pageInfo: PageInfo!   }   Fields edges([GroupEdge]):   pageInfo(PageInfo!):   
+Require by MemberData:    APIData:    AdminQuery:</description>
+    </item>
+    
+    <item>
+      <title>GroupData</title>
+      <link>/travelgatex/reference/objects/groupdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/groupdata/</guid>
+      <description>GraphQL Schema definition type GroupData {  id: ID!    code: ID!    type: GroupType!    parent: Int!    members(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection    apis(    codes: [String!</description>
+    </item>
+    
+    <item>
+      <title>GroupEdge</title>
+      <link>/travelgatex/reference/objects/groupedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/groupedge/</guid>
+      <description>GraphQL Schema definition type GroupEdge {  cursor: String!    node: Group   }   Fields cursor(String!):   node(Group):   
+Require by GroupConnection:</description>
+    </item>
+    
+    <item>
+      <title>GroupType</title>
+      <link>/travelgatex/reference/enums/grouptype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/enums/grouptype/</guid>
+      <description>GraphQL Schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,   }   Require by GroupData:    CreateGroupInput:</description>
     </item>
     
     <item>
@@ -809,7 +955,7 @@ GraphQL Schema definition type HotelCancelInput {  accessCode: String!    langua
       <guid>/travelgatex/reference/objects/hotelconnection/</guid>
       <description>HotelList definition
 GraphQL Schema definition type HotelConnection {  edges: [HotelEdge]    pageInfo: PageInfo!   }   Fields edges([HotelEdge]):   pageInfo(PageInfo!):   
-Require by Query:  The query type, represents all of the entry points into our object graph.</description>
+Require by HotelXQuery:  A Query is an entry point into the object graph.</description>
     </item>
     
     <item>
@@ -849,7 +995,7 @@ GraphQL Schema definition type HotelCriteriaSearchInput {  checkIn: Date!    che
       
       <guid>/travelgatex/reference/objects/hoteldata/</guid>
       <description>Hotel data
-GraphQL Schema definition type HotelData {  code: ID!    name: String!    categoryCode: String!    exclusiveDeal: Boolean!    medias(    type: ApplicationArea,     first: Int,     Last: Int,     before: String,     after: String,     ): MediaConnection    amenities(    language: Language,     first: Int,     Last: Int,     before: String,     after: String,     ): AmenityConnection    additionalInformation( language: Language, ): Information!</description>
+GraphQL Schema definition type HotelData {  code: ID!    name: String!    categoryCode: String!    exclusiveDeal: Boolean!    medias(    type: ApplicationArea,     first: Int,     last: Int,     before: String,     after: String,     ): MediaConnection    amenities(    language: Language,     first: Int,     last: Int,     before: String,     after: String,     ): AmenityConnection    additionalInformation( language: Language, ): Information!</description>
     </item>
     
     <item>
@@ -879,7 +1025,7 @@ Require by HotelConnection:  HotelList definition</description>
       
       <guid>/travelgatex/reference/objects/hoteloptionquote/</guid>
       <description>Contains information about quote.
-GraphQL Schema definition type HotelOptionQuote {  optionRefId: String!    status: StatusType!    price: Price!    cancelPolicy: CancelPolicy!    remarks: String    surcharges: [Surcharge!]    cardTypes: [String!]   }   Fields optionRefId(String!): Indicates the valuation key  status(StatusType!): The possible values in status in response are Available (OK) or On Request (RQ).</description>
+GraphQL Schema definition type HotelOptionQuote {  optionRefId: String!    status: StatusType!    price: Price!    cancelPolicy: CancelPolicy!    remarks: String    surcharges: [Surcharge!]    cardTypes: [String!]    addOns: AddOns   }   Fields optionRefId(String!): Indicates the valuation key  status(StatusType!): The possible values in status in response are Available (OK) or On Request (RQ).</description>
     </item>
     
     <item>
@@ -919,6 +1065,26 @@ GraphQL Schema definition type HotelSearch {  context: String    stats( token: S
       <guid>/travelgatex/reference/inputobjects/hotelsettingsinput/</guid>
       <description>Settings that you can edit for this avail. Values are loaded by default in our Back Office.
 GraphQL Schema definition type HotelSettingsInput {  context: String    useContext: Boolean    connectUser: String    timeout: Int    auditTransactions: Boolean    businessRules: BusinessRulesInput    suppliers: [SupplierInput!]    plugins: [PluginStepInput!]   }   Fields context(String): Indicates the context of the I/O codes (hotel, board, room and rates)  useContext(Boolean): Indicates if you want use context, or not, by default is true.</description>
+    </item>
+    
+    <item>
+      <title>HotelXMutation</title>
+      <link>/travelgatex/reference/objects/hotelxmutation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/hotelxmutation/</guid>
+      <description>GraphQL Schema definition type HotelXMutation {  book( input: HotelBookInput!, settings: HotelSettingsInput, ): HotelBookPayload    cancel( input: HotelCancelInput!, settings: HotelSettingsInput, ): HotelCancelPayload   }   Fields book(HotelBookPayload): Creates a new hotel booking consisting of an option of 1 or more rooms.  cancel(HotelCancelPayload): Cancels an existing hotel booking consisting of an option of 1 or more rooms.  
+Require by Mutation:  Mutations are operations that change or update data in the server.</description>
+    </item>
+    
+    <item>
+      <title>HotelXQuery</title>
+      <link>/travelgatex/reference/objects/hotelxquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/hotelxquery/</guid>
+      <description>A Query is an entry point into the object graph.
+GraphQL Schema definition type HotelXQuery {  search(    token: String,     criteria: HotelCriteriaSearchInput,     settings: HotelSettingsInput,     filter: FilterInput,     ): HotelSearch    quote( criteria: HotelCriteriaQuoteInput!, settings: HotelSettingsInput, ): HotelQuote    booking( criteria: HotelCriteriaBookingInput!, settings: HotelSettingsInput, ): HotelBooking    searchStatusService: ServiceStatus!</description>
     </item>
     
     <item>
@@ -1027,7 +1193,7 @@ GraphQL Schema definition type Map {  supplierCode: String!    codes: [String!] 
       <guid>/travelgatex/reference/objects/mapping/</guid>
       <description>Returns the mapping for a group.
 GraphQL Schema definition type Mapping {  contexts( contextCodes: [String!], supplierCodes: [String!], ): [MappingContext!]   }   Fields contexts([MappingContext!]): Returns the differents group contexts, you can filter by some contexts.  
-Require by Query:  The query type, represents all of the entry points into our object graph.</description>
+Require by Query:</description>
     </item>
     
     <item>
@@ -1111,13 +1277,70 @@ Require by MediaConnection:</description>
     </item>
     
     <item>
+      <title>Member</title>
+      <link>/travelgatex/reference/objects/member/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/member/</guid>
+      <description>GraphQL Schema definition type Member {  code: ID!    memberData: MemberData    error: [Error!]    isActive: Boolean!    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   memberData(MemberData):   error([Error!]):   isActive(Boolean!):   createdAt(DateTime!):   updatedAt(DateTime!):   
+Require by MemberEdge:    AdminMutation:    OrganizationData:</description>
+    </item>
+    
+    <item>
+      <title>MemberConnection</title>
+      <link>/travelgatex/reference/objects/memberconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/memberconnection/</guid>
+      <description>GraphQL Schema definition type MemberConnection {  edges: [MemberEdge]    pageInfo: PageInfo!   }   Fields edges([MemberEdge]):   pageInfo(PageInfo!):   
+Require by GroupCommonData:    GroupData:    AdminQuery:    OrganizationData:</description>
+    </item>
+    
+    <item>
+      <title>MemberData</title>
+      <link>/travelgatex/reference/objects/memberdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/memberdata/</guid>
+      <description>GraphQL Schema definition type MemberData {  id: ID!    code: ID!    roles: String    memberType: String    groups(    first: Int,     last: Int,     before: String,     after: String,     codes: [String!],     ): GroupConnection   }   Fields id(ID!</description>
+    </item>
+    
+    <item>
+      <title>MemberEdge</title>
+      <link>/travelgatex/reference/objects/memberedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/memberedge/</guid>
+      <description>GraphQL Schema definition type MemberEdge {  cursor: String!    node: Member   }   Fields cursor(String!):   node(Member):   
+Require by MemberConnection:</description>
+    </item>
+    
+    <item>
+      <title>MemberType</title>
+      <link>/travelgatex/reference/enums/membertype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/enums/membertype/</guid>
+      <description>GraphQL Schema definition  enum MemberType{   USER,    SERVICE_ACCOUNT,   }   Require by CreateMemberInput:</description>
+    </item>
+    
+    <item>
+      <title>Method</title>
+      <link>/travelgatex/reference/enums/method/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/enums/method/</guid>
+      <description>GraphQL Schema definition  enum Method{   ADD,    DEL,   }   Require by UpdateMemberInput:    UpdateGroupInput:</description>
+    </item>
+    
+    <item>
       <title>Mutation</title>
       <link>/travelgatex/reference/schema/mutation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/schema/mutation/</guid>
       <description>Mutations are operations that change or update data in the server.
-GraphQL Schema definition type Mutation {  loadFile( input: String!, ): String!    hotelBook( input: HotelBookInput!, settings: HotelSettingsInput, ): HotelBookPayload    hotelCancel( input: HotelCancelInput!, settings: HotelSettingsInput, ): HotelCancelPayload    createAccess( input: GroupAccessInput!, ): GroupAccess    updateAccess( input: IdGroupAccessInput!, ): GroupAccess    deleteAccesses( input: [String!]!, ): [GroupAccess!]    createDefaultSettings( input: DefaultSettingsInput!</description>
+GraphQL Schema definition type Mutation {  hotelX: HotelXMutation    hotelBook( input: HotelBookInput!, settings: HotelSettingsInput, ): HotelBookPayload    hotelCancel( input: HotelCancelInput!, settings: HotelSettingsInput, ): HotelCancelPayload    loadFile( input: String!, ): String!    createDefaultSettings( input: DefaultSettingsInput!, ): DefaultSettings    updateDefaultSettings( input: DefaultSettingsInput!, ): DefaultSettings    deleteDefaultSettings( input: String!</description>
     </item>
     
     <item>
@@ -1137,6 +1360,45 @@ GraphQL Schema definition type Mutation {  loadFile( input: String!, ): String! 
       <guid>/travelgatex/reference/objects/occupancy/</guid>
       <description>Information about occupancy.
 GraphQL Schema definition type Occupancy {  id: Int!    paxes: [Pax!]!   }   Fields id(Int!): Unique ID room in this option.  paxes([Pax!]!): List of pax of this occupancy.</description>
+    </item>
+    
+    <item>
+      <title>Organization</title>
+      <link>/travelgatex/reference/objects/organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/organization/</guid>
+      <description>GraphQL Schema definition type Organization {  code: ID!    organizationData: OrganizationData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   organizationData(OrganizationData):   error([Error!]):   createdAt(DateTime!):   updatedAt(DateTime!):   
+Require by OrganizationEdge:</description>
+    </item>
+    
+    <item>
+      <title>OrganizationConnection</title>
+      <link>/travelgatex/reference/objects/organizationconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/organizationconnection/</guid>
+      <description>GraphQL Schema definition type OrganizationConnection {  edges: [OrganizationEdge]    pageInfo: PageInfo!   }   Fields edges([OrganizationEdge]):   pageInfo(PageInfo!):   
+Require by AdminQuery:</description>
+    </item>
+    
+    <item>
+      <title>OrganizationData</title>
+      <link>/travelgatex/reference/objects/organizationdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/organizationdata/</guid>
+      <description>GraphQL Schema definition type OrganizationData {  id: ID!    code: ID!    members(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection    apis(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): APIConnection    products(    codes: [String!</description>
+    </item>
+    
+    <item>
+      <title>OrganizationEdge</title>
+      <link>/travelgatex/reference/objects/organizationedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/organizationedge/</guid>
+      <description>GraphQL Schema definition type OrganizationEdge {  cursor: String!    node: Organization   }   Fields cursor(String!):   node(Organization):   
+Require by OrganizationConnection:</description>
     </item>
     
     <item>
@@ -1236,7 +1498,7 @@ GraphQL Gateway ConnectX is the first-in-the-industry travel API completely base
       
       <guid>/travelgatex/reference/objects/pageinfo/</guid>
       <description>GraphQL Schema definition type PageInfo {  hasNextPage: Boolean!    hasPreviousPage: Boolean!    startCursor: String!    endCursor: String!   }   Fields hasNextPage(Boolean!):   hasPreviousPage(Boolean!):   startCursor(String!):   endCursor(String!):   
-Require by HotelConnection:  HotelList definition  MediaConnection:    AmenityConnection:    AccessConnection:</description>
+Require by HotelConnection:  HotelList definition  MediaConnection:    AmenityConnection:    AccessConnection:    MemberConnection:    GroupConnection:    APIConnection:    ResourceConnection:    RoleConnection:    OrganizationConnection:    ProductConnection:</description>
     </item>
     
     <item>
@@ -1369,6 +1631,45 @@ GraphQL Schema definition  enum PriceType{   GROSS,    NET,    AMOUNT,   }   </d
     </item>
     
     <item>
+      <title>Product</title>
+      <link>/travelgatex/reference/objects/product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/product/</guid>
+      <description>GraphQL Schema definition type Product {  code: ID!    productData: ProductData!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   productData(ProductData!):   error([Error!]):   createdAt(DateTime!):   updatedAt(DateTime!):   
+Require by ProductEdge:</description>
+    </item>
+    
+    <item>
+      <title>ProductConnection</title>
+      <link>/travelgatex/reference/objects/productconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/productconnection/</guid>
+      <description>GraphQL Schema definition type ProductConnection {  edges: [ProductEdge]    pageInfo: PageInfo!   }   Fields edges([ProductEdge]):   pageInfo(PageInfo!):   
+Require by AdminQuery:    OrganizationData:</description>
+    </item>
+    
+    <item>
+      <title>ProductData</title>
+      <link>/travelgatex/reference/objects/productdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/productdata/</guid>
+      <description>GraphQL Schema definition type ProductData {  id: ID!    code: ID!    apis(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): APIConnection   }   Fields id(ID!):   code(ID!):   apis(APIConnection):</description>
+    </item>
+    
+    <item>
+      <title>ProductEdge</title>
+      <link>/travelgatex/reference/objects/productedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/productedge/</guid>
+      <description>GraphQL Schema definition type ProductEdge {  cursor: String!    node: Product   }   Fields cursor(String!):   node(Product):   
+Require by ProductConnection:</description>
+    </item>
+    
+    <item>
       <title>Promotion</title>
       <link>/travelgatex/reference/objects/promotion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1384,8 +1685,7 @@ GraphQL Schema definition type Promotion {  code: String!    name: String    eff
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/schema/query/</guid>
-      <description>The query type, represents all of the entry points into our object graph.
-GraphQL Schema definition type Query {  search: Search!    quote: Quote!    booking: Booking    access( ids: [String!], groupCodes: [String!], ): [GroupAccess!]    defaultSettings( groupCode: String!, ): DefaultSettings    supplier( ids: [String!], groupCodes: [String!], ): [Supplier!]    connectUser( ids: [String!], groupCodes: [String!], ): [ConnectUser!</description>
+      <description>GraphQL Schema definition type Query {  hotelX: HotelXQuery    search: Search!    quote: Quote!    booking: Booking    defaultSettings( groupCode: String!, ): DefaultSettings    mapping( groupCode: String!, ): Mapping!   }   Fields hotelX(HotelXQuery):   search(Search!): Available options for a given date and itinerary.  quote(Quote!): Returns the total price and cancellation policies of the Option selected in the previous step (Search).</description>
     </item>
     
     <item>
@@ -1417,7 +1717,7 @@ We will be publishing a registration website so each developer can register for 
       <guid>/travelgatex/reference/objects/quote/</guid>
       <description>Returns the total price and cancellation policies of the Option selected in the previous step (Search).
 GraphQL Schema definition type Quote {  hotel( criteria: HotelCriteriaQuoteInput!, settings: HotelSettingsInput, ): HotelQuote   }   Fields hotel(HotelQuote): Returns the total price and cancellation policies of the Option selected in the previous step (Search).  
-Require by Query:  The query type, represents all of the entry points into our object graph.</description>
+Require by Query:</description>
     </item>
     
     <item>
@@ -1447,7 +1747,7 @@ GraphQL Schema definition type RateRulesFilterInput {  includes: [RateRulesType!
       
       <guid>/travelgatex/reference/enums/raterulestype/</guid>
       <description> Rate Rules
-GraphQL Schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,   }   </description>
+GraphQL Schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,    NORMAL,    NON_REFUNDABLE,   }   </description>
     </item>
     
     <item>
@@ -1484,12 +1784,90 @@ Require by Supplement:  Supplement that it can be or its already added to the op
     </item>
     
     <item>
+      <title>Resource</title>
+      <link>/travelgatex/reference/objects/resource/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/resource/</guid>
+      <description>GraphQL Schema definition type Resource {  code: ID!    error: [Error!]    resourceData: ResourceData    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   error([Error!]):   resourceData(ResourceData):   createdAt(DateTime!):   updatedAt(DateTime!):   
+Require by ResourceEdge:</description>
+    </item>
+    
+    <item>
+      <title>ResourceConnection</title>
+      <link>/travelgatex/reference/objects/resourceconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/resourceconnection/</guid>
+      <description>GraphQL Schema definition type ResourceConnection {  edges: [ResourceEdge]    pageInfo: PageInfo!   }   Fields edges([ResourceEdge]):   pageInfo(PageInfo!):   
+Require by APIData:    RoleData:    AdminQuery:</description>
+    </item>
+    
+    <item>
+      <title>ResourceData</title>
+      <link>/travelgatex/reference/objects/resourcedata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/resourcedata/</guid>
+      <description>GraphQL Schema definition type ResourceData {  id: ID!    code: ID!    apis(    first: Int,     last: Int,     before: String,     after: String,     codes: [String!],     ): APIConnection    roles(    first: Int,     last: Int,     before: String,     after: String,     codes: [String!</description>
+    </item>
+    
+    <item>
+      <title>ResourceEdge</title>
+      <link>/travelgatex/reference/objects/resourceedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/resourceedge/</guid>
+      <description>GraphQL Schema definition type ResourceEdge {  cursor: String!    node: Resource   }   Fields cursor(String!):   node(Resource):   
+Require by ResourceConnection:</description>
+    </item>
+    
+    <item>
       <title>Response</title>
       <link>/travelgatex/reference/interfaces/response/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/interfaces/response/</guid>
       <description>GraphQL Schema definition interface Response {  stats( token: String!, ): RequestStats    auditData: AuditData    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent &amp;amp; received in the supplierâ€™s original format.  errors([Error!]): Errors that lead the service to stop  warnings([Warning!]): Potentially harmful situations or errors that do not stop the service</description>
+    </item>
+    
+    <item>
+      <title>Role</title>
+      <link>/travelgatex/reference/objects/role/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/role/</guid>
+      <description>GraphQL Schema definition type Role {  code: ID!    error: [Error!]    roleData: RoleData    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   error([Error!]):   roleData(RoleData):   createdAt(DateTime!):   updatedAt(DateTime!):   
+Require by RoleEdge:</description>
+    </item>
+    
+    <item>
+      <title>RoleConnection</title>
+      <link>/travelgatex/reference/objects/roleconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/roleconnection/</guid>
+      <description>GraphQL Schema definition type RoleConnection {  edges: [RoleEdge]    pageInfo: PageInfo!   }   Fields edges([RoleEdge]):   pageInfo(PageInfo!):   
+Require by ResourceData:    AdminQuery:</description>
+    </item>
+    
+    <item>
+      <title>RoleData</title>
+      <link>/travelgatex/reference/objects/roledata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/roledata/</guid>
+      <description>GraphQL Schema definition type RoleData {  id: ID!    code: ID!    label: String!    isCreate: Boolean!    isRead: Boolean!    isUpdate: Boolean!    isDelete: Boolean!    isEnable: Boolean!    isExecutable: Boolean!    isEspecial: Boolean!    especial: String    resources(    first: Int,     last: Int,     before: String,     after: String,     codes: [String!</description>
+    </item>
+    
+    <item>
+      <title>RoleEdge</title>
+      <link>/travelgatex/reference/objects/roleedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/roleedge/</guid>
+      <description>GraphQL Schema definition type RoleEdge {  cursor: String!    node: Role   }   Fields cursor(String!):   node(Role):   
+Require by RoleConnection:</description>
     </item>
     
     <item>
@@ -1570,7 +1948,7 @@ GraphQL Schema definition type Search {  hotel(    token: String,     criteria: 
       <guid>/travelgatex/reference/objects/servicestatus/</guid>
       <description>Indicates the status of the service
 GraphQL Schema definition type ServiceStatus {  code: String    type: String    description: String   }   Fields code(String): Status code  type(String): Status type  description(String): Status description  
-Require by Query:  The query type, represents all of the entry points into our object graph.</description>
+Require by HotelXQuery:  A Query is an entry point into the object graph.</description>
     </item>
     
     <item>
@@ -1669,7 +2047,7 @@ GraphQL Schema definition  enum SupplementType{   SKI_PASS,    LESSONS,    MEALS
       
       <guid>/travelgatex/reference/objects/supplier/</guid>
       <description>GraphQL Schema definition type Supplier {  code: ID!    supplierData: SupplierData!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   supplierData(SupplierData!):   error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date   updatedAt(DateTime!): Update date  
-Require by AccessData:    Mutation:  Mutations are operations that change or update data in the server.</description>
+Require by AccessData:    AccessEdge:</description>
     </item>
     
     <item>
@@ -1678,7 +2056,7 @@ Require by AccessData:    Mutation:  Mutations are operations that change or upd
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/supplierdata/</guid>
-      <description>GraphQL Schema definition type SupplierData {  code: String!    isActive: Boolean!    dll: String!    hotelCodes( hotel: ID!, ): ID!    supplierGroups: [SupplierGroup!]   }   Fields code(String!): unique identifier of a supplier  isActive(Boolean!): indicates whether a supplier is active  dll(String!): instance to which this supllier is connected  hotelCodes(ID!): accesses(first: Int, Last: Int, before: String, after:String, criterial: criterialInput): AccessConnection  supplierGroups([SupplierGroup!</description>
+      <description>GraphQL Schema definition type SupplierData {  code: String!    isActive: Boolean!    dll: String!    hotelCodes( hotel: ID!, ): ID!    supplierGroups: [SupplierGroup!]   }   Fields code(String!): unique identifier of a supplier  isActive(Boolean!): indicates whether a supplier is active  dll(String!): instance to which this supllier is connected  hotelCodes(ID!): accesses(first: Int, last: Int, before: String, after:String, criterial: criterialInput): AccessConnection  supplierGroups([SupplierGroup!</description>
     </item>
     
     <item>
@@ -1758,7 +2136,7 @@ GraphQL Schema definition type Transactions {  request: String!    response: Str
       
       <guid>/travelgatex/reference/scalars/uri/</guid>
       <description> An RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string.
-GraphQL Schema definition scalar URI   Require by UrlsInput:  Url&amp;#39;s  Urls:  Url&amp;#39;s  MediaData:    Contact:  Contact type   </description>
+GraphQL Schema definition scalar URI   Require by UrlsInput:  Url&amp;#39;s  MediaData:    Contact:  Contact type  Urls:  Url&amp;#39;s   </description>
     </item>
     
     <item>
@@ -1772,13 +2150,31 @@ GraphQL Schema definition  enum UnitTimeType{   DAY,    HOUR,   }   Require by S
     </item>
     
     <item>
+      <title>UpdateGroupInput</title>
+      <link>/travelgatex/reference/inputobjects/updategroupinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/updategroupinput/</guid>
+      <description>GraphQL Schema definition type UpdateGroupInput {  api: String!    code: String!    info: String    method: Method!   }   Fields api(String!):   code(String!):   info(String):   method(Method!):</description>
+    </item>
+    
+    <item>
+      <title>UpdateMemberInput</title>
+      <link>/travelgatex/reference/inputobjects/updatememberinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/updatememberinput/</guid>
+      <description>GraphQL Schema definition type UpdateMemberInput {  code: String!    info: String    group: String!    roles: [String!]!    resource: String!    method: Method!   }   Fields code(String!):   info(String):   group(String!):   roles([String!]!):   resource(String!):   method(Method!):</description>
+    </item>
+    
+    <item>
       <title>Urls</title>
       <link>/travelgatex/reference/objects/urls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/urls/</guid>
       <description>Url&amp;rsquo;s
-GraphQL Schema definition type Urls {  search: URI    quote: URI    book: URI    generic: URI   }   Fields search(URI): Specific Url for Availability method.  quote(URI): Specific Url for Reservation method.  book(URI): Specific Url for Valuation method.  generic(URI): Supplier URL used for multiple methods.  
+GraphQL Schema definition type Urls {  search: URI!    quote: URI!    book: URI!    generic: URI!   }   Fields search(URI!): Specific Url for Availability method.  quote(URI!): Specific Url for Reservation method.  book(URI!): Specific Url for Valuation method.  generic(URI!): Supplier URL used for multiple methods.  
 Require by AccessData:</description>
     </item>
     

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Platform-wide API Reference | TravelgateX Documentation</title>
+    <title>HotelXQuery | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
-<title>API Reference :: TravelgateX Documentation</title>
+<title>HotelXQuery :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -21,13 +21,13 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="Platform-wide API Reference">
+<meta name="description" content="All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here.">
 <meta name="author" content="TravelgateX ByXTG">
 <link href="/css/tgx.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
-  <body data-url="/travelgatex/reference/api-reference/">
+  <body data-url="/travelgatex/reference/objects/hotelxquery/">
     <div class="mo-header fixed-top">
     <div class="top-header">
         <nav class="navbar navbar-toggleable-sm navbar-light bg-primary flex-row align-items-center">
@@ -117,11 +117,6 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/travelgatex/reference/api-reference/" class="dd-item active">
-            <a href="/travelgatex/reference/api-reference/">
-              <span style="padding-left: 8px;">API Reference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
         <li data-nav-id="/travelgatex/reference/schema/" class="dd-item">
 
             <a href="/travelgatex/reference/schema/" class="directory">
@@ -143,15 +138,36 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/travelgatex/reference/objects/" class="dd-item">
+        <li data-nav-id="/travelgatex/reference/objects/" class="dd-item parent">
 
             <a href="/travelgatex/reference/objects/" class="directory">
        
-            <span><i style="padding-right: 5px;" class="fa fa-angle-right fa-lg category-icon"></i>
+            <span>
+                    <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
                 Objects
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
+          <li data-nav-id="/travelgatex/reference/objects/api/" class="dd-item">
+            <a href="/travelgatex/reference/objects/api/">
+              <span style="padding-left: 8px;">API</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/apiconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/apiconnection/">
+              <span style="padding-left: 8px;">APIConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/apidata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/apidata/">
+              <span style="padding-left: 8px;">APIData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/apiedge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/apiedge/">
+              <span style="padding-left: 8px;">APIEdge</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/objects/access/" class="dd-item">
             <a href="/travelgatex/reference/objects/access/">
               <span style="padding-left: 8px;">Access</span><i class="fa fa-circle-thin read-icon"></i>
@@ -175,6 +191,16 @@
           <li data-nav-id="/travelgatex/reference/objects/addons/" class="dd-item">
             <a href="/travelgatex/reference/objects/addons/">
               <span style="padding-left: 8px;">AddOns</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/adminmutation/" class="dd-item">
+            <a href="/travelgatex/reference/objects/adminmutation/">
+              <span style="padding-left: 8px;">AdminMutation</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/adminquery/" class="dd-item">
+            <a href="/travelgatex/reference/objects/adminquery/">
+              <span style="padding-left: 8px;">AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/amenity/" class="dd-item">
@@ -282,9 +308,34 @@
               <span style="padding-left: 8px;">Geocode</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/objects/giataid/" class="dd-item">
+            <a href="/travelgatex/reference/objects/giataid/">
+              <span style="padding-left: 8px;">GiataID</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/group/" class="dd-item">
+            <a href="/travelgatex/reference/objects/group/">
+              <span style="padding-left: 8px;">Group</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/objects/groupaccess/" class="dd-item">
             <a href="/travelgatex/reference/objects/groupaccess/">
               <span style="padding-left: 8px;">GroupAccess</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/groupconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/groupconnection/">
+              <span style="padding-left: 8px;">GroupConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/groupdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/groupdata/">
+              <span style="padding-left: 8px;">GroupData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/groupedge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/groupedge/">
+              <span style="padding-left: 8px;">GroupEdge</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/holder/" class="dd-item">
@@ -357,6 +408,16 @@
               <span style="padding-left: 8px;">HotelSearch</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/objects/hotelxmutation/" class="dd-item">
+            <a href="/travelgatex/reference/objects/hotelxmutation/">
+              <span style="padding-left: 8px;">HotelXMutation</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/hotelxquery/" class="dd-item active">
+            <a href="/travelgatex/reference/objects/hotelxquery/">
+              <span style="padding-left: 8px;">HotelXQuery</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/objects/location/" class="dd-item">
             <a href="/travelgatex/reference/objects/location/">
               <span style="padding-left: 8px;">Location</span><i class="fa fa-circle-thin read-icon"></i>
@@ -407,9 +468,49 @@
               <span style="padding-left: 8px;">MediaEdge</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/objects/member/" class="dd-item">
+            <a href="/travelgatex/reference/objects/member/">
+              <span style="padding-left: 8px;">Member</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/memberconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/memberconnection/">
+              <span style="padding-left: 8px;">MemberConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/memberdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/memberdata/">
+              <span style="padding-left: 8px;">MemberData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/memberedge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/memberedge/">
+              <span style="padding-left: 8px;">MemberEdge</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/objects/occupancy/" class="dd-item">
             <a href="/travelgatex/reference/objects/occupancy/">
               <span style="padding-left: 8px;">Occupancy</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/organization/" class="dd-item">
+            <a href="/travelgatex/reference/objects/organization/">
+              <span style="padding-left: 8px;">Organization</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/organizationconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/organizationconnection/">
+              <span style="padding-left: 8px;">OrganizationConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/organizationdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/organizationdata/">
+              <span style="padding-left: 8px;">OrganizationData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/organizationedge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/organizationedge/">
+              <span style="padding-left: 8px;">OrganizationEdge</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/pageinfo/" class="dd-item">
@@ -435,6 +536,26 @@
           <li data-nav-id="/travelgatex/reference/objects/pricebreakdown/" class="dd-item">
             <a href="/travelgatex/reference/objects/pricebreakdown/">
               <span style="padding-left: 8px;">PriceBreakdown</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/product/" class="dd-item">
+            <a href="/travelgatex/reference/objects/product/">
+              <span style="padding-left: 8px;">Product</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/productconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/productconnection/">
+              <span style="padding-left: 8px;">ProductConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/productdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/productdata/">
+              <span style="padding-left: 8px;">ProductData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/productedge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/productedge/">
+              <span style="padding-left: 8px;">ProductEdge</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/promotion/" class="dd-item">
@@ -465,6 +586,46 @@
           <li data-nav-id="/travelgatex/reference/objects/resort/" class="dd-item">
             <a href="/travelgatex/reference/objects/resort/">
               <span style="padding-left: 8px;">Resort</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/resource/" class="dd-item">
+            <a href="/travelgatex/reference/objects/resource/">
+              <span style="padding-left: 8px;">Resource</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/resourceconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/resourceconnection/">
+              <span style="padding-left: 8px;">ResourceConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/resourcedata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/resourcedata/">
+              <span style="padding-left: 8px;">ResourceData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/resourceedge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/resourceedge/">
+              <span style="padding-left: 8px;">ResourceEdge</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/role/" class="dd-item">
+            <a href="/travelgatex/reference/objects/role/">
+              <span style="padding-left: 8px;">Role</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/roleconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/roleconnection/">
+              <span style="padding-left: 8px;">RoleConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/roledata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/roledata/">
+              <span style="padding-left: 8px;">RoleData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/roleedge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/roleedge/">
+              <span style="padding-left: 8px;">RoleEdge</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/room/" class="dd-item">
@@ -649,6 +810,11 @@
               <span style="padding-left: 8px;">BookableOptionSearch</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/interfaces/groupcommondata/" class="dd-item">
+            <a href="/travelgatex/reference/interfaces/groupcommondata/">
+              <span style="padding-left: 8px;">GroupCommonData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/interfaces/information/" class="dd-item">
             <a href="/travelgatex/reference/interfaces/information/">
               <span style="padding-left: 8px;">Information</span><i class="fa fa-circle-thin read-icon"></i>
@@ -735,6 +901,16 @@
               <span style="padding-left: 8px;">ConnectUserGroupInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/creategroupinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/creategroupinput/">
+              <span style="padding-left: 8px;">CreateGroupInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/creatememberinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/creatememberinput/">
+              <span style="padding-left: 8px;">CreateMemberInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/criteriabookingdatesinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/criteriabookingdatesinput/">
               <span style="padding-left: 8px;">CriteriaBookingDatesInput</span><i class="fa fa-circle-thin read-icon"></i>
@@ -753,6 +929,16 @@
           <li data-nav-id="/travelgatex/reference/inputobjects/defaultsettingsinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/defaultsettingsinput/">
               <span style="padding-left: 8px;">DefaultSettingsInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/deletegroupinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/deletegroupinput/">
+              <span style="padding-left: 8px;">DeleteGroupInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/deletememberinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/deletememberinput/">
+              <span style="padding-left: 8px;">DeleteMemberInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/deltapriceinput/" class="dd-item">
@@ -880,6 +1066,16 @@
               <span style="padding-left: 8px;">TimeoutInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/updategroupinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/updategroupinput/">
+              <span style="padding-left: 8px;">UpdateGroupInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/updatememberinput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/updatememberinput/">
+              <span style="padding-left: 8px;">UpdateMemberInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/urlsinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/urlsinput/">
               <span style="padding-left: 8px;">UrlsInput</span><i class="fa fa-circle-thin read-icon"></i>
@@ -936,9 +1132,24 @@
               <span style="padding-left: 8px;">DurationType</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/enums/grouptype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/grouptype/">
+              <span style="padding-left: 8px;">GroupType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/enums/markupruletype/" class="dd-item">
             <a href="/travelgatex/reference/enums/markupruletype/">
               <span style="padding-left: 8px;">MarkupRuleType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/membertype/" class="dd-item">
+            <a href="/travelgatex/reference/enums/membertype/">
+              <span style="padding-left: 8px;">MemberType</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/enums/method/" class="dd-item">
+            <a href="/travelgatex/reference/enums/method/">
+              <span style="padding-left: 8px;">Method</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/enums/paymenttype/" class="dd-item">
@@ -1341,73 +1552,266 @@
         </div>
         <div class="content-center">
           <div class="p-4">
-            <h1 class="pageTitle">API Reference: Platform-wide API Reference</h1>
+            <h1 class="pageTitle">HotelXQuery</h1>
             
 
 
     
 
-<p>This API reference is organized by graphql operations related to product.</p>
+<p>A Query is an entry point into the object graph.</p>
 
-<h2 id="query-operations">Query Operations</h2>
+<h2 id="graphql-schema-definition">GraphQL Schema definition</h2>
 
-<h2 id="mutation-operations">Mutation Operations</h2>
+<div class="highlight">
+    <ul class="code">
+        <li><span class="keyword operator ts">type</span> <span class="identifier">HotelXQuery</span> {</li>
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            <span class="meta">search</span>(
+                        </span>
+                    </li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">token</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">criteria</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelcriteriasearchinput">HotelCriteriaSearchInput</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">settings</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelsettingsinput">HotelSettingsInput</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">filter</span>: <a class="support type" href="/travelgatex/reference/inputobjects/filterinput">FilterInput</a>,
+        </span>
+    </span>
+</li>
 
-<h2 id="custom-scalar-types">Custom Scalar Types</h2>
+                    <li>
+                        <span class="tab">
+                            ): <a class="support type" href="/travelgatex/reference/objects/hotelsearch">HotelSearch</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            <span class="meta">quote</span>(
+<span class="meta">criteria</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelcriteriaquoteinput">HotelCriteriaQuoteInput!</a>,
+<span class="meta">settings</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelsettingsinput">HotelSettingsInput</a>,
+): <a class="support type" href="/travelgatex/reference/objects/hotelquote">HotelQuote</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            <span class="meta">booking</span>(
+<span class="meta">criteria</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelcriteriabookinginput">HotelCriteriaBookingInput!</a>,
+<span class="meta">settings</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelsettingsinput">HotelSettingsInput</a>,
+): <a class="support type" href="/travelgatex/reference/objects/hotelbooking">HotelBooking</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                <li>
+                    <span class="tab">
+                        
+<span class="meta">searchStatusService</span>: <a class="support type" href="/travelgatex/reference/objects/servicestatus">ServiceStatus!</a> 
+                    </span>
+                </li>
+            
+        
+            
+                <li>
+                    <span class="tab">
+                        
+<span class="meta">quoteStatusService</span>: <a class="support type" href="/travelgatex/reference/objects/servicestatus">ServiceStatus!</a> 
+                    </span>
+                </li>
+            
+        
+            
+                <li>
+                    <span class="tab">
+                        
+<span class="meta">bookStatusService</span>: <a class="support type" href="/travelgatex/reference/objects/servicestatus">ServiceStatus!</a> 
+                    </span>
+                </li>
+            
+        
+            
+                <li>
+                    <span class="tab">
+                        
+<span class="meta">cancelStatusService</span>: <a class="support type" href="/travelgatex/reference/objects/servicestatus">ServiceStatus!</a> 
+                    </span>
+                </li>
+            
+        
+            
+                <li>
+                    <span class="tab">
+                        
+<span class="meta">bookingStatusService</span>: <a class="support type" href="/travelgatex/reference/objects/servicestatus">ServiceStatus!</a> 
+                    </span>
+                </li>
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            <span class="meta">hotels</span>(
+                        </span>
+                    </li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">codes</span>: <a class="support type" href="/travelgatex/reference/scalars/string">[String!]</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">language</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">first</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">last</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">before</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">after</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
 
-<p>TravelgateX GraphQL schema implementation defines custom scalar types.</p>
+                    <li>
+                        <span class="tab">
+                            ): <a class="support type" href="/travelgatex/reference/objects/hotelconnection">HotelConnection!</a> 
+                        </span>
+                    </li>
+                
+            
+        
+        <li>}</li>
+    </ul>
+</div>
 
-<h4 id="json">JSON</h4>
 
-<p>Sometimes it&rsquo;s necessary to manage arbitrary JSON values for loosely structured data. The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.</p>
 
-<p>In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: <code>&quot;{\&quot;int\&quot;: 1, \&quot;string\&quot;: \&quot;value\&quot;}&quot;</code>.</p>
 
-<h4 id="datetime">DateTime</h4>
 
-<p>The DateTime type represents DateTime values. A good example might be a transaction TimeSpan.</p>
+<h2 id="fields">Fields</h2>
 
-<p>In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: <code>&quot;2017-10-22T13:57:31.123Z&quot;</code>.</p>
+<p><ul class="field">
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/hotelsearch">search(HotelSearch):</a>
+        <span class="description">Available options of an hotel for a given date and itinerary. It does not filter different classes, times or
+fares. It will always retrieve all results returned by the suppliers. The availability request is very straight
+forward. It only requires the criteria of search (destination, travel dates and the number of pax in each room).
+But you must preload the other fields in our system by complete the fields absents.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/hotelquote">quote(HotelQuote):</a>
+        <span class="description">Returns the total price and cancellation policies of the Option selected in the previous step (Search).</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/hotelbooking">booking(HotelBooking):</a>
+        <span class="description">Returns detailed information about books, you can indicated a list of locators or a range date.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/servicestatus">searchStatusService(ServiceStatus!):</a>
+        <span class="description">Returns status of the search service.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/servicestatus">quoteStatusService(ServiceStatus!):</a>
+        <span class="description">Returns status of the quote service.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/servicestatus">bookStatusService(ServiceStatus!):</a>
+        <span class="description">Returns status of the new booking service.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/servicestatus">cancelStatusService(ServiceStatus!):</a>
+        <span class="description">Returns status of the cancellation service.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/servicestatus">bookingStatusService(ServiceStatus!):</a>
+        <span class="description">TODO: me no understand...
+Returns status of the booking service.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/hotelconnection">hotels(HotelConnection!):</a>
+        <span class="description">Query to obtain Hotels</span>
+    </li>
+    
+</ul></p>
 
-<h4 id="date">Date</h4>
+<h2 id="require-by">Require by</h2>
 
-<p>The Date type represents Date values. A good example might be a Hotel CheckIn Date.</p>
-
-<p>In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: <code>&quot;2017-10-22&quot;</code>.</p>
-
-<h4 id="uri">URI</h4>
-
-<p>The URI type represents a URI values. A good example mith be an Hotel Image URL.</p>
-
-<p>In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: <code>&quot;http:\\www.travelgatex.com&quot;</code>.</p>
-
-<h4 id="country">Country</h4>
-
-<p>The Country type represents Country values. A good example might be a Passenger Nationality.</p>
-
-<p>In queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes <code>&quot;ES&quot;</code>.</p>
-
-<h4 id="language">Language</h4>
-
-<p>The Language type represents Language values. A good example might be a Hotel Description Language.</p>
-
-<p>In queries or mutations, Language fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes <code>&quot;es&quot;</code>.</p>
-
-<h4 id="currency">Currency</h4>
-
-<p>The Currenty type represents Currency values. A good example might be a Rate Price Currency.</p>
-
-<p>In queries or mutations, Currency fields have to be specified in ISO 4217 format with enclosing double quotes <code>&quot;EUR&quot;</code>.</p>
-
-<h2 id="documentation">Documentation</h2>
-
-<p><a href="/graphql-api/travelgatex-graphql-api/#documentation">Schema documentation</a></p>
-
-<h2 id="samples">Samples</h2>
-
-<ul>
-<li><a href="https://graphqlbin.com/JYRtB">Search, Quote, Book, Cancel and Retrieve bookings</a></li>
-</ul>
+<p><ul class="require-by">
+        <li class="lifields">
+            <a href="/travelgatex/reference/schema/query">
+                Query: 
+            </a>
+            <span></span>
+        </li>
+    
+</ul></p>
 
 
 <hr/>
@@ -1440,23 +1844,9 @@
 <ul>
 <li>
 <ul>
-<li><a href="#query-operations">Query Operations</a></li>
-<li><a href="#mutation-operations">Mutation Operations</a></li>
-<li><a href="#custom-scalar-types">Custom Scalar Types</a>
-<ul>
-<li>
-<ul>
-<li><a href="#json">JSON</a></li>
-<li><a href="#datetime">DateTime</a></li>
-<li><a href="#date">Date</a></li>
-<li><a href="#uri">URI</a></li>
-<li><a href="#country">Country</a></li>
-<li><a href="#language">Language</a></li>
-<li><a href="#currency">Currency</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#documentation">Documentation</a></li>
-<li><a href="#samples">Samples</a></li>
+<li><a href="#graphql-schema-definition">GraphQL Schema definition</a></li>
+<li><a href="#fields">Fields</a></li>
+<li><a href="#require-by">Require by</a></li>
 </ul></li>
 </ul>
 </nav>
