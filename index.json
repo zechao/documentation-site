@@ -354,7 +354,7 @@
 	"title": "Country",
 	"tags": [],
 	"description": "",
-	"content": " ISO 3166-1 alpha-2\nGraphQL Schema definition scalar Country   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  Location:  Location  DefaultSettings:    DefaultSettingsInput:    \n"
+	"content": " The Country type represents Country values. A good example might be a Passenger Nationality. In queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes \u0026ldquo;ES\u0026rdquo;.\nGraphQL Schema definition scalar Country   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  Location:  Location  DefaultSettings:    DefaultSettingsInput:     "
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/creategroupinput/",
@@ -396,21 +396,21 @@
 	"title": "Currency",
 	"tags": [],
 	"description": "",
-	"content": " ISO 4217\nGraphQL Schema definition scalar Currency   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  Price:  Price indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.  Priceable:    Exchange:  Informs about the currency of origin, and the rate applied over result returned by the supplier.  Markup:  Informs markup applied over supplier price.  CancelPenalty:  Contains information about a cancel penalty.  CriteriaBookingReferencesInput:  Criteria by references  DefaultSettings:    DefaultSettingsInput:    \n"
+	"content": " The Currenty type represents Currency values. A good example might be a Rate Price Currency. In queries or mutations, Currency fields have to be specified in ISO 4217 format with enclosing double quotes \u0026ldquo;EUR\u0026rdquo;.\nGraphQL Schema definition scalar Currency   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  Price:  Price indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.  Priceable:    Exchange:  Informs about the currency of origin, and the rate applied over result returned by the supplier.  Markup:  Informs markup applied over supplier price.  CancelPenalty:  Contains information about a cancel penalty.  CriteriaBookingReferencesInput:  Criteria by references  DefaultSettings:    DefaultSettingsInput:     "
 },
 {
 	"uri": "/travelgatex/reference/scalars/date/",
 	"title": "Date",
 	"tags": [],
 	"description": "",
-	"content": " In queries or mutations, Date fields have to be specified in ISO 8601 format with enclosing double quotes: datetime: \u0026ldquo;2015-11-22\u0026rdquo;.\nGraphQL Schema definition scalar Date   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  PriceBreakdown:  Information about daily price.  RatePlan:  Information about the rate of the option returned.  Promotion:  Information about room promotions(offers).  Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  CriteriaBookingDatesInput:  Criteria by dates  BookingHotel:     "
+	"content": " The Date type represents Date values. A good example might be a Hotel CheckIn Date. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: \u0026ldquo;2017-10-22\u0026rdquo;.\nGraphQL Schema definition scalar Date   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  PriceBreakdown:  Information about daily price.  RatePlan:  Information about the rate of the option returned.  Promotion:  Information about room promotions(offers).  Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  CriteriaBookingDatesInput:  Criteria by dates  BookingHotel:     "
 },
 {
 	"uri": "/travelgatex/reference/scalars/datetime/",
 	"title": "DateTime",
 	"tags": [],
 	"description": "",
-	"content": " In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: datetime: \u0026ldquo;2015-11-22T13:57:31.123Z\u0026rdquo;.\nGraphQL Schema definition scalar DateTime   Require by Stat:    AuditData:  Data sent \u0026amp; received in the supplierâ€™s native format.  Transactions:  Supplier transaction  Hotel:  Hotel type  Node:    Media:    Amenity:    Supplier:    Access:    Member:    Group:    API:    Resource:    Role:    Organization:    Product:     "
+	"content": " The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: \u0026ldquo;2017-10-22T13:57:31.123Z\u0026rdquo;.\nGraphQL Schema definition scalar DateTime   Require by Stat:    AuditData:  Data sent \u0026amp; received in the supplierâ€™s native format.  Transactions:  Supplier transaction  Hotel:  Hotel type  Node:    Media:    Amenity:    Supplier:    Access:    Member:    Group:    API:    Resource:    Role:    Organization:    Product:     "
 },
 {
 	"uri": "/travelgatex/reference/enums/datetype/",
@@ -809,14 +809,14 @@
 	"title": "JSON",
 	"tags": [],
 	"description": "",
-	"content": " json structure\nGraphQL Schema definition scalar JSON   Require by AddOns:  Extra information about the option.  \n"
+	"content": " The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string. In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: \u0026ldquo;{\u0026ldquo;int\u0026rdquo;: 1, \u0026ldquo;string\u0026rdquo;: \u0026ldquo;value\u0026rdquo;}\u0026ldquo;.\nGraphQL Schema definition scalar JSON   Require by AddOns:  Extra information about the option.   "
 },
 {
 	"uri": "/travelgatex/reference/scalars/language/",
 	"title": "Language",
 	"tags": [],
 	"description": "",
-	"content": " ISO 3166-1 alpha-2\nGraphQL Schema definition scalar Language   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  HotelCriteriaQuoteInput:  The quote criteria contains the option reference id, block and language.  HotelCriteriaBookingInput:  Criteria of book contains basic information to find a book or books.  Information:    DefaultSettings:    HotelBookInput:  Criteria of book.  HotelCancelInput:  Cancellation Criteria.  DefaultSettingsInput:    HotelInput:    \n"
+	"content": " The Language type represents Language values. A good example might be a Hotel Description Language. In queries or mutations, Language fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes \u0026ldquo;es\u0026rdquo;.\nGraphQL Schema definition scalar Language   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  HotelCriteriaQuoteInput:  The quote criteria contains the option reference id, block and language.  HotelCriteriaBookingInput:  Criteria of book contains basic information to find a book or books.  Information:    DefaultSettings:    HotelBookInput:  Criteria of book.  HotelCancelInput:  Cancellation Criteria.  DefaultSettingsInput:    HotelInput:     "
 },
 {
 	"uri": "/travelgatex/reference/objects/location/",
@@ -1509,7 +1509,7 @@
 	"title": "URI",
 	"tags": [],
 	"description": "",
-	"content": " An RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string.\nGraphQL Schema definition scalar URI   Require by UrlsInput:  Url\u0026#39;s  MediaData:    Contact:  Contact type  Urls:  Url\u0026#39;s   "
+	"content": " The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: \u0026ldquo;http:\\www.travelgatex.com\u0026rdquo;.\nGraphQL Schema definition scalar URI   Require by UrlsInput:  Url\u0026#39;s  MediaData:    Contact:  Contact type  Urls:  Url\u0026#39;s   "
 },
 {
 	"uri": "/travelgatex/reference/enums/unittimetype/",

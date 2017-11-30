@@ -517,8 +517,8 @@ Require by HotelData:  Hotel data</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/country/</guid>
-      <description>ISO 3166-1 alpha-2
-GraphQL Schema definition scalar Country   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  Location:  Location  DefaultSettings:    DefaultSettingsInput:</description>
+      <description>The Country type represents Country values. A good example might be a Passenger Nationality. In queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes &amp;ldquo;ES&amp;rdquo;.
+GraphQL Schema definition scalar Country   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.</description>
     </item>
     
     <item>
@@ -577,8 +577,8 @@ GraphQL Schema definition type CriteriaSearch {  checkIn: Date!    checkOut: Dat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/currency/</guid>
-      <description>ISO 4217
-GraphQL Schema definition scalar Currency   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  Price:  Price indicates the value of the room/option.</description>
+      <description>The Currenty type represents Currency values. A good example might be a Rate Price Currency. In queries or mutations, Currency fields have to be specified in ISO 4217 format with enclosing double quotes &amp;ldquo;EUR&amp;rdquo;.
+GraphQL Schema definition scalar Currency   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.</description>
     </item>
     
     <item>
@@ -587,8 +587,8 @@ GraphQL Schema definition scalar Currency   Require by HotelCriteriaSearchInput:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/date/</guid>
-      <description>In queries or mutations, Date fields have to be specified in ISO 8601 format with enclosing double quotes: datetime: &amp;ldquo;2015-11-22&amp;rdquo;.
-GraphQL Schema definition scalar Date   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.</description>
+      <description>The Date type represents Date values. A good example might be a Hotel CheckIn Date. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22&amp;rdquo;.
+GraphQL Schema definition scalar Date   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.</description>
     </item>
     
     <item>
@@ -597,7 +597,7 @@ GraphQL Schema definition scalar Date   Require by HotelCriteriaSearchInput:  Cr
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/datetime/</guid>
-      <description> In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: datetime: &amp;ldquo;2015-11-22T13:57:31.123Z&amp;rdquo;.
+      <description> The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
 GraphQL Schema definition scalar DateTime   Require by Stat:    AuditData:  Data sent &amp;amp; received in the supplierâ€™s native format.  Transactions:  Supplier transaction  Hotel:  Hotel type  Node:    Media:    Amenity:    Supplier:    Access:    Member:    Group:    API:    Resource:    Role:    Organization:    Product:     </description>
     </item>
     
@@ -1150,8 +1150,8 @@ GraphQL Schema definition scalar Int   Require by PaxInput:  Pax object that con
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/json/</guid>
-      <description>json structure
-GraphQL Schema definition scalar JSON   Require by AddOns:  Extra information about the option.</description>
+      <description> The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string. In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: &amp;ldquo;{&amp;ldquo;int&amp;rdquo;: 1, &amp;ldquo;string&amp;rdquo;: &amp;ldquo;value&amp;rdquo;}&amp;ldquo;.
+GraphQL Schema definition scalar JSON   Require by AddOns:  Extra information about the option.   </description>
     </item>
     
     <item>
@@ -1160,8 +1160,8 @@ GraphQL Schema definition scalar JSON   Require by AddOns:  Extra information ab
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/language/</guid>
-      <description>ISO 3166-1 alpha-2
-GraphQL Schema definition scalar Language   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.  CriteriaSearch:  Criteria of search contains destination, travel dates and the number of pax in each room.  HotelCriteriaQuoteInput:  The quote criteria contains the option reference id, block and language.</description>
+      <description>The Language type represents Language values. A good example might be a Hotel Description Language. In queries or mutations, Language fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes &amp;ldquo;es&amp;rdquo;.
+GraphQL Schema definition scalar Language   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.</description>
     </item>
     
     <item>
@@ -2135,7 +2135,7 @@ GraphQL Schema definition type Transactions {  request: String!    response: Str
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/uri/</guid>
-      <description> An RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string.
+      <description> The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &amp;ldquo;http:\www.travelgatex.com&amp;rdquo;.
 GraphQL Schema definition scalar URI   Require by UrlsInput:  Url&amp;#39;s  MediaData:    Contact:  Contact type  Urls:  Url&amp;#39;s   </description>
     </item>
     

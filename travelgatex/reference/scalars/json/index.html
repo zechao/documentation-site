@@ -1558,7 +1558,8 @@
 
     
 
-<p>json structure</p>
+<p>The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.
+In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: &ldquo;{&ldquo;int&rdquo;: 1, &ldquo;string&rdquo;: &ldquo;value&rdquo;}&ldquo;.</p>
 
 <h2 id="graphql-schema-definition">GraphQL Schema definition</h2>
 
@@ -1573,7 +1574,7 @@
 
 <h2 id="require-by">Require by</h2>
 
-<p><ul class="require-by">
+<ul class="require-by">
         <li class="lifields">
             <a href="/travelgatex/reference/objects/addons">
                 AddOns: 
@@ -1581,7 +1582,7 @@
             <span>Extra information about the option.</span>
         </li>
     
-</ul></p>
+</ul>
 
 
 <hr/>
