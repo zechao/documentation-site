@@ -971,10 +971,6 @@
   </url>
   
   <url>
-    <loc>/travelgatex/security/authenticating/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/plugins/converter/</loc>
   </url>
   
@@ -996,6 +992,10 @@
   
   <url>
     <loc>/hotelx/concepts/management-flow/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/security/overview/</loc>
   </url>
   
   <url>

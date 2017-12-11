@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Authenticating | TravelgateX Documentation</title>
+    <title>Security | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
-<title>Authenticating :: TravelgateX Documentation</title>
+<title>Overview :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
-  <body data-url="/travelgatex/security/authenticating/">
+  <body data-url="/travelgatex/security/overview/">
     <div class="mo-header fixed-top">
     <div class="top-header">
         <nav class="navbar navbar-toggleable-sm navbar-light bg-primary flex-row align-items-center">
@@ -1204,9 +1204,9 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/travelgatex/security/authenticating/" class="dd-item active">
-            <a href="/travelgatex/security/authenticating/">
-              <span style="padding-left: 8px;">Authenticating</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/travelgatex/security/overview/" class="dd-item active">
+            <a href="/travelgatex/security/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1551,33 +1551,54 @@
         </div>
         <div class="content-center">
           <div class="p-4">
-            <h1 class="pageTitle">Authenticating: Authenticating</h1>
+            <h1 class="pageTitle">Overview: Security</h1>
             
 
 
     
 
-<h2 id="introduction">Introduction</h2>
+<h1 id="introduction">Introduction</h1>
 
-<p><em>Products</em> and <em>Resources</em> are granted to <em>Partners</em> belonging to <em>Organizations</em>.</p>
+<p><em>Resources</em> are granted to <em>Partners</em> belonging to <em>Organizations</em>.</p>
 
-<p>Authorized <em>Partners</em> can manage security rules to allow or deny <em>Resources</em> and <em>Products</em>.</p>
+<p><a href="/admin/account/iam">IAM</a> lets partners administrators authorize who can take action on specific resources, giving you full control and visilibity to manage resources centrally.</p>
 
-<h2 id="authentication">Authentication</h2>
+<h1 id="authentication">Authentication</h1>
 
-<p>Authentication is the process of authorizing or making sure that the <em>Partner</em> is who is supposed to be. This can be ensured either by login credentials or by API Key.</p>
+<p>Authentication is the process of authorizing or making sure that the <em>Partner</em> is who is supposed to be.
+Every request to TravelgateX GraphQL API must carry an Access Token. This access token could be an <a href="#api-key">API Key</a> or a <a href="#json-web-token">JSON Web Token</a>.</p>
 
-<p>Every request to TravelgateX GraphQL API must carry an Authorization header with a JSON Web Token or API Key inside.</p>
+<h2 id="api-key">API Key</h2>
 
-<h4 id="json-web-tokens">JSON Web Tokens</h4>
+<p>That&rsquo;s the way to authenticate applications, normally created as <code>Service Account</code> with limited scopes.
+The correct way to send it to GraphQL server is via HTTP Header:</p>
 
-<h4 id="api-keys">API Keys</h4>
+<ul>
+<li>API key: <code>&quot;Authorization: Apikey xxxxxxxxx&quot;</code></li>
+</ul>
 
-<h4 id="creating-an-access-token">Creating an access token</h4>
+<pre><code class="language-bash">curl -X\
+   POST\
+   -H &quot;Content-Type: application/json&quot; \
+   -H &quot;Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;  \
+   --data '{&quot;query&quot;:&quot;{searchStatusService{code description}}&quot;}' \
+   --compressed \
+   https://api.travelgatex.com
+</code></pre>
+
+<h3 id="creating-an-api-key">Creating an API Key</h3>
 
 <p>For development purposes please use the following test Api Key <code>q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ</code></p>
 
-<h2 id="authorization">Authorization</h2>
+<h2 id="json-web-token">JSON Web Token</h2>
+
+<div class="alert 
+alert-warning"
+ 
+role="alert">Coming soon</div>
+
+
+<h1 id="authorization">Authorization</h1>
 
 <p>Once the <em>Partner</em> is authenticated we must authorize the partner to use the requested <em>Resource</em>.</p>
 
@@ -1585,11 +1606,10 @@
 
 <p>TravelgateX permissions are Resource Group Assigned rules, defined using GraphQL API and determined at runtime by the data graph of the application.</p>
 
-<h2 id="further-reading">Further Reading</h2>
+<h1 id="further-reading">Further Reading</h1>
 
 <ul>
 <li><a href="https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a">https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a</a></li>
-<li></li>
 </ul>
 
 
@@ -1621,21 +1641,17 @@
           <div>
             <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#authentication">Authentication</a>
 <ul>
-<li>
+<li><a href="#api-key">API Key</a>
 <ul>
-<li><a href="#json-web-tokens">JSON Web Tokens</a></li>
-<li><a href="#api-keys">API Keys</a></li>
-<li><a href="#creating-an-access-token">Creating an access token</a></li>
+<li><a href="#creating-an-api-key">Creating an API Key</a></li>
 </ul></li>
+<li><a href="#json-web-token">JSON Web Token</a></li>
 </ul></li>
 <li><a href="#authorization">Authorization</a></li>
 <li><a href="#further-reading">Further Reading</a></li>
-</ul></li>
 </ul>
 </nav>
           </div>

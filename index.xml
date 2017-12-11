@@ -2238,7 +2238,7 @@ File Requirements The file should be in the below format:
       
       <guid>/hotelx/quickstart/</guid>
       <description>This page shows you how to perform basic hotel book using GraphQL Playground.
-Before you begin  Follow the steps in Creating an access token to create your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key.  Search Hotel  Click on search tab Modify Query Variables with valid dates and send the request.  Quote Hotel  Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.</description>
+Before you begin  Follow the steps in Creating an API Key to get your API Key. Check connectivity for your API Key. Open Sample Playground and modify HTTP HEADERS field Authorization with your API Key.  Search Hotel  Click on search tab Modify Query Variables with valid dates and send the request.  Quote Hotel  Click on quote tab In Query Variables modify optionRefId with option id value returned in search response and send the request.</description>
     </item>
     
     <item>
@@ -2328,18 +2328,6 @@ GraphQL API TravelgateX is the first-in-the-industry travel API completely based
     </item>
     
     <item>
-      <title>Authenticating</title>
-      <link>/travelgatex/security/authenticating/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/security/authenticating/</guid>
-      <description>Introduction Products and Resources are granted to Partners belonging to Organizations.
-Authorized Partners can manage security rules to allow or deny Resources and Products.
-Authentication Authentication is the process of authorizing or making sure that the Partner is who is supposed to be. This can be ensured either by login credentials or by API Key.
-Every request to TravelgateX GraphQL API must carry an Authorization header with a JSON Web Token or API Key inside.</description>
-    </item>
-    
-    <item>
       <title>Converter</title>
       <link>/hotelx/plugins/converter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2358,6 +2346,17 @@ Every request to TravelgateX GraphQL API must carry an Authorization header with
 Cancel Performs a Seller booking cancellation.
 Operation { &amp;quot;mutation&amp;quot;: { &amp;quot;hotelCancel&amp;quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a Seller booking list or detail.
 Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  booking  </description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/travelgatex/security/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/security/overview/</guid>
+      <description>Introduction Resources are granted to Partners belonging to Organizations.
+IAM lets partners administrators authorize who can take action on specific resources, giving you full control and visilibity to manage resources centrally.
+Authentication Authentication is the process of authorizing or making sure that the Partner is who is supposed to be. Every request to TravelgateX GraphQL API must carry an Access Token. This access token could be an API Key or a JSON Web Token.</description>
     </item>
     
     <item>
