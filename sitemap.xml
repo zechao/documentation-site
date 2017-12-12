@@ -775,10 +775,6 @@
   </url>
   
   <url>
-    <loc>/travelgatex/data-automation/sftp/</loc>
-  </url>
-  
-  <url>
     <loc>/travelgatex/reference/schema/</loc>
   </url>
   
@@ -879,6 +875,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/data-automation/uploading-strategies/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/urls/</loc>
   </url>
   
@@ -959,6 +959,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/data-automation/hotel-mappings/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/plugins/markup/</loc>
   </url>
   
@@ -1003,6 +1007,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/data-automation/room-type-mappings/</loc>
+  </url>
+  
+  <url>
     <loc>/learning-graphql/thinking_in_graphql/</loc>
   </url>
   
@@ -1023,6 +1031,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/data-automation/pricing-rules/</loc>
+  </url>
+  
+  <url>
     <loc>/statsx/</loc>
   </url>
   
@@ -1032,6 +1044,10 @@
   
   <url>
     <loc>/travelgatex/tutorials/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/data-automation/custom-hotel-list/</loc>
   </url>
   
   <url>

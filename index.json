@@ -1351,13 +1351,6 @@
 	"content": " GraphQL Schema definition type Rule {  id: String!    name: String    type: MarkupRuleType!    value: Float!   }   Fields id(String!): rule identifier  name(String): rule name  type(MarkupRuleType!): type of the value  value(Float!): value applied by this rule  \n"
 },
 {
-	"uri": "/travelgatex/data-automation/sftp/",
-	"title": "SFTP",
-	"tags": [],
-	"description": "Secure File Transfer Protocol (SFTP)",
-	"content": " Introduction SFTP, or Secure File Transfer Protocol, is a network protocol that provides completely secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in Finance, Technology, and Consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.\nSecurity To ensure the security of your data, we adhere to the highest standards in data security. The advanced security measures we take include:\n Password-based authentication. IP Whitelisting: We whitelist the IP Addresses you will be accessing your SFTP server from to ensure you, and only you, have access. Anomaly Detection: To ensure no loss of data, we detect anomalies in your uploads to the SFTP server and warn you when an upload would significantly change your account. Encryption: Data is encrypted, keeping your information safe and private.  Setup To get your FTP Credential Details raise a customer care request in Jira Service Desk.\n"
-},
-{
 	"uri": "/travelgatex/reference/schema/",
 	"title": "Schema",
 	"tags": [],
@@ -1533,6 +1526,13 @@
 	"content": " GraphQL Schema definition type UpdateMemberInput {  code: String!    info: String    group: String!    roles: [String!]!    resource: String!    method: Method!   }   Fields code(String!):   info(String):   group(String!):   roles([String!]!):   resource(String!):   method(Method!):   \n"
 },
 {
+	"uri": "/travelgatex/data-automation/uploading-strategies/",
+	"title": "Uploading Strategies",
+	"tags": [],
+	"description": "How to Upload data",
+	"content": " Introduction There are two ways of uploading data to the platform:\n Secure File Transfer Protocol (SFTP) GraphQL mutation  Secure File Transfer Protocol (SFTP) SFTP, or Secure File Transfer Protocol, is a network protocol that provides completely secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in Finance, Technology, and Consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.\nSecurity To ensure the security of your data, we adhere to the highest standards in data security. The advanced security measures we take include:\n Password-based authentication. IP Whitelisting: We whitelist the IP Addresses you will be accessing your SFTP server from to ensure you, and only you, have access. Anomaly Detection: To ensure no loss of data, we detect anomalies in your uploads to the SFTP server and warn you when an upload would significantly change your account. Encryption: Data is encrypted, keeping your information safe and private.  Setup To get your FTP Credential Details raise a customer care request in Jira Service Desk.\nNaming Conventions It\u0026rsquo;s imperative that the file is loaded using a specific name depending on the data being uploaded. Always overwrite the last file, only the last file is loaded into the platform. But don\u0026rsquo;t worry, we keep the old files in case we need to revert to an old version. For each file name please see the specific file documentation on this section.\nGraphQL Mutation Coming soon "
+},
+{
 	"uri": "/travelgatex/reference/objects/urls/",
 	"title": "Urls",
 	"tags": [],
@@ -1607,7 +1607,7 @@
 	"title": "Release Notes",
 	"tags": [],
 	"description": "Release Notes and Changelog",
-	"content": "This page contains release notes for features and updates to the travelgaX GraphQL API.\n"
+	"content": "This page contains release notes for features and updates to the travelgateX GraphQL API.\n"
 },
 {
 	"uri": "/travelgatex/security/",
@@ -1673,6 +1673,13 @@
 	"content": " Entities AdminX Information\n    "
 },
 {
+	"uri": "/travelgatex/data-automation/hotel-mappings/",
+	"title": "Hotel Mappings",
+	"tags": [],
+	"description": "The Hotel Mappings File",
+	"content": ""
+},
+{
 	"uri": "/hotelx/plugins/markup/",
 	"title": "Markup",
 	"tags": [],
@@ -1705,14 +1712,14 @@
 	"title": "Data Automation",
 	"tags": [],
 	"description": "Automate bulk data operations",
-	"content": " SFTP Secure File Transfer Protocol (SFTP)\n    "
+	"content": "Many of TravelgateX\u0026rsquo;s products use client\u0026rsquo;s data in order to perform tasks. These data can either be uploaded to our platform via SFTP or there\u0026rsquo;s a mutation that does the same job. It\u0026rsquo;s up to you to decide how to get the data to our servers.\nThe reasoning behind uploading data has to do with the overall performance of the applications. Our APIs have been built from the ground up with performance in mind, this means that we must store data inside the application in order we can keep the response time to a minimum.\nThe data we must to store is the following:\n Hotel Mappings Room Type Mappings Pricing Rules Custom hotel lists (up to 4 different lists)  Uploading Strategies How to Upload data\n   Hotel Mappings The Hotel Mappings File\n   Room Type Mappings The Room Type Mappings File\n   Pricing Rules Pricing Rules Files\n   Custom Hotel List Custom Hotel List Files\n    "
 },
 {
 	"uri": "/hotelx/",
 	"title": "HotelX",
 	"tags": [],
 	"description": "HotelX: NextGen Hotel Search API",
-	"content": "ConnectX Hotel connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel sellers. ConnectX Hotel has been desined to be fast, reliable and offer strong performance.\n\t Overview HotelX Information\n   \t Quickstart HotelX Quickstart\n   \t Concepts Understand TravelgateX basic concepts\n   \t How-to Guides Perform specific tasks\n   \t Plugins Additional logic to your App\n   \t Reference Reference Documentation\n   \t Resources Quotas, release notes\n    "
+	"content": "ConnectX Hotel connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel sellers. ConnectX Hotel has been designed from the ground up to be fast, reliable and scales to millions of requests.\n\t Overview HotelX Information\n   \t Quickstart HotelX Quickstart\n   \t Concepts Understand TravelgateX basic concepts\n   \t How-to Guides Perform specific tasks\n   \t Plugins Additional logic to your App\n   \t Reference Reference Documentation\n   \t Resources Quotas, release notes\n    "
 },
 {
 	"uri": "/hotelx/howtos/",
@@ -1750,6 +1757,13 @@
 	"content": " Overview Processor plugins extends HotelX allowing multiple operation types.\nProcessor plugins can modify request and response message, allowing a full range of operations:\n Split arrays Join arrays Modify object values Add or remove object instances  "
 },
 {
+	"uri": "/travelgatex/data-automation/room-type-mappings/",
+	"title": "Room Type Mappings",
+	"tags": [],
+	"description": "The Room Type Mappings File",
+	"content": ""
+},
+{
 	"uri": "/learning-graphql/thinking_in_graphql/",
 	"title": "Thinking in GraphQL",
 	"tags": [],
@@ -1785,6 +1799,13 @@
 	"content": "Customize your additional features.\n\t Overview Plugins workflow execution\n   \t Mapping Map plugins\n   \t Aggregation Aggregation plugins\n   \t Markup Markup plugins\n   \t Converter Converter plugins\n   \t Processor Processor plugins\n   \t Development Develop your own plugins\n    "
 },
 {
+	"uri": "/travelgatex/data-automation/pricing-rules/",
+	"title": "Pricing Rules",
+	"tags": [],
+	"description": "Pricing Rules Files",
+	"content": ""
+},
+{
 	"uri": "/statsx/",
 	"title": "StatsX",
 	"tags": [],
@@ -1804,6 +1825,13 @@
 	"tags": [],
 	"description": "Walkthrouhgs of common applications",
 	"content": "What you can build on TravelgateX\u0026rsquo;s platform Build An OTA Build Your Own Full Fledged OTA\n   Build a Dashboard Build a Dashboard\n    "
+},
+{
+	"uri": "/travelgatex/data-automation/custom-hotel-list/",
+	"title": "Custom Hotel List",
+	"tags": [],
+	"description": "Custom Hotel List Files",
+	"content": ""
 },
 {
 	"uri": "/hotelx/plugins/development/",

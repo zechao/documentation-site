@@ -1212,7 +1212,7 @@
         </li>
         <li data-nav-id="/travelgatex/data-automation/" class="dd-item parent active">
 
-            <a href="/travelgatex/data-automation/" class="directory">
+            <a href="/travelgatex/data-automation/" class="">
        
             <span>
                     <i style="padding-right: 5px;" class="fa fa-angle-down fa-lg category-icon"></i>
@@ -1220,9 +1220,29 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/travelgatex/data-automation/sftp/" class="dd-item">
-            <a href="/travelgatex/data-automation/sftp/">
-              <span style="padding-left: 8px;">SFTP</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/travelgatex/data-automation/uploading-strategies/" class="dd-item">
+            <a href="/travelgatex/data-automation/uploading-strategies/">
+              <span style="padding-left: 8px;">Uploading Strategies</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/data-automation/hotel-mappings/" class="dd-item">
+            <a href="/travelgatex/data-automation/hotel-mappings/">
+              <span style="padding-left: 8px;">Hotel Mappings</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/data-automation/room-type-mappings/" class="dd-item">
+            <a href="/travelgatex/data-automation/room-type-mappings/">
+              <span style="padding-left: 8px;">Room Type Mappings</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/data-automation/pricing-rules/" class="dd-item">
+            <a href="/travelgatex/data-automation/pricing-rules/">
+              <span style="padding-left: 8px;">Pricing Rules</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/data-automation/custom-hotel-list/" class="dd-item">
+            <a href="/travelgatex/data-automation/custom-hotel-list/">
+              <span style="padding-left: 8px;">Custom Hotel List</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1554,14 +1574,55 @@
             <h1 class="pageTitle">Data Automation: Bulk Data Automation</h1>
             
 
-	
+	<p>Many of TravelgateX&rsquo;s products use client&rsquo;s data in order to perform tasks. These data can either be uploaded to our platform via SFTP or there&rsquo;s a <code>mutation</code> that does the same job. It&rsquo;s up to you to decide how to get the data to our servers.</p>
+
+<p>The reasoning behind uploading data has to do with the overall performance of the applications. Our APIs have been built from the ground up with performance in mind, this means that we <strong>must</strong> store data <em>inside</em> the application in order we can keep the response time to a minimum.</p>
+
+<p>The data we <strong>must</strong> to store is the following:</p>
+
+<ul>
+<li>Hotel Mappings</li>
+<li>Room Type Mappings</li>
+<li>Pricing Rules</li>
+<li>Custom hotel lists (up to 4 different lists)</li>
+</ul>
+
+
 
 <div class="flex card-lv2-div">
 		
-        <a class="card card-lv2" href="/travelgatex/data-automation/sftp/">
-            <h5 class="text-headline">SFTP</h5>
+        <a class="card card-lv2" href="/travelgatex/data-automation/uploading-strategies/">
+            <h5 class="text-headline">Uploading Strategies</h5>
             <div class="topic">
-                    <p>Secure File Transfer Protocol (SFTP)</p>
+                    <p>How to Upload data</p>
+            </div>
+            <div class="icon fa fa-arrow-right"></div>
+        </a>
+        <a class="card card-lv2" href="/travelgatex/data-automation/hotel-mappings/">
+            <h5 class="text-headline">Hotel Mappings</h5>
+            <div class="topic">
+                    <p>The Hotel Mappings File</p>
+            </div>
+            <div class="icon fa fa-arrow-right"></div>
+        </a>
+        <a class="card card-lv2" href="/travelgatex/data-automation/room-type-mappings/">
+            <h5 class="text-headline">Room Type Mappings</h5>
+            <div class="topic">
+                    <p>The Room Type Mappings File</p>
+            </div>
+            <div class="icon fa fa-arrow-right"></div>
+        </a>
+        <a class="card card-lv2" href="/travelgatex/data-automation/pricing-rules/">
+            <h5 class="text-headline">Pricing Rules</h5>
+            <div class="topic">
+                    <p>Pricing Rules Files</p>
+            </div>
+            <div class="icon fa fa-arrow-right"></div>
+        </a>
+        <a class="card card-lv2" href="/travelgatex/data-automation/custom-hotel-list/">
+            <h5 class="text-headline">Custom Hotel List</h5>
+            <div class="topic">
+                    <p>Custom Hotel List Files</p>
             </div>
             <div class="icon fa fa-arrow-right"></div>
         </a>

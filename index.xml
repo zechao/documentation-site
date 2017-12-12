@@ -1921,16 +1921,6 @@ Require by Room:  Contains the room information of the option returned.</descrip
     </item>
     
     <item>
-      <title>SFTP</title>
-      <link>/travelgatex/data-automation/sftp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/data-automation/sftp/</guid>
-      <description>Introduction SFTP, or Secure File Transfer Protocol, is a network protocol that provides completely secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in Finance, Technology, and Consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.
-Security To ensure the security of your data, we adhere to the highest standards in data security. The advanced security measures we take include:</description>
-    </item>
-    
-    <item>
       <title>Search</title>
       <link>/travelgatex/reference/objects/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2168,6 +2158,16 @@ GraphQL Schema definition  enum UnitTimeType{   DAY,    HOUR,   }   Require by S
     </item>
     
     <item>
+      <title>Uploading Strategies</title>
+      <link>/travelgatex/data-automation/uploading-strategies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/data-automation/uploading-strategies/</guid>
+      <description>Introduction There are two ways of uploading data to the platform:
+ Secure File Transfer Protocol (SFTP) GraphQL mutation  Secure File Transfer Protocol (SFTP) SFTP, or Secure File Transfer Protocol, is a network protocol that provides completely secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in Finance, Technology, and Consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.</description>
+    </item>
+    
+    <item>
       <title>Urls</title>
       <link>/travelgatex/reference/objects/urls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2256,7 +2256,7 @@ Before you begin  Follow the steps in Creating an API Key to get your API Key. C
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/resources/release-notes/</guid>
-      <description>This page contains release notes for features and updates to the travelgaX GraphQL API.</description>
+      <description>This page contains release notes for features and updates to the travelgateX GraphQL API.</description>
     </item>
     
     <item>
@@ -2307,6 +2307,15 @@ Operation { &amp;quot;query&amp;quot;: { &amp;quot;quote&amp;quot;: { &amp;quot;
       <guid>/getting-started/concepts/</guid>
       <description>TravelgateX offers a set of Products ready to be integrated using a single GraphQL endpoint.
 GraphQL API TravelgateX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we&amp;rsquo;ve integrated too many of them. The problems with that technology are well-known and we won&amp;rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned.</description>
+    </item>
+    
+    <item>
+      <title>Hotel Mappings</title>
+      <link>/travelgatex/data-automation/hotel-mappings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/data-automation/hotel-mappings/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -2371,6 +2380,15 @@ Processor plugins can modify request and response message, allowing a full range
     </item>
     
     <item>
+      <title>Room Type Mappings</title>
+      <link>/travelgatex/data-automation/room-type-mappings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/data-automation/room-type-mappings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Thinking in GraphQL</title>
       <link>/learning-graphql/thinking_in_graphql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2389,6 +2407,15 @@ Processor plugins can modify request and response message, allowing a full range
     </item>
     
     <item>
+      <title>Pricing Rules</title>
+      <link>/travelgatex/data-automation/pricing-rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/data-automation/pricing-rules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tooling</title>
       <link>/learning-graphql/tooling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2397,6 +2424,15 @@ Processor plugins can modify request and response message, allowing a full range
       <description>Tooling Please find below a collection of tools we&amp;rsquo;ve been using to help us develop in GraphQL. We have curated this list with the different goals each of the tools is for:
 Designing Schemas We follow the Schema First methodology. There are many tools, the ones we tried and like most nowadays are:
  APIs Guru&amp;rsquo;s graphql-faker: https://github.com/APIs-guru/graphql-faker  TODO: Falta chicha!! Go Packages Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources.</description>
+    </item>
+    
+    <item>
+      <title>Custom Hotel List</title>
+      <link>/travelgatex/data-automation/custom-hotel-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/data-automation/custom-hotel-list/</guid>
+      <description></description>
     </item>
     
     <item>
