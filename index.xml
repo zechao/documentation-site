@@ -71,6 +71,18 @@ Require by APIConnection:</description>
     </item>
     
     <item>
+      <title>Access, Supplier and Context</title>
+      <link>/hotelx/concepts/accesses-supplier-context/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/concepts/accesses-supplier-context/</guid>
+      <description>Supplier Product segmentation over a provider API implementation. Supplier codes are uniques ove all TravelgateX organizations.
+Access Configuration to use when interacting with a supplier, which includes:
+ URLs Credentials Markets Rate Types Specific supplier settings  Context Context is the way codes are formed. Every platform can manage its own contexts or reuse existing ones.
+That is to say, different sellers and buyers can manage same codes context. For example SmyRooms supplier uses SMY contexts.</description>
+    </item>
+    
+    <item>
       <title>AccessConfigurationInput</title>
       <link>/travelgatex/reference/inputobjects/accessconfigurationinput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -146,18 +158,6 @@ GraphQL Schema definition type AccessInput {  accessId: ID!    configuration: Co
       <guid>/travelgatex/reference/inputobjects/accesssupplierinput/</guid>
       <description>Supplier input for data access management API
 GraphQL Schema definition type AccessSupplierInput {  code: String!    dll: String!    isActive: Boolean!    groups: [SupplierGroupInput!]   }   Fields code(String!): supplier code  dll(String!): supplier instance  isActive(Boolean!): Indicates if the supplier is active.  groups([SupplierGroupInput!]): groups related to this supplier</description>
-    </item>
-    
-    <item>
-      <title>Accesses, Sellers and Context</title>
-      <link>/hotelx/concepts/accesses-supplier-context/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/concepts/accesses-supplier-context/</guid>
-      <description>Access Seller Context Context is the way codes are formed. Every platform can manage its own contexts or reuse existing ones.
-That is to say, different sellers and buyers can manage same codes context. For example SmyRooms uses SMY contexts.
-Context apply to:
- Hotel Codes Board Codes Room Codes  Thanks to our built in solution you will be able to choose the context that you want to use when requesting an HotelX operation.</description>
     </item>
     
     <item>
