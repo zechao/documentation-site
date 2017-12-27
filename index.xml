@@ -1433,15 +1433,6 @@ Product Quick Start Although there&amp;rsquo;s only one endpoint, our GraphQL AP
     
     <item>
       <title>Overview</title>
-      <link>/hotelx/concepts/overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/concepts/overview/</guid>
-      <description> Context </description>
-    </item>
-    
-    <item>
-      <title>Overview</title>
       <link>/hotelx/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2504,7 +2495,7 @@ Overview GOAL: Explicar el who, why, how de la plataforma
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/credits/</guid>
-      <description>github contributors .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 225 commits   @matcornic 49 commits   @W-Floyd 24 commits   @gwleclerc 21 commits   @lierdakil 16 commits   @Pilskalns 12 commits   @SiamKreative 6 commits   @jose-oc 6 commits   @Xipas 5 commits   @altinnadmin 4 commits   @FMuro 2 commits   @Thiht 2 commits   @EnigmaCurry 2 commits   @adamlamar 1 commits   @byzheng 1 commits   @zivbk1 1 commits   @vielmetti 1 commits   @erikjasiak 1 commits   @giuliov 1 commits   @farmergreg 1 commits   @tarpdalton 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @shazic 1 commits   @viertaxa 1 commits   @uweschaefer 1 commits   @justin-yan 1 commits   @karlmacklin 1 commits   @petzi53 1 commits   @remi31000 1 commits   @xxxtonixxx 1 commits   Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services&amp;hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester.</description>
+      <description>github contributors .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 226 commits   @matcornic 49 commits   @W-Floyd 24 commits   @gwleclerc 21 commits   @lierdakil 16 commits   @Pilskalns 12 commits   @SiamKreative 6 commits   @jose-oc 6 commits   @Xipas 5 commits   @altinnadmin 4 commits   @FMuro 2 commits   @Thiht 2 commits   @EnigmaCurry 2 commits   @adamlamar 1 commits   @aral 1 commits   @byzheng 1 commits   @zivbk1 1 commits   @vielmetti 1 commits   @erikjasiak 1 commits   @giuliov 1 commits   @farmergreg 1 commits   @tarpdalton 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @shazic 1 commits   @viertaxa 1 commits   @uweschaefer 1 commits   @justin-yan 1 commits   @karlmacklin 1 commits   @petzi53 1 commits   @remi31000 1 commits   @xxxtonixxx 1 commits   Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services&amp;hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester.</description>
     </item>
     
   </channel>
