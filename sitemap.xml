@@ -891,6 +891,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/concepts/search-mode/booking-flow/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/tutorials/stats-dashboard/</loc>
   </url>
   
@@ -943,7 +947,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/concepts/booking-flow/</loc>
+    <loc>/hotelx/concepts/search-mode/</loc>
   </url>
   
   <url>
@@ -959,10 +963,6 @@
   </url>
   
   <url>
-    <loc>/travelgatex/data-automation/hotel-mappings/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/plugins/markup/</loc>
   </url>
   
@@ -972,6 +972,10 @@
   
   <url>
     <loc>/travelgatex/reference/scalars/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/concepts/search-mode/search-single-mode/</loc>
   </url>
   
   <url>
@@ -1007,7 +1011,7 @@
   </url>
   
   <url>
-    <loc>/travelgatex/data-automation/room-type-mappings/</loc>
+    <loc>/hotelx/concepts/search-mode/search-multi-mode/</loc>
   </url>
   
   <url>
@@ -1031,10 +1035,6 @@
   </url>
   
   <url>
-    <loc>/travelgatex/data-automation/pricing-rules/</loc>
-  </url>
-  
-  <url>
     <loc>/statsx/</loc>
   </url>
   
@@ -1044,10 +1044,6 @@
   
   <url>
     <loc>/travelgatex/tutorials/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/data-automation/custom-hotel-list/</loc>
   </url>
   
   <url>

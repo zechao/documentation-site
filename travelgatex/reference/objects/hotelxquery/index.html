@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.31.1" />
 <title>HotelXQuery :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1208,26 +1208,6 @@
               <span style="padding-left: 8px;">Uploading Strategies</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/data-automation/hotel-mappings/" class="dd-item">
-            <a href="/travelgatex/data-automation/hotel-mappings/">
-              <span style="padding-left: 8px;">Hotel Mappings</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/data-automation/room-type-mappings/" class="dd-item">
-            <a href="/travelgatex/data-automation/room-type-mappings/">
-              <span style="padding-left: 8px;">Room Type Mappings</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/data-automation/pricing-rules/" class="dd-item">
-            <a href="/travelgatex/data-automation/pricing-rules/">
-              <span style="padding-left: 8px;">Pricing Rules</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/data-automation/custom-hotel-list/" class="dd-item">
-            <a href="/travelgatex/data-automation/custom-hotel-list/">
-              <span style="padding-left: 8px;">Custom Hotel List</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/tutorials/" class="dd-item">
@@ -1302,10 +1282,31 @@
               <span style="padding-left: 8px;">Access, Supplier and Context</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/concepts/booking-flow/" class="dd-item">
-            <a href="/hotelx/concepts/booking-flow/">
+        <li data-nav-id="/hotelx/concepts/search-mode/" class="dd-item">
+
+            <a href="/hotelx/concepts/search-mode/" class="directory">
+       
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+                Booking Flow
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/concepts/search-mode/booking-flow/" class="dd-item">
+            <a href="/hotelx/concepts/search-mode/booking-flow/">
               <span style="padding-left: 8px;">Booking Flow</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
+        </li>
+          <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
+            <a href="/hotelx/concepts/search-mode/search-single-mode/">
+              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
+            <a href="/hotelx/concepts/search-mode/search-multi-mode/">
+              <span style="padding-left: 8px;">Search Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
         </li>
           <li data-nav-id="/hotelx/concepts/management-flow/" class="dd-item">
             <a href="/hotelx/concepts/management-flow/">
@@ -1577,13 +1578,69 @@
 
     
 
-<p>A Query is an entry point into the object graph.</p>
-
 <h2 id="graphql-schema-definition">GraphQL Schema definition</h2>
 
 <div class="highlight">
     <ul class="code">
         <li><span class="keyword operator ts">type</span> <span class="identifier">HotelXQuery</span> {</li>
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            <span class="meta">hotels</span>(
+                        </span>
+                    </li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">codes</span>: <a class="support type" href="/travelgatex/reference/scalars/string">[String!]</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">language</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">first</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">last</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">before</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">after</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+
+                    <li>
+                        <span class="tab">
+                            ): <a class="support type" href="/travelgatex/reference/objects/hotelconnection">HotelConnection!</a> 
+                        </span>
+                    </li>
+                
+            
         
             
                 
@@ -1700,64 +1757,6 @@
                 </li>
             
         
-            
-                
-                    <li>
-                        <span class="tab">
-                            <span class="meta">hotels</span>(
-                        </span>
-                    </li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">codes</span>: <a class="support type" href="/travelgatex/reference/scalars/string">[String!]</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">language</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">first</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">last</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">before</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">after</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
-        </span>
-    </span>
-</li>
-
-                    <li>
-                        <span class="tab">
-                            ): <a class="support type" href="/travelgatex/reference/objects/hotelconnection">HotelConnection!</a> 
-                        </span>
-                    </li>
-                
-            
-        
         <li>}</li>
     </ul>
 </div>
@@ -1769,6 +1768,11 @@
 <h2 id="fields">Fields</h2>
 
 <p><ul class="field">
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/hotelconnection">hotels(HotelConnection!):</a>
+        <span class="description">Query to obtain Hotels</span>
+    </li>
+    
     <li class="lifields">
         <a href="/travelgatex/reference/objects/hotelsearch">search(HotelSearch):</a>
         <span class="description">Available options of an hotel for a given date and itinerary. It does not filter different classes, times or
@@ -1811,11 +1815,6 @@ But you must preload the other fields in our system by complete the fields absen
         <a href="/travelgatex/reference/objects/servicestatus">bookingStatusService(ServiceStatus!):</a>
         <span class="description">TODO: me no understand...
 Returns status of the booking service.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/hotelconnection">hotels(HotelConnection!):</a>
-        <span class="description">Query to obtain Hotels</span>
     </li>
     
 </ul></p>

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.31.1" />
 <title>Scalars :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1208,26 +1208,6 @@
               <span style="padding-left: 8px;">Uploading Strategies</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/data-automation/hotel-mappings/" class="dd-item">
-            <a href="/travelgatex/data-automation/hotel-mappings/">
-              <span style="padding-left: 8px;">Hotel Mappings</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/data-automation/room-type-mappings/" class="dd-item">
-            <a href="/travelgatex/data-automation/room-type-mappings/">
-              <span style="padding-left: 8px;">Room Type Mappings</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/data-automation/pricing-rules/" class="dd-item">
-            <a href="/travelgatex/data-automation/pricing-rules/">
-              <span style="padding-left: 8px;">Pricing Rules</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/data-automation/custom-hotel-list/" class="dd-item">
-            <a href="/travelgatex/data-automation/custom-hotel-list/">
-              <span style="padding-left: 8px;">Custom Hotel List</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/tutorials/" class="dd-item">
@@ -1302,10 +1282,31 @@
               <span style="padding-left: 8px;">Access, Supplier and Context</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/concepts/booking-flow/" class="dd-item">
-            <a href="/hotelx/concepts/booking-flow/">
+        <li data-nav-id="/hotelx/concepts/search-mode/" class="dd-item">
+
+            <a href="/hotelx/concepts/search-mode/" class="directory">
+       
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+                Booking Flow
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/concepts/search-mode/booking-flow/" class="dd-item">
+            <a href="/hotelx/concepts/search-mode/booking-flow/">
               <span style="padding-left: 8px;">Booking Flow</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
+        </li>
+          <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
+            <a href="/hotelx/concepts/search-mode/search-single-mode/">
+              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
+            <a href="/hotelx/concepts/search-mode/search-multi-mode/">
+              <span style="padding-left: 8px;">Search Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
         </li>
           <li data-nav-id="/hotelx/concepts/management-flow/" class="dd-item">
             <a href="/hotelx/concepts/management-flow/">
@@ -1595,7 +1596,7 @@
     </header>
     <section class="post-excerpt">
         <p>The Boolean scalar type represents true or false.
-GraphQL Schema definition scalar Boolean   Require by HotelSettingsInput:  Settings that you can edit for this avail. Values are loaded by default in our Back Office.  SettingsBaseInput:  Contains the time out and business rules of a supplier or an access.  Room:  Contains the room information of the option returned.  Price:  Price indicates the value of the room/option. <a class="read-more" href="/travelgatex/reference/scalars/boolean/">&raquo;</a></p>
+GraphQL Schema definition scalar Boolean   Require by HotelData:  Hotel data  PageInfo:    Destination:  Destination type  HotelSettingsInput:  Settings that you can edit for this avail. Values are loaded by default in our Back Office.  SettingsBaseInput:  Contains the time out and business rules of a supplier or an access.  Room:  Contains the room information of the option returned. <a class="read-more" href="/travelgatex/reference/scalars/boolean/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1613,7 +1614,7 @@ GraphQL Schema definition scalar Boolean   Require by HotelSettingsInput:  Setti
     </header>
     <section class="post-excerpt">
         <p>The Country type represents Country values. A good example might be a Passenger Nationality. In queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes &ldquo;ES&rdquo;.
-GraphQL Schema definition scalar Country   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents. <a class="read-more" href="/travelgatex/reference/scalars/country/">&raquo;</a></p>
+GraphQL Schema definition scalar Country   Require by Location:  Location  HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents. <a class="read-more" href="/travelgatex/reference/scalars/country/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1666,8 +1667,8 @@ GraphQL Schema definition scalar Date   Require by HotelCriteriaSearchInput:  Cr
         <h2 class="post-title"><a href="/travelgatex/reference/scalars/datetime/">DateTime</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &ldquo;2017-10-22T13:57:31.123Z&rdquo;.
-GraphQL Schema definition scalar DateTime   Require by Stat:    AuditData:  Data sent &amp; received in the supplierâ€™s native format.  Transactions:  Supplier transaction  Hotel:  Hotel type  Node:    Media:    Amenity:    Supplier:    Access:    Member:    Group:    API:    Resource:    Role:    Organization:    Product:      <a class="read-more" href="/travelgatex/reference/scalars/datetime/">&raquo;</a></p>
+        <p>The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &ldquo;2017-10-22T13:57:31.123Z&rdquo;.
+GraphQL Schema definition scalar DateTime   Require by Hotel:  Hotel type  Node:    Media:    Amenity:    Stat:    AuditData:  Data sent &amp; received in the supplierâ€™s native format. <a class="read-more" href="/travelgatex/reference/scalars/datetime/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1703,7 +1704,7 @@ GraphQL Schema definition scalar Float   Require by Stat:    AuditData:  Data se
     </header>
     <section class="post-excerpt">
         <p>The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &quot;4&quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL Schema definition scalar ID   Require by AccessInput:  AccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. <a class="read-more" href="/travelgatex/reference/scalars/id/">&raquo;</a></p>
+GraphQL Schema definition scalar ID   Require by Hotel:  Hotel type  Node:    HotelData:  Hotel data  Media:    Amenity:    AmenityData:    AccessInput:  AccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. <a class="read-more" href="/travelgatex/reference/scalars/id/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1757,7 +1758,7 @@ GraphQL Schema definition scalar JSON   Require by AddOns:  Extra information ab
     </header>
     <section class="post-excerpt">
         <p>The Language type represents Language values. A good example might be a Hotel Description Language. In queries or mutations, Language fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes &ldquo;es&rdquo;.
-GraphQL Schema definition scalar Language   Require by HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents. <a class="read-more" href="/travelgatex/reference/scalars/language/">&raquo;</a></p>
+GraphQL Schema definition scalar Language   Require by Information:    HotelCriteriaSearchInput:  Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents. <a class="read-more" href="/travelgatex/reference/scalars/language/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

@@ -884,3 +884,199 @@ table {
   max-height: 50%;
   overflow-y: scroll;
 }
+
+/* =======================================================
+*
+*   Animated svg
+*
+* ======================================================= */
+
+.booking_flow{
+  display: block;
+  margin: 35px auto 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .booking_flow {
+    width:70%;
+  }
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+} 
+
+.booking_flow.fade-in{
+-webkit-animation-delay: 0s;
+-moz-animation-delay: 0s;
+animation-delay: 0s;
+}
+/**/ 
+
+#line-1, #line-2, #line-3, #line-4, #line-5, #line-6{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+  animation-name: dash;
+  animation-duration: 3s;
+  animation-delay: -1s;
+  animation-fill-mode: forwards;
+}
+#line-2{
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+#line-3{
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+#line-4{
+  animation-duration: 2s;
+  animation-delay: 3s;
+}
+
+#line-5{
+  animation-duration:3s;
+  animation-delay: 4s;
+}
+
+#line-6{
+  animation-duration: 3s;
+  animation-delay: 6s;
+}
+
+#line-1-1, #line-2-1, #line-3-1, #line-4-1, #line-5-1, #line-6-1,
+#line-1-2, #line-2-2, #line-3-2, #line-4-2, #line-5-2, #line-6-2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+}
+
+#line-1-1 {
+  animation: dash 1s linear 8s 2 alternate;
+}
+#line-2-1{
+  animation: dash 1s linear 9s 2 alternate;
+}
+#line-3-1{
+  animation: dash 1s linear 10s 2 alternate;
+}
+#line-4-1{
+  animation: dash 1s linear 11s 2 alternate;
+}
+#line-5-1{
+  animation: dash 1s linear 12s 2 alternate;
+}
+#line-6-1{
+  animation: dash 1s linear 13s 2 alternate;
+}
+
+#line-1-2{
+  animation: dash 2s linear 15s infinite alternate;
+}
+#line-2-2{
+  animation: dash 2s linear 15s infinite alternate;
+}
+#line-3-2{
+  animation: dash 2s linear 15s infinite alternate;
+}
+#line-4-2{
+  animation: dash 2s linear 15s infinite alternate;
+}
+#line-5-2{
+  animation: dash 2s linear 15s infinite alternate;
+}
+#line-6-2{
+  animation: dash 2s linear 15s infinite alternate;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.search_single_mode, .search_multi_mode {
+  max-width: 95%;
+  max-height: 95%;
+  display: block;
+  margin: 50px auto;
+}
+.search_single_mode .circle-one, .search_multi_mode .circle-one {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray:670; 
+  stroke-dashoffset:-670;
+  animation: draw-a 5s forwards;
+}
+
+.search_single_mode .circle-two, .search_multi_mode .circle-two {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-b 5s forwards;
+}
+.search_single_mode .circle-three, .search_multi_mode .circle-three {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-b 4s 2s forwards;
+}
+
+.search_multi_mode .circle-three.supplier-2 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 2s forwards;
+}
+
+.search_multi_mode .circle-three.supplier-n {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-b 4s 2s forwards;
+}
+
+.search_multi_mode #Line{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 2s forwards;
+}
+
+
+@keyframes draw-a {
+  from {
+    stroke-dashoffset: 670;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-b {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

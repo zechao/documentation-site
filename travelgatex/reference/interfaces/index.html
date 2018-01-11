@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.31.1" />
 <title>Interfaces :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1208,26 +1208,6 @@
               <span style="padding-left: 8px;">Uploading Strategies</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/data-automation/hotel-mappings/" class="dd-item">
-            <a href="/travelgatex/data-automation/hotel-mappings/">
-              <span style="padding-left: 8px;">Hotel Mappings</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/data-automation/room-type-mappings/" class="dd-item">
-            <a href="/travelgatex/data-automation/room-type-mappings/">
-              <span style="padding-left: 8px;">Room Type Mappings</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/data-automation/pricing-rules/" class="dd-item">
-            <a href="/travelgatex/data-automation/pricing-rules/">
-              <span style="padding-left: 8px;">Pricing Rules</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/data-automation/custom-hotel-list/" class="dd-item">
-            <a href="/travelgatex/data-automation/custom-hotel-list/">
-              <span style="padding-left: 8px;">Custom Hotel List</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/tutorials/" class="dd-item">
@@ -1302,10 +1282,31 @@
               <span style="padding-left: 8px;">Access, Supplier and Context</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/concepts/booking-flow/" class="dd-item">
-            <a href="/hotelx/concepts/booking-flow/">
+        <li data-nav-id="/hotelx/concepts/search-mode/" class="dd-item">
+
+            <a href="/hotelx/concepts/search-mode/" class="directory">
+       
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+                Booking Flow
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/concepts/search-mode/booking-flow/" class="dd-item">
+            <a href="/hotelx/concepts/search-mode/booking-flow/">
               <span style="padding-left: 8px;">Booking Flow</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
+        </li>
+          <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
+            <a href="/hotelx/concepts/search-mode/search-single-mode/">
+              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
+            <a href="/hotelx/concepts/search-mode/search-multi-mode/">
+              <span style="padding-left: 8px;">Search Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
         </li>
           <li data-nav-id="/hotelx/concepts/management-flow/" class="dd-item">
             <a href="/hotelx/concepts/management-flow/">
@@ -1592,7 +1593,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/interfaces/advisemessage/">AdviseMessage</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition interface AdviseMessage {  code: String!    type: String!    description: String!   }   Fields code(String!): TODO: Error code: The following codes can be returned: XXX: XXXXXXXXX XXXXXX  type(String!): TODO: Error type: The following types are valid:  description(String!): Error description <a class="read-more" href="/travelgatex/reference/interfaces/advisemessage/">&raquo;</a></p>
+        <p>GraphQL Schema definition interface AdviseMessage {  code: String!    type: String!    description: String!   }   Fields code(String!): TODO: Error code: The following codes can be returned: XXX: XXXXXXXXX XXXXXX  type(String!): TODO: Error type: The following types are valid: XXX: asd asdÃ±oajskd lÃ±a ld  description(String!): Error description <a class="read-more" href="/travelgatex/reference/interfaces/advisemessage/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1626,7 +1627,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/interfaces/groupcommondata/">GroupCommonData</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition interface GroupCommonData {  id: ID!    code: ID!    members(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection    apis(    codes: [String!],     first: Int,     last: Int,     before: String,     after: String,     ): APIConnection   }   Fields id(ID! <a class="read-more" href="/travelgatex/reference/interfaces/groupcommondata/">&raquo;</a></p>
+        <p>GraphQL Schema definition interface GroupCommonData {  id: ID!    code: ID!    type: GroupType!    info: String    owner: Member    isEditable: Boolean!    members(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection    apis(    codes: [ID! <a class="read-more" href="/travelgatex/reference/interfaces/groupcommondata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1661,7 +1662,7 @@ Require by HotelData:  Hotel data  AmenityData: <a class="read-more" href="/trav
         <h2 class="post-title"><a href="/travelgatex/reference/interfaces/node/">Node</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition interface Node {  code: ID!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!): ID code  error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date   updatedAt(DateTime!): Update date <a class="read-more" href="/travelgatex/reference/interfaces/node/">&raquo;</a></p>
+        <p>GraphQL Schema definition interface Node {  code: ID!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!): ID code  error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date  updatedAt(DateTime!): Update date <a class="read-more" href="/travelgatex/reference/interfaces/node/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
