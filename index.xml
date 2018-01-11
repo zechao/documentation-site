@@ -2332,7 +2332,7 @@ GraphQL API TravelgateX is the first-in-the-industry travel API completely based
       <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.
 Performs an hotel availability search over 1 or more Seller accesses
 Depending Seller, search operations implitiy use supplier&amp;rsquo;s cache.
-Search Single Mode                  SUPPLIER                               CUSTOMER            HOTELX</description>
+Search Single Mode</description>
     </item>
     
     <item>
@@ -2387,7 +2387,7 @@ Processor plugins can modify request and response message, allowing a full range
       <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.
 Performs an hotel availability search over 1 or more Seller accesses
 Depending Seller, search operations implitiy use supplier&amp;rsquo;s cache.
-Search Multi Mode                    SUPPLIER 1  SUPPLIER 2  SUPPLIER N  HOTELX  CUSTOMER                                                  --                 SUPPLIER 1  SUPPLIER 2  SUPPLIER N  HOTELX  CUSTOMER</description>
+Search Multi Mode</description>
     </item>
     
     <item>

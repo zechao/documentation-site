@@ -1705,7 +1705,7 @@
 	"title": "Search Single Mode",
 	"tags": [],
 	"description": "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation",
-	"content": " Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.\nPerforms an hotel availability search over 1 or more Seller accesses\nDepending Seller, search operations implitiy use supplier\u0026rsquo;s cache.\nSearch Single Mode                  SUPPLIER                               CUSTOMER            HOTELX         \n"
+	"content": " Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.\nPerforms an hotel availability search over 1 or more Seller accesses\nDepending Seller, search operations implitiy use supplier\u0026rsquo;s cache.\nSearch Single Mode                                                                  \n"
 },
 {
 	"uri": "/hotelx/plugins/converter/",
@@ -1768,7 +1768,7 @@
 	"title": "Search Multi Mode",
 	"tags": [],
 	"description": "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation",
-	"content": " Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.\nPerforms an hotel availability search over 1 or more Seller accesses\nDepending Seller, search operations implitiy use supplier\u0026rsquo;s cache.\nSearch Multi Mode                    SUPPLIER 1  SUPPLIER 2  SUPPLIER N  HOTELX  CUSTOMER                                                  --                 SUPPLIER 1  SUPPLIER 2  SUPPLIER N  HOTELX  CUSTOMER                                                  \n"
+	"content": " Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.\nPerforms an hotel availability search over 1 or more Seller accesses\nDepending Seller, search operations implitiy use supplier\u0026rsquo;s cache.\nSearch Multi Mode                                                                         \n"
 },
 {
 	"uri": "/learning-graphql/thinking_in_graphql/",
