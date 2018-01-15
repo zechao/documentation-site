@@ -2329,9 +2329,7 @@ GraphQL API TravelgateX is the first-in-the-industry travel API completely based
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/concepts/search-mode/search-single-mode/</guid>
-      <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.
-Performs an hotel availability search over 1 or more Seller accesses
-Depending Seller, search operations implitiy use supplier&amp;rsquo;s cache.
+      <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller. Performs an hotel availability search over 1 or more Seller accesses
 Search Single Mode</description>
     </item>
     
@@ -2384,9 +2382,7 @@ Processor plugins can modify request and response message, allowing a full range
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/concepts/search-mode/search-multi-mode/</guid>
-      <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.
-Performs an hotel availability search over 1 or more Seller accesses
-Depending Seller, search operations implitiy use supplier&amp;rsquo;s cache.
+      <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller. Performs an hotel availability search over 1 or more Seller accesses
 Search Multi Mode</description>
     </item>
     
@@ -2479,7 +2475,7 @@ Overview GOAL: Explicar el who, why, how de la plataforma
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/credits/</guid>
-      <description>github contributors .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 226 commits   @matcornic 49 commits   @W-Floyd 24 commits   @gwleclerc 21 commits   @lierdakil 16 commits   @Pilskalns 12 commits   @SiamKreative 6 commits   @jose-oc 6 commits   @Xipas 5 commits   @altinnadmin 4 commits   @FMuro 2 commits   @Thiht 2 commits   @EnigmaCurry 2 commits   @adamlamar 1 commits   @aral 1 commits   @byzheng 1 commits   @zivbk1 1 commits   @vielmetti 1 commits   @erikjasiak 1 commits   @giuliov 1 commits   @farmergreg 1 commits   @tarpdalton 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @shazic 1 commits   @viertaxa 1 commits   @uweschaefer 1 commits   @justin-yan 1 commits   @karlmacklin 1 commits   @petzi53 1 commits   @remi31000 1 commits   @xxxtonixxx 1 commits   Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services&amp;hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester.</description>
+      <description>github contributors .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 232 commits   @matcornic 49 commits   @W-Floyd 24 commits   @gwleclerc 21 commits   @lierdakil 16 commits   @Pilskalns 12 commits   @jose-oc 7 commits   @SiamKreative 6 commits   @Xipas 5 commits   @altinnadmin 4 commits   @FMuro 2 commits   @Thiht 2 commits   @EnigmaCurry 2 commits   @aral 2 commits   @adamlamar 1 commits   @byzheng 1 commits   @zivbk1 1 commits   @damoon 1 commits   @vielmetti 1 commits   @erikjasiak 1 commits   @giuliov 1 commits   @farmergreg 1 commits   @tarpdalton 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @shazic 1 commits   @viertaxa 1 commits   @uweschaefer 1 commits   @eyoder 1 commits   @justin-yan 1 commits   @karlmacklin 1 commits   @petzi53 1 commits   @remi31000 1 commits   @xxxtonixxx 1 commits   Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services&amp;hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester.</description>
     </item>
     
   </channel>
