@@ -1424,10 +1424,7 @@ Require by OrganizationConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/overview/</guid>
-      <description>Become a TravelgateX Partner The first step towards building your next travel API is to become a TravelgateX registered partner.
-At this moment, please contact us in order to become a partner.
-We will be publishing a registration website so each developer can register for an account with us. Please bear with us.
-Product Quick Start Although there&amp;rsquo;s only one endpoint, our GraphQL API models all the products and services we offer.</description>
+      <description>Product Quick Start Although there&amp;rsquo;s only one endpoint, our GraphQL API models all the products and services we offer.</description>
     </item>
     
     <item>
