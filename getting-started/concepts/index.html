@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Understand Common Concepts | TravelgateX Documentation</title>
+    <title>the common concepts | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.31.1" />
-<title>Concepts :: TravelgateX Documentation</title>
+<meta name="generator" content="Hugo 0.30.2" />
+<title>Understanding :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -63,14 +63,14 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item active">
-            <a href="/getting-started/concepts/">
-              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
-              <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Playground:</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item active">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Understanding</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1229,18 +1229,19 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/travelgatex/resources/" class="dd-item">
+        <li data-nav-id="/travelgatex/resources/" class="dd-item alwaysopen">
 
             <a href="/travelgatex/resources/" class="directory">
        
-            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+            <span>
+                    <i class="fa fa-angle-down fa-lg category-icon"></i>
                 Resources
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
           <li data-nav-id="/travelgatex/resources/release-notes/" class="dd-item">
             <a href="/travelgatex/resources/release-notes/">
-              <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">New Realeases &amp; Updates</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1570,7 +1571,7 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Concepts: Understand Common Concepts</h1>
+              <h1 class="pageTitle">Understanding: the common concepts</h1>
               
 
 
@@ -1580,52 +1581,45 @@
 
 <h2 id="graphql-api">GraphQL API</h2>
 
-<p>TravelgateX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we&rsquo;ve integrated too many of them. The problems with that technology are well-known and we won&rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned.</p>
+<p>&ldquo;TravelgateX is the first company in the industry travel with an API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs and we faced a lot of problems with that kind technology. The benefit of using GraphQL, is that each client is ultimately responsible over what it wants to be returned.</p>
 
-<p>It is a stable, secure and fault tolerant load balanced between many datacenters from 4 different cloud providers, namely <a href="https://azure.microsoft.com/">Microsoft Azure</a>, <a href="https://cloud.google.com/">Google Cloud Platform</a>, <a href="https://www.hetzner.de/">Hetzner</a> and <a href="http://totaluptime.com/">TotalUptime</a>.
-For the full reasoning behind working with GraphQL please click <a href="/learning-graphql/overview/#graphql-at-travelgatex">here</a>.</p>
-
-<p>For explanation about using TravelgateX GraphQL API please click <a href="/getting-started/api/">here</a>.</p>
+<p>It is a stable, secure and fault tolerant load balanced between many datacenters from four different cloud providers: <a href="https://azure.microsoft.com/">Microsoft Azure</a>, <a href="https://cloud.google.com/">Google Cloud Platform</a>, <a href="https://www.hetzner.de/">Hetzner</a> and <a href="http://totaluptime.com/">TotalUptime</a>. If you&rsquo;re looking for more detailed <a href="/learning-graphql/overview/#graphql-at-travelgatex">analysis on GraphQL</a> please have a look at our guide on <a href="/getting-started/api/">how to use TravelgateX GraphQL API</a>.&rdquo;</p>
 
 <h2 id="partner">Partner</h2>
 
-<p>A <code>Partner</code> is someone or <code>something</code> that can interact with any TravelgateX APIs or apps. It can be either a <code>User</code>, which identifies a person, or <code>Service Account</code> which is identified by an API Key.</p>
+<p>A <code>Partner</code> can be either a <code>User</code> identifying a person or a <code>Service Account</code> identified by an API Key. Both of them interact with any TravelgateX APIs or apps.</p>
 
 <h2 id="organization">Organization</h2>
 
-<p>Each <a href="#Partner"><code>Partner</code></a> belongs to one or more <code>Organizations</code>.</p>
-
-<p>An <code>Organization</code> is made up of <code>Partners</code>, <code>Resources</code>, <code>Settings</code>, <code>Permissions</code> and other <code>Metadata</code>.</p>
+<p>An <code>Organization</code> is made up of <a href="#Partner"><code>Partners</code></a> (they can belong to one or more organizations), <code>Resources</code>, <code>Settings</code>, <code>Permissions</code> and other <code>Metadata</code>.</p>
 
 <h2 id="product">Product</h2>
 
-<p>We organize our APIs by similarity and common features. A <code>Product</code> is an API domain which is available for the consumption of <code>Resources</code>.</p>
-
-<p>For detailed <code>Product</code> information please click <a href="/products">here</a>.</p>
+<p>A <code>Product</code> is an API domain which is available for the consumption of <code>Resources</code>. We organize our APIs by similarity and common features. If you wish to read more about its features visit the <a href="/products">Product guide</a>.</p>
 
 <h2 id="entities">Entities</h2>
 
 <p><code>Entities</code> or core resources are entities that define common objects in all our API domains.</p>
 
-<h3 id="buyer">Buyer</h3>
+<h2 id="buyer">Buyer</h2>
 
 <p>A <code>Buyer</code> is a <code>Partner</code> who is connected to TravelgateX in the demand side in order to <strong>buy</strong> travel products from <code>Sellers</code>.</p>
 
-<h3 id="seller">Seller</h3>
+<h2 id="provider">Provider</h2>
 
-<p>A <code>Seller</code> is a <code>Partner</code> who is connected to TravelgateX on the supply side in order to <strong>sell</strong> their product to connected <code>Buyers</code>Ma.</p>
+<p>A <code>Provider</code> is a <code>Partner</code> who is connected to TravelgateX on the supply side in order to <strong>sell their product</strong> to connected <code>Buyers</code>Ma.</p>
 
-<h3 id="tech-platform">Tech Platform</h3>
+<h2 id="tech-platform">Tech Platform</h2>
 
-<p>Many <code>Partners</code>, <code>Buyers</code> <em>or</em> <code>Sellers</code> use a third party platform in order to <strong>buy</strong> <em>or</em> <strong>sell</strong> travel products. These are usually tech companies specialized in developing custom software to other companies.</p>
+<p>Many <code>Partners</code>, <code>Buyers</code> or <code>Providers</code> use a third party platform in order to <strong>buy or sell travel products</strong>. These are usually tech companies specialized in developing custom software for other companies.</p>
 
-<h3 id="context">Context</h3>
+<h2 id="context">Context</h2>
 
-<p>A <code>Context</code> refers to the <code>Seller</code> codes the request is using. It&rsquo;s a way of specifiying which <code>Seller</code> codes is being used so it can be transformed and standardized.</p>
+<p>A <code>Context</code> refers to the <code>Provider</code> codes the request is using. It&rsquo;s a way of specifiying which <code>Provider</code> codes is being used so it can be transformed and standardized.</p>
 
-<h3 id="access">Access</h3>
+<h2 id="access">Access</h2>
 
-<p>An <code>Access</code> is a set of credentials <strong>and</strong> configuration in order to access a <code>Seller</code>.</p>
+<p>An <code>Access</code> is a <strong>set of credentials and configuration</strong> in order to access a <code>Provider</code>.</p>
 
 
 <hr/>
@@ -1662,14 +1656,12 @@ For the full reasoning behind working with GraphQL please click <a href="/learni
 <li><a href="#partner">Partner</a></li>
 <li><a href="#organization">Organization</a></li>
 <li><a href="#product">Product</a></li>
-<li><a href="#entities">Entities</a>
-<ul>
+<li><a href="#entities">Entities</a></li>
 <li><a href="#buyer">Buyer</a></li>
-<li><a href="#seller">Seller</a></li>
+<li><a href="#provider">Provider</a></li>
 <li><a href="#tech-platform">Tech Platform</a></li>
 <li><a href="#context">Context</a></li>
 <li><a href="#access">Access</a></li>
-</ul></li>
 </ul></li>
 </ul>
 </nav>

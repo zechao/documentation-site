@@ -1424,7 +1424,7 @@ Require by OrganizationConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/overview/</guid>
-      <description>Product Quick Start Although there&amp;rsquo;s only one endpoint, our GraphQL API models all the products and services we offer.</description>
+      <description>Product Quick Start With GraphQL API you&amp;rsquo;ll have access to all of our products and services through a single endpoint.</description>
     </item>
     
     <item>
@@ -1484,7 +1484,8 @@ Flows HotelX query or mutation determine what flow is executed. Plugins can be e
       
       <guid>/travelgatex/overview/</guid>
       <description>This page provides an overview of travelgateX platform. It&amp;rsquo;s used as reference
-GraphQL Gateway ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we&amp;rsquo;ve integrated too many of them. The problems with that technology are well-known and we won&amp;rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned.</description>
+GraphQL Gateway ConnectX is the travel API completely based in GraphQL in the industry. Most travel APIs are old legacy XML Soap APIs. The main benefit of using GraphQL, is that each client is ultimately responsible over what it wants to be returned. If you wish to read more about it, visit GraphQL guide.
+The architecture doesn&amp;rsquo;t differ from many modern APIs.</description>
     </item>
     
     <item>
@@ -2238,6 +2239,15 @@ File Requirements The file should be in the below format:
     </item>
     
     <item>
+      <title>New Realeases &amp; Updates</title>
+      <link>/travelgatex/resources/release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/resources/release-notes/</guid>
+      <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.</description>
+    </item>
+    
+    <item>
       <title>Quickstart</title>
       <link>/hotelx/quickstart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2254,15 +2264,6 @@ Before you begin  Follow the steps in Creating an API Key to get your API Key. C
       
       <guid>/hotelx/resources/release-notes/</guid>
       <description>This page documents production updates to connectX Hotel. We recommend that connectX hotel developers periodically check this list for any new announcements.</description>
-    </item>
-    
-    <item>
-      <title>Release Notes</title>
-      <link>/travelgatex/resources/release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/resources/release-notes/</guid>
-      <description>This page contains release notes for features and updates to the travelgateX GraphQL API.</description>
     </item>
     
     <item>
@@ -2293,16 +2294,6 @@ Just like a RESTful Get method, queries query the system. This operation reads v
     </item>
     
     <item>
-      <title>Concepts</title>
-      <link>/getting-started/concepts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/getting-started/concepts/</guid>
-      <description>TravelgateX offers a set of Products ready to be integrated using a single GraphQL endpoint.
-GraphQL API TravelgateX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we&amp;rsquo;ve integrated too many of them. The problems with that technology are well-known and we won&amp;rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned.</description>
-    </item>
-    
-    <item>
       <title>Markup</title>
       <link>/hotelx/plugins/markup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2312,12 +2303,12 @@ GraphQL API TravelgateX is the first-in-the-industry travel API completely based
     </item>
     
     <item>
-      <title>Playground</title>
+      <title>Playground:</title>
       <link>/getting-started/playground/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/playground/</guid>
-      <description>Try it For Yourself Or open in a new tab here</description>
+      <description>Try it For Yourself API Playground is available for free, it’s simple to set up and allows learners of all stripes to start exploring and creating quickly. Our Query Builder tool helps users get the most out of the TravelgateX API by creating custom queries. Create a base for your own custom queries or use the Query Builder to access TravelgateX API data. You can even customize your responses to better serve your purpose.</description>
     </item>
     
     <item>
@@ -2328,6 +2319,16 @@ GraphQL API TravelgateX is the first-in-the-industry travel API completely based
       <guid>/hotelx/concepts/search-mode/search-single-mode/</guid>
       <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller. Performs an hotel availability search over 1 or more Seller accesses
 Search Single Mode</description>
+    </item>
+    
+    <item>
+      <title>Understanding</title>
+      <link>/getting-started/concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/getting-started/concepts/</guid>
+      <description>TravelgateX offers a set of Products ready to be integrated using a single GraphQL endpoint.
+GraphQL API &amp;ldquo;TravelgateX is the first company in the industry travel with an API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs and we faced a lot of problems with that kind technology. The benefit of using GraphQL, is that each client is ultimately responsible over what it wants to be returned.</description>
     </item>
     
     <item>
@@ -2472,7 +2473,7 @@ Overview GOAL: Explicar el who, why, how de la plataforma
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/credits/</guid>
-      <description>github contributors .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 232 commits   @matcornic 49 commits   @W-Floyd 24 commits   @gwleclerc 21 commits   @lierdakil 16 commits   @Pilskalns 12 commits   @jose-oc 7 commits   @SiamKreative 6 commits   @Xipas 5 commits   @altinnadmin 4 commits   @FMuro 2 commits   @Thiht 2 commits   @EnigmaCurry 2 commits   @aral 2 commits   @adamlamar 1 commits   @byzheng 1 commits   @zivbk1 1 commits   @damoon 1 commits   @vielmetti 1 commits   @erikjasiak 1 commits   @giuliov 1 commits   @farmergreg 1 commits   @tarpdalton 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @shazic 1 commits   @viertaxa 1 commits   @uweschaefer 1 commits   @eyoder 1 commits   @justin-yan 1 commits   @karlmacklin 1 commits   @petzi53 1 commits   @remi31000 1 commits   @xxxtonixxx 1 commits   Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services&amp;hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester.</description>
+      <description>github contributors .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 245 commits   @matcornic 49 commits   @W-Floyd 24 commits   @gwleclerc 21 commits   @lierdakil 16 commits   @Pilskalns 12 commits   @jose-oc 8 commits   @SiamKreative 6 commits   @Xipas 5 commits   @altinnadmin 4 commits   @FMuro 2 commits   @Thiht 2 commits   @EnigmaCurry 2 commits   @aral 2 commits   @adamlamar 1 commits   @byzheng 1 commits   @zivbk1 1 commits   @damoon 1 commits   @vielmetti 1 commits   @erikjasiak 1 commits   @giuliov 1 commits   @farmergreg 1 commits   @tarpdalton 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @shazic 1 commits   @viertaxa 1 commits   @uweschaefer 1 commits   @eyoder 1 commits   @justin-yan 1 commits   @karlmacklin 1 commits   @petzi53 1 commits   @remi31000 1 commits   @xxxtonixxx 1 commits   Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services&amp;hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester.</description>
     </item>
     
   </channel>

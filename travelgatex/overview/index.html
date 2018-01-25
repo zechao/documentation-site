@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TravelgateX Platform Information | TravelgateX Documentation</title>
+    <title>of TravelgateX Platform | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.31.1" />
+<meta name="generator" content="Hugo 0.30.2" />
 <title>Overview :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -21,7 +21,7 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="Platform information">
+<meta name="description" content="TravelgateX Platform Information">
 <meta name="author" content="TravelgateX ByXTG">
 <link href="/css/tgx.css" rel="stylesheet">
     
@@ -62,14 +62,14 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item">
-            <a href="/getting-started/concepts/">
-              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
-              <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Playground:</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Understanding</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1229,18 +1229,19 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/travelgatex/resources/" class="dd-item">
+        <li data-nav-id="/travelgatex/resources/" class="dd-item alwaysopen">
 
             <a href="/travelgatex/resources/" class="directory">
        
-            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+            <span>
+                    <i class="fa fa-angle-down fa-lg category-icon"></i>
                 Resources
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
           <li data-nav-id="/travelgatex/resources/release-notes/" class="dd-item">
             <a href="/travelgatex/resources/release-notes/">
-              <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">New Realeases &amp; Updates</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1570,7 +1571,7 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Overview: TravelgateX Platform Information</h1>
+              <h1 class="pageTitle">Overview: of TravelgateX Platform</h1>
               
 
 
@@ -1580,11 +1581,11 @@
 
 <h1 id="graphql-gateway">GraphQL Gateway</h1>
 
-<p>ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we&rsquo;ve integrated too many of them. The problems with that technology are well-known and we won&rsquo;t get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned. For the full reasoning behind working with GraphQL please click <a href="/learning-graphql/overview/#graphql-at-travelgatex">here</a>.</p>
+<p><strong>ConnectX</strong> is the travel API completely based in GraphQL in the industry. Most travel APIs are old legacy XML Soap APIs. The main benefit of using GraphQL, is that each client is ultimately responsible over what it wants to be returned. If you wish to read more about it, <a href="/learning-graphql/overview/#graphql-at-travelgatex">visit GraphQL guide</a>.</p>
 
-<p>The architecture doest not differ from many modern APIs. There&rsquo;s an API Gateway, which takes care of basic stuff like authentication and authorization. It also acts like a shield protecting us from DoS attacks and handles throttling. Analytics takes also an important part in the gateway. Moreover, our Gateway is <strong>the only endpoint</strong> to access all of our APIs.</p>
+<p>The architecture doesn&rsquo;t differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and handles throttling. On the hand, Analytics is also an important part in the gateway.</p>
 
-<p>It is written in NodeJS, <em>fast</em>, stable, secure and fault tolerant load balanced between many datacenters from 4 different cloud providers, namely <a href="https://azure.microsoft.com/">Microsoft Azure</a>, <a href="https://cloud.google.com/">Google Cloud Platform</a>, <a href="https://www.hetzner.de/">Hetzner</a> and <a href="http://totaluptime.com/">TotalUptime</a>.</p>
+<p>Our Gateway is the only endpoint to <strong>access all of our APIs</strong>. It is written in NodeJS, fast, stable, secure and fault tolerant load balanced between many datacenters from four different cloud providers, namely <a href="https://azure.microsoft.com/">Microsoft Azure</a>, <a href="https://cloud.google.com/">Google Cloud Platform</a>, <a href="https://www.hetzner.de/">Hetzner</a> and <a href="http://totaluptime.com/">TotalUptime</a>.</p>
 
 <h1 id="using-the-api">Using the API</h1>
 
@@ -1595,11 +1596,11 @@
 <li><a href="http://graphql.org/learn/queries/">Mutations</a></li>
 </ul>
 
-<p>For more information about using a GraphQL API click <a href="/learning-graphql/">here</a>.</p>
+<p>If you wish to learn <a href="/learning-graphql/">how to use a GraphQL API</a> feel free to visit our guide.</p>
 
 <h2 id="graphql-endpoint">GraphQL Endpoint</h2>
 
-<p>One of the great things we love about GraphQL is that there&rsquo;s only one single endpoint. Use this endpoint for all operations you want to perform:</p>
+<p>One of the benefits of using GraphQL is that there&rsquo;s only one single endpoint. You can use this endpoint for all operations you want to perform:</p>
 
 <div class="alert 
 alert-warning"
@@ -1609,13 +1610,11 @@ role="alert"><a href="https://api.travelgatex.com">https://api.travelgatex.com</
 
 <h2 id="communicate-with-server">Communicate with Server</h2>
 
-<p>To communicate with the GraphQL server, you&rsquo;ll need an access token with the right scopes.
-Follow the steps in  <a href="/travelgatex/security/overview">Security Overview</a> in order to create a token and how use it.</p>
+<p>To communicate with the GraphQL server, you&rsquo;ll need an access token with the right scopes. You are able to create a token by following the steps mentioned in <a href="/travelgatex/security/overview">Security Overview</a>.</p>
 
 <h2 id="making-requests">Making Requests</h2>
 
-<p>Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls.
-There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use <a href="https://curl.haxx.se" target="_blank">curl</a> or any other HTTP-speaking library.</p>
+<p>Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls. There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use <a href="https://curl.haxx.se" target="_blank">curl</a> or any other HTTP-speaking library.</p>
 
 <div class="alert 
 alert-danger"
@@ -1626,7 +1625,7 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
 <pre><code class="language-html">Accept-Encoding: gzip
 </code></pre>
 
-<p>To query GraphQL using <a href="https://curl.haxx.se" target="_blank">curl</a> , make a POST request with a JSON payload. The payload must contain a string called query:</p>
+<p>To query GraphQL using <a href="https://curl.haxx.se" target="_blank">curl</a> , make a POST request with a JSON payload. The payload must contain a string called query:</p>
 
 <pre><code class="language-bash">curl -X\
    POST\
@@ -1650,7 +1649,7 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
 </ul>
 </blockquote>
 
-<p>Open in a new tab <a href="https://api.travelgatex.com/voyager">here</a></p>
+<p>You can open it in a new tab <a href="https://api.travelgatex.com/voyager">here</a> if you wish.</p>
 
 
 <figure >
@@ -1661,18 +1660,18 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
 </figure>
 
 
-<h1 id="examples">Examples</h1>
+<h2 id="examples">Examples</h2>
 
 <p>We share <a href="https://github.com/graphcool/graphql-playground">GraphQL Playgrounds</a> with common scenarios using products.
-Playgrounds are shared in <a href="/product/">product</a> reference sections, for example you can use  <a href="https://graphqlbin.com/JYRtB">ConnectX Hotel Playground</a></p>
+Playgrounds are shared in <a href="/product/">product</a> reference sections, for example you can use <a href="https://graphqlbin.com/JYRtB">ConnectX Hotel Playground</a></p>
 
-<p>It&rsquo;s important to use the correct Headers. If you want to use test headers, insert <code>&quot;Authorization&quot;:&quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;</code></p>
+<p>It&rsquo;s important to use the correct Headers. If you want to use test headers, insert <code>&quot;Authorization&quot;:&quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;</code></p>
 
-<p>You can easily <a href="https://github.com/graphcool/graphql-playground#how-does-graphql-bin-work">share</a> your Queries with others by clicking on the &ldquo;Share&rdquo; button and sharing the generated link. You can think about GraphQL Bin like Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).</p>
+<p>You can easily <strong>share your Queries with other by generating a link</strong> using the <em>share</em> button available on the <a href="https://github.com/graphcool/graphql-playground#how-does-graphql-bin-work">GraphQL Bin</a>. The GraphQL Bin works as a Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).</p>
 
-<h1 id="conventions">Conventions</h1>
+<h2 id="conventions">Conventions</h2>
 
-<p>TravelgateX follow some conventions about schema definition:</p>
+<p>TravelgateX follows some conventions about schema definition:</p>
 
 <ul>
 <li><a href="#Relay Implementation">Relay schema requirements</a></li>
@@ -1682,8 +1681,7 @@ Playgrounds are shared in <a href="/product/">product</a> reference sections, fo
 
 <h2 id="relay-implementation">Relay Implementation</h2>
 
-<p>TravelgateX uses <a href="https://facebook.github.io/relay/">Relay</a> schema requirements for own Resources.
-Other resources, like Seller search response, are not modeled with Relay practices.</p>
+<p>TravelgateX uses <a href="https://facebook.github.io/relay/">Relay</a> schema requirements for its own Resources. Other resources, such as <em>Seller search response</em>, are not modeled with Relay practices.</p>
 
 <p>Relay helps TravelgateX API in order to standarize:</p>
 
@@ -1729,10 +1727,10 @@ Other resources, like Seller search response, are not modeled with Relay practic
 <li><a href="#communicate-with-server">Communicate with Server</a></li>
 <li><a href="#making-requests">Making Requests</a></li>
 </ul></li>
-<li><a href="#view-the-graph">View the Graph</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#conventions">Conventions</a>
+<li><a href="#view-the-graph">View the Graph</a>
 <ul>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#conventions">Conventions</a></li>
 <li><a href="#relay-implementation">Relay Implementation</a></li>
 </ul></li>
 </ul>
