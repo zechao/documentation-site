@@ -2394,12 +2394,14 @@ Search Multi Mode</description>
     </item>
     
     <item>
-      <title>Content</title>
+      <title>Hotel Content</title>
       <link>/hotelx/concepts/content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/concepts/content/</guid>
-      <description></description>
+      <description>Hotel Content operations allows changes to be made to static methods on HotelX.
+Currently, a system where hotels can be divided into different rankings or priorities in order to facilitate the mapping process.
+Hotels Ranking The main goal of this process is to create a hotel ranking in order to divide the whole portfolio so the hotel list is more manageable and each ranking or sublist responds to a specific business criteria, such as but not limited to directly contracted hotels, best deals, top sales hotels, etc.</description>
     </item>
     
     <item>

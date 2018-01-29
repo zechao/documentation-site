@@ -1663,7 +1663,7 @@
 	"title": "Concepts",
 	"tags": [],
 	"description": "Understand TravelgateX basic concepts",
-	"content": " Access, Supplier and Context Learn about Core Entities used in TravelgateX\n   Booking Flow Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n   Booking Flow: Learn about Transactional Booking flow. Search, Quote and Confirm Reservation   Search Single Mode: Learn about Transactional Booking flow. Search, Quote and Confirm Reservation   Search Multi Mode: Learn about Transactional Booking flow. Search, Quote and Confirm Reservation      Management Flow Learn about Management Flow. Cancellations and Booking List\n   Content Learn about how manage content data to manage in your site. Hotel, Boards, Categories...\n    "
+	"content": " Access, Supplier and Context Learn about Core Entities used in TravelgateX\n   Booking Flow Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n   Booking Flow: Learn about Transactional Booking flow. Search, Quote and Confirm Reservation   Search Single Mode: Learn about Transactional Booking flow. Search, Quote and Confirm Reservation   Search Multi Mode: Learn about Transactional Booking flow. Search, Quote and Confirm Reservation      Management Flow Learn about Management Flow. Cancellations and Booking List\n   Hotel Content Learn about how manage content data to manage in your site. Hotel, Boards, Categories...\n    "
 },
 {
 	"uri": "/admin/connect/",
@@ -1778,18 +1778,18 @@
 	"content": " A Paradigm Shift GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. And we get to choose exactly what data we want to retrieve. As opposed to JSON, each piece of data has its own type, so we get to know exactly what to expect, it\u0026rsquo;s a typed language. This gives it a lot of predictability, something we can really appreciate, especially when dealing with third party APIs, where we have no control of what\u0026rsquo;s going on in the other side.\nBuilding GraphQL Schemas In GraphQL, the API specifications are called schemas. A GraphQL Schema is like a contract between the client and the server. It\u0026rsquo;s the definition of how they talk to each other, what they expect from each other so each of them can know exactly what they can and cannot send to each other and what they\u0026rsquo;ll get in response to that. This makes a lot of a difference when creating our schemas, we have to get used to think in a Schema First way.\n A particularly interesting pattern seems to be emerging. Over and over again, I hear developers describing a way of approaching product development we’re calling “GraphQL First.”https://dev-blog.apollodata.com/graphql-first-a-better-way-to-build-modern-apps-b5a04f7121a0\n First, we model our data, thinking of all the different uses we can give to it. And only then, we\u0026rsquo;ll think of where we going to get it from. It could even be from different services, like a database and another node from a third party provider.\nAnother great feature is that the GraphQL specification ensures we write documentation while writing the schema. Apart from being really cool to see your text in the GraphiQL window while you\u0026rsquo;re typing your query, it really helps you to think of each and every node and why you\u0026rsquo;re putting it there. We use APIs Guru\u0026rsquo;s graphql-faker. In one screen you write the schema, and in the other you try what you\u0026rsquo;ve just written, including the help text or documentation you\u0026rsquo;ve just created.\nFurthermore GraphQL schemas support inheritance, we can use the same objects for different queries. For example, in our business domain, and in most businesses for that matter, we have to return the price of the Hotel, or Flight. We can use exactly the same element in both, and just extend it if needed. This makes the job much easier and faster for the developer who\u0026rsquo;s implementing our service.\nTravelgateX schema implementation follow practices explained here\nBuilding Queries  Componentes de la query Componentes de la respuesta Respuesta Como lo hacemos Paginacion  Building Mutations  Componentes de la query Componentes de la respuesta Respuesta Como lo hacemos Paginacion  TODO: Falta chicha!! "
 },
 {
-	"uri": "/hotelx/concepts/content/",
-	"title": "Content",
-	"tags": [],
-	"description": "Learn about how manage content data to manage in your site. Hotel, Boards, Categories...",
-	"content": ""
-},
-{
 	"uri": "/flightx/",
 	"title": "FlightX",
 	"tags": [],
 	"description": "",
 	"content": "FlightX connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel sellers. FlightX has been desined to be fast, reliable and offer strong performance.\n\t Overview FlightX Information\n    "
+},
+{
+	"uri": "/hotelx/concepts/content/",
+	"title": "Hotel Content",
+	"tags": [],
+	"description": "Learn about how manage content data to manage in your site. Hotel, Boards, Categories...",
+	"content": " Hotel Content operations allows changes to be made to static methods on HotelX.\nCurrently, a system where hotels can be divided into different rankings or priorities in order to facilitate the mapping process.\nHotels Ranking The main goal of this process is to create a hotel ranking in order to divide the whole portfolio so the hotel list is more manageable and each ranking or sublist responds to a specific business criteria, such as but not limited to directly contracted hotels, best deals, top sales hotels, etc.\nOnce the hotel ranking file(s) have been uploaded, the static hotel list method can filter hotels according to this ranking.\nIn order to set up hotel ranking lists you need to upload a file in csv format with a specific name to your organisation\u0026rsquo;s FTP.\nFile Names (mandatory) Each file has a different function depending of the name has a sense or another from the business point of view:\nTo process files correctly they must be named according to the following nameing convention:\n   File Nane Description     rank1.csv Rank 1, for example direct contracts   rank2.csv Rank 2, for example best deals   rank3.csv Rank 3, for example top sales   rank4.csv Rank 4, for example competitive hotels    Header fields (mandatory) In order to be correctly processed the header fields must have the following format:\n   Field Name Data Type     provider_id string   hotel_code string   rank boolean [1,0]    Example file format (rank1.csv):\n   provider_id hotel_code rank     travelgatex 2018 1   travelgatey 2017 1    Process file In order to process the file it must be uploaded to your organization\u0026rsquo;s FTP folder in the TravelgateX Platform.\n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/",

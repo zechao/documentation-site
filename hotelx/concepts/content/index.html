@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.30.2" />
-<title>Content :: TravelgateX Documentation</title>
+<title>Hotel Content :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -1315,7 +1315,7 @@
         </li>
           <li data-nav-id="/hotelx/concepts/content/" class="dd-item active">
             <a href="/hotelx/concepts/content/">
-              <span style="padding-left: 8px;">Content</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Hotel Content</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1572,11 +1572,121 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Content: Hotel &amp; Static Content</h1>
+              <h1 class="pageTitle">Hotel Content: Hotel &amp; Static Content</h1>
               
 
 
     
+
+<p>Hotel Content operations allows changes to be made to static methods on HotelX.</p>
+
+<p>Currently, a system where hotels can be divided into different rankings or priorities in order to facilitate the mapping process.</p>
+
+<h2 id="hotels-ranking">Hotels Ranking</h2>
+
+<p>The main goal of this process is to create a hotel ranking in order to divide the whole portfolio so the hotel list is more manageable and each ranking or sublist responds to a specific business criteria, such as but not limited to directly contracted hotels, best deals, top sales hotels, etc.</p>
+
+<p>Once the hotel ranking file(s) have been uploaded, the static hotel list method can filter hotels according to this ranking.</p>
+
+<p>In order to set up hotel ranking lists you need to upload a file in csv format with a specific name to your organisation&rsquo;s FTP.</p>
+
+<h3 id="file-names-mandatory">File Names (mandatory)</h3>
+
+<p>Each file has a different function depending of the name has a sense or another from the business point of view:</p>
+
+<p>To process files correctly they must be named according to the following nameing convention:</p>
+
+<table>
+<thead>
+<tr>
+<th>File Nane</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>rank1.csv</td>
+<td>Rank 1, for example direct contracts</td>
+</tr>
+
+<tr>
+<td>rank2.csv</td>
+<td>Rank 2, for example best deals</td>
+</tr>
+
+<tr>
+<td>rank3.csv</td>
+<td>Rank 3, for example top sales</td>
+</tr>
+
+<tr>
+<td>rank4.csv</td>
+<td>Rank 4, for example competitive hotels</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="header-fields-mandatory">Header fields (mandatory)</h3>
+
+<p>In order to be correctly processed the header fields must have the following format:</p>
+
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Data Type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>provider_id</td>
+<td>string</td>
+</tr>
+
+<tr>
+<td>hotel_code</td>
+<td>string</td>
+</tr>
+
+<tr>
+<td>rank</td>
+<td>boolean [1,0]</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example file format (rank1.csv):</p>
+
+<table>
+<thead>
+<tr>
+<th>provider_id</th>
+<th>hotel_code</th>
+<th>rank</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>travelgatex</td>
+<td>2018</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>travelgatey</td>
+<td>2017</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="process-file">Process file</h3>
+
+<p>In order to process the file it must be uploaded to your organization&rsquo;s FTP folder in the TravelgateX Platform.</p>
+
 
 <hr/>
 
@@ -1604,7 +1714,19 @@
           </div>
           <div class="menu-right">
             <div>
-              
+              <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#hotels-ranking">Hotels Ranking</a>
+<ul>
+<li><a href="#file-names-mandatory">File Names (mandatory)</a></li>
+<li><a href="#header-fields-mandatory">Header fields (mandatory)</a></li>
+<li><a href="#process-file">Process file</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
             </div>
           </div>
           <div class="clear"></div>
