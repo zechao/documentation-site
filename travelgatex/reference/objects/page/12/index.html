@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -62,14 +62,14 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item">
-            <a href="/getting-started/concepts/">
-              <span style="padding-left: 8px;">Understanding</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1299,7 +1299,7 @@
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
             <a href="/hotelx/concepts/search-mode/search-single-mode/">
-              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
@@ -1580,7 +1580,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/objects/timeout/">Timeout</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Timeout {  search: Int!    quote: Int!    book: Int!   }   Fields search(Int!): Milliseconds before the search connection is closed.  quote(Int!): Milliseconds before the quote connection is closed.  book(Int!): Milliseconds before the book connection is closed.  
+        <p>GraphQL Schema definition type Timeout {search: Int! quote: Int! book: Int! }Fields search(Int!):Milliseconds before the search connection is closed.quote(Int!):Milliseconds before the quote connection is closed.book(Int!):Milliseconds before the book connection is closed.
 Require by DefaultSettings: <a class="read-more" href="/travelgatex/reference/objects/timeout/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1599,7 +1599,7 @@ Require by DefaultSettings: <a class="read-more" href="/travelgatex/reference/ob
     </header>
     <section class="post-excerpt">
         <p>Supplier transaction
-GraphQL Schema definition type Transactions {  request: String!    response: String!    timeStamp: DateTime!   }   Fields request(String!): Transaction Request.  response(String!): Transaction Response.  timeStamp(DateTime!): Time when the request has been processed. <a class="read-more" href="/travelgatex/reference/objects/transactions/">&raquo;</a></p>
+GraphQL Schema definition type Transactions {request: String! response: String! timeStamp: DateTime! }Fields request(String!):Transaction Request.response(String!):Transaction Response.timeStamp(DateTime!):Time when the request has been processed. <a class="read-more" href="/travelgatex/reference/objects/transactions/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1617,7 +1617,7 @@ GraphQL Schema definition type Transactions {  request: String!    response: Str
     </header>
     <section class="post-excerpt">
         <p>Url&rsquo;s
-GraphQL Schema definition type Urls {  search: URI    quote: URI    book: URI    generic: URI   }   Fields search(URI): Specific Url for Availability method.  quote(URI): Specific Url for Reservation method.  book(URI): Specific Url for Valuation method.  generic(URI): Supplier URL used for multiple methods.  
+GraphQL Schema definition type Urls {search: URI quote: URI book: URI generic: URI }Fields search(URI):Specific Url for Availability method.quote(URI):Specific Url for Reservation method.book(URI):Specific Url for Valuation method.generic(URI):Supplier URL used for multiple methods.
 Require by AccessData: <a class="read-more" href="/travelgatex/reference/objects/urls/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1636,7 +1636,7 @@ Require by AccessData: <a class="read-more" href="/travelgatex/reference/objects
     </header>
     <section class="post-excerpt">
         <p>Application warnings
-GraphQL Schema definition type Warning {  code: String!    type: String!    description: String!   }   Fields code(String!): Warning code  type(String!): Warning type  description(String!): Warning description <a class="read-more" href="/travelgatex/reference/objects/warning/">&raquo;</a></p>
+GraphQL Schema definition type Warning {code: String! type: String! description: String! }Fields code(String!):Warning codetype(String!):Warning typedescription(String!):Warning description <a class="read-more" href="/travelgatex/reference/objects/warning/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

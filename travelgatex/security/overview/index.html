@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Security | TravelgateX Documentation</title>
+    <title>Security within the platform | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Overview :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -62,14 +62,14 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item">
-            <a href="/getting-started/concepts/">
-              <span style="padding-left: 8px;">Understanding</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1298,7 +1298,7 @@
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
             <a href="/hotelx/concepts/search-mode/search-single-mode/">
-              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
@@ -1556,26 +1556,25 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Overview: Security</h1>
+              <h1 class="pageTitle">Overview: Security within the platform</h1>
               
 
 
     
 
-<h1 id="introduction">Introduction</h1>
+<h3 id="introduction">Introduction</h3>
 
 <p><em>Resources</em> are granted to <em>Partners</em> belonging to <em>Organizations</em>.</p>
 
 <p><a href="/admin/account/iam">IAM</a> lets partners administrators authorize who can take action on specific resources, giving you full control and visilibity to manage resources centrally.</p>
 
-<h1 id="authentication">Authentication</h1>
+<h3 id="authentication">Authentication</h3>
 
-<p>Authentication is the process of authorizing or making sure that the <em>Partner</em> is who is supposed to be.
-Every request to TravelgateX GraphQL API must carry an Access Token. This access token could be an <a href="#api-key">API Key</a> or a <a href="#json-web-token">JSON Web Token</a>.</p>
+<p>Authentication is the process of authorizing or making sure that the <em>Partner</em> is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it&rsquo;s an <a href="#api-key">API Key</a> or a <a href="#json-web-token">JSON Web Token</a>.</p>
 
-<h2 id="api-key">API Key</h2>
+<h3 id="api-key">API Key</h3>
 
-<p>That&rsquo;s the way to authenticate applications, normally created as <code>Service Account</code> with limited scopes.
+<p>The API key takes cares of the authentication of applications, normally created as <code>Service Account</code> with limited scopes.
 The correct way to send it to GraphQL server is via HTTP Header:</p>
 
 <ul>
@@ -1595,7 +1594,7 @@ The correct way to send it to GraphQL server is via HTTP Header:</p>
 
 <p>For development purposes please use the following test Api Key <code>q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ</code></p>
 
-<h2 id="json-web-token">JSON Web Token</h2>
+<h3 id="json-web-token">JSON Web Token</h3>
 
 <div class="alert 
 alert-warning"
@@ -1603,7 +1602,7 @@ alert-warning"
 role="alert">Coming soon</div>
 
 
-<h1 id="authorization">Authorization</h1>
+<h3 id="authorization">Authorization</h3>
 
 <p>Once the <em>Partner</em> is authenticated we must authorize the partner to use the requested <em>Resource</em>.</p>
 
@@ -1611,7 +1610,7 @@ role="alert">Coming soon</div>
 
 <p>TravelgateX permissions are Resource Group Assigned rules, defined using GraphQL API and determined at runtime by the data graph of the application.</p>
 
-<h1 id="further-reading">Further Reading</h1>
+<h3 id="further-reading">Further Reading</h3>
 
 <ul>
 <li><a href="https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a">https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a</a></li>
@@ -1646,17 +1645,19 @@ role="alert">Coming soon</div>
             <div>
               <nav id="TableOfContents">
 <ul>
+<li>
+<ul>
+<li>
+<ul>
 <li><a href="#introduction">Introduction</a></li>
-<li><a href="#authentication">Authentication</a>
-<ul>
-<li><a href="#api-key">API Key</a>
-<ul>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#api-key">API Key</a></li>
 <li><a href="#creating-an-api-key">Creating an API Key</a></li>
-</ul></li>
 <li><a href="#json-web-token">JSON Web Token</a></li>
-</ul></li>
 <li><a href="#authorization">Authorization</a></li>
 <li><a href="#further-reading">Further Reading</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
             </div>

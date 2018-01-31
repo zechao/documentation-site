@@ -951,6 +951,10 @@
   </url>
   
   <url>
+    <loc>/getting-started/concepts/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/concepts/</loc>
   </url>
   
@@ -972,10 +976,6 @@
   
   <url>
     <loc>/hotelx/concepts/search-mode/search-single-mode/</loc>
-  </url>
-  
-  <url>
-    <loc>/getting-started/concepts/</loc>
   </url>
   
   <url>

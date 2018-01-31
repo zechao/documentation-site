@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>The Holy Grail | TravelgateX Documentation</title>
+    <title>Access, Supplier and Context | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Access, Supplier and Context :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -62,14 +62,14 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item">
-            <a href="/getting-started/concepts/">
-              <span style="padding-left: 8px;">Understanding</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1298,7 +1298,7 @@
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
             <a href="/hotelx/concepts/search-mode/search-single-mode/">
-              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
@@ -1556,20 +1556,21 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Access, Supplier and Context: The Holy Grail</h1>
+              <h1 class="pageTitle">Access, Supplier and Context</h1>
               
 
 
     
 
-<h1 id="supplier">Supplier</h1>
+<p>On this page you will learn more about Core Entities used in TravelgateX.</p>
 
-<p>Product segmentation over a <em>provider</em> API implementation.
-<em>Supplier</em> codes are uniques ove all TravelgateX organizations.</p>
+<h3 id="supplier">Supplier</h3>
 
-<h1 id="access">Access</h1>
+<p>Product segmentation over a <em>provider</em> API implementation. <em>Supplier</em> codes are uniques over all TravelgateX organizations.</p>
 
-<p>Configuration to use when interacting with a <em>supplier</em>, which includes:</p>
+<h3 id="access">Access</h3>
+
+<p>Configuration used when interacting with a <em>supplier</em>, which includes:</p>
 
 <ul>
 <li>URLs</li>
@@ -1579,24 +1580,21 @@
 <li>Specific <em>supplier</em> settings</li>
 </ul>
 
-<h1 id="context">Context</h1>
+<h3 id="context">Context</h3>
 
-<p><em>Context</em> is the way codes are formed.
-Every <em>platform</em> can manage its own contexts or reuse existing ones.</p>
-
-<p>That is to say, different <em>sellers</em> and <em>buyers</em> can manage same codes <em>context</em>. For example <a href="https://www.smyrooms.com" target="_blank">SmyRooms</a> supplier uses <strong>SMY</strong> contexts.</p>
+<p><em>Context</em> is the way codes are formed. Every <em>platform</em> can manage its own contexts or reuse existing ones.  Different <em>sellers</em> and <em>buyers</em> can manage the same codes <em>context</em>. For example <a href="https://www.smyrooms.com">SmyRooms</a> supplier uses <strong>SMY</strong> contexts.</p>
 
 <p><em>Context</em> apply to:</p>
 
 <ul>
-<li><em>Hotel Codes</em></li>
-<li><em>Board Codes</em></li>
-<li><em>Room Codes</em></li>
+<li>Hotel Codes</li>
+<li>Board Codes</li>
+<li>Room Codes</li>
 </ul>
 
-<p>Thanks to our built in solution you will be able to choose the context that you want to use when requesting an <a href="/hotelx/">HotelX</a> operation. This <em>context</em> will be used in order to <a href="/hotelx/plugins/mappings">map</a> with other <em>suppliers</em> contexts.</p>
+<p>With the built-in solution you will be able to choose the context that you wish to use when requesting an <a href="/hotelx/">HotelX</a> operation. This <em>context</em> will be used in order to <a href="/hotelx/plugins/mappings">map</a> with other <em>suppliers</em> contexts.</p>
 
-<p>We recommend to use the <strong>biggest <em>context</em> possible</strong> or use your <strong>own context</strong>, so all <em>supplier</em> mappings can be resolved.</p>
+<p>We recommend using the biggest <em>context</em> possible or using your <strong>own context</strong>, so all <em>supplier</em> mappings can be resolved.</p>
 
 
 <hr/>
@@ -1627,9 +1625,15 @@ Every <em>platform</em> can manage its own contexts or reuse existing ones.</p>
             <div>
               <nav id="TableOfContents">
 <ul>
+<li>
+<ul>
+<li>
+<ul>
 <li><a href="#supplier">Supplier</a></li>
 <li><a href="#access">Access</a></li>
 <li><a href="#context">Context</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
             </div>

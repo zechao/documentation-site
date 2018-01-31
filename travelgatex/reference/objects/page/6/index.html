@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -62,14 +62,14 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item">
-            <a href="/getting-started/concepts/">
-              <span style="padding-left: 8px;">Understanding</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1299,7 +1299,7 @@
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
             <a href="/hotelx/concepts/search-mode/search-single-mode/">
-              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
@@ -1582,7 +1582,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/objects/hotelquote/">HotelQuote</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type HotelQuote {  stats( token: String!, ): RequestStats    auditData: AuditData    optionQuote: HotelOptionQuote    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent &amp; received in the supplier&#39;s native format.  optionQuote(HotelOptionQuote): Information about quote.  errors([Error!]): Errors that will lead the service to abort  warnings([Warning! <a class="read-more" href="/travelgatex/reference/objects/hotelquote/">&raquo;</a></p>
+        <p>GraphQL Schema definition type HotelQuote {stats(token: String!,): RequestStats auditData: AuditData optionQuote: HotelOptionQuote errors: [Error!] warnings: [Warning!] }Fields stats(RequestStats):Application stats in string formatauditData(AuditData):Data sent &amp; received in the supplier&#39;s native format.optionQuote(HotelOptionQuote):Information about quote.errors([Error!]):Errors that will lead the service to abortwarnings([Warning! <a class="read-more" href="/travelgatex/reference/objects/hotelquote/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1600,7 +1600,7 @@
     </header>
     <section class="post-excerpt">
         <p>Results of Avail Hotel. Contains all the available options for a given date and itinerary.
-GraphQL Schema definition type HotelSearch {  context: String!    stats( token: String!, ): RequestStats    auditData: AuditData    requestCriteria: CriteriaSearch!    options: [HotelOptionSearch!]    errors: [Error!]    warnings: [Warning!]   }   Fields context(String!): Indicates the context of the response. <a class="read-more" href="/travelgatex/reference/objects/hotelsearch/">&raquo;</a></p>
+GraphQL Schema definition type HotelSearch {context: String! stats(token: String!,): RequestStats auditData: AuditData requestCriteria: CriteriaSearch! options: [HotelOptionSearch!] errors: [Error!] warnings: [Warning!] }Fields context(String!):Indicates the context of the response. <a class="read-more" href="/travelgatex/reference/objects/hotelsearch/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1617,8 +1617,8 @@ GraphQL Schema definition type HotelSearch {  context: String!    stats( token: 
         <h2 class="post-title"><a href="/travelgatex/reference/objects/hotelxmutation/">HotelXMutation</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type HotelXMutation {  book( input: HotelBookInput!, settings: HotelSettingsInput, ): HotelBookPayload    cancel( input: HotelCancelInput!, settings: HotelSettingsInput, ): HotelCancelPayload   }   Fields book(HotelBookPayload): Creates a new hotel booking consisting of an option of 1 or more rooms.  cancel(HotelCancelPayload): Cancels an existing hotel booking consisting of an option of 1 or more rooms.  
-Require by Mutation:  Mutations are operations that change or update data in the server. <a class="read-more" href="/travelgatex/reference/objects/hotelxmutation/">&raquo;</a></p>
+        <p>GraphQL Schema definition type HotelXMutation {book(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload cancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload }Fields book(HotelBookPayload):Creates a new hotel booking consisting of an option of 1 or more rooms.cancel(HotelCancelPayload):Cancels an existing hotel booking consisting of an option of 1 or more rooms.
+Require by Mutation: Mutations are operations that change or update data in the server. <a class="read-more" href="/travelgatex/reference/objects/hotelxmutation/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1635,7 +1635,7 @@ Require by Mutation:  Mutations are operations that change or update data in the
         <h2 class="post-title"><a href="/travelgatex/reference/objects/hotelxquery/">HotelXQuery</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type HotelXQuery {  hotels(    codes: [String!],     language: String,     first: Int,     last: Int,     before: String,     after: String,     ): HotelConnection!    search(    token: String,     criteria: HotelCriteriaSearchInput,     settings: HotelSettingsInput,     filter: FilterInput,     ): HotelSearch    quote( criteria: HotelCriteriaQuoteInput! <a class="read-more" href="/travelgatex/reference/objects/hotelxquery/">&raquo;</a></p>
+        <p>GraphQL Schema definition type HotelXQuery {hotels(codes: [String!],language: String,first: Int,last: Int,before: String,after: String,): HotelConnection! search(token: String,criteria: HotelCriteriaSearchInput,settings: HotelSettingsInput,filter: FilterInput,): HotelSearch quote(criteria: HotelCriteriaQuoteInput! <a class="read-more" href="/travelgatex/reference/objects/hotelxquery/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1653,8 +1653,8 @@ Require by Mutation:  Mutations are operations that change or update data in the
     </header>
     <section class="post-excerpt">
         <p>Location
-GraphQL Schema definition type Location {  address: String!    city: String!    zipCode: String!    country: Country!    geocode: Geocode!   }   Fields address(String!): Street Address  city(String!): City  zipCode(String!): Zip Code  country(Country!): Country ISO Code  geocode(Geocode!): Geocode  
-Require by HotelData:  Hotel data <a class="read-more" href="/travelgatex/reference/objects/location/">&raquo;</a></p>
+GraphQL Schema definition type Location {address: String! city: String! zipCode: String! country: Country! geocode: Geocode! }Fields address(String!):Street Addresscity(String!):CityzipCode(String!):Zip Codecountry(Country!):Country ISO Codegeocode(Geocode!):Geocode
+Require by HotelData: Hotel data <a class="read-more" href="/travelgatex/reference/objects/location/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1672,7 +1672,7 @@ Require by HotelData:  Hotel data <a class="read-more" href="/travelgatex/refere
     </header>
     <section class="post-excerpt">
         <p>Map codes.
-GraphQL Schema definition type Map {  supplierCode: String!    codes: [String!]   }   Fields supplierCode(String!): Supplier code.  codes([String!]): Equivalences of the supplier for the client code. <a class="read-more" href="/travelgatex/reference/objects/map/">&raquo;</a></p>
+GraphQL Schema definition type Map {supplierCode: String! codes: [String!] }Fields supplierCode(String!):Supplier code.codes([String!]):Equivalences of the supplier for the client code. <a class="read-more" href="/travelgatex/reference/objects/map/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1690,7 +1690,7 @@ GraphQL Schema definition type Map {  supplierCode: String!    codes: [String!] 
     </header>
     <section class="post-excerpt">
         <p>Returns the mapping for a group.
-GraphQL Schema definition type Mapping {  contexts( contextCodes: [String!], supplierCodes: [String!], ): [MappingContext!]   }   Fields contexts([MappingContext!]): Returns the differents group contexts, you can filter by some contexts.  
+GraphQL Schema definition type Mapping {contexts(contextCodes: [String!],supplierCodes: [String!],): [MappingContext!] }Fields contexts([MappingContext!]):Returns the differents group contexts, you can filter by some contexts.
 Require by Query: <a class="read-more" href="/travelgatex/reference/objects/mapping/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1709,7 +1709,7 @@ Require by Query: <a class="read-more" href="/travelgatex/reference/objects/mapp
     </header>
     <section class="post-excerpt">
         <p>Returns the differents group contexts
-GraphQL Schema definition type MappingContext {  contextCode: String!    hotels( hotelCodes: [String!], ): [MappingEntity!]    rooms( roomCodes: [String!], ): [MappingEntity!]    rates( rateCodes: [String!], ): [MappingEntity!]    boards( BoardCodes: [String!], ): [MappingEntity!]   }   Fields contextCode(String!): Code of the context  hotels([MappingEntity!]): Mapping of hotels. Filter by hotel code.  rooms([MappingEntity!]): Mapping of rooms. <a class="read-more" href="/travelgatex/reference/objects/mappingcontext/">&raquo;</a></p>
+GraphQL Schema definition type MappingContext {contextCode: String! hotels(hotelCodes: [String!],): [MappingEntity!] rooms(roomCodes: [String!],): [MappingEntity!] rates(rateCodes: [String!],): [MappingEntity!] boards(BoardCodes: [String!],): [MappingEntity!] }Fields contextCode(String!):Code of the contexthotels([MappingEntity!]):Mapping of hotels. Filter by hotel code.rooms([MappingEntity!]):Mapping of rooms. <a class="read-more" href="/travelgatex/reference/objects/mappingcontext/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1727,7 +1727,7 @@ GraphQL Schema definition type MappingContext {  contextCode: String!    hotels(
     </header>
     <section class="post-excerpt">
         <p>Mapping about client codes with the equivalence per supplier.
-GraphQL Schema definition type MappingEntity {  code: String!    maps: [Map!]   }   Fields code(String!): Client code  maps([Map!]): Supplier code. Filter by supplier. <a class="read-more" href="/travelgatex/reference/objects/mappingentity/">&raquo;</a></p>
+GraphQL Schema definition type MappingEntity {code: String! maps: [Map!] }Fields code(String!):Client codemaps([Map!]):Supplier code. Filter by supplier. <a class="read-more" href="/travelgatex/reference/objects/mappingentity/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1745,7 +1745,7 @@ GraphQL Schema definition type MappingEntity {  code: String!    maps: [Map!]   
     </header>
     <section class="post-excerpt">
         <p>Informs markup applied over supplier price.
-GraphQL Schema definition type Markup {  channel: String    currency: Currency!    binding: Boolean!    net: Float!    gross: Float    exchange: Exchange!    rules: [Rule!]!   }   Fields channel(String): channel of markup application.  currency(Currency!): Currency code indicating which currency should be paid. This information is mandatory. <a class="read-more" href="/travelgatex/reference/objects/markup/">&raquo;</a></p>
+GraphQL Schema definition type Markup {channel: String currency: Currency! binding: Boolean! net: Float! gross: Float exchange: Exchange! rules: [Rule!]! }Fields channel(String):channel of markup application.currency(Currency!):Currency code indicating which currency should be paid. This information is mandatory. <a class="read-more" href="/travelgatex/reference/objects/markup/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

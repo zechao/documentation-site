@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -62,14 +62,14 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item">
-            <a href="/getting-started/concepts/">
-              <span style="padding-left: 8px;">Understanding</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1299,7 +1299,7 @@
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
             <a href="/hotelx/concepts/search-mode/search-single-mode/">
-              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
@@ -1583,8 +1583,8 @@
     </header>
     <section class="post-excerpt">
         <p>Informs about the currency of origin, and the rate applied over result returned by the supplier.
-GraphQL Schema definition type Exchange {  currency: Currency!    rate: Float!   }   Fields currency(Currency!): Informs about the currency of origin.  rate(Float!): Informs about the rate applied over result.  
-Require by Price:  Price indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges. <a class="read-more" href="/travelgatex/reference/objects/exchange/">&raquo;</a></p>
+GraphQL Schema definition type Exchange {currency: Currency! rate: Float! }Fields currency(Currency!):Informs about the currency of origin.rate(Float!):Informs about the rate applied over result.
+Require by Price: Price indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges. <a class="read-more" href="/travelgatex/reference/objects/exchange/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1602,8 +1602,8 @@ Require by Price:  Price indicates the value of the room/option. Supplements and
     </header>
     <section class="post-excerpt">
         <p>Geocode type
-GraphQL Schema definition type Geocode {  latitude: String!    longitude: String!   }   Fields latitude(String!): Latitude  longitude(String!): Longitude  
-Require by Location:  Location <a class="read-more" href="/travelgatex/reference/objects/geocode/">&raquo;</a></p>
+GraphQL Schema definition type Geocode {latitude: String! longitude: String! }Fields latitude(String!):Latitudelongitude(String!):Longitude
+Require by Location: Location <a class="read-more" href="/travelgatex/reference/objects/geocode/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1621,7 +1621,7 @@ Require by Location:  Location <a class="read-more" href="/travelgatex/reference
     </header>
     <section class="post-excerpt">
         <p>Giata System ID.
-GraphQL Schema definition type GiataID {  code: String   }   Fields code(String): Giata url. source: URI! Giata code <a class="read-more" href="/travelgatex/reference/objects/giataid/">&raquo;</a></p>
+GraphQL Schema definition type GiataID {code: String }Fields code(String):Giata url. source: URI! Giata code <a class="read-more" href="/travelgatex/reference/objects/giataid/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1638,8 +1638,8 @@ GraphQL Schema definition type GiataID {  code: String   }   Fields code(String)
         <h2 class="post-title"><a href="/travelgatex/reference/objects/group/">Group</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Group {  code: ID!    error: [Error!]    groupData: GroupData    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   error([Error!]):   groupData(GroupData):   createdAt(DateTime!):   updatedAt(DateTime!):   
-Require by GroupEdge:    GroupData:    AdminMutation: <a class="read-more" href="/travelgatex/reference/objects/group/">&raquo;</a></p>
+        <p>GraphQL Schema definition type Group {code: ID! error: [Error!] groupData: GroupData createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):error([Error!]):groupData(GroupData):createdAt(DateTime!):updatedAt(DateTime!):
+Require by GroupEdge: GroupData: AdminMutation: <a class="read-more" href="/travelgatex/reference/objects/group/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1657,7 +1657,7 @@ Require by GroupEdge:    GroupData:    AdminMutation: <a class="read-more" href=
     </header>
     <section class="post-excerpt">
         <p>Pair of groups and accesses. All accesses returned will belong to all the groups in groupCodes
-GraphQL Schema definition type GroupAccess {  groupCodes: [String!]!    accesses: [Access!]   }   Fields groupCodes([String!]!): group identifiers  accesses([Access!]): <a class="read-more" href="/travelgatex/reference/objects/groupaccess/">&raquo;</a></p>
+GraphQL Schema definition type GroupAccess {groupCodes: [String!]! accesses: [Access!] }Fields groupCodes([String!]!):group identifiersaccesses([Access!]): <a class="read-more" href="/travelgatex/reference/objects/groupaccess/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1674,8 +1674,8 @@ GraphQL Schema definition type GroupAccess {  groupCodes: [String!]!    accesses
         <h2 class="post-title"><a href="/travelgatex/reference/objects/groupconnection/">GroupConnection</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type GroupConnection {  edges: [GroupEdge]    pageInfo: PageInfo!   }   Fields edges([GroupEdge]):   pageInfo(PageInfo!):   
-Require by AdminQuery:    MemberData:    APIData: <a class="read-more" href="/travelgatex/reference/objects/groupconnection/">&raquo;</a></p>
+        <p>GraphQL Schema definition type GroupConnection {edges: [GroupEdge] pageInfo: PageInfo! }Fields edges([GroupEdge]):pageInfo(PageInfo!):
+Require by AdminQuery: MemberData: APIData: <a class="read-more" href="/travelgatex/reference/objects/groupconnection/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1692,7 +1692,7 @@ Require by AdminQuery:    MemberData:    APIData: <a class="read-more" href="/tr
         <h2 class="post-title"><a href="/travelgatex/reference/objects/groupdata/">GroupData</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type GroupData {  id: ID!    code: ID!    type: GroupType!    info: String    parent: Group    owner: Member    isEditable: Boolean!    productId: Int    resourceId: Int    members(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection    apis(    codes: [ID! <a class="read-more" href="/travelgatex/reference/objects/groupdata/">&raquo;</a></p>
+        <p>GraphQL Schema definition type GroupData {id: ID! code: ID! type: GroupType! info: String parent: Group owner: Member isEditable: Boolean! productId: Int resourceId: Int members(codes: [ID!],first: Int,last: Int,before: String,after: String,): MemberConnection apis(codes: [ID! <a class="read-more" href="/travelgatex/reference/objects/groupdata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1709,7 +1709,7 @@ Require by AdminQuery:    MemberData:    APIData: <a class="read-more" href="/tr
         <h2 class="post-title"><a href="/travelgatex/reference/objects/groupedge/">GroupEdge</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type GroupEdge {  cursor: String!    node: Group   }   Fields cursor(String!):   node(Group):   
+        <p>GraphQL Schema definition type GroupEdge {cursor: String! node: Group }Fields cursor(String!):node(Group):
 Require by GroupConnection: <a class="read-more" href="/travelgatex/reference/objects/groupedge/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1728,8 +1728,8 @@ Require by GroupConnection: <a class="read-more" href="/travelgatex/reference/ob
     </header>
     <section class="post-excerpt">
         <p>Holder object that contains the pax name and surname.
-GraphQL Schema definition type Holder {  name: String!    surname: String!   }   Fields name(String!): Holder&#39;s name  surname(String!): Holder&#39;s surname  
-Require by HotelBookingDetail:  Contains information about booking. <a class="read-more" href="/travelgatex/reference/objects/holder/">&raquo;</a></p>
+GraphQL Schema definition type Holder {name: String! surname: String! }Fields name(String!):Holder&#39;s namesurname(String!):Holder&#39;s surname
+Require by HotelBookingDetail: Contains information about booking. <a class="read-more" href="/travelgatex/reference/objects/holder/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1747,8 +1747,8 @@ Require by HotelBookingDetail:  Contains information about booking. <a class="re
     </header>
     <section class="post-excerpt">
         <p>Hotel type
-GraphQL Schema definition type Hotel {  code: ID!    hotelData: HotelData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!): Hotel ID  hotelData(HotelData): Hotel data  error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date  updatedAt(DateTime!): Update date  
-Require by HotelEdge:  HotelList Edge definition <a class="read-more" href="/travelgatex/reference/objects/hotel/">&raquo;</a></p>
+GraphQL Schema definition type Hotel {code: ID! hotelData: HotelData error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):Hotel IDhotelData(HotelData):Hotel dataerror([Error!]):Errors that will lead the service to abortcreatedAt(DateTime!):Create dateupdatedAt(DateTime!):Update date
+Require by HotelEdge: HotelList Edge definition <a class="read-more" href="/travelgatex/reference/objects/hotel/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -62,14 +62,14 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item">
-            <a href="/getting-started/concepts/">
-              <span style="padding-left: 8px;">Understanding</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1299,7 +1299,7 @@
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
             <a href="/hotelx/concepts/search-mode/search-single-mode/">
-              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
@@ -1583,7 +1583,7 @@
     </header>
     <section class="post-excerpt">
         <p>Available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.
-GraphQL Schema definition type Search {  hotel(    token: String,     criteria: HotelCriteriaSearchInput,     settings: HotelSettingsInput,     filter: FilterInput,     ): HotelSearch   }   Fields hotel(HotelSearch): Available options of an hotel for a given date and itinerary. <a class="read-more" href="/travelgatex/reference/objects/search/">&raquo;</a></p>
+GraphQL Schema definition type Search {hotel(token: String,criteria: HotelCriteriaSearchInput,settings: HotelSettingsInput,filter: FilterInput,): HotelSearch }Fields hotel(HotelSearch):Available options of an hotel for a given date and itinerary. <a class="read-more" href="/travelgatex/reference/objects/search/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1601,7 +1601,7 @@ GraphQL Schema definition type Search {  hotel(    token: String,     criteria: 
     </header>
     <section class="post-excerpt">
         <p>Indicates the status of the service
-GraphQL Schema definition type ServiceStatus {  code: String    type: String    description: String   }   Fields code(String): Status code  type(String): Status type  description(String): Status description  
+GraphQL Schema definition type ServiceStatus {code: String type: String description: String }Fields code(String):Status codetype(String):Status typedescription(String):Status description
 Require by HotelXQuery: <a class="read-more" href="/travelgatex/reference/objects/servicestatus/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1619,8 +1619,8 @@ Require by HotelXQuery: <a class="read-more" href="/travelgatex/reference/object
         <h2 class="post-title"><a href="/travelgatex/reference/objects/stat/">Stat</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Stat {  start: DateTime!    end: DateTime!    duration: Float   }   Fields start(DateTime!): Start UTC  end(DateTime!): End UTC  duration(Float): Difference between start and end in miliseconds  
-Require by RequestStats:  Contains internal information.  StatAccess:    StatTransaction: <a class="read-more" href="/travelgatex/reference/objects/stat/">&raquo;</a></p>
+        <p>GraphQL Schema definition type Stat {start: DateTime! end: DateTime! duration: Float }Fields start(DateTime!):Start UTCend(DateTime!):End UTCduration(Float):Difference between start and end in miliseconds
+Require by RequestStats: Contains internal information.StatAccess: StatTransaction: <a class="read-more" href="/travelgatex/reference/objects/stat/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1637,7 +1637,7 @@ Require by RequestStats:  Contains internal information.  StatAccess:    StatTra
         <h2 class="post-title"><a href="/travelgatex/reference/objects/stataccess/">StatAccess</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type StatAccess {  name: String!    total: Stat!    staticConfiguration: Stat    transactions: [StatTransaction!]!    external: String!   }   Fields name(String!):   total(Stat!):   staticConfiguration(Stat):   transactions([StatTransaction!]!):   external(String!): <a class="read-more" href="/travelgatex/reference/objects/stataccess/">&raquo;</a></p>
+        <p>GraphQL Schema definition type StatAccess {name: String! total: Stat! staticConfiguration: Stat transactions: [StatTransaction!]! external: String! }Fields name(String!):total(Stat!):staticConfiguration(Stat):transactions([StatTransaction!]!):external(String!): <a class="read-more" href="/travelgatex/reference/objects/stataccess/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1654,7 +1654,7 @@ Require by RequestStats:  Contains internal information.  StatAccess:    StatTra
         <h2 class="post-title"><a href="/travelgatex/reference/objects/stattransaction/">StatTransaction</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type StatTransaction {  reference: String!    total: Stat!    buildRequest: Stat!    workerCommunication: Stat!    parseResponse: Stat!   }   Fields reference(String!):   total(Stat!):   buildRequest(Stat!):   workerCommunication(Stat!):   parseResponse(Stat!): <a class="read-more" href="/travelgatex/reference/objects/stattransaction/">&raquo;</a></p>
+        <p>GraphQL Schema definition type StatTransaction {reference: String! total: Stat! buildRequest: Stat! workerCommunication: Stat! parseResponse: Stat! }Fields reference(String!):total(Stat!):buildRequest(Stat!):workerCommunication(Stat!):parseResponse(Stat!): <a class="read-more" href="/travelgatex/reference/objects/stattransaction/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1672,7 +1672,7 @@ Require by RequestStats:  Contains internal information.  StatAccess:    StatTra
     </header>
     <section class="post-excerpt">
         <p>Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.
-GraphQL Schema definition type Supplement {  code: String!    name: String    description: String    supplementType: SupplementType!    chargeType: ChargeType!    mandatory: Boolean!    durationType: DurationType    quantity: Int    unit: UnitTimeType    effectiveDate: Date    expireDate: Date    resort: Resort    price: Price   }   Fields code(String! <a class="read-more" href="/travelgatex/reference/objects/supplement/">&raquo;</a></p>
+GraphQL Schema definition type Supplement {code: String! name: String description: String supplementType: SupplementType! chargeType: ChargeType! mandatory: Boolean! durationType: DurationType quantity: Int unit: UnitTimeType effectiveDate: Date expireDate: Date resort: Resort price: Price }Fields code(String! <a class="read-more" href="/travelgatex/reference/objects/supplement/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1689,8 +1689,8 @@ GraphQL Schema definition type Supplement {  code: String!    name: String    de
         <h2 class="post-title"><a href="/travelgatex/reference/objects/supplier/">Supplier</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Supplier {  code: ID!    supplierData: SupplierData!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   supplierData(SupplierData!):   error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date  updatedAt(DateTime!): Update date  
-Require by AccessData:    AccessEdge: <a class="read-more" href="/travelgatex/reference/objects/supplier/">&raquo;</a></p>
+        <p>GraphQL Schema definition type Supplier {code: ID! supplierData: SupplierData! error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):supplierData(SupplierData!):error([Error!]):Errors that will lead the service to abortcreatedAt(DateTime!):Create dateupdatedAt(DateTime!):Update date
+Require by AccessData: AccessEdge: <a class="read-more" href="/travelgatex/reference/objects/supplier/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1707,7 +1707,7 @@ Require by AccessData:    AccessEdge: <a class="read-more" href="/travelgatex/re
         <h2 class="post-title"><a href="/travelgatex/reference/objects/supplierdata/">SupplierData</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type SupplierData {  code: ID!    isActive: Boolean!    dll: ID!    hotelCodes( hotel: ID!, ): ID!    supplierGroups: [SupplierGroup!]   }   Fields code(ID!): unique identifier of a supplier  isActive(Boolean!): indicates whether a supplier is active  dll(ID!): instance to which this supllier is connected  hotelCodes(ID!): accesses(first: Int, Last: Int, before: String, after:String, criterial: criterialInput): AccessConnection  supplierGroups([SupplierGroup! <a class="read-more" href="/travelgatex/reference/objects/supplierdata/">&raquo;</a></p>
+        <p>GraphQL Schema definition type SupplierData {code: ID! isActive: Boolean! dll: ID! hotelCodes(hotel: ID!,): ID! supplierGroups: [SupplierGroup!] }Fields code(ID!):unique identifier of a supplierisActive(Boolean!):indicates whether a supplier is activedll(ID!):instance to which this supllier is connectedhotelCodes(ID!):accesses(first: Int, Last: Int, before: String, after:String, criterial: criterialInput): AccessConnectionsupplierGroups([SupplierGroup! <a class="read-more" href="/travelgatex/reference/objects/supplierdata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1725,7 +1725,7 @@ Require by AccessData:    AccessEdge: <a class="read-more" href="/travelgatex/re
     </header>
     <section class="post-excerpt">
         <p>group related to a supplier
-GraphQL Schema definition type SupplierGroup {  groupCode: String!    isActive: Boolean!   }   Fields groupCode(String!): group code of the group related to this supplier  isActive(Boolean!): Indicates if the supplier is active for its supplier <a class="read-more" href="/travelgatex/reference/objects/suppliergroup/">&raquo;</a></p>
+GraphQL Schema definition type SupplierGroup {groupCode: String! isActive: Boolean! }Fields groupCode(String!):group code of the group related to this supplierisActive(Boolean!):Indicates if the supplier is active for its supplier <a class="read-more" href="/travelgatex/reference/objects/suppliergroup/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1743,7 +1743,7 @@ GraphQL Schema definition type SupplierGroup {  groupCode: String!    isActive: 
     </header>
     <section class="post-excerpt">
         <p>Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.
-GraphQL Schema definition type Surcharge {  chargeType: ChargeType!    mandatory: Boolean!    price: Price!    description: String   }   Fields chargeType(ChargeType!): Indicates the charge types. We need to know whether the supplements have to be paid when the consumer gets to the hotel or beforehand. <a class="read-more" href="/travelgatex/reference/objects/surcharge/">&raquo;</a></p>
+GraphQL Schema definition type Surcharge {chargeType: ChargeType! mandatory: Boolean! price: Price! description: String }Fields chargeType(ChargeType!):Indicates the charge types. We need to know whether the supplements have to be paid when the consumer gets to the hotel or beforehand. <a class="read-more" href="/travelgatex/reference/objects/surcharge/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

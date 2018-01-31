@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -62,14 +62,14 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item">
-            <a href="/getting-started/concepts/">
-              <span style="padding-left: 8px;">Understanding</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1299,7 +1299,7 @@
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
             <a href="/hotelx/concepts/search-mode/search-single-mode/">
-              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
@@ -1582,7 +1582,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/objects/adminquery/">AdminQuery</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type AdminQuery {  organizations(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): OrganizationConnection!    products(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): ProductConnection! <a class="read-more" href="/travelgatex/reference/objects/adminquery/">&raquo;</a></p>
+        <p>GraphQL Schema definition type AdminQuery {organizations(codes: [ID!],first: Int,last: Int,before: String,after: String,): OrganizationConnection! products(codes: [ID!],first: Int,last: Int,before: String,after: String,): ProductConnection! <a class="read-more" href="/travelgatex/reference/objects/adminquery/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1599,8 +1599,8 @@
         <h2 class="post-title"><a href="/travelgatex/reference/objects/amenity/">Amenity</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Amenity {  code: ID!    AmenityData: AmenityData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   AmenityData(AmenityData):   error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date  updatedAt(DateTime!): Update date  
-Require by AmenityEdge:  HotelList Edge definition <a class="read-more" href="/travelgatex/reference/objects/amenity/">&raquo;</a></p>
+        <p>GraphQL Schema definition type Amenity {code: ID! AmenityData: AmenityData error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):AmenityData(AmenityData):error([Error!]):Errors that will lead the service to abortcreatedAt(DateTime!):Create dateupdatedAt(DateTime!):Update date
+Require by AmenityEdge: HotelList Edge definition <a class="read-more" href="/travelgatex/reference/objects/amenity/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1617,8 +1617,8 @@ Require by AmenityEdge:  HotelList Edge definition <a class="read-more" href="/t
         <h2 class="post-title"><a href="/travelgatex/reference/objects/amenityconnection/">AmenityConnection</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type AmenityConnection {  edges: [AmenityEdge]    pageInfo: PageInfo!   }   Fields edges([AmenityEdge]):   pageInfo(PageInfo!):   
-Require by HotelData:  Hotel data <a class="read-more" href="/travelgatex/reference/objects/amenityconnection/">&raquo;</a></p>
+        <p>GraphQL Schema definition type AmenityConnection {edges: [AmenityEdge] pageInfo: PageInfo! }Fields edges([AmenityEdge]):pageInfo(PageInfo!):
+Require by HotelData: Hotel data <a class="read-more" href="/travelgatex/reference/objects/amenityconnection/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1635,7 +1635,7 @@ Require by HotelData:  Hotel data <a class="read-more" href="/travelgatex/refere
         <h2 class="post-title"><a href="/travelgatex/reference/objects/amenitydata/">AmenityData</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type AmenityData {  code: ID!    information: Information!    type: ApplicationArea!   }   Fields code(ID!):   information(Information!):   type(ApplicationArea!):   
+        <p>GraphQL Schema definition type AmenityData {code: ID! information: Information! type: ApplicationArea! }Fields code(ID!):information(Information!):type(ApplicationArea!):
 Require by Amenity: <a class="read-more" href="/travelgatex/reference/objects/amenitydata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1654,7 +1654,7 @@ Require by Amenity: <a class="read-more" href="/travelgatex/reference/objects/am
     </header>
     <section class="post-excerpt">
         <p>HotelList Edge definition
-GraphQL Schema definition type AmenityEdge {  cursor: String!    node: Amenity   }   Fields cursor(String!):   node(Amenity):   
+GraphQL Schema definition type AmenityEdge {cursor: String! node: Amenity }Fields cursor(String!):node(Amenity):
 Require by AmenityConnection: <a class="read-more" href="/travelgatex/reference/objects/amenityedge/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1673,8 +1673,8 @@ Require by AmenityConnection: <a class="read-more" href="/travelgatex/reference/
     </header>
     <section class="post-excerpt">
         <p>Data sent &amp; received in the supplierâ€™s native format.
-GraphQL Schema definition type AuditData {  transactions: [Transactions!]!    timeStamp: DateTime!    processTime: Float!   }   Fields transactions([Transactions!]!): List of transactions data.  timeStamp(DateTime!): TimeStamp  processTime(Float!): Process time in milliseconds (ms)  
-Require by HotelSearch:  Results of Avail Hotel. Contains all the available options for a given date and itinerary. <a class="read-more" href="/travelgatex/reference/objects/auditdata/">&raquo;</a></p>
+GraphQL Schema definition type AuditData {transactions: [Transactions!]! timeStamp: DateTime! processTime: Float! }Fields transactions([Transactions!]!):List of transactions data.timeStamp(DateTime!):TimeStampprocessTime(Float!):Process time in milliseconds (ms)
+Require by HotelSearch: Results of Avail Hotel. Contains all the available options for a given date and itinerary. <a class="read-more" href="/travelgatex/reference/objects/auditdata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1692,7 +1692,7 @@ Require by HotelSearch:  Results of Avail Hotel. Contains all the available opti
     </header>
     <section class="post-excerpt">
         <p>Contains information about a bed.
-GraphQL Schema definition type Bed {  type: String    description: String    count: Int    shared: Boolean   }   Fields type(String): Specifies the bed type.  description(String): Description about the bed.  count(Int): Indicates number of beds in the room.  shared(Boolean): Specifies if the bed is shared or not. <a class="read-more" href="/travelgatex/reference/objects/bed/">&raquo;</a></p>
+GraphQL Schema definition type Bed {type: String description: String count: Int shared: Boolean }Fields type(String):Specifies the bed type.description(String):Description about the bed.count(Int):Indicates number of beds in the room.shared(Boolean):Specifies if the bed is shared or not. <a class="read-more" href="/travelgatex/reference/objects/bed/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1710,7 +1710,7 @@ GraphQL Schema definition type Bed {  type: String    description: String    cou
     </header>
     <section class="post-excerpt">
         <p>Returns detailed information about books.
-GraphQL Schema definition type Booking {  hotel( criteria: HotelCriteriaBookingInput!, settings: HotelSettingsInput, ): HotelBooking   }   Fields hotel(HotelBooking): Returns detailed information about books, you can indicated a list of locators or a range date.  
+GraphQL Schema definition type Booking {hotel(criteria: HotelCriteriaBookingInput!,settings: HotelSettingsInput,): HotelBooking }Fields hotel(HotelBooking):Returns detailed information about books, you can indicated a list of locators or a range date.
 Require by Query: <a class="read-more" href="/travelgatex/reference/objects/booking/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1728,7 +1728,7 @@ Require by Query: <a class="read-more" href="/travelgatex/reference/objects/book
         <h2 class="post-title"><a href="/travelgatex/reference/objects/bookinghotel/">BookingHotel</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type BookingHotel {  creationDate: Date    checkIn: Date    checkOut: Date    hotelCode: String    hotelName: String    boardCode: String    occupancies: [Occupancy!]    rooms: [BookingRoom!]   }   Fields creationDate(Date): Creation date of the booking. Format: yyyy-MM-dd  checkIn(Date): Check-in date for the booking. Format: yyyy-MM-dd  checkOut(Date): Check-out date for the booking. <a class="read-more" href="/travelgatex/reference/objects/bookinghotel/">&raquo;</a></p>
+        <p>GraphQL Schema definition type BookingHotel {creationDate: Date checkIn: Date checkOut: Date hotelCode: String hotelName: String boardCode: String occupancies: [Occupancy!] rooms: [BookingRoom!] }Fields creationDate(Date):Creation date of the booking. Format: yyyy-MM-ddcheckIn(Date):Check-in date for the booking. Format: yyyy-MM-ddcheckOut(Date):Check-out date for the booking. <a class="read-more" href="/travelgatex/reference/objects/bookinghotel/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1745,7 +1745,7 @@ Require by Query: <a class="read-more" href="/travelgatex/reference/objects/book
         <h2 class="post-title"><a href="/travelgatex/reference/objects/bookingroom/">BookingRoom</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type BookingRoom {  occupancyRefId: Int    code: String    description: String    price: Price   }   Fields occupancyRefId(Int): ID reference to the occupancy.  code(String): Indicates the room code.  description(String): Description about the room.  price(Price): Total price for all days. <a class="read-more" href="/travelgatex/reference/objects/bookingroom/">&raquo;</a></p>
+        <p>GraphQL Schema definition type BookingRoom {occupancyRefId: Int code: String description: String price: Price }Fields occupancyRefId(Int):ID reference to the occupancy.code(String):Indicates the room code.description(String):Description about the room.price(Price):Total price for all days. <a class="read-more" href="/travelgatex/reference/objects/bookingroom/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Overview :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -62,14 +62,14 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item">
-            <a href="/getting-started/concepts/">
-              <span style="padding-left: 8px;">Understanding</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1297,7 +1297,7 @@
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
             <a href="/hotelx/concepts/search-mode/search-single-mode/">
-              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
@@ -1561,17 +1561,17 @@
 
     
 
-<p>This page provides an overview of <em>travelgateX</em> platform. It&rsquo;s used as reference</p>
+<p>This page provides an overview of <em>travelgateX</em> platform.</p>
 
-<h1 id="graphql-gateway">GraphQL Gateway</h1>
+<h2 id="graphql-gateway">GraphQL Gateway</h2>
 
-<p><strong>ConnectX</strong> is the travel API completely based in GraphQL in the industry. Most travel APIs are old legacy XML Soap APIs. The main benefit of using GraphQL, is that each client is ultimately responsible over what it wants to be returned. If you wish to read more about it, <a href="/learning-graphql/overview/#graphql-at-travelgatex">visit GraphQL guide</a>.</p>
+<p><strong>ConnectX</strong> is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, <a href="/learning-graphql/overview/#graphql-at-travelgatex">visit GraphQL guide</a>.</p>
 
-<p>The architecture doesn&rsquo;t differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and handles throttling. On the hand, Analytics is also an important part in the gateway.</p>
+<p>The architecture doesn&rsquo;t differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and also handles throttling. On the other hand, Analytics is also an important part in the gateway.</p>
 
-<p>Our Gateway is the only endpoint to <strong>access all of our APIs</strong>. It is written in NodeJS, fast, stable, secure and fault tolerant load balanced between many datacenters from four different cloud providers, namely <a href="https://azure.microsoft.com/">Microsoft Azure</a>, <a href="https://cloud.google.com/">Google Cloud Platform</a>, <a href="https://www.hetzner.de/">Hetzner</a> and <a href="http://totaluptime.com/">TotalUptime</a>.</p>
+<p>Our Gateway is the only endpoint to <strong>access all of our APIs</strong>. It is written in NodeJS, making it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: <a href="https://azure.microsoft.com/">Microsoft Azure</a>, <a href="https://cloud.google.com/">Google Cloud Platform</a>, <a href="https://www.hetzner.de/">Hetzner</a> and <a href="http://totaluptime.com/">TotalUptime</a>.</p>
 
-<h1 id="using-the-api">Using the API</h1>
+<h2 id="using-the-api">Using the API</h2>
 
 <p>The two types of allowed operations in TravelgateX GraphQL API are:</p>
 
@@ -1580,7 +1580,7 @@
 <li><a href="http://graphql.org/learn/queries/">Mutations</a></li>
 </ul>
 
-<p>If you wish to learn <a href="/learning-graphql/">how to use a GraphQL API</a> feel free to visit our guide.</p>
+<p>If you wish to learn <a href="http://docs.travelgatex.com/learning-graphql/">how to use a GraphQL API</a> feel free to visit our guide.</p>
 
 <h2 id="graphql-endpoint">GraphQL Endpoint</h2>
 
@@ -1592,7 +1592,7 @@ alert-warning"
 role="alert"><a href="https://api.travelgatex.com">https://api.travelgatex.com</a></div>
 
 
-<h2 id="communicate-with-server">Communicate with Server</h2>
+<h2 id="communicating-with-the-server">Communicating with the Server</h2>
 
 <p>To communicate with the GraphQL server, you&rsquo;ll need an access token with the right scopes. You are able to create a token by following the steps mentioned in <a href="/travelgatex/security/overview">Security Overview</a>.</p>
 
@@ -1620,9 +1620,9 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
    https://api.travelgatex.com
 </code></pre>
 
-<h1 id="view-the-graph">View the Graph</h1>
+<h2 id="viewing-the-graph">Viewing the Graph</h2>
 
-<p>Using <a href="https://github.com/APIs-guru/graphql-voyager">graphql-voyager</a>, we represent <a href="https://api.travelgatex.com">our GraphQL API</a> as an interactive graph.</p>
+<p><a href="https://api.travelgatex.com/voyager">Graphql-voyager</a> displays <a href="https://api.travelgatex.com">our GraphQL API</a> in an interactive graph to help you understand its structure.</p>
 
 <blockquote>
 <ul>
@@ -1632,8 +1632,6 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
 <li>Ability to choose any type to be a root of the graph</li>
 </ul>
 </blockquote>
-
-<p>You can open it in a new tab <a href="https://api.travelgatex.com/voyager">here</a> if you wish.</p>
 
 
 <figure >
@@ -1649,9 +1647,9 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
 <p>We share <a href="https://github.com/graphcool/graphql-playground">GraphQL Playgrounds</a> with common scenarios using products.
 Playgrounds are shared in <a href="/product/">product</a> reference sections, for example you can use <a href="https://graphqlbin.com/JYRtB">ConnectX Hotel Playground</a></p>
 
-<p>It&rsquo;s important to use the correct Headers. If you want to use test headers, insert <code>&quot;Authorization&quot;:&quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;</code></p>
+<p>Keep in mind that it&rsquo;s important to use the correct Headers. If you wish to use test headers, insert <code>&quot;Authorization&quot;:&quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;</code></p>
 
-<p>You can easily <strong>share your Queries with other by generating a link</strong> using the <em>share</em> button available on the <a href="https://github.com/graphcool/graphql-playground#how-does-graphql-bin-work">GraphQL Bin</a>. The GraphQL Bin works as a Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).</p>
+<p>You can easily <strong>share your Queries with others by generating a link</strong> using the <em>share</em> button available on the <a href="https://github.com/graphcool/graphql-playground#how-does-graphql-bin-work">GraphQL Bin</a>. The GraphQL Bin works as a Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).</p>
 
 <h2 id="conventions">Conventions</h2>
 
@@ -1704,15 +1702,14 @@ Playgrounds are shared in <a href="/product/">product</a> reference sections, fo
             <div>
               <nav id="TableOfContents">
 <ul>
+<li>
+<ul>
 <li><a href="#graphql-gateway">GraphQL Gateway</a></li>
-<li><a href="#using-the-api">Using the API</a>
-<ul>
+<li><a href="#using-the-api">Using the API</a></li>
 <li><a href="#graphql-endpoint">GraphQL Endpoint</a></li>
-<li><a href="#communicate-with-server">Communicate with Server</a></li>
+<li><a href="#communicating-with-the-server">Communicating with the Server</a></li>
 <li><a href="#making-requests">Making Requests</a></li>
-</ul></li>
-<li><a href="#view-the-graph">View the Graph</a>
-<ul>
+<li><a href="#viewing-the-graph">Viewing the Graph</a></li>
 <li><a href="#examples">Examples</a></li>
 <li><a href="#conventions">Conventions</a></li>
 <li><a href="#relay-implementation">Relay Implementation</a></li>

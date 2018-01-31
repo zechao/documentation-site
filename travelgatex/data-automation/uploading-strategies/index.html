@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Getting the data there | TravelgateX Documentation</title>
+    <title>Uploading Strategies | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Uploading Strategies :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -62,14 +62,14 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item">
-            <a href="/getting-started/concepts/">
-              <span style="padding-left: 8px;">Understanding</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1298,7 +1298,7 @@
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
             <a href="/hotelx/concepts/search-mode/search-single-mode/">
-              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
@@ -1556,13 +1556,13 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Uploading Strategies: Getting the data there</h1>
+              <h1 class="pageTitle">Uploading Strategies</h1>
               
 
 
     
 
-<h2 id="introduction">Introduction</h2>
+<h2 id="how-to-upload-data-to-the-platform">How to upload data to the platform</h2>
 
 <p>There are two ways of uploading data to the platform:</p>
 
@@ -1573,17 +1573,17 @@
 
 <h3 id="secure-file-transfer-protocol-sftp">Secure File Transfer Protocol (SFTP)</h3>
 
-<p>SFTP, or Secure File Transfer Protocol, is a network protocol that provides completely secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in Finance, Technology, and Consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.</p>
+<p>SFTP, or Secure File Transfer Protocol, is a network protocol that provides a secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in finance, technology, and consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.</p>
 
 <h4 id="security">Security</h4>
 
-<p>To ensure the security of your data, we adhere to the highest standards in data security. The advanced security measures we take include:</p>
+<p>To ensure the security of your data, we adhere to the highest standards in data security. Some of the advanced security measures we take include:</p>
 
 <ul>
 <li><strong>Password-based</strong> authentication.</li>
-<li><strong>IP Whitelisting</strong>: We whitelist the IP Addresses you will be accessing your SFTP server from to ensure you, and only you, have access.</li>
-<li><strong>Anomaly Detection</strong>: To ensure no loss of data, we detect anomalies in your uploads to the SFTP server and warn you when an upload would significantly change your account.</li>
-<li><strong>Encryption</strong>: Data is encrypted, keeping your information safe and private.</li>
+<li><strong>IP Whitelisting</strong>: we whitelist the IP Addresses from where you&rsquo;ll be accessing your SFTP server to ensure you are the only one allowed.</li>
+<li><strong>Anomaly Detection</strong>: to ensure no loss of data, we detect anomalies in your uploads to the SFTP server and immediatly warn you when an upload is about to significantly change your account.</li>
+<li><strong>Encryption</strong>: data is encrypted, keeping your information safe and private.</li>
 </ul>
 
 <h3 id="setup">Setup</h3>
@@ -1592,7 +1592,7 @@
 
 <h3 id="naming-conventions">Naming Conventions</h3>
 
-<p>It&rsquo;s imperative that the file is loaded using a specific name depending on the data being uploaded. <strong>Always</strong> overwrite the last file, only the last file is loaded into the platform. But don&rsquo;t worry, we keep the old files in case we need to revert to an old version. For each file name please see the specific file documentation in each product&rsquo;s section.</p>
+<p>Keep in mind that the file is loaded using a specific name depending on the data being uploaded. <strong>Remember to always</strong> overwrite the last file, because only the last file will be loaded into the platform. If in some case you need to revert to an old version, don&rsquo;t worry because we keep a copy of the old files. For each file name please see the specific file documentation in each product&rsquo;s section.</p>
 
 <h2 id="graphql-mutation">GraphQL Mutation</h2>
 
@@ -1633,7 +1633,7 @@ role="alert">Coming soon</div>
 <ul>
 <li>
 <ul>
-<li><a href="#introduction">Introduction</a>
+<li><a href="#how-to-upload-data-to-the-platform">How to upload data to the platform</a>
 <ul>
 <li><a href="#secure-file-transfer-protocol-sftp">Secure File Transfer Protocol (SFTP)</a>
 <ul>

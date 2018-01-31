@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bulk Data Automation | TravelgateX Documentation</title>
+    <title>Data Automation | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Data Automation :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -62,14 +62,14 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/getting-started/playground/" class="dd-item">
             <a href="/getting-started/playground/">
               <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item">
-            <a href="/getting-started/concepts/">
-              <span style="padding-left: 8px;">Understanding</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1298,7 +1298,7 @@
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
             <a href="/hotelx/concepts/search-mode/search-single-mode/">
-              <span style="padding-left: 8px;">Search Single Mode</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/concepts/search-mode/search-multi-mode/" class="dd-item">
@@ -1556,16 +1556,18 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Data Automation: Bulk Data Automation</h1>
+              <h1 class="pageTitle">Data Automation</h1>
               
 
 	
 
-<p>Many of TravelgateX&rsquo;s products use client&rsquo;s data in order to perform tasks. These data can either be uploaded to our platform via SFTP or there&rsquo;s a <code>mutation</code> that does the same job. It&rsquo;s up to you to decide how to get the data to our servers.</p>
+<h3 id="bulk-data-automation">Bulk Data Automation</h3>
 
-<p>The reasoning behind uploading data has to do with the overall performance of the applications. Our APIs have been built from the ground up with performance in mind, this means that we <strong>must</strong> store data <em>inside</em> the application in order we can keep the response time to a minimum.</p>
+<p>Many of TravelgateX&rsquo;s products use client&rsquo;s data in order to perform tasks. You can upload these data to our platform either by uploading it via SFTP or via a <code>mutation</code>. It&rsquo;s up to you to decide how to get the data to our servers.</p>
 
-<p>The data we <strong>must</strong> to store <em>per product</em> is the following:</p>
+<p>Our APIs have been built from the ground up with performance in mind, this means that we must store data <em>inside</em> the application in order to keep the response time to a minimum.</p>
+
+<p>The data we must store <em>per product</em> is the following:</p>
 
 <h3 id="hotelx">HotelX</h3>
 
@@ -1607,6 +1609,7 @@
 <ul>
 <li>
 <ul>
+<li><a href="#bulk-data-automation">Bulk Data Automation</a></li>
 <li><a href="#hotelx">HotelX</a></li>
 </ul></li>
 </ul></li>
