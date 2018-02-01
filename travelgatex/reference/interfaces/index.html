@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.34" />
+<meta name="generator" content="Hugo 0.30.2" />
 <title>Interfaces :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1578,7 +1578,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/interfaces/advisemessage/">AdviseMessage</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition interface AdviseMessage {code: String! type: String! description: String! }Fields code(String!):TODO: Error code: The following codes can be returned: XXX: XXXXXXXXX XXXXXXtype(String!):TODO: Error type: The following types are valid: XXX: asd asdÃ±oajskd lÃ±a lddescription(String!):Error description <a class="read-more" href="/travelgatex/reference/interfaces/advisemessage/">&raquo;</a></p>
+        <p>GraphQL Schema definition interface AdviseMessage {  code: String!    type: String!    description: String!   }   Fields code(String!): TODO: Error code: The following codes can be returned: XXX: XXXXXXXXX XXXXXX  type(String!): TODO: Error type: The following types are valid: XXX: asd asdÃ±oajskd lÃ±a ld  description(String!): Error description <a class="read-more" href="/travelgatex/reference/interfaces/advisemessage/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1595,7 +1595,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/interfaces/bookableoptionsearch/">BookableOptionSearch</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition interface BookableOptionSearch {supplierCode: String! accessCode: String! id: String! }Fields supplierCode(String!):Supplier that offers this option.accessCode(String!):Access code of this option.id(String!):Indicates the id to be used on Quote as key <a class="read-more" href="/travelgatex/reference/interfaces/bookableoptionsearch/">&raquo;</a></p>
+        <p>GraphQL Schema definition interface BookableOptionSearch {  supplierCode: String!    accessCode: String!    id: String!   }   Fields supplierCode(String!): Supplier that offers this option.  accessCode(String!): Access code of this option.  id(String!): Indicates the id to be used on Quote as key <a class="read-more" href="/travelgatex/reference/interfaces/bookableoptionsearch/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1612,7 +1612,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/interfaces/groupcommondata/">GroupCommonData</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition interface GroupCommonData {id: ID! code: ID! type: GroupType! info: String owner: Member isEditable: Boolean! members(codes: [ID!],first: Int,last: Int,before: String,after: String,): MemberConnection apis(codes: [ID! <a class="read-more" href="/travelgatex/reference/interfaces/groupcommondata/">&raquo;</a></p>
+        <p>GraphQL Schema definition interface GroupCommonData {  id: ID!    code: ID!    type: GroupType!    info: String    owner: Member    isEditable: Boolean!    members(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection    apis(    codes: [ID! <a class="read-more" href="/travelgatex/reference/interfaces/groupcommondata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1629,8 +1629,8 @@
         <h2 class="post-title"><a href="/travelgatex/reference/interfaces/information/">Information</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition interface Information {description: String! language: Language! }Fields description(String!):language(Language!):
-Require by HotelData: Hotel dataAmenityData: <a class="read-more" href="/travelgatex/reference/interfaces/information/">&raquo;</a></p>
+        <p>GraphQL Schema definition interface Information {  description: String!    language: Language!   }   Fields description(String!):   language(Language!):   
+Require by HotelData:  Hotel data  AmenityData: <a class="read-more" href="/travelgatex/reference/interfaces/information/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1647,7 +1647,7 @@ Require by HotelData: Hotel dataAmenityData: <a class="read-more" href="/trav
         <h2 class="post-title"><a href="/travelgatex/reference/interfaces/node/">Node</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition interface Node {code: ID! error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):ID codeerror([Error!]):Errors that will lead the service to abortcreatedAt(DateTime!):Create dateupdatedAt(DateTime!):Update date <a class="read-more" href="/travelgatex/reference/interfaces/node/">&raquo;</a></p>
+        <p>GraphQL Schema definition interface Node {  code: ID!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!): ID code  error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date  updatedAt(DateTime!): Update date <a class="read-more" href="/travelgatex/reference/interfaces/node/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1664,7 +1664,7 @@ Require by HotelData: Hotel dataAmenityData: <a class="read-more" href="/trav
         <h2 class="post-title"><a href="/travelgatex/reference/interfaces/priceable/">Priceable</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition interface Priceable {currency: Currency! binding: Boolean! net: Float! gross: Float exchange: Exchange! }Fields currency(Currency!):Specifies the currency.binding(Boolean!):Is binding.net(Float!):Specifies the import net.gross(Float):Specifies the import gross.exchange(Exchange!):Specifies the exchange. <a class="read-more" href="/travelgatex/reference/interfaces/priceable/">&raquo;</a></p>
+        <p>GraphQL Schema definition interface Priceable {  currency: Currency!    binding: Boolean!    net: Float!    gross: Float    exchange: Exchange!   }   Fields currency(Currency!): Specifies the currency.  binding(Boolean!): Is binding.  net(Float!): Specifies the import net.  gross(Float): Specifies the import gross.  exchange(Exchange!): Specifies the exchange. <a class="read-more" href="/travelgatex/reference/interfaces/priceable/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1681,7 +1681,7 @@ Require by HotelData: Hotel dataAmenityData: <a class="read-more" href="/trav
         <h2 class="post-title"><a href="/travelgatex/reference/interfaces/response/">Response</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition interface Response {stats(token: String!,): RequestStats auditData: AuditData errors: [Error!] warnings: [Warning!] }Fields stats(RequestStats):Application stats in string formatauditData(AuditData):Data sent &amp; received in the supplierâ€™s original format.errors([Error!]):Errors that lead the service to stopwarnings([Warning!]):Potentially harmful situations or errors that do not stop the service <a class="read-more" href="/travelgatex/reference/interfaces/response/">&raquo;</a></p>
+        <p>GraphQL Schema definition interface Response {  stats( token: String!, ): RequestStats    auditData: AuditData    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent &amp; received in the supplierâ€™s original format.  errors([Error!]): Errors that lead the service to stop  warnings([Warning!]): Potentially harmful situations or errors that do not stop the service <a class="read-more" href="/travelgatex/reference/interfaces/response/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

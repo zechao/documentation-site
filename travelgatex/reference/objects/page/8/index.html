@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.34" />
+<meta name="generator" content="Hugo 0.30.2" />
 <title>Objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1582,7 +1582,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/objects/organizationconnection/">OrganizationConnection</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type OrganizationConnection {edges: [OrganizationEdge] pageInfo: PageInfo! }Fields edges([OrganizationEdge]):pageInfo(PageInfo!):
+        <p>GraphQL Schema definition type OrganizationConnection {  edges: [OrganizationEdge]    pageInfo: PageInfo!   }   Fields edges([OrganizationEdge]):   pageInfo(PageInfo!):   
 Require by AdminQuery: <a class="read-more" href="/travelgatex/reference/objects/organizationconnection/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1600,7 +1600,7 @@ Require by AdminQuery: <a class="read-more" href="/travelgatex/reference/objects
         <h2 class="post-title"><a href="/travelgatex/reference/objects/organizationdata/">OrganizationData</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type OrganizationData {id: ID! code: ID! type: GroupType! info: String owner: Member isEditable: Boolean! members(codes: [ID!],first: Int,last: Int,before: String,after: String,): MemberConnection apis(codes: [ID! <a class="read-more" href="/travelgatex/reference/objects/organizationdata/">&raquo;</a></p>
+        <p>GraphQL Schema definition type OrganizationData {  id: ID!    code: ID!    type: GroupType!    info: String    owner: Member    isEditable: Boolean!    members(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection    apis(    codes: [ID! <a class="read-more" href="/travelgatex/reference/objects/organizationdata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1617,7 +1617,7 @@ Require by AdminQuery: <a class="read-more" href="/travelgatex/reference/objects
         <h2 class="post-title"><a href="/travelgatex/reference/objects/organizationedge/">OrganizationEdge</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type OrganizationEdge {cursor: String! node: Organization }Fields cursor(String!):node(Organization):
+        <p>GraphQL Schema definition type OrganizationEdge {  cursor: String!    node: Organization   }   Fields cursor(String!):   node(Organization):   
 Require by OrganizationConnection: <a class="read-more" href="/travelgatex/reference/objects/organizationedge/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1635,8 +1635,8 @@ Require by OrganizationConnection: <a class="read-more" href="/travelgatex/refer
         <h2 class="post-title"><a href="/travelgatex/reference/objects/pageinfo/">PageInfo</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type PageInfo {hasNextPage: Boolean! hasPreviousPage: Boolean! startCursor: String! endCursor: String! }Fields hasNextPage(Boolean!):hasPreviousPage(Boolean!):startCursor(String!):endCursor(String!):
-Require by HotelConnection: HotelList definitionMediaConnection: AmenityConnection: OrganizationConnection: GroupConnection: MemberConnection: APIConnection: ResourceConnection: RoleConnection: ProductConnection: AccessConnection: <a class="read-more" href="/travelgatex/reference/objects/pageinfo/">&raquo;</a></p>
+        <p>GraphQL Schema definition type PageInfo {  hasNextPage: Boolean!    hasPreviousPage: Boolean!    startCursor: String!    endCursor: String!   }   Fields hasNextPage(Boolean!):   hasPreviousPage(Boolean!):   startCursor(String!):   endCursor(String!):   
+Require by HotelConnection:  HotelList definition  MediaConnection:    AmenityConnection:    OrganizationConnection:    GroupConnection:    MemberConnection:    APIConnection:    ResourceConnection:    RoleConnection:    ProductConnection:    AccessConnection: <a class="read-more" href="/travelgatex/reference/objects/pageinfo/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1654,7 +1654,7 @@ Require by HotelConnection: HotelList definitionMediaConnection: AmenityCo
     </header>
     <section class="post-excerpt">
         <p>Parameters for additional information for the supplier&rsquo;s configuration.
-GraphQL Schema definition type Parameter {key: String! value: String! }Fields key(String!):Contains the keyword/Id to identify a parameter. This information is mandatory.value(String!):Contains the parameter values. This information is mandatory. <a class="read-more" href="/travelgatex/reference/objects/parameter/">&raquo;</a></p>
+GraphQL Schema definition type Parameter {  key: String!    value: String!   }   Fields key(String!): Contains the keyword/Id to identify a parameter. This information is mandatory.  value(String!): Contains the parameter values. This information is mandatory. <a class="read-more" href="/travelgatex/reference/objects/parameter/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1672,7 +1672,7 @@ GraphQL Schema definition type Parameter {key: String! value: String! }
     </header>
     <section class="post-excerpt">
         <p>Specifies the age pax. The range of what is considered an adult, infant or baby is particular to each supplier.
-GraphQL Schema definition type Pax {age: Int! }Fields age(Int!):Specifies the age pax. <a class="read-more" href="/travelgatex/reference/objects/pax/">&raquo;</a></p>
+GraphQL Schema definition type Pax {  age: Int!   }   Fields age(Int!): Specifies the age pax. <a class="read-more" href="/travelgatex/reference/objects/pax/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1690,7 +1690,7 @@ GraphQL Schema definition type Pax {age: Int! }Fields age(Int!):Specifie
     </header>
     <section class="post-excerpt">
         <p>Price indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.
-GraphQL Schema definition type Price {currency: Currency! binding: Boolean! net: Float! gross: Float exchange: Exchange! markups: [Markup!] }Fields currency(Currency!):Currency code indicating which currency should be paid. <a class="read-more" href="/travelgatex/reference/objects/price/">&raquo;</a></p>
+GraphQL Schema definition type Price {  currency: Currency!    binding: Boolean!    net: Float!    gross: Float    exchange: Exchange!    markups: [Markup!]   }   Fields currency(Currency!): Currency code indicating which currency should be paid. <a class="read-more" href="/travelgatex/reference/objects/price/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1708,7 +1708,7 @@ GraphQL Schema definition type Price {currency: Currency! binding: Boolean!
     </header>
     <section class="post-excerpt">
         <p>Information about daily price.
-GraphQL Schema definition type PriceBreakdown {effectiveDate: Date! expireDate: Date! price: Price! }Fields effectiveDate(Date!):Start date in which the price becomes effective.expireDate(Date!):Expire date of price.price(Price!):Specifies the daily price. <a class="read-more" href="/travelgatex/reference/objects/pricebreakdown/">&raquo;</a></p>
+GraphQL Schema definition type PriceBreakdown {  effectiveDate: Date!    expireDate: Date!    price: Price!   }   Fields effectiveDate(Date!): Start date in which the price becomes effective.  expireDate(Date!): Expire date of price.  price(Price!): Specifies the daily price. <a class="read-more" href="/travelgatex/reference/objects/pricebreakdown/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1725,7 +1725,7 @@ GraphQL Schema definition type PriceBreakdown {effectiveDate: Date! expireD
         <h2 class="post-title"><a href="/travelgatex/reference/objects/product/">Product</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Product {code: ID! productData: ProductData! error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):productData(ProductData!):error([Error!]):createdAt(DateTime!):updatedAt(DateTime!):
+        <p>GraphQL Schema definition type Product {  code: ID!    productData: ProductData!    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   productData(ProductData!):   error([Error!]):   createdAt(DateTime!):   updatedAt(DateTime!):   
 Require by ProductEdge: <a class="read-more" href="/travelgatex/reference/objects/product/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1743,8 +1743,8 @@ Require by ProductEdge: <a class="read-more" href="/travelgatex/reference/object
         <h2 class="post-title"><a href="/travelgatex/reference/objects/productconnection/">ProductConnection</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type ProductConnection {edges: [ProductEdge] pageInfo: PageInfo! }Fields edges([ProductEdge]):pageInfo(PageInfo!):
-Require by AdminQuery: OrganizationData: <a class="read-more" href="/travelgatex/reference/objects/productconnection/">&raquo;</a></p>
+        <p>GraphQL Schema definition type ProductConnection {  edges: [ProductEdge]    pageInfo: PageInfo!   }   Fields edges([ProductEdge]):   pageInfo(PageInfo!):   
+Require by AdminQuery:    OrganizationData: <a class="read-more" href="/travelgatex/reference/objects/productconnection/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

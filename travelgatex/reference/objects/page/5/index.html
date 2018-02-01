@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.34" />
+<meta name="generator" content="Hugo 0.30.2" />
 <title>Objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1582,7 +1582,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/objects/hotelbookpayload/">HotelBookPayload</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type HotelBookPayload {stats(token: String!,): RequestStats auditData: AuditData booking: HotelBookingDetail errors: [Error!] warnings: [Warning!] }Fields stats(RequestStats):Application stats in string formatauditData(AuditData):Data sent &amp; received in the supplier&#39;s native format.booking(HotelBookingDetail):Information about bookingerrors([Error!]):Errors that will lead the service to abortwarnings([Warning! <a class="read-more" href="/travelgatex/reference/objects/hotelbookpayload/">&raquo;</a></p>
+        <p>GraphQL Schema definition type HotelBookPayload {  stats( token: String!, ): RequestStats    auditData: AuditData    booking: HotelBookingDetail    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent &amp; received in the supplier&#39;s native format.  booking(HotelBookingDetail): Information about booking  errors([Error!]): Errors that will lead the service to abort  warnings([Warning! <a class="read-more" href="/travelgatex/reference/objects/hotelbookpayload/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1599,7 +1599,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/objects/hotelbooking/">HotelBooking</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type HotelBooking {stats(token: String!,): RequestStats auditData: AuditData bookings: [HotelBookingDetail!] errors: [Error!] warnings: [Warning!] }Fields stats(RequestStats):Application stats in string formatauditData(AuditData):Data sent &amp; received in the supplier&#39;s native format.bookings([HotelBookingDetail!]):Details about bookingerrors([Error!]):Errors that will lead the service to abortwarnings([Warning! <a class="read-more" href="/travelgatex/reference/objects/hotelbooking/">&raquo;</a></p>
+        <p>GraphQL Schema definition type HotelBooking {  stats( token: String!, ): RequestStats    auditData: AuditData    bookings: [HotelBookingDetail!]    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent &amp; received in the supplier&#39;s native format.  bookings([HotelBookingDetail!]): Details about booking  errors([Error!]): Errors that will lead the service to abort  warnings([Warning! <a class="read-more" href="/travelgatex/reference/objects/hotelbooking/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1617,7 +1617,7 @@
     </header>
     <section class="post-excerpt">
         <p>Contains information about booking.
-GraphQL Schema definition type HotelBookingDetail {reference: Reference! holder: Holder hotel: BookingHotel price: Price cancelPolicy: CancelPolicy remarks: String status: BookStatusType! payable: String addOns: AddOns }Fields reference(Reference!):Booking ID in the Supplier&#39;s systemholder(Holder):Holder&#39;s name and surnamehotel(BookingHotel):Information about the hotel. <a class="read-more" href="/travelgatex/reference/objects/hotelbookingdetail/">&raquo;</a></p>
+GraphQL Schema definition type HotelBookingDetail {  reference: Reference!    holder: Holder    hotel: BookingHotel    price: Price    cancelPolicy: CancelPolicy    remarks: String    status: BookStatusType!    payable: String    addOns: AddOns   }   Fields reference(Reference!): Booking ID in the Supplier&#39;s system  holder(Holder): Holder&#39;s name and surname  hotel(BookingHotel): Information about the hotel. <a class="read-more" href="/travelgatex/reference/objects/hotelbookingdetail/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1635,7 +1635,7 @@ GraphQL Schema definition type HotelBookingDetail {reference: Reference! ho
     </header>
     <section class="post-excerpt">
         <p>Contains information about cancel
-GraphQL Schema definition type HotelCancelDetail {reference: Reference cancelReference: String status: BookStatusType price: Price booking: HotelBookingDetail }Fields reference(Reference):Booking ID in the Supplier&#39;s systemcancelReference(String):Cancellation ID in the Supplier&#39;s systemstatus(BookStatusType):Booking Status.price(Price):Specifies the prices (Gross, Net and Amount) of the cancellation. <a class="read-more" href="/travelgatex/reference/objects/hotelcanceldetail/">&raquo;</a></p>
+GraphQL Schema definition type HotelCancelDetail {  reference: Reference    cancelReference: String    status: BookStatusType    price: Price    booking: HotelBookingDetail   }   Fields reference(Reference): Booking ID in the Supplier&#39;s system  cancelReference(String): Cancellation ID in the Supplier&#39;s system  status(BookStatusType): Booking Status.  price(Price): Specifies the prices (Gross, Net and Amount) of the cancellation. <a class="read-more" href="/travelgatex/reference/objects/hotelcanceldetail/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1652,7 +1652,7 @@ GraphQL Schema definition type HotelCancelDetail {reference: Reference canc
         <h2 class="post-title"><a href="/travelgatex/reference/objects/hotelcancelpayload/">HotelCancelPayload</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type HotelCancelPayload {stats(token: String!,): RequestStats auditData: AuditData cancellation: HotelCancelDetail errors: [Error!] warnings: [Warning!] }Fields stats(RequestStats):Application stats in string formatauditData(AuditData):Data sent &amp; received in the supplier&#39;s native format.cancellation(HotelCancelDetail):Information about cancelerrors([Error!]):Errors that will lead the service to abortwarnings([Warning! <a class="read-more" href="/travelgatex/reference/objects/hotelcancelpayload/">&raquo;</a></p>
+        <p>GraphQL Schema definition type HotelCancelPayload {  stats( token: String!, ): RequestStats    auditData: AuditData    cancellation: HotelCancelDetail    errors: [Error!]    warnings: [Warning!]   }   Fields stats(RequestStats): Application stats in string format  auditData(AuditData): Data sent &amp; received in the supplier&#39;s native format.  cancellation(HotelCancelDetail): Information about cancel  errors([Error!]): Errors that will lead the service to abort  warnings([Warning! <a class="read-more" href="/travelgatex/reference/objects/hotelcancelpayload/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1670,7 +1670,7 @@ GraphQL Schema definition type HotelCancelDetail {reference: Reference canc
     </header>
     <section class="post-excerpt">
         <p>HotelList definition
-GraphQL Schema definition type HotelConnection {edges: [HotelEdge] pageInfo: PageInfo! }Fields edges([HotelEdge]):pageInfo(PageInfo!):
+GraphQL Schema definition type HotelConnection {  edges: [HotelEdge]    pageInfo: PageInfo!   }   Fields edges([HotelEdge]):   pageInfo(PageInfo!):   
 Require by HotelXQuery: <a class="read-more" href="/travelgatex/reference/objects/hotelconnection/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1689,7 +1689,7 @@ Require by HotelXQuery: <a class="read-more" href="/travelgatex/reference/object
     </header>
     <section class="post-excerpt">
         <p>Hotel data
-GraphQL Schema definition type HotelData {code: ID! name: String! categoryCode: String! exclusiveDeal: Boolean! medias(type: ApplicationArea,first: Int,last: Int,before: String,after: String,): MediaConnection amenities(language: Language,first: Int,last: Int,before: String,after: String,): AmenityConnection additionalInformation(language: Language,): Information! <a class="read-more" href="/travelgatex/reference/objects/hoteldata/">&raquo;</a></p>
+GraphQL Schema definition type HotelData {  code: ID!    name: String!    categoryCode: String!    exclusiveDeal: Boolean!    medias(    type: ApplicationArea,     first: Int,     last: Int,     before: String,     after: String,     ): MediaConnection    amenities(    language: Language,     first: Int,     last: Int,     before: String,     after: String,     ): AmenityConnection    additionalInformation( language: Language, ): Information! <a class="read-more" href="/travelgatex/reference/objects/hoteldata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1707,8 +1707,8 @@ GraphQL Schema definition type HotelData {code: ID! name: String! catego
     </header>
     <section class="post-excerpt">
         <p>HotelList Edge definition
-GraphQL Schema definition type HotelEdge {cursor: String! node: Hotel }Fields cursor(String!):node(Hotel):
-Require by HotelConnection: HotelList definition <a class="read-more" href="/travelgatex/reference/objects/hoteledge/">&raquo;</a></p>
+GraphQL Schema definition type HotelEdge {  cursor: String!    node: Hotel   }   Fields cursor(String!):   node(Hotel):   
+Require by HotelConnection:  HotelList definition <a class="read-more" href="/travelgatex/reference/objects/hoteledge/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1726,7 +1726,7 @@ Require by HotelConnection: HotelList definition <a class="read-more" href="/tr
     </header>
     <section class="post-excerpt">
         <p>Contains information about quote.
-GraphQL Schema definition type HotelOptionQuote {optionRefId: String! status: StatusType! price: Price! cancelPolicy: CancelPolicy! remarks: String surcharges: [Surcharge!] cardTypes: [String!] addOns: AddOns }Fields optionRefId(String!):Indicates the valuation keystatus(StatusType!):The possible values in status in response are Available (OK) or On Request (RQ). <a class="read-more" href="/travelgatex/reference/objects/hoteloptionquote/">&raquo;</a></p>
+GraphQL Schema definition type HotelOptionQuote {  optionRefId: String!    status: StatusType!    price: Price!    cancelPolicy: CancelPolicy!    remarks: String    surcharges: [Surcharge!]    cardTypes: [String!]    addOns: AddOns   }   Fields optionRefId(String!): Indicates the valuation key  status(StatusType!): The possible values in status in response are Available (OK) or On Request (RQ). <a class="read-more" href="/travelgatex/reference/objects/hoteloptionquote/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1744,7 +1744,7 @@ GraphQL Schema definition type HotelOptionQuote {optionRefId: String! statu
     </header>
     <section class="post-excerpt">
         <p>An option includes hotel information, meal plan, total price, conditions and room description.
-GraphQL Schema definition type HotelOptionSearch {supplierCode: String! accessCode: String! market: String! hotelCode: String! hotelCodeSupplier: String! hotelName: String boardCode: String! boardCodeSupplier: String! paymentType: PaymentType! status: StatusType! occupancies: [Occupancy! <a class="read-more" href="/travelgatex/reference/objects/hoteloptionsearch/">&raquo;</a></p>
+GraphQL Schema definition type HotelOptionSearch {  supplierCode: String!    accessCode: String!    market: String!    hotelCode: String!    hotelCodeSupplier: String!    hotelName: String    boardCode: String!    boardCodeSupplier: String!    paymentType: PaymentType!    status: StatusType!    occupancies: [Occupancy! <a class="read-more" href="/travelgatex/reference/objects/hoteloptionsearch/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
