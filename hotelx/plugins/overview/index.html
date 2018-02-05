@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>All About Plugins | TravelgateX Documentation</title>
+    <title>Plugins Workflow | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Overview :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1479,7 +1479,7 @@
         </li>
           <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
             <a href="/learning-graphql/tooling/">
-              <span style="padding-left: 8px;">Tooling</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Tools</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/learning-graphql/tutorials_resources/" class="dd-item">
@@ -1556,17 +1556,17 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Overview: All About Plugins</h1>
+              <h1 class="pageTitle">Overview: Plugins Workflow</h1>
               
 
 
     
 
-<h1 id="introduction">Introduction</h1>
+<h3 id="introduction">Introduction</h3>
 
 <p><em>Plugins</em> are custom code, executed in <a href="/hotelx/">HotelX</a> servers, that add or modify specific features. <code>Partner</code> can develop custom <em>plugins</em>, but in most cases, <a href="/hotelx/">HotelX</a> offers enough basic <em>plugins</em> to use.</p>
 
-<h1 id="flows">Flows</h1>
+<h3 id="flows">Flows</h3>
 
 <p><a href="/hotelx/">HotelX</a> <em>query</em> or <em>mutation</em> determine what <em>flow</em> is executed. <em>Plugins</em> can be executed in different <em>flows</em>:</p>
 
@@ -1577,7 +1577,7 @@
 <li><a href="/hotelx/concepts/management-flow#cancel">hotelCancel</a></li>
 </ul>
 
-<h1 id="steps">Steps</h1>
+<h3 id="steps">Steps</h3>
 
 <p><em>Step</em> is the minium container where <em>plugins</em> are executed <strong>sequentially</strong>.</p>
 
@@ -1617,7 +1617,7 @@
 </tbody>
 </table>
 
-<h1 id="plugin-types">Plugin Types</h1>
+<h3 id="plugin-types">Plugin Types</h3>
 
 <p>Plugin types supported by <a href="/hotelx/">HotelX</a>:</p>
 
@@ -1632,7 +1632,7 @@
 <li><a href="../processor">Post Step</a>: Last execution on every <em>step</em>.</li>
 </ul>
 
-<h1 id="plugin-context-execution">Plugin Context Execution</h1>
+<h3 id="plugin-context-execution">Plugin Context Execution</h3>
 
 <p>Once <em>message</em> enters on <a href="/hotelx/">HotelX</a> it flows over different <em>flows</em> and <em>steps</em>. That&rsquo;s why  <em>plugins</em> are executed in different <em>contexts</em>.</p>
 
@@ -1645,7 +1645,7 @@
 
 <p>With <em>context</em> information developers can personalize <em>plugin</em> features, more information about plugin development can be found <a href="../development">here</a>.</p>
 
-<h1 id="plugin-step-execution">Plugin Step Execution</h1>
+<h3 id="plugin-step-execution">Plugin Step Execution</h3>
 
 <p><a href="/hotelx/">HotelX</a> determine the order and <a href="#plugintypes">plugin types</a> executed for each <em>step</em>.</p>
 
@@ -1732,12 +1732,18 @@
             <div>
               <nav id="TableOfContents">
 <ul>
+<li>
+<ul>
+<li>
+<ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#flows">Flows</a></li>
 <li><a href="#steps">Steps</a></li>
 <li><a href="#plugin-types">Plugin Types</a></li>
 <li><a href="#plugin-context-execution">Plugin Context Execution</a></li>
 <li><a href="#plugin-step-execution">Plugin Step Execution</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
             </div>

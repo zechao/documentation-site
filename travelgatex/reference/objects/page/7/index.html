@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1480,7 +1480,7 @@
         </li>
           <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
             <a href="/learning-graphql/tooling/">
-              <span style="padding-left: 8px;">Tooling</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Tools</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/learning-graphql/tutorials_resources/" class="dd-item">
@@ -1582,8 +1582,8 @@
         <h2 class="post-title"><a href="/travelgatex/reference/objects/media/">Media</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Media {  code: ID!    mediaData: MediaData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   mediaData(MediaData):   error([Error!]): Errors that will lead the service to abort  createdAt(DateTime!): Create date  updatedAt(DateTime!): Update date  
-Require by MediaEdge:  HotelList Edge definition <a class="read-more" href="/travelgatex/reference/objects/media/">&raquo;</a></p>
+        <p>GraphQL Schema definition type Media {code: ID! mediaData: MediaData error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):mediaData(MediaData):error([Error!]):Errors that will lead the service to abortcreatedAt(DateTime!):Create dateupdatedAt(DateTime!):Update date
+Require by MediaEdge: HotelList Edge definition <a class="read-more" href="/travelgatex/reference/objects/media/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1600,8 +1600,8 @@ Require by MediaEdge:  HotelList Edge definition <a class="read-more" href="/tra
         <h2 class="post-title"><a href="/travelgatex/reference/objects/mediaconnection/">MediaConnection</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type MediaConnection {  edges: [MediaEdge]    pageInfo: PageInfo!   }   Fields edges([MediaEdge]):   pageInfo(PageInfo!):   
-Require by HotelData:  Hotel data <a class="read-more" href="/travelgatex/reference/objects/mediaconnection/">&raquo;</a></p>
+        <p>GraphQL Schema definition type MediaConnection {edges: [MediaEdge] pageInfo: PageInfo! }Fields edges([MediaEdge]):pageInfo(PageInfo!):
+Require by HotelData: Hotel data <a class="read-more" href="/travelgatex/reference/objects/mediaconnection/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1618,7 +1618,7 @@ Require by HotelData:  Hotel data <a class="read-more" href="/travelgatex/refere
         <h2 class="post-title"><a href="/travelgatex/reference/objects/mediadata/">MediaData</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type MediaData {  type: ApplicationArea!    url: URI!   }   Fields type(ApplicationArea!):   url(URI!):   
+        <p>GraphQL Schema definition type MediaData {type: ApplicationArea! url: URI! }Fields type(ApplicationArea!):url(URI!):
 Require by Media: <a class="read-more" href="/travelgatex/reference/objects/mediadata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1637,7 +1637,7 @@ Require by Media: <a class="read-more" href="/travelgatex/reference/objects/medi
     </header>
     <section class="post-excerpt">
         <p>HotelList Edge definition
-GraphQL Schema definition type MediaEdge {  cursor: String!    node: Media   }   Fields cursor(String!):   node(Media):   
+GraphQL Schema definition type MediaEdge {cursor: String! node: Media }Fields cursor(String!):node(Media):
 Require by MediaConnection: <a class="read-more" href="/travelgatex/reference/objects/mediaedge/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1655,8 +1655,8 @@ Require by MediaConnection: <a class="read-more" href="/travelgatex/reference/ob
         <h2 class="post-title"><a href="/travelgatex/reference/objects/member/">Member</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Member {  code: ID!    memberData: MemberData    error: [Error!]    isActive: Boolean!    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   memberData(MemberData):   error([Error!]):   isActive(Boolean!):   createdAt(DateTime!):   updatedAt(DateTime!):   
-Require by OrganizationData:    GroupCommonData:    GroupData:    MemberEdge:    AdminMutation: <a class="read-more" href="/travelgatex/reference/objects/member/">&raquo;</a></p>
+        <p>GraphQL Schema definition type Member {code: ID! memberData: MemberData error: [Error!] isActive: Boolean! createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):memberData(MemberData):error([Error!]):isActive(Boolean!):createdAt(DateTime!):updatedAt(DateTime!):
+Require by OrganizationData: GroupCommonData: GroupData: MemberEdge: AdminMutation: <a class="read-more" href="/travelgatex/reference/objects/member/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1673,8 +1673,8 @@ Require by OrganizationData:    GroupCommonData:    GroupData:    MemberEdge:   
         <h2 class="post-title"><a href="/travelgatex/reference/objects/memberconnection/">MemberConnection</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type MemberConnection {  edges: [MemberEdge]    pageInfo: PageInfo!   }   Fields edges([MemberEdge]):   pageInfo(PageInfo!):   
-Require by AdminQuery:    OrganizationData:    GroupCommonData:    GroupData: <a class="read-more" href="/travelgatex/reference/objects/memberconnection/">&raquo;</a></p>
+        <p>GraphQL Schema definition type MemberConnection {edges: [MemberEdge] pageInfo: PageInfo! }Fields edges([MemberEdge]):pageInfo(PageInfo!):
+Require by AdminQuery: OrganizationData: GroupCommonData: GroupData: <a class="read-more" href="/travelgatex/reference/objects/memberconnection/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1691,7 +1691,7 @@ Require by AdminQuery:    OrganizationData:    GroupCommonData:    GroupData: <a
         <h2 class="post-title"><a href="/travelgatex/reference/objects/memberdata/">MemberData</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type MemberData {  id: ID!    code: ID!    roles: String    memberType: String    groups(    first: Int,     last: Int,     before: String,     after: String,     codes: [ID!],     ): GroupConnection   }   Fields id(ID! <a class="read-more" href="/travelgatex/reference/objects/memberdata/">&raquo;</a></p>
+        <p>GraphQL Schema definition type MemberData {id: ID! code: ID! roles: String memberType: String groups(first: Int,last: Int,before: String,after: String,codes: [ID!],): GroupConnection }Fields id(ID! <a class="read-more" href="/travelgatex/reference/objects/memberdata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1708,7 +1708,7 @@ Require by AdminQuery:    OrganizationData:    GroupCommonData:    GroupData: <a
         <h2 class="post-title"><a href="/travelgatex/reference/objects/memberedge/">MemberEdge</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type MemberEdge {  cursor: String!    node: Member   }   Fields cursor(String!):   node(Member):   
+        <p>GraphQL Schema definition type MemberEdge {cursor: String! node: Member }Fields cursor(String!):node(Member):
 Require by MemberConnection: <a class="read-more" href="/travelgatex/reference/objects/memberedge/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1727,7 +1727,7 @@ Require by MemberConnection: <a class="read-more" href="/travelgatex/reference/o
     </header>
     <section class="post-excerpt">
         <p>Information about occupancy.
-GraphQL Schema definition type Occupancy {  id: Int!    paxes: [Pax!]!   }   Fields id(Int!): Unique ID room in this option.  paxes([Pax!]!): List of pax of this occupancy. <a class="read-more" href="/travelgatex/reference/objects/occupancy/">&raquo;</a></p>
+GraphQL Schema definition type Occupancy {id: Int! paxes: [Pax!]! }Fields id(Int!):Unique ID room in this option.paxes([Pax!]!):List of pax of this occupancy. <a class="read-more" href="/travelgatex/reference/objects/occupancy/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1744,7 +1744,7 @@ GraphQL Schema definition type Occupancy {  id: Int!    paxes: [Pax!]!   }   Fie
         <h2 class="post-title"><a href="/travelgatex/reference/objects/organization/">Organization</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Organization {  code: ID!    organizationData: OrganizationData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   organizationData(OrganizationData):   error([Error!]):   createdAt(DateTime!):   updatedAt(DateTime!):   
+        <p>GraphQL Schema definition type Organization {code: ID! organizationData: OrganizationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):organizationData(OrganizationData):error([Error!]):createdAt(DateTime!):updatedAt(DateTime!):
 Require by OrganizationEdge: <a class="read-more" href="/travelgatex/reference/objects/organization/">&raquo;</a></p>
     </section>
     <footer class=" footline" >

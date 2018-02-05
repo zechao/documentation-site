@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Thinking in GraphQL :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1478,7 +1478,7 @@
         </li>
           <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
             <a href="/learning-graphql/tooling/">
-              <span style="padding-left: 8px;">Tooling</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Tools</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/learning-graphql/tutorials_resources/" class="dd-item">
@@ -1563,23 +1563,23 @@
 
 <h2 id="a-paradigm-shift">A Paradigm Shift</h2>
 
-<p>GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. And we get to <em>choose</em> exactly what data we want to retrieve. As opposed to JSON, each piece of data has its own type, so we get to <em>know</em> exactly what to expect, it&rsquo;s a <em>typed language</em>. This gives it a lot of predictability, something we can really appreciate, especially when dealing with third party APIs, where we have no control of what&rsquo;s going on in the other side.</p>
+<p>GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back and ee get to choose exactly what data we want to retrieve. <strong>As opposed to JSON, each piece of data has its own type, so we know exactly what to expect</strong>, it&rsquo;s a typed language. This gives it a lot of predictability, something we really appreciate, especially when dealing with third party APIs, where we have no control of what&rsquo;s going on on the other side.</p>
 
 <h3 id="building-graphql-schemas">Building GraphQL Schemas</h3>
 
-<p>In GraphQL, the API specifications are called <em>schemas</em>. A <em>GraphQL Schema</em> is like a contract between the client and the server. It&rsquo;s the definition of how they talk to each other, what they expect from each other so each of them can know exactly what they can <em>and cannot</em> send to each other and what they&rsquo;ll get in response to that. This makes a lot of a difference when creating our schemas, we have to get used to think in a <strong>Schema First</strong> way.</p>
+<p>In GraphQL, the API specifications are called <em>schemas</em>. <strong>A GraphQL Schema is like a contract between the client and the server</strong>. It&rsquo;s the way how they talk to each other and what they expect from each other. This way, both know exactly what they can and cannot send to each other and what they&rsquo;ll get in response to that. This makes a lot of a difference when creating our schemas, we have to get used to think in a <strong>Schema First</strong> way.</p>
 
 <blockquote>
 <p>A particularly interesting pattern seems to be emerging. Over and over again, I hear developers describing a way of approaching product development we’re calling “GraphQL First.”<cite><a href="https://dev-blog.apollodata.com/graphql-first-a-better-way-to-build-modern-apps-b5a04f7121a0">https://dev-blog.apollodata.com/graphql-first-a-better-way-to-build-modern-apps-b5a04f7121a0</a></cite></p>
 </blockquote>
 
-<p>First, we model our data, thinking of all the different uses we can give to it. And only then, we&rsquo;ll think of <em>where</em> we going to get it from. It could even be from different services, like a database and another <em>node</em> from a third party provider.</p>
+<p>First, we model our data, thinking of all the different uses we can give to it. And only then, we&rsquo;ll think of where we are going to get it from. It could even be from different services, like a database or another node from a third party provider.</p>
 
-<p>Another great feature is that the GraphQL specification ensures we write documentation while writing the schema. Apart from being really cool to see your text in the GraphiQL window while you&rsquo;re typing your query, it really helps you to think of each and every node and why you&rsquo;re putting it there. We use APIs Guru&rsquo;s <a href="https://github.com/APIs-guru/graphql-faker">graphql-faker</a>. In one screen you write the schema, and in the other you try what you&rsquo;ve just written, including the help text <em>or documentation</em> you&rsquo;ve just created.</p>
+<p>Another great feature of GraphQL is that the specification ensures that we write documentation while writing the schema. Not only is it cool to see your text in the GraphiQL window, but while you&rsquo;re typing your query, it helps you to think of each and every node and why you&rsquo;re putting it there. Tools such as APIs Guru&rsquo;s <a href="https://github.com/APIs-guru/graphql-faker">graphql-faker</a> makes it <strong>possible to write the schema in one scree while in the other you see the results</strong>.</p>
 
-<p>Furthermore GraphQL schemas support inheritance, we can use the same objects for different queries. For example, in our business domain, and in most businesses for that matter, we have to return the price of the Hotel, or Flight. We can use exactly the same element in both, and just extend it if needed. This makes the job much easier <em>and faster</em> for the developer who&rsquo;s implementing our service.</p>
+<p><strong>GraphQL schemas also support inheritance by using the same objects for different queries</strong>. For example, in our business domain, just like in most businesses, we have to <strong>return the price of the Hotel or Flight and with GraphQL we are able to use exactly the same element in both</strong>, and just extend it if needed. This makes the job much easier and faster for the developer who are implementing our service.</p>
 
-<p>TravelgateX schema implementation follow practices explained <a href="/graphql-api/">here</a></p>
+<p>If you wish to see TravelgateX schema implementation, simply follow the practices explained <a href="/graphql-api/">here</a></p>
 
 <h3 id="building-queries">Building Queries</h3>
 

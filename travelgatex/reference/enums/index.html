@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Enums :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1480,7 +1480,7 @@
         </li>
           <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
             <a href="/learning-graphql/tooling/">
-              <span style="padding-left: 8px;">Tooling</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Tools</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/learning-graphql/tutorials_resources/" class="dd-item">
@@ -1581,7 +1581,7 @@
     </header>
     <section class="post-excerpt">
         <p>Indicates a place
-GraphQL Schema definition  enum ApplicationArea{   GENERAL,    HOTEL,    ROOM,    SERVICE,   }   Require by MediaData:    AmenityData: <a class="read-more" href="/travelgatex/reference/enums/applicationarea/">&raquo;</a></p>
+GraphQL Schema definition enumApplicationArea{GENERAL,HOTEL,ROOM,SERVICE,}  Require by MediaData: AmenityData: <a class="read-more" href="/travelgatex/reference/enums/applicationarea/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1599,7 +1599,7 @@ GraphQL Schema definition  enum ApplicationArea{   GENERAL,    HOTEL,    ROOM,  
     </header>
     <section class="post-excerpt">
         <p>Book status
-GraphQL Schema definition  enum BookStatusType{   OK,    KO,    ON_REQUEST,    CANCELLED,    UNKNOWN,   }   Require by HotelBookingDetail:  Contains information about booking.  HotelCancelDetail:  Contains information about cancel <a class="read-more" href="/travelgatex/reference/enums/bookstatustype/">&raquo;</a></p>
+GraphQL Schema definition enumBookStatusType{OK,KO,ON_REQUEST,CANCELLED,UNKNOWN,}  Require by HotelBookingDetail: Contains information about booking.HotelCancelDetail: Contains information about cancel <a class="read-more" href="/travelgatex/reference/enums/bookstatustype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1617,7 +1617,7 @@ GraphQL Schema definition  enum BookStatusType{   OK,    KO,    ON_REQUEST,    C
     </header>
     <section class="post-excerpt">
         <p>Indicates the type of criteria in the request of the booking list
-GraphQL Schema definition  enum BookingCriteriaType{   DATES,    REFERENCES,   }   Require by HotelCriteriaBookingInput:  Criteria of book contains basic information to find a book or books. <a class="read-more" href="/travelgatex/reference/enums/bookingcriteriatype/">&raquo;</a></p>
+GraphQL Schema definition enumBookingCriteriaType{DATES,REFERENCES,}  Require by HotelCriteriaBookingInput: Criteria of book contains basic information to find a book or books. <a class="read-more" href="/travelgatex/reference/enums/bookingcriteriatype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1635,7 +1635,7 @@ GraphQL Schema definition  enum BookingCriteriaType{   DATES,    REFERENCES,   }
     </header>
     <section class="post-excerpt">
         <p>Business rules type
-GraphQL Schema definition  enum BusinessRulesType{   CHEAPER_AMOUNT,    ROOM_TYPE,   }   Require by BusinessRulesInput:  List of business rules to use as filter on the options.  BusinessRules:  List of business rules to filter the options that you are interested.  DefaultSettingsBusinessRulesInput:  Input delta price, indicates the price variation permitted by the client before failing the booking. <a class="read-more" href="/travelgatex/reference/enums/businessrulestype/">&raquo;</a></p>
+GraphQL Schema definition enumBusinessRulesType{CHEAPER_AMOUNT,ROOM_TYPE,}  Require by BusinessRulesInput: List of business rules to use as filter on the options.BusinessRules: List of business rules to filter the options that you are interested.DefaultSettingsBusinessRulesInput: Input delta price, indicates the price variation permitted by the client before failing the booking. <a class="read-more" href="/travelgatex/reference/enums/businessrulestype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1653,7 +1653,7 @@ GraphQL Schema definition  enum BusinessRulesType{   CHEAPER_AMOUNT,    ROOM_TYP
     </header>
     <section class="post-excerpt">
         <p>Options type
-GraphQL Schema definition  enum CancelPenaltyType{   NIGHTS,    PERCENT,    IMPORT,   }   Require by CancelPenalty:  Contains information about a cancel penalty. <a class="read-more" href="/travelgatex/reference/enums/cancelpenaltytype/">&raquo;</a></p>
+GraphQL Schema definition enumCancelPenaltyType{NIGHTS,PERCENT,IMPORT,}  Require by CancelPenalty: Contains information about a cancel penalty. <a class="read-more" href="/travelgatex/reference/enums/cancelpenaltytype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1671,7 +1671,7 @@ GraphQL Schema definition  enum CancelPenaltyType{   NIGHTS,    PERCENT,    IMPO
     </header>
     <section class="post-excerpt">
         <p>Charge Type
-GraphQL Schema definition  enum ChargeType{   INCLUDE,    EXCLUDE,   }   Require by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  Surcharge:  Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge. <a class="read-more" href="/travelgatex/reference/enums/chargetype/">&raquo;</a></p>
+GraphQL Schema definition enumChargeType{INCLUDE,EXCLUDE,}  Require by Supplement: Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.Surcharge: Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge. <a class="read-more" href="/travelgatex/reference/enums/chargetype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1689,7 +1689,7 @@ GraphQL Schema definition  enum ChargeType{   INCLUDE,    EXCLUDE,   }   Require
     </header>
     <section class="post-excerpt">
         <p>Indicates the type of dates
-GraphQL Schema definition  enum DateType{   ARRIVAL,    BOOKING,   }   Require by CriteriaBookingDatesInput:  Criteria by dates <a class="read-more" href="/travelgatex/reference/enums/datetype/">&raquo;</a></p>
+GraphQL Schema definition enumDateType{ARRIVAL,BOOKING,}  Require by CriteriaBookingDatesInput: Criteria by dates <a class="read-more" href="/travelgatex/reference/enums/datetype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1707,7 +1707,7 @@ GraphQL Schema definition  enum DateType{   ARRIVAL,    BOOKING,   }   Require b
     </header>
     <section class="post-excerpt">
         <p>Duration Type
-GraphQL Schema definition  enum DurationType{   RANGE,    OPEN,   }   Require by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement. <a class="read-more" href="/travelgatex/reference/enums/durationtype/">&raquo;</a></p>
+GraphQL Schema definition enumDurationType{RANGE,OPEN,}  Require by Supplement: Supplement that it can be or its already added to the option returned. Contains all the information about the supplement. <a class="read-more" href="/travelgatex/reference/enums/durationtype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1724,7 +1724,7 @@ GraphQL Schema definition  enum DurationType{   RANGE,    OPEN,   }   Require by
         <h2 class="post-title"><a href="/travelgatex/reference/enums/grouptype/">GroupType</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition  enum GroupType{   GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Require by OrganizationData:    GroupCommonData:    GroupData:    CreateGroupInput: <a class="read-more" href="/travelgatex/reference/enums/grouptype/">&raquo;</a></p>
+        <p>GraphQL Schema definition enumGroupType{GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Require by OrganizationData: GroupCommonData: GroupData: CreateGroupInput: <a class="read-more" href="/travelgatex/reference/enums/grouptype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1741,7 +1741,7 @@ GraphQL Schema definition  enum DurationType{   RANGE,    OPEN,   }   Require by
         <h2 class="post-title"><a href="/travelgatex/reference/enums/markupruletype/">MarkupRuleType</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition  enum MarkupRuleType{   PERCENT,    IMPORT,   }   Require by Rule: <a class="read-more" href="/travelgatex/reference/enums/markupruletype/">&raquo;</a></p>
+        <p>GraphQL Schema definition enumMarkupRuleType{PERCENT,IMPORT,}  Require by Rule: <a class="read-more" href="/travelgatex/reference/enums/markupruletype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

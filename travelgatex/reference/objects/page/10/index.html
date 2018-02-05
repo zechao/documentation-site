@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1480,7 +1480,7 @@
         </li>
           <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
             <a href="/learning-graphql/tooling/">
-              <span style="padding-left: 8px;">Tooling</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Tools</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/learning-graphql/tutorials_resources/" class="dd-item">
@@ -1582,7 +1582,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/objects/resourcedata/">ResourceData</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type ResourceData {  id: ID!    code: ID!    apis(    first: Int,     last: Int,     before: String,     after: String,     codes: [ID!],     ): APIConnection    roles(    first: Int,     last: Int,     before: String,     after: String,     codes: [ID! <a class="read-more" href="/travelgatex/reference/objects/resourcedata/">&raquo;</a></p>
+        <p>GraphQL Schema definition type ResourceData {id: ID! code: ID! apis(first: Int,last: Int,before: String,after: String,codes: [ID!],): APIConnection roles(first: Int,last: Int,before: String,after: String,codes: [ID! <a class="read-more" href="/travelgatex/reference/objects/resourcedata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1599,7 +1599,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/objects/resourceedge/">ResourceEdge</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type ResourceEdge {  cursor: String!    node: Resource   }   Fields cursor(String!):   node(Resource):   
+        <p>GraphQL Schema definition type ResourceEdge {cursor: String! node: Resource }Fields cursor(String!):node(Resource):
 Require by ResourceConnection: <a class="read-more" href="/travelgatex/reference/objects/resourceedge/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1617,7 +1617,7 @@ Require by ResourceConnection: <a class="read-more" href="/travelgatex/reference
         <h2 class="post-title"><a href="/travelgatex/reference/objects/role/">Role</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Role {  code: ID!    error: [Error!]    roleData: RoleData    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   error([Error!]):   roleData(RoleData):   createdAt(DateTime!):   updatedAt(DateTime!):   
+        <p>GraphQL Schema definition type Role {code: ID! error: [Error!] roleData: RoleData createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):error([Error!]):roleData(RoleData):createdAt(DateTime!):updatedAt(DateTime!):
 Require by RoleEdge: <a class="read-more" href="/travelgatex/reference/objects/role/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1635,8 +1635,8 @@ Require by RoleEdge: <a class="read-more" href="/travelgatex/reference/objects/r
         <h2 class="post-title"><a href="/travelgatex/reference/objects/roleconnection/">RoleConnection</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type RoleConnection {  edges: [RoleEdge]    pageInfo: PageInfo!   }   Fields edges([RoleEdge]):   pageInfo(PageInfo!):   
-Require by AdminQuery:    ResourceData: <a class="read-more" href="/travelgatex/reference/objects/roleconnection/">&raquo;</a></p>
+        <p>GraphQL Schema definition type RoleConnection {edges: [RoleEdge] pageInfo: PageInfo! }Fields edges([RoleEdge]):pageInfo(PageInfo!):
+Require by AdminQuery: ResourceData: <a class="read-more" href="/travelgatex/reference/objects/roleconnection/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1653,7 +1653,7 @@ Require by AdminQuery:    ResourceData: <a class="read-more" href="/travelgatex/
         <h2 class="post-title"><a href="/travelgatex/reference/objects/roledata/">RoleData</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type RoleData {  id: ID!    code: ID!    label: String!    isCreate: Boolean!    isRead: Boolean!    isUpdate: Boolean!    isDelete: Boolean!    isEnable: Boolean!    isExecutable: Boolean!    isSpecial: Boolean!    special: String    resources(    first: Int,     last: Int,     before: String,     after: String,     codes: [ID! <a class="read-more" href="/travelgatex/reference/objects/roledata/">&raquo;</a></p>
+        <p>GraphQL Schema definition type RoleData {id: ID! code: ID! label: String! isCreate: Boolean! isRead: Boolean! isUpdate: Boolean! isDelete: Boolean! isEnable: Boolean! isExecutable: Boolean! isSpecial: Boolean! special: String resources(first: Int,last: Int,before: String,after: String,codes: [ID! <a class="read-more" href="/travelgatex/reference/objects/roledata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1670,7 +1670,7 @@ Require by AdminQuery:    ResourceData: <a class="read-more" href="/travelgatex/
         <h2 class="post-title"><a href="/travelgatex/reference/objects/roleedge/">RoleEdge</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type RoleEdge {  cursor: String!    node: Role   }   Fields cursor(String!):   node(Role):   
+        <p>GraphQL Schema definition type RoleEdge {cursor: String! node: Role }Fields cursor(String!):node(Role):
 Require by RoleConnection: <a class="read-more" href="/travelgatex/reference/objects/roleedge/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1689,7 +1689,7 @@ Require by RoleConnection: <a class="read-more" href="/travelgatex/reference/obj
     </header>
     <section class="post-excerpt">
         <p>Contains the room information of the option returned.
-GraphQL Schema definition type Room {  occupancyRefId: Int!    code: String!    description: String    refundable: Boolean    units: Int    roomPrice: RoomPrice!    beds: [Bed!]    ratePlans: [RatePlan!]    promotions: [Promotion!]   }   Fields occupancyRefId(Int!): ID reference to the occupancy.  code(String! <a class="read-more" href="/travelgatex/reference/objects/room/">&raquo;</a></p>
+GraphQL Schema definition type Room {occupancyRefId: Int! code: String! description: String refundable: Boolean units: Int roomPrice: RoomPrice! beds: [Bed!] ratePlans: [RatePlan!] promotions: [Promotion!] }Fields occupancyRefId(Int!):ID reference to the occupancy.code(String! <a class="read-more" href="/travelgatex/reference/objects/room/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1707,7 +1707,7 @@ GraphQL Schema definition type Room {  occupancyRefId: Int!    code: String!    
     </header>
     <section class="post-excerpt">
         <p>Occupancy for a room. It contains a list of pax ages.
-GraphQL Schema definition type RoomCriteria {  paxes: [Pax!]!   }   Fields paxes([Pax!]!): Array of pax ages. The number of items in the array will indicate the pax occupancy. <a class="read-more" href="/travelgatex/reference/objects/roomcriteria/">&raquo;</a></p>
+GraphQL Schema definition type RoomCriteria {paxes: [Pax!]! }Fields paxes([Pax!]!):Array of pax ages. The number of items in the array will indicate the pax occupancy. <a class="read-more" href="/travelgatex/reference/objects/roomcriteria/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1725,8 +1725,8 @@ GraphQL Schema definition type RoomCriteria {  paxes: [Pax!]!   }   Fields paxes
     </header>
     <section class="post-excerpt">
         <p>Specifies the room price.
-GraphQL Schema definition type RoomPrice {  price: Price!    breakdown: [PriceBreakdown!]   }   Fields price(Price!): Total price for all days.  breakdown([PriceBreakdown!]): Daily break downs price.  
-Require by Room:  Contains the room information of the option returned. <a class="read-more" href="/travelgatex/reference/objects/roomprice/">&raquo;</a></p>
+GraphQL Schema definition type RoomPrice {price: Price! breakdown: [PriceBreakdown!] }Fields price(Price!):Total price for all days.breakdown([PriceBreakdown!]):Daily break downs price.
+Require by Room: Contains the room information of the option returned. <a class="read-more" href="/travelgatex/reference/objects/roomprice/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1743,7 +1743,7 @@ Require by Room:  Contains the room information of the option returned. <a class
         <h2 class="post-title"><a href="/travelgatex/reference/objects/rule/">Rule</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Rule {  id: String!    name: String    type: MarkupRuleType!    value: Float!   }   Fields id(String!): rule identifier  name(String): rule name  type(MarkupRuleType!): type of the value  value(Float!): value applied by this rule <a class="read-more" href="/travelgatex/reference/objects/rule/">&raquo;</a></p>
+        <p>GraphQL Schema definition type Rule {id: String! name: String type: MarkupRuleType! value: Float! }Fields id(String!):rule identifiername(String):rule nametype(MarkupRuleType!):type of the valuevalue(Float!):value applied by this rule <a class="read-more" href="/travelgatex/reference/objects/rule/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

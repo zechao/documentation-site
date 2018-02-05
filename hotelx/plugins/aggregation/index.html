@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.34" />
 <title>Aggregation :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1479,7 +1479,7 @@
         </li>
           <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
             <a href="/learning-graphql/tooling/">
-              <span style="padding-left: 8px;">Tooling</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Tools</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/learning-graphql/tutorials_resources/" class="dd-item">
@@ -1562,11 +1562,9 @@
 
     
 
-<h1 id="overview">Overview</h1>
+<p><strong>Aggregation plugins</strong> extends <a href="/hotelx/">HotelX</a> allowing filtering <code>Supplier</code> options and respones using different business rules.</p>
 
-<p>Aggregation plugins extends <a href="/hotelx/">HotelX</a> allowing filtering <code>Supplier</code> options and respones using different business rules.</p>
-
-<h1 id="keyfilter">KeyFilter</h1>
+<h3 id="keyfilter">KeyFilter</h3>
 
 <p>Filters <code>Supplier</code> options based on <em>field keys</em> applying a selector <em>function</em> over <em>field values</em>.</p>
 
@@ -1598,23 +1596,23 @@
 </ul></li>
 </ul>
 
-<h2 id="configuration">Configuration</h2>
+<h3 id="configuration">Configuration</h3>
 
 <pre><code class="language-json">{
 }
 </code></pre>
 
-<h2 id="parameters">Parameters</h2>
+<h3 id="parameters">Parameters</h3>
 
-<h3 id="keys-string">keys: [String!]</h3>
+<h4 id="keys-string">keys: [String!]</h4>
 
 <p>Values must be a valid Field Key.</p>
 
-<h3 id="function-string">function: String!</h3>
+<h4 id="function-string">function: String!</h4>
 
 <p>Value must be a valid Function.</p>
 
-<h3 id="value-string">value: String!</h3>
+<h4 id="value-string">value: String!</h4>
 
 <p>Value must be a valid Field Value.</p>
 
@@ -1647,15 +1645,18 @@
             <div>
               <nav id="TableOfContents">
 <ul>
-<li><a href="#overview">Overview</a></li>
-<li><a href="#keyfilter">KeyFilter</a>
+<li>
 <ul>
+<li>
+<ul>
+<li><a href="#keyfilter">KeyFilter</a></li>
 <li><a href="#configuration">Configuration</a></li>
 <li><a href="#parameters">Parameters</a>
 <ul>
 <li><a href="#keys-string">keys: [String!]</a></li>
 <li><a href="#function-string">function: String!</a></li>
 <li><a href="#value-string">value: String!</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
