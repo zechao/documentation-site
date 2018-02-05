@@ -1670,7 +1670,7 @@
 	"title": "Concepts",
 	"tags": [],
 	"description": "Understand TravelgateX basic concepts",
-	"content": "\rAccess, Supplier and Context\rLearn about Core Entities used in TravelgateX\n\r\r\rBooking Flow\rLearn about Transactional Booking flow. Search, Quote and Confirm Reservation\n\r\r\rBooking Flow:\rLearn about Transactional Booking flow. Search, Quote and Confirm Reservation\r\r\rSearch Single Mode \u0026amp; Multi Mode:\rLearn about Transactional Booking flow. Search, Quote and Confirm Reservation\r\r\rSearch Multi Mode:\rLearn about Transactional Booking flow. Search, Quote and Confirm Reservation\r\r\r\r\r\rManagement Flow\rLearn about Management Flow. Cancellations and Booking List\n\r\r\rHotel Content\rLearn about how manage content data to manage in your site. Hotel, Boards, Categories...\n\r\r\r\r"
+	"content": "\rAccess, Supplier and Context\rLearn about Core Entities used in TravelgateX\n\r\r\rBooking Flow\rLearn about Transactional Booking flow. Search, Quote and Confirm Reservation\n\r\r\rBooking Flow:\rLearn about Transactional Booking flow. Search, Quote and Confirm Reservation\r\r\rSearch Single Mode \u0026amp; Multi Mode:\rLearn about Transactional Booking flow. Search, Quote and Confirm Reservation\r\r\r\r\r\rManagement Flow\rLearn about Management Flow. Cancellations and Booking List\n\r\r\rHotel Content\rLearn about how manage content data to manage in your site. Hotel, Boards, Categories...\n\r\r\r\r"
 },
 {
 	"uri": "/admin/connect/",
@@ -1762,13 +1762,6 @@
 	"tags": [],
 	"description": "Processor plugins",
 	"content": "Processor plugins extends HotelX allowing multiple operation types. It can modify request and response messages, allowing a full range of operations:\n Split arrays Join arrays Modify object values Add or remove object instances  "
-},
-{
-	"uri": "/hotelx/concepts/search-mode/search-multi-mode/",
-	"title": "Search Multi Mode",
-	"tags": [],
-	"description": "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation",
-	"content": " Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller. Performs an hotel availability search over 1 or more Seller accesses\nSearch Multi Mode                                                                         \n"
 },
 {
 	"uri": "/learning-graphql/thinking_in_graphql/",

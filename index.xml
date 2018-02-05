@@ -2374,16 +2374,6 @@ Authentication Authentication is the process of authorizing or making sure that 
     </item>
     
     <item>
-      <title>Search Multi Mode</title>
-      <link>/hotelx/concepts/search-mode/search-multi-mode/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/concepts/search-mode/search-multi-mode/</guid>
-      <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller. Performs an hotel availability search over 1 or more Seller accesses
-Search Multi Mode</description>
-    </item>
-    
-    <item>
       <title>Thinking in GraphQL</title>
       <link>/learning-graphql/thinking_in_graphql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
