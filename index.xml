@@ -1485,7 +1485,7 @@ Flows HotelX query or mutation determine what flow is executed. Plugins can be e
       
       <guid>/travelgatex/overview/</guid>
       <description>This page provides an overview of travelgateX platform.
-GraphQL Gateway ConnectX is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, visit GraphQL guide.
+GraphQL Gateway TravelgateX is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, visit GraphQL guide.
 The architecture doesn&amp;rsquo;t differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and also handles throttling.</description>
     </item>
     
