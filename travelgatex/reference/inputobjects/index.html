@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.35" />
+<meta name="generator" content="Hugo 0.30.2" />
 <title>Input objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1576,7 +1576,7 @@
     </header>
     <section class="post-excerpt">
         <p>The information required to access the supplier&rsquo;s system.
-GraphQL Schema definition type AccessConfigurationInput {isActive: Boolean! code: String! supplier: String! configuration: ConfigurationInput }Fields isActive(Boolean!):Indicates if the access is active.code(String!):Arbitrary not unique identifiersupplier(String!):Supplier to which this access belongsconfiguration(ConfigurationInput):Information required to access the supplier&#39;s system. <a class="read-more" href="/travelgatex/reference/inputobjects/accessconfigurationinput/">&raquo;</a></p>
+GraphQL Schema definition type AccessConfigurationInput {  isActive: Boolean!    code: String!    supplier: String!    configuration: ConfigurationInput   }   Fields isActive(Boolean!): Indicates if the access is active.  code(String!): Arbitrary not unique identifier  supplier(String!): Supplier to which this access belongs  configuration(ConfigurationInput): Information required to access the supplier&#39;s system. <a class="read-more" href="/travelgatex/reference/inputobjects/accessconfigurationinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1594,7 +1594,7 @@ GraphQL Schema definition type AccessConfigurationInput {isActive: Boolean! 
     </header>
     <section class="post-excerpt">
         <p>Connect user input for data access management API
-GraphQL Schema definition type AccessConnectUserInput {code: String! isActive: Boolean! groups: [ConnectUserGroupInput!] }Fields code(String!):connect user codeisActive(Boolean!):Indicates if the connect user is active.groups([ConnectUserGroupInput!]):groups related to this connect user <a class="read-more" href="/travelgatex/reference/inputobjects/accessconnectuserinput/">&raquo;</a></p>
+GraphQL Schema definition type AccessConnectUserInput {  code: String!    isActive: Boolean!    groups: [ConnectUserGroupInput!]   }   Fields code(String!): connect user code  isActive(Boolean!): Indicates if the connect user is active.  groups([ConnectUserGroupInput!]): groups related to this connect user <a class="read-more" href="/travelgatex/reference/inputobjects/accessconnectuserinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1612,7 +1612,7 @@ GraphQL Schema definition type AccessConnectUserInput {code: String! isActi
     </header>
     <section class="post-excerpt">
         <p>Include OR exclude accesses in this specific search query. If not specified, default accesses will be used. Only one list (includes or excludes) MUST be used.
-GraphQL Schema definition type AccessFilterInput {includes: [ID!] excludes: [ID!] }Fields includes([ID!]):These Access IDs will overwrite the default configuration. Only the IDs on this list will be used in the search query.excludes([ID! <a class="read-more" href="/travelgatex/reference/inputobjects/accessfilterinput/">&raquo;</a></p>
+GraphQL Schema definition type AccessFilterInput {  includes: [ID!]    excludes: [ID!]   }   Fields includes([ID!]): These Access IDs will overwrite the default configuration. Only the IDs on this list will be used in the search query.  excludes([ID! <a class="read-more" href="/travelgatex/reference/inputobjects/accessfilterinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1630,7 +1630,7 @@ GraphQL Schema definition type AccessFilterInput {includes: [ID!] excludes:
     </header>
     <section class="post-excerpt">
         <p>AccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.
-GraphQL Schema definition type AccessInput {accessId: ID! configuration: ConfigurationInput settings: SettingsBaseInput }Fields accessId(ID!):The accessID used to identify the existing access in our Back Office in order to overwrite it. <a class="read-more" href="/travelgatex/reference/inputobjects/accessinput/">&raquo;</a></p>
+GraphQL Schema definition type AccessInput {  accessId: ID!    configuration: ConfigurationInput    settings: SettingsBaseInput   }   Fields accessId(ID!): The accessID used to identify the existing access in our Back Office in order to overwrite it. <a class="read-more" href="/travelgatex/reference/inputobjects/accessinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1648,7 +1648,7 @@ GraphQL Schema definition type AccessInput {accessId: ID! configuration: Co
     </header>
     <section class="post-excerpt">
         <p>Supplier input for data access management API
-GraphQL Schema definition type AccessSupplierInput {code: String! dll: String! isActive: Boolean! groups: [SupplierGroupInput!] }Fields code(String!):supplier codedll(String!):supplier instanceisActive(Boolean!):Indicates if the supplier is active.groups([SupplierGroupInput!]):groups related to this supplier <a class="read-more" href="/travelgatex/reference/inputobjects/accesssupplierinput/">&raquo;</a></p>
+GraphQL Schema definition type AccessSupplierInput {  code: String!    dll: String!    isActive: Boolean!    groups: [SupplierGroupInput!]   }   Fields code(String!): supplier code  dll(String!): supplier instance  isActive(Boolean!): Indicates if the supplier is active.  groups([SupplierGroupInput!]): groups related to this supplier <a class="read-more" href="/travelgatex/reference/inputobjects/accesssupplierinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1666,7 +1666,7 @@ GraphQL Schema definition type AccessSupplierInput {code: String! dll: Stri
     </header>
     <section class="post-excerpt">
         <p>Input BookPax contains basic information abaout pax suach as name, surname and age.
-GraphQL Schema definition type BookPaxInput {name: String! surname: String! age: Int! }Fields name(String!):The guest&#39;s first namesurname(String!):The guest&#39;s last nameage(Int!):The guest&#39;s age <a class="read-more" href="/travelgatex/reference/inputobjects/bookpaxinput/">&raquo;</a></p>
+GraphQL Schema definition type BookPaxInput {  name: String!    surname: String!    age: Int!   }   Fields name(String!): The guest&#39;s first name  surname(String!): The guest&#39;s last name  age(Int!): The guest&#39;s age <a class="read-more" href="/travelgatex/reference/inputobjects/bookpaxinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1684,8 +1684,8 @@ GraphQL Schema definition type BookPaxInput {name: String! surname: String!
     </header>
     <section class="post-excerpt">
         <p>Reference object that contains the client reference and/or supplier reference.
-GraphQL Schema definition type BookReferenceInput {client: String supplier: String }Fields client(String):The client&#39;s referencesupplier(String):The Supplier&#39;s reference
-Require by HotelCancelInput: Cancellation Criteria. <a class="read-more" href="/travelgatex/reference/inputobjects/bookreferenceinput/">&raquo;</a></p>
+GraphQL Schema definition type BookReferenceInput {  client: String    supplier: String   }   Fields client(String): The client&#39;s reference  supplier(String): The Supplier&#39;s reference  
+Require by HotelCancelInput:  Cancellation Criteria. <a class="read-more" href="/travelgatex/reference/inputobjects/bookreferenceinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1703,7 +1703,7 @@ Require by HotelCancelInput: Cancellation Criteria. <a class="read-more" href="
     </header>
     <section class="post-excerpt">
         <p>Input BookRoom contains list of pax and the room&rsquo;s reference.
-GraphQL Schema definition type BookRoomInput {occupancyRefId: Int! paxes: [BookPaxInput!]! }Fields occupancyRefId(Int!):The room&#39;s reference in the bookingpaxes([BookPaxInput!]!):The list or lists of paxes of the room <a class="read-more" href="/travelgatex/reference/inputobjects/bookroominput/">&raquo;</a></p>
+GraphQL Schema definition type BookRoomInput {  occupancyRefId: Int!    paxes: [BookPaxInput!]!   }   Fields occupancyRefId(Int!): The room&#39;s reference in the booking  paxes([BookPaxInput!]!): The list or lists of paxes of the room <a class="read-more" href="/travelgatex/reference/inputobjects/bookroominput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1721,8 +1721,8 @@ GraphQL Schema definition type BookRoomInput {occupancyRefId: Int! paxes: [
     </header>
     <section class="post-excerpt">
         <p>List of business rules to use as filter on the options.
-GraphQL Schema definition type BusinessRulesInput {optionsQuota: Int businessRulesType: BusinessRulesType }Fields optionsQuota(Int):Options quota per search. Maximum numbers of options to be returned by the search query.businessRulesType(BusinessRulesType):Different business rules to filter the returned options.
-Require by HotelSettingsInput: Settings that you can edit for this avail. <a class="read-more" href="/travelgatex/reference/inputobjects/businessrulesinput/">&raquo;</a></p>
+GraphQL Schema definition type BusinessRulesInput {  optionsQuota: Int    businessRulesType: BusinessRulesType   }   Fields optionsQuota(Int): Options quota per search. Maximum numbers of options to be returned by the search query.  businessRulesType(BusinessRulesType): Different business rules to filter the returned options.  
+Require by HotelSettingsInput:  Settings that you can edit for this avail. <a class="read-more" href="/travelgatex/reference/inputobjects/businessrulesinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1740,7 +1740,7 @@ Require by HotelSettingsInput: Settings that you can edit for this avail. <a cl
     </header>
     <section class="post-excerpt">
         <p>The information and credentials required to access the supplierâ€™s system.
-GraphQL Schema definition type ConfigurationInput {username: String password: String urls: UrlsInput! parameters: [ParameterInput!] markets: [String!] rateRules: [RateRulesType!] }Fields username(String):User name for the connection.password(String):Password for the connection.urls(UrlsInput!):Url or endpoint for the connection. <a class="read-more" href="/travelgatex/reference/inputobjects/configurationinput/">&raquo;</a></p>
+GraphQL Schema definition type ConfigurationInput {  username: String    password: String    urls: UrlsInput!    parameters: [ParameterInput!]    markets: [String!]    rateRules: [RateRulesType!]   }   Fields username(String): User name for the connection.  password(String): Password for the connection.  urls(UrlsInput!): Url or endpoint for the connection. <a class="read-more" href="/travelgatex/reference/inputobjects/configurationinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

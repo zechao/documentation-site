@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.35" />
+<meta name="generator" content="Hugo 0.30.2" />
 <title>Objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1578,7 +1578,7 @@
     </header>
     <section class="post-excerpt">
         <p>List of business rules to filter the options that you are interested.
-GraphQL Schema definition type BusinessRules {optionsQuota: Int! businessRulesType: BusinessRulesType! }Fields optionsQuota(Int!):Options quota per avail. Numbers of options wanted by avail.businessRulesType(BusinessRulesType!):Different business rules to filter the options that you are interested.
+GraphQL Schema definition type BusinessRules {  optionsQuota: Int!    businessRulesType: BusinessRulesType!   }   Fields optionsQuota(Int!): Options quota per avail. Numbers of options wanted by avail.  businessRulesType(BusinessRulesType!): Different business rules to filter the options that you are interested.  
 Require by DefaultSettings: <a class="read-more" href="/travelgatex/reference/objects/businessrules/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1597,7 +1597,7 @@ Require by DefaultSettings: <a class="read-more" href="/travelgatex/reference/ob
     </header>
     <section class="post-excerpt">
         <p>Contains information about a cancel penalty.
-GraphQL Schema definition type CancelPenalty {hoursBefore: Int! penaltyType: CancelPenaltyType! currency: Currency! value: Float! }Fields hoursBefore(Int!):Cancellation fees applicable x number of hours before the check in date.penaltyType(CancelPenaltyType!):Type of penalty. This can be Nights, Percent or Import.currency(Currency!):Currency used in the cancel policy.value(Float! <a class="read-more" href="/travelgatex/reference/objects/cancelpenalty/">&raquo;</a></p>
+GraphQL Schema definition type CancelPenalty {  hoursBefore: Int!    penaltyType: CancelPenaltyType!    currency: Currency!    value: Float!   }   Fields hoursBefore(Int!): Cancellation fees applicable x number of hours before the check in date.  penaltyType(CancelPenaltyType!): Type of penalty. This can be Nights, Percent or Import.  currency(Currency!): Currency used in the cancel policy.  value(Float! <a class="read-more" href="/travelgatex/reference/objects/cancelpenalty/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1615,8 +1615,8 @@ GraphQL Schema definition type CancelPenalty {hoursBefore: Int! penaltyType
     </header>
     <section class="post-excerpt">
         <p>Contains information about a cancel policy.
-GraphQL Schema definition type CancelPolicy {refundable: Boolean! cancelPenalties: [CancelPenalty!] }Fields refundable(Boolean!):Indicates if the option is refundable or not. This information is mandatory.cancelPenalties([CancelPenalty!]):List of cancel penalties.
-Require by HotelOptionSearch: An option includes hotel information, meal plan, total price, conditions and room description.HotelOptionQuote: Contains information about quote. <a class="read-more" href="/travelgatex/reference/objects/cancelpolicy/">&raquo;</a></p>
+GraphQL Schema definition type CancelPolicy {  refundable: Boolean!    cancelPenalties: [CancelPenalty!]   }   Fields refundable(Boolean!): Indicates if the option is refundable or not. This information is mandatory.  cancelPenalties([CancelPenalty!]): List of cancel penalties.  
+Require by HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description.  HotelOptionQuote:  Contains information about quote. <a class="read-more" href="/travelgatex/reference/objects/cancelpolicy/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1634,7 +1634,7 @@ Require by HotelOptionSearch: An option includes hotel information, meal plan, 
     </header>
     <section class="post-excerpt">
         <p>data related to a connect user and its groups
-GraphQL Schema definition type ConnectUser {code: String! isActive: Boolean! connectUserGroups: [ConnectUserGroup!] }Fields code(String!):unique connect user of a supplierisActive(Boolean!):indicates whether a connect user is activeconnectUserGroups([ConnectUserGroup!]):connect user&#39;s related data of its groups <a class="read-more" href="/travelgatex/reference/objects/connectuser/">&raquo;</a></p>
+GraphQL Schema definition type ConnectUser {  code: String!    isActive: Boolean!    connectUserGroups: [ConnectUserGroup!]   }   Fields code(String!): unique connect user of a supplier  isActive(Boolean!): indicates whether a connect user is active  connectUserGroups([ConnectUserGroup!]): connect user&#39;s related data of its groups <a class="read-more" href="/travelgatex/reference/objects/connectuser/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1652,7 +1652,7 @@ GraphQL Schema definition type ConnectUser {code: String! isActive: Boolean
     </header>
     <section class="post-excerpt">
         <p>group related to a connect user
-GraphQL Schema definition type ConnectUserGroup {groupCode: String! isActive: Boolean! }Fields groupCode(String!):group code of the group related to this connect userisActive(Boolean!):Indicates if the connect user is active for its connect user <a class="read-more" href="/travelgatex/reference/objects/connectusergroup/">&raquo;</a></p>
+GraphQL Schema definition type ConnectUserGroup {  groupCode: String!    isActive: Boolean!   }   Fields groupCode(String!): group code of the group related to this connect user  isActive(Boolean!): Indicates if the connect user is active for its connect user <a class="read-more" href="/travelgatex/reference/objects/connectusergroup/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1670,8 +1670,8 @@ GraphQL Schema definition type ConnectUserGroup {groupCode: String! isActiv
     </header>
     <section class="post-excerpt">
         <p>Contact type
-GraphQL Schema definition type Contact {email: String telephone: String fax: String web: URI! }Fields email(String):Email.telephone(String):Telephone.fax(String):Fax.web(URI!):Web.
-Require by HotelData: Hotel data <a class="read-more" href="/travelgatex/reference/objects/contact/">&raquo;</a></p>
+GraphQL Schema definition type Contact {  email: String    telephone: String    fax: String    web: URI!   }   Fields email(String): Email.  telephone(String): Telephone.  fax(String): Fax.  web(URI!): Web.  
+Require by HotelData:  Hotel data <a class="read-more" href="/travelgatex/reference/objects/contact/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1689,7 +1689,7 @@ Require by HotelData: Hotel data <a class="read-more" href="/travelgatex/refere
     </header>
     <section class="post-excerpt">
         <p>Criteria of search contains destination, travel dates and the number of pax in each room.
-GraphQL Schema definition type CriteriaSearch {checkIn: Date! checkOut: Date! hotels: [String!]! occupancies: [RoomCriteria!]! language: Language currency: Currency nationality: Country market: String! }Fields checkIn(Date!):Check-in date for the booking. <a class="read-more" href="/travelgatex/reference/objects/criteriasearch/">&raquo;</a></p>
+GraphQL Schema definition type CriteriaSearch {  checkIn: Date!    checkOut: Date!    hotels: [String!]!    occupancies: [RoomCriteria!]!    language: Language    currency: Currency    nationality: Country    market: String!   }   Fields checkIn(Date!): Check-in date for the booking. <a class="read-more" href="/travelgatex/reference/objects/criteriasearch/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1706,7 +1706,7 @@ GraphQL Schema definition type CriteriaSearch {checkIn: Date! checkOut: Dat
         <h2 class="post-title"><a href="/travelgatex/reference/objects/defaultsettings/">DefaultSettings</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type DefaultSettings {connectUser: String! context: String language: Language! currency: Currency! nationality: Country! market: String! timeouts: Timeout! businessRules: BusinessRules! }Fields connectUser(String!):This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload. <a class="read-more" href="/travelgatex/reference/objects/defaultsettings/">&raquo;</a></p>
+        <p>GraphQL Schema definition type DefaultSettings {  connectUser: String!    context: String    language: Language!    currency: Currency!    nationality: Country!    market: String!    timeouts: Timeout!    businessRules: BusinessRules!   }   Fields connectUser(String!): This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload. <a class="read-more" href="/travelgatex/reference/objects/defaultsettings/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1724,8 +1724,8 @@ GraphQL Schema definition type CriteriaSearch {checkIn: Date! checkOut: Dat
     </header>
     <section class="post-excerpt">
         <p>Destination type
-GraphQL Schema definition type Destination {code: String name: String avail: Boolean! }Fields code(String):Destination code.name(String):Destination name.avail(Boolean!):Indicates if it is allowed in availability.
-Require by HotelData: Hotel data <a class="read-more" href="/travelgatex/reference/objects/destination/">&raquo;</a></p>
+GraphQL Schema definition type Destination {  code: String    name: String    avail: Boolean!   }   Fields code(String): Destination code.  name(String): Destination name.  avail(Boolean!): Indicates if it is allowed in availability.  
+Require by HotelData:  Hotel data <a class="read-more" href="/travelgatex/reference/objects/destination/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1743,7 +1743,7 @@ Require by HotelData: Hotel data <a class="read-more" href="/travelgatex/refere
     </header>
     <section class="post-excerpt">
         <p>Application errors
-GraphQL Schema definition type Error {code: String! type: String! description: String! }Fields code(String!):Error codetype(String!):Error typedescription(String!):Error description <a class="read-more" href="/travelgatex/reference/objects/error/">&raquo;</a></p>
+GraphQL Schema definition type Error {  code: String!    type: String!    description: String!   }   Fields code(String!): Error code  type(String!): Error type  description(String!): Error description <a class="read-more" href="/travelgatex/reference/objects/error/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.35" />
+<meta name="generator" content="Hugo 0.30.2" />
 <title>Input objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1576,8 +1576,8 @@
     </header>
     <section class="post-excerpt">
         <p>Contains the time out and business rules of a supplier or an access.
-GraphQL Schema definition type SettingsBaseInput {timeout: Int auditTransactions: Boolean businessRules: BusinessRulesInput }Fields timeout(Int):Milliseconds before the connection is closed.auditTransactions(Boolean):Specifies if transactions exchanged with the supplier have to be logged or not.businessRules(BusinessRulesInput):Business rules.
-Require by SupplierInput: Supplier object. <a class="read-more" href="/travelgatex/reference/inputobjects/settingsbaseinput/">&raquo;</a></p>
+GraphQL Schema definition type SettingsBaseInput {  timeout: Int    auditTransactions: Boolean    businessRules: BusinessRulesInput   }   Fields timeout(Int): Milliseconds before the connection is closed.  auditTransactions(Boolean): Specifies if transactions exchanged with the supplier have to be logged or not.  businessRules(BusinessRulesInput): Business rules.  
+Require by SupplierInput:  Supplier object. <a class="read-more" href="/travelgatex/reference/inputobjects/settingsbaseinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1595,7 +1595,7 @@ Require by SupplierInput: Supplier object. <a class="read-more" href="/travelga
     </header>
     <section class="post-excerpt">
         <p>group related to a supplier
-GraphQL Schema definition type SupplierGroupInput {groupCode: String! isActive: Boolean! }Fields groupCode(String!):group code of the group related to this supplierisActive(Boolean!):Indicates if the supplier is active for its supplier <a class="read-more" href="/travelgatex/reference/inputobjects/suppliergroupinput/">&raquo;</a></p>
+GraphQL Schema definition type SupplierGroupInput {  groupCode: String!    isActive: Boolean!   }   Fields groupCode(String!): group code of the group related to this supplier  isActive(Boolean!): Indicates if the supplier is active for its supplier <a class="read-more" href="/travelgatex/reference/inputobjects/suppliergroupinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1613,7 +1613,7 @@ GraphQL Schema definition type SupplierGroupInput {groupCode: String! isAct
     </header>
     <section class="post-excerpt">
         <p>Supplier object. Contains its own settings, code and access.
-GraphQL Schema definition type SupplierInput {settings: SettingsBaseInput code: String! accesses: [AccessInput!] }Fields settings(SettingsBaseInput):You can configure an special settings for any supplier. This level overwrites the avail settings level but not the access settings level.code(String!):Code that represents a supplier in our system. This information is mandatory. <a class="read-more" href="/travelgatex/reference/inputobjects/supplierinput/">&raquo;</a></p>
+GraphQL Schema definition type SupplierInput {  settings: SettingsBaseInput    code: String!    accesses: [AccessInput!]   }   Fields settings(SettingsBaseInput): You can configure an special settings for any supplier. This level overwrites the avail settings level but not the access settings level.  code(String!): Code that represents a supplier in our system. This information is mandatory. <a class="read-more" href="/travelgatex/reference/inputobjects/supplierinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1630,7 +1630,7 @@ GraphQL Schema definition type SupplierInput {settings: SettingsBaseInput c
         <h2 class="post-title"><a href="/travelgatex/reference/inputobjects/timeoutinput/">TimeoutInput</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type TimeoutInput {search: Int! quote: Int! book: Int! }Fields search(Int!):Milliseconds before the search connection is closed.quote(Int!):Milliseconds before the quote connection is closed.book(Int!):Milliseconds before the book connection is closed.
+        <p>GraphQL Schema definition type TimeoutInput {  search: Int!    quote: Int!    book: Int!   }   Fields search(Int!): Milliseconds before the search connection is closed.  quote(Int!): Milliseconds before the quote connection is closed.  book(Int!): Milliseconds before the book connection is closed.  
 Require by DefaultSettingsInput: <a class="read-more" href="/travelgatex/reference/inputobjects/timeoutinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1648,7 +1648,7 @@ Require by DefaultSettingsInput: <a class="read-more" href="/travelgatex/referen
         <h2 class="post-title"><a href="/travelgatex/reference/inputobjects/updategroupinput/">UpdateGroupInput</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type UpdateGroupInput {api: String! code: String! info: String method: Method! }Fields api(String!):code(String!):info(String):method(Method!): <a class="read-more" href="/travelgatex/reference/inputobjects/updategroupinput/">&raquo;</a></p>
+        <p>GraphQL Schema definition type UpdateGroupInput {  api: String!    code: String!    info: String    method: Method!   }   Fields api(String!):   code(String!):   info(String):   method(Method!): <a class="read-more" href="/travelgatex/reference/inputobjects/updategroupinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1665,7 +1665,7 @@ Require by DefaultSettingsInput: <a class="read-more" href="/travelgatex/referen
         <h2 class="post-title"><a href="/travelgatex/reference/inputobjects/updatememberinput/">UpdateMemberInput</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type UpdateMemberInput {code: String! info: String group: String! roles: [String!]! resource: String! method: Method! }Fields code(String!):info(String):group(String!):roles([String!]!):resource(String!):method(Method!): <a class="read-more" href="/travelgatex/reference/inputobjects/updatememberinput/">&raquo;</a></p>
+        <p>GraphQL Schema definition type UpdateMemberInput {  code: String!    info: String    group: String!    roles: [String!]!    resource: String!    method: Method!   }   Fields code(String!):   info(String):   group(String!):   roles([String!]!):   resource(String!):   method(Method!): <a class="read-more" href="/travelgatex/reference/inputobjects/updatememberinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1683,8 +1683,8 @@ Require by DefaultSettingsInput: <a class="read-more" href="/travelgatex/referen
     </header>
     <section class="post-excerpt">
         <p>Url&rsquo;s
-GraphQL Schema definition type UrlsInput {search: URI quote: URI book: URI generic: URI }Fields search(URI):Specific Url for Availability method.quote(URI):Specific Url for Reservation method.book(URI):Specific Url for Valuation method.generic(URI):Supplier URL used for multiple methods.
-Require by ConfigurationInput: The information and credentials required to access the supplierâ€™s system. <a class="read-more" href="/travelgatex/reference/inputobjects/urlsinput/">&raquo;</a></p>
+GraphQL Schema definition type UrlsInput {  search: URI    quote: URI    book: URI    generic: URI   }   Fields search(URI): Specific Url for Availability method.  quote(URI): Specific Url for Reservation method.  book(URI): Specific Url for Valuation method.  generic(URI): Supplier URL used for multiple methods.  
+Require by ConfigurationInput:  The information and credentials required to access the supplierâ€™s system. <a class="read-more" href="/travelgatex/reference/inputobjects/urlsinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
