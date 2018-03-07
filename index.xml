@@ -1425,8 +1425,7 @@ Require by OrganizationConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/overview/</guid>
-      <description>With GraphQL API you&amp;rsquo;ll have access to all of our products and services through a single endpoint.
-How it works</description>
+      <description>Get access to all of our products and services through a single endpoint API.</description>
     </item>
     
     <item>
@@ -1435,7 +1434,7 @@ How it works</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/overview/</guid>
-      <description>HotelX is the ultimate connectivity solution. Besides enabling you to connect to multiple Sellers, it also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.
+      <description>HotelX is the ultimate connectivity solution. Besides enabling you to connect to multiple Suppliers, it also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.
   Each and every layer discribed in the this figure is explained as follows:
 Business Logic We&amp;rsquo;ve added a new layer of business logic in front of the pure transformation API. A fast, totally scalable and flexible layer, whichh allows you to overwright everything at the request level, or be left as is.</description>
     </item>
@@ -1486,7 +1485,7 @@ Flows HotelX query or mutation determine what flow is executed. Plugins can be e
       
       <guid>/travelgatex/overview/</guid>
       <description>This page provides an overview of travelgateX platform.
-GraphQL Gateway ConnectX is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, visit GraphQL guide.
+GraphQL Gateway TravelgateX is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, visit GraphQL guide.
 The architecture doesn&amp;rsquo;t differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and also handles throttling.</description>
     </item>
     
@@ -2299,8 +2298,19 @@ Just like a RESTful Get method, queries query the system. This operation reads v
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/concepts/</guid>
-      <description>TravelgateX offers a set of Products ready to be integrated using a single GraphQL endpoint. If you&amp;rsquo;re not sure about a specific concept, feel free to check our guide bellow to understand the basic concepts.
-GraphQL API &amp;ldquo;TravelgateX is the first company in the industry travel with an API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs and we faced a lot of problems with that kind technology.</description>
+      <description>TravelgateX offers a set of products ready to be integrated using a single GraphQL. If you&amp;rsquo;re not sure about a specific concept, feel free to check our guide bellow to understand the basic concepts.
+API Gateway &amp;ldquo;TravelgateX is the first company in the industry travel with an API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs and we faced a lot of problems with that kind technology.</description>
+    </item>
+    
+    <item>
+      <title>Frequendly Asked Questions</title>
+      <link>/hotelx/resources/frequently-asked-questions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/resources/frequently-asked-questions/</guid>
+      <description>Search Do I have access to all the hotels in the test environment? No, we use a test supplier, so there is a limited number of hotels in the data base to be used.
+Which are the languages allowed in the new aggregator? The new aggregator allows each language, it will depend from each supplier.
+How many hotels code are allowed to request at the same time? We recommend a maximum of 200 hotels, the new aggregator will split to each supplier the maximum hotels allowed in different batches in order to request to the supplier all the hotels.</description>
     </item>
     
     <item>
