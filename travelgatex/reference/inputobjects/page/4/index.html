@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.37" />
 <title>Input objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1397,11 +1397,6 @@
               <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/resources/frequently-asked-questions/" class="dd-item">
-            <a href="/hotelx/resources/frequently-asked-questions/">
-              <span style="padding-left: 8px;">Frequendly Asked Questions</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
             </ul>
@@ -1583,7 +1578,7 @@
     </header>
     <section class="post-excerpt">
         <p>Settings that you can edit for this avail. Values are loaded by default in our Back Office.
-GraphQL Schema definition type HotelSettingsInput {  context: String    useContext: Boolean    connectUser: String    timeout: Int    auditTransactions: Boolean    businessRules: BusinessRulesInput    suppliers: [SupplierInput!]    plugins: [PluginStepInput!]   }   Fields context(String): Indicates the context of the I/O codes (hotel, board, room and rates)  useContext(Boolean): Indicates if you want use context, or not, by default is true. <a class="read-more" href="/travelgatex/reference/inputobjects/hotelsettingsinput/">&raquo;</a></p>
+GraphQL Schema definition type HotelSettingsInput {context: String useContext: Boolean connectUser: String timeout: Int auditTransactions: Boolean businessRules: BusinessRulesInput suppliers: [SupplierInput!] plugins: [PluginStepInput!] }Fields context(String):Indicates the context of the I/O codes (hotel, board, room and rates)useContext(Boolean):Indicates if you want use context, or not, by default is true. <a class="read-more" href="/travelgatex/reference/inputobjects/hotelsettingsinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1600,7 +1595,7 @@ GraphQL Schema definition type HotelSettingsInput {  context: String    useConte
         <h2 class="post-title"><a href="/travelgatex/reference/inputobjects/idaccessconfigurationinput/">IdAccessConfigurationInput</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type IdAccessConfigurationInput {  id: ID!    isActive: Boolean!    code: String!    supplier: String!    configuration: ConfigurationInput   }   Fields id(ID!): access unique identifier  isActive(Boolean!): Indicates if the access is active.  code(String!): Arbitrary not unique identifier  supplier(String!): Supplier to which this access belongs  configuration(ConfigurationInput): Information required to access the supplier&#39;s system. <a class="read-more" href="/travelgatex/reference/inputobjects/idaccessconfigurationinput/">&raquo;</a></p>
+        <p>GraphQL Schema definition type IdAccessConfigurationInput {id: ID! isActive: Boolean! code: String! supplier: String! configuration: ConfigurationInput }Fields id(ID!):access unique identifierisActive(Boolean!):Indicates if the access is active.code(String!):Arbitrary not unique identifiersupplier(String!):Supplier to which this access belongsconfiguration(ConfigurationInput):Information required to access the supplier&#39;s system. <a class="read-more" href="/travelgatex/reference/inputobjects/idaccessconfigurationinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1617,7 +1612,7 @@ GraphQL Schema definition type HotelSettingsInput {  context: String    useConte
         <h2 class="post-title"><a href="/travelgatex/reference/inputobjects/idgroupaccessinput/">IdGroupAccessInput</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type IdGroupAccessInput {  groupCodes: [String!]    accesses: [IdAccessConfigurationInput!]!   }   Fields groupCodes([String!]): identifier of the groups in which the access will be associated  accesses([IdAccessConfigurationInput!]!): <a class="read-more" href="/travelgatex/reference/inputobjects/idgroupaccessinput/">&raquo;</a></p>
+        <p>GraphQL Schema definition type IdGroupAccessInput {groupCodes: [String!] accesses: [IdAccessConfigurationInput!]! }Fields groupCodes([String!]):identifier of the groups in which the access will be associatedaccesses([IdAccessConfigurationInput!]!): <a class="read-more" href="/travelgatex/reference/inputobjects/idgroupaccessinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1635,7 +1630,7 @@ GraphQL Schema definition type HotelSettingsInput {  context: String    useConte
     </header>
     <section class="post-excerpt">
         <p>Parameters for additional information for the supplier&rsquo;s configuration.
-GraphQL Schema definition type ParameterInput {  key: String!    value: String!   }   Fields key(String!): Contains the keyword/Id to identify a parameter.  value(String!): Contains the parameter values. <a class="read-more" href="/travelgatex/reference/inputobjects/parameterinput/">&raquo;</a></p>
+GraphQL Schema definition type ParameterInput {key: String! value: String! }Fields key(String!):Contains the keyword/Id to identify a parameter.value(String!):Contains the parameter values. <a class="read-more" href="/travelgatex/reference/inputobjects/parameterinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1653,7 +1648,7 @@ GraphQL Schema definition type ParameterInput {  key: String!    value: String! 
     </header>
     <section class="post-excerpt">
         <p>Pax object that contains the pax age.
-GraphQL Schema definition type PaxInput {  age: Int!   }   Fields age(Int!): Pax age. <a class="read-more" href="/travelgatex/reference/inputobjects/paxinput/">&raquo;</a></p>
+GraphQL Schema definition type PaxInput {age: Int! }Fields age(Int!):Pax age. <a class="read-more" href="/travelgatex/reference/inputobjects/paxinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1671,7 +1666,7 @@ GraphQL Schema definition type PaxInput {  age: Int!   }   Fields age(Int!): Pax
     </header>
     <section class="post-excerpt">
         <p>Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information
-GraphQL Schema definition type PaymentCardInput {  cardType: String!    holder: HolderInput!    number: String!    CVC: String!    expire: ExpireDateInput!   }   Fields cardType(String!): Indicates the card type.  holder(HolderInput!): Contains owner&#39;s name  number(String! <a class="read-more" href="/travelgatex/reference/inputobjects/paymentcardinput/">&raquo;</a></p>
+GraphQL Schema definition type PaymentCardInput {cardType: String! holder: HolderInput! number: String! CVC: String! expire: ExpireDateInput! }Fields cardType(String!):Indicates the card type.holder(HolderInput!):Contains owner&#39;s namenumber(String! <a class="read-more" href="/travelgatex/reference/inputobjects/paymentcardinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1689,7 +1684,7 @@ GraphQL Schema definition type PaymentCardInput {  cardType: String!    holder: 
     </header>
     <section class="post-excerpt">
         <p>Plugin to execute.
-GraphQL Schema definition type PluginStepInput {  step: PluginStepType!    pluginsType: [PluginsInput!]   }   Fields step(PluginStepType!): Indicates where the plugin will be executed.  pluginsType([PluginsInput!]): <a class="read-more" href="/travelgatex/reference/inputobjects/pluginstepinput/">&raquo;</a></p>
+GraphQL Schema definition type PluginStepInput {step: PluginStepType! pluginsType: [PluginsInput!] }Fields step(PluginStepType!):Indicates where the plugin will be executed.pluginsType([PluginsInput!]): <a class="read-more" href="/travelgatex/reference/inputobjects/pluginstepinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1707,7 +1702,7 @@ GraphQL Schema definition type PluginStepInput {  step: PluginStepType!    plugi
     </header>
     <section class="post-excerpt">
         <p>Plugin to execute.
-GraphQL Schema definition type PluginsInput {  type: PluginType!    name: String!    parameters: [ParameterInput!]   }   Fields type(PluginType!): type of the plugins to execute  name(String!): name of plugin to execute  parameters([ParameterInput!]): Plugin&#39;s parameters <a class="read-more" href="/travelgatex/reference/inputobjects/pluginsinput/">&raquo;</a></p>
+GraphQL Schema definition type PluginsInput {type: PluginType! name: String! parameters: [ParameterInput!] }Fields type(PluginType!):type of the plugins to executename(String!):name of plugin to executeparameters([ParameterInput!]):Plugin&#39;s parameters <a class="read-more" href="/travelgatex/reference/inputobjects/pluginsinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1725,7 +1720,7 @@ GraphQL Schema definition type PluginsInput {  type: PluginType!    name: String
     </header>
     <section class="post-excerpt">
         <p>If requested, only options with the specified rateRules will be returned
-GraphQL Schema definition type RateRulesFilterInput {  includes: [RateRulesType!]    excludes: [RateRulesType!]   }   Fields includes([RateRulesType!]): if includes not nil: only options without rate rules and options with rate rules found in includes will be returned  excludes([RateRulesType!]): if excludes not nil: only options without rate rules and options with rate rules that haven&#39;t been sent in excludes will be returned <a class="read-more" href="/travelgatex/reference/inputobjects/raterulesfilterinput/">&raquo;</a></p>
+GraphQL Schema definition type RateRulesFilterInput {includes: [RateRulesType!] excludes: [RateRulesType!] }Fields includes([RateRulesType!]):if includes not nil: only options without rate rules and options with rate rules found in includes will be returnedexcludes([RateRulesType!]):if excludes not nil: only options without rate rules and options with rate rules that haven&#39;t been sent in excludes will be returned <a class="read-more" href="/travelgatex/reference/inputobjects/raterulesfilterinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1743,7 +1738,7 @@ GraphQL Schema definition type RateRulesFilterInput {  includes: [RateRulesType!
     </header>
     <section class="post-excerpt">
         <p>Occupancy for a room. It contains a list of pax ages.
-GraphQL Schema definition type RoomInput {  paxes: [PaxInput!]!   }   Fields paxes([PaxInput!]!): Array of pax ages. The number of items in the array will indicate the pax occupancy. <a class="read-more" href="/travelgatex/reference/inputobjects/roominput/">&raquo;</a></p>
+GraphQL Schema definition type RoomInput {paxes: [PaxInput!]! }Fields paxes([PaxInput!]!):Array of pax ages. The number of items in the array will indicate the pax occupancy. <a class="read-more" href="/travelgatex/reference/inputobjects/roominput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

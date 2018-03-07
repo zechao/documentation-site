@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.37" />
 <title>Input objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1397,11 +1397,6 @@
               <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/resources/frequently-asked-questions/" class="dd-item">
-            <a href="/hotelx/resources/frequently-asked-questions/">
-              <span style="padding-left: 8px;">Frequendly Asked Questions</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
             </ul>
@@ -1583,8 +1578,8 @@
     </header>
     <section class="post-excerpt">
         <p>The card expiration date
-GraphQL Schema definition type ExpireDateInput {  month: Int!    year: Int!   }   Fields month(Int!): Month MM  year(Int!): Year yy  
-Require by PaymentCardInput:  Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information <a class="read-more" href="/travelgatex/reference/inputobjects/expiredateinput/">&raquo;</a></p>
+GraphQL Schema definition type ExpireDateInput {month: Int! year: Int! }Fields month(Int!):Month MMyear(Int!):Year yy
+Require by PaymentCardInput: Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information <a class="read-more" href="/travelgatex/reference/inputobjects/expiredateinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1602,7 +1597,7 @@ Require by PaymentCardInput:  Input PaymentCard, if the payment is done by credi
     </header>
     <section class="post-excerpt">
         <p>Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses. You must choose one of them, include or exclude, or the other alternative isn&rsquo;t specified anything. If input both, you will receive a validation error that indicates this error.
-GraphQL Schema definition type FilterInput {  access: AccessFilterInput    rateRules: RateRulesFilterInput   }   Fields access(AccessFilterInput): You can specify one of the filters or any of them. <a class="read-more" href="/travelgatex/reference/inputobjects/filterinput/">&raquo;</a></p>
+GraphQL Schema definition type FilterInput {access: AccessFilterInput rateRules: RateRulesFilterInput }Fields access(AccessFilterInput):You can specify one of the filters or any of them. <a class="read-more" href="/travelgatex/reference/inputobjects/filterinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1619,7 +1614,7 @@ GraphQL Schema definition type FilterInput {  access: AccessFilterInput    rateR
         <h2 class="post-title"><a href="/travelgatex/reference/inputobjects/groupaccessinput/">GroupAccessInput</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type GroupAccessInput {  groupCodes: [String!]    accesses: [AccessConfigurationInput!]!   }   Fields groupCodes([String!]): groups identifiers in which the access will be associated  accesses([AccessConfigurationInput!]!): access related data <a class="read-more" href="/travelgatex/reference/inputobjects/groupaccessinput/">&raquo;</a></p>
+        <p>GraphQL Schema definition type GroupAccessInput {groupCodes: [String!] accesses: [AccessConfigurationInput!]! }Fields groupCodes([String!]):groups identifiers in which the access will be associatedaccesses([AccessConfigurationInput!]!):access related data <a class="read-more" href="/travelgatex/reference/inputobjects/groupaccessinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1637,8 +1632,8 @@ GraphQL Schema definition type FilterInput {  access: AccessFilterInput    rateR
     </header>
     <section class="post-excerpt">
         <p>Holder object that contains the pax name and surname.
-GraphQL Schema definition type HolderInput {  name: String!    surname: String!   }   Fields name(String!): The card holder&#39;s name  surname(String!): The card holder&#39;s surname  
-Require by HotelBookInput:  Criteria of book.  PaymentCardInput:  Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information <a class="read-more" href="/travelgatex/reference/inputobjects/holderinput/">&raquo;</a></p>
+GraphQL Schema definition type HolderInput {name: String! surname: String! }Fields name(String!):The card holder&#39;s namesurname(String!):The card holder&#39;s surname
+Require by HotelBookInput: Criteria of book.PaymentCardInput: Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information <a class="read-more" href="/travelgatex/reference/inputobjects/holderinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1656,7 +1651,7 @@ Require by HotelBookInput:  Criteria of book.  PaymentCardInput:  Input PaymentC
     </header>
     <section class="post-excerpt">
         <p>Criteria of book.
-GraphQL Schema definition type HotelBookInput {  optionRefId: String!    language: Language    clientReference: String!    deltaPrice: DeltaPriceInput    paymentCard: PaymentCardInput    remarks: String    holder: HolderInput!    rooms: [BookRoomInput!]!   }   Fields optionRefId(String!): Option ID  language(Language): Language to be used in request.  clientReference(String!): Booking ID in client&#39;s system. <a class="read-more" href="/travelgatex/reference/inputobjects/hotelbookinput/">&raquo;</a></p>
+GraphQL Schema definition type HotelBookInput {optionRefId: String! language: Language clientReference: String! deltaPrice: DeltaPriceInput paymentCard: PaymentCardInput remarks: String holder: HolderInput! rooms: [BookRoomInput!]! }Fields optionRefId(String!):Option IDlanguage(Language):Language to be used in request.clientReference(String!):Booking ID in client&#39;s system. <a class="read-more" href="/travelgatex/reference/inputobjects/hotelbookinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1674,7 +1669,7 @@ GraphQL Schema definition type HotelBookInput {  optionRefId: String!    languag
     </header>
     <section class="post-excerpt">
         <p>Cancellation Criteria.
-GraphQL Schema definition type HotelCancelInput {  accessCode: String!    language: Language    hotelCode: String!    reference: BookReferenceInput!   }   Fields accessCode(String!): The name of the access to use in the request.  language(Language): The language code.  hotelCode(String!): The hotel code.  reference(BookReferenceInput!): Contains the client reference and/or supplier reference. One of them is mandatory. <a class="read-more" href="/travelgatex/reference/inputobjects/hotelcancelinput/">&raquo;</a></p>
+GraphQL Schema definition type HotelCancelInput {accessCode: String! language: Language hotelCode: String! reference: BookReferenceInput! }Fields accessCode(String!):The name of the access to use in the request.language(Language):The language code.hotelCode(String!):The hotel code.reference(BookReferenceInput!):Contains the client reference and/or supplier reference. One of them is mandatory. <a class="read-more" href="/travelgatex/reference/inputobjects/hotelcancelinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1692,7 +1687,7 @@ GraphQL Schema definition type HotelCancelInput {  accessCode: String!    langua
     </header>
     <section class="post-excerpt">
         <p>Criteria of book contains basic information to find a book or books.
-GraphQL Schema definition type HotelCriteriaBookingInput {  accessCode: String!    language: Language    typeSearch: BookingCriteriaType!    references: CriteriaBookingReferencesInput    dates: CriteriaBookingDatesInput   }   Fields accessCode(String!): Name of the access that have to use in the request.  language(Language): The language code.  typeSearch(BookingCriteriaType!): The search type criteria. <a class="read-more" href="/travelgatex/reference/inputobjects/hotelcriteriabookinginput/">&raquo;</a></p>
+GraphQL Schema definition type HotelCriteriaBookingInput {accessCode: String! language: Language typeSearch: BookingCriteriaType! references: CriteriaBookingReferencesInput dates: CriteriaBookingDatesInput }Fields accessCode(String!):Name of the access that have to use in the request.language(Language):The language code.typeSearch(BookingCriteriaType!):The search type criteria. <a class="read-more" href="/travelgatex/reference/inputobjects/hotelcriteriabookinginput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1710,7 +1705,7 @@ GraphQL Schema definition type HotelCriteriaBookingInput {  accessCode: String! 
     </header>
     <section class="post-excerpt">
         <p>The quote criteria contains the option reference id, block and language.
-GraphQL Schema definition type HotelCriteriaQuoteInput {  optionRefId: String!    language: Language   }   Fields optionRefId(String!): Identifier of the option chosen in the search.  language(Language): Language to be used in request. <a class="read-more" href="/travelgatex/reference/inputobjects/hotelcriteriaquoteinput/">&raquo;</a></p>
+GraphQL Schema definition type HotelCriteriaQuoteInput {optionRefId: String! language: Language }Fields optionRefId(String!):Identifier of the option chosen in the search.language(Language):Language to be used in request. <a class="read-more" href="/travelgatex/reference/inputobjects/hotelcriteriaquoteinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1728,7 +1723,7 @@ GraphQL Schema definition type HotelCriteriaQuoteInput {  optionRefId: String!  
     </header>
     <section class="post-excerpt">
         <p>Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.
-GraphQL Schema definition type HotelCriteriaSearchInput {  checkIn: Date!    checkOut: Date!    hotels: [String!]!    occupancies: [RoomInput!]!    language: Language    currency: Currency    nationality: Country    market: String   }   Fields checkIn(Date! <a class="read-more" href="/travelgatex/reference/inputobjects/hotelcriteriasearchinput/">&raquo;</a></p>
+GraphQL Schema definition type HotelCriteriaSearchInput {checkIn: Date! checkOut: Date! hotels: [String!]! occupancies: [RoomInput!]! language: Language currency: Currency nationality: Country market: String }Fields checkIn(Date! <a class="read-more" href="/travelgatex/reference/inputobjects/hotelcriteriasearchinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1745,7 +1740,7 @@ GraphQL Schema definition type HotelCriteriaSearchInput {  checkIn: Date!    che
         <h2 class="post-title"><a href="/travelgatex/reference/inputobjects/hotelinput/">HotelInput</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type HotelInput {  codes: [ID!]    language: Language   }   Fields codes([ID!]):   language(Language): <a class="read-more" href="/travelgatex/reference/inputobjects/hotelinput/">&raquo;</a></p>
+        <p>GraphQL Schema definition type HotelInput {codes: [ID!] language: Language }Fields codes([ID!]):language(Language): <a class="read-more" href="/travelgatex/reference/inputobjects/hotelinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

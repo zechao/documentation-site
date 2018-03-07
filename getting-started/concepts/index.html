@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.37" />
 <title>Concepts :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1395,11 +1395,6 @@
               <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/resources/frequently-asked-questions/" class="dd-item">
-            <a href="/hotelx/resources/frequently-asked-questions/">
-              <span style="padding-left: 8px;">Frequendly Asked Questions</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
             </ul>
@@ -1561,57 +1556,49 @@
 
     
 
-<p>TravelgateX offers a set of products ready to be integrated using a single GraphQL. If you&rsquo;re not sure about a specific concept, feel free to check our guide bellow to understand the basic concepts.</p>
+<p>TravelgateX offers a set of <a href="/products">Products</a> ready to be integrated using a single <a href="/graphql-api/">GraphQL</a> endpoint. If you&rsquo;re not sure about a specific concept, feel free to check our guide bellow to understand the basic concepts.</p>
 
-<h3 id="api-gateway">API Gateway</h3>
+<h3 id="graphql-api">GraphQL API</h3>
 
 <p>&ldquo;TravelgateX is the first company in the industry travel with an API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs and we faced a lot of problems with that kind technology. The benefit of using GraphQL, is that each client is ultimately responsible over what it wants to be returned.</p>
 
-<p>It is a stable, secure and fault tolerant load balanced between many datacenters from four different cloud providers: <a href="https://azure.microsoft.com/">Microsoft Azure</a>, <a href="https://cloud.google.com/">Google Cloud Platform</a>, <a href="https://www.hetzner.de/">Hetzner</a> and <a href="http://totaluptime.com/">TotalUptime</a>. If you&rsquo;re looking for more detailed <a href="/learning-graphql/overview/#graphql-at-travelgatex">analysis on GraphQL</a> please have a look at our guide on <a href="/travelgatex/overview">how to use TravelgateX GraphQL API</a>.&rdquo;</p>
-
-<h3 id="product">Product</h3>
-
-<p>A <code>Product</code> is an API domain which is available for the consumption of <code>Resources</code>. We organize our APIs by similarity and common features.</p>
-
-<h3 id="entities">Entities</h3>
-
-<p><code>Entities</code> or core resources are entities that define common objects in all our API domains.</p>
+<p>It is a stable, secure and fault tolerant load balanced between many datacenters from four different cloud providers: <a href="https://azure.microsoft.com/">Microsoft Azure</a>, <a href="https://cloud.google.com/">Google Cloud Platform</a>, <a href="https://www.hetzner.de/">Hetzner</a> and <a href="http://totaluptime.com/">TotalUptime</a>. If you&rsquo;re looking for more detailed <a href="/learning-graphql/overview/#graphql-at-travelgatex">analysis on GraphQL</a> please have a look at our guide on <a href="/getting-started/api/">how to use TravelgateX GraphQL API</a>.&rdquo;</p>
 
 <h3 id="partner">Partner</h3>
 
-<p>A <code>Partner</code> can interact with TravelgateX API with a <code>User</code> identifying a person or a <code>Service Account</code> identifying an application.</p>
+<p>A <code>Partner</code> can be either a <code>User</code> identifying a person or a <code>Service Account</code> identified by an API Key. Both of them interact with any TravelgateX APIs or apps.</p>
 
 <h3 id="organization">Organization</h3>
 
 <p>An <code>Organization</code> is made up of <a href="#Partner"><code>Partners</code></a> (they can belong to one or more organizations), <code>Resources</code>, <code>Settings</code>, <code>Permissions</code> and other <code>Metadata</code>.</p>
 
-<h3 id="profile">Profile</h3>
+<h3 id="product">Product</h3>
 
-<p><code>Organization</code> use profiles for <code>Partner</code> interaction.</p>
+<p>A <code>Product</code> is an API domain which is available for the consumption of <code>Resources</code>. We organize our APIs by similarity and common features. If you wish to read more about its features visit the <a href="/products">Product guide</a>.</p>
+
+<h3 id="entities">Entities</h3>
+
+<p><code>Entities</code> or core resources are entities that define common objects in all our API domains.</p>
 
 <h3 id="buyer">Buyer</h3>
 
-<p>A <code>Buyer</code> is a <code>Profile</code> who is connected to TravelgateX in the demand side in order to <strong>buy</strong> travel products from <code>Sellers</code>.</p>
+<p>A <code>Buyer</code> is a <code>Partner</code> who is connected to TravelgateX in the demand side in order to <strong>buy</strong> travel products from <code>Sellers</code>.</p>
 
-<h3 id="seller">Seller</h3>
+<h3 id="provider">Provider</h3>
 
-<p>A <code>Seller</code> is a <code>Profile</code> who is connected to TravelgateX in the offering side in order to <strong>sell</strong> travel products to <code>Buyers</code>.</p>
+<p>A <code>Provider</code> is a <code>Partner</code> who is connected to TravelgateX on the supply side in order to <strong>sell their product</strong> to connected <code>Buyers</code>Ma.</p>
 
-<h3 id="supplier">Supplier</h3>
+<h3 id="tech-platform">Tech Platform</h3>
 
-<p>A <code>Supplier</code> is a <code>Partner</code> who is connected to TravelgateX on the supply side in order to <strong>sell their product</strong> to connected <code>Buyers</code>.</p>
-
-<h3 id="platform">Platform</h3>
-
-<p>Many  <code>Buyers</code> or <code>Providers</code> use a third party platform in order to <strong>buy or sell travel products</strong>. These are usually tech companies specialized in developing custom software for other companies.</p>
+<p>Many <code>Partners</code>, <code>Buyers</code> or <code>Providers</code> use a third party platform in order to <strong>buy or sell travel products</strong>. These are usually tech companies specialized in developing custom software for other companies.</p>
 
 <h3 id="context">Context</h3>
 
-<p>A <code>Context</code> refers to the <code>Supplier</code> codes the request is using. It&rsquo;s a way of specifiying which <code>Supplier</code> codes is being used so it can be transformed and standardized.</p>
+<p>A <code>Context</code> refers to the <code>Provider</code> codes the request is using. It&rsquo;s a way of specifiying which <code>Provider</code> codes is being used so it can be transformed and standardized.</p>
 
 <h3 id="access">Access</h3>
 
-<p>An <code>Access</code> is a <strong>set of credentials and configuration</strong> in order to access a <code>Supplier</code>.</p>
+<p>An <code>Access</code> is a <strong>set of credentials and configuration</strong> in order to access a <code>Provider</code>.</p>
 
 
 <hr/>
@@ -1646,16 +1633,14 @@
 <ul>
 <li>
 <ul>
-<li><a href="#api-gateway">API Gateway</a></li>
-<li><a href="#product">Product</a></li>
-<li><a href="#entities">Entities</a></li>
+<li><a href="#graphql-api">GraphQL API</a></li>
 <li><a href="#partner">Partner</a></li>
 <li><a href="#organization">Organization</a></li>
-<li><a href="#profile">Profile</a></li>
+<li><a href="#product">Product</a></li>
+<li><a href="#entities">Entities</a></li>
 <li><a href="#buyer">Buyer</a></li>
-<li><a href="#seller">Seller</a></li>
-<li><a href="#supplier">Supplier</a></li>
-<li><a href="#platform">Platform</a></li>
+<li><a href="#provider">Provider</a></li>
+<li><a href="#tech-platform">Tech Platform</a></li>
 <li><a href="#context">Context</a></li>
 <li><a href="#access">Access</a></li>
 </ul></li>

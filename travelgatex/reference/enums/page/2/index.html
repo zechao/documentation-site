@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.37" />
 <title>Enums :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1397,11 +1397,6 @@
               <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/resources/frequently-asked-questions/" class="dd-item">
-            <a href="/hotelx/resources/frequently-asked-questions/">
-              <span style="padding-left: 8px;">Frequendly Asked Questions</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
             </ul>
@@ -1580,7 +1575,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/enums/membertype/">MemberType</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition  enum MemberType{   USER,    SERVICE_ACCOUNT,   }   Require by CreateMemberInput: <a class="read-more" href="/travelgatex/reference/enums/membertype/">&raquo;</a></p>
+        <p>GraphQL Schema definition enumMemberType{USER,SERVICE_ACCOUNT,}  Require by CreateMemberInput: <a class="read-more" href="/travelgatex/reference/enums/membertype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1597,7 +1592,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/enums/method/">Method</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition  enum Method{   ADD,    DEL,   }   Require by UpdateMemberInput:    UpdateGroupInput: <a class="read-more" href="/travelgatex/reference/enums/method/">&raquo;</a></p>
+        <p>GraphQL Schema definition enumMethod{ADD,DEL,}  Require by UpdateMemberInput: UpdateGroupInput: <a class="read-more" href="/travelgatex/reference/enums/method/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1615,7 +1610,7 @@
     </header>
     <section class="post-excerpt">
         <p>Options payment type
-GraphQL Schema definition  enum PaymentType{   MERCHANT,    DIRECT,    CARD_BOOKING,    CARD_CHECK_IN,   }   Require by HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description. <a class="read-more" href="/travelgatex/reference/enums/paymenttype/">&raquo;</a></p>
+GraphQL Schema definition enumPaymentType{MERCHANT,DIRECT,CARD_BOOKING,CARD_CHECK_IN,}  Require by HotelOptionSearch: An option includes hotel information, meal plan, total price, conditions and room description. <a class="read-more" href="/travelgatex/reference/enums/paymenttype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1633,7 +1628,7 @@ GraphQL Schema definition  enum PaymentType{   MERCHANT,    DIRECT,    CARD_BOOK
     </header>
     <section class="post-excerpt">
         <p>Plugin Step Type
-GraphQL Schema definition  enum PluginStepType{   REQUEST,    REQUEST_ACCESS,    RESPONSE_OPTION,    RESPONSE_ACCESS,    RESPONSE,   }   Require by PluginStepInput:  Plugin to execute. <a class="read-more" href="/travelgatex/reference/enums/pluginsteptype/">&raquo;</a></p>
+GraphQL Schema definition enumPluginStepType{REQUEST,REQUEST_ACCESS,RESPONSE_OPTION,RESPONSE_ACCESS,RESPONSE,}  Require by PluginStepInput: Plugin to execute. <a class="read-more" href="/travelgatex/reference/enums/pluginsteptype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1651,7 +1646,7 @@ GraphQL Schema definition  enum PluginStepType{   REQUEST,    REQUEST_ACCESS,   
     </header>
     <section class="post-excerpt">
         <p> Price Type
-GraphQL Schema definition  enum PriceType{   GROSS,    NET,    AMOUNT,   }    <a class="read-more" href="/travelgatex/reference/enums/pricetype/">&raquo;</a></p>
+GraphQL Schema definition enumPriceType{GROSS,NET,AMOUNT,}   <a class="read-more" href="/travelgatex/reference/enums/pricetype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1669,7 +1664,7 @@ GraphQL Schema definition  enum PriceType{   GROSS,    NET,    AMOUNT,   }    <a
     </header>
     <section class="post-excerpt">
         <p> Rate Rules
-GraphQL Schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,   }    <a class="read-more" href="/travelgatex/reference/enums/raterulestype/">&raquo;</a></p>
+GraphQL Schema definition enumRateRulesType{PACKAGE,OLDER55,OLDER60,OLDER65,CANARY_RESIDENT,BALEARIC_RESIDENT,LARGE_FAMILY,HONEYMOON,PUBLIC_SERVANT,UNEMPLOYED,}   <a class="read-more" href="/travelgatex/reference/enums/raterulestype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1687,7 +1682,7 @@ GraphQL Schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60
     </header>
     <section class="post-excerpt">
         <p> Service Type
-GraphQL Schema definition  enum ServiceType{   SKI_PASS,   }    <a class="read-more" href="/travelgatex/reference/enums/servicetype/">&raquo;</a></p>
+GraphQL Schema definition enumServiceType{SKI_PASS,}   <a class="read-more" href="/travelgatex/reference/enums/servicetype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1705,7 +1700,7 @@ GraphQL Schema definition  enum ServiceType{   SKI_PASS,   }    <a class="read-m
     </header>
     <section class="post-excerpt">
         <p>Options status
-GraphQL Schema definition  enum StatusType{   OK,    RQ,   }   Require by HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description.  HotelOptionQuote:  Contains information about quote. <a class="read-more" href="/travelgatex/reference/enums/statustype/">&raquo;</a></p>
+GraphQL Schema definition enumStatusType{OK,RQ,}  Require by HotelOptionSearch: An option includes hotel information, meal plan, total price, conditions and room description.HotelOptionQuote: Contains information about quote. <a class="read-more" href="/travelgatex/reference/enums/statustype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1723,7 +1718,7 @@ GraphQL Schema definition  enum StatusType{   OK,    RQ,   }   Require by HotelO
     </header>
     <section class="post-excerpt">
         <p>Supplement Type
-GraphQL Schema definition  enum SupplementType{   SKI_PASS,    LESSONS,    MEALS,    EQUIPMENT,    TICKET,    TRANSFERS,    GALA,    ACTIVITY,   }   Require by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement. <a class="read-more" href="/travelgatex/reference/enums/supplementtype/">&raquo;</a></p>
+GraphQL Schema definition enumSupplementType{SKI_PASS,LESSONS,MEALS,EQUIPMENT,TICKET,TRANSFERS,GALA,ACTIVITY,}  Require by Supplement: Supplement that it can be or its already added to the option returned. Contains all the information about the supplement. <a class="read-more" href="/travelgatex/reference/enums/supplementtype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1741,7 +1736,7 @@ GraphQL Schema definition  enum SupplementType{   SKI_PASS,    LESSONS,    MEALS
     </header>
     <section class="post-excerpt">
         <p>Unit Time Type
-GraphQL Schema definition  enum UnitTimeType{   DAY,    HOUR,   }   Require by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement. <a class="read-more" href="/travelgatex/reference/enums/unittimetype/">&raquo;</a></p>
+GraphQL Schema definition enumUnitTimeType{DAY,HOUR,}  Require by Supplement: Supplement that it can be or its already added to the option returned. Contains all the information about the supplement. <a class="read-more" href="/travelgatex/reference/enums/unittimetype/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

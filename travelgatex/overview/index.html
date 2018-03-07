@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.37" />
 <title>Overview :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1395,11 +1395,6 @@
               <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/resources/frequently-asked-questions/" class="dd-item">
-            <a href="/hotelx/resources/frequently-asked-questions/">
-              <span style="padding-left: 8px;">Frequendly Asked Questions</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
             </ul>
@@ -1565,7 +1560,7 @@
 
 <h2 id="graphql-gateway">GraphQL Gateway</h2>
 
-<p><strong>TravelgateX</strong> is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, <a href="/learning-graphql/overview/#graphql-at-travelgatex">visit GraphQL guide</a>.</p>
+<p><strong>ConnectX</strong> is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, <a href="/learning-graphql/overview/#graphql-at-travelgatex">visit GraphQL guide</a>.</p>
 
 <p>The architecture doesn&rsquo;t differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and also handles throttling. On the other hand, Analytics is also an important part in the gateway.</p>
 
@@ -1615,25 +1610,37 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
    POST\
    -H &quot;Content-Type: application/json&quot; \
    -H &quot;Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;  \
-   --data '{&quot;query&quot;:&quot;{hotelX{searchStatusService{code description}}}&quot;}' \
+   --data '{&quot;query&quot;:&quot;{searchStatusService{code description}}&quot;}' \
    --compressed \
    https://api.travelgatex.com
 </code></pre>
 
-<h2 id="graph-reference">Graph Reference</h2>
+<h2 id="viewing-the-graph">Viewing the Graph</h2>
 
-<p>There are several ways to know about our graph:</p>
+<p><a href="https://api.travelgatex.com/voyager">Graphql-voyager</a> displays <a href="https://api.travelgatex.com">our GraphQL API</a> in an interactive graph to help you understand its structure.</p>
 
+<blockquote>
 <ul>
-<li><a href="/travelgatex/reference/">Reference Documentation</a> renders TravelgateX graph in a pretty HTML documentation.</li>
-<li><a href="https://api.travelgatex.com">Schema Definition</a> allows interactive, multi-column schema documentation.</li>
-<li><a href="https://api.travelgatex.com/voyager">Graphql-voyager</a> displays <a href="https://api.travelgatex.com">our GraphQL API</a> in an interactive graph to help you understand its structure.</li>
+<li>Quick navigation on graph</li>
+<li>Left panel which provides more detailed information about every type</li>
+<li>&ldquo;Skip Relay&rdquo; option that simplifies graph by removing Relay wrapper classes</li>
+<li>Ability to choose any type to be a root of the graph</li>
 </ul>
+</blockquote>
+
+
+<figure>
+    <a href="https://api.travelgatex.com/voyager">
+        <img src="/images/voyager.gif" alt="TravelgateX Schema Documentation" />
+    </a>
+    
+</figure>
+
 
 <h2 id="examples">Examples</h2>
 
 <p>We share <a href="https://github.com/graphcool/graphql-playground">GraphQL Playgrounds</a> with common scenarios using products.
-Playgrounds are shared per product, for example you can use <a href="https://graphqlbin.com/JYRtB">HotelX Hotel Playground</a></p>
+Playgrounds are shared in <a href="/product/">product</a> reference sections, for example you can use <a href="https://graphqlbin.com/JYRtB">ConnectX Hotel Playground</a></p>
 
 <p>Keep in mind that it&rsquo;s important to use the correct Headers. If you wish to use test headers, insert <code>&quot;Authorization&quot;:&quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;</code></p>
 
@@ -1649,7 +1656,7 @@ Playgrounds are shared per product, for example you can use <a href="https://gra
 <li><a href="/getting-started/security/#Authentication">Token Based Authentication</a></li>
 </ul>
 
-<h3 id="relay-implementation">Relay Implementation</h3>
+<h2 id="relay-implementation">Relay Implementation</h2>
 
 <p>TravelgateX uses <a href="https://facebook.github.io/relay/">Relay</a> schema requirements for its own Resources. Other resources, such as <em>Seller search response</em>, are not modeled with Relay practices.</p>
 
@@ -1697,12 +1704,10 @@ Playgrounds are shared per product, for example you can use <a href="https://gra
 <li><a href="#graphql-endpoint">GraphQL Endpoint</a></li>
 <li><a href="#communicating-with-the-server">Communicating with the Server</a></li>
 <li><a href="#making-requests">Making Requests</a></li>
-<li><a href="#graph-reference">Graph Reference</a></li>
+<li><a href="#viewing-the-graph">Viewing the Graph</a></li>
 <li><a href="#examples">Examples</a></li>
-<li><a href="#conventions">Conventions</a>
-<ul>
+<li><a href="#conventions">Conventions</a></li>
 <li><a href="#relay-implementation">Relay Implementation</a></li>
-</ul></li>
 </ul></li>
 </ul>
 </nav>

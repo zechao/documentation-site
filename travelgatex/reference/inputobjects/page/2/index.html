@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.37" />
 <title>Input objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1397,11 +1397,6 @@
               <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/resources/frequently-asked-questions/" class="dd-item">
-            <a href="/hotelx/resources/frequently-asked-questions/">
-              <span style="padding-left: 8px;">Frequendly Asked Questions</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
             </ul>
@@ -1583,7 +1578,7 @@
     </header>
     <section class="post-excerpt">
         <p>group related to a connect user
-GraphQL Schema definition type ConnectUserGroupInput {  groupCode: String!    isActive: Boolean!   }   Fields groupCode(String!): group code of the group related to this connect user  isActive(Boolean!): Indicates if the connect user is active for its connect user <a class="read-more" href="/travelgatex/reference/inputobjects/connectusergroupinput/">&raquo;</a></p>
+GraphQL Schema definition type ConnectUserGroupInput {groupCode: String! isActive: Boolean! }Fields groupCode(String!):group code of the group related to this connect userisActive(Boolean!):Indicates if the connect user is active for its connect user <a class="read-more" href="/travelgatex/reference/inputobjects/connectusergroupinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1600,7 +1595,7 @@ GraphQL Schema definition type ConnectUserGroupInput {  groupCode: String!    is
         <h2 class="post-title"><a href="/travelgatex/reference/inputobjects/creategroupinput/">CreateGroupInput</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type CreateGroupInput {  code: String!    type: GroupType!    info: String    parent: ID!    template: Template   }   Fields code(String!):   type(GroupType!):   info(String):   parent(ID!):   template(Template): <a class="read-more" href="/travelgatex/reference/inputobjects/creategroupinput/">&raquo;</a></p>
+        <p>GraphQL Schema definition type CreateGroupInput {code: String! type: GroupType! info: String parent: ID! template: Template }Fields code(String!):type(GroupType!):info(String):parent(ID!):template(Template): <a class="read-more" href="/travelgatex/reference/inputobjects/creategroupinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1617,7 +1612,7 @@ GraphQL Schema definition type ConnectUserGroupInput {  groupCode: String!    is
         <h2 class="post-title"><a href="/travelgatex/reference/inputobjects/creatememberinput/">CreateMemberInput</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type CreateMemberInput {  code: String    info: String    type: MemberType!    group: String!    roles: [String!]!    resource: String!   }   Fields code(String):   info(String):   type(MemberType!):   group(String!):   roles([String!]!):   resource(String!): <a class="read-more" href="/travelgatex/reference/inputobjects/creatememberinput/">&raquo;</a></p>
+        <p>GraphQL Schema definition type CreateMemberInput {code: String info: String type: MemberType! group: String! roles: [String!]! resource: String! }Fields code(String):info(String):type(MemberType!):group(String!):roles([String!]!):resource(String!): <a class="read-more" href="/travelgatex/reference/inputobjects/creatememberinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1635,8 +1630,8 @@ GraphQL Schema definition type ConnectUserGroupInput {  groupCode: String!    is
     </header>
     <section class="post-excerpt">
         <p>Criteria by dates
-GraphQL Schema definition type CriteriaBookingDatesInput {  dateType: DateType!    start: Date!    end: Date!   }   Fields dateType(DateType!): Type of date. Can be Arrival or Booking date.  start(Date!): Start date. Format: yyyy-MM-dd.  end(Date!): End date. Format: yyyy-MM-dd.  
-Require by HotelCriteriaBookingInput:  Criteria of book contains basic information to find a book or books. <a class="read-more" href="/travelgatex/reference/inputobjects/criteriabookingdatesinput/">&raquo;</a></p>
+GraphQL Schema definition type CriteriaBookingDatesInput {dateType: DateType! start: Date! end: Date! }Fields dateType(DateType!):Type of date. Can be Arrival or Booking date.start(Date!):Start date. Format: yyyy-MM-dd.end(Date!):End date. Format: yyyy-MM-dd.
+Require by HotelCriteriaBookingInput: Criteria of book contains basic information to find a book or books. <a class="read-more" href="/travelgatex/reference/inputobjects/criteriabookingdatesinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1654,8 +1649,8 @@ Require by HotelCriteriaBookingInput:  Criteria of book contains basic informati
     </header>
     <section class="post-excerpt">
         <p>Criteria by references
-GraphQL Schema definition type CriteriaBookingReferencesInput {  hotelCode: String!    currency: Currency!    references: [BookReferenceInput!]!   }   Fields hotelCode(String!): The hotel code.  currency(Currency!): The requested currency. The API will convert to this currency if supplier returns a different one.  references([BookReferenceInput!]!): Contains the client reference and/or supplier reference.  
-Require by HotelCriteriaBookingInput:  Criteria of book contains basic information to find a book or books. <a class="read-more" href="/travelgatex/reference/inputobjects/criteriabookingreferencesinput/">&raquo;</a></p>
+GraphQL Schema definition type CriteriaBookingReferencesInput {hotelCode: String! currency: Currency! references: [BookReferenceInput!]! }Fields hotelCode(String!):The hotel code.currency(Currency!):The requested currency. The API will convert to this currency if supplier returns a different one.references([BookReferenceInput!]!):Contains the client reference and/or supplier reference.
+Require by HotelCriteriaBookingInput: Criteria of book contains basic information to find a book or books. <a class="read-more" href="/travelgatex/reference/inputobjects/criteriabookingreferencesinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1673,7 +1668,7 @@ Require by HotelCriteriaBookingInput:  Criteria of book contains basic informati
     </header>
     <section class="post-excerpt">
         <p>Input delta price, indicates the price variation permitted by the client before failing the booking.
-GraphQL Schema definition type DefaultSettingsBusinessRulesInput {  optionsQuota: Int!    businessRulesType: BusinessRulesType!   }   Fields optionsQuota(Int!): Options quota per avail. Numbers of options wanted by avail.  businessRulesType(BusinessRulesType!): Different business rules to filter the options that you are interested.  
+GraphQL Schema definition type DefaultSettingsBusinessRulesInput {optionsQuota: Int! businessRulesType: BusinessRulesType! }Fields optionsQuota(Int!):Options quota per avail. Numbers of options wanted by avail.businessRulesType(BusinessRulesType!):Different business rules to filter the options that you are interested.
 Require by DefaultSettingsInput: <a class="read-more" href="/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1691,7 +1686,7 @@ Require by DefaultSettingsInput: <a class="read-more" href="/travelgatex/referen
         <h2 class="post-title"><a href="/travelgatex/reference/inputobjects/defaultsettingsinput/">DefaultSettingsInput</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type DefaultSettingsInput {  groupCode: String!    connectUser: String!    context: String    language: Language!    currency: Currency!    nationality: Country!    market: String!    timeout: TimeoutInput!    businessRules: DefaultSettingsBusinessRulesInput!   }   Fields groupCode(String!): Unique Id  connectUser(String!): This field is got only if the authorization header is of the type JWT. <a class="read-more" href="/travelgatex/reference/inputobjects/defaultsettingsinput/">&raquo;</a></p>
+        <p>GraphQL Schema definition type DefaultSettingsInput {groupCode: String! connectUser: String! context: String language: Language! currency: Currency! nationality: Country! market: String! timeout: TimeoutInput! businessRules: DefaultSettingsBusinessRulesInput! }Fields groupCode(String!):Unique IdconnectUser(String!):This field is got only if the authorization header is of the type JWT. <a class="read-more" href="/travelgatex/reference/inputobjects/defaultsettingsinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1708,7 +1703,7 @@ Require by DefaultSettingsInput: <a class="read-more" href="/travelgatex/referen
         <h2 class="post-title"><a href="/travelgatex/reference/inputobjects/deletegroupinput/">DeleteGroupInput</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type DeleteGroupInput {  code: ID!   }   Fields code(ID!): <a class="read-more" href="/travelgatex/reference/inputobjects/deletegroupinput/">&raquo;</a></p>
+        <p>GraphQL Schema definition type DeleteGroupInput {code: ID! }Fields code(ID!): <a class="read-more" href="/travelgatex/reference/inputobjects/deletegroupinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1725,7 +1720,7 @@ Require by DefaultSettingsInput: <a class="read-more" href="/travelgatex/referen
         <h2 class="post-title"><a href="/travelgatex/reference/inputobjects/deletememberinput/">DeleteMemberInput</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type DeleteMemberInput {  code: ID!    group: ID!   }   Fields code(ID!):   group(ID!): <a class="read-more" href="/travelgatex/reference/inputobjects/deletememberinput/">&raquo;</a></p>
+        <p>GraphQL Schema definition type DeleteMemberInput {code: ID! group: ID! }Fields code(ID!):group(ID!): <a class="read-more" href="/travelgatex/reference/inputobjects/deletememberinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1743,7 +1738,7 @@ Require by DefaultSettingsInput: <a class="read-more" href="/travelgatex/referen
     </header>
     <section class="post-excerpt">
         <p>Input delta price, indicates price variation permitted by the client
-GraphQL Schema definition type DeltaPriceInput {  amount: Float    percent: Float    applyBoth: Boolean!   }   Fields amount(Float): The amount in the currency returned by the option that will be accepted by the client to be higher than the valuation price.  percent(Float): The percentage accepted by the client to be higher than the valuation price. <a class="read-more" href="/travelgatex/reference/inputobjects/deltapriceinput/">&raquo;</a></p>
+GraphQL Schema definition type DeltaPriceInput {amount: Float percent: Float applyBoth: Boolean! }Fields amount(Float):The amount in the currency returned by the option that will be accepted by the client to be higher than the valuation price.percent(Float):The percentage accepted by the client to be higher than the valuation price. <a class="read-more" href="/travelgatex/reference/inputobjects/deltapriceinput/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

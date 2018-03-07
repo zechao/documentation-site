@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.37" />
 <title>Objects :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1397,11 +1397,6 @@
               <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/resources/frequently-asked-questions/" class="dd-item">
-            <a href="/hotelx/resources/frequently-asked-questions/">
-              <span style="padding-left: 8px;">Frequendly Asked Questions</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
             </ul>
@@ -1582,7 +1577,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/objects/productdata/">ProductData</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type ProductData {  id: ID!    code: ID!    apis(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): APIConnection   }   Fields id(ID!):   code(ID!):   apis(APIConnection): <a class="read-more" href="/travelgatex/reference/objects/productdata/">&raquo;</a></p>
+        <p>GraphQL Schema definition type ProductData {id: ID! code: ID! apis(codes: [ID!],first: Int,last: Int,before: String,after: String,): APIConnection }Fields id(ID!):code(ID!):apis(APIConnection): <a class="read-more" href="/travelgatex/reference/objects/productdata/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1599,7 +1594,7 @@
         <h2 class="post-title"><a href="/travelgatex/reference/objects/productedge/">ProductEdge</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type ProductEdge {  cursor: String!    node: Product   }   Fields cursor(String!):   node(Product):   
+        <p>GraphQL Schema definition type ProductEdge {cursor: String! node: Product }Fields cursor(String!):node(Product):
 Require by ProductConnection: <a class="read-more" href="/travelgatex/reference/objects/productedge/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1618,7 +1613,7 @@ Require by ProductConnection: <a class="read-more" href="/travelgatex/reference/
     </header>
     <section class="post-excerpt">
         <p>Information about room promotions(offers).
-GraphQL Schema definition type Promotion {  code: String!    name: String    effectiveDate: Date    expireDate: Date   }   Fields code(String!): Specifies the promotion code.  name(String): Specifies the promotion name.  effectiveDate(Date): Promotion effective date.  expireDate(Date): Promotion expire date. <a class="read-more" href="/travelgatex/reference/objects/promotion/">&raquo;</a></p>
+GraphQL Schema definition type Promotion {code: String! name: String effectiveDate: Date expireDate: Date }Fields code(String!):Specifies the promotion code.name(String):Specifies the promotion name.effectiveDate(Date):Promotion effective date.expireDate(Date):Promotion expire date. <a class="read-more" href="/travelgatex/reference/objects/promotion/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1636,7 +1631,7 @@ GraphQL Schema definition type Promotion {  code: String!    name: String    eff
     </header>
     <section class="post-excerpt">
         <p>Returns the total price and cancellation policies of the Option selected in the previous step (Search).
-GraphQL Schema definition type Quote {  hotel( criteria: HotelCriteriaQuoteInput!, settings: HotelSettingsInput, ): HotelQuote   }   Fields hotel(HotelQuote): Returns the total price and cancellation policies of the Option selected in the previous step (Search).  
+GraphQL Schema definition type Quote {hotel(criteria: HotelCriteriaQuoteInput!,settings: HotelSettingsInput,): HotelQuote }Fields hotel(HotelQuote):Returns the total price and cancellation policies of the Option selected in the previous step (Search).
 Require by Query: <a class="read-more" href="/travelgatex/reference/objects/quote/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1655,7 +1650,7 @@ Require by Query: <a class="read-more" href="/travelgatex/reference/objects/quot
     </header>
     <section class="post-excerpt">
         <p>Information about the rate of the option returned.
-GraphQL Schema definition type RatePlan {  code: String!    name: String    effectiveDate: Date    expireDate: Date   }   Fields code(String!): Specifies the rate code.  name(String): Specifies the rate name.  effectiveDate(Date): Start date in which the rate becomes effective.  expireDate(Date): Expire date of the rate. <a class="read-more" href="/travelgatex/reference/objects/rateplan/">&raquo;</a></p>
+GraphQL Schema definition type RatePlan {code: String! name: String effectiveDate: Date expireDate: Date }Fields code(String!):Specifies the rate code.name(String):Specifies the rate name.effectiveDate(Date):Start date in which the rate becomes effective.expireDate(Date):Expire date of the rate. <a class="read-more" href="/travelgatex/reference/objects/rateplan/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1673,8 +1668,8 @@ GraphQL Schema definition type RatePlan {  code: String!    name: String    effe
     </header>
     <section class="post-excerpt">
         <p>Contains reference codes.
-GraphQL Schema definition type Reference {  client: String    supplier: String   }   Fields client(String): Client reference booking  supplier(String): Supplier reference booking  
-Require by HotelBookingDetail:  Contains information about booking.  HotelCancelDetail:  Contains information about cancel <a class="read-more" href="/travelgatex/reference/objects/reference/">&raquo;</a></p>
+GraphQL Schema definition type Reference {client: String supplier: String }Fields client(String):Client reference bookingsupplier(String):Supplier reference booking
+Require by HotelBookingDetail: Contains information about booking.HotelCancelDetail: Contains information about cancel <a class="read-more" href="/travelgatex/reference/objects/reference/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1692,8 +1687,8 @@ Require by HotelBookingDetail:  Contains information about booking.  HotelCancel
     </header>
     <section class="post-excerpt">
         <p>Contains internal information.
-GraphQL Schema definition type RequestStats {  total: Stat!    validation: Stat!    process: Stat!    Accesses: [StatAccess!]!    External: String!   }   Fields total(Stat!):   validation(Stat!):   process(Stat!):   Accesses([StatAccess!]!):   External(String!):   
-Require by HotelSearch:  Results of Avail Hotel. Contains all the available options for a given date and itinerary. <a class="read-more" href="/travelgatex/reference/objects/requeststats/">&raquo;</a></p>
+GraphQL Schema definition type RequestStats {total: Stat! validation: Stat! process: Stat! Accesses: [StatAccess!]! External: String! }Fields total(Stat!):validation(Stat!):process(Stat!):Accesses([StatAccess!]!):External(String!):
+Require by HotelSearch: Results of Avail Hotel. Contains all the available options for a given date and itinerary. <a class="read-more" href="/travelgatex/reference/objects/requeststats/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1711,8 +1706,8 @@ Require by HotelSearch:  Results of Avail Hotel. Contains all the available opti
     </header>
     <section class="post-excerpt">
         <p>Contains information about the Resort.
-GraphQL Schema definition type Resort {  code: String!    name: String    description: String   }   Fields code(String!): Specifies the resort code.  name(String): Specifies the resort name.  description(String): Specifies the resort description.  
-Require by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement. <a class="read-more" href="/travelgatex/reference/objects/resort/">&raquo;</a></p>
+GraphQL Schema definition type Resort {code: String! name: String description: String }Fields code(String!):Specifies the resort code.name(String):Specifies the resort name.description(String):Specifies the resort description.
+Require by Supplement: Supplement that it can be or its already added to the option returned. Contains all the information about the supplement. <a class="read-more" href="/travelgatex/reference/objects/resort/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1729,7 +1724,7 @@ Require by Supplement:  Supplement that it can be or its already added to the op
         <h2 class="post-title"><a href="/travelgatex/reference/objects/resource/">Resource</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Resource {  code: ID!    error: [Error!]    resourceData: ResourceData    createdAt: DateTime!    updatedAt: DateTime!   }   Fields code(ID!):   error([Error!]):   resourceData(ResourceData):   createdAt(DateTime!):   updatedAt(DateTime!):   
+        <p>GraphQL Schema definition type Resource {code: ID! error: [Error!] resourceData: ResourceData createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):error([Error!]):resourceData(ResourceData):createdAt(DateTime!):updatedAt(DateTime!):
 Require by ResourceEdge: <a class="read-more" href="/travelgatex/reference/objects/resource/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
@@ -1747,8 +1742,8 @@ Require by ResourceEdge: <a class="read-more" href="/travelgatex/reference/objec
         <h2 class="post-title"><a href="/travelgatex/reference/objects/resourceconnection/">ResourceConnection</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type ResourceConnection {  edges: [ResourceEdge]    pageInfo: PageInfo!   }   Fields edges([ResourceEdge]):   pageInfo(PageInfo!):   
-Require by AdminQuery:    APIData:    RoleData: <a class="read-more" href="/travelgatex/reference/objects/resourceconnection/">&raquo;</a></p>
+        <p>GraphQL Schema definition type ResourceConnection {edges: [ResourceEdge] pageInfo: PageInfo! }Fields edges([ResourceEdge]):pageInfo(PageInfo!):
+Require by AdminQuery: APIData: RoleData: <a class="read-more" href="/travelgatex/reference/objects/resourceconnection/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
