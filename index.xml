@@ -2239,6 +2239,15 @@ File Requirements The file should be in the below format:
     
     <item>
       <title>New Realeases &amp; Updates</title>
+      <link>/travelgatex/resources/graphql-changelog/release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/resources/graphql-changelog/release-notes/</guid>
+      <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.</description>
+    </item>
+    
+    <item>
+      <title>New Realeases &amp; Updates</title>
       <link>/travelgatex/resources/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
