@@ -2226,6 +2226,21 @@ GraphQL Schema definition type Warning {code: String! type: String! desc
     </item>
     
     <item>
+      <title>GraphQL Schema Changelog</title>
+      <link>/travelgatex/resources/graphql-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/resources/graphql-api/</guid>
+      <description>2018-03-05 ⚠️ Input field AccessInput.parameters changed type from String to [ParameterInput]
+⚠️ Input field name was added to input object type AccessInput
+⚠️ Input field descriptiveInfoLimit was removed from input object type AccessInput
+⚠️ Input field serviceAPI was removed from input object type SupplierFilter
+⚠️ Input field isActive was removed from input object type SupplierFilter
+⚠️ Field updatedAt was removed from object type Parameter
+⚠️ Field createdAt was removed from object type Parameter</description>
+    </item>
+    
+    <item>
       <title>Mapping</title>
       <link>/hotelx/plugins/mapping/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2235,15 +2250,6 @@ GraphQL Schema definition type Warning {code: String! type: String! desc
 HotelCodeMatching Matches Seller hotel codes based on file code mapping.
 File Requirements The file should be in the below format:
  Encoding: UTF-8 File Name: [Context Source]_hotel_map.csv Header Row: Code Source, Context Destination, Code Destination Delimiter: Comma  Code Source, Context Destination, Code Destination 10,GUE,c11#10 10000,JCB,7604 10000,TOU,1274249  File must be uploaded to your organization directory SFTP</description>
-    </item>
-    
-    <item>
-      <title>New Realeases &amp; Updates</title>
-      <link>/travelgatex/resources/graphql-changelog/release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/resources/graphql-changelog/release-notes/</guid>
-      <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.</description>
     </item>
     
     <item>

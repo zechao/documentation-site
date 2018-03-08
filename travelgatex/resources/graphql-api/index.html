@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>on the Platform | TravelgateX Documentation</title>
+    <title>GraphQL Schema Changelog | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.37" />
-<title>New Realeases &amp; Updates :: TravelgateX Documentation</title>
+<title>GraphQL Schema Changelog :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -21,14 +21,14 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="Release Notes and Changelog">
+<meta name="description" content="GraphQL API Changelog">
 <meta name="author" content="TravelgateX ByXTG">
 <link href="/css/tgx.css" rel="stylesheet">
 
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
-  <body data-url="/travelgatex/resources/graphql-changelog/release-notes/">
+  <body data-url="/travelgatex/resources/graphql-api/">
     <div class="mo-header fixed-top">
     <div class="top-header">
         <nav class="navbar navbar-toggleable-sm navbar-light bg-primary flex-row align-items-center">
@@ -1240,14 +1240,9 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/travelgatex/resources/graphql-changelog/release-notes/" class="dd-item active">
-            <a href="/travelgatex/resources/graphql-changelog/release-notes/">
-              <span style="padding-left: 8px;">New Realeases &amp; Updates</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/resources/release-notes/" class="dd-item">
-            <a href="/travelgatex/resources/release-notes/">
-              <span style="padding-left: 8px;">New Realeases &amp; Updates</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/travelgatex/resources/graphql-api/" class="dd-item active">
+            <a href="/travelgatex/resources/graphql-api/">
+              <span style="padding-left: 8px;">GraphQL Schema Changelog</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1561,11 +1556,826 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">New Realeases &amp; Updates: on the Platform</h1>
+              <h1 class="pageTitle">GraphQL Schema Changelog</h1>
               
 
 
-    <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
+    
+
+<h2 id="2018-03-05">2018-03-05</h2>
+
+<p>⚠️  Input field <code>AccessInput.parameters</code> changed type from <code>String</code> to <code>[ParameterInput]</code></p>
+
+<p>⚠️  Input field <code>name</code> was added to input object type <code>AccessInput</code></p>
+
+<p>⚠️  Input field <code>descriptiveInfoLimit</code> was removed from input object type <code>AccessInput</code></p>
+
+<p>⚠️  Input field <code>serviceAPI</code> was removed from input object type <code>SupplierFilter</code></p>
+
+<p>⚠️  Input field <code>isActive</code> was removed from input object type <code>SupplierFilter</code></p>
+
+<p>⚠️  Field <code>updatedAt</code> was removed from object type <code>Parameter</code></p>
+
+<p>⚠️  Field <code>createdAt</code> was removed from object type <code>Parameter</code></p>
+
+<p>⚠️  Field <code>error</code> was removed from object type <code>Parameter</code></p>
+
+<p>⚠️  Field <code>parameterData</code> was removed from object type <code>Parameter</code></p>
+
+<p>⚠️  Field <code>code</code> was removed from object type <code>Parameter</code></p>
+
+<p>⚠️  <code>Parameter</code> object type no longer implements <code>Node</code> interface</p>
+
+<p>⚠️  Field <code>SupplierData.accesses</code> changed type from <code>AccessConnection!</code> to <code>AccessConnection</code></p>
+
+<p>⚠️  Field <code>legacy</code> was removed from object type <code>SupplierData</code></p>
+
+<p>⚠️  Argument <code>after: String</code> was removed from field <code>AccessData.parameters</code></p>
+
+<p>⚠️  Argument <code>before: String</code> was removed from field <code>AccessData.parameters</code></p>
+
+<p>⚠️  Argument <code>Last: Int</code> was removed from field <code>AccessData.parameters</code></p>
+
+<p>⚠️  Argument <code>first: Int</code> was removed from field <code>AccessData.parameters</code></p>
+
+<p>⚠️  Field <code>AccessData.parameters</code> changed type from <code>ParameterConnection</code> to <code>[Parameter]</code></p>
+
+<p>⚠️  Field <code>descriptiveInfoLimit</code> was removed from object type <code>AccessData</code></p>
+
+<p>⚠️  Input field <code>ParameterInput.key</code> changed type from <code>String!</code> to <code>ID!</code></p>
+
+<p>⚠️  Input field <code>filter</code> was removed from input object type <code>HotelXHotelListInput</code></p>
+
+<p>⚠️  Field <code>Destination.code</code> changed type from <code>String!</code> to <code>ID!</code></p>
+
+<p>⚠️  Field <code>texts</code> was removed from object type <code>Destination</code></p>
+
+<p>⚠️  Field <code>available</code> was removed from object type <code>Destination</code></p>
+
+<p>⚠️  Field <code>Location.closestDestination</code> changed type from <code>Destination!</code> to <code>DestinationData!</code></p>
+
+<p>⚠️  Field <code>HotelConnection.token</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>⚠️  <code>SupplierInput</code> was removed</p>
+
+<p>⚠️  <code>ProviderInput</code> was removed</p>
+
+<p>⚠️  <code>LegacyDataInput</code> was removed</p>
+
+<p>⚠️  <code>ParameterData</code> was removed</p>
+
+<p>⚠️  <code>ParameterEdge</code> was removed</p>
+
+<p>⚠️  <code>ParameterConnection</code> was removed</p>
+
+<p>⚠️  <code>LegacyData</code> was removed</p>
+
+<p>✅  <code>Destination</code> object implements <code>Node</code> interface</p>
+
+<p>✅  Input field <code>isTest</code> was added to input object type <code>AccessInput</code></p>
+
+<p>✅  Field <code>updateClient</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>createClient</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Description `<code>on type</code>Parameter<code>has changed to</code>Parameters for additional information for the supplier&rsquo;s configuration.`</p>
+
+<p>✅  Field <code>value</code> was added to object type <code>Parameter</code></p>
+
+<p>✅  Field <code>key</code> was added to object type <code>Parameter</code></p>
+
+<p>✅  Description <code>XTG Platform API implementation</code> on type <code>Provider</code> has changed to <code>Temporary type to use only during SQL server's lifetime</code></p>
+
+<p>✅  Field <code>SupplierData.accesses</code> description changed from <code>Accesses in a Supplier</code> to <code>Accesses where the supplier is referenced</code></p>
+
+<p>✅  Field <code>SupplierData.supplierGroup</code> description changed from <code>SupplierGroup</code> to <code>SupplierGroup Internal Supplier grouping</code></p>
+
+<p>✅  Field <code>isTest</code> was added to object type <code>AccessData</code></p>
+
+<p>✅  Field <code>name</code> was added to object type <code>AccessData</code></p>
+
+<p>✅  Field <code>clients</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Description <code>Parameters for additional information for the supplier's configuration.</code> on type <code>ParameterInput</code> has changed to <code>Parameters Input.</code></p>
+
+<p>✅  Input field <code>ParameterInput.value</code> description changed from <code>Contains the parameter values.</code> to `Contains the parameter values.</p>
+
+<p>This information is mandatory.`</p>
+
+<p>✅  Input field <code>ParameterInput.key</code> description changed from <code>Contains the keyword/Id to identify a parameter.</code> to `Contains the keyword/Id to identify a parameter.</p>
+
+<p>This information is mandatory.`</p>
+
+<p>✅  Description <code>Url's Input</code> on type <code>UrlsInput</code> has changed to <code>Urls Input</code></p>
+
+<p>✅  Input field <code>destinationCodes</code> was added to input object type <code>HotelXHotelListInput</code></p>
+
+<p>✅  Description <code>Information about destinantion</code> on type <code>Destination</code> has changed to <code>Destination Type</code></p>
+
+<p>✅  Field <code>Destination.code</code> description changed from <code>Destination Code</code> to <code>Destination ID</code></p>
+
+<p>✅  Field <code>updatedAt</code> was added to object type <code>Destination</code></p>
+
+<p>✅  Field <code>createdAt</code> was added to object type <code>Destination</code></p>
+
+<p>✅  Field <code>error</code> was added to object type <code>Destination</code></p>
+
+<p>✅  Field <code>boardData</code> was added to object type <code>Destination</code></p>
+
+<p>✅  Type <code>HotelXDestinationListInput</code> was added</p>
+
+<p>✅  Type <code>WebSearchResult</code> was added</p>
+
+<p>✅  Type <code>DestinationEdge</code> was added</p>
+
+<p>✅  Type <code>DestinationConnection</code> was added</p>
+
+<p>✅  Type <code>ClientInput</code> was added</p>
+
+<p>✅  Type <code>ClientFilter</code> was added</p>
+
+<p>✅  Type <code>ClientData</code> was added</p>
+
+<p>✅  Type <code>Client</code> was added</p>
+
+<p>✅  Type <code>ClientEdge</code> was added</p>
+
+<p>✅  Type <code>ClientConnection</code> was added</p>
+
+<p>✅  Type <code>DestinationType</code> was added</p>
+
+<p>✅  Type <code>DestinationData</code> was added</p>
+
+<h2 id="2018-02-21">2018-02-21</h2>
+
+<p>⚠️  Field <code>updateHotel</code> was removed from object type <code>HotelXMutation</code></p>
+
+<p>⚠️  Input field <code>SupplierFilter.serviceAPI</code> changed type from <code>Int</code> to <code>[Int]</code></p>
+
+<p>⚠️  Field <code>avail</code> was removed from object type <code>Destination</code></p>
+
+<p>⚠️  Field <code>name</code> was removed from object type <code>Destination</code></p>
+
+<p>⚠️  Field <code>Contact.web</code> changed type from <code>URI!</code> to <code>URI</code></p>
+
+<p>⚠️  Field <code>Location.zipCode</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>⚠️  Field <code>Location.city</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>⚠️  Field <code>Location.address</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>⚠️  Field <code>geocode</code> was removed from object type <code>Location</code></p>
+
+<p>⚠️  Field <code>Amenity.code</code> changed type from <code>ID!</code> to <code>String!</code></p>
+
+<p>⚠️  Field <code>updatedAt</code> was removed from object type <code>Amenity</code></p>
+
+<p>⚠️  Field <code>createdAt</code> was removed from object type <code>Amenity</code></p>
+
+<p>⚠️  Field <code>error</code> was removed from object type <code>Amenity</code></p>
+
+<p>⚠️  Field <code>AmenityData</code> was removed from object type <code>Amenity</code></p>
+
+<p>⚠️  <code>Amenity</code> object type no longer implements <code>Node</code> interface</p>
+
+<p>⚠️  Field <code>Media.code</code> changed type from <code>ID!</code> to <code>String</code></p>
+
+<p>⚠️  Field <code>createdAt</code> was removed from object type <code>Media</code></p>
+
+<p>⚠️  Field <code>error</code> was removed from object type <code>Media</code></p>
+
+<p>⚠️  Field <code>mediaData</code> was removed from object type <code>Media</code></p>
+
+<p>⚠️  <code>Media</code> object type no longer implements <code>Node</code> interface</p>
+
+<p>⚠️  Field <code>HotelData.rank</code> changed type from <code>Rank!</code> to <code>[Int!]!</code></p>
+
+<p>⚠️  Field <code>HotelData.contact</code> changed type from <code>Contact!</code> to <code>Contact</code></p>
+
+<p>⚠️  Argument <code>after: String</code> was removed from field <code>HotelData.amenities</code></p>
+
+<p>⚠️  Argument <code>before: String</code> was removed from field <code>HotelData.amenities</code></p>
+
+<p>⚠️  Argument <code>last: Int</code> was removed from field <code>HotelData.amenities</code></p>
+
+<p>⚠️  Argument <code>first: Int</code> was removed from field <code>HotelData.amenities</code></p>
+
+<p>⚠️  Argument <code>language: String</code> was removed from field <code>HotelData.amenities</code></p>
+
+<p>⚠️  Field <code>HotelData.amenities</code> changed type from <code>AmenityConnection</code> to <code>[Amenity!]</code></p>
+
+<p>⚠️  Argument <code>after: String</code> was removed from field <code>HotelData.medias</code></p>
+
+<p>⚠️  Argument <code>before: String</code> was removed from field <code>HotelData.medias</code></p>
+
+<p>⚠️  Argument <code>last: Int</code> was removed from field <code>HotelData.medias</code></p>
+
+<p>⚠️  Argument <code>first: Int</code> was removed from field <code>HotelData.medias</code></p>
+
+<p>⚠️  Argument <code>type: ApplicationArea</code> was removed from field <code>HotelData.medias</code></p>
+
+<p>⚠️  Field <code>HotelData.medias</code> changed type from <code>MediaConnection</code> to <code>[Media!]</code></p>
+
+<p>⚠️  Field <code>destination</code> was removed from object type <code>HotelData</code></p>
+
+<p>⚠️  Field <code>generalDescription</code> was removed from object type <code>HotelData</code></p>
+
+<p>⚠️  Field <code>additionalInformation</code> was removed from object type <code>HotelData</code></p>
+
+<p>⚠️  Field <code>name</code> was removed from object type <code>HotelData</code></p>
+
+<p>⚠️  Type for argument <code>relay</code> on field <code>HotelXQuery.hotels</code> changed from <code>RelayInput</code> to <code>RelayInput!</code></p>
+
+<p>⚠️  Argument <code>criteria: HotelXHotelListInput!</code> added to field <code>HotelXQuery.hotels</code></p>
+
+<p>⚠️  Argument <code>hotels: HotelXHotelQueryInput</code> was removed from field <code>HotelXQuery.hotels</code></p>
+
+<p>⚠️  <code>StatusResponse</code> was removed</p>
+
+<p>⚠️  <code>HotelStatus</code> was removed</p>
+
+<p>⚠️  <code>GiataID</code> was removed</p>
+
+<p>⚠️  <code>HotelXHotelDataInput</code> was removed</p>
+
+<p>⚠️  <code>HotelXHotelMutationInput</code> was removed</p>
+
+<p>⚠️  <code>RankInput</code> was removed</p>
+
+<p>⚠️  <code>HotelXHotelQueryInput</code> was removed</p>
+
+<p>⚠️  <code>Rank</code> was removed</p>
+
+<p>⚠️  <code>Geocode</code> was removed</p>
+
+<p>⚠️  <code>Information</code> was removed</p>
+
+<p>⚠️  <code>AmenityData</code> was removed</p>
+
+<p>⚠️  <code>AmenityEdge</code> was removed</p>
+
+<p>⚠️  <code>AmenityConnection</code> was removed</p>
+
+<p>⚠️  <code>ApplicationArea</code> was removed</p>
+
+<p>⚠️  <code>MediaData</code> was removed</p>
+
+<p>⚠️  <code>MediaEdge</code> was removed</p>
+
+<p>⚠️  <code>MediaConnection</code> was removed</p>
+
+<p>✅  Field <code>accesses</code> was added to object type <code>SupplierData</code></p>
+
+<p>✅  Description <code>Destination type</code> on type <code>Destination</code> has changed to <code>Information about destinantion</code></p>
+
+<p>✅  Field <code>Destination.code</code> changed type from <code>String</code> to <code>String!</code></p>
+
+<p>✅  Field <code>Destination.code</code> description changed from <code>Destination code.</code> to <code>Destination Code</code></p>
+
+<p>✅  Field <code>texts</code> was added to object type <code>Destination</code></p>
+
+<p>✅  Field <code>available</code> was added to object type <code>Destination</code></p>
+
+<p>✅  Description <code>Contact type</code> on type <code>Contact</code> has changed to <code>Contact Data.</code></p>
+
+<p>✅  Field <code>Contact.web</code> description changed from <code>Web.</code> to <code>Web</code></p>
+
+<p>✅  Field <code>Contact.fax</code> description changed from <code>Fax.</code> to <code>Fax</code></p>
+
+<p>✅  Field <code>Contact.telephone</code> description changed from <code>Telephone.</code> to <code>Telephone</code></p>
+
+<p>✅  Field <code>Contact.email</code> description changed from <code>Email.</code> to <code>Email</code></p>
+
+<p>✅  Description <code>Location</code> on type <code>Location</code> has changed to <code>Indicates the location of the hotel.</code></p>
+
+<p>✅  Field <code>Location.country</code> description changed from <code>Country ISO Code</code> to <code>Country where is the Hotel.</code></p>
+
+<p>✅  Field <code>Location.zipCode</code> description changed from <code>Zip Code</code> to <code>Contains the zipCode.</code></p>
+
+<p>✅  Field <code>Location.city</code> description changed from <code>City</code> to <code>Contains the city</code></p>
+
+<p>✅  Field <code>Location.address</code> description changed from <code>Street Address</code> to <code>Contains Hotel Address</code></p>
+
+<p>✅  Field <code>closestDestination</code> was added to object type <code>Location</code></p>
+
+<p>✅  Field <code>coordinates</code> was added to object type <code>Location</code></p>
+
+<p>✅  Description `<code>on type</code>Amenity<code>has changed to</code>Something, such as a swimming pool or shopping centre, that is intended to make life more pleasant or comfortable for the people.`</p>
+
+<p>✅  Field <code>Amenity.code</code> description changed from `<code>to</code>Code`</p>
+
+<p>✅  Field <code>texts</code> was added to object type <code>Amenity</code></p>
+
+<p>✅  Field <code>type</code> was added to object type <code>Amenity</code></p>
+
+<p>✅  Description `<code>on type</code>Media<code>has changed to</code>Contains media information.`</p>
+
+<p>✅  Field <code>Media.updatedAt</code> description changed from <code>Update date</code> to <code>Update date.</code></p>
+
+<p>✅  Field <code>Media.code</code> description changed from `<code>to</code>Code.`</p>
+
+<p>✅  Field <code>texts</code> was added to object type <code>Media</code></p>
+
+<p>✅  Field <code>url</code> was added to object type <code>Media</code></p>
+
+<p>✅  Field <code>type</code> was added to object type <code>Media</code></p>
+
+<p>✅  Field <code>order</code> was added to object type <code>Media</code></p>
+
+<p>✅  Field <code>HotelData.rank</code> description changed from `<code>to</code>Rank indicates the supplier categorization.`</p>
+
+<p>✅  Field <code>HotelData.contact</code> description changed from <code>Contact information.</code> to <code>Contact cotains information about hotel contact.</code></p>
+
+<p>✅  Field <code>HotelData.location</code> description changed from `<code>to</code>Indicates the location of the hotel.`</p>
+
+<p>✅  Field <code>HotelData.amenities</code> description changed from `<code>to</code>Amenities`</p>
+
+<p>✅  Field <code>HotelData.medias</code> description changed from `<code>to</code>Medias`</p>
+
+<p>✅  Field <code>HotelData.hotelCode</code> description changed from <code>Code of the hotel in the Supplier selected.</code> to <code>Code to perform availability.</code></p>
+
+<p>✅  Field <code>HotelData.code</code> description changed from <code>Internal code to perform availability</code> to <code>Internal code.</code></p>
+
+<p>✅  Field <code>descriptions</code> was added to object type <code>HotelData</code></p>
+
+<p>✅  Field <code>cardTypes</code> was added to object type <code>HotelData</code></p>
+
+<p>✅  Field <code>chainCode</code> was added to object type <code>HotelData</code></p>
+
+<p>✅  Field <code>property</code> was added to object type <code>HotelData</code></p>
+
+<p>✅  Field <code>hotelName</code> was added to object type <code>HotelData</code></p>
+
+<p>✅  Field <code>hotelCodeSupplier</code> was added to object type <code>HotelData</code></p>
+
+<p>✅  Description <code>Hotel type</code> on type <code>Hotel</code> has changed to <code>Hotel Type</code></p>
+
+<p>✅  Field <code>token</code> was added to object type <code>HotelConnection</code></p>
+
+<p>✅  Argument <code>token: String</code> added to field <code>HotelXQuery.hotels</code></p>
+
+<p>✅  Field <code>rooms</code> was added to object type <code>HotelXQuery</code></p>
+
+<p>✅  Field <code>categories</code> was added to object type <code>HotelXQuery</code></p>
+
+<p>✅  Field <code>boards</code> was added to object type <code>HotelXQuery</code></p>
+
+<p>✅  Type <code>HotelXRoomQueryInput</code> was added</p>
+
+<p>✅  Type <code>RoomData</code> was added</p>
+
+<p>✅  Type <code>RoomStatic</code> was added</p>
+
+<p>✅  Type <code>RoomEdge</code> was added</p>
+
+<p>✅  Type <code>RoomConnection</code> was added</p>
+
+<p>✅  Type <code>HotelXHotelListInput</code> was added</p>
+
+<p>✅  Type <code>DescriptionType</code> was added</p>
+
+<p>✅  Type <code>Description</code> was added</p>
+
+<p>✅  Type <code>ApplicationAreaType</code> was added</p>
+
+<p>✅  Type <code>Coordinates</code> was added</p>
+
+<p>✅  Type <code>Property</code> was added</p>
+
+<p>✅  Type <code>HotelXCategoryQueryInput</code> was added</p>
+
+<p>✅  Type <code>CategoryData</code> was added</p>
+
+<p>✅  Type <code>Category</code> was added</p>
+
+<p>✅  Type <code>CategoryEdge</code> was added</p>
+
+<p>✅  Type <code>CategoryConnection</code> was added</p>
+
+<p>✅  Type <code>HotelXBoardQueryInput</code> was added</p>
+
+<p>✅  Type <code>Text</code> was added</p>
+
+<p>✅  Type <code>BoardData</code> was added</p>
+
+<p>✅  Type <code>Board</code> was added</p>
+
+<p>✅  Type <code>BoardEdge</code> was added</p>
+
+<p>✅  Type <code>BoardConnection</code> was added</p>
+
+<h2 id="2018-01-30">2018-01-30</h2>
+
+<p>⚠️  Input field <code>hotelCode</code> was added to input object type <code>HotelXHotelDataInput</code></p>
+
+<p>⚠️  Input field <code>supplierCode</code> was removed from input object type <code>HotelXHotelDataInput</code></p>
+
+<p>⚠️  Field <code>rsAccess</code> was removed from object type <code>StatAccess</code></p>
+
+<p>⚠️  Field <code>rqAccess</code> was removed from object type <code>StatAccess</code></p>
+
+<p>⚠️  Field <code>dockerID</code> was removed from object type <code>StatAccess</code></p>
+
+<p>⚠️  Field <code>dockerID</code> was removed from object type <code>StatPlugin</code></p>
+
+<p>⚠️  Field <code>rsPlugin</code> was removed from object type <code>StatsRequest</code></p>
+
+<p>⚠️  Field <code>rqPlugin</code> was removed from object type <code>StatsRequest</code></p>
+
+<p>⚠️  Field <code>rs</code> was removed from object type <code>StatsRequest</code></p>
+
+<p>⚠️  Field <code>rq</code> was removed from object type <code>StatsRequest</code></p>
+
+<p>⚠️  Field <code>config</code> was removed from object type <code>StatsRequest</code></p>
+
+<p>⚠️  Field <code>supplierCode</code> was removed from object type <code>HotelData</code></p>
+
+<p>✅  Description for enum value <code>BookStatusType.UNKNOWN</code> changed from <code>The status of the booking is unknown</code> to `The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.</p>
+
+<p>It is the client&rsquo;s responsibility to check if the booking is OK`</p>
+
+<p>✅  Description for enum value <code>BookStatusType.ON_REQUEST</code> changed from <code>The status of the booking is on request</code> to `The reservation was completed but the product is still not available, so the reservation goes into a waiting list.</p>
+
+<p>It is the client&rsquo;s responsibility to check if the booking is OK`</p>
+
+<p>✅  Description for enum value <code>BookStatusType.OK</code> changed from <code>The status of the booking is available</code> to <code>The reservation was completed with no problems</code></p>
+
+<p>✅  Field <code>StatTransaction.parseResponse</code> description changed from `<code>to</code>Parse response time`</p>
+
+<p>✅  Field <code>StatTransaction.workerCommunication</code> description changed from `<code>to</code>Worker connection time`</p>
+
+<p>✅  Field <code>StatTransaction.buildRequest</code> description changed from `<code>to</code>Build request time`</p>
+
+<p>✅  Field <code>StatTransaction.total</code> description changed from `<code>to</code>Total transaction time`</p>
+
+<p>✅  Field <code>StatTransaction.reference</code> description changed from `<code>to</code>Extra information about transaction.`</p>
+
+<p>✅  Field <code>StatAccess.plugins</code> description changed from `<code>to</code>Plugin execution time`</p>
+
+<p>✅  Field <code>StatAccess.transactions</code> description changed from `<code>to</code>Detail transaction time`</p>
+
+<p>✅  Field <code>StatAccess.cities</code> description changed from `<code>to</code>Number of cities`</p>
+
+<p>✅  Field <code>StatAccess.zones</code> description changed from `<code>to</code>Number of zones`</p>
+
+<p>✅  Field <code>StatAccess.hotels</code> description changed from `<code>to</code>Number of hotels`</p>
+
+<p>✅  Field <code>StatAccess.staticConfiguration</code> description changed from `<code>to</code>Static configuration time`</p>
+
+<p>✅  Field <code>StatAccess.total</code> description changed from `<code>to</code>Total access time`</p>
+
+<p>✅  Field <code>StatAccess.name</code> description changed from `<code>to</code>Access name`</p>
+
+<p>✅  Field <code>responseAccess</code> was added to object type <code>StatAccess</code></p>
+
+<p>✅  Field <code>requestAccess</code> was added to object type <code>StatAccess</code></p>
+
+<p>✅  Field <code>StatPlugin.total</code> description changed from `<code>to</code>total plugin time`</p>
+
+<p>✅  Field <code>StatPlugin.name</code> description changed from `<code>to</code>Plugin name`</p>
+
+<p>✅  Field <code>StatsRequest.Accesses</code> description changed from `<code>to</code>Detail access time`</p>
+
+<p>✅  Field <code>StatsRequest.dockerID</code> description changed from `<code>to</code>Docker Id`</p>
+
+<p>✅  Field <code>StatsRequest.cities</code> description changed from `<code>to</code>Number of cities`</p>
+
+<p>✅  Field <code>StatsRequest.zones</code> description changed from `<code>to</code>Number of zones`</p>
+
+<p>✅  Field <code>StatsRequest.hotels</code> description changed from `<code>to</code>Number of hotels`</p>
+
+<p>✅  Field <code>StatsRequest.process</code> description changed from `<code>to</code>Process time. Contains communication time, parse time and plugin time.`</p>
+
+<p>✅  Field <code>StatsRequest.validation</code> description changed from `<code>to</code>Request validation time`</p>
+
+<p>✅  Field <code>StatsRequest.total</code> description changed from `<code>to</code>Total transaction time`</p>
+
+<p>✅  Field <code>responsePlugin</code> was added to object type <code>StatsRequest</code></p>
+
+<p>✅  Field <code>requestPlugin</code> was added to object type <code>StatsRequest</code></p>
+
+<p>✅  Field <code>response</code> was added to object type <code>StatsRequest</code></p>
+
+<p>✅  Field <code>request</code> was added to object type <code>StatsRequest</code></p>
+
+<p>✅  Field <code>configuration</code> was added to object type <code>StatsRequest</code></p>
+
+<p>✅  Field <code>hotelCode</code> was added to object type <code>HotelData</code></p>
+
+<h2 id="2018-01-29">2018-01-29</h2>
+
+<p>⚠️  Field <code>HotelCancelPayload.stats</code> changed type from <code>RequestStats</code> to <code>StatsRequest</code></p>
+
+<p>⚠️  Field <code>HotelBookPayload.stats</code> changed type from <code>RequestStats</code> to <code>StatsRequest</code></p>
+
+<p>⚠️  Input field <code>supplierCode</code> was added to input object type <code>HotelXHotelDataInput</code></p>
+
+<p>⚠️  Input field <code>code</code> was removed from input object type <code>HotelXHotelDataInput</code></p>
+
+<p>⚠️  Type for argument <code>relay</code> on field <code>HotelXMutation.updateHotel</code> changed from <code>HotelXRelayInput</code> to <code>RelayInput</code></p>
+
+<p>⚠️  Field <code>HotelBooking.stats</code> changed type from <code>RequestStats</code> to <code>StatsRequest</code></p>
+
+<p>⚠️  Field <code>HotelQuote.stats</code> changed type from <code>RequestStats</code> to <code>StatsRequest</code></p>
+
+<p>⚠️  Field <code>external</code> was removed from object type <code>StatAccess</code></p>
+
+<p>⚠️  Field <code>Response.stats</code> changed type from <code>RequestStats</code> to <code>StatsRequest</code></p>
+
+<p>⚠️  Field <code>HotelSearch.stats</code> changed type from <code>RequestStats</code> to <code>StatsRequest</code></p>
+
+<p>⚠️  Input field <code>codes</code> was removed from input object type <code>HotelXHotelQueryInput</code></p>
+
+<p>⚠️  Type for argument <code>language</code> on field <code>HotelData.generalDescription</code> changed from <code>Language</code> to <code>String</code></p>
+
+<p>⚠️  Type for argument <code>language</code> on field <code>HotelData.additionalInformation</code> changed from <code>Language</code> to <code>String</code></p>
+
+<p>⚠️  Type for argument <code>language</code> on field <code>HotelData.amenities</code> changed from <code>Language</code> to <code>String</code></p>
+
+<p>⚠️  Type for argument <code>relay</code> on field <code>HotelXQuery.hotels</code> changed from <code>HotelXRelayInput</code> to <code>RelayInput</code></p>
+
+<p>⚠️  <code>RequestStats</code> was removed</p>
+
+<p>⚠️  <code>HotelXRelayInput</code> was removed</p>
+
+<p>✅  Input field <code>supplierGroup</code> was added to input object type <code>SupplierInput</code></p>
+
+<p>✅  Input field <code>serviceAPI</code> was added to input object type <code>SupplierFilter</code></p>
+
+<p>✅  Input field <code>isActive</code> was added to input object type <code>SupplierFilter</code></p>
+
+<p>✅  Field <code>supplierGroup</code> was added to object type <code>SupplierData</code></p>
+
+<p>✅  Description <code>Url's</code> on type <code>UrlsInput</code> has changed to <code>Url's Input</code></p>
+
+<p>✅  Field <code>plugins</code> was added to object type <code>StatAccess</code></p>
+
+<p>✅  Field <code>rsAccess</code> was added to object type <code>StatAccess</code></p>
+
+<p>✅  Field <code>rqAccess</code> was added to object type <code>StatAccess</code></p>
+
+<p>✅  Field <code>dockerID</code> was added to object type <code>StatAccess</code></p>
+
+<p>✅  Field <code>cities</code> was added to object type <code>StatAccess</code></p>
+
+<p>✅  Field <code>zones</code> was added to object type <code>StatAccess</code></p>
+
+<p>✅  Field <code>hotels</code> was added to object type <code>StatAccess</code></p>
+
+<p>✅  Input field <code>supplierCodes</code> was added to input object type <code>HotelXHotelQueryInput</code></p>
+
+<p>✅  Field <code>HotelData.code</code> description changed from <code>Internal code to perform availability and/or supplier code.</code> to <code>Internal code to perform availability</code></p>
+
+<p>✅  Field <code>supplierCode</code> was added to object type <code>HotelData</code></p>
+
+<p>✅  Type <code>StatPlugin</code> was added</p>
+
+<p>✅  Type <code>StatsRequest</code> was added</p>
+
+<p>✅  Type <code>RelayInput</code> was added</p>
+
+<h2 id="2018-01-17">2018-01-17</h2>
+
+<p>⚠️  Field <code>AccessEdge.node</code> changed type from <code>Supplier</code> to <code>Access</code></p>
+
+<p>⚠️  Field <code>value</code> was removed from object type <code>Parameter</code></p>
+
+<p>⚠️  Field <code>key</code> was removed from object type <code>Parameter</code></p>
+
+<p>⚠️  Field <code>supplierGroups</code> was removed from object type <code>SupplierData</code></p>
+
+<p>⚠️  Field <code>hotelCodes</code> was removed from object type <code>SupplierData</code></p>
+
+<p>⚠️  Field <code>dll</code> was removed from object type <code>SupplierData</code></p>
+
+<p>⚠️  Field <code>Supplier.supplierData</code> changed type from <code>SupplierData!</code> to <code>SupplierData</code></p>
+
+<p>⚠️  Field <code>AccessData.parameters</code> changed type from <code>[Parameter!]</code> to <code>ParameterConnection</code></p>
+
+<p>⚠️  Field <code>AccessData.urls</code> changed type from <code>Urls!</code> to <code>Urls</code></p>
+
+<p>⚠️  Field <code>AccessData.supplier</code> changed type from <code>String!</code> to <code>Supplier!</code></p>
+
+<p>⚠️  Field <code>AccessData.code</code> changed type from <code>String!</code> to <code>ID!</code></p>
+
+<p>⚠️  Field <code>id</code> was removed from object type <code>AccessData</code></p>
+
+<p>⚠️  Field <code>suppliers</code> was removed from object type <code>AccessData</code></p>
+
+<p>⚠️  Field <code>Access.accessData</code> changed type from <code>AccessData!</code> to <code>AccessData</code></p>
+
+<p>✅  <code>Parameter</code> object implements <code>Node</code> interface</p>
+
+<p>✅  Description <code>Parameters for additional information for the supplier's configuration.</code> on type <code>Parameter</code> has changed to ``</p>
+
+<p>✅  Field <code>updatedAt</code> was added to object type <code>Parameter</code></p>
+
+<p>✅  Field <code>createdAt</code> was added to object type <code>Parameter</code></p>
+
+<p>✅  Field <code>error</code> was added to object type <code>Parameter</code></p>
+
+<p>✅  Field <code>parameterData</code> was added to object type <code>Parameter</code></p>
+
+<p>✅  Field <code>code</code> was added to object type <code>Parameter</code></p>
+
+<p>✅  Field <code>legacy</code> was added to object type <code>SupplierData</code></p>
+
+<p>✅  Field <code>serviceApi</code> was added to object type <code>SupplierData</code></p>
+
+<p>✅  Field <code>context</code> was added to object type <code>SupplierData</code></p>
+
+<p>✅  Field <code>provider</code> was added to object type <code>SupplierData</code></p>
+
+<p>✅  Field <code>name</code> was added to object type <code>SupplierData</code></p>
+
+<p>✅  Argument <code>after: String</code> added to field <code>AccessData.parameters</code></p>
+
+<p>✅  Argument <code>before: String</code> added to field <code>AccessData.parameters</code></p>
+
+<p>✅  Argument <code>Last: Int</code> added to field <code>AccessData.parameters</code></p>
+
+<p>✅  Argument <code>first: Int</code> added to field <code>AccessData.parameters</code></p>
+
+<p>✅  Field <code>AccessData.code</code> description changed from <code>Access code.</code> to <code>Unique AccessConfiguration identifier</code></p>
+
+<p>✅  Field <code>shared</code> was added to object type <code>AccessData</code></p>
+
+<p>✅  Field <code>rateRules</code> was added to object type <code>AccessData</code></p>
+
+<p>✅  Field <code>descriptiveInfoLimit</code> was added to object type <code>AccessData</code></p>
+
+<p>✅  Field <code>deleteSupplierFromGroup</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>grantSupplierToGroup</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>deleteAccessFromGroup</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>grantAccessToGroup</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>updateAccess</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>createAccess</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Input field <code>RankInput.rank4</code> changed type from <code>Boolean!</code> to <code>Boolean</code></p>
+
+<p>✅  Input field <code>RankInput.rank3</code> changed type from <code>Boolean!</code> to <code>Boolean</code></p>
+
+<p>✅  Input field <code>RankInput.rank2</code> changed type from <code>Boolean!</code> to <code>Boolean</code></p>
+
+<p>✅  Input field <code>RankInput.rank1</code> changed type from <code>Boolean!</code> to <code>Boolean</code></p>
+
+<p>✅  Field <code>suppliers</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Field <code>accesses</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Field <code>CancelPolicy.refundable</code> description changed from <code>Indicates if the option is refundable or not.
+This information is mandatory.</code> to <code>Indicates if the option is refundable or not.</code></p>
+
+<p>✅  Input field <code>ranks</code> was added to input object type <code>HotelXHotelQueryInput</code></p>
+
+<p>✅  Type <code>SupplierInput</code> was added</p>
+
+<p>✅  Type <code>ProviderInput</code> was added</p>
+
+<p>✅  Type <code>LegacyDataInput</code> was added</p>
+
+<p>✅  Type <code>Context</code> was added</p>
+
+<p>✅  Type <code>GroupInput</code> was added</p>
+
+<p>✅  Type <code>AccessInput</code> was added</p>
+
+<p>✅  Type <code>SupplierFilter</code> was added</p>
+
+<p>✅  Type <code>SupplierEdge</code> was added</p>
+
+<p>✅  Type <code>SupplierConnection</code> was added</p>
+
+<p>✅  Type <code>AccessFilter</code> was added</p>
+
+<p>✅  Type <code>ParameterData</code> was added</p>
+
+<p>✅  Type <code>ParameterEdge</code> was added</p>
+
+<p>✅  Type <code>ParameterConnection</code> was added</p>
+
+<p>✅  Type <code>LegacyData</code> was added</p>
+
+<p>✅  Type <code>Provider</code> was added</p>
+
+<h2 id="2018-01-11">2018-01-11</h2>
+
+<p>⚠️  Field <code>codes</code> was removed from object type <code>Map</code></p>
+
+<p>⚠️  Field <code>supplierCode</code> was removed from object type <code>Map</code></p>
+
+<p>⚠️  Field <code>maps</code> was removed from object type <code>MappingEntity</code></p>
+
+<p>⚠️  Argument <code>BoardCodes: [String!]</code> was removed from field <code>MappingContext.boards</code></p>
+
+<p>⚠️  Argument <code>roomCodes: [String!]</code> was removed from field <code>MappingContext.rooms</code></p>
+
+<p>⚠️  Argument <code>hotelCodes: [String!]</code> was removed from field <code>MappingContext.hotels</code></p>
+
+<p>⚠️  Field <code>rates</code> was removed from object type <code>MappingContext</code></p>
+
+<p>⚠️  Field <code>contextCode</code> was removed from object type <code>MappingContext</code></p>
+
+<p>⚠️  Argument <code>supplierCodes: [String!]</code> was removed from field <code>Mapping.contexts</code></p>
+
+<p>⚠️  Argument <code>contextCodes: [String!]</code> was removed from field <code>Mapping.contexts</code></p>
+
+<p>⚠️  Field <code>DefaultSettings.market</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>⚠️  Field <code>DefaultSettings.connectUser</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>⚠️  Input field <code>HotelSettingsInput.suppliers</code> changed type from <code>[SupplierInput!]</code> to <code>[HotelXSupplierInput!]</code></p>
+
+<p>⚠️  Field <code>HotelSearch.requestCriteria</code> changed type from <code>CriteriaSearch!</code> to <code>CriteriaSearch</code></p>
+
+<p>⚠️  Field <code>HotelSearch.context</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>⚠️  Field <code>Geocode.longitude</code> changed type from <code>String!</code> to <code>Float!</code></p>
+
+<p>⚠️  Field <code>Geocode.latitude</code> changed type from <code>String!</code> to <code>Float!</code></p>
+
+<p>⚠️  Argument <code>after: String</code> was removed from field <code>HotelXQuery.hotels</code></p>
+
+<p>⚠️  Argument <code>before: String</code> was removed from field <code>HotelXQuery.hotels</code></p>
+
+<p>⚠️  Argument <code>last: Int</code> was removed from field <code>HotelXQuery.hotels</code></p>
+
+<p>⚠️  Argument <code>first: Int</code> was removed from field <code>HotelXQuery.hotels</code></p>
+
+<p>⚠️  Argument <code>language: String</code> was removed from field <code>HotelXQuery.hotels</code></p>
+
+<p>⚠️  Argument <code>codes: [String!]</code> was removed from field <code>HotelXQuery.hotels</code></p>
+
+<p>⚠️  <code>HotelInput</code> was removed</p>
+
+<p>⚠️  <code>AccessInput</code> was removed</p>
+
+<p>⚠️  <code>SupplierInput</code> was removed</p>
+
+<p>✅  Field <code>loadFile</code> was added to object type <code>HotelXMutation</code></p>
+
+<p>✅  Field <code>updateHotel</code> was added to object type <code>HotelXMutation</code></p>
+
+<p>✅  Field <code>maps</code> was added to object type <code>Map</code></p>
+
+<p>✅  Field <code>code</code> was added to object type <code>Map</code></p>
+
+<p>✅  Field <code>contexts</code> was added to object type <code>MappingEntity</code></p>
+
+<p>✅  Argument <code>codes: [String!]</code> added to field <code>MappingContext.boards</code></p>
+
+<p>✅  Field <code>MappingContext.boards</code> description changed from <code>Mapping of boards. Filter by board code.</code> to <code>Mapping of boards, you can filter by board code.</code></p>
+
+<p>✅  Argument <code>codes: [String!]</code> added to field <code>MappingContext.rooms</code>
+✅  Field <code>MappingContext.rooms</code> description changed from <code>Mapping of rooms. Filter by room code.</code> to <code>Mapping of rooms, you can filter by room code.</code></p>
+
+<p>✅  Argument <code>codes: [String!]</code> added to field <code>MappingContext.hotels</code>
+✅  Field <code>MappingContext.hotels</code> description changed from <code>Mapping of hotels. Filter by hotel code.</code> to <code>Mapping of hotels, you can filter by hotel code.</code></p>
+
+<p>✅  Field <code>code</code> was added to object type <code>MappingContext</code></p>
+
+<p>✅  Argument <code>codes: [String!]</code> added to field <code>Mapping.contexts</code></p>
+
+<p>✅  Field <code>warnings</code> was added to object type <code>Mapping</code></p>
+
+<p>✅  Field <code>errors</code> was added to object type <code>Mapping</code></p>
+
+<p>✅  Argument <code>type: GroupType</code> added to field <code>AdminQuery.groups</code></p>
+
+<p>✅  Argument <code>type: MemberType</code> added to field <code>AdminQuery.members</code></p>
+
+<p>✅  Field <code>rank</code> was added to object type <code>HotelData</code></p>
+
+<p>✅  Argument <code>relay: HotelXRelayInput</code> added to field <code>HotelXQuery.hotels</code></p>
+
+<p>✅  Argument <code>hotels: HotelXHotelQueryInput</code> added to field <code>HotelXQuery.hotels</code></p>
+
+<p>✅  Field <code>mapping</code> was added to object type <code>HotelXQuery</code></p>
+
+<p>✅  Type <code>StatusResponse</code> was added</p>
+
+<p>✅  Type <code>HotelStatus</code> was added</p>
+
+<p>✅  Type <code>RankInput</code> was added</p>
+
+<p>✅  Type <code>HotelXHotelDataInput</code> was added</p>
+
+<p>✅  Type <code>HotelXHotelMutationInput</code> was added</p>
+
+<p>✅  Type <code>HotelXAccessInput</code> was added</p>
+
+<p>✅  Type <code>HotelXSupplierInput</code> was added</p>
+
+<p>✅  Type <code>HotelXRelayInput</code> was added</p>
+
+<p>✅  Type <code>HotelXHotelQueryInput</code> was added</p>
+
+<p>✅  Type <code>Rank</code> was added</p>
 
 
 <hr/>
@@ -1594,7 +2404,19 @@
           </div>
           <div class="menu-right">
             <div>
-              
+              <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#2018-03-05">2018-03-05</a></li>
+<li><a href="#2018-02-21">2018-02-21</a></li>
+<li><a href="#2018-01-30">2018-01-30</a></li>
+<li><a href="#2018-01-29">2018-01-29</a></li>
+<li><a href="#2018-01-17">2018-01-17</a></li>
+<li><a href="#2018-01-11">2018-01-11</a></li>
+</ul></li>
+</ul>
+</nav>
             </div>
           </div>
           <div class="clear"></div>
