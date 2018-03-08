@@ -2231,13 +2231,14 @@ GraphQL Schema definition type Warning {code: String! type: String! desc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/resources/graphql-api/</guid>
-      <description>2018-03-05 ⚠️ Input field AccessInput.parameters changed type from String to [ParameterInput]
-⚠️ Input field name was added to input object type AccessInput
-⚠️ Input field descriptiveInfoLimit was removed from input object type AccessInput
-⚠️ Input field serviceAPI was removed from input object type SupplierFilter
-⚠️ Input field isActive was removed from input object type SupplierFilter
-⚠️ Field updatedAt was removed from object type Parameter
-⚠️ Field createdAt was removed from object type Parameter</description>
+      <description>2018-03-08 ⚠️ Input field DestinationsCodes was removed from input object type HotelXDestinationListInput
+⚠️ Field boardData was removed from object type Destination
+⚠️ Input field ParameterInput.key changed type from ID! to String!
+⚠️ Field DestinationData.code changed type from String! to ID!
+⚠️ WebSearchResult was removed
+✅ Enum value NON_REFUNDABLE was added to enum RateRulesType
+✅ Enum value NORMAL was added to enum RateRulesType
+✅ Input field destinationCodes was added to input object type HotelXDestinationListInput</description>
     </item>
     
     <item>
