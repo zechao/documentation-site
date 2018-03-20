@@ -4,7 +4,7 @@
 	"title": "API",
 	"tags": [],
 	"description": "",
-	"content": " An API is a set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service.\nGraphQL Schema definition type API {\r\rcode: ID! \r\r\rerror: [Error!] \r\r\rapiData: APIData \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\r\r\rerror([Error!]):\r\r\rapiData(APIData):\r\r\rcreatedAt(DateTime!):\r\r\rupdatedAt(DateTime!):\r\r\r\nRequire by APIEdge: \r\r\r\n"
+	"content": " GraphQL Schema definition type API {\r\rcode: ID! \r\r\rerror: [Error!] \r\r\rapiData: APIData \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\r\r\rerror([Error!]):\r\r\rapiData(APIData):\r\r\rcreatedAt(DateTime!):\r\r\rupdatedAt(DateTime!):\r\r\r\nRequire by APIEdge: \r\r\r\n"
 },
 {
 	"uri": "/hotelx/reference/api-reference/",
@@ -39,7 +39,7 @@
 	"title": "Access",
 	"tags": [],
 	"description": "",
-	"content": " An Access is a set of credentials and configuration in order to access a Provider.\nGraphQL Schema definition type Access {\r\rcode: ID! \r\r\raccessData: AccessData! \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\r\r\raccessData(AccessData!):\r\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\n"
+	"content": " GraphQL Schema definition type Access {\r\rcode: ID! \r\r\raccessData: AccessData \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\r\r\raccessData(AccessData):\r\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\nRequire by AccessEdge: \r\r\rAccessData: \r\r\rAdminMutation: \r\r\r\n"
 },
 {
 	"uri": "/hotelx/concepts/accesses-supplier-context/",
@@ -67,21 +67,28 @@
 	"title": "AccessConnection",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type AccessConnection {\r\redges: [AccessEdge] \r\r\rpageInfo: PageInfo! \r\r}\r\r\rFields edges([AccessEdge]):\r\r\rpageInfo(PageInfo!):\r\r\r\n"
+	"content": " GraphQL Schema definition type AccessConnection {\r\redges: [AccessEdge] \r\r\rpageInfo: PageInfo! \r\r}\r\r\rFields edges([AccessEdge]):\r\r\rpageInfo(PageInfo!):\r\r\r\nRequire by AdminQuery: \r\r\rSupplierData: \r\r\rClientData: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/accessdata/",
 	"title": "AccessData",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type AccessData {\r\rsuppliers: Supplier! \r\r\risActive: Boolean! \r\r\rid: ID! \r\r\rcode: String! \r\r\rsupplier: String! \r\r\ruser: String \r\r\rpassword: String \r\r\rurls: Urls! \r\r\rparameters: [Parameter!] \r\r\rmarkets: [String!] \r\r}\r\r\rFields suppliers(Supplier!):\rcode: ID! URL: Url! user: String!\r\risActive(Boolean!):\rIndicates if the access is active.\r\rid(ID!):\rUnique AccessConfiguration identifier\r\rcode(String!):\rAccess code.\r\rsupplier(String!):\rsupplier for this access.\r\ruser(String):\rUser code to connect to supplier.\r\rpassword(String):\rPassword for the connection.\r\rurls(Urls!):\rSpecific Urls\r\rparameters([Parameter!]):\rList of parameters for additional information.\r\rmarkets([String!]):\rMarkets allowed for the access.\r\r\nRequire by Access: \r\r\r\n"
+	"content": " GraphQL Schema definition type AccessData {\r\rname: String! \r\r\risActive: Boolean! \r\r\rcode: ID! \r\r\rsupplier: Supplier! \r\r\risTest: Boolean! \r\r\ruser: String \r\r\rpassword: String \r\r\rurls: Urls \r\r\rparameters: [Parameter] \r\r\rmarkets: [String!] \r\r\rrateRules: [RateRulesType!] \r\r\rshared: Access \r\r}\r\r\rFields name(String!):\rAccess descriptive name\r\risActive(Boolean!):\rIndicates if the access is active.\r\rcode(ID!):\rUnique AccessConfiguration identifier\r\rsupplier(Supplier!):\rsupplier for this access.\r\risTest(Boolean!):\rIndicates if this access can be used for testing or not\r\ruser(String):\rUser code to connect to supplier.\r\rpassword(String):\rPassword for the connection.\r\rurls(Urls):\rSpecific Urls\r\rparameters([Parameter]):\rList of parameters for additional information.\r\rmarkets([String!]):\rMarkets allowed for the access.\r\rrateRules([RateRulesType!]):\rBusiness rules types for the access.\r\rshared(Access):\rParent access if Shared access\r\r\nRequire by Access: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/accessedge/",
 	"title": "AccessEdge",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type AccessEdge {\r\rcursor: String! \r\r\rnode: Supplier \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Supplier):\r\r\r\nRequire by AccessConnection: \r\r\r\n"
+	"content": " GraphQL Schema definition type AccessEdge {\r\rcursor: String! \r\r\rnode: Access \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Access):\r\r\r\nRequire by AccessConnection: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/accessfilter/",
+	"title": "AccessFilter",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type AccessFilter {\r\raccessID: [ID] \r\r\rgroup: [ID] \r\r}\r\r\rFields accessID([ID]):\r\r\rgroup([ID]):\r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/accessfilterinput/",
@@ -95,7 +102,7 @@
 	"title": "AccessInput",
 	"tags": [],
 	"description": "",
-	"content": " AccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.\nGraphQL Schema definition type AccessInput {\r\raccessId: ID! \r\r\rconfiguration: ConfigurationInput \r\r\rsettings: SettingsBaseInput \r\r}\r\r\rFields accessId(ID!):\rThe accessID used to identify the existing access in our Back Office in order to overwrite it. Acts as an identifier in this search. It can either exist or not.\r\rconfiguration(ConfigurationInput):\rInformation required to access the supplier\u0026#39;s system.\r\rsettings(SettingsBaseInput):\rYou can configure an special settings for any access. This level overwrites the search and supplier settings levels.\r\r\n"
+	"content": " Access input\nGraphQL Schema definition type AccessInput {\r\rname: String! \r\r\risActive: Boolean \r\r\rcode: ID \r\r\rsupplier: String \r\r\risTest: Boolean \r\r\ruser: String \r\r\rpassword: String \r\r\rurls: UrlsInput \r\r\rparameters: [ParameterInput] \r\r\rmarkets: [String!] \r\r\rrateRules: [RateRulesType!] \r\r\rshared: String \r\r\rgroup: ID \r\r}\r\r\rFields name(String!):\rAccess descriptive name\r\risActive(Boolean):\rIndicates if the access is active.\r\rcode(ID):\rAccess code.\r\rsupplier(String):\rsupplier for this access.\r\risTest(Boolean):\rIndicates if this access can be used for testing or not\r\ruser(String):\rUser code to connect to supplier.\r\rpassword(String):\rPassword for the connection.\r\rurls(UrlsInput):\rSpecific Urls\r\rparameters([ParameterInput]):\rList of parameters for additional information.\r\rmarkets([String!]):\rMarkets allowed for the access.\r\rrateRules([RateRulesType!]):\rBusiness rules types for the access.\r\rshared(String):\rParent access if Shared access.\r\rgroup(ID):\rDefault group where the access will be visible.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/accesssupplierinput/",
@@ -105,25 +112,32 @@
 	"content": " Supplier input for data access management API\nGraphQL Schema definition type AccessSupplierInput {\r\rcode: String! \r\r\rdll: String! \r\r\risActive: Boolean! \r\r\rgroups: [SupplierGroupInput!] \r\r}\r\r\rFields code(String!):\rsupplier code\r\rdll(String!):\rsupplier instance\r\risActive(Boolean!):\rIndicates if the supplier is active.\r\rgroups([SupplierGroupInput!]):\rgroups related to this supplier\r\r\n"
 },
 {
+	"uri": "/travelgatex/reference/objects/addon/",
+	"title": "AddOn",
+	"tags": [],
+	"description": "",
+	"content": " Extra information about the option.\nGraphQL Schema definition type AddOn {\r\rkey: String! \r\r\rvalue: JSON! \r\r}\r\r\rFields key(String!):\rContains the keyword/Id to identify the AddOn.\r\rvalue(JSON!):\rContains the AddOn values.\r\r\n"
+},
+{
 	"uri": "/travelgatex/reference/objects/addons/",
 	"title": "AddOns",
 	"tags": [],
 	"description": "",
-	"content": " Extra information about the option.\nGraphQL Schema definition type AddOns {\r\rdistribute: JSON \r\r}\r\r\rFields distribute(JSON):\rExtra information from the distribution layer\r\r\nRequire by HotelOptionSearch: \rAn option includes hotel information, meal plan, total price, conditions and room description.\r\rHotelOptionQuote: \rContains information about quote.\r\rHotelBookingDetail: \rContains information about booking.\r\r\n"
+	"content": " Extra information about the option.\nGraphQL Schema definition type AddOns {\r\rdistribution: [AddOn!] \r\rShow deprecated fields\r\r\r}\r\r\rFields distribution([AddOn!]):\rExtra information from the distribution layer\r\r\nRequire by HotelOptionSearch: \rAn option includes hotel information, meal plan, total price, conditions and room description.\r\rHotelOptionQuote: \rContains information about quote.\r\rHotelBookingDetail: \rContains information about booking.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/adminmutation/",
 	"title": "AdminMutation",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type AdminMutation {\r\rcreateMember(\rmember: CreateMemberInput!,\r): Member! \r\r\rcreateGroup(\rgroup: CreateGroupInput!,\r): Group! \r\r\rupdateMember(\rmember: UpdateMemberInput!,\r): Member! \r\r\rupdateGroup(\rgroup: UpdateGroupInput!,\r): Group! \r\r\rdeleteMember(\rmember: [DeleteMemberInput!]!,\r): Member! \r\r\rdeleteGroup(\rgroup: DeleteGroupInput!,\r): Group! \r\r}\r\r\rFields createMember(Member!):\rCreate member. Requires specific group and role.\r\rcreateGroup(Group!):\rCreate group. Group \u0026#34;owner\u0026#34; is optional.\r\rupdateMember(Member!):\rUpdate member adding or removing roles.\r\rupdateGroup(Group!):\rUpdate group adding or removing apis.\r\rdeleteMember(Member!):\rDelete member from specific group.\r\rdeleteGroup(Group!):\rDelete group and members from this group.\r\r\nRequire by Mutation: \rMutations are operations that change or update data in the server.\r\r\n"
+	"content": " GraphQL Schema definition type AdminMutation {\r\rcreateAccess(\rinput: AccessInput!,\r): Access \r\r\rupdateAccess(\rinput: AccessInput!,\r): Access \r\r\rgrantAccessToGroup(\rinput: GroupInput!,\r): Access \r\r\rdeleteAccessFromGroup(\rinput: GroupInput!,\r): Access \r\r\rgrantSupplierToGroup(\rinput: GroupInput!,\r): Supplier \r\r\rdeleteSupplierFromGroup(\rinput: GroupInput!,\r): Supplier \r\r\rcreateClient(\rinput: ClientInput!,\r): Client \r\r\rupdateClient(\rinput: ClientInput!,\r): Client \r\r\rcreateMember(\rmember: CreateMemberInput!,\r): Member! \r\r\rcreateGroup(\rgroup: CreateGroupInput!,\r): Group! \r\r\rupdateMember(\rmember: UpdateMemberInput!,\r): Member! \r\r\rupdateGroup(\rgroup: UpdateGroupInput!,\r): Group! \r\r\rdeleteMember(\rmember: [DeleteMemberInput!]!,\r): Member! \r\r\rdeleteGroup(\rgroup: DeleteGroupInput!,\r): Group! \r\r}\r\r\rFields createAccess(Access):\rCreates an Access.\r\rupdateAccess(Access):\rUpdates an Access.\r\rgrantAccessToGroup(Access):\rGrants Access visibility to a group.\r\rdeleteAccessFromGroup(Access):\rRemoves Access visibility to groups.\r\rgrantSupplierToGroup(Supplier):\rGrants Supplier visibility to a group.\r\rdeleteSupplierFromGroup(Supplier):\rRemoves Supplier visibility to groups.\r\rcreateClient(Client):\rCreates a Client.\r\rupdateClient(Client):\rUpdates a Client.\r\rcreateMember(Member!):\rCreate member. Requires specific group and role.\r\rcreateGroup(Group!):\rCreate group. Group \u0026#34;owner\u0026#34; is optional.\r\rupdateMember(Member!):\rUpdate member adding or removing roles.\r\rupdateGroup(Group!):\rUpdate group adding or removing apis.\r\rdeleteMember(Member!):\rDelete member from specific group.\r\rdeleteGroup(Group!):\rDelete group and members from this group.\r\r\nRequire by Mutation: \rMutations are operations that change or update data in the server.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/adminquery/",
 	"title": "AdminQuery",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type AdminQuery {\r\rorganizations(\r\r\r\rcodes: [ID!],\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): OrganizationConnection! \r\r\rproducts(\r\r\r\rcodes: [ID!],\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): ProductConnection! \r\r\rmembers(\r\r\r\rcodes: [ID!],\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): MemberConnection! \r\r\rgroups(\r\r\r\rcodes: [ID!],\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): GroupConnection! \r\r\rapis(\r\r\r\rcodes: [ID!],\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): APIConnection! \r\r\rresources(\r\r\r\rcodes: [ID!],\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): ResourceConnection! \r\r\rroles(\r\r\r\rcodes: [ID!],\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): RoleConnection! \r\r}\r\r\rFields organizations(OrganizationConnection!):\rOrganizations list. Specify organization codes to filter organizations.\r\rproducts(ProductConnection!):\rProducts list. Specify product codes to filter products.\r\rmembers(MemberConnection!):\rMembers list. Specify member codes to filter members.\r\rgroups(GroupConnection!):\rGroups list. Specify group codes to filter groups.\r\rapis(APIConnection!):\rApis list. Specify api codes to filter apis.\r\rresources(ResourceConnection!):\rResources list. Specify resource codes to filter resources.\r\rroles(RoleConnection!):\rRoles list. Specify role codes to filter roles.\r\r\nRequire by Query: \r\r\r\n"
+	"content": " GraphQL Schema definition type AdminQuery {\r\raccesses(\r\r\r\rfirst: Int,\r\r\r\r\rLast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\rfilter: AccessFilter,\r\r\r\r\r): AccessConnection \r\r\rsuppliers(\r\r\r\rfirst: Int,\r\r\r\r\rLast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\rfilter: SupplierFilter,\r\r\r\r\r): SupplierConnection \r\r\rclients(\r\r\r\rfirst: Int,\r\r\r\r\rLast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\rfilter: ClientFilter,\r\r\r\r\r): ClientConnection \r\r\rorganizations(\r\r\r\rcodes: [ID!],\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): OrganizationConnection! \r\r\rproducts(\r\r\r\rcodes: [ID!],\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): ProductConnection! \r\r\rmembers(\r\r\r\rcodes: [ID!],\r\r\r\r\rtype: MemberType,\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): MemberConnection! \r\r\rgroups(\r\r\r\rcodes: [ID!],\r\r\r\r\rtype: GroupType,\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): GroupConnection! \r\r\rapis(\r\r\r\rcodes: [ID!],\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): APIConnection! \r\r\rresources(\r\r\r\rcodes: [ID!],\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): ResourceConnection! \r\r\rroles(\r\r\r\rcodes: [ID!],\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): RoleConnection! \r\r}\r\r\rFields accesses(AccessConnection):\rObtain a list of accesses for a filter.\r\rsuppliers(SupplierConnection):\rObtain all suppliers for a filter.\r\rclients(ClientConnection):\rObtain all clients for a filter.\r\rorganizations(OrganizationConnection!):\rOrganizations list. Specify organization codes to filter organizations.\r\rproducts(ProductConnection!):\rProducts list. Specify product codes to filter products.\r\rmembers(MemberConnection!):\rMembers list. Specify member codes to filter members.\r\rgroups(GroupConnection!):\rGroups list. Specify group codes to filter groups.\r\rapis(APIConnection!):\rApis list. Specify api codes to filter apis.\r\rresources(ResourceConnection!):\rResources list. Specify resource codes to filter resources.\r\rroles(RoleConnection!):\rRoles list. Specify role codes to filter roles.\r\r\nRequire by Query: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/interfaces/advisemessage/",
@@ -137,35 +151,14 @@
 	"title": "Amenity",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type Amenity {\r\rcode: ID! \r\r\rAmenityData: AmenityData \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\r\r\rAmenityData(AmenityData):\r\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\nRequire by AmenityEdge: \rHotelList Edge definition\r\r\n"
+	"content": " Something, such as a swimming pool or shopping centre, that is intended to make life more pleasant or comfortable for the people.\nGraphQL Schema definition type Amenity {\r\rcode: String! \r\r\rtype: ApplicationAreaType! \r\r\rtexts(\rlanguages: [Language!],\r): [Text!]! \r\r}\r\r\rFields code(String!):\rCode\r\rtype(ApplicationAreaType!):\rIndicates the type of the amenity.\r\rtexts([Text!]!):\rContains the descriptive\r\r\n"
 },
 {
-	"uri": "/travelgatex/reference/objects/amenityconnection/",
-	"title": "AmenityConnection",
+	"uri": "/travelgatex/reference/enums/applicationareatype/",
+	"title": "ApplicationAreaType",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type AmenityConnection {\r\redges: [AmenityEdge] \r\r\rpageInfo: PageInfo! \r\r}\r\r\rFields edges([AmenityEdge]):\r\r\rpageInfo(PageInfo!):\r\r\r\nRequire by HotelData: \rHotel data\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/objects/amenitydata/",
-	"title": "AmenityData",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL Schema definition type AmenityData {\r\rcode: ID! \r\r\rinformation: Information! \r\r\rtype: ApplicationArea! \r\r}\r\r\rFields code(ID!):\r\r\rinformation(Information!):\r\r\rtype(ApplicationArea!):\r\r\r\nRequire by Amenity: \r\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/objects/amenityedge/",
-	"title": "AmenityEdge",
-	"tags": [],
-	"description": "",
-	"content": " HotelList Edge definition\nGraphQL Schema definition type AmenityEdge {\r\rcursor: String! \r\r\rnode: Amenity \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Amenity):\r\r\r\nRequire by AmenityConnection: \r\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/enums/applicationarea/",
-	"title": "ApplicationArea",
-	"tags": [],
-	"description": "",
-	"content": " Indicates a place\nGraphQL Schema definition \renum\rApplicationArea{\r\r\rGENERAL,\r\r\r\rHOTEL,\r\r\r\rROOM,\r\r\r\rSERVICE,\r\r\r} \r Require by MediaData: \r\r\rAmenityData: \r\r\r\n"
+	"content": " Indicates where it applies\nGraphQL Schema definition \renum\rApplicationAreaType{\r\r\rHOTEL,\r\r\r\rROOM,\r\r\r\rSERVICE,\r\r\r\rGENERAL,\r\r\r} \r Require by Amenity: \rSomething, such as a swimming pool or shopping centre, that is intended to make life more pleasant or comfortable for the people.\r\rMedia: \rContains media information.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/auditdata/",
@@ -180,6 +173,34 @@
 	"tags": [],
 	"description": "",
 	"content": " Contains information about a bed.\nGraphQL Schema definition type Bed {\r\rtype: String \r\r\rdescription: String \r\r\rcount: Int \r\r\rshared: Boolean \r\r}\r\r\rFields type(String):\rSpecifies the bed type.\r\rdescription(String):\rDescription about the bed.\r\rcount(Int):\rIndicates number of beds in the room.\r\rshared(Boolean):\rSpecifies if the bed is shared or not.\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/board/",
+	"title": "Board",
+	"tags": [],
+	"description": "",
+	"content": " Board Type\nGraphQL Schema definition type Board {\r\rcode: ID! \r\r\rboardData: BoardData \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\rBoard ID\r\rboardData(BoardData):\rBoard data\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\nRequire by BoardEdge: \rBoardList Edge definition\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/boardconnection/",
+	"title": "BoardConnection",
+	"tags": [],
+	"description": "",
+	"content": " BoardList definition\nGraphQL Schema definition type BoardConnection {\r\redges: [BoardEdge] \r\r\rpageInfo: PageInfo! \r\r}\r\r\rFields edges([BoardEdge]):\r\r\rpageInfo(PageInfo!):\r\r\r\nRequire by HotelXQuery: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/boarddata/",
+	"title": "BoardData",
+	"tags": [],
+	"description": "",
+	"content": " Board data\nGraphQL Schema definition type BoardData {\r\rcode: ID! \r\r\rboardCode: String! \r\r\rtexts(\rlanguages: [Language!],\r): [Text!] \r\r}\r\r\rFields code(ID!):\rInternal code to perform availability.\r\rboardCode(String!):\rCode of the hotel in the Supplier selected.\r\rtexts([Text!]):\rLabel\r\r\nRequire by Board: \rBoard Type\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/boardedge/",
+	"title": "BoardEdge",
+	"tags": [],
+	"description": "",
+	"content": " BoardList Edge definition\nGraphQL Schema definition type BoardEdge {\r\rcursor: String! \r\r\rnode: Board \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Board):\r\r\r\nRequire by BoardConnection: \rBoardList definition\r\r\n"
 },
 {
 	"uri": "/hotelx/howtos/howto-book/",
@@ -228,7 +249,7 @@
 	"title": "Booking",
 	"tags": [],
 	"description": "",
-	"content": " Returns detailed information about books.\nGraphQL Schema definition type Booking {\r\rhotel(\rcriteria: HotelCriteriaBookingInput!,\rsettings: HotelSettingsInput,\r): HotelBooking \r\r}\r\r\rFields hotel(HotelBooking):\rReturns detailed information about books, you can indicated a list of locators or a range date.\r\r\nRequire by Query: \r\r\r\n"
+	"content": " Returns detailed information about books.\nGraphQL Schema definition type Booking {\rShow deprecated fields\r\r\rhotel(\rcriteria: HotelCriteriaBookingInput!,\rsettings: HotelSettingsInput,\r): HotelBooking \r\r\r}\r\r\rRequire by Query: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/enums/bookingcriteriatype/",
@@ -256,7 +277,7 @@
 	"title": "Boolean",
 	"tags": [],
 	"description": "",
-	"content": " The Boolean scalar type represents true or false.\nGraphQL Schema definition scalar Boolean\r\r\rRequire by HotelData: \rHotel data\r\rPageInfo: \r\r\rDestination: \rDestination type\r\rHotelSettingsInput: \rSettings that you can edit for this avail. Values are loaded by default in our Back Office.\r\rSettingsBaseInput: \rContains the time out and business rules of a supplier or an access.\r\rRoom: \rContains the room information of the option returned.\r\rPrice: \rPrice indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.\r\rPriceable: \r\r\rMarkup: \rInforms markup applied over supplier price.\r\rBed: \rContains information about a bed.\r\rSupplement: \rSupplement that it can be or its already added to the option returned. Contains all the information about the supplement.\r\rSurcharge: \rSurcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.\r\rCancelPolicy: \rContains information about a cancel policy.\r\rOrganizationData: \r\r\rGroupCommonData: \r\r\rMember: \r\r\rGroupData: \r\r\rRoleData: \r\r\rMutation: \rMutations are operations that change or update data in the server.\r\rDeltaPriceInput: \rInput delta price, indicates price variation permitted by the client\r\rAccessData: \r\r\rSupplierData: \r\r\rSupplierGroup: \rgroup related to a supplier\r\rConnectUser: \rdata related to a connect user and its groups\r\rConnectUserGroup: \rgroup related to a connect user\r\rAccessConfigurationInput: \rThe information required to access the supplier\u0026#39;s system.\r\rAccessConnectUserInput: \rConnect user input for data access management API\r\rConnectUserGroupInput: \rgroup related to a connect user\r\rAccessSupplierInput: \rSupplier input for data access management API\r\rSupplierGroupInput: \rgroup related to a supplier\r\rIdAccessConfigurationInput: \r\r\r "
+	"content": " The Boolean scalar type represents true or false.\nGraphQL Schema definition scalar Boolean\r\r\rRequire by PageInfo: \r\r\rHotelData: \rHotel data\r\rDestinationData: \rInformation about destinantion\r\rHotelSettingsInput: \rSettings that you can edit for this avail. Values are loaded by default in our Back Office.\r\rSettingsBaseInput: \rContains the time out and business rules of a supplier or an access.\r\rRoom: \rContains the room information of the option returned.\r\rPrice: \rPrice indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.\r\rPriceable: \r\r\rMarkup: \rInforms markup applied over supplier price.\r\rBed: \rContains information about a bed.\r\rSupplement: \rSupplement that it can be or its already added to the option returned. Contains all the information about the supplement.\r\rSurcharge: \rSurcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.\r\rCancelPolicy: \rContains information about a cancel policy.\r\rAccessData: \r\r\rSupplierData: \r\r\rProvider: \rTemporary type to use only during SQL server\u0026#39;s lifetime\r\rClientFilter: \r\r\rClientData: \r\r\rOrganizationData: \r\r\rGroupCommonData: \r\r\rMember: \r\r\rGroupData: \r\r\rRoleData: \r\r\rMutation: \rMutations are operations that change or update data in the server.\r\rDeltaPriceInput: \rInput delta price, indicates price variation permitted by the client\r\rAccessInput: \rAccess input\r\rClientInput: \r\r\rSupplierGroup: \rgroup related to a supplier\r\rConnectUser: \rdata related to a connect user and its groups\r\rConnectUserGroup: \rgroup related to a connect user\r\rAccessConfigurationInput: \rThe information required to access the supplier\u0026#39;s system.\r\rAccessConnectUserInput: \rConnect user input for data access management API\r\rConnectUserGroupInput: \rgroup related to a connect user\r\rAccessSupplierInput: \rSupplier input for data access management API\r\rSupplierGroupInput: \rgroup related to a supplier\r\rIdAccessConfigurationInput: \r\r\r "
 },
 {
 	"uri": "/travelgatex/tutorials/ota-site/",
@@ -305,7 +326,35 @@
 	"title": "CancelPolicy",
 	"tags": [],
 	"description": "",
-	"content": " Contains information about a cancel policy.\nGraphQL Schema definition type CancelPolicy {\r\rrefundable: Boolean! \r\r\rcancelPenalties: [CancelPenalty!] \r\r}\r\r\rFields refundable(Boolean!):\rIndicates if the option is refundable or not. This information is mandatory.\r\rcancelPenalties([CancelPenalty!]):\rList of cancel penalties.\r\r\nRequire by HotelOptionSearch: \rAn option includes hotel information, meal plan, total price, conditions and room description.\r\rHotelOptionQuote: \rContains information about quote.\r\rHotelBookingDetail: \rContains information about booking.\r\r\n"
+	"content": " Contains information about a cancel policy.\nGraphQL Schema definition type CancelPolicy {\r\rrefundable: Boolean! \r\r\rcancelPenalties: [CancelPenalty!] \r\r}\r\r\rFields refundable(Boolean!):\rIndicates if the option is refundable or not.\r\rcancelPenalties([CancelPenalty!]):\rList of cancel penalties.\r\r\nRequire by HotelOptionSearch: \rAn option includes hotel information, meal plan, total price, conditions and room description.\r\rHotelOptionQuote: \rContains information about quote.\r\rHotelBookingDetail: \rContains information about booking.\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/category/",
+	"title": "Category",
+	"tags": [],
+	"description": "",
+	"content": " Category Type\nGraphQL Schema definition type Category {\r\rcode: ID! \r\r\rcategoryData: CategoryData \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\rCategory ID\r\rcategoryData(CategoryData):\rCategory data\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\nRequire by CategoryEdge: \rCategoryList Edge definition\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/categoryconnection/",
+	"title": "CategoryConnection",
+	"tags": [],
+	"description": "",
+	"content": " CategoryList definition\nGraphQL Schema definition type CategoryConnection {\r\redges: [CategoryEdge] \r\r\rpageInfo: PageInfo! \r\r}\r\r\rFields edges([CategoryEdge]):\r\r\rpageInfo(PageInfo!):\r\r\r\nRequire by HotelXQuery: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/categorydata/",
+	"title": "CategoryData",
+	"tags": [],
+	"description": "",
+	"content": " Category data\nGraphQL Schema definition type CategoryData {\r\rcode: ID! \r\r\rcategoryCode: String! \r\r\rtexts(\rlanguages: [Language!],\r): [Text!] \r\r}\r\r\rFields code(ID!):\rInternal code to perform availability.\r\rcategoryCode(String!):\rCode of the hotel in the Supplier selected.\r\rtexts([Text!]):\rLabel\r\r\nRequire by Category: \rCategory Type\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/categoryedge/",
+	"title": "CategoryEdge",
+	"tags": [],
+	"description": "",
+	"content": " CategoryList Edge definition\nGraphQL Schema definition type CategoryEdge {\r\rcursor: String! \r\r\rnode: Category \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Category):\r\r\r\nRequire by CategoryConnection: \rCategoryList definition\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/enums/chargetype/",
@@ -315,11 +364,53 @@
 	"content": " Charge Type\nGraphQL Schema definition \renum\rChargeType{\r\r\rINCLUDE,\r\r\r\rEXCLUDE,\r\r\r} \r Require by Supplement: \rSupplement that it can be or its already added to the option returned. Contains all the information about the supplement.\r\rSurcharge: \rSurcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.\r\r\n"
 },
 {
+	"uri": "/travelgatex/reference/objects/client/",
+	"title": "Client",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type Client {\r\rcode: ID! \r\r\rclientData: ClientData \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\r\r\rclientData(ClientData):\r\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\nRequire by ClientEdge: \r\r\rAdminMutation: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/clientconnection/",
+	"title": "ClientConnection",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type ClientConnection {\r\redges: [ClientEdge] \r\r\rpageInfo: PageInfo! \r\r}\r\r\rFields edges([ClientEdge]):\r\r\rpageInfo(PageInfo!):\r\r\r\nRequire by AdminQuery: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/clientdata/",
+	"title": "ClientData",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type ClientData {\r\rcode: ID! \r\r\rname: String! \r\r\risActive: Boolean! \r\r\raccesses: AccessConnection \r\r}\r\r\rFields code(ID!):\rID identifier of a Client\r\rname(String!):\rClient complete name\r\risActive(Boolean!):\rIndicates whether a Client is active\r\raccesses(AccessConnection):\rAccesses assigned to that Client\r\r\nRequire by Client: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/clientedge/",
+	"title": "ClientEdge",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type ClientEdge {\r\rcursor: String! \r\r\rnode: Client \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Client):\r\r\r\nRequire by ClientConnection: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/clientfilter/",
+	"title": "ClientFilter",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type ClientFilter {\r\rclientID: [ID] \r\r\risActive: Boolean \r\r}\r\r\rFields clientID([ID]):\r\r\risActive(Boolean):\r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/clientinput/",
+	"title": "ClientInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type ClientInput {\r\rcode: ID! \r\r\rname: String \r\r\risActive: Boolean \r\r\raccesses: [ID!] \r\r}\r\r\rFields code(ID!):\rID identifier of a Client\r\rname(String):\rClient complete name\r\risActive(Boolean):\rIndicates whether a Client is active\r\raccesses([ID!]):\rAccesses assigned to that Client\r\r\n"
+},
+{
 	"uri": "/travelgatex/reference/inputobjects/configurationinput/",
 	"title": "ConfigurationInput",
 	"tags": [],
 	"description": "",
-	"content": " The information and credentials required to access the supplierâ€™s system.\nGraphQL Schema definition type ConfigurationInput {\r\rusername: String \r\r\rpassword: String \r\r\rurls: UrlsInput! \r\r\rparameters: [ParameterInput!] \r\r\rmarkets: [String!] \r\r\rrateRules: [RateRulesType!] \r\r}\r\r\rFields username(String):\rUser name for the connection.\r\rpassword(String):\rPassword for the connection.\r\rurls(UrlsInput!):\rUrl or endpoint for the connection.\r\rparameters([ParameterInput!]):\rList of parameters with additional required information.\r\rmarkets([String!]):\rSource markets allowed for the access.\r\rrateRules([RateRulesType!]):\rRateRules allowed for the access.\r\r\nRequire by AccessInput: \rAccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.\r\rAccessConfigurationInput: \rThe information required to access the supplier\u0026#39;s system.\r\rIdAccessConfigurationInput: \r\r\r\n"
+	"content": " The information and credentials required to access the supplierâ€™s system.\nGraphQL Schema definition type ConfigurationInput {\r\rusername: String \r\r\rpassword: String \r\r\rurls: UrlsInput! \r\r\rparameters: [ParameterInput!] \r\r\rmarkets: [String!] \r\r\rrateRules: [RateRulesType!] \r\r}\r\r\rFields username(String):\rUser name for the connection.\r\rpassword(String):\rPassword for the connection.\r\rurls(UrlsInput!):\rUrl or endpoint for the connection.\r\rparameters([ParameterInput!]):\rList of parameters with additional required information.\r\rmarkets([String!]):\rSource markets allowed for the access.\r\rrateRules([RateRulesType!]):\rRateRules allowed for the access.\r\r\nRequire by HotelXAccessInput: \rAccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.\r\rAccessConfigurationInput: \rThe information required to access the supplier\u0026#39;s system.\r\rIdAccessConfigurationInput: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/connectuser/",
@@ -347,14 +438,28 @@
 	"title": "Contact",
 	"tags": [],
 	"description": "",
-	"content": " Contact type\nGraphQL Schema definition type Contact {\r\remail: String \r\r\rtelephone: String \r\r\rfax: String \r\r\rweb: URI! \r\r}\r\r\rFields email(String):\rEmail.\r\rtelephone(String):\rTelephone.\r\rfax(String):\rFax.\r\rweb(URI!):\rWeb.\r\r\nRequire by HotelData: \rHotel data\r\r\n"
+	"content": " Contact Data.\nGraphQL Schema definition type Contact {\r\remail: String \r\r\rtelephone: String \r\r\rfax: String \r\r\rweb: URI \r\r}\r\r\rFields email(String):\rEmail\r\rtelephone(String):\rTelephone\r\rfax(String):\rFax\r\rweb(URI):\rWeb\r\r\nRequire by HotelData: \rHotel data\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/context/",
+	"title": "Context",
+	"tags": [],
+	"description": "",
+	"content": " Context type, for now only Code is necessary\nGraphQL Schema definition type Context {\r\rcode: ID! \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\r\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/coordinates/",
+	"title": "Coordinates",
+	"tags": [],
+	"description": "",
+	"content": " Geographical coordinates corresponding to a location.\nGraphQL Schema definition type Coordinates {\r\rlatitude: Float! \r\r\rlongitude: Float! \r\r}\r\r\rFields latitude(Float!):\rLatitude\r\rlongitude(Float!):\rLongitude\r\r\nRequire by Location: \rIndicates the location of the hotel.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/scalars/country/",
 	"title": "Country",
 	"tags": [],
 	"description": "",
-	"content": " The Country type represents Country values. A good example might be a Passenger Nationality. In queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes \u0026ldquo;ES\u0026rdquo;.\nGraphQL Schema definition scalar Country\r\r\rRequire by Location: \rLocation\r\rHotelCriteriaSearchInput: \rCriteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.\r\rCriteriaSearch: \rCriteria of search contains destination, travel dates and the number of pax in each room.\r\rDefaultSettings: \r\r\rDefaultSettingsInput: \r\r\r "
+	"content": " The Country type represents Country values. A good example might be a Passenger Nationality. In queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes \u0026ldquo;ES\u0026rdquo;.\nGraphQL Schema definition scalar Country\r\r\rRequire by Location: \rIndicates the location of the hotel.\r\rHotelCriteriaSearchInput: \rCriteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.\r\rCriteriaSearch: \rCriteria of search contains destination, travel dates and the number of pax in each room.\r\rDefaultSettings: \r\r\rDefaultSettingsInput: \r\r\r "
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/creategroupinput/",
@@ -410,7 +515,7 @@
 	"title": "DateTime",
 	"tags": [],
 	"description": "",
-	"content": " The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: \u0026ldquo;2017-10-22T13:57:31.123Z\u0026rdquo;.\nGraphQL Schema definition scalar DateTime\r\r\rRequire by Hotel: \rHotel type\r\rNode: \r\r\rMedia: \r\r\rAmenity: \r\r\rStat: \r\r\rAuditData: \rData sent \u0026amp; received in the supplierâ€™s native format.\r\rTransactions: \rSupplier transaction\r\rOrganization: \r\r\rMember: \r\r\rGroup: \r\r\rAPI: \r\r\rResource: \r\r\rRole: \r\r\rProduct: \r\r\rAccess: \r\r\rSupplier: \r\r\r "
+	"content": " The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: \u0026ldquo;2017-10-22T13:57:31.123Z\u0026rdquo;.\nGraphQL Schema definition scalar DateTime\r\r\rRequire by Board: \rBoard Type\r\rNode: \r\r\rCategory: \rCategory Type\r\rRoomStatic: \rRoom Type\r\rHotel: \rHotel Type\r\rMedia: \rContains media information.\r\rDestination: \rDestination Type\r\rStat: \r\r\rAuditData: \rData sent \u0026amp; received in the supplierâ€™s native format.\r\rTransactions: \rSupplier transaction\r\rAccess: \r\r\rSupplier: \r\r\rClient: \r\r\rOrganization: \r\r\rMember: \r\r\rGroup: \r\r\rAPI: \r\r\rResource: \r\r\rRole: \r\r\rProduct: \r\r\rContext: \rContext type, for now only Code is necessary\r\r "
 },
 {
 	"uri": "/travelgatex/reference/enums/datetype/",
@@ -424,7 +529,7 @@
 	"title": "DefaultSettings",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type DefaultSettings {\r\rconnectUser: String! \r\r\rcontext: String \r\r\rlanguage: Language! \r\r\rcurrency: Currency! \r\r\rnationality: Country! \r\r\rmarket: String! \r\r\rtimeouts: Timeout! \r\r\rbusinessRules: BusinessRules! \r\r}\r\r\rFields connectUser(String!):\rThis field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload.\r\rcontext(String):\rIndicates the context of the I/O codes (hotel, board, room and rates)\r\rlanguage(Language!):\rLanguage to be used in request.\r\rcurrency(Currency!):\rCurrency requested if supported by supplier.\r\rnationality(Country!):\rNationality of the guest (use ISO3166_1_alfa_2).\r\rmarket(String!):\rTargeted zone, country or point of sale to be used in request.\r\rtimeouts(Timeout!):\rGroup of timeouts to be used in the differents services\r\rbusinessRules(BusinessRules!):\rBusiness rules.\r\r\nRequire by Query: \r\r\rMutation: \rMutations are operations that change or update data in the server.\r\r\n"
+	"content": " GraphQL Schema definition type DefaultSettings {\r\rconnectUser: String \r\r\rcontext: String \r\r\rlanguage: Language! \r\r\rcurrency: Currency! \r\r\rnationality: Country! \r\r\rmarket: String \r\r\rtimeouts: Timeout! \r\r\rbusinessRules: BusinessRules! \r\r}\r\r\rFields connectUser(String):\rThis field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload.\r\rcontext(String):\rIndicates the context of the I/O codes (hotel, board, room and rates)\r\rlanguage(Language!):\rLanguage to be used in request.\r\rcurrency(Currency!):\rCurrency requested if supported by supplier.\r\rnationality(Country!):\rNationality of the guest (use ISO3166_1_alfa_2).\r\rmarket(String):\rTargeted zone, country or point of sale to be used in request.\r\rtimeouts(Timeout!):\rGroup of timeouts to be used in the differents services\r\rbusinessRules(BusinessRules!):\rBusiness rules.\r\r\nRequire by Query: \r\r\rMutation: \rMutations are operations that change or update data in the server.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput/",
@@ -462,11 +567,53 @@
 	"content": " Input delta price, indicates price variation permitted by the client\nGraphQL Schema definition type DeltaPriceInput {\r\ramount: Float \r\r\rpercent: Float \r\r\rapplyBoth: Boolean! \r\r}\r\r\rFields amount(Float):\rThe amount in the currency returned by the option that will be accepted by the client to be higher than the valuation price.\r\rpercent(Float):\rThe percentage accepted by the client to be higher than the valuation price.\r\rapplyBoth(Boolean!):\rIndicates that the range between valuation price and the new price does not exceed the amount and/or porcentage indicated by the client.\r\r\nRequire by HotelBookInput: \rCriteria of book.\r\r\n"
 },
 {
+	"uri": "/travelgatex/reference/objects/description/",
+	"title": "Description",
+	"tags": [],
+	"description": "",
+	"content": " Object description indicates the type and the description about something.\nGraphQL Schema definition type Description {\r\rtype: DescriptionType! \r\r\rtexts: [Text!] \r\r}\r\r\rFields type(DescriptionType!):\rIndicates type of description\r\rtexts([Text!]):\rLabel\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/enums/descriptiontype/",
+	"title": "DescriptionType",
+	"tags": [],
+	"description": "",
+	"content": " Indicates the type of description\nGraphQL Schema definition \renum\rDescriptionType{\r\r\rADDITIONAL,\r\r\r\rAMENITY,\r\r\r\rACTIVITY,\r\r\r\rRESTAURANT,\r\r\r\rROOM,\r\r\r\rGENERAL,\r\r\r\rPOOL,\r\r\r\rLOCATION,\r\r\r\rHOW_TO_GET,\r\r\r} \r Require by Description: \rObject description indicates the type and the description about something.\r\r\n"
+},
+{
 	"uri": "/travelgatex/reference/objects/destination/",
 	"title": "Destination",
 	"tags": [],
 	"description": "",
-	"content": " Destination type\nGraphQL Schema definition type Destination {\r\rcode: String \r\r\rname: String \r\r\ravail: Boolean! \r\r}\r\r\rFields code(String):\rDestination code.\r\rname(String):\rDestination name.\r\ravail(Boolean!):\rIndicates if it is allowed in availability.\r\r\nRequire by HotelData: \rHotel data\r\r\n"
+	"content": " Destination Type\nGraphQL Schema definition type Destination {\r\rcode: ID! \r\r\rdestinationData: DestinationData \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\rDestination ID\r\rdestinationData(DestinationData):\rDestination data\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\nRequire by DestinationEdge: \rDestinationList Edge definition\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/destinationconnection/",
+	"title": "DestinationConnection",
+	"tags": [],
+	"description": "",
+	"content": " DestinationList definition\nGraphQL Schema definition type DestinationConnection {\r\redges: [DestinationEdge] \r\r\rtoken: String! \r\r\rpageInfo: PageInfo! \r\r}\r\r\rFields edges([DestinationEdge]):\r\r\rtoken(String!):\r\r\rpageInfo(PageInfo!):\r\r\r\nRequire by HotelXQuery: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/destinationdata/",
+	"title": "DestinationData",
+	"tags": [],
+	"description": "",
+	"content": " Information about destinantion\nGraphQL Schema definition type DestinationData {\r\rcode: ID! \r\r\ravailable: Boolean! \r\r\rdestinationLeaf: [String!] \r\r\rtexts(\rlanguages: [Language!],\r): [Text!]! \r\r\rclosestDestinations: [String!] \r\r\rparent: String \r\r\rtype: DestinationType! \r\r}\r\r\rFields code(ID!):\rDestination Code\r\ravailable(Boolean!):\rIndicates if you can search by destination.\r\rdestinationLeaf([String!]):\rReturns destination leafs of the destination.\r\rtexts([Text!]!):\rContains the destination name\r\rclosestDestinations([String!]):\rClosest destinations, indicates the minimal destinations.\r\rparent(String):\rParent destination code.\r\rtype(DestinationType!):\rIndicates destination type, zone or city.\r\r\nRequire by Location: \rIndicates the location of the hotel.\r\rDestination: \rDestination Type\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/destinationedge/",
+	"title": "DestinationEdge",
+	"tags": [],
+	"description": "",
+	"content": " DestinationList Edge definition\nGraphQL Schema definition type DestinationEdge {\r\rcursor: String! \r\r\rnode: Destination \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Destination):\r\r\r\nRequire by DestinationConnection: \rDestinationList definition\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/enums/destinationtype/",
+	"title": "DestinationType",
+	"tags": [],
+	"description": "",
+	"content": " Indicates the type of destination\nGraphQL Schema definition \renum\rDestinationType{\r\r\rZONE,\r\r\r\rCITY,\r\r\r} \r Require by DestinationData: \rInformation about destinantion\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/enums/durationtype/",
@@ -515,14 +662,7 @@
 	"title": "Float",
 	"tags": [],
 	"description": "",
-	"content": " The Float scalar type represents signed double-precision fractional values as specified by IEEE 754.\nGraphQL Schema definition scalar Float\r\r\rRequire by Stat: \r\r\rAuditData: \rData sent \u0026amp; received in the supplierâ€™s native format.\r\rPrice: \rPrice indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.\r\rPriceable: \r\r\rExchange: \rInforms about the currency of origin, and the rate applied over result returned by the supplier.\r\rMarkup: \rInforms markup applied over supplier price.\r\rRule: \r\r\rCancelPenalty: \rContains information about a cancel penalty.\r\rDeltaPriceInput: \rInput delta price, indicates price variation permitted by the client\r\r "
-},
-{
-	"uri": "/travelgatex/reference/objects/geocode/",
-	"title": "Geocode",
-	"tags": [],
-	"description": "",
-	"content": " Geocode type\nGraphQL Schema definition type Geocode {\r\rlatitude: String! \r\r\rlongitude: String! \r\r}\r\r\rFields latitude(String!):\rLatitude\r\rlongitude(String!):\rLongitude\r\r\nRequire by Location: \rLocation\r\r\n"
+	"content": " The Float scalar type represents signed double-precision fractional values as specified by IEEE 754.\nGraphQL Schema definition scalar Float\r\r\rRequire by Coordinates: \rGeographical coordinates corresponding to a location.\r\rStat: \r\r\rAuditData: \rData sent \u0026amp; received in the supplierâ€™s native format.\r\rPrice: \rPrice indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.\r\rPriceable: \r\r\rExchange: \rInforms about the currency of origin, and the rate applied over result returned by the supplier.\r\rMarkup: \rInforms markup applied over supplier price.\r\rRule: \r\r\rCancelPenalty: \rContains information about a cancel penalty.\r\rDeltaPriceInput: \rInput delta price, indicates price variation permitted by the client\r\r "
 },
 {
 	"uri": "/getting-started/",
@@ -530,13 +670,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Welcome to TravelgateX! Get familiar with the TravelgateX products and explore their features:\n\t\rOverview\rLearn the basics\n\r\r\r\t\rQuickstart\rTry the API now\n\r\r\r\t\rConcepts\rUnderstanding the concepts\n\r\r\r\t\rPlayground\rTry our API\n\r\r\r\r"
-},
-{
-	"uri": "/travelgatex/reference/objects/giataid/",
-	"title": "GiataID",
-	"tags": [],
-	"description": "",
-	"content": " Giata System ID.\nGraphQL Schema definition type GiataID {\r\rcode: String \r\r}\r\r\rFields code(String):\rGiata url. source: URI! Giata code\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/group/",
@@ -588,6 +721,13 @@
 	"content": " GraphQL Schema definition type GroupEdge {\r\rcursor: String! \r\r\rnode: Group \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Group):\r\r\r\nRequire by GroupConnection: \r\r\r\n"
 },
 {
+	"uri": "/travelgatex/reference/inputobjects/groupinput/",
+	"title": "GroupInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type GroupInput {\r\rid: ID! \r\r\rgroups: [ID] \r\r}\r\r\rFields id(ID!):\rId of the resource permissions to be granted.\r\rgroups([ID]):\rGroups that will see this resoruce.\r\r\n"
+},
+{
 	"uri": "/travelgatex/reference/enums/grouptype/",
 	"title": "GroupType",
 	"tags": [],
@@ -613,7 +753,7 @@
 	"title": "Hotel",
 	"tags": [],
 	"description": "",
-	"content": " Hotel type\nGraphQL Schema definition type Hotel {\r\rcode: ID! \r\r\rhotelData: HotelData \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\rHotel ID\r\rhotelData(HotelData):\rHotel data\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\nRequire by HotelEdge: \rHotelList Edge definition\r\r\n"
+	"content": " Hotel Type\nGraphQL Schema definition type Hotel {\r\rcode: ID! \r\r\rhotelData: HotelData \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\rHotel ID\r\rhotelData(HotelData):\rHotel data\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\nRequire by HotelEdge: \rHotelList Edge definition\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/hotelbookinput/",
@@ -627,14 +767,14 @@
 	"title": "HotelBookPayload",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type HotelBookPayload {\r\rstats(\rtoken: String!,\r): RequestStats \r\r\rauditData: AuditData \r\r\rbooking: HotelBookingDetail \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields stats(RequestStats):\rApplication stats in string format\r\rauditData(AuditData):\rData sent \u0026amp; received in the supplier\u0026#39;s native format.\r\rbooking(HotelBookingDetail):\rInformation about booking\r\rerrors([Error!]):\rErrors that will lead the service to abort\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that won\u0026#39;t force the service to abort\r\r\nRequire by Mutation: \rMutations are operations that change or update data in the server.\r\rHotelXMutation: \r\r\r\n"
+	"content": " GraphQL Schema definition type HotelBookPayload {\r\rstats(\rtoken: String!,\r): StatsRequest \r\r\rauditData: AuditData \r\r\rbooking: HotelBookingDetail \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields stats(StatsRequest):\rApplication stats in string format\r\rauditData(AuditData):\rData sent \u0026amp; received in the supplier\u0026#39;s native format.\r\rbooking(HotelBookingDetail):\rInformation about booking\r\rerrors([Error!]):\rErrors that will lead the service to abort\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that won\u0026#39;t force the service to abort\r\r\nRequire by Mutation: \rMutations are operations that change or update data in the server.\r\rHotelXMutation: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hotelbooking/",
 	"title": "HotelBooking",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type HotelBooking {\r\rstats(\rtoken: String!,\r): RequestStats \r\r\rauditData: AuditData \r\r\rbookings: [HotelBookingDetail!] \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields stats(RequestStats):\rApplication stats in string format\r\rauditData(AuditData):\rData sent \u0026amp; received in the supplier\u0026#39;s native format.\r\rbookings([HotelBookingDetail!]):\rDetails about booking\r\rerrors([Error!]):\rErrors that will lead the service to abort\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that won\u0026#39;t force the service to abort\r\r\nRequire by HotelXQuery: \r\r\rBooking: \rReturns detailed information about books.\r\r\n"
+	"content": " GraphQL Schema definition type HotelBooking {\r\rstats(\rtoken: String!,\r): StatsRequest \r\r\rauditData: AuditData \r\r\rbookings: [HotelBookingDetail!] \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields stats(StatsRequest):\rApplication stats in string format\r\rauditData(AuditData):\rData sent \u0026amp; received in the supplier\u0026#39;s native format.\r\rbookings([HotelBookingDetail!]):\rDetails about booking\r\rerrors([Error!]):\rErrors that will lead the service to abort\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that won\u0026#39;t force the service to abort\r\r\nRequire by HotelXQuery: \r\r\rBooking: \rReturns detailed information about books.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hotelbookingdetail/",
@@ -662,14 +802,14 @@
 	"title": "HotelCancelPayload",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type HotelCancelPayload {\r\rstats(\rtoken: String!,\r): RequestStats \r\r\rauditData: AuditData \r\r\rcancellation: HotelCancelDetail \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields stats(RequestStats):\rApplication stats in string format\r\rauditData(AuditData):\rData sent \u0026amp; received in the supplier\u0026#39;s native format.\r\rcancellation(HotelCancelDetail):\rInformation about cancel\r\rerrors([Error!]):\rErrors that will lead the service to abort\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that won\u0026#39;t force the service to abort\r\r\nRequire by Mutation: \rMutations are operations that change or update data in the server.\r\rHotelXMutation: \r\r\r\n"
+	"content": " GraphQL Schema definition type HotelCancelPayload {\r\rstats(\rtoken: String!,\r): StatsRequest \r\r\rauditData: AuditData \r\r\rcancellation: HotelCancelDetail \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields stats(StatsRequest):\rApplication stats in string format\r\rauditData(AuditData):\rData sent \u0026amp; received in the supplier\u0026#39;s native format.\r\rcancellation(HotelCancelDetail):\rInformation about cancel\r\rerrors([Error!]):\rErrors that will lead the service to abort\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that won\u0026#39;t force the service to abort\r\r\nRequire by Mutation: \rMutations are operations that change or update data in the server.\r\rHotelXMutation: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hotelconnection/",
 	"title": "HotelConnection",
 	"tags": [],
 	"description": "",
-	"content": " HotelList definition\nGraphQL Schema definition type HotelConnection {\r\redges: [HotelEdge] \r\r\rpageInfo: PageInfo! \r\r}\r\r\rFields edges([HotelEdge]):\r\r\rpageInfo(PageInfo!):\r\r\r\nRequire by HotelXQuery: \r\r\r\n"
+	"content": " HotelList definition\nGraphQL Schema definition type HotelConnection {\r\redges: [HotelEdge] \r\r\rtoken: String \r\r\rpageInfo: PageInfo! \r\r}\r\r\rFields edges([HotelEdge]):\r\r\rtoken(String):\r\r\rpageInfo(PageInfo!):\r\r\r\nRequire by HotelXQuery: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/hotelcriteriabookinginput/",
@@ -697,7 +837,7 @@
 	"title": "HotelData",
 	"tags": [],
 	"description": "",
-	"content": " Hotel data\nGraphQL Schema definition type HotelData {\r\rcode: ID! \r\r\rname: String! \r\r\rcategoryCode: String! \r\r\rexclusiveDeal: Boolean! \r\r\rmedias(\r\r\r\rtype: ApplicationArea,\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): MediaConnection \r\r\ramenities(\r\r\r\rlanguage: Language,\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): AmenityConnection \r\r\radditionalInformation(\rlanguage: Language,\r): Information! \r\r\rgeneralDescription(\rlanguage: Language,\r): Information! \r\r\rlocation: Location! \r\r\rcontact: Contact! \r\r\rdestination: Destination! \r\r}\r\r\rFields code(ID!):\rInternal code to perform availability and/or supplier code.\r\rname(String!):\rName.\r\rcategoryCode(String!):\rHotel category (for example number of stars).\r\rexclusiveDeal(Boolean!):\rIndicates that the Hotel has an Exclusive Deal.\r\rmedias(MediaConnection):\r\r\ramenities(AmenityConnection):\r\r\radditionalInformation(Information!):\r\r\rgeneralDescription(Information!):\r\r\rlocation(Location!):\r\r\rcontact(Contact!):\rContact information.\r\rdestination(Destination!):\rDestination information.\r\r\nRequire by Hotel: \rHotel type\r\r\n"
+	"content": " Hotel data\nGraphQL Schema definition type HotelData {\r\rcode: ID! \r\r\rhotelCode: String! \r\r\rhotelCodeSupplier: String \r\r\rhotelName: String! \r\r\rcategoryCode: String! \r\r\rproperty: Property \r\r\rchainCode: String \r\r\rexclusiveDeal: Boolean! \r\r\rlocation: Location! \r\r\rcontact: Contact \r\r\rrank: [Int!]! \r\r\rcardTypes: [String!] \r\r\ramenities: [Amenity!] \r\r\rmedias: [Media!] \r\r\rdescriptions(\rtypes: [DescriptionType!],\rlanguages: [Language!],\r): [Description!] \r\r}\r\r\rFields code(ID!):\rInternal code.\r\rhotelCode(String!):\rCode to perform availability.\r\rhotelCodeSupplier(String):\rNative supplier hotel code.\r\rhotelName(String!):\rName of the hotel in the Supplier selected.\r\rcategoryCode(String!):\rHotel category (for example number of stars).\r\rproperty(Property):\rIndicates property type\r\rchainCode(String):\rHotel chain code\r\rexclusiveDeal(Boolean!):\rIndicates that the Hotel has an Exclusive Deal.\r\rlocation(Location!):\rIndicates the location of the hotel.\r\rcontact(Contact):\rContact cotains information about hotel contact.\r\rrank([Int!]!):\rRank indicates the supplier categorization.\r\rcardTypes([String!]):\rList of credit cards\r\ramenities([Amenity!]):\rAmenities\r\rmedias([Media!]):\rMedias\r\rdescriptions([Description!]):\rDescriptions\r\r\nRequire by Hotel: \rHotel Type\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hoteledge/",
@@ -705,13 +845,6 @@
 	"tags": [],
 	"description": "",
 	"content": " HotelList Edge definition\nGraphQL Schema definition type HotelEdge {\r\rcursor: String! \r\r\rnode: Hotel \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Hotel):\r\r\r\nRequire by HotelConnection: \rHotelList definition\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/hotelinput/",
-	"title": "HotelInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL Schema definition type HotelInput {\r\rcodes: [ID!] \r\r\rlanguage: Language \r\r}\r\r\rFields codes([ID!]):\r\r\rlanguage(Language):\r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hoteloptionquote/",
@@ -732,35 +865,91 @@
 	"title": "HotelQuote",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type HotelQuote {\r\rstats(\rtoken: String!,\r): RequestStats \r\r\rauditData: AuditData \r\r\roptionQuote: HotelOptionQuote \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields stats(RequestStats):\rApplication stats in string format\r\rauditData(AuditData):\rData sent \u0026amp; received in the supplier\u0026#39;s native format.\r\roptionQuote(HotelOptionQuote):\rInformation about quote.\r\rerrors([Error!]):\rErrors that will lead the service to abort\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that won\u0026#39;t force the service to abort\r\r\nRequire by HotelXQuery: \r\r\rQuote: \rReturns the total price and cancellation policies of the Option selected in the previous step (Search).\r\r\n"
+	"content": " GraphQL Schema definition type HotelQuote {\r\rstats(\rtoken: String!,\r): StatsRequest \r\r\rauditData: AuditData \r\r\roptionQuote: HotelOptionQuote \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields stats(StatsRequest):\rApplication stats in string format\r\rauditData(AuditData):\rData sent \u0026amp; received in the supplier\u0026#39;s native format.\r\roptionQuote(HotelOptionQuote):\rInformation about quote.\r\rerrors([Error!]):\rErrors that will lead the service to abort\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that won\u0026#39;t force the service to abort\r\r\nRequire by HotelXQuery: \r\r\rQuote: \rReturns the total price and cancellation policies of the Option selected in the previous step (Search).\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hotelsearch/",
 	"title": "HotelSearch",
 	"tags": [],
 	"description": "",
-	"content": " Results of Avail Hotel. Contains all the available options for a given date and itinerary.\nGraphQL Schema definition type HotelSearch {\r\rcontext: String! \r\r\rstats(\rtoken: String!,\r): RequestStats \r\r\rauditData: AuditData \r\r\rrequestCriteria: CriteriaSearch! \r\r\roptions: [HotelOptionSearch!] \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields context(String!):\rIndicates the context of the response.\r\rstats(RequestStats):\rApplication stats in string format\r\rauditData(AuditData):\rData sent \u0026amp; received in the supplier\u0026#39;s native format.\r\rrequestCriteria(CriteriaSearch!):\rRequest Criteria\r\roptions([HotelOptionSearch!]):\rList of options returned according to the request.\r\rerrors([Error!]):\rErrors that will lead the service to abort\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that won\u0026#39;t force the service to abort\r\r\nRequire by HotelXQuery: \r\r\rSearch: \rAvailable options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.\r\r\n"
+	"content": " Results of Avail Hotel. Contains all the available options for a given date and itinerary.\nGraphQL Schema definition type HotelSearch {\r\rcontext: String \r\r\rstats(\rtoken: String!,\r): StatsRequest \r\r\rauditData: AuditData \r\r\rrequestCriteria: CriteriaSearch \r\r\roptions: [HotelOptionSearch!] \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields context(String):\rIndicates the context of the response.\r\rstats(StatsRequest):\rApplication stats in string format\r\rauditData(AuditData):\rData sent \u0026amp; received in the supplier\u0026#39;s native format.\r\rrequestCriteria(CriteriaSearch):\rRequest Criteria\r\roptions([HotelOptionSearch!]):\rList of options returned according to the request.\r\rerrors([Error!]):\rErrors that will lead the service to abort\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that won\u0026#39;t force the service to abort\r\r\nRequire by HotelXQuery: \r\r\rSearch: \rAvailable options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/hotelsettingsinput/",
 	"title": "HotelSettingsInput",
 	"tags": [],
 	"description": "",
-	"content": " Settings that you can edit for this avail. Values are loaded by default in our Back Office.\nGraphQL Schema definition type HotelSettingsInput {\r\rcontext: String \r\r\ruseContext: Boolean \r\r\rconnectUser: String \r\r\rtimeout: Int \r\r\rauditTransactions: Boolean \r\r\rbusinessRules: BusinessRulesInput \r\r\rsuppliers: [SupplierInput!] \r\r\rplugins: [PluginStepInput!] \r\r}\r\r\rFields context(String):\rIndicates the context of the I/O codes (hotel, board, room and rates)\r\ruseContext(Boolean):\rIndicates if you want use context, or not, by default is true. @deprecated(reason: \u0026#34;deprecated from 2017-12-12. Redundant.\u0026#34;)\r\rconnectUser(String):\rThis field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload.\r\rtimeout(Int):\rMilliseconds before the connection is closed.\r\rauditTransactions(Boolean):\rReturns all the transactions exchanged with the supplier.\r\rbusinessRules(BusinessRulesInput):\rBusiness rules.\r\rsuppliers([SupplierInput!]):\rArray of suppliers. Each one contains its own code, settings and accesses.\r\rplugins([PluginStepInput!]):\rArray of plugins to execute.\r\r\n"
+	"content": " Settings that you can edit for this avail. Values are loaded by default in our Back Office.\nGraphQL Schema definition type HotelSettingsInput {\r\rcontext: String \r\r\ruseContext: Boolean \r\r\rconnectUser: String \r\r\rclient: String \r\r\rtimeout: Int \r\r\rauditTransactions: Boolean \r\r\rbusinessRules: BusinessRulesInput \r\r\rsuppliers: [HotelXSupplierInput!] \r\r\rplugins: [PluginStepInput!] \r\r}\r\r\rFields context(String):\rIndicates the context of the I/O codes (hotel, board, room and rates)\r\ruseContext(Boolean):\rIndicates if you want use context, or not, by default is true. @deprecated(reason: \u0026#34;deprecated from 2017-12-12. Redundant.\u0026#34;)\r\rconnectUser(String):\rThis field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload. @deprecated(reason: \u0026#34;deprecated from 2018-03-19. Redundant.\u0026#34;)\r\rclient(String):\rThis field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload.\r\rtimeout(Int):\rMilliseconds before the connection is closed.\r\rauditTransactions(Boolean):\rReturns all the transactions exchanged with the supplier.\r\rbusinessRules(BusinessRulesInput):\rBusiness rules.\r\rsuppliers([HotelXSupplierInput!]):\rArray of suppliers. Each one contains its own code, settings and accesses.\r\rplugins([PluginStepInput!]):\rArray of plugins to execute.\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/hotelxaccessinput/",
+	"title": "HotelXAccessInput",
+	"tags": [],
+	"description": "",
+	"content": " AccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.\nGraphQL Schema definition type HotelXAccessInput {\r\raccessId: ID! \r\r\rconfiguration: ConfigurationInput \r\r\rsettings: SettingsBaseInput \r\r}\r\r\rFields accessId(ID!):\rThe accessID used to identify the existing access in our Back Office in order to overwrite it. Acts as an identifier in this search. It can either exist or not.\r\rconfiguration(ConfigurationInput):\rInformation required to access the supplier\u0026#39;s system.\r\rsettings(SettingsBaseInput):\rYou can configure an special settings for any access. This level overwrites the search and supplier settings levels.\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/hotelxboardqueryinput/",
+	"title": "HotelXBoardQueryInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type HotelXBoardQueryInput {\r\rboardCodes: [String!] \r\r\raccess: ID! \r\r}\r\r\rFields boardCodes([String!]):\r\r\raccess(ID!):\r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/hotelxcategoryqueryinput/",
+	"title": "HotelXCategoryQueryInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type HotelXCategoryQueryInput {\r\rcategoryCodes: [String!] \r\r\raccess: ID! \r\r}\r\r\rFields categoryCodes([String!]):\r\r\raccess(ID!):\r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/hotelxdestinationlistinput/",
+	"title": "HotelXDestinationListInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type HotelXDestinationListInput {\r\raccess: ID! \r\r\rdestinationCodes: [String!] \r\r\rmaxSize: Int \r\r}\r\r\rFields access(ID!):\rIndicates the access\r\rdestinationCodes([String!]):\rSearch by hotel codes\r\rmaxSize(Int):\rMaxium number of items per page\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput/",
+	"title": "HotelXDestinationSearcherInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type HotelXDestinationSearcherInput {\r\raccess: ID! \r\r\rtext: String! \r\r\rmaxSize: Int \r\r}\r\r\rFields access(ID!):\rIndicates the access\r\rtext(String!):\rSearch by hotel name or destination name\r\rmaxSize(Int):\rMaxium number of items per type\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/hotelxhotellistinput/",
+	"title": "HotelXHotelListInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type HotelXHotelListInput {\r\raccess: ID! \r\r\rhotelCodes: [String!] \r\r\rdestinationCodes: [String!] \r\r\rranks: [Int!] \r\r\rmaxSize: Int \r\r}\r\r\rFields access(ID!):\rIndicates the access\r\rhotelCodes([String!]):\rSearch by hotel codes\r\rdestinationCodes([String!]):\rSearch by destination codes, only search by minimal destinations\r\rranks([Int!]):\rFilter by supplier rank\r\rmaxSize(Int):\rMaxium number of items per page\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hotelxmutation/",
 	"title": "HotelXMutation",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type HotelXMutation {\r\rbook(\rinput: HotelBookInput!,\rsettings: HotelSettingsInput,\r): HotelBookPayload \r\r\rcancel(\rinput: HotelCancelInput!,\rsettings: HotelSettingsInput,\r): HotelCancelPayload \r\r}\r\r\rFields book(HotelBookPayload):\rCreates a new hotel booking consisting of an option of 1 or more rooms.\r\rcancel(HotelCancelPayload):\rCancels an existing hotel booking consisting of an option of 1 or more rooms.\r\r\nRequire by Mutation: \rMutations are operations that change or update data in the server.\r\r\n"
+	"content": " GraphQL Schema definition type HotelXMutation {\r\rbook(\rinput: HotelBookInput!,\rsettings: HotelSettingsInput,\r): HotelBookPayload \r\r\rcancel(\rinput: HotelCancelInput!,\rsettings: HotelSettingsInput,\r): HotelCancelPayload \r\r\rloadFile(\rinput: String!,\r): String! \r\r}\r\r\rFields book(HotelBookPayload):\rCreates a new hotel booking consisting of an option of 1 or more rooms.\r\rcancel(HotelCancelPayload):\rCancels an existing hotel booking consisting of an option of 1 or more rooms.\r\rloadFile(String!):\r\r\r\nRequire by Mutation: \rMutations are operations that change or update data in the server.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/hotelxquery/",
 	"title": "HotelXQuery",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type HotelXQuery {\r\rhotels(\r\r\r\rcodes: [String!],\r\r\r\r\rlanguage: String,\r\r\r\r\rfirst: Int,\r\r\r\r\rlast: Int,\r\r\r\r\rbefore: String,\r\r\r\r\rafter: String,\r\r\r\r\r): HotelConnection! \r\r\rsearch(\r\r\r\rtoken: String,\r\r\r\r\rcriteria: HotelCriteriaSearchInput,\r\r\r\r\rsettings: HotelSettingsInput,\r\r\r\r\rfilter: FilterInput,\r\r\r\r\r): HotelSearch \r\r\rquote(\rcriteria: HotelCriteriaQuoteInput!,\rsettings: HotelSettingsInput,\r): HotelQuote \r\r\rbooking(\rcriteria: HotelCriteriaBookingInput!,\rsettings: HotelSettingsInput,\r): HotelBooking \r\r\rsearchStatusService: ServiceStatus! \r\r\rquoteStatusService: ServiceStatus! \r\r\rbookStatusService: ServiceStatus! \r\r\rcancelStatusService: ServiceStatus! \r\r\rbookingStatusService: ServiceStatus! \r\r}\r\r\rFields hotels(HotelConnection!):\rQuery to obtain Hotels\r\rsearch(HotelSearch):\rAvailable options of an hotel for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward. It only requires the criteria of search (destination, travel dates and the number of pax in each room). But you must preload the other fields in our system by complete the fields absents.\r\rquote(HotelQuote):\rReturns the total price and cancellation policies of the Option selected in the previous step (Search).\r\rbooking(HotelBooking):\rReturns detailed information about books, you can indicated a list of locators or a range date.\r\rsearchStatusService(ServiceStatus!):\rReturns status of the search service.\r\rquoteStatusService(ServiceStatus!):\rReturns status of the quote service.\r\rbookStatusService(ServiceStatus!):\rReturns status of the new booking service.\r\rcancelStatusService(ServiceStatus!):\rReturns status of the cancellation service.\r\rbookingStatusService(ServiceStatus!):\rTODO: me no understand... Returns status of the booking service.\r\r\nRequire by Query: \r\r\r\n"
+	"content": " GraphQL Schema definition type HotelXQuery {\r\rboards(\rcriteria: HotelXBoardQueryInput!,\rrelay: RelayInput!,\r): BoardConnection! \r\r\rcategories(\rcriteria: HotelXCategoryQueryInput!,\rrelay: RelayInput!,\r): CategoryConnection! \r\r\rrooms(\rcriteria: HotelXRoomQueryInput!,\rrelay: RelayInput!,\r): RoomConnection! \r\r\rhotels(\r\r\r\rcriteria: HotelXHotelListInput!,\r\r\r\r\rrelay: RelayInput!,\r\r\r\r\rtoken: String,\r\r\r\r\r): HotelConnection! \r\r\rdestinations(\r\r\r\rcriteria: HotelXDestinationListInput!,\r\r\r\r\rrelay: RelayInput!,\r\r\r\r\rtoken: String,\r\r\r\r\r): DestinationConnection! \r\r\rdestinationSearcher(\rcriteria: HotelXDestinationSearcherInput!,\r): [DestinationSearchResult]! \r\r\rsearch(\r\r\r\rtoken: String,\r\r\r\r\rcriteria: HotelCriteriaSearchInput,\r\r\r\r\rsettings: HotelSettingsInput,\r\r\r\r\rfilter: FilterInput,\r\r\r\r\r): HotelSearch \r\r\rquote(\rcriteria: HotelCriteriaQuoteInput!,\rsettings: HotelSettingsInput,\r): HotelQuote \r\r\rbooking(\rcriteria: HotelCriteriaBookingInput!,\rsettings: HotelSettingsInput,\r): HotelBooking \r\r\rsearchStatusService: ServiceStatus! \r\r\rquoteStatusService: ServiceStatus! \r\r\rbookStatusService: ServiceStatus! \r\r\rcancelStatusService: ServiceStatus! \r\r\rbookingStatusService: ServiceStatus! \r\r\rmapping(\rgroupCode: String!,\r): Mapping! \r\r}\r\r\rFields boards(BoardConnection!):\rQuery to obtain Boards\r\rcategories(CategoryConnection!):\rQuery to obtain Categories\r\rrooms(RoomConnection!):\rQuery to obtain rooms\r\rhotels(HotelConnection!):\rQuery to obtain Hotels\r\rdestinations(DestinationConnection!):\rQuery to obtain Destinations\r\rdestinationSearcher([DestinationSearchResult]!):\rReturns hotels and destinations that contains the indicated text. \r\rsearch(HotelSearch):\rAvailable options of an hotel for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward. It only requires the criteria of search (destination, travel dates and the number of pax in each room). But you must preload the other fields in our system by complete the fields absents.\r\rquote(HotelQuote):\rReturns the total price and cancellation policies of the Option selected in the previous step (Search).\r\rbooking(HotelBooking):\rReturns detailed information about books, you can indicated a list of locators or a range date.\r\rsearchStatusService(ServiceStatus!):\rReturns status of the search service.\r\rquoteStatusService(ServiceStatus!):\rReturns status of the quote service.\r\rbookStatusService(ServiceStatus!):\rReturns status of the new booking service.\r\rcancelStatusService(ServiceStatus!):\rReturns status of the cancellation service.\r\rbookingStatusService(ServiceStatus!):\rTODO: me no understand... Returns status of the booking service.\r\rmapping(Mapping!):\r\r\r\nRequire by Query: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/hotelxroomqueryinput/",
+	"title": "HotelXRoomQueryInput",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type HotelXRoomQueryInput {\r\rroomCodes: [String!] \r\r\raccess: ID! \r\r}\r\r\rFields roomCodes([String!]):\r\r\raccess(ID!):\r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/hotelxsupplierinput/",
+	"title": "HotelXSupplierInput",
+	"tags": [],
+	"description": "",
+	"content": " Supplier object. Contains its own settings, code and access.\nGraphQL Schema definition type HotelXSupplierInput {\r\rsettings: SettingsBaseInput \r\r\rcode: String! \r\r\raccesses: [HotelXAccessInput!] \r\r}\r\r\rFields settings(SettingsBaseInput):\rYou can configure an special settings for any supplier. This level overwrites the avail settings level but not the access settings level.\r\rcode(String!):\rCode that represents a supplier in our system. This information is mandatory.\r\raccesses([HotelXAccessInput!]):\rArray of accesses that can overwrite an existing access information or include a new access for this avail.\r\r\n"
 },
 {
 	"uri": "/admin/account/iam/",
@@ -774,7 +963,7 @@
 	"title": "ID",
 	"tags": [],
 	"description": "",
-	"content": " The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as \u0026quot;4\u0026quot;) or integer (such as 4) input value will be accepted as an ID.\nGraphQL Schema definition scalar ID\r\r\rRequire by Hotel: \rHotel type\r\rNode: \r\r\rHotelData: \rHotel data\r\rMedia: \r\r\rAmenity: \r\r\rAmenityData: \r\r\rAccessInput: \rAccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.\r\rOrganization: \r\r\rOrganizationData: \r\r\rGroupCommonData: \r\r\rMember: \r\r\rMemberData: \r\r\rGroup: \r\r\rGroupData: \r\r\rAPI: \r\r\rAPIData: \r\r\rResource: \r\r\rResourceData: \r\r\rRole: \r\r\rRoleData: \r\r\rProduct: \r\r\rProductData: \r\r\rCreateGroupInput: \r\r\rDeleteMemberInput: \r\r\rDeleteGroupInput: \r\r\rAccess: \r\r\rAccessData: \r\r\rSupplier: \r\r\rSupplierData: \r\r\rIdAccessConfigurationInput: \r\r\r "
+	"content": " The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as \u0026quot;4\u0026quot;) or integer (such as 4) input value will be accepted as an ID.\nGraphQL Schema definition scalar ID\r\r\rRequire by HotelXBoardQueryInput: \r\r\rBoard: \rBoard Type\r\rNode: \r\r\rBoardData: \rBoard data\r\rHotelXCategoryQueryInput: \r\r\rCategory: \rCategory Type\r\rCategoryData: \rCategory data\r\rHotelXRoomQueryInput: \r\r\rRoomStatic: \rRoom Type\r\rRoomData: \rRoom data\r\rHotelXHotelListInput: \r\r\rHotel: \rHotel Type\r\rHotelData: \rHotel data\r\rDestinationData: \rInformation about destinantion\r\rHotelXDestinationListInput: \r\r\rDestination: \rDestination Type\r\rHotelXDestinationSearcherInput: \r\r\rHotelXAccessInput: \rAccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.\r\rAccessFilter: \r\r\rAccess: \r\r\rAccessData: \r\r\rSupplier: \r\r\rSupplierData: \r\r\rProvider: \rTemporary type to use only during SQL server\u0026#39;s lifetime\r\rParameter: \rParameters for additional information for the supplier\u0026#39;s configuration.\r\rSupplierFilter: \r\r\rClientFilter: \r\r\rClient: \r\r\rClientData: \r\r\rOrganization: \r\r\rOrganizationData: \r\r\rGroupCommonData: \r\r\rMember: \r\r\rMemberData: \r\r\rGroup: \r\r\rGroupData: \r\r\rAPI: \r\r\rAPIData: \r\r\rResource: \r\r\rResourceData: \r\r\rRole: \r\r\rRoleData: \r\r\rProduct: \r\r\rProductData: \r\r\rAccessInput: \rAccess input\r\rGroupInput: \r\r\rClientInput: \r\r\rCreateGroupInput: \r\r\rDeleteMemberInput: \r\r\rDeleteGroupInput: \r\r\rContext: \rContext type, for now only Code is necessary\r\rIdAccessConfigurationInput: \r\r\r "
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/idaccessconfigurationinput/",
@@ -791,67 +980,60 @@
 	"content": " GraphQL Schema definition type IdGroupAccessInput {\r\rgroupCodes: [String!] \r\r\raccesses: [IdAccessConfigurationInput!]! \r\r}\r\r\rFields groupCodes([String!]):\ridentifier of the groups in which the access will be associated\r\raccesses([IdAccessConfigurationInput!]!):\r\r\r\n"
 },
 {
-	"uri": "/travelgatex/reference/interfaces/information/",
-	"title": "Information",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL Schema definition interface Information {\r\rdescription: String! \r\r\rlanguage: Language! \r\r}\r\r\rFields description(String!):\r\r\rlanguage(Language!):\r\r\r\nRequire by HotelData: \rHotel data\r\rAmenityData: \r\r\r\n"
-},
-{
 	"uri": "/travelgatex/reference/scalars/int/",
 	"title": "Int",
 	"tags": [],
 	"description": "",
-	"content": " The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.\nGraphQL Schema definition scalar Int\r\r\rRequire by PaxInput: \rPax object that contains the pax age.\r\rHotelSettingsInput: \rSettings that you can edit for this avail. Values are loaded by default in our Back Office.\r\rBusinessRulesInput: \rList of business rules to use as filter on the options.\r\rSettingsBaseInput: \rContains the time out and business rules of a supplier or an access.\r\rPax: \rSpecifies the age pax. The range of what is considered an adult, infant or baby is particular to each supplier.\r\rOccupancy: \rInformation about occupancy.\r\rRoom: \rContains the room information of the option returned.\r\rBed: \rContains information about a bed.\r\rSupplement: \rSupplement that it can be or its already added to the option returned. Contains all the information about the supplement.\r\rCancelPenalty: \rContains information about a cancel penalty.\r\rBookingRoom: \r\r\rGroupData: \r\r\rTimeout: \r\r\rBusinessRules: \rList of business rules to filter the options that you are interested.\r\rExpireDateInput: \rThe card expiration date\r\rBookRoomInput: \rInput BookRoom contains list of pax and the room\u0026#39;s reference.\r\rBookPaxInput: \rInput BookPax contains basic information abaout pax suach as name, surname and age.\r\rTimeoutInput: \r\r\rDefaultSettingsBusinessRulesInput: \rInput delta price, indicates the price variation permitted by the client before failing the booking.\r\r "
+	"content": " The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.\nGraphQL Schema definition scalar Int\r\r\rRequire by RelayInput: \r\r\rHotelXHotelListInput: \r\r\rHotelXDestinationListInput: \r\r\rHotelXDestinationSearcherInput: \r\r\rPaxInput: \rPax object that contains the pax age.\r\rHotelSettingsInput: \rSettings that you can edit for this avail. Values are loaded by default in our Back Office.\r\rBusinessRulesInput: \rList of business rules to use as filter on the options.\r\rSettingsBaseInput: \rContains the time out and business rules of a supplier or an access.\r\rStatsRequest: \rContains internal information.\r\rStatAccess: \r\r\rPax: \rSpecifies the age pax. The range of what is considered an adult, infant or baby is particular to each supplier.\r\rOccupancy: \rInformation about occupancy.\r\rRoom: \rContains the room information of the option returned.\r\rBed: \rContains information about a bed.\r\rSupplement: \rSupplement that it can be or its already added to the option returned. Contains all the information about the supplement.\r\rCancelPenalty: \rContains information about a cancel penalty.\r\rBookingRoom: \r\r\rSupplierData: \r\r\rGroupData: \r\r\rTimeout: \r\r\rBusinessRules: \rList of business rules to filter the options that you are interested.\r\rExpireDateInput: \rThe card expiration date\r\rBookRoomInput: \rInput BookRoom contains list of pax and the room\u0026#39;s reference.\r\rBookPaxInput: \rInput BookPax contains basic information abaout pax suach as name, surname and age.\r\rTimeoutInput: \r\r\rDefaultSettingsBusinessRulesInput: \rInput delta price, indicates the price variation permitted by the client before failing the booking.\r\r "
 },
 {
 	"uri": "/travelgatex/reference/scalars/json/",
 	"title": "JSON",
 	"tags": [],
 	"description": "",
-	"content": " The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string. In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: \u0026ldquo;{\u0026ldquo;int\u0026rdquo;: 1, \u0026ldquo;string\u0026rdquo;: \u0026ldquo;value\u0026rdquo;}\u0026ldquo;.\nGraphQL Schema definition scalar JSON\r\r\rRequire by AddOns: \rExtra information about the option.\r\r "
+	"content": " The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string. In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: \u0026ldquo;{\u0026ldquo;int\u0026rdquo;: 1, \u0026ldquo;string\u0026rdquo;: \u0026ldquo;value\u0026rdquo;}\u0026ldquo;.\nGraphQL Schema definition scalar JSON\r\r\rRequire by AddOns: \rExtra information about the option.\r\rAddOn: \rExtra information about the option.\r\r "
 },
 {
 	"uri": "/travelgatex/reference/scalars/language/",
 	"title": "Language",
 	"tags": [],
 	"description": "",
-	"content": " The Language type represents Language values. A good example might be a Hotel Description Language. In queries or mutations, Language fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes \u0026ldquo;es\u0026rdquo;.\nGraphQL Schema definition scalar Language\r\r\rRequire by Information: \r\r\rHotelCriteriaSearchInput: \rCriteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.\r\rCriteriaSearch: \rCriteria of search contains destination, travel dates and the number of pax in each room.\r\rHotelCriteriaQuoteInput: \rThe quote criteria contains the option reference id, block and language.\r\rHotelCriteriaBookingInput: \rCriteria of book contains basic information to find a book or books.\r\rDefaultSettings: \r\r\rHotelBookInput: \rCriteria of book.\r\rHotelCancelInput: \rCancellation Criteria.\r\rDefaultSettingsInput: \r\r\rHotelInput: \r\r\r "
+	"content": " The Language type represents Language values. A good example might be a Hotel Description Language. In queries or mutations, Language fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes \u0026ldquo;es\u0026rdquo;.\nGraphQL Schema definition scalar Language\r\r\rRequire by Text: \r\r\rHotelCriteriaSearchInput: \rCriteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.\r\rCriteriaSearch: \rCriteria of search contains destination, travel dates and the number of pax in each room.\r\rHotelCriteriaQuoteInput: \rThe quote criteria contains the option reference id, block and language.\r\rHotelCriteriaBookingInput: \rCriteria of book contains basic information to find a book or books.\r\rDefaultSettings: \r\r\rHotelBookInput: \rCriteria of book.\r\rHotelCancelInput: \rCancellation Criteria.\r\rDefaultSettingsInput: \r\r\r "
 },
 {
 	"uri": "/travelgatex/reference/objects/location/",
 	"title": "Location",
 	"tags": [],
 	"description": "",
-	"content": " Location\nGraphQL Schema definition type Location {\r\raddress: String! \r\r\rcity: String! \r\r\rzipCode: String! \r\r\rcountry: Country! \r\r\rgeocode: Geocode! \r\r}\r\r\rFields address(String!):\rStreet Address\r\rcity(String!):\rCity\r\rzipCode(String!):\rZip Code\r\rcountry(Country!):\rCountry ISO Code\r\rgeocode(Geocode!):\rGeocode\r\r\nRequire by HotelData: \rHotel data\r\r\n"
+	"content": " Indicates the location of the hotel.\nGraphQL Schema definition type Location {\r\raddress: String \r\r\rcity: String \r\r\rzipCode: String \r\r\rcountry: Country! \r\r\rcoordinates: Coordinates \r\r\rclosestDestination: DestinationData! \r\r}\r\r\rFields address(String):\rContains Hotel Address\r\rcity(String):\rContains the city\r\rzipCode(String):\rContains the zipCode.\r\rcountry(Country!):\rCountry where is the Hotel.\r\rcoordinates(Coordinates):\rGeographical coordinates corresponding to a location.\r\rclosestDestination(DestinationData!):\rClosest destination\r\r\nRequire by HotelData: \rHotel data\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/map/",
 	"title": "Map",
 	"tags": [],
 	"description": "",
-	"content": " Map codes.\nGraphQL Schema definition type Map {\r\rsupplierCode: String! \r\r\rcodes: [String!] \r\r}\r\r\rFields supplierCode(String!):\rSupplier code.\r\rcodes([String!]):\rEquivalences of the supplier for the client code.\r\r\n"
+	"content": " Map codes.\nGraphQL Schema definition type Map {\r\rcode: String! \r\r\rmaps: [String!] \r\r}\r\r\rFields code(String!):\rContext code.\r\rmaps([String!]):\rEquivalences of the supplier for the client code.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/mapping/",
 	"title": "Mapping",
 	"tags": [],
 	"description": "",
-	"content": " Returns the mapping for a group.\nGraphQL Schema definition type Mapping {\r\rcontexts(\rcontextCodes: [String!],\rsupplierCodes: [String!],\r): [MappingContext!] \r\r}\r\r\rFields contexts([MappingContext!]):\rReturns the differents group contexts, you can filter by some contexts.\r\r\nRequire by Query: \r\r\r\n"
+	"content": " Returns the mapping for a group.\nGraphQL Schema definition type Mapping {\r\rcontexts(\rcodes: [String!],\r): [MappingContext!] \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields contexts([MappingContext!]):\rReturns the differents group contexts, you can filter by some contexts.\r\rerrors([Error!]):\rErrors that will lead the service to abort\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that won\u0026#39;t force the service to abort\r\r\nRequire by Query: \r\r\rHotelXQuery: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/mappingcontext/",
 	"title": "MappingContext",
 	"tags": [],
 	"description": "",
-	"content": " Returns the differents group contexts\nGraphQL Schema definition type MappingContext {\r\rcontextCode: String! \r\r\rhotels(\rhotelCodes: [String!],\r): [MappingEntity!] \r\r\rrooms(\rroomCodes: [String!],\r): [MappingEntity!] \r\r\rrates(\rrateCodes: [String!],\r): [MappingEntity!] \r\r\rboards(\rBoardCodes: [String!],\r): [MappingEntity!] \r\r}\r\r\rFields contextCode(String!):\rCode of the context\r\rhotels([MappingEntity!]):\rMapping of hotels. Filter by hotel code.\r\rrooms([MappingEntity!]):\rMapping of rooms. Filter by room code.\r\rrates([MappingEntity!]):\rMapping of rates. Filter by rate code.\r\rboards([MappingEntity!]):\rMapping of boards. Filter by board code.\r\r\n"
+	"content": " Returns the differents group contexts\nGraphQL Schema definition type MappingContext {\r\rcode: String! \r\r\rhotels(\rcodes: [String!],\r): [MappingEntity!] \r\r\rrooms(\rcodes: [String!],\r): [MappingEntity!] \r\r\rboards(\rcodes: [String!],\r): [MappingEntity!] \r\r}\r\r\rFields code(String!):\rCode of the context\r\rhotels([MappingEntity!]):\rMapping of hotels, you can filter by hotel code.\r\rrooms([MappingEntity!]):\rMapping of rooms, you can filter by room code.\r\rboards([MappingEntity!]):\rMapping of boards, you can filter by board code.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/mappingentity/",
 	"title": "MappingEntity",
 	"tags": [],
 	"description": "",
-	"content": " Mapping about client codes with the equivalence per supplier.\nGraphQL Schema definition type MappingEntity {\r\rcode: String! \r\r\rmaps: [Map!] \r\r}\r\r\rFields code(String!):\rClient code\r\rmaps([Map!]):\rSupplier code. Filter by supplier.\r\r\n"
+	"content": " Mapping about client codes with the equivalence per supplier.\nGraphQL Schema definition type MappingEntity {\r\rcode: String! \r\r\rcontexts(\rcodes: [String!],\r): [Map!] \r\r}\r\r\rFields code(String!):\rClient code\r\rcontexts([Map!]):\rYou can filter by output context.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/markup/",
@@ -872,28 +1054,7 @@
 	"title": "Media",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type Media {\r\rcode: ID! \r\r\rmediaData: MediaData \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\r\r\rmediaData(MediaData):\r\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\nRequire by MediaEdge: \rHotelList Edge definition\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/objects/mediaconnection/",
-	"title": "MediaConnection",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL Schema definition type MediaConnection {\r\redges: [MediaEdge] \r\r\rpageInfo: PageInfo! \r\r}\r\r\rFields edges([MediaEdge]):\r\r\rpageInfo(PageInfo!):\r\r\r\nRequire by HotelData: \rHotel data\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/objects/mediadata/",
-	"title": "MediaData",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL Schema definition type MediaData {\r\rtype: ApplicationArea! \r\r\rurl: URI! \r\r}\r\r\rFields type(ApplicationArea!):\r\r\rurl(URI!):\r\r\r\nRequire by Media: \r\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/objects/mediaedge/",
-	"title": "MediaEdge",
-	"tags": [],
-	"description": "",
-	"content": " HotelList Edge definition\nGraphQL Schema definition type MediaEdge {\r\rcursor: String! \r\r\rnode: Media \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Media):\r\r\r\nRequire by MediaConnection: \r\r\r\n"
+	"content": " Contains media information.\nGraphQL Schema definition type Media {\r\rcode: String \r\r\rorder: String \r\r\rtype: ApplicationAreaType! \r\r\rupdatedAt: DateTime! \r\r\rurl: URI! \r\r\rtexts(\rlanguages: [Language!],\r): [Text!] \r\r}\r\r\rFields code(String):\rCode.\r\rorder(String):\rIndicates the order priority.\r\rtype(ApplicationAreaType!):\rIndicates the type of the media.\r\rupdatedAt(DateTime!):\rUpdate date.\r\rurl(URI!):\rUrl.\r\rtexts([Text!]):\rContains the descriptive.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/member/",
@@ -942,7 +1103,7 @@
 	"title": "Mutation",
 	"tags": [],
 	"description": "",
-	"content": " Mutations are operations that change or update data in the server.\nGraphQL Schema definition type Mutation {\r\rhotelX: HotelXMutation \r\r\radmin: AdminMutation \r\r\rhotelBook(\rinput: HotelBookInput!,\rsettings: HotelSettingsInput,\r): HotelBookPayload \r\r\rhotelCancel(\rinput: HotelCancelInput!,\rsettings: HotelSettingsInput,\r): HotelCancelPayload \r\r\rloadFile(\rinput: String!,\r): String! \r\r\rcreateDefaultSettings(\rinput: DefaultSettingsInput!,\r): DefaultSettings \r\r\rupdateDefaultSettings(\rinput: DefaultSettingsInput!,\r): DefaultSettings \r\r\rdeleteDefaultSettings(\rinput: String!,\r): Boolean! \r\r}\r\r\rFields hotelX(HotelXMutation):\r\r\radmin(AdminMutation):\r\r\rhotelBook(HotelBookPayload):\rCreates a new hotel booking consisting of an option of 1 or more rooms.\r\rhotelCancel(HotelCancelPayload):\rCancels an existing hotel booking consisting of an option of 1 or more rooms.\r\rloadFile(String!):\rLoad mapping files for a group.\r\rcreateDefaultSettings(DefaultSettings):\rCreates a defaultSettings for a given group\r\rupdateDefaultSettings(DefaultSettings):\rUpdates a defaultSettings for a given group\r\rdeleteDefaultSettings(Boolean!):\rDeletes a defaultSettings for a given group\r\r\n"
+	"content": " Mutations are operations that change or update data in the server.\nGraphQL Schema definition type Mutation {\r\rhotelX: HotelXMutation \r\r\radmin: AdminMutation \r\rShow deprecated fields\r\r\rhotelBook(\rinput: HotelBookInput!,\rsettings: HotelSettingsInput,\r): HotelBookPayload \r\r\rhotelCancel(\rinput: HotelCancelInput!,\rsettings: HotelSettingsInput,\r): HotelCancelPayload \r\r\rloadFile(\rinput: String!,\r): String! \r\r\rcreateDefaultSettings(\rinput: DefaultSettingsInput!,\r): DefaultSettings \r\r\rupdateDefaultSettings(\rinput: DefaultSettingsInput!,\r): DefaultSettings \r\r\rdeleteDefaultSettings(\rinput: String!,\r): Boolean! \r\r\r}\r\r\rFields hotelX(HotelXMutation):\r\r\radmin(AdminMutation):\r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/interfaces/node/",
@@ -1054,21 +1215,21 @@
 	"title": "PageInfo",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type PageInfo {\r\rhasNextPage: Boolean! \r\r\rhasPreviousPage: Boolean! \r\r\rstartCursor: String! \r\r\rendCursor: String! \r\r}\r\r\rFields hasNextPage(Boolean!):\r\r\rhasPreviousPage(Boolean!):\r\r\rstartCursor(String!):\r\r\rendCursor(String!):\r\r\r\nRequire by HotelConnection: \rHotelList definition\r\rMediaConnection: \r\r\rAmenityConnection: \r\r\rOrganizationConnection: \r\r\rGroupConnection: \r\r\rMemberConnection: \r\r\rAPIConnection: \r\r\rResourceConnection: \r\r\rRoleConnection: \r\r\rProductConnection: \r\r\rAccessConnection: \r\r\r\n"
+	"content": " GraphQL Schema definition type PageInfo {\r\rhasNextPage: Boolean! \r\r\rhasPreviousPage: Boolean! \r\r\rstartCursor: String! \r\r\rendCursor: String! \r\r}\r\r\rFields hasNextPage(Boolean!):\r\r\rhasPreviousPage(Boolean!):\r\r\rstartCursor(String!):\r\r\rendCursor(String!):\r\r\r\nRequire by BoardConnection: \rBoardList definition\r\rCategoryConnection: \rCategoryList definition\r\rRoomConnection: \rRoomList definition\r\rHotelConnection: \rHotelList definition\r\rDestinationConnection: \rDestinationList definition\r\rAccessConnection: \r\r\rSupplierConnection: \r\r\rClientConnection: \r\r\rOrganizationConnection: \r\r\rGroupConnection: \r\r\rMemberConnection: \r\r\rAPIConnection: \r\r\rResourceConnection: \r\r\rRoleConnection: \r\r\rProductConnection: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/parameter/",
 	"title": "Parameter",
 	"tags": [],
 	"description": "",
-	"content": " Parameters for additional information for the supplier\u0026rsquo;s configuration.\nGraphQL Schema definition type Parameter {\r\rkey: String! \r\r\rvalue: String! \r\r}\r\r\rFields key(String!):\rContains the keyword/Id to identify a parameter. This information is mandatory.\r\rvalue(String!):\rContains the parameter values. This information is mandatory.\r\r\n"
+	"content": " Parameters for additional information for the supplier\u0026rsquo;s configuration.\nGraphQL Schema definition type Parameter {\r\rkey: ID! \r\r\rvalue: String! \r\r}\r\r\rFields key(ID!):\rContains the keyword/Id to identify a parameter. This information is mandatory.\r\rvalue(String!):\rContains the parameter values. This information is mandatory.\r\r\nRequire by AccessData: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/parameterinput/",
 	"title": "ParameterInput",
 	"tags": [],
 	"description": "",
-	"content": " Parameters for additional information for the supplier\u0026rsquo;s configuration.\nGraphQL Schema definition type ParameterInput {\r\rkey: String! \r\r\rvalue: String! \r\r}\r\r\rFields key(String!):\rContains the keyword/Id to identify a parameter.\r\rvalue(String!):\rContains the parameter values.\r\r\n"
+	"content": " Parameters Input.\nGraphQL Schema definition type ParameterInput {\r\rkey: String! \r\r\rvalue: String! \r\r}\r\r\rFields key(String!):\rContains the keyword/Id to identify a parameter. This information is mandatory.\r\rvalue(String!):\rContains the parameter values. This information is mandatory.\r\r\nRequire by AccessInput: \rAccess input\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/pax/",
@@ -1111,6 +1272,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Plugin Step Type\nGraphQL Schema definition \renum\rPluginStepType{\r\r\rREQUEST,\r\r\r\rREQUEST_ACCESS,\r\r\r\rRESPONSE_OPTION,\r\r\r\rRESPONSE_ACCESS,\r\r\r\rRESPONSE,\r\r\r} \r Require by PluginStepInput: \rPlugin to execute.\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/enums/plugintype/",
+	"title": "PluginType",
+	"tags": [],
+	"description": "",
+	"content": " Plugin Type\nGraphQL Schema definition \renum\rPluginType{\r\r\rPRE_STEP,\r\r\r\rHOTEL_MAP,\r\r\r\rBOARD_MAP,\r\r\r\rROOM_MAP,\r\r\r\rCURRENCY_CONVERSION,\r\r\r\rMARKUP,\r\r\r\rAGGREGATION,\r\r\r\rPOST_STEP,\r\r\r} \r Require by PluginsInput: \rPlugin to execute.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/pluginsinput/",
@@ -1183,11 +1351,25 @@
 	"content": " Information about room promotions(offers).\nGraphQL Schema definition type Promotion {\r\rcode: String! \r\r\rname: String \r\r\reffectiveDate: Date \r\r\rexpireDate: Date \r\r}\r\r\rFields code(String!):\rSpecifies the promotion code.\r\rname(String):\rSpecifies the promotion name.\r\reffectiveDate(Date):\rPromotion effective date.\r\rexpireDate(Date):\rPromotion expire date.\r\r\n"
 },
 {
+	"uri": "/travelgatex/reference/objects/property/",
+	"title": "Property",
+	"tags": [],
+	"description": "",
+	"content": " Indicates Property type\nGraphQL Schema definition type Property {\r\rname: String \r\r\rcode: String \r\r}\r\r\rFields name(String):\rIndicates property type\r\rcode(String):\rIndicates property type code\r\r\nRequire by HotelData: \rHotel data\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/provider/",
+	"title": "Provider",
+	"tags": [],
+	"description": "",
+	"content": " Temporary type to use only during SQL server\u0026rsquo;s lifetime\nGraphQL Schema definition type Provider {\r\rcode: ID! \r\r\rname: String! \r\r\risActive: Boolean \r\r\risPublic: Boolean \r\r}\r\r\rFields code(ID!):\r\r\rname(String!):\r\r\risActive(Boolean):\r\r\risPublic(Boolean):\r\r\r\nRequire by SupplierData: \r\r\r\n"
+},
+{
 	"uri": "/travelgatex/reference/schema/query/",
 	"title": "Query",
 	"tags": [],
 	"description": "",
-	"content": " A query is a request for information from a database.\nGraphQL Schema definition type Query {\r\rhotelX: HotelXQuery \r\r\radmin: AdminQuery \r\r\rsearch: Search! \r\r\rquote: Quote! \r\r\rbooking: Booking \r\r\rdefaultSettings(\rgroupCode: String!,\r): DefaultSettings \r\r\rmapping(\rgroupCode: String!,\r): Mapping! \r\r}\r\r\rFields hotelX(HotelXQuery):\r\r\radmin(AdminQuery):\r\r\rsearch(Search!):\rAvailable options for a given date and itinerary.\r\rquote(Quote!):\rReturns the total price and cancellation policies of the Option selected in the previous step (Search).\r\rbooking(Booking):\rReturns detailed information about books.\r\rdefaultSettings(DefaultSettings):\rReads defaultSettings of the given group\r\rmapping(Mapping!):\rReturns the mapping for a group, is necessary specify the group.\r\r\n"
+	"content": " GraphQL Schema definition type Query {\r\rhotelX: HotelXQuery \r\r\radmin: AdminQuery \r\rShow deprecated fields\r\r\rdefaultSettings(\rgroupCode: String!,\r): DefaultSettings \r\r\rmapping(\rgroupCode: String!,\r): Mapping! \r\r\r}\r\r\rFields hotelX(HotelXQuery):\r\r\radmin(AdminQuery):\r\r\r\n"
 },
 {
 	"uri": "/getting-started/quickstart/",
@@ -1208,7 +1390,7 @@
 	"title": "Quote",
 	"tags": [],
 	"description": "",
-	"content": " Returns the total price and cancellation policies of the Option selected in the previous step (Search).\nGraphQL Schema definition type Quote {\r\rhotel(\rcriteria: HotelCriteriaQuoteInput!,\rsettings: HotelSettingsInput,\r): HotelQuote \r\r}\r\r\rFields hotel(HotelQuote):\rReturns the total price and cancellation policies of the Option selected in the previous step (Search).\r\r\nRequire by Query: \r\r\r\n"
+	"content": " Returns the total price and cancellation policies of the Option selected in the previous step (Search).\nGraphQL Schema definition type Quote {\rShow deprecated fields\r\r\rhotel(\rcriteria: HotelCriteriaQuoteInput!,\rsettings: HotelSettingsInput,\r): HotelQuote \r\r\r}\r\r\rRequire by Query: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/rateplan/",
@@ -1229,7 +1411,7 @@
 	"title": "RateRulesType",
 	"tags": [],
 	"description": "",
-	"content": " Rate Rules\nGraphQL Schema definition \renum\rRateRulesType{\r\r\rPACKAGE,\r\r\r\rOLDER55,\r\r\r\rOLDER60,\r\r\r\rOLDER65,\r\r\r\rCANARY_RESIDENT,\r\r\r\rBALEARIC_RESIDENT,\r\r\r\rLARGE_FAMILY,\r\r\r\rHONEYMOON,\r\r\r\rPUBLIC_SERVANT,\r\r\r\rUNEMPLOYED,\r\r\r} \r "
+	"content": " Rate Rules\nGraphQL Schema definition \renum\rRateRulesType{\r\r\rPACKAGE,\r\r\r\rOLDER55,\r\r\r\rOLDER60,\r\r\r\rOLDER65,\r\r\r\rCANARY_RESIDENT,\r\r\r\rBALEARIC_RESIDENT,\r\r\r\rLARGE_FAMILY,\r\r\r\rHONEYMOON,\r\r\r\rPUBLIC_SERVANT,\r\r\r\rUNEMPLOYED,\r\r\r\rNORMAL,\r\r\r\rNON_REFUNDABLE,\r\r\r} \r "
 },
 {
 	"uri": "/travelgatex/reference/objects/reference/",
@@ -1239,11 +1421,11 @@
 	"content": " Contains reference codes.\nGraphQL Schema definition type Reference {\r\rclient: String \r\r\rsupplier: String \r\r}\r\r\rFields client(String):\rClient reference booking\r\rsupplier(String):\rSupplier reference booking\r\r\nRequire by HotelBookingDetail: \rContains information about booking.\r\rHotelCancelDetail: \rContains information about cancel\r\r\n"
 },
 {
-	"uri": "/travelgatex/reference/objects/requeststats/",
-	"title": "RequestStats",
+	"uri": "/travelgatex/reference/inputobjects/relayinput/",
+	"title": "RelayInput",
 	"tags": [],
 	"description": "",
-	"content": " Contains internal information.\nGraphQL Schema definition type RequestStats {\r\rtotal: Stat! \r\r\rvalidation: Stat! \r\r\rprocess: Stat! \r\r\rAccesses: [StatAccess!]! \r\r\rExternal: String! \r\r}\r\r\rFields total(Stat!):\r\r\rvalidation(Stat!):\r\r\rprocess(Stat!):\r\r\rAccesses([StatAccess!]!):\r\r\rExternal(String!):\r\r\r\nRequire by HotelSearch: \rResults of Avail Hotel. Contains all the available options for a given date and itinerary.\r\rResponse: \r\r\rHotelQuote: \r\r\rHotelBooking: \r\r\rHotelBookPayload: \r\r\rHotelCancelPayload: \r\r\r\n"
+	"content": " GraphQL Schema definition type RelayInput {\r\rfirst: Int \r\r\rlast: Int \r\r\rbefore: String \r\r\rafter: String \r\r}\r\r\rFields first(Int):\r\r\rlast(Int):\r\r\rbefore(String):\r\r\rafter(String):\r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/resort/",
@@ -1285,7 +1467,7 @@
 	"title": "Response",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition interface Response {\r\rstats(\rtoken: String!,\r): RequestStats \r\r\rauditData: AuditData \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields stats(RequestStats):\rApplication stats in string format\r\rauditData(AuditData):\rData sent \u0026amp; received in the supplierâ€™s original format.\r\rerrors([Error!]):\rErrors that lead the service to stop\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that do not stop the service\r\r\n"
+	"content": " GraphQL Schema definition interface Response {\r\rstats(\rtoken: String!,\r): StatsRequest \r\r\rauditData: AuditData \r\r\rerrors: [Error!] \r\r\rwarnings: [Warning!] \r\r}\r\r\rFields stats(StatsRequest):\rApplication stats in string format\r\rauditData(AuditData):\rData sent \u0026amp; received in the supplierâ€™s original format.\r\rerrors([Error!]):\rErrors that lead the service to stop\r\rwarnings([Warning!]):\rPotentially harmful situations or errors that do not stop the service\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/role/",
@@ -1323,11 +1505,32 @@
 	"content": " Contains the room information of the option returned.\nGraphQL Schema definition type Room {\r\roccupancyRefId: Int! \r\r\rcode: String! \r\r\rdescription: String \r\r\rrefundable: Boolean \r\r\runits: Int \r\r\rroomPrice: RoomPrice! \r\r\rbeds: [Bed!] \r\r\rratePlans: [RatePlan!] \r\r\rpromotions: [Promotion!] \r\r}\r\r\rFields occupancyRefId(Int!):\rID reference to the occupancy.\r\rcode(String!):\rIndicates the room code.\r\rdescription(String):\rDescription about the room.\r\rrefundable(Boolean):\rIdentifies if the room is refundable or not.\r\runits(Int):\rNumber of rooms available with the same type.\r\rroomPrice(RoomPrice!):\rSpecifies the room price.\r\rbeds([Bed!]):\rList of beds.\r\rratePlans([RatePlan!]):\rDaily break downs rate plan.\r\rpromotions([Promotion!]):\rDaily break downs promotions.\r\r\n"
 },
 {
+	"uri": "/travelgatex/reference/objects/roomconnection/",
+	"title": "RoomConnection",
+	"tags": [],
+	"description": "",
+	"content": " RoomList definition\nGraphQL Schema definition type RoomConnection {\r\redges: [RoomEdge] \r\r\rpageInfo: PageInfo! \r\r}\r\r\rFields edges([RoomEdge]):\r\r\rpageInfo(PageInfo!):\r\r\r\nRequire by HotelXQuery: \r\r\r\n"
+},
+{
 	"uri": "/travelgatex/reference/objects/roomcriteria/",
 	"title": "RoomCriteria",
 	"tags": [],
 	"description": "",
 	"content": " Occupancy for a room. It contains a list of pax ages.\nGraphQL Schema definition type RoomCriteria {\r\rpaxes: [Pax!]! \r\r}\r\r\rFields paxes([Pax!]!):\rArray of pax ages. The number of items in the array will indicate the pax occupancy.\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/roomdata/",
+	"title": "RoomData",
+	"tags": [],
+	"description": "",
+	"content": " Room data\nGraphQL Schema definition type RoomData {\r\rcode: ID! \r\r\rroomCode: String! \r\r\rtexts(\rlanguages: [Language!],\r): [Text!] \r\r}\r\r\rFields code(ID!):\rInternal code to perform availability.\r\rroomCode(String!):\rCode of the hotel in the Supplier selected.\r\rtexts([Text!]):\rLabel\r\r\nRequire by RoomStatic: \rRoom Type\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/roomedge/",
+	"title": "RoomEdge",
+	"tags": [],
+	"description": "",
+	"content": " RoomList Edge definition\nGraphQL Schema definition type RoomEdge {\r\rcursor: String! \r\r\rnode: RoomStatic \r\r}\r\r\rFields cursor(String!):\r\r\rnode(RoomStatic):\r\r\r\nRequire by RoomConnection: \rRoomList definition\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/roominput/",
@@ -1342,6 +1545,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Specifies the room price.\nGraphQL Schema definition type RoomPrice {\r\rprice: Price! \r\r\rbreakdown: [PriceBreakdown!] \r\r}\r\r\rFields price(Price!):\rTotal price for all days.\r\rbreakdown([PriceBreakdown!]):\rDaily break downs price.\r\r\nRequire by Room: \rContains the room information of the option returned.\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/roomstatic/",
+	"title": "RoomStatic",
+	"tags": [],
+	"description": "",
+	"content": " Room Type\nGraphQL Schema definition type RoomStatic {\r\rcode: ID! \r\r\rroomData: RoomData \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\rRoom ID\r\rroomData(RoomData):\rRoom data\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\nRequire by RoomEdge: \rRoomList Edge definition\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/rule/",
@@ -1362,7 +1572,7 @@
 	"title": "Search",
 	"tags": [],
 	"description": "",
-	"content": " Available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.\nGraphQL Schema definition type Search {\r\rhotel(\r\r\r\rtoken: String,\r\r\r\r\rcriteria: HotelCriteriaSearchInput,\r\r\r\r\rsettings: HotelSettingsInput,\r\r\r\r\rfilter: FilterInput,\r\r\r\r\r): HotelSearch \r\r}\r\r\rFields hotel(HotelSearch):\rAvailable options of an hotel for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward. It only requires the criteria of search (destination, travel dates and the number of pax in each room). But you must preload the other fields in our system by complete the fields absents.\r\r\nRequire by Query: \r\r\r\n"
+	"content": " Available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.\nGraphQL Schema definition type Search {\rShow deprecated fields\r\r\rhotel(\r\r\r\rtoken: String,\r\r\r\r\rcriteria: HotelCriteriaSearchInput,\r\r\r\r\rsettings: HotelSettingsInput,\r\r\r\r\rfilter: FilterInput,\r\r\r\r\r): HotelSearch \r\r\r}\r\r\rRequire by Query: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/servicestatus/",
@@ -1383,28 +1593,42 @@
 	"title": "SettingsBaseInput",
 	"tags": [],
 	"description": "",
-	"content": " Contains the time out and business rules of a supplier or an access.\nGraphQL Schema definition type SettingsBaseInput {\r\rtimeout: Int \r\r\rauditTransactions: Boolean \r\r\rbusinessRules: BusinessRulesInput \r\r}\r\r\rFields timeout(Int):\rMilliseconds before the connection is closed.\r\rauditTransactions(Boolean):\rSpecifies if transactions exchanged with the supplier have to be logged or not.\r\rbusinessRules(BusinessRulesInput):\rBusiness rules.\r\r\nRequire by SupplierInput: \rSupplier object. Contains its own settings, code and access.\r\rAccessInput: \rAccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.\r\r\n"
+	"content": " Contains the time out and business rules of a supplier or an access.\nGraphQL Schema definition type SettingsBaseInput {\r\rtimeout: Int \r\r\rauditTransactions: Boolean \r\r\rbusinessRules: BusinessRulesInput \r\r}\r\r\rFields timeout(Int):\rMilliseconds before the connection is closed.\r\rauditTransactions(Boolean):\rSpecifies if transactions exchanged with the supplier have to be logged or not.\r\rbusinessRules(BusinessRulesInput):\rBusiness rules.\r\r\nRequire by HotelXSupplierInput: \rSupplier object. Contains its own settings, code and access.\r\rHotelXAccessInput: \rAccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/stat/",
 	"title": "Stat",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type Stat {\r\rstart: DateTime! \r\r\rend: DateTime! \r\r\rduration: Float \r\r}\r\r\rFields start(DateTime!):\rStart UTC\r\rend(DateTime!):\rEnd UTC\r\rduration(Float):\rDifference between start and end in miliseconds\r\r\nRequire by RequestStats: \rContains internal information.\r\rStatAccess: \r\r\rStatTransaction: \r\r\r\n"
+	"content": " GraphQL Schema definition type Stat {\r\rstart: DateTime! \r\r\rend: DateTime! \r\r\rduration: Float \r\r}\r\r\rFields start(DateTime!):\rStart UTC\r\rend(DateTime!):\rEnd UTC\r\rduration(Float):\rDifference between start and end in miliseconds\r\r\nRequire by StatsRequest: \rContains internal information.\r\rStatPlugin: \r\r\rStatAccess: \r\r\rStatTransaction: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/stataccess/",
 	"title": "StatAccess",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type StatAccess {\r\rname: String! \r\r\rtotal: Stat! \r\r\rstaticConfiguration: Stat \r\r\rtransactions: [StatTransaction!]! \r\r\rexternal: String! \r\r}\r\r\rFields name(String!):\r\r\rtotal(Stat!):\r\r\rstaticConfiguration(Stat):\r\r\rtransactions([StatTransaction!]!):\r\r\rexternal(String!):\r\r\r\n"
+	"content": " GraphQL Schema definition type StatAccess {\r\rname: String! \r\r\rtotal: Stat! \r\r\rstaticConfiguration: Stat \r\r\rhotels: Int! \r\r\rzones: Int! \r\r\rcities: Int! \r\r\rrequestAccess: StatPlugin \r\r\rresponseAccess: StatPlugin \r\r\rtransactions: [StatTransaction!]! \r\r\rplugins: [StatPlugin!] \r\r}\r\r\rFields name(String!):\rAccess name\r\rtotal(Stat!):\rTotal access time\r\rstaticConfiguration(Stat):\rStatic configuration time\r\rhotels(Int!):\rNumber of hotels\r\rzones(Int!):\rNumber of zones\r\rcities(Int!):\rNumber of cities\r\rrequestAccess(StatPlugin):\rAccess request time\r\rresponseAccess(StatPlugin):\rAccess response time\r\rtransactions([StatTransaction!]!):\rDetail transaction time\r\rplugins([StatPlugin!]):\rPlugin execution time\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/statplugin/",
+	"title": "StatPlugin",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type StatPlugin {\r\rname: String! \r\r\rtotal: Stat! \r\r}\r\r\rFields name(String!):\rPlugin name\r\rtotal(Stat!):\rtotal plugin time\r\r\nRequire by StatsRequest: \rContains internal information.\r\rStatAccess: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/stattransaction/",
 	"title": "StatTransaction",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type StatTransaction {\r\rreference: String! \r\r\rtotal: Stat! \r\r\rbuildRequest: Stat! \r\r\rworkerCommunication: Stat! \r\r\rparseResponse: Stat! \r\r}\r\r\rFields reference(String!):\r\r\rtotal(Stat!):\r\r\rbuildRequest(Stat!):\r\r\rworkerCommunication(Stat!):\r\r\rparseResponse(Stat!):\r\r\r\n"
+	"content": " GraphQL Schema definition type StatTransaction {\r\rreference: String! \r\r\rtotal: Stat! \r\r\rbuildRequest: Stat! \r\r\rworkerCommunication: Stat! \r\r\rparseResponse: Stat! \r\r}\r\r\rFields reference(String!):\rExtra information about transaction.\r\rtotal(Stat!):\rTotal transaction time\r\rbuildRequest(Stat!):\rBuild request time\r\rworkerCommunication(Stat!):\rWorker connection time\r\rparseResponse(Stat!):\rParse response time\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/statsrequest/",
+	"title": "StatsRequest",
+	"tags": [],
+	"description": "",
+	"content": " Contains internal information.\nGraphQL Schema definition type StatsRequest {\r\rtotal: Stat! \r\r\rvalidation: Stat! \r\r\rprocess: Stat! \r\r\rconfiguration: Stat! \r\r\rrequest: Stat! \r\r\rresponse: Stat! \r\r\rrequestPlugin: StatPlugin \r\r\rresponsePlugin: StatPlugin \r\r\rhotels: Int! \r\r\rzones: Int! \r\r\rcities: Int! \r\r\rdockerID: String! \r\r\rAccesses: [StatAccess!]! \r\r}\r\r\rFields total(Stat!):\rTotal transaction time\r\rvalidation(Stat!):\rRequest validation time\r\rprocess(Stat!):\rProcess time. Contains communication time, parse time and plugin time.\r\rconfiguration(Stat!):\rBuild access time\r\rrequest(Stat!):\rRequest time\r\rresponse(Stat!):\rResponse time\r\rrequestPlugin(StatPlugin):\rPlugin execution time\r\rresponsePlugin(StatPlugin):\rPlugin execution time\r\rhotels(Int!):\rNumber of hotels\r\rzones(Int!):\rNumber of zones\r\rcities(Int!):\rNumber of cities\r\rdockerID(String!):\rDocker Id\r\rAccesses([StatAccess!]!):\rDetail access time\r\r\nRequire by HotelSearch: \rResults of Avail Hotel. Contains all the available options for a given date and itinerary.\r\rResponse: \r\r\rHotelQuote: \r\r\rHotelBooking: \r\r\rHotelBookPayload: \r\r\rHotelCancelPayload: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/enums/statustype/",
@@ -1418,7 +1642,7 @@
 	"title": "String",
 	"tags": [],
 	"description": "",
-	"content": " The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.\nGraphQL Schema definition scalar String\r\r\rRequire by HotelEdge: \rHotelList Edge definition\r\rError: \rApplication errors\r\rAdviseMessage: \r\r\rHotelData: \rHotel data\r\rMediaEdge: \rHotelList Edge definition\r\rPageInfo: \r\r\rAmenityEdge: \rHotelList Edge definition\r\rInformation: \r\r\rLocation: \rLocation\r\rGeocode: \rGeocode type\r\rContact: \rContact type\r\rDestination: \rDestination type\r\rHotelCriteriaSearchInput: \rCriteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.\r\rHotelSettingsInput: \rSettings that you can edit for this avail. Values are loaded by default in our Back Office.\r\rSupplierInput: \rSupplier object. Contains its own settings, code and access.\r\rConfigurationInput: \rThe information and credentials required to access the supplierâ€™s system.\r\rParameterInput: \rParameters for additional information for the supplier\u0026#39;s configuration.\r\rPluginsInput: \rPlugin to execute.\r\rHotelSearch: \rResults of Avail Hotel. Contains all the available options for a given date and itinerary.\r\rRequestStats: \rContains internal information.\r\rStatAccess: \r\r\rStatTransaction: \r\r\rTransactions: \rSupplier transaction\r\rWarning: \rApplication warnings\r\rCriteriaSearch: \rCriteria of search contains destination, travel dates and the number of pax in each room.\r\rHotelOptionSearch: \rAn option includes hotel information, meal plan, total price, conditions and room description.\r\rBookableOptionSearch: \r\r\rRoom: \rContains the room information of the option returned.\r\rMarkup: \rInforms markup applied over supplier price.\r\rRule: \r\r\rBed: \rContains information about a bed.\r\rRatePlan: \rInformation about the rate of the option returned.\r\rPromotion: \rInformation about room promotions(offers).\r\rSupplement: \rSupplement that it can be or its already added to the option returned. Contains all the information about the supplement.\r\rResort: \rContains information about the Resort.\r\rSurcharge: \rSurcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.\r\rHotelCriteriaQuoteInput: \rThe quote criteria contains the option reference id, block and language.\r\rHotelOptionQuote: \rContains information about quote.\r\rHotelCriteriaBookingInput: \rCriteria of book contains basic information to find a book or books.\r\rCriteriaBookingReferencesInput: \rCriteria by references\r\rBookReferenceInput: \rReference object that contains the client reference and/or supplier reference.\r\rHotelBookingDetail: \rContains information about booking.\r\rReference: \rContains reference codes.\r\rHolder: \rHolder object that contains the pax name and surname.\r\rBookingHotel: \r\r\rBookingRoom: \r\r\rServiceStatus: \rIndicates the status of the service\r\rOrganizationEdge: \r\r\rOrganizationData: \r\r\rGroupCommonData: \r\r\rMemberData: \r\r\rGroupEdge: \r\r\rGroupData: \r\r\rMemberEdge: \r\r\rAPIEdge: \r\r\rResourceEdge: \r\r\rRoleEdge: \r\r\rRoleData: \r\r\rProductEdge: \r\r\rDefaultSettings: \r\r\rMappingContext: \rReturns the differents group contexts\r\rMappingEntity: \rMapping about client codes with the equivalence per supplier.\r\rMap: \rMap codes.\r\rMutation: \rMutations are operations that change or update data in the server.\r\rHotelBookInput: \rCriteria of book.\r\rPaymentCardInput: \rInput PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information\r\rHolderInput: \rHolder object that contains the pax name and surname.\r\rBookPaxInput: \rInput BookPax contains basic information abaout pax suach as name, surname and age.\r\rHotelCancelInput: \rCancellation Criteria.\r\rHotelCancelDetail: \rContains information about cancel\r\rCreateMemberInput: \r\r\rCreateGroupInput: \r\r\rUpdateMemberInput: \r\r\rUpdateGroupInput: \r\r\rDefaultSettingsInput: \r\r\rAccessData: \r\r\rSupplierGroup: \rgroup related to a supplier\r\rParameter: \rParameters for additional information for the supplier\u0026#39;s configuration.\r\rAccessEdge: \r\r\rGiataID: \rGiata System ID.\r\rConnectUser: \rdata related to a connect user and its groups\r\rConnectUserGroup: \rgroup related to a connect user\r\rAccessConfigurationInput: \rThe information required to access the supplier\u0026#39;s system.\r\rAccessConnectUserInput: \rConnect user input for data access management API\r\rConnectUserGroupInput: \rgroup related to a connect user\r\rAccessSupplierInput: \rSupplier input for data access management API\r\rSupplierGroupInput: \rgroup related to a supplier\r\rIdAccessConfigurationInput: \r\r\r "
+	"content": " The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.\nGraphQL Schema definition scalar String\r\r\rRequire by RelayInput: \r\r\rBoardEdge: \rBoardList Edge definition\r\rError: \rApplication errors\r\rAdviseMessage: \r\r\rBoardData: \rBoard data\r\rText: \r\r\rPageInfo: \r\r\rCategoryEdge: \rCategoryList Edge definition\r\rCategoryData: \rCategory data\r\rRoomEdge: \rRoomList Edge definition\r\rRoomData: \rRoom data\r\rHotelConnection: \rHotelList definition\r\rHotelEdge: \rHotelList Edge definition\r\rHotelData: \rHotel data\r\rProperty: \rIndicates Property type\r\rLocation: \rIndicates the location of the hotel.\r\rDestinationData: \rInformation about destinantion\r\rContact: \rContact Data.\r\rAmenity: \rSomething, such as a swimming pool or shopping centre, that is intended to make life more pleasant or comfortable for the people.\r\rMedia: \rContains media information.\r\rDestinationConnection: \rDestinationList definition\r\rDestinationEdge: \rDestinationList Edge definition\r\rHotelXDestinationSearcherInput: \r\r\rHotelCriteriaSearchInput: \rCriteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.\r\rHotelSettingsInput: \rSettings that you can edit for this avail. Values are loaded by default in our Back Office.\r\rHotelXSupplierInput: \rSupplier object. Contains its own settings, code and access.\r\rConfigurationInput: \rThe information and credentials required to access the supplierâ€™s system.\r\rParameterInput: \rParameters Input.\r\rPluginsInput: \rPlugin to execute.\r\rHotelSearch: \rResults of Avail Hotel. Contains all the available options for a given date and itinerary.\r\rStatsRequest: \rContains internal information.\r\rStatPlugin: \r\r\rStatAccess: \r\r\rStatTransaction: \r\r\rTransactions: \rSupplier transaction\r\rWarning: \rApplication warnings\r\rCriteriaSearch: \rCriteria of search contains destination, travel dates and the number of pax in each room.\r\rHotelOptionSearch: \rAn option includes hotel information, meal plan, total price, conditions and room description.\r\rBookableOptionSearch: \r\r\rRoom: \rContains the room information of the option returned.\r\rMarkup: \rInforms markup applied over supplier price.\r\rRule: \r\r\rBed: \rContains information about a bed.\r\rRatePlan: \rInformation about the rate of the option returned.\r\rPromotion: \rInformation about room promotions(offers).\r\rSupplement: \rSupplement that it can be or its already added to the option returned. Contains all the information about the supplement.\r\rResort: \rContains information about the Resort.\r\rSurcharge: \rSurcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.\r\rAddOn: \rExtra information about the option.\r\rHotelCriteriaQuoteInput: \rThe quote criteria contains the option reference id, block and language.\r\rHotelOptionQuote: \rContains information about quote.\r\rHotelCriteriaBookingInput: \rCriteria of book contains basic information to find a book or books.\r\rCriteriaBookingReferencesInput: \rCriteria by references\r\rBookReferenceInput: \rReference object that contains the client reference and/or supplier reference.\r\rHotelBookingDetail: \rContains information about booking.\r\rReference: \rContains reference codes.\r\rHolder: \rHolder object that contains the pax name and surname.\r\rBookingHotel: \r\r\rBookingRoom: \r\r\rServiceStatus: \rIndicates the status of the service\r\rMappingContext: \rReturns the differents group contexts\r\rMappingEntity: \rMapping about client codes with the equivalence per supplier.\r\rMap: \rMap codes.\r\rAccessEdge: \r\r\rAccessData: \r\r\rSupplierData: \r\r\rProvider: \rTemporary type to use only during SQL server\u0026#39;s lifetime\r\rParameter: \rParameters for additional information for the supplier\u0026#39;s configuration.\r\rSupplierEdge: \r\r\rClientEdge: \r\r\rClientData: \r\r\rOrganizationEdge: \r\r\rOrganizationData: \r\r\rGroupCommonData: \r\r\rMemberData: \r\r\rGroupEdge: \r\r\rGroupData: \r\r\rMemberEdge: \r\r\rAPIEdge: \r\r\rResourceEdge: \r\r\rRoleEdge: \r\r\rRoleData: \r\r\rProductEdge: \r\r\rDefaultSettings: \r\r\rMutation: \rMutations are operations that change or update data in the server.\r\rHotelXMutation: \r\r\rHotelBookInput: \rCriteria of book.\r\rPaymentCardInput: \rInput PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information\r\rHolderInput: \rHolder object that contains the pax name and surname.\r\rBookPaxInput: \rInput BookPax contains basic information abaout pax suach as name, surname and age.\r\rHotelCancelInput: \rCancellation Criteria.\r\rHotelCancelDetail: \rContains information about cancel\r\rAccessInput: \rAccess input\r\rClientInput: \r\r\rCreateMemberInput: \r\r\rCreateGroupInput: \r\r\rUpdateMemberInput: \r\r\rUpdateGroupInput: \r\r\rDefaultSettingsInput: \r\r\rSupplierGroup: \rgroup related to a supplier\r\rConnectUser: \rdata related to a connect user and its groups\r\rConnectUserGroup: \rgroup related to a connect user\r\rAccessConfigurationInput: \rThe information required to access the supplier\u0026#39;s system.\r\rAccessConnectUserInput: \rConnect user input for data access management API\r\rConnectUserGroupInput: \rgroup related to a connect user\r\rAccessSupplierInput: \rSupplier input for data access management API\r\rSupplierGroupInput: \rgroup related to a supplier\r\rIdAccessConfigurationInput: \r\r\r "
 },
 {
 	"uri": "/travelgatex/reference/objects/supplement/",
@@ -1439,14 +1663,35 @@
 	"title": "Supplier",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type Supplier {\r\rcode: ID! \r\r\rsupplierData: SupplierData! \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\r\r\rsupplierData(SupplierData!):\r\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\nRequire by AccessData: \r\r\rAccessEdge: \r\r\r\n"
+	"content": " GraphQL Schema definition type Supplier {\r\rcode: ID! \r\r\rsupplierData: SupplierData \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\r\r\rsupplierData(SupplierData):\r\r\rerror([Error!]):\rErrors that will lead the service to abort\r\rcreatedAt(DateTime!):\rCreate date\r\rupdatedAt(DateTime!):\rUpdate date\r\r\nRequire by AccessData: \r\r\rSupplierEdge: \r\r\rAdminMutation: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/supplierconnection/",
+	"title": "SupplierConnection",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type SupplierConnection {\r\redges: [SupplierEdge] \r\r\rpageInfo: PageInfo! \r\r}\r\r\rFields edges([SupplierEdge]):\r\r\rpageInfo(PageInfo!):\r\r\r\nRequire by AdminQuery: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/supplierdata/",
 	"title": "SupplierData",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type SupplierData {\r\rcode: ID! \r\r\risActive: Boolean! \r\r\rdll: ID! \r\r\rhotelCodes(\rhotel: ID!,\r): ID! \r\r\rsupplierGroups: [SupplierGroup!] \r\r}\r\r\rFields code(ID!):\runique identifier of a supplier\r\risActive(Boolean!):\rindicates whether a supplier is active\r\rdll(ID!):\rinstance to which this supllier is connected\r\rhotelCodes(ID!):\raccesses(first: Int, Last: Int, before: String, after:String, criterial: criterialInput): AccessConnection\r\rsupplierGroups([SupplierGroup!]):\rsupplier\u0026#39;s related data of its groups\r\r\nRequire by Supplier: \r\r\r\n"
+	"content": " GraphQL Schema definition type SupplierData {\r\rcode: ID! \r\r\rname: String! \r\r\risActive: Boolean! \r\r\rprovider: Provider! \r\r\rcontext: String! \r\r\rserviceApi: Int! \r\r\rsupplierGroup: ID \r\r\raccesses: AccessConnection \r\r}\r\r\rFields code(ID!):\runique identifier of a supplier\r\rname(String!):\rSupplier complete name\r\risActive(Boolean!):\rindicates whether a supplier is active\r\rprovider(Provider!):\rinstance to which this supllier is connected\r\rcontext(String!):\rContext where the Supplier belongs to\r\rserviceApi(Int!):\rService API\r\rsupplierGroup(ID):\rSupplierGroup Internal Supplier grouping\r\raccesses(AccessConnection):\rAccesses where the supplier is referenced\r\r\nRequire by Supplier: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/objects/supplieredge/",
+	"title": "SupplierEdge",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type SupplierEdge {\r\rcursor: String! \r\r\rnode: Supplier \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Supplier):\r\r\r\nRequire by SupplierConnection: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/inputobjects/supplierfilter/",
+	"title": "SupplierFilter",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition type SupplierFilter {\r\rsupplierID: [ID] \r\r\raccessID: [ID] \r\r}\r\r\rFields supplierID([ID]):\r\r\raccessID([ID]):\r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/suppliergroup/",
@@ -1463,18 +1708,25 @@
 	"content": " group related to a supplier\nGraphQL Schema definition type SupplierGroupInput {\r\rgroupCode: String! \r\r\risActive: Boolean! \r\r}\r\r\rFields groupCode(String!):\rgroup code of the group related to this supplier\r\risActive(Boolean!):\rIndicates if the supplier is active for its supplier\r\r\n"
 },
 {
-	"uri": "/travelgatex/reference/inputobjects/supplierinput/",
-	"title": "SupplierInput",
-	"tags": [],
-	"description": "",
-	"content": " Supplier object. Contains its own settings, code and access.\nGraphQL Schema definition type SupplierInput {\r\rsettings: SettingsBaseInput \r\r\rcode: String! \r\r\raccesses: [AccessInput!] \r\r}\r\r\rFields settings(SettingsBaseInput):\rYou can configure an special settings for any supplier. This level overwrites the avail settings level but not the access settings level.\r\rcode(String!):\rCode that represents a supplier in our system. This information is mandatory.\r\raccesses([AccessInput!]):\rArray of accesses that can overwrite an existing access information or include a new access for this avail.\r\r\n"
-},
-{
 	"uri": "/travelgatex/reference/objects/surcharge/",
 	"title": "Surcharge",
 	"tags": [],
 	"description": "",
 	"content": " Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.\nGraphQL Schema definition type Surcharge {\r\rchargeType: ChargeType! \r\r\rmandatory: Boolean! \r\r\rprice: Price! \r\r\rdescription: String \r\r}\r\r\rFields chargeType(ChargeType!):\rIndicates the charge types. We need to know whether the supplements have to be paid when the consumer gets to the hotel or beforehand. Possible charge types: Include or Exclude. when include: this surcharge is mandatory and included in the option\u0026#39;s price when exclude: this surcharge is not included in the option\u0026#39;s price\r\rmandatory(Boolean!):\rIndicates if the surcharge is mandatory or not. If mandatory, this surcharge will be applied to this option if the chargeType is excluded the customer will have to pay it directly at the hotel\r\rprice(Price!):\rIndicates the surcharge price.\r\rdescription(String):\rSpecifies the surcharge description.\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/enums/template/",
+	"title": "Template",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition \renum\rTemplate{\r\r\rFOLDER_DEFAULT,\r\r\r} \r Require by CreateGroupInput: \r\r\r\n"
+},
+{
+	"uri": "/travelgatex/reference/interfaces/text/",
+	"title": "Text",
+	"tags": [],
+	"description": "",
+	"content": " GraphQL Schema definition interface Text {\r\rtext: String! \r\r\rlanguage: Language! \r\r}\r\r\rFields text(String!):\r\r\rlanguage(Language!):\r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/timeout/",
@@ -1502,7 +1754,7 @@
 	"title": "URI",
 	"tags": [],
 	"description": "",
-	"content": " The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: \u0026ldquo;http:\\www.travelgatex.com\u0026rdquo;.\nGraphQL Schema definition scalar URI\r\r\rRequire by MediaData: \r\r\rContact: \rContact type\r\rUrlsInput: \rUrl\u0026#39;s\r\rUrls: \rUrl\u0026#39;s\r\r "
+	"content": " The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: \u0026ldquo;http:\\www.travelgatex.com\u0026rdquo;.\nGraphQL Schema definition scalar URI\r\r\rRequire by Contact: \rContact Data.\r\rMedia: \rContains media information.\r\rUrlsInput: \rUrls Input\r\rUrls: \rUrl\u0026#39;s\r\r "
 },
 {
 	"uri": "/travelgatex/reference/enums/unittimetype/",
@@ -1544,7 +1796,7 @@
 	"title": "UrlsInput",
 	"tags": [],
 	"description": "",
-	"content": " Url\u0026rsquo;s\nGraphQL Schema definition type UrlsInput {\r\rsearch: URI \r\r\rquote: URI \r\r\rbook: URI \r\r\rgeneric: URI \r\r}\r\r\rFields search(URI):\rSpecific Url for Availability method.\r\rquote(URI):\rSpecific Url for Reservation method.\r\rbook(URI):\rSpecific Url for Valuation method.\r\rgeneric(URI):\rSupplier URL used for multiple methods.\r\r\nRequire by ConfigurationInput: \rThe information and credentials required to access the supplierâ€™s system.\r\r\n"
+	"content": " Urls Input\nGraphQL Schema definition type UrlsInput {\r\rsearch: URI \r\r\rquote: URI \r\r\rbook: URI \r\r\rgeneric: URI \r\r}\r\r\rFields search(URI):\rSpecific Url for Availability method.\r\rquote(URI):\rSpecific Url for Reservation method.\r\rbook(URI):\rSpecific Url for Valuation method.\r\rgeneric(URI):\rSupplier URL used for multiple methods.\r\r\nRequire by ConfigurationInput: \rThe information and credentials required to access the supplierâ€™s system.\r\rAccessInput: \rAccess input\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/warning/",
@@ -1582,13 +1834,6 @@
 	"content": " Map plugins extends HotelX allowing to match Seller and Buyer codes based on contexts.\nHotelCodeMatching Matches Seller hotel codes based on file code mapping.\nFile Requirements The file should be in the below format:\n Encoding: UTF-8 File Name: [Context Source]_hotel_map.csv Header Row: Code Source, Context Destination, Code Destination Delimiter: Comma  Code Source, Context Destination, Code Destination 10,GUE,c11#10 10000,JCB,7604 10000,TOU,1274249  File must be uploaded to your organization directory SFTP\nConfiguration { }  Parameters stopsOnMatchError: [Boolean] Stops message execution when hotel matching can not be done. Default value False\nBoardCodeMatching RoomSemanticMatching "
 },
 {
-	"uri": "/travelgatex/resources/release-notes/",
-	"title": "New Realeases &amp; Updates",
-	"tags": [],
-	"description": "Release Notes and Changelog",
-	"content": " Check out this list of new releases and changes applied on the TravelgateX GraphQL API.\n2018-03-20 ✅ Input field HotelSettingsInput.connectUser description changed from This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload. to This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload. @deprecated(reason: \u0026quot;deprecated from 2018-03-19. Redundant.\u0026quot;)\n✅ Input field client was added to input object type HotelSettingsInput\n2018-03-14 ✅ Deprecation reason on field AddOns.distribute has changed from `todeprecated from 2018-03-12. You can find it in distribution AddOn.`\n✅ Field distribution was added to object type AddOns\n✅ Type AddOn was added\n2018-03-08 ⚠️ Input field DestinationsCodes was removed from input object type HotelXDestinationListInput\n⚠️ Field boardData was removed from object type Destination\n⚠️ Input field ParameterInput.key changed type from ID! to String!\n⚠️ Field DestinationData.code changed type from String! to ID!\n⚠️ WebSearchResult was removed\n✅ Enum value NON_REFUNDABLE was added to enum RateRulesType\n✅ Enum value NORMAL was added to enum RateRulesType\n✅ Input field destinationCodes was added to input object type HotelXDestinationListInput\n✅ Field token was added to object type DestinationConnection\n✅ Field destinationData was added to object type Destination\n✅ Field destinationSearcher was added to object type HotelXQuery\n✅ Field destinations was added to object type HotelXQuery\n✅ Type HotelXDestinationSearcherInput was added\n✅ Type DestinationSearchResult was added\n2018-03-05 ⚠️ Input field AccessInput.parameters changed type from String to [ParameterInput]\n⚠️ Input field name was added to input object type AccessInput\n⚠️ Input field descriptiveInfoLimit was removed from input object type AccessInput\n⚠️ Input field serviceAPI was removed from input object type SupplierFilter\n⚠️ Input field isActive was removed from input object type SupplierFilter\n⚠️ Field updatedAt was removed from object type Parameter\n⚠️ Field createdAt was removed from object type Parameter\n⚠️ Field error was removed from object type Parameter\n⚠️ Field parameterData was removed from object type Parameter\n⚠️ Field code was removed from object type Parameter\n⚠️ Parameter object type no longer implements Node interface\n⚠️ Field SupplierData.accesses changed type from AccessConnection! to AccessConnection\n⚠️ Field legacy was removed from object type SupplierData\n⚠️ Argument after: String was removed from field AccessData.parameters\n⚠️ Argument before: String was removed from field AccessData.parameters\n⚠️ Argument Last: Int was removed from field AccessData.parameters\n⚠️ Argument first: Int was removed from field AccessData.parameters\n⚠️ Field AccessData.parameters changed type from ParameterConnection to [Parameter]\n⚠️ Field descriptiveInfoLimit was removed from object type AccessData\n⚠️ Input field ParameterInput.key changed type from String! to ID!\n⚠️ Input field filter was removed from input object type HotelXHotelListInput\n⚠️ Field Destination.code changed type from String! to ID!\n⚠️ Field texts was removed from object type Destination\n⚠️ Field available was removed from object type Destination\n⚠️ Field Location.closestDestination changed type from Destination! to DestinationData!\n⚠️ Field HotelConnection.token changed type from String! to String\n⚠️ SupplierInput was removed\n⚠️ ProviderInput was removed\n⚠️ LegacyDataInput was removed\n⚠️ ParameterData was removed\n⚠️ ParameterEdge was removed\n⚠️ ParameterConnection was removed\n⚠️ LegacyData was removed\n✅ Destination object implements Node interface\n✅ Input field isTest was added to input object type AccessInput\n✅ Field updateClient was added to object type AdminMutation\n✅ Field createClient was added to object type AdminMutation\n✅ Description `on typeParameterhas changed toParameters for additional information for the supplier\u0026rsquo;s configuration.`\n✅ Field value was added to object type Parameter\n✅ Field key was added to object type Parameter\n✅ Description XTG Platform API implementation on type Provider has changed to Temporary type to use only during SQL server's lifetime\n✅ Field SupplierData.accesses description changed from Accesses in a Supplier to Accesses where the supplier is referenced\n✅ Field SupplierData.supplierGroup description changed from SupplierGroup to SupplierGroup Internal Supplier grouping\n✅ Field isTest was added to object type AccessData\n✅ Field name was added to object type AccessData\n✅ Field clients was added to object type AdminQuery\n✅ Description Parameters for additional information for the supplier's configuration. on type ParameterInput has changed to Parameters Input.\n✅ Input field ParameterInput.value description changed from Contains the parameter values. to `Contains the parameter values.\nThis information is mandatory.`\n✅ Input field ParameterInput.key description changed from Contains the keyword/Id to identify a parameter. to `Contains the keyword/Id to identify a parameter.\nThis information is mandatory.`\n✅ Description Url's Input on type UrlsInput has changed to Urls Input\n✅ Input field destinationCodes was added to input object type HotelXHotelListInput\n✅ Description Information about destinantion on type Destination has changed to Destination Type\n✅ Field Destination.code description changed from Destination Code to Destination ID\n✅ Field updatedAt was added to object type Destination\n✅ Field createdAt was added to object type Destination\n✅ Field error was added to object type Destination\n✅ Field boardData was added to object type Destination\n✅ Type HotelXDestinationListInput was added\n✅ Type WebSearchResult was added\n✅ Type DestinationEdge was added\n✅ Type DestinationConnection was added\n✅ Type ClientInput was added\n✅ Type ClientFilter was added\n✅ Type ClientData was added\n✅ Type Client was added\n✅ Type ClientEdge was added\n✅ Type ClientConnection was added\n✅ Type DestinationType was added\n✅ Type DestinationData was added\n2018-02-21 ⚠️ Field updateHotel was removed from object type HotelXMutation\n⚠️ Input field SupplierFilter.serviceAPI changed type from Int to [Int]\n⚠️ Field avail was removed from object type Destination\n⚠️ Field name was removed from object type Destination\n⚠️ Field Contact.web changed type from URI! to URI\n⚠️ Field Location.zipCode changed type from String! to String\n⚠️ Field Location.city changed type from String! to String\n⚠️ Field Location.address changed type from String! to String\n⚠️ Field geocode was removed from object type Location\n⚠️ Field Amenity.code changed type from ID! to String!\n⚠️ Field updatedAt was removed from object type Amenity\n⚠️ Field createdAt was removed from object type Amenity\n⚠️ Field error was removed from object type Amenity\n⚠️ Field AmenityData was removed from object type Amenity\n⚠️ Amenity object type no longer implements Node interface\n⚠️ Field Media.code changed type from ID! to String\n⚠️ Field createdAt was removed from object type Media\n⚠️ Field error was removed from object type Media\n⚠️ Field mediaData was removed from object type Media\n⚠️ Media object type no longer implements Node interface\n⚠️ Field HotelData.rank changed type from Rank! to [Int!]!\n⚠️ Field HotelData.contact changed type from Contact! to Contact\n⚠️ Argument after: String was removed from field HotelData.amenities\n⚠️ Argument before: String was removed from field HotelData.amenities\n⚠️ Argument last: Int was removed from field HotelData.amenities\n⚠️ Argument first: Int was removed from field HotelData.amenities\n⚠️ Argument language: String was removed from field HotelData.amenities\n⚠️ Field HotelData.amenities changed type from AmenityConnection to [Amenity!]\n⚠️ Argument after: String was removed from field HotelData.medias\n⚠️ Argument before: String was removed from field HotelData.medias\n⚠️ Argument last: Int was removed from field HotelData.medias\n⚠️ Argument first: Int was removed from field HotelData.medias\n⚠️ Argument type: ApplicationArea was removed from field HotelData.medias\n⚠️ Field HotelData.medias changed type from MediaConnection to [Media!]\n⚠️ Field destination was removed from object type HotelData\n⚠️ Field generalDescription was removed from object type HotelData\n⚠️ Field additionalInformation was removed from object type HotelData\n⚠️ Field name was removed from object type HotelData\n⚠️ Type for argument relay on field HotelXQuery.hotels changed from RelayInput to RelayInput!\n⚠️ Argument criteria: HotelXHotelListInput! added to field HotelXQuery.hotels\n⚠️ Argument hotels: HotelXHotelQueryInput was removed from field HotelXQuery.hotels\n⚠️ StatusResponse was removed\n⚠️ HotelStatus was removed\n⚠️ GiataID was removed\n⚠️ HotelXHotelDataInput was removed\n⚠️ HotelXHotelMutationInput was removed\n⚠️ RankInput was removed\n⚠️ HotelXHotelQueryInput was removed\n⚠️ Rank was removed\n⚠️ Geocode was removed\n⚠️ Information was removed\n⚠️ AmenityData was removed\n⚠️ AmenityEdge was removed\n⚠️ AmenityConnection was removed\n⚠️ ApplicationArea was removed\n⚠️ MediaData was removed\n⚠️ MediaEdge was removed\n⚠️ MediaConnection was removed\n✅ Field accesses was added to object type SupplierData\n✅ Description Destination type on type Destination has changed to Information about destinantion\n✅ Field Destination.code changed type from String to String!\n✅ Field Destination.code description changed from Destination code. to Destination Code\n✅ Field texts was added to object type Destination\n✅ Field available was added to object type Destination\n✅ Description Contact type on type Contact has changed to Contact Data.\n✅ Field Contact.web description changed from Web. to Web\n✅ Field Contact.fax description changed from Fax. to Fax\n✅ Field Contact.telephone description changed from Telephone. to Telephone\n✅ Field Contact.email description changed from Email. to Email\n✅ Description Location on type Location has changed to Indicates the location of the hotel.\n✅ Field Location.country description changed from Country ISO Code to Country where is the Hotel.\n✅ Field Location.zipCode description changed from Zip Code to Contains the zipCode.\n✅ Field Location.city description changed from City to Contains the city\n✅ Field Location.address description changed from Street Address to Contains Hotel Address\n✅ Field closestDestination was added to object type Location\n✅ Field coordinates was added to object type Location\n✅ Description `on typeAmenityhas changed toSomething, such as a swimming pool or shopping centre, that is intended to make life more pleasant or comfortable for the people.`\n✅ Field Amenity.code description changed from `toCode`\n✅ Field texts was added to object type Amenity\n✅ Field type was added to object type Amenity\n✅ Description `on typeMediahas changed toContains media information.`\n✅ Field Media.updatedAt description changed from Update date to Update date.\n✅ Field Media.code description changed from `toCode.`\n✅ Field texts was added to object type Media\n✅ Field url was added to object type Media\n✅ Field type was added to object type Media\n✅ Field order was added to object type Media\n✅ Field HotelData.rank description changed from `toRank indicates the supplier categorization.`\n✅ Field HotelData.contact description changed from Contact information. to Contact cotains information about hotel contact.\n✅ Field HotelData.location description changed from `toIndicates the location of the hotel.`\n✅ Field HotelData.amenities description changed from `toAmenities`\n✅ Field HotelData.medias description changed from `toMedias`\n✅ Field HotelData.hotelCode description changed from Code of the hotel in the Supplier selected. to Code to perform availability.\n✅ Field HotelData.code description changed from Internal code to perform availability to Internal code.\n✅ Field descriptions was added to object type HotelData\n✅ Field cardTypes was added to object type HotelData\n✅ Field chainCode was added to object type HotelData\n✅ Field property was added to object type HotelData\n✅ Field hotelName was added to object type HotelData\n✅ Field hotelCodeSupplier was added to object type HotelData\n✅ Description Hotel type on type Hotel has changed to Hotel Type\n✅ Field token was added to object type HotelConnection\n✅ Argument token: String added to field HotelXQuery.hotels\n✅ Field rooms was added to object type HotelXQuery\n✅ Field categories was added to object type HotelXQuery\n✅ Field boards was added to object type HotelXQuery\n✅ Type HotelXRoomQueryInput was added\n✅ Type RoomData was added\n✅ Type RoomStatic was added\n✅ Type RoomEdge was added\n✅ Type RoomConnection was added\n✅ Type HotelXHotelListInput was added\n✅ Type DescriptionType was added\n✅ Type Description was added\n✅ Type ApplicationAreaType was added\n✅ Type Coordinates was added\n✅ Type Property was added\n✅ Type HotelXCategoryQueryInput was added\n✅ Type CategoryData was added\n✅ Type Category was added\n✅ Type CategoryEdge was added\n✅ Type CategoryConnection was added\n✅ Type HotelXBoardQueryInput was added\n✅ Type Text was added\n✅ Type BoardData was added\n✅ Type Board was added\n✅ Type BoardEdge was added\n✅ Type BoardConnection was added\n2018-01-30 ⚠️ Input field hotelCode was added to input object type HotelXHotelDataInput\n⚠️ Input field supplierCode was removed from input object type HotelXHotelDataInput\n⚠️ Field rsAccess was removed from object type StatAccess\n⚠️ Field rqAccess was removed from object type StatAccess\n⚠️ Field dockerID was removed from object type StatAccess\n⚠️ Field dockerID was removed from object type StatPlugin\n⚠️ Field rsPlugin was removed from object type StatsRequest\n⚠️ Field rqPlugin was removed from object type StatsRequest\n⚠️ Field rs was removed from object type StatsRequest\n⚠️ Field rq was removed from object type StatsRequest\n⚠️ Field config was removed from object type StatsRequest\n⚠️ Field supplierCode was removed from object type HotelData\n✅ Description for enum value BookStatusType.UNKNOWN changed from The status of the booking is unknown to `The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.\nIt is the client\u0026rsquo;s responsibility to check if the booking is OK`\n✅ Description for enum value BookStatusType.ON_REQUEST changed from The status of the booking is on request to `The reservation was completed but the product is still not available, so the reservation goes into a waiting list.\nIt is the client\u0026rsquo;s responsibility to check if the booking is OK`\n✅ Description for enum value BookStatusType.OK changed from The status of the booking is available to The reservation was completed with no problems\n✅ Field StatTransaction.parseResponse description changed from `toParse response time`\n✅ Field StatTransaction.workerCommunication description changed from `toWorker connection time`\n✅ Field StatTransaction.buildRequest description changed from `toBuild request time`\n✅ Field StatTransaction.total description changed from `toTotal transaction time`\n✅ Field StatTransaction.reference description changed from `toExtra information about transaction.`\n✅ Field StatAccess.plugins description changed from `toPlugin execution time`\n✅ Field StatAccess.transactions description changed from `toDetail transaction time`\n✅ Field StatAccess.cities description changed from `toNumber of cities`\n✅ Field StatAccess.zones description changed from `toNumber of zones`\n✅ Field StatAccess.hotels description changed from `toNumber of hotels`\n✅ Field StatAccess.staticConfiguration description changed from `toStatic configuration time`\n✅ Field StatAccess.total description changed from `toTotal access time`\n✅ Field StatAccess.name description changed from `toAccess name`\n✅ Field responseAccess was added to object type StatAccess\n✅ Field requestAccess was added to object type StatAccess\n✅ Field StatPlugin.total description changed from `tototal plugin time`\n✅ Field StatPlugin.name description changed from `toPlugin name`\n✅ Field StatsRequest.Accesses description changed from `toDetail access time`\n✅ Field StatsRequest.dockerID description changed from `toDocker Id`\n✅ Field StatsRequest.cities description changed from `toNumber of cities`\n✅ Field StatsRequest.zones description changed from `toNumber of zones`\n✅ Field StatsRequest.hotels description changed from `toNumber of hotels`\n✅ Field StatsRequest.process description changed from `toProcess time. Contains communication time, parse time and plugin time.`\n✅ Field StatsRequest.validation description changed from `toRequest validation time`\n✅ Field StatsRequest.total description changed from `toTotal transaction time`\n✅ Field responsePlugin was added to object type StatsRequest\n✅ Field requestPlugin was added to object type StatsRequest\n✅ Field response was added to object type StatsRequest\n✅ Field request was added to object type StatsRequest\n✅ Field configuration was added to object type StatsRequest\n✅ Field hotelCode was added to object type HotelData\n2018-01-29 ⚠️ Field HotelCancelPayload.stats changed type from RequestStats to StatsRequest\n⚠️ Field HotelBookPayload.stats changed type from RequestStats to StatsRequest\n⚠️ Input field supplierCode was added to input object type HotelXHotelDataInput\n⚠️ Input field code was removed from input object type HotelXHotelDataInput\n⚠️ Type for argument relay on field HotelXMutation.updateHotel changed from HotelXRelayInput to RelayInput\n⚠️ Field HotelBooking.stats changed type from RequestStats to StatsRequest\n⚠️ Field HotelQuote.stats changed type from RequestStats to StatsRequest\n⚠️ Field external was removed from object type StatAccess\n⚠️ Field Response.stats changed type from RequestStats to StatsRequest\n⚠️ Field HotelSearch.stats changed type from RequestStats to StatsRequest\n⚠️ Input field codes was removed from input object type HotelXHotelQueryInput\n⚠️ Type for argument language on field HotelData.generalDescription changed from Language to String\n⚠️ Type for argument language on field HotelData.additionalInformation changed from Language to String\n⚠️ Type for argument language on field HotelData.amenities changed from Language to String\n⚠️ Type for argument relay on field HotelXQuery.hotels changed from HotelXRelayInput to RelayInput\n⚠️ RequestStats was removed\n⚠️ HotelXRelayInput was removed\n✅ Input field supplierGroup was added to input object type SupplierInput\n✅ Input field serviceAPI was added to input object type SupplierFilter\n✅ Input field isActive was added to input object type SupplierFilter\n✅ Field supplierGroup was added to object type SupplierData\n✅ Description Url's on type UrlsInput has changed to Url's Input\n✅ Field plugins was added to object type StatAccess\n✅ Field rsAccess was added to object type StatAccess\n✅ Field rqAccess was added to object type StatAccess\n✅ Field dockerID was added to object type StatAccess\n✅ Field cities was added to object type StatAccess\n✅ Field zones was added to object type StatAccess\n✅ Field hotels was added to object type StatAccess\n✅ Input field supplierCodes was added to input object type HotelXHotelQueryInput\n✅ Field HotelData.code description changed from Internal code to perform availability and/or supplier code. to Internal code to perform availability\n✅ Field supplierCode was added to object type HotelData\n✅ Type StatPlugin was added\n✅ Type StatsRequest was added\n✅ Type RelayInput was added\n2018-01-17 ⚠️ Field AccessEdge.node changed type from Supplier to Access\n⚠️ Field value was removed from object type Parameter\n⚠️ Field key was removed from object type Parameter\n⚠️ Field supplierGroups was removed from object type SupplierData\n⚠️ Field hotelCodes was removed from object type SupplierData\n⚠️ Field dll was removed from object type SupplierData\n⚠️ Field Supplier.supplierData changed type from SupplierData! to SupplierData\n⚠️ Field AccessData.parameters changed type from [Parameter!] to ParameterConnection\n⚠️ Field AccessData.urls changed type from Urls! to Urls\n⚠️ Field AccessData.supplier changed type from String! to Supplier!\n⚠️ Field AccessData.code changed type from String! to ID!\n⚠️ Field id was removed from object type AccessData\n⚠️ Field suppliers was removed from object type AccessData\n⚠️ Field Access.accessData changed type from AccessData! to AccessData\n✅ Parameter object implements Node interface\n✅ Description Parameters for additional information for the supplier's configuration. on type Parameter has changed to ``\n✅ Field updatedAt was added to object type Parameter\n✅ Field createdAt was added to object type Parameter\n✅ Field error was added to object type Parameter\n✅ Field parameterData was added to object type Parameter\n✅ Field code was added to object type Parameter\n✅ Field legacy was added to object type SupplierData\n✅ Field serviceApi was added to object type SupplierData\n✅ Field context was added to object type SupplierData\n✅ Field provider was added to object type SupplierData\n✅ Field name was added to object type SupplierData\n✅ Argument after: String added to field AccessData.parameters\n✅ Argument before: String added to field AccessData.parameters\n✅ Argument Last: Int added to field AccessData.parameters\n✅ Argument first: Int added to field AccessData.parameters\n✅ Field AccessData.code description changed from Access code. to Unique AccessConfiguration identifier\n✅ Field shared was added to object type AccessData\n✅ Field rateRules was added to object type AccessData\n✅ Field descriptiveInfoLimit was added to object type AccessData\n✅ Field deleteSupplierFromGroup was added to object type AdminMutation\n✅ Field grantSupplierToGroup was added to object type AdminMutation\n✅ Field deleteAccessFromGroup was added to object type AdminMutation\n✅ Field grantAccessToGroup was added to object type AdminMutation\n✅ Field updateAccess was added to object type AdminMutation\n✅ Field createAccess was added to object type AdminMutation\n✅ Input field RankInput.rank4 changed type from Boolean! to Boolean\n✅ Input field RankInput.rank3 changed type from Boolean! to Boolean\n✅ Input field RankInput.rank2 changed type from Boolean! to Boolean\n✅ Input field RankInput.rank1 changed type from Boolean! to Boolean\n✅ Field suppliers was added to object type AdminQuery\n✅ Field accesses was added to object type AdminQuery\n✅ Field CancelPolicy.refundable description changed from Indicates if the option is refundable or not. This information is mandatory. to Indicates if the option is refundable or not.\n✅ Input field ranks was added to input object type HotelXHotelQueryInput\n✅ Type SupplierInput was added\n✅ Type ProviderInput was added\n✅ Type LegacyDataInput was added\n✅ Type Context was added\n✅ Type GroupInput was added\n✅ Type AccessInput was added\n✅ Type SupplierFilter was added\n✅ Type SupplierEdge was added\n✅ Type SupplierConnection was added\n✅ Type AccessFilter was added\n✅ Type ParameterData was added\n✅ Type ParameterEdge was added\n✅ Type ParameterConnection was added\n✅ Type LegacyData was added\n✅ Type Provider was added\n2018-01-11 ⚠️ Field codes was removed from object type Map\n⚠️ Field supplierCode was removed from object type Map\n⚠️ Field maps was removed from object type MappingEntity\n⚠️ Argument BoardCodes: [String!] was removed from field MappingContext.boards\n⚠️ Argument roomCodes: [String!] was removed from field MappingContext.rooms\n⚠️ Argument hotelCodes: [String!] was removed from field MappingContext.hotels\n⚠️ Field rates was removed from object type MappingContext\n⚠️ Field contextCode was removed from object type MappingContext\n⚠️ Argument supplierCodes: [String!] was removed from field Mapping.contexts\n⚠️ Argument contextCodes: [String!] was removed from field Mapping.contexts\n⚠️ Field DefaultSettings.market changed type from String! to String\n⚠️ Field DefaultSettings.connectUser changed type from String! to String\n⚠️ Input field HotelSettingsInput.suppliers changed type from [SupplierInput!] to [HotelXSupplierInput!]\n⚠️ Field HotelSearch.requestCriteria changed type from CriteriaSearch! to CriteriaSearch\n⚠️ Field HotelSearch.context changed type from String! to String\n⚠️ Field Geocode.longitude changed type from String! to Float!\n⚠️ Field Geocode.latitude changed type from String! to Float!\n⚠️ Argument after: String was removed from field HotelXQuery.hotels\n⚠️ Argument before: String was removed from field HotelXQuery.hotels\n⚠️ Argument last: Int was removed from field HotelXQuery.hotels\n⚠️ Argument first: Int was removed from field HotelXQuery.hotels\n⚠️ Argument language: String was removed from field HotelXQuery.hotels\n⚠️ Argument codes: [String!] was removed from field HotelXQuery.hotels\n⚠️ HotelInput was removed\n⚠️ AccessInput was removed\n⚠️ SupplierInput was removed\n✅ Field loadFile was added to object type HotelXMutation\n✅ Field updateHotel was added to object type HotelXMutation\n✅ Field maps was added to object type Map\n✅ Field code was added to object type Map\n✅ Field contexts was added to object type MappingEntity\n✅ Argument codes: [String!] added to field MappingContext.boards\n✅ Field MappingContext.boards description changed from Mapping of boards. Filter by board code. to Mapping of boards, you can filter by board code.\n✅ Argument codes: [String!] added to field MappingContext.rooms ✅ Field MappingContext.rooms description changed from Mapping of rooms. Filter by room code. to Mapping of rooms, you can filter by room code.\n✅ Argument codes: [String!] added to field MappingContext.hotels ✅ Field MappingContext.hotels description changed from Mapping of hotels. Filter by hotel code. to Mapping of hotels, you can filter by hotel code.\n✅ Field code was added to object type MappingContext\n✅ Argument codes: [String!] added to field Mapping.contexts\n✅ Field warnings was added to object type Mapping\n✅ Field errors was added to object type Mapping\n✅ Argument type: GroupType added to field AdminQuery.groups\n✅ Argument type: MemberType added to field AdminQuery.members\n✅ Field rank was added to object type HotelData\n✅ Argument relay: HotelXRelayInput added to field HotelXQuery.hotels\n✅ Argument hotels: HotelXHotelQueryInput added to field HotelXQuery.hotels\n✅ Field mapping was added to object type HotelXQuery\n✅ Type StatusResponse was added\n✅ Type HotelStatus was added\n✅ Type RankInput was added\n✅ Type HotelXHotelDataInput was added\n✅ Type HotelXHotelMutationInput was added\n✅ Type HotelXAccessInput was added\n✅ Type HotelXSupplierInput was added\n✅ Type HotelXRelayInput was added\n✅ Type HotelXHotelQueryInput was added\n✅ Type Rank was added\n"
-},
-{
 	"uri": "/travelgatex/reference/objects/",
 	"title": "Objects",
 	"tags": [],
@@ -1601,6 +1846,13 @@
 	"tags": [],
 	"description": "HotelX Quickstart",
 	"content": " This page shows you how to perform a basic hotel booking using GraphQL Playground.\nBefore Starting  Follow the steps in Creating an API Key to get your API Key. Check the connectivity of your API Key. Open the sample Playground and modify HTTP HEADERS field Authorization with your API Key.  Step by Step Search a Hotel  Click on the search tab. Modify Query Variables with valid dates and send the request.  Quote a Hotel  Click on the quote tab. In Query Variables modify optionRefId with option id value returned in search response and send the request.  Book a Hotel  Click on the hotelBook tab. In Query Variables modify optionRefId with optionRefId value returned in quote response and send the request. Next other information you can chek for book Seller reference  "
+},
+{
+	"uri": "/travelgatex/resources/release-notes/",
+	"title": "Realeases Notes",
+	"tags": [],
+	"description": "Release Notes and Changelog",
+	"content": " Check out this list of new releases and changes applied on the TravelgateX GraphQL API.\n2018-03-20 ✅ Input field HotelSettingsInput.connectUser description changed from This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload. to This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload. @deprecated(reason: \u0026quot;deprecated from 2018-03-19. Redundant.\u0026quot;)\n✅ Input field client was added to input object type HotelSettingsInput\n2018-03-14 ✅ Deprecation reason on field AddOns.distribute has changed from `todeprecated from 2018-03-12. You can find it in distribution AddOn.`\n✅ Field distribution was added to object type AddOns\n✅ Type AddOn was added\n2018-03-08 ⚠️ Input field DestinationsCodes was removed from input object type HotelXDestinationListInput\n⚠️ Field boardData was removed from object type Destination\n⚠️ Input field ParameterInput.key changed type from ID! to String!\n⚠️ Field DestinationData.code changed type from String! to ID!\n⚠️ WebSearchResult was removed\n✅ Enum value NON_REFUNDABLE was added to enum RateRulesType\n✅ Enum value NORMAL was added to enum RateRulesType\n✅ Input field destinationCodes was added to input object type HotelXDestinationListInput\n✅ Field token was added to object type DestinationConnection\n✅ Field destinationData was added to object type Destination\n✅ Field destinationSearcher was added to object type HotelXQuery\n✅ Field destinations was added to object type HotelXQuery\n✅ Type HotelXDestinationSearcherInput was added\n✅ Type DestinationSearchResult was added\n2018-03-05 ⚠️ Input field AccessInput.parameters changed type from String to [ParameterInput]\n⚠️ Input field name was added to input object type AccessInput\n⚠️ Input field descriptiveInfoLimit was removed from input object type AccessInput\n⚠️ Input field serviceAPI was removed from input object type SupplierFilter\n⚠️ Input field isActive was removed from input object type SupplierFilter\n⚠️ Field updatedAt was removed from object type Parameter\n⚠️ Field createdAt was removed from object type Parameter\n⚠️ Field error was removed from object type Parameter\n⚠️ Field parameterData was removed from object type Parameter\n⚠️ Field code was removed from object type Parameter\n⚠️ Parameter object type no longer implements Node interface\n⚠️ Field SupplierData.accesses changed type from AccessConnection! to AccessConnection\n⚠️ Field legacy was removed from object type SupplierData\n⚠️ Argument after: String was removed from field AccessData.parameters\n⚠️ Argument before: String was removed from field AccessData.parameters\n⚠️ Argument Last: Int was removed from field AccessData.parameters\n⚠️ Argument first: Int was removed from field AccessData.parameters\n⚠️ Field AccessData.parameters changed type from ParameterConnection to [Parameter]\n⚠️ Field descriptiveInfoLimit was removed from object type AccessData\n⚠️ Input field ParameterInput.key changed type from String! to ID!\n⚠️ Input field filter was removed from input object type HotelXHotelListInput\n⚠️ Field Destination.code changed type from String! to ID!\n⚠️ Field texts was removed from object type Destination\n⚠️ Field available was removed from object type Destination\n⚠️ Field Location.closestDestination changed type from Destination! to DestinationData!\n⚠️ Field HotelConnection.token changed type from String! to String\n⚠️ SupplierInput was removed\n⚠️ ProviderInput was removed\n⚠️ LegacyDataInput was removed\n⚠️ ParameterData was removed\n⚠️ ParameterEdge was removed\n⚠️ ParameterConnection was removed\n⚠️ LegacyData was removed\n✅ Destination object implements Node interface\n✅ Input field isTest was added to input object type AccessInput\n✅ Field updateClient was added to object type AdminMutation\n✅ Field createClient was added to object type AdminMutation\n✅ Description `on typeParameterhas changed toParameters for additional information for the supplier\u0026rsquo;s configuration.`\n✅ Field value was added to object type Parameter\n✅ Field key was added to object type Parameter\n✅ Description XTG Platform API implementation on type Provider has changed to Temporary type to use only during SQL server's lifetime\n✅ Field SupplierData.accesses description changed from Accesses in a Supplier to Accesses where the supplier is referenced\n✅ Field SupplierData.supplierGroup description changed from SupplierGroup to SupplierGroup Internal Supplier grouping\n✅ Field isTest was added to object type AccessData\n✅ Field name was added to object type AccessData\n✅ Field clients was added to object type AdminQuery\n✅ Description Parameters for additional information for the supplier's configuration. on type ParameterInput has changed to Parameters Input.\n✅ Input field ParameterInput.value description changed from Contains the parameter values. to `Contains the parameter values.\nThis information is mandatory.`\n✅ Input field ParameterInput.key description changed from Contains the keyword/Id to identify a parameter. to `Contains the keyword/Id to identify a parameter.\nThis information is mandatory.`\n✅ Description Url's Input on type UrlsInput has changed to Urls Input\n✅ Input field destinationCodes was added to input object type HotelXHotelListInput\n✅ Description Information about destinantion on type Destination has changed to Destination Type\n✅ Field Destination.code description changed from Destination Code to Destination ID\n✅ Field updatedAt was added to object type Destination\n✅ Field createdAt was added to object type Destination\n✅ Field error was added to object type Destination\n✅ Field boardData was added to object type Destination\n✅ Type HotelXDestinationListInput was added\n✅ Type WebSearchResult was added\n✅ Type DestinationEdge was added\n✅ Type DestinationConnection was added\n✅ Type ClientInput was added\n✅ Type ClientFilter was added\n✅ Type ClientData was added\n✅ Type Client was added\n✅ Type ClientEdge was added\n✅ Type ClientConnection was added\n✅ Type DestinationType was added\n✅ Type DestinationData was added\n2018-02-21 ⚠️ Field updateHotel was removed from object type HotelXMutation\n⚠️ Input field SupplierFilter.serviceAPI changed type from Int to [Int]\n⚠️ Field avail was removed from object type Destination\n⚠️ Field name was removed from object type Destination\n⚠️ Field Contact.web changed type from URI! to URI\n⚠️ Field Location.zipCode changed type from String! to String\n⚠️ Field Location.city changed type from String! to String\n⚠️ Field Location.address changed type from String! to String\n⚠️ Field geocode was removed from object type Location\n⚠️ Field Amenity.code changed type from ID! to String!\n⚠️ Field updatedAt was removed from object type Amenity\n⚠️ Field createdAt was removed from object type Amenity\n⚠️ Field error was removed from object type Amenity\n⚠️ Field AmenityData was removed from object type Amenity\n⚠️ Amenity object type no longer implements Node interface\n⚠️ Field Media.code changed type from ID! to String\n⚠️ Field createdAt was removed from object type Media\n⚠️ Field error was removed from object type Media\n⚠️ Field mediaData was removed from object type Media\n⚠️ Media object type no longer implements Node interface\n⚠️ Field HotelData.rank changed type from Rank! to [Int!]!\n⚠️ Field HotelData.contact changed type from Contact! to Contact\n⚠️ Argument after: String was removed from field HotelData.amenities\n⚠️ Argument before: String was removed from field HotelData.amenities\n⚠️ Argument last: Int was removed from field HotelData.amenities\n⚠️ Argument first: Int was removed from field HotelData.amenities\n⚠️ Argument language: String was removed from field HotelData.amenities\n⚠️ Field HotelData.amenities changed type from AmenityConnection to [Amenity!]\n⚠️ Argument after: String was removed from field HotelData.medias\n⚠️ Argument before: String was removed from field HotelData.medias\n⚠️ Argument last: Int was removed from field HotelData.medias\n⚠️ Argument first: Int was removed from field HotelData.medias\n⚠️ Argument type: ApplicationArea was removed from field HotelData.medias\n⚠️ Field HotelData.medias changed type from MediaConnection to [Media!]\n⚠️ Field destination was removed from object type HotelData\n⚠️ Field generalDescription was removed from object type HotelData\n⚠️ Field additionalInformation was removed from object type HotelData\n⚠️ Field name was removed from object type HotelData\n⚠️ Type for argument relay on field HotelXQuery.hotels changed from RelayInput to RelayInput!\n⚠️ Argument criteria: HotelXHotelListInput! added to field HotelXQuery.hotels\n⚠️ Argument hotels: HotelXHotelQueryInput was removed from field HotelXQuery.hotels\n⚠️ StatusResponse was removed\n⚠️ HotelStatus was removed\n⚠️ GiataID was removed\n⚠️ HotelXHotelDataInput was removed\n⚠️ HotelXHotelMutationInput was removed\n⚠️ RankInput was removed\n⚠️ HotelXHotelQueryInput was removed\n⚠️ Rank was removed\n⚠️ Geocode was removed\n⚠️ Information was removed\n⚠️ AmenityData was removed\n⚠️ AmenityEdge was removed\n⚠️ AmenityConnection was removed\n⚠️ ApplicationArea was removed\n⚠️ MediaData was removed\n⚠️ MediaEdge was removed\n⚠️ MediaConnection was removed\n✅ Field accesses was added to object type SupplierData\n✅ Description Destination type on type Destination has changed to Information about destinantion\n✅ Field Destination.code changed type from String to String!\n✅ Field Destination.code description changed from Destination code. to Destination Code\n✅ Field texts was added to object type Destination\n✅ Field available was added to object type Destination\n✅ Description Contact type on type Contact has changed to Contact Data.\n✅ Field Contact.web description changed from Web. to Web\n✅ Field Contact.fax description changed from Fax. to Fax\n✅ Field Contact.telephone description changed from Telephone. to Telephone\n✅ Field Contact.email description changed from Email. to Email\n✅ Description Location on type Location has changed to Indicates the location of the hotel.\n✅ Field Location.country description changed from Country ISO Code to Country where is the Hotel.\n✅ Field Location.zipCode description changed from Zip Code to Contains the zipCode.\n✅ Field Location.city description changed from City to Contains the city\n✅ Field Location.address description changed from Street Address to Contains Hotel Address\n✅ Field closestDestination was added to object type Location\n✅ Field coordinates was added to object type Location\n✅ Description `on typeAmenityhas changed toSomething, such as a swimming pool or shopping centre, that is intended to make life more pleasant or comfortable for the people.`\n✅ Field Amenity.code description changed from `toCode`\n✅ Field texts was added to object type Amenity\n✅ Field type was added to object type Amenity\n✅ Description `on typeMediahas changed toContains media information.`\n✅ Field Media.updatedAt description changed from Update date to Update date.\n✅ Field Media.code description changed from `toCode.`\n✅ Field texts was added to object type Media\n✅ Field url was added to object type Media\n✅ Field type was added to object type Media\n✅ Field order was added to object type Media\n✅ Field HotelData.rank description changed from `toRank indicates the supplier categorization.`\n✅ Field HotelData.contact description changed from Contact information. to Contact cotains information about hotel contact.\n✅ Field HotelData.location description changed from `toIndicates the location of the hotel.`\n✅ Field HotelData.amenities description changed from `toAmenities`\n✅ Field HotelData.medias description changed from `toMedias`\n✅ Field HotelData.hotelCode description changed from Code of the hotel in the Supplier selected. to Code to perform availability.\n✅ Field HotelData.code description changed from Internal code to perform availability to Internal code.\n✅ Field descriptions was added to object type HotelData\n✅ Field cardTypes was added to object type HotelData\n✅ Field chainCode was added to object type HotelData\n✅ Field property was added to object type HotelData\n✅ Field hotelName was added to object type HotelData\n✅ Field hotelCodeSupplier was added to object type HotelData\n✅ Description Hotel type on type Hotel has changed to Hotel Type\n✅ Field token was added to object type HotelConnection\n✅ Argument token: String added to field HotelXQuery.hotels\n✅ Field rooms was added to object type HotelXQuery\n✅ Field categories was added to object type HotelXQuery\n✅ Field boards was added to object type HotelXQuery\n✅ Type HotelXRoomQueryInput was added\n✅ Type RoomData was added\n✅ Type RoomStatic was added\n✅ Type RoomEdge was added\n✅ Type RoomConnection was added\n✅ Type HotelXHotelListInput was added\n✅ Type DescriptionType was added\n✅ Type Description was added\n✅ Type ApplicationAreaType was added\n✅ Type Coordinates was added\n✅ Type Property was added\n✅ Type HotelXCategoryQueryInput was added\n✅ Type CategoryData was added\n✅ Type Category was added\n✅ Type CategoryEdge was added\n✅ Type CategoryConnection was added\n✅ Type HotelXBoardQueryInput was added\n✅ Type Text was added\n✅ Type BoardData was added\n✅ Type Board was added\n✅ Type BoardEdge was added\n✅ Type BoardConnection was added\n2018-01-30 ⚠️ Input field hotelCode was added to input object type HotelXHotelDataInput\n⚠️ Input field supplierCode was removed from input object type HotelXHotelDataInput\n⚠️ Field rsAccess was removed from object type StatAccess\n⚠️ Field rqAccess was removed from object type StatAccess\n⚠️ Field dockerID was removed from object type StatAccess\n⚠️ Field dockerID was removed from object type StatPlugin\n⚠️ Field rsPlugin was removed from object type StatsRequest\n⚠️ Field rqPlugin was removed from object type StatsRequest\n⚠️ Field rs was removed from object type StatsRequest\n⚠️ Field rq was removed from object type StatsRequest\n⚠️ Field config was removed from object type StatsRequest\n⚠️ Field supplierCode was removed from object type HotelData\n✅ Description for enum value BookStatusType.UNKNOWN changed from The status of the booking is unknown to `The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.\nIt is the client\u0026rsquo;s responsibility to check if the booking is OK`\n✅ Description for enum value BookStatusType.ON_REQUEST changed from The status of the booking is on request to `The reservation was completed but the product is still not available, so the reservation goes into a waiting list.\nIt is the client\u0026rsquo;s responsibility to check if the booking is OK`\n✅ Description for enum value BookStatusType.OK changed from The status of the booking is available to The reservation was completed with no problems\n✅ Field StatTransaction.parseResponse description changed from `toParse response time`\n✅ Field StatTransaction.workerCommunication description changed from `toWorker connection time`\n✅ Field StatTransaction.buildRequest description changed from `toBuild request time`\n✅ Field StatTransaction.total description changed from `toTotal transaction time`\n✅ Field StatTransaction.reference description changed from `toExtra information about transaction.`\n✅ Field StatAccess.plugins description changed from `toPlugin execution time`\n✅ Field StatAccess.transactions description changed from `toDetail transaction time`\n✅ Field StatAccess.cities description changed from `toNumber of cities`\n✅ Field StatAccess.zones description changed from `toNumber of zones`\n✅ Field StatAccess.hotels description changed from `toNumber of hotels`\n✅ Field StatAccess.staticConfiguration description changed from `toStatic configuration time`\n✅ Field StatAccess.total description changed from `toTotal access time`\n✅ Field StatAccess.name description changed from `toAccess name`\n✅ Field responseAccess was added to object type StatAccess\n✅ Field requestAccess was added to object type StatAccess\n✅ Field StatPlugin.total description changed from `tototal plugin time`\n✅ Field StatPlugin.name description changed from `toPlugin name`\n✅ Field StatsRequest.Accesses description changed from `toDetail access time`\n✅ Field StatsRequest.dockerID description changed from `toDocker Id`\n✅ Field StatsRequest.cities description changed from `toNumber of cities`\n✅ Field StatsRequest.zones description changed from `toNumber of zones`\n✅ Field StatsRequest.hotels description changed from `toNumber of hotels`\n✅ Field StatsRequest.process description changed from `toProcess time. Contains communication time, parse time and plugin time.`\n✅ Field StatsRequest.validation description changed from `toRequest validation time`\n✅ Field StatsRequest.total description changed from `toTotal transaction time`\n✅ Field responsePlugin was added to object type StatsRequest\n✅ Field requestPlugin was added to object type StatsRequest\n✅ Field response was added to object type StatsRequest\n✅ Field request was added to object type StatsRequest\n✅ Field configuration was added to object type StatsRequest\n✅ Field hotelCode was added to object type HotelData\n2018-01-29 ⚠️ Field HotelCancelPayload.stats changed type from RequestStats to StatsRequest\n⚠️ Field HotelBookPayload.stats changed type from RequestStats to StatsRequest\n⚠️ Input field supplierCode was added to input object type HotelXHotelDataInput\n⚠️ Input field code was removed from input object type HotelXHotelDataInput\n⚠️ Type for argument relay on field HotelXMutation.updateHotel changed from HotelXRelayInput to RelayInput\n⚠️ Field HotelBooking.stats changed type from RequestStats to StatsRequest\n⚠️ Field HotelQuote.stats changed type from RequestStats to StatsRequest\n⚠️ Field external was removed from object type StatAccess\n⚠️ Field Response.stats changed type from RequestStats to StatsRequest\n⚠️ Field HotelSearch.stats changed type from RequestStats to StatsRequest\n⚠️ Input field codes was removed from input object type HotelXHotelQueryInput\n⚠️ Type for argument language on field HotelData.generalDescription changed from Language to String\n⚠️ Type for argument language on field HotelData.additionalInformation changed from Language to String\n⚠️ Type for argument language on field HotelData.amenities changed from Language to String\n⚠️ Type for argument relay on field HotelXQuery.hotels changed from HotelXRelayInput to RelayInput\n⚠️ RequestStats was removed\n⚠️ HotelXRelayInput was removed\n✅ Input field supplierGroup was added to input object type SupplierInput\n✅ Input field serviceAPI was added to input object type SupplierFilter\n✅ Input field isActive was added to input object type SupplierFilter\n✅ Field supplierGroup was added to object type SupplierData\n✅ Description Url's on type UrlsInput has changed to Url's Input\n✅ Field plugins was added to object type StatAccess\n✅ Field rsAccess was added to object type StatAccess\n✅ Field rqAccess was added to object type StatAccess\n✅ Field dockerID was added to object type StatAccess\n✅ Field cities was added to object type StatAccess\n✅ Field zones was added to object type StatAccess\n✅ Field hotels was added to object type StatAccess\n✅ Input field supplierCodes was added to input object type HotelXHotelQueryInput\n✅ Field HotelData.code description changed from Internal code to perform availability and/or supplier code. to Internal code to perform availability\n✅ Field supplierCode was added to object type HotelData\n✅ Type StatPlugin was added\n✅ Type StatsRequest was added\n✅ Type RelayInput was added\n2018-01-17 ⚠️ Field AccessEdge.node changed type from Supplier to Access\n⚠️ Field value was removed from object type Parameter\n⚠️ Field key was removed from object type Parameter\n⚠️ Field supplierGroups was removed from object type SupplierData\n⚠️ Field hotelCodes was removed from object type SupplierData\n⚠️ Field dll was removed from object type SupplierData\n⚠️ Field Supplier.supplierData changed type from SupplierData! to SupplierData\n⚠️ Field AccessData.parameters changed type from [Parameter!] to ParameterConnection\n⚠️ Field AccessData.urls changed type from Urls! to Urls\n⚠️ Field AccessData.supplier changed type from String! to Supplier!\n⚠️ Field AccessData.code changed type from String! to ID!\n⚠️ Field id was removed from object type AccessData\n⚠️ Field suppliers was removed from object type AccessData\n⚠️ Field Access.accessData changed type from AccessData! to AccessData\n✅ Parameter object implements Node interface\n✅ Description Parameters for additional information for the supplier's configuration. on type Parameter has changed to ``\n✅ Field updatedAt was added to object type Parameter\n✅ Field createdAt was added to object type Parameter\n✅ Field error was added to object type Parameter\n✅ Field parameterData was added to object type Parameter\n✅ Field code was added to object type Parameter\n✅ Field legacy was added to object type SupplierData\n✅ Field serviceApi was added to object type SupplierData\n✅ Field context was added to object type SupplierData\n✅ Field provider was added to object type SupplierData\n✅ Field name was added to object type SupplierData\n✅ Argument after: String added to field AccessData.parameters\n✅ Argument before: String added to field AccessData.parameters\n✅ Argument Last: Int added to field AccessData.parameters\n✅ Argument first: Int added to field AccessData.parameters\n✅ Field AccessData.code description changed from Access code. to Unique AccessConfiguration identifier\n✅ Field shared was added to object type AccessData\n✅ Field rateRules was added to object type AccessData\n✅ Field descriptiveInfoLimit was added to object type AccessData\n✅ Field deleteSupplierFromGroup was added to object type AdminMutation\n✅ Field grantSupplierToGroup was added to object type AdminMutation\n✅ Field deleteAccessFromGroup was added to object type AdminMutation\n✅ Field grantAccessToGroup was added to object type AdminMutation\n✅ Field updateAccess was added to object type AdminMutation\n✅ Field createAccess was added to object type AdminMutation\n✅ Input field RankInput.rank4 changed type from Boolean! to Boolean\n✅ Input field RankInput.rank3 changed type from Boolean! to Boolean\n✅ Input field RankInput.rank2 changed type from Boolean! to Boolean\n✅ Input field RankInput.rank1 changed type from Boolean! to Boolean\n✅ Field suppliers was added to object type AdminQuery\n✅ Field accesses was added to object type AdminQuery\n✅ Field CancelPolicy.refundable description changed from Indicates if the option is refundable or not. This information is mandatory. to Indicates if the option is refundable or not.\n✅ Input field ranks was added to input object type HotelXHotelQueryInput\n✅ Type SupplierInput was added\n✅ Type ProviderInput was added\n✅ Type LegacyDataInput was added\n✅ Type Context was added\n✅ Type GroupInput was added\n✅ Type AccessInput was added\n✅ Type SupplierFilter was added\n✅ Type SupplierEdge was added\n✅ Type SupplierConnection was added\n✅ Type AccessFilter was added\n✅ Type ParameterData was added\n✅ Type ParameterEdge was added\n✅ Type ParameterConnection was added\n✅ Type LegacyData was added\n✅ Type Provider was added\n2018-01-11 ⚠️ Field codes was removed from object type Map\n⚠️ Field supplierCode was removed from object type Map\n⚠️ Field maps was removed from object type MappingEntity\n⚠️ Argument BoardCodes: [String!] was removed from field MappingContext.boards\n⚠️ Argument roomCodes: [String!] was removed from field MappingContext.rooms\n⚠️ Argument hotelCodes: [String!] was removed from field MappingContext.hotels\n⚠️ Field rates was removed from object type MappingContext\n⚠️ Field contextCode was removed from object type MappingContext\n⚠️ Argument supplierCodes: [String!] was removed from field Mapping.contexts\n⚠️ Argument contextCodes: [String!] was removed from field Mapping.contexts\n⚠️ Field DefaultSettings.market changed type from String! to String\n⚠️ Field DefaultSettings.connectUser changed type from String! to String\n⚠️ Input field HotelSettingsInput.suppliers changed type from [SupplierInput!] to [HotelXSupplierInput!]\n⚠️ Field HotelSearch.requestCriteria changed type from CriteriaSearch! to CriteriaSearch\n⚠️ Field HotelSearch.context changed type from String! to String\n⚠️ Field Geocode.longitude changed type from String! to Float!\n⚠️ Field Geocode.latitude changed type from String! to Float!\n⚠️ Argument after: String was removed from field HotelXQuery.hotels\n⚠️ Argument before: String was removed from field HotelXQuery.hotels\n⚠️ Argument last: Int was removed from field HotelXQuery.hotels\n⚠️ Argument first: Int was removed from field HotelXQuery.hotels\n⚠️ Argument language: String was removed from field HotelXQuery.hotels\n⚠️ Argument codes: [String!] was removed from field HotelXQuery.hotels\n⚠️ HotelInput was removed\n⚠️ AccessInput was removed\n⚠️ SupplierInput was removed\n✅ Field loadFile was added to object type HotelXMutation\n✅ Field updateHotel was added to object type HotelXMutation\n✅ Field maps was added to object type Map\n✅ Field code was added to object type Map\n✅ Field contexts was added to object type MappingEntity\n✅ Argument codes: [String!] added to field MappingContext.boards\n✅ Field MappingContext.boards description changed from Mapping of boards. Filter by board code. to Mapping of boards, you can filter by board code.\n✅ Argument codes: [String!] added to field MappingContext.rooms ✅ Field MappingContext.rooms description changed from Mapping of rooms. Filter by room code. to Mapping of rooms, you can filter by room code.\n✅ Argument codes: [String!] added to field MappingContext.hotels ✅ Field MappingContext.hotels description changed from Mapping of hotels. Filter by hotel code. to Mapping of hotels, you can filter by hotel code.\n✅ Field code was added to object type MappingContext\n✅ Argument codes: [String!] added to field Mapping.contexts\n✅ Field warnings was added to object type Mapping\n✅ Field errors was added to object type Mapping\n✅ Argument type: GroupType added to field AdminQuery.groups\n✅ Argument type: MemberType added to field AdminQuery.members\n✅ Field rank was added to object type HotelData\n✅ Argument relay: HotelXRelayInput added to field HotelXQuery.hotels\n✅ Argument hotels: HotelXHotelQueryInput added to field HotelXQuery.hotels\n✅ Field mapping was added to object type HotelXQuery\n✅ Type StatusResponse was added\n✅ Type HotelStatus was added\n✅ Type RankInput was added\n✅ Type HotelXHotelDataInput was added\n✅ Type HotelXHotelMutationInput was added\n✅ Type HotelXAccessInput was added\n✅ Type HotelXSupplierInput was added\n✅ Type HotelXRelayInput was added\n✅ Type HotelXHotelQueryInput was added\n✅ Type Rank was added\n"
 },
 {
 	"uri": "/travelgatex/reference/",
@@ -1859,7 +2111,7 @@
 	"title": "Resources",
 	"tags": [],
 	"description": "New Updates &amp; Releases",
-	"content": "\rNew Realeases \u0026amp; Updates\rRelease Notes and Changelog\n\r\r\r\r"
+	"content": "\rRealeases Notes\rRelease Notes and Changelog\n\r\r\r\r"
 },
 {
 	"uri": "/learning-graphql/tutorials_resources/",
