@@ -2226,21 +2226,6 @@ GraphQL Schema definition type Warning {code: String! type: String! desc
     </item>
     
     <item>
-      <title>GraphQL Schema Changelog</title>
-      <link>/travelgatex/resources/graphql-api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/resources/graphql-api/</guid>
-      <description>2018-03-14 ✅ Deprecation reason on field AddOns.distribute has changed from `todeprecated from 2018-03-12. You can find it in distribution AddOn.`
-✅ Field distribution was added to object type AddOns
-✅ Type AddOn was added
-2018-03-08 ⚠️ Input field DestinationsCodes was removed from input object type HotelXDestinationListInput
-⚠️ Field boardData was removed from object type Destination
-⚠️ Input field ParameterInput.key changed type from ID! to String!
-⚠️ Field DestinationData.code changed type from String!</description>
-    </item>
-    
-    <item>
       <title>Mapping</title>
       <link>/hotelx/plugins/mapping/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2258,7 +2243,8 @@ File Requirements The file should be in the below format:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/resources/release-notes/</guid>
-      <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.</description>
+      <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
+2018-03-20 ✅ Input field HotelSettingsInput.connectUser description changed from This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload. to This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload.</description>
     </item>
     
     <item>
