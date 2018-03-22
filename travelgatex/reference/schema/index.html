@@ -1762,7 +1762,7 @@
     </header>
     <section class="post-excerpt">
         <p>Mutations are operations that change or update data in the server.
-GraphQL Schema definition type Mutation {hotelX: HotelXMutation admin: AdminMutation Show deprecated fieldshotelBook(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload hotelCancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload loadFile(input: String!,): String! createDefaultSettings(input: DefaultSettingsInput!,): DefaultSettings updateDefaultSettings(input: DefaultSettingsInput! <a class="read-more" href="/travelgatex/reference/schema/mutation/">&raquo;</a></p>
+GraphQL Schema definition type Mutation {hotelX: HotelXMutation admin: AdminMutation Show deprecated fieldshotelBook(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload // deprecated from 2017-11-21. You can find it in query at HotelXhotelCancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload // deprecated from 2017-11-21. You can find it in query at HotelXloadFile(input: String! <a class="read-more" href="/travelgatex/reference/schema/mutation/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -1779,7 +1779,7 @@ GraphQL Schema definition type Mutation {hotelX: HotelXMutation admin: Admi
         <h2 class="post-title"><a href="/travelgatex/reference/schema/query/">Query</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>GraphQL Schema definition type Query {hotelX: HotelXQuery admin: AdminQuery Show deprecated fieldsdefaultSettings(groupCode: String!,): DefaultSettings mapping(groupCode: String!,): Mapping! }Fields hotelX(HotelXQuery):admin(AdminQuery): <a class="read-more" href="/travelgatex/reference/schema/query/">&raquo;</a></p>
+        <p>GraphQL Schema definition type Query {hotelX: HotelXQuery admin: AdminQuery Show deprecated fieldssearch: : Search! // quote: : Quote! // booking: : Booking // defaultSettings(groupCode: String!,): DefaultSettings // deprecated from 2017-11-21. You can find it in query at Adminmapping(groupCode: String!,): Mapping! <a class="read-more" href="/travelgatex/reference/schema/query/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

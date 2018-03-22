@@ -188,7 +188,7 @@ GraphQL Schema definition type AddOn {key: String! value: JSON! }Field
       
       <guid>/travelgatex/reference/objects/addons/</guid>
       <description>Extra information about the option.
-GraphQL Schema definition type AddOns {distribution: [AddOn!] Show deprecated fields}Fields distribution([AddOn!]):Extra information from the distribution layer
+GraphQL Schema definition type AddOns {distribution: [AddOn!] Show deprecated fieldsdistribute: : JSON // }Fields distribution([AddOn!]):Extra information from the distribution layer
 Require by HotelOptionSearch: An option includes hotel information, meal plan, total price, conditions and room description.HotelOptionQuote: Contains information about quote.HotelBookingDetail: Contains information about booking.</description>
     </item>
     
@@ -370,7 +370,7 @@ GraphQL Schema definition enumBookStatusType{OK,KO,ON_REQUEST,C
       
       <guid>/travelgatex/reference/objects/booking/</guid>
       <description>Returns detailed information about books.
-GraphQL Schema definition type Booking {Show deprecated fieldshotel(criteria: HotelCriteriaBookingInput!,settings: HotelSettingsInput,): HotelBooking }Require by Query:</description>
+GraphQL Schema definition type Booking {Show deprecated fieldshotel(criteria: HotelCriteriaBookingInput!,settings: HotelSettingsInput,): HotelBooking // deprecated from 2017-11-21. You can find it in query at HotelX}Require by Query:</description>
     </item>
     
     <item>
@@ -1261,7 +1261,7 @@ GraphQL Schema definition type HotelSearch {context: String stats(token: S
       
       <guid>/travelgatex/reference/inputobjects/hotelsettingsinput/</guid>
       <description>Settings that you can edit for this avail. Values are loaded by default in our Back Office.
-GraphQL Schema definition type HotelSettingsInput {context: String useContext: Boolean connectUser: String client: String timeout: Int auditTransactions: Boolean businessRules: BusinessRulesInput suppliers: [HotelXSupplierInput!] plugins: [PluginStepInput!] }Fields context(String):Indicates the context of the I/O codes (hotel, board, room and rates)useContext(Boolean):Indicates if you want use context, or not, by default is true.</description>
+GraphQL Schema definition type HotelSettingsInput {context: String Show deprecated fieldsuseContext: : Boolean // Indicates if you want use context, or not, by default is true. @deprecated(reason: &amp;#34;deprecated from2017-12-12Redundant.&amp;#34;)connectUser: : String // This field is got only if the authorization header is of the type JWT.</description>
     </item>
     
     <item>
@@ -1566,7 +1566,7 @@ Require by MemberConnection:</description>
       
       <guid>/travelgatex/reference/schema/mutation/</guid>
       <description>Mutations are operations that change or update data in the server.
-GraphQL Schema definition type Mutation {hotelX: HotelXMutation admin: AdminMutation Show deprecated fieldshotelBook(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload hotelCancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload loadFile(input: String!,): String! createDefaultSettings(input: DefaultSettingsInput!,): DefaultSettings updateDefaultSettings(input: DefaultSettingsInput!</description>
+GraphQL Schema definition type Mutation {hotelX: HotelXMutation admin: AdminMutation Show deprecated fieldshotelBook(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload // deprecated from 2017-11-21. You can find it in query at HotelXhotelCancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload // deprecated from 2017-11-21. You can find it in query at HotelXloadFile(input: String!</description>
     </item>
     
     <item>
@@ -1943,7 +1943,7 @@ Require by SupplierData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/schema/query/</guid>
-      <description>GraphQL Schema definition type Query {hotelX: HotelXQuery admin: AdminQuery Show deprecated fieldsdefaultSettings(groupCode: String!,): DefaultSettings mapping(groupCode: String!,): Mapping! }Fields hotelX(HotelXQuery):admin(AdminQuery):</description>
+      <description>GraphQL Schema definition type Query {hotelX: HotelXQuery admin: AdminQuery Show deprecated fieldssearch: : Search! // quote: : Quote! // booking: : Booking // defaultSettings(groupCode: String!,): DefaultSettings // deprecated from 2017-11-21. You can find it in query at Adminmapping(groupCode: String!,): Mapping!</description>
     </item>
     
     <item>
@@ -1972,7 +1972,7 @@ Join the TravelgateX partner program In order to start building your own API, yo
       
       <guid>/travelgatex/reference/objects/quote/</guid>
       <description>Returns the total price and cancellation policies of the Option selected in the previous step (Search).
-GraphQL Schema definition type Quote {Show deprecated fieldshotel(criteria: HotelCriteriaQuoteInput!,settings: HotelSettingsInput,): HotelQuote }Require by Query:</description>
+GraphQL Schema definition type Quote {Show deprecated fieldshotel(criteria: HotelCriteriaQuoteInput!,settings: HotelSettingsInput,): HotelQuote // deprecated from 2017-11-21. You can find it in query at HotelX}Require by Query:</description>
     </item>
     
     <item>
@@ -2224,7 +2224,7 @@ Require by RoomEdge: RoomList Edge definition</description>
       
       <guid>/travelgatex/reference/objects/search/</guid>
       <description>Available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.
-GraphQL Schema definition type Search {Show deprecated fieldshotel(token: String,criteria: HotelCriteriaSearchInput,settings: HotelSettingsInput,filter: FilterInput,): HotelSearch }Require by Query:</description>
+GraphQL Schema definition type Search {Show deprecated fieldshotel(token: String,criteria: HotelCriteriaSearchInput,settings: HotelSettingsInput,filter: FilterInput,): HotelSearch // deprecated from 2017-11-21.</description>
     </item>
     
     <item>

@@ -123,7 +123,7 @@
 	"title": "AddOns",
 	"tags": [],
 	"description": "",
-	"content": " Extra information about the option.\nGraphQL Schema definition type AddOns {\r\rdistribution: [AddOn!] \r\rShow deprecated fields\r\r\r}\r\r\rFields distribution([AddOn!]):\rExtra information from the distribution layer\r\r\nRequire by HotelOptionSearch: \rAn option includes hotel information, meal plan, total price, conditions and room description.\r\rHotelOptionQuote: \rContains information about quote.\r\rHotelBookingDetail: \rContains information about booking.\r\r\n"
+	"content": " Extra information about the option.\nGraphQL Schema definition type AddOns {\r\rdistribution: [AddOn!] \r\rShow deprecated fields\r\r\rdistribute: : JSON // \r\r\r\r}\r\r\rFields distribution([AddOn!]):\rExtra information from the distribution layer\r\r\nRequire by HotelOptionSearch: \rAn option includes hotel information, meal plan, total price, conditions and room description.\r\rHotelOptionQuote: \rContains information about quote.\r\rHotelBookingDetail: \rContains information about booking.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/adminmutation/",
@@ -249,7 +249,7 @@
 	"title": "Booking",
 	"tags": [],
 	"description": "",
-	"content": " Returns detailed information about books.\nGraphQL Schema definition type Booking {\rShow deprecated fields\r\r\rhotel(\rcriteria: HotelCriteriaBookingInput!,\rsettings: HotelSettingsInput,\r): HotelBooking \r\r\r}\r\r\rRequire by Query: \r\r\r\n"
+	"content": " Returns detailed information about books.\nGraphQL Schema definition type Booking {\rShow deprecated fields\r\r\rhotel(\rcriteria: HotelCriteriaBookingInput!,\rsettings: HotelSettingsInput,\r): HotelBooking \r// deprecated from 2017-11-21. You can find it in query at HotelX\r\r\r}\r\r\rRequire by Query: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/enums/bookingcriteriatype/",
@@ -879,7 +879,7 @@
 	"title": "HotelSettingsInput",
 	"tags": [],
 	"description": "",
-	"content": " Settings that you can edit for this avail. Values are loaded by default in our Back Office.\nGraphQL Schema definition type HotelSettingsInput {\r\rcontext: String \r\r\ruseContext: Boolean \r\r\rconnectUser: String \r\r\rclient: String \r\r\rtimeout: Int \r\r\rauditTransactions: Boolean \r\r\rbusinessRules: BusinessRulesInput \r\r\rsuppliers: [HotelXSupplierInput!] \r\r\rplugins: [PluginStepInput!] \r\r}\r\r\rFields context(String):\rIndicates the context of the I/O codes (hotel, board, room and rates)\r\ruseContext(Boolean):\rIndicates if you want use context, or not, by default is true. @deprecated(reason: \u0026#34;deprecated from 2017-12-12. Redundant.\u0026#34;)\r\rconnectUser(String):\rThis field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload. @deprecated(reason: \u0026#34;deprecated from 2018-03-19. Redundant.\u0026#34;)\r\rclient(String):\rThis field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload.\r\rtimeout(Int):\rMilliseconds before the connection is closed.\r\rauditTransactions(Boolean):\rReturns all the transactions exchanged with the supplier.\r\rbusinessRules(BusinessRulesInput):\rBusiness rules.\r\rsuppliers([HotelXSupplierInput!]):\rArray of suppliers. Each one contains its own code, settings and accesses.\r\rplugins([PluginStepInput!]):\rArray of plugins to execute.\r\r\n"
+	"content": " Settings that you can edit for this avail. Values are loaded by default in our Back Office.\nGraphQL Schema definition type HotelSettingsInput {\r\rcontext: String \r\rShow deprecated fields\r\r\ruseContext: : Boolean // Indicates if you want use context, or not, by default is true. @deprecated(reason: \u0026#34;deprecated from\r2017-12-12\rRedundant.\u0026#34;)\r\r\r\r\rconnectUser: : String // This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload. @deprecated(reason: \u0026#34;deprecated from\r2018-03-19\rRedundant.\u0026#34;)\r\r\r\r\r}\r\r\rFields context(String):\rIndicates the context of the I/O codes (hotel, board, room and rates)\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/hotelxaccessinput/",
@@ -1103,7 +1103,7 @@
 	"title": "Mutation",
 	"tags": [],
 	"description": "",
-	"content": " Mutations are operations that change or update data in the server.\nGraphQL Schema definition type Mutation {\r\rhotelX: HotelXMutation \r\r\radmin: AdminMutation \r\rShow deprecated fields\r\r\rhotelBook(\rinput: HotelBookInput!,\rsettings: HotelSettingsInput,\r): HotelBookPayload \r\r\rhotelCancel(\rinput: HotelCancelInput!,\rsettings: HotelSettingsInput,\r): HotelCancelPayload \r\r\rloadFile(\rinput: String!,\r): String! \r\r\rcreateDefaultSettings(\rinput: DefaultSettingsInput!,\r): DefaultSettings \r\r\rupdateDefaultSettings(\rinput: DefaultSettingsInput!,\r): DefaultSettings \r\r\rdeleteDefaultSettings(\rinput: String!,\r): Boolean! \r\r\r}\r\r\rFields hotelX(HotelXMutation):\r\r\radmin(AdminMutation):\r\r\r\n"
+	"content": " Mutations are operations that change or update data in the server.\nGraphQL Schema definition type Mutation {\r\rhotelX: HotelXMutation \r\r\radmin: AdminMutation \r\rShow deprecated fields\r\r\rhotelBook(\rinput: HotelBookInput!,\rsettings: HotelSettingsInput,\r): HotelBookPayload \r// deprecated from 2017-11-21. You can find it in query at HotelX\r\r\rhotelCancel(\rinput: HotelCancelInput!,\rsettings: HotelSettingsInput,\r): HotelCancelPayload \r// deprecated from 2017-11-21. You can find it in query at HotelX\r\r\rloadFile(\rinput: String!,\r): String! \r// deprecated from 2017-11-21. You can find it in query at Admin\r\r\rcreateDefaultSettings(\rinput: DefaultSettingsInput!,\r): DefaultSettings \r// deprecated from 2017-11-21. You can find it in query at Admin\r\r\rupdateDefaultSettings(\rinput: DefaultSettingsInput!,\r): DefaultSettings \r// deprecated from 2017-11-21. You can find it in query at Admin\r\r\rdeleteDefaultSettings(\rinput: String!,\r): Boolean! \r// deprecated from 2017-11-21. You can find it in query at Admin\r\r\r}\r\r\rFields hotelX(HotelXMutation):\r\r\radmin(AdminMutation):\r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/interfaces/node/",
@@ -1369,7 +1369,7 @@
 	"title": "Query",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type Query {\r\rhotelX: HotelXQuery \r\r\radmin: AdminQuery \r\rShow deprecated fields\r\r\rdefaultSettings(\rgroupCode: String!,\r): DefaultSettings \r\r\rmapping(\rgroupCode: String!,\r): Mapping! \r\r\r}\r\r\rFields hotelX(HotelXQuery):\r\r\radmin(AdminQuery):\r\r\r\n"
+	"content": " GraphQL Schema definition type Query {\r\rhotelX: HotelXQuery \r\r\radmin: AdminQuery \r\rShow deprecated fields\r\r\rsearch: : Search! // \r\r\r\rquote: : Quote! // \r\r\r\rbooking: : Booking // \r\r\r\rdefaultSettings(\rgroupCode: String!,\r): DefaultSettings \r// deprecated from 2017-11-21. You can find it in query at Admin\r\r\rmapping(\rgroupCode: String!,\r): Mapping! \r// deprecated from 2017-11-21. You can find it in query at Admin\r\r\r}\r\r\rFields hotelX(HotelXQuery):\r\r\radmin(AdminQuery):\r\r\r\n"
 },
 {
 	"uri": "/getting-started/quickstart/",
@@ -1390,7 +1390,7 @@
 	"title": "Quote",
 	"tags": [],
 	"description": "",
-	"content": " Returns the total price and cancellation policies of the Option selected in the previous step (Search).\nGraphQL Schema definition type Quote {\rShow deprecated fields\r\r\rhotel(\rcriteria: HotelCriteriaQuoteInput!,\rsettings: HotelSettingsInput,\r): HotelQuote \r\r\r}\r\r\rRequire by Query: \r\r\r\n"
+	"content": " Returns the total price and cancellation policies of the Option selected in the previous step (Search).\nGraphQL Schema definition type Quote {\rShow deprecated fields\r\r\rhotel(\rcriteria: HotelCriteriaQuoteInput!,\rsettings: HotelSettingsInput,\r): HotelQuote \r// deprecated from 2017-11-21. You can find it in query at HotelX\r\r\r}\r\r\rRequire by Query: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/rateplan/",
@@ -1572,7 +1572,7 @@
 	"title": "Search",
 	"tags": [],
 	"description": "",
-	"content": " Available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.\nGraphQL Schema definition type Search {\rShow deprecated fields\r\r\rhotel(\r\r\r\rtoken: String,\r\r\r\r\rcriteria: HotelCriteriaSearchInput,\r\r\r\r\rsettings: HotelSettingsInput,\r\r\r\r\rfilter: FilterInput,\r\r\r\r\r): HotelSearch \r\r\r}\r\r\rRequire by Query: \r\r\r\n"
+	"content": " Available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.\nGraphQL Schema definition type Search {\rShow deprecated fields\r\r\rhotel(\r\r\r\rtoken: String,\r\r\r\r\rcriteria: HotelCriteriaSearchInput,\r\r\r\r\rsettings: HotelSettingsInput,\r\r\r\r\rfilter: FilterInput,\r\r\r\r\r): HotelSearch \r// deprecated from 2017-11-21. You can find it in query at HotelX\r\r\r}\r\r\rRequire by Query: \r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/servicestatus/",
