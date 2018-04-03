@@ -1545,7 +1545,12 @@
         </li>
           <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
             <a href="/hotelx/plugins/converter/">
-              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
+            <a href="/hotelx/plugins/net-price/">
+              <span style="padding-left: 8px;">Ne Price</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
@@ -1601,38 +1606,6 @@
             <a href="/admin/overview/">
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
-        </li>
-        <li data-nav-id="/admin/account/" class="dd-item">
-
-            <a href="/admin/account/" class="directory">
-       
-            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
-                Account
-            </span><i class="fa fa-circle-thin read-icon"></i>
-          </a>
-            <ul>
-          <li data-nav-id="/admin/account/iam/" class="dd-item">
-            <a href="/admin/account/iam/">
-              <span style="padding-left: 8px;">IAM</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-        <li data-nav-id="/admin/connect/" class="dd-item">
-
-            <a href="/admin/connect/" class="directory">
-       
-            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
-                Connect
-            </span><i class="fa fa-circle-thin read-icon"></i>
-          </a>
-            <ul>
-          <li data-nav-id="/admin/connect/entities/" class="dd-item">
-            <a href="/admin/connect/entities/">
-              <span style="padding-left: 8px;">Entities</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
         </li>
             </ul>
         </li>
@@ -1889,26 +1862,31 @@
 
 <h2 id="search">Search</h2>
 
-<p>Performs an hotel availability search over 1 or more <a href="/admin/resources/common-resources/#accesses">Seller accesses</a></p>
-
-<p>Depending Seller, search operations implitiy use supplier&rsquo;s cache.</p>
+<p>Performs a hotel availability search over 1 or more <a href="http://docs.travelgatex.com/admin/resources/common-resources/#accesses">Seller accesses</a>. Depending Seller, search operations implicit use supplier’s cache.</p>
 
 <h3 id="operation">Operation</h3>
 
-<pre><code class="language-json">{
-  &quot;query&quot;: {
-    &quot;search&quot;: {
-      &quot;hotel&quot;: {
-      }
-    }
-  }
+<pre><code>{
+
+  &quot;query&quot;: {
+
+    &quot;hotelX&quot;: {
+
+      &quot;search&quot;: {
+
+      }
+
+    }
+
+  }
+
 }
 </code></pre>
 
 <h3 id="playground-samples">PlayGround Samples</h3>
 
 <ul>
-<li><a href="https://graphqlbin.com/JYRtB">search</a></li>
+<li><a href="https://www.graphqlbin.com/2kzRfE">search</a> </li>
 </ul>
 
 <h2 id="quote">Quote</h2>
@@ -1917,40 +1895,56 @@
 
 <h3 id="operation-1">Operation</h3>
 
-<pre><code class="language-json">{
-  &quot;query&quot;: {
-    &quot;quote&quot;: {
-      &quot;hotel&quot;: {
-      }
-    }
-  }
+<pre><code>{
+
+  &quot;query&quot;: {
+
+    &quot;hotelX&quot;: {
+
+      &quot;quote&quot;: {
+
+      }
+
+    }
+
+  }
+
 }
 </code></pre>
 
 <h3 id="playground-samples-1">PlayGround Samples</h3>
 
 <ul>
-<li><a href="https://graphqlbin.com/JYRtB">quote</a></li>
+<li><a href="https://graphqlbin.com/31B2HR">quote</a> </li>
 </ul>
 
 <h2 id="book">Book</h2>
 
-<p>Performs a book or reservation over an option returned in Quote Response</p>
+<p>Performs a book or reservation over an option returned in Quote Response.</p>
 
 <h3 id="operation-2">Operation</h3>
 
-<pre><code class="language-json">{
-  &quot;mutation&quot;: {
-    &quot;hotelBook&quot;: {
-    }
-  }
+<pre><code>{
+
+  &quot;mutation&quot;: {
+
+    &quot;hotelX&quot;: {
+
+      &quot;book&quot;: {
+
+      }
+
+    }
+
+  }
+
 }
 </code></pre>
 
 <h3 id="playground-samples-2">PlayGround Samples</h3>
 
 <ul>
-<li><a href="https://graphqlbin.com/JYRtB">hotelBook</a></li>
+<li><a href="https://graphqlbin.com/1wxWIp">book</a> </li>
 </ul>
 
 

@@ -1544,7 +1544,12 @@
         </li>
           <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
             <a href="/hotelx/plugins/converter/">
-              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
+            <a href="/hotelx/plugins/net-price/">
+              <span style="padding-left: 8px;">Ne Price</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
@@ -1739,13 +1744,145 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">HotelX Markup</h1>
+              <h1 class="pageTitle">Markup</h1>
               
 
 
     
 
-<h1 id="overview">Overview</h1>
+<p>Markups type plugins permits to apply markup percentages over a price, markup is a field in price composed of a set of rules and a new price with an added percentage, the percentage is the sum of every rule applied.</p>
+
+<p>Although this plugin can be customized, we already offer an implementation.</p>
+
+<h2 id="markupx">MarkupX</h2>
+
+<p>This markup implementation is supported by our <a href="https://travelb2b.xmltravelgate.com/">web application</a> which permits the management of an organization&rsquo;s rules, the modification of these rules are applied in your product at real time.</p>
+
+<p>In this plugin, a rule is a set of criteria with an associated percentage, an option will apply a rule when it matches every rule’s criteria.</p>
+
+<p>The available criteria of a rule are:</p>
+
+<ul>
+<li>supplier </li>
+<li>hotel, city or zone </li>
+<li>board </li>
+<li>market </li>
+<li>price range </li>
+<li>cancellation Policies (refundable or not refundable) </li>
+<li>rate (b2b or b2c) </li>
+<li>check in date </li>
+<li>booking date </li>
+<li>channel </li>
+</ul>
+
+<p>Additionally, a rule has an ‘override’ flag that permits it to be the only rule applied (ignoring the rest)  when set to true. We only let a rule to be overriding when it contains at least the criterion: hotel, city or zone. If multiple override rules are valid for an option, the rule with the heavier weight is applied. The hotel criterion is heavier than city, and city is heavier than zone.</p>
+
+<h3 id="parameters">Parameters</h3>
+
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>value type</th>
+<th>condition</th>
+<th>description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>channel</td>
+<td>string</td>
+<td>optional</td>
+<td>channel is a rule criterion</td>
+</tr>
+
+<tr>
+<td>applyNegativeCom</td>
+<td>bool</td>
+<td>optional</td>
+<td>if not set or set to false, if the sum of rules percentages is negative the percentage won’t apply</td>
+</tr>
+
+<tr>
+<td>rules</td>
+<td>json</td>
+<td>optional</td>
+<td>an array of rules in json is expected, if found, those rules will apply to each option, doesn’t matter if an option matches the criteria, it will have the rules applied</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="files-format">Files Format</h3>
+
+<p>In order to manage city and zone criteria, a previous batch load must be done to make a relation with hotel codes.</p>
+
+<p>Two file are needed:</p>
+
+<h4 id="from-hotel-code-to-his-minimum-city-code">From hotel code to his minimum city code:</h4>
+
+<ul>
+<li><strong>Encoding</strong>: UTF-8 </li>
+<li><strong>File Name</strong>: [Context Source]_Porfolio.csv </li>
+<li><strong>Header Row</strong>: HotelCode, CityCode</li>
+<li><strong>Delimiter</strong>:  Comma (“,”) </li>
+<li><strong>Directory</strong>: <a href="ftp://ftp.xmltravelgate.com/Purchasing/Markup ">ftp://ftp.xmltravelgate.com/Purchasing/Markup </a></li>
+</ul>
+
+<h4 id="destination-trees">Destination trees:</h4>
+
+<ul>
+<li><strong>Encoding</strong>: UTF-8 </li>
+<li><strong>File Name</strong>: [Context Source]_DestinationsTree.csv </li>
+<li><strong>Header Row</strong>: DestinationCode, ParentCode, ISOCountryCode </li>
+<li><strong>Delimiter</strong>:  Comma (“,”) </li>
+<li><strong>Directory</strong>: <a href="ftp://ftp.xmltravelgate.com/Purchasing/Markup ">ftp://ftp.xmltravelgate.com/Purchasing/Markup </a></li>
+</ul>
+
+<h3 id="execution-example">Execution example</h3>
+
+<pre><code>{
+
+    &quot;plugins&quot;: {
+
+        &quot;step&quot;: &quot;RESPONSE\_OPTION&quot;,
+
+        &quot;pluginsType&quot;: [
+
+            {
+
+                &quot;type&quot;: &quot;MARKUP&quot;
+
+                &quot;name&quot;: &quot;markupX&quot;,
+
+                &quot;parameters&quot;: [
+
+                    {
+
+                        &quot;key&quot;: &quot;channel&quot;,
+
+                        &quot;value&quot;: &quot;1000&quot;
+
+                    },
+
+                    {
+
+                        &quot;key&quot;: &quot;applyNegativeCom&quot;,
+
+                        &quot;value&quot;: &quot;true&quot;
+
+                    }
+
+                ]
+
+            }
+
+        ]
+
+    }
+
+}
+</code></pre>
 
 
 <hr/>
@@ -1776,7 +1913,19 @@
             <div>
               <nav id="TableOfContents">
 <ul>
-<li><a href="#overview">Overview</a></li>
+<li>
+<ul>
+<li><a href="#markupx">MarkupX</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+<li><a href="#files-format">Files Format</a>
+<ul>
+<li><a href="#from-hotel-code-to-his-minimum-city-code">From hotel code to his minimum city code:</a></li>
+<li><a href="#destination-trees">Destination trees:</a></li>
+</ul></li>
+<li><a href="#execution-example">Execution example</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
             </div>

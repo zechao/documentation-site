@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HotelCancelInput | TravelgateX Documentation</title>
+    <title>Ne Price | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.37.1" />
-<title>HotelCancelInput :: TravelgateX Documentation</title>
+<title>Ne Price :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
-  <body data-url="/travelgatex/reference/inputobjects/hotelcancelinput/">
+  <body data-url="/hotelx/plugins/net-price/">
     <div class="mo-header fixed-top">
     <div class="top-header">
         <nav class="navbar navbar-toggleable-sm navbar-light flex-row align-items-center">
@@ -76,12 +76,11 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/travelgatex/" class="dd-item parent">
+        <li data-nav-id="/travelgatex/" class="dd-item">
 
             <a href="/travelgatex/" class="">
        
-            <span>
-                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
                 TravelgateX
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -91,12 +90,11 @@
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-        <li data-nav-id="/travelgatex/reference/" class="dd-item parent">
+        <li data-nav-id="/travelgatex/reference/" class="dd-item">
 
             <a href="/travelgatex/reference/" class="directory">
        
-            <span>
-                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
                 Reference
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -920,12 +918,11 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/travelgatex/reference/inputobjects/" class="dd-item parent">
+        <li data-nav-id="/travelgatex/reference/inputobjects/" class="dd-item">
 
             <a href="/travelgatex/reference/inputobjects/" class="directory">
        
-            <span>
-                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
                 Input objects
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -1075,7 +1072,7 @@
               <span style="padding-left: 8px;">HotelBookInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/reference/inputobjects/hotelcancelinput/" class="dd-item active">
+          <li data-nav-id="/travelgatex/reference/inputobjects/hotelcancelinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/hotelcancelinput/">
               <span style="padding-left: 8px;">HotelCancelInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
@@ -1432,11 +1429,12 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/hotelx/" class="dd-item">
+        <li data-nav-id="/hotelx/" class="dd-item parent">
 
             <a href="/hotelx/" class="">
        
-            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+            <span>
+                    <i class="fa fa-angle-down fa-lg category-icon"></i>
                 HotelX
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -1514,11 +1512,12 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/hotelx/plugins/" class="dd-item">
+        <li data-nav-id="/hotelx/plugins/" class="dd-item parent">
 
             <a href="/hotelx/plugins/" class="">
        
-            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+            <span>
+                    <i class="fa fa-angle-down fa-lg category-icon"></i>
                 Plugins
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -1548,7 +1547,7 @@
               <span style="padding-left: 8px;">Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
+          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item active">
             <a href="/hotelx/plugins/net-price/">
               <span style="padding-left: 8px;">Ne Price</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
@@ -1745,91 +1744,103 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">HotelCancelInput</h1>
+              <h1 class="pageTitle">Net Price</h1>
               
 
 
     
 
-<p>Cancellation Criteria.</p>
+<p>Net Price is an optional plugin and allows to net all the prices in an option.</p>
 
-<h2 id="graphql-schema-definition">GraphQL Schema definition</h2>
+<h2 id="netpricex">NetPriceX</h2>
 
-<div class="highlight">
-    <ul class="code">
-        <li><span class="keyword operator ts">type</span> <span class="identifier">HotelCancelInput</span> {</li>
-        
-            
-                <li>
-                    <span class="tab">
-                        
-<span class="meta">accessCode</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String!</a> 
-                    </span>
-                </li>
-            
-        
-            
-                <li>
-                    <span class="tab">
-                        
-<span class="meta">language</span>: <a class="support type" href="/travelgatex/reference/scalars/language">Language</a> 
-                    </span>
-                </li>
-            
-        
-            
-                <li>
-                    <span class="tab">
-                        
-<span class="meta">hotelCode</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String!</a> 
-                    </span>
-                </li>
-            
-        
-            
-                <li>
-                    <span class="tab">
-                        
-<span class="meta">reference</span>: <a class="support type" href="/travelgatex/reference/inputobjects/bookreferenceinput">BookReferenceInput!</a> 
-                    </span>
-                </li>
-            
-        
+<p>This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices. Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to concrete hotel’s price. In one hand, if no hotels commission file is loaded in ftp, is applied net with the commission specified in commissions suppliers file. In other hand, if hotels commission file is loaded, this have preference over suppliers file. These files have to accomplish requirements below. In other cases, an error will be returned.</p>
 
-        
-        <li>}</li>
-    </ul>
-</div>
+<h3 id="file-format">File Format</h3>
 
+<p>The file should be in the below format:</p>
 
+<ul>
+<li><strong>Encoding</strong>: UTF-8 </li>
+<li><strong>File Name</strong>: commission_supplier.csv </li>
+<li><strong>Header Row</strong>: Supplier, Commission </li>
+<li><strong>Delimiter</strong>:  Comma (“,”) </li>
+<li><strong>Directory</strong>: <a href="ftp://ftp.xmltravelgate.com/Purchasing/ ">ftp://ftp.xmltravelgate.com/Purchasing/ </a></li>
+</ul>
 
+<p><em>Headers</em>:</p>
 
+<ul>
+<li><em>Supplier</em> → supplier code </li>
+<li><em>Commission</em> → commission value </li>
+</ul>
 
-<h2 id="fields">Fields</h2>
+<h4 id="sample-file">Sample File</h4>
 
-<p><ul class="field">
-    <li class="lifields">
-        <a href="/travelgatex/reference/scalars/string">accessCode(String!):</a>
-        <span class="description">The name of the access to use in the request.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/scalars/language">language(Language):</a>
-        <span class="description">The language code.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/scalars/string">hotelCode(String!):</a>
-        <span class="description">The hotel code.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/inputobjects/bookreferenceinput">reference(BookReferenceInput!):</a>
-        <span class="description">Contains the client reference and/or supplier reference.
-One of them is mandatory.</span>
-    </li>
-    
-</ul></p>
+<p><strong>Name</strong>: commission_supplier.csv</p>
+
+<p><strong>Data</strong>:</p>
+
+<pre><code class="language-csv">Supplier,Commission
+AXI,0
+AXI2,0
+</code></pre>
+
+<h3 id="hotel-commission-file-format">Hotel Commission File Format</h3>
+
+<p>The hotel commission file should be in the below format:</p>
+
+<ul>
+<li><strong>Encoding</strong>: UTF-8 </li>
+<li><strong>File Name</strong>: commission_hotel.csv </li>
+<li><strong>Header Row</strong>: Supplier, Hotel, Commission</li>
+<li><strong>Delimiter</strong>:  Comma (“,”) </li>
+<li><strong>Directory</strong>: <a href="ftp://ftp.xmltravelgate.com/Purchasing/ ">ftp://ftp.xmltravelgate.com/Purchasing/ </a></li>
+</ul>
+
+<p><em>Headers</em>:</p>
+
+<ul>
+<li><em>Supplier</em> → supplier code </li>
+<li><em>Hotel</em> → hotel code </li>
+<li><em>Commission</em> → commission value </li>
+</ul>
+
+<h4 id="sample-file-1">Sample File</h4>
+
+<p><strong>Name</strong>: commission_supplier.csv</p>
+
+<p><strong>Data</strong>:</p>
+
+<pre><code class="language-csv">Supplier,Hotel,Commission
+HOTELTEST,1,19
+TTHOTTEST,1,11
+</code></pre>
+
+<h3 id="execution-example">Execution example</h3>
+
+<pre><code>{
+
+    &quot;plugins&quot;: {
+
+        &quot;step&quot;: &quot;RESPONSE\_OPTION&quot;,
+
+        &quot;pluginsType&quot;: [
+
+            {
+
+                &quot;type&quot;: &quot;CURRENCY\_CONVERSION&quot;
+
+                &quot;name&quot;: &quot;net\_priceX&quot;
+
+            }
+
+        ]
+
+    }
+
+}
+</code></pre>
 
 
 <hr/>
@@ -1862,8 +1873,18 @@ One of them is mandatory.</span>
 <ul>
 <li>
 <ul>
-<li><a href="#graphql-schema-definition">GraphQL Schema definition</a></li>
-<li><a href="#fields">Fields</a></li>
+<li><a href="#netpricex">NetPriceX</a>
+<ul>
+<li><a href="#file-format">File Format</a>
+<ul>
+<li><a href="#sample-file">Sample File</a></li>
+</ul></li>
+<li><a href="#hotel-commission-file-format">Hotel Commission File Format</a>
+<ul>
+<li><a href="#sample-file-1">Sample File</a></li>
+</ul></li>
+<li><a href="#execution-example">Execution example</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>

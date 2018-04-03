@@ -1545,7 +1545,12 @@
         </li>
           <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
             <a href="/hotelx/plugins/converter/">
-              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
+            <a href="/hotelx/plugins/net-price/">
+              <span style="padding-left: 8px;">Ne Price</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
@@ -1750,7 +1755,22 @@
 
 <h2 id="search-single-mode">Search Single Mode</h2>
 
-<p><a href="#search">Search</a>, <a href="#quote">Quote</a> and <a href="#book">Book</a> transactions must be executed sequentally in order to book hotel rooms in a Seller. Performs an hotel availability search over 1 or more <a href="/admin/resources/common-resources/#accesses">Seller accesses</a></p>
+<p>This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that them want to use. In the request have to use the access filter, you can find a sample <a href="https://graphqlbin.com/n5nXhX">here</a>:</p>
+
+<pre><code>{
+
+  &quot;filter&quot;: {
+
+    &quot;access&quot;: {
+
+      &quot;includes&quot;: [&quot;yourAccess&quot;]
+
+    }
+
+  }
+
+}
+</code></pre>
 
 <p><svg class="search_single_mode" width="504px" height="269px" viewBox="59 83 504 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
@@ -1840,6 +1860,8 @@
 </svg></p>
 
 <h2 id="search-multi-mode">Search Multi Mode</h2>
+
+<p>If you don’t have any filter in the request and you have permissions for multimode, the search is multimode. By default, the request is for all the accesses that you have configured in the product, if you want to apply some filter, you have to use the filter and to indicate the rules that you want. Is important to know that you only can use includes or excludes in the same request, but never both in the same request.</p>
 
 <p><svg class="search_multi_mode" width="617px" height="486px" viewBox="75 50 617 486" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
@@ -1935,6 +1957,40 @@
   </g>
 </svg></p>
 
+<h3 id="includes-sample">Includes Sample</h3>
+
+<pre><code>{
+
+  &quot;filter&quot;: {
+
+    &quot;access&quot;: {
+
+      &quot;includes&quot;: [&quot;yourAccess&quot;,&quot;yourAccess2&quot;]
+
+    }
+
+  }
+
+}
+</code></pre>
+
+<h3 id="excludes-sample">Excludes Sample</h3>
+
+<pre><code>{
+
+  &quot;filter&quot;: {
+
+    &quot;access&quot;: {
+
+      &quot;excludes&quot;: [&quot;yourAccess&quot;]
+
+    }
+
+  }
+
+}
+</code></pre>
+
 
 <hr/>
 
@@ -1967,7 +2023,11 @@
 <li>
 <ul>
 <li><a href="#search-single-mode">Search Single Mode</a></li>
-<li><a href="#search-multi-mode">Search Multi Mode</a></li>
+<li><a href="#search-multi-mode">Search Multi Mode</a>
+<ul>
+<li><a href="#includes-sample">Includes Sample</a></li>
+<li><a href="#excludes-sample">Excludes Sample</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>

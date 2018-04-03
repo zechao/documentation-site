@@ -1544,7 +1544,12 @@
         </li>
           <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
             <a href="/hotelx/plugins/converter/">
-              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
+            <a href="/hotelx/plugins/net-price/">
+              <span style="padding-left: 8px;">Ne Price</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
@@ -1810,6 +1815,7 @@
 <li><a href="../mapping">Board Map</a>: Board mapping codes.</li>
 <li><a href="../mapping">Room Map</a>: Room mapping codes.</li>
 <li><a href="../converter">Currency Conversion</a>: Currency rate conversion.</li>
+<li><a href="../net-price">Net Price</a>: Calculate the net price. </li>
 <li><a href="../markup">Markup</a>: Markups to <code>supplier</code> price.</li>
 <li><a href="../aggregation">Aggregation</a>: Aggregate multiple <code>supplier</code> options.</li>
 <li><a href="../processor">Post Step</a>: Last execution on every <em>step</em>.</li>
@@ -1862,18 +1868,10 @@
 
 <tr>
 <td><em>Response Option</em></td>
-<td><a href="../processor">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../markup">Markup</a><br><a href="../aggregation">Aggregation</a><br><a href="../processor">Post Step</a></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-
-<tr>
-<td><em>Response Access</em></td>
-<td><a href="../processor">Pre Step</a><br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../markup">Markup</a><br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../processor">Post Step</a></td>
+<td><a href="../processor">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="#../rate-map">Rate Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../markup">Markup</a><br><a href="../aggregation">Aggregation</a><br><a href="../processor">Post Step</a></td>
+<td><a href="../processor">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../markup">Markup</a><br><a href="../processor">Post Step</a></td>
+<td><a href="../processor">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../markup">Markup</a><br><a href="../processor">Post Step</a></td>
+<td><a href="../processor">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../processor">Post Step</a></td>
 </tr>
 
 <tr>

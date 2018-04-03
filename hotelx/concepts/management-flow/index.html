@@ -1544,7 +1544,12 @@
         </li>
           <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
             <a href="/hotelx/plugins/converter/">
-              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
+            <a href="/hotelx/plugins/net-price/">
+              <span style="padding-left: 8px;">Ne Price</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
@@ -1754,40 +1759,57 @@
 <h3 id="operation">Operation</h3>
 
 <pre><code class="language-json">{
-  &quot;mutation&quot;: {
-    &quot;hotelCancel&quot;: {
-      }
-    }
-  }
+
+  &quot;mutation&quot;: {
+
+    &quot;hotelX&quot;: {
+
+      &quot;cancel&quot;: {
+
+      }
+
+    }
+
+  }
+
 }
 </code></pre>
 
 <h3 id="playground-samples">PlayGround Samples</h3>
 
 <ul>
-<li><a href="https://graphqlbin.com/JYRtB">hotelCancel</a></li>
+<li><a href="https://graphqlbin.com/68LYhr">cancel</a> </li>
 </ul>
 
 <h2 id="booking">Booking</h2>
 
-<p>Performs a Seller booking list or detail.</p>
+<p>Performs a seller booking list.</p>
+
+<p>In this case you can search the bookings with references or by dates, the dates can be arrival dates or booking dates.</p>
 
 <h3 id="operation-1">Operation</h3>
 
 <pre><code class="language-json">{
-  &quot;query&quot;: {
-    &quot;booking&quot;: {
-      &quot;hotel&quot;: {
-      }
-    }
-  }
+
+  &quot;query&quot;: {
+
+    &quot;hotelX&quot;: {
+
+      &quot;booking&quot;: {
+
+      }
+
+    }
+
+  }
+
 }
 </code></pre>
 
 <h3 id="playground-samples-1">PlayGround Samples</h3>
 
 <ul>
-<li><a href="https://graphqlbin.com/JYRtB">booking</a></li>
+<li><a href="https://www.graphqlbin.com/0RvEU2">booking</a> </li>
 </ul>
 
 

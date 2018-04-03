@@ -1544,7 +1544,12 @@
         </li>
           <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
             <a href="/hotelx/plugins/converter/">
-              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
+            <a href="/hotelx/plugins/net-price/">
+              <span style="padding-left: 8px;">Ne Price</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
@@ -1739,23 +1744,35 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Static Content</h1>
+              <h1 class="pageTitle">Hotel Content (Static Content)</h1>
               
 
 
     
 
-<p>On this page you will learn how to manage content data in your site such as hotel, boards, categories, etc. Hotel Content operations allow changes to be made to static methods on HotelX. A system where hotels can be divided into different rankings or priorities in order to facilitate the mapping process.</p>
+<p>On this page you will learn how to manage content data in your site such as hotel, boards, categories, etc.</p>
+
+<h2 id="hotels">Hotels</h2>
+
+<p>Hotels query returns a hotel list of the one supplier access. This entity contains static data about the hotel like code, name, location, information about the hotel information, etc&hellip; You can find all fields in the <a href="https://api.travelgatex.com/">graph</a>. You can get the hotels with hotel codes or with minimal destination codes. Also you can filter the result with the rank.</p>
+
+<h3 id="playground-samples">Playground Samples</h3>
+
+<ul>
+<li><a href="https://graphqlbin.com/58y0Sp">hotels</a> </li>
+</ul>
 
 <h2 id="hotels-ranking">Hotels Ranking</h2>
 
+<p>Hotel Content operations allow changes to be made to static methods on HotelX. A system where hotels can be divided into different rankings or priorities in order to facilitate the mapping process.</p>
+
 <p>The main goal of this process is to create a hotel ranking and divide the whole portfolio so the hotel list is more manageable. Each classification or sub-list responds to specific commercial criteria, such as, the hotels directly contracted, the best offers, the best sales hotels, etc.</p>
 
-<p>Once the hotel ranking file(s) have been uploaded, the static hotel list method can filter hotels according to this ranking. To set up hotel ranking lists you must upload a file in csv format using a specific name to identify the ranking in your organisation&rsquo;s FTP.</p>
+<p>Once the hotel ranking file(s) have been uploaded, the static hotel list method can filter hotels according to this ranking. To set up hotel ranking lists you must upload a file in csv format using a specific name to identify the ranking in your organisation’s FTP.</p>
 
 <h3 id="file-names-mandatory">File Names (mandatory)</h3>
 
-<p>Each file can have different meanings. It&rsquo;s up to the file creator to give it a meaning according to his/her business needs. In order to process files correctly, they must be named according to the following naming convention:</p>
+<p>Each file can have different meanings. It’s up to the file creator to give it a meaning according to his/her business needs. In order to process files correctly, they must be named according to the following naming convention:</p>
 
 <table>
 <thead>
@@ -1784,6 +1801,11 @@
 <tr>
 <td>rank4.csv</td>
 <td>Rank 4, for example competitive hotels</td>
+</tr>
+
+<tr>
+<td>rankN.csv</td>
+<td>Rank N, any type of information.</td>
 </tr>
 </tbody>
 </table>
@@ -1818,7 +1840,7 @@
 </tbody>
 </table>
 
-<p>Example file format (rank1.csv):</p>
+<h3 id="example">Example:</h3>
 
 <table>
 <thead>
@@ -1846,11 +1868,51 @@
 
 <h3 id="process-file">Process file</h3>
 
-<p>To process the file, it must be uploaded to your organization&rsquo;s FTP folder in the TravelgateX Platform. More info on how to upload files please refer to the <a href="/travelgatex/data-automation/">data automation section</a>.</p>
+<p>To process the file, it must be uploaded to your organization’s FTP folder in the TravelgateX Platform. More info on how to upload files please refer to the <a href="/travelgatex/data-automation/">data automation section</a>.</p>
 
 <h3 id="template-file">Template File</h3>
 
 <p>For your convinience you can <a href="/content/rank1.csv">download a template CSV file</a>.</p>
+
+<h2 id="destinations">Destinations</h2>
+
+<p>Destination query returns a list of static data about destinations for a supplier access. By default if you don’t set the destination codes are all the codes. Like than hotels you can get the other pages with the continuation token.</p>
+
+<h3 id="playground-samples-1">Playground Samples</h3>
+
+<ul>
+<li><a href="https://graphqlbin.com/763zsZ">destinations</a> </li>
+</ul>
+
+<h2 id="boards">Boards</h2>
+
+<p>Board static data returns a simple map of the boards that can be returned with its translation to other languages.</p>
+
+<h3 id="playground-samples-2">Playground Samples</h3>
+
+<ul>
+<li><a href="https://graphqlbin.com/6687tV">boards</a> </li>
+</ul>
+
+<h2 id="rooms">Rooms</h2>
+
+<p>Room static data returns a simple map of the rooms that can be returned with its translation to other languages.</p>
+
+<h3 id="playground-samples-3">Playground Samples</h3>
+
+<ul>
+<li><a href="https://graphqlbin.com/98rmiY">rooms</a> </li>
+</ul>
+
+<h2 id="categories">Categories</h2>
+
+<p>Category static data returns a simple map of the categories that can be returned with its translation to other languages.</p>
+
+<h3 id="playground-samples-4">Playground Samples</h3>
+
+<ul>
+<li><a href="https://graphqlbin.com/mwZjT6">categories</a> </li>
+</ul>
 
 
 <hr/>
@@ -1883,12 +1945,33 @@
 <ul>
 <li>
 <ul>
+<li><a href="#hotels">Hotels</a>
+<ul>
+<li><a href="#playground-samples">Playground Samples</a></li>
+</ul></li>
 <li><a href="#hotels-ranking">Hotels Ranking</a>
 <ul>
 <li><a href="#file-names-mandatory">File Names (mandatory)</a></li>
 <li><a href="#header-fields-mandatory">Header fields (mandatory)</a></li>
+<li><a href="#example">Example:</a></li>
 <li><a href="#process-file">Process file</a></li>
 <li><a href="#template-file">Template File</a></li>
+</ul></li>
+<li><a href="#destinations">Destinations</a>
+<ul>
+<li><a href="#playground-samples-1">Playground Samples</a></li>
+</ul></li>
+<li><a href="#boards">Boards</a>
+<ul>
+<li><a href="#playground-samples-2">Playground Samples</a></li>
+</ul></li>
+<li><a href="#rooms">Rooms</a>
+<ul>
+<li><a href="#playground-samples-3">Playground Samples</a></li>
+</ul></li>
+<li><a href="#categories">Categories</a>
+<ul>
+<li><a href="#playground-samples-4">Playground Samples</a></li>
 </ul></li>
 </ul></li>
 </ul>

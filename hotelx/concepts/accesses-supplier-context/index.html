@@ -1544,7 +1544,12 @@
         </li>
           <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
             <a href="/hotelx/plugins/converter/">
-              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
+            <a href="/hotelx/plugins/net-price/">
+              <span style="padding-left: 8px;">Ne Price</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
@@ -1756,28 +1761,38 @@
 <p>Configuration used when interacting with a <em>supplier</em>, which includes:</p>
 
 <ul>
-<li>URLs</li>
-<li>Credentials</li>
-<li>Markets</li>
-<li>Rate Types</li>
-<li>Specific <em>supplier</em> settings</li>
+<li><p>URLs </p></li>
+
+<li><p>Credentials </p></li>
+
+<li><p>Markets </p></li>
+
+<li><p>Rate Types </p></li>
+
+<li><p>Specific <em>supplier</em> settings </p></li>
 </ul>
+
+<h3 id="client">Client</h3>
+
+<p><em>Client</em> codes are unique over all TravelgateX organizations, like supplier codes. This codes are used for to identify who is doing the request and this client has a configuration assigned to it. If you want to read more about settings go <a href="#_ngp49vy37y6b">HotelX settings</a>.</p>
 
 <h3 id="context">Context</h3>
 
-<p><em>Context</em> is the way codes are formed. Every <em>platform</em> can manage its own contexts or reuse existing ones.  Different <em>sellers</em> and <em>buyers</em> can manage the same codes <em>context</em>. For example <a href="https://www.smyrooms.com">SmyRooms</a> supplier uses <strong>SMY</strong> contexts.</p>
+<p><em>Context</em> is the way codes are formed. Every platform can manage its own contexts or reuse existing ones. Different sellers and buyers can manage the same codes context. For example <a href="https://www.smyrooms.com/">SmyRooms</a> supplier uses SMY contexts.</p>
 
-<p><em>Context</em> apply to:</p>
+<p>Context apply to:</p>
 
 <ul>
-<li>Hotel Codes</li>
-<li>Board Codes</li>
-<li>Room Codes</li>
+<li><p>Hotel Codes </p></li>
+
+<li><p>Board Codes </p></li>
+
+<li><p>Room Codes </p></li>
 </ul>
 
-<p>With the built-in solution you will be able to choose the context that you wish to use when requesting an <a href="/hotelx/">HotelX</a> operation. This <em>context</em> will be used in order to <a href="/hotelx/plugins/mappings">map</a> with other <em>suppliers</em> contexts.</p>
+<p>With the built-in solution you will be able to choose the context that you wish to use when requesting an <a href="/hotelx/">HotelX</a> operation. This context will be used in order to <a href="/hotelx/plugins/mappings">map</a> with other suppliers contexts.</p>
 
-<p>We recommend using the biggest <em>context</em> possible or using your <strong>own context</strong>, so all <em>supplier</em> mappings can be resolved.</p>
+<p>We recommend using the biggest <em>context</em> possible or using your own context, so all supplier mappings can be resolved.</p>
 
 
 <hr/>
@@ -1814,6 +1829,7 @@
 <ul>
 <li><a href="#supplier">Supplier</a></li>
 <li><a href="#access">Access</a></li>
+<li><a href="#client">Client</a></li>
 <li><a href="#context">Context</a></li>
 </ul></li>
 </ul></li>

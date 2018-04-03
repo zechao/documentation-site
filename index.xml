@@ -80,7 +80,7 @@ Require by AccessEdge: AccessData: AdminMutation:</description>
       <description>On this page you will learn more about Core Entities used in TravelgateX.
 Supplier Product segmentation over a provider API implementation. Supplier codes are uniques over all TravelgateX organizations.
 Access Configuration used when interacting with a supplier, which includes:
- URLs Credentials Markets Rate Types Specific supplier settings  Context Context is the way codes are formed. Every platform can manage its own contexts or reuse existing ones. Different sellers and buyers can manage the same codes context.</description>
+ URLs  Credentials  Markets  Rate Types  Specific supplier settings   Client Client codes are unique over all TravelgateX organizations, like supplier codes. This codes are used for to identify who is doing the request and this client has a configuration assigned to it.</description>
     </item>
     
     <item>
@@ -310,7 +310,9 @@ Require by BoardConnection: BoardList definition</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/howtos/howto-book/</guid>
-      <description>Flow to book</description>
+      <description>Flow to book
+HotelX Settings In HotelX we have differents levels to configure the settings for a request. With the settings you can to configure some aspects of the request like:
+   Field Description     Context Indicates the context codes that you want to send and to receive.   Timeout Set request timeout in the differents call types:* search * quote * book (includes book, cancel and booking)    Language What language you want to do the request.</description>
     </item>
     
     <item>
@@ -1660,9 +1662,9 @@ Require by OrganizationConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/overview/</guid>
-      <description>HotelX is the ultimate connectivity solution. Besides enabling you to connect to multiple Suppliers, it also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.
-  Each and every layer discribed in the this figure is explained as follows:
-Business Logic We&amp;rsquo;ve added a new layer of business logic in front of the pure transformation API. A fast, totally scalable and flexible layer, whichh allows you to overwright everything at the request level, or be left as is.</description>
+      <description>HotelX is the ultimate connectivity solution. Besides enabling you to connect to multiple ’Suppliers’, it also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.
+  Each and every layer described in the this figure is explained as follows:
+GraphQL Gateway Our gateway is the only endpoint to access all of our products, which has the authentication and authorization of our system.</description>
     </item>
     
     <item>
@@ -1962,7 +1964,7 @@ Join the TravelgateX partner program In order to start building your own API, yo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/resources/quotas-limits/</guid>
-      <description>ConnectX Hotel limits the maximum rate of requests and graph deep. Specific policies vary depending on resource availability, user profile, service usage history, and other factors, and are subject to change without notice.</description>
+      <description>ConnectX Hotel limits the maximum rate of requests and graph deep. Specific policies vary depending on resource availability, user profile, service usage history, and other factors, and are subject to change without notice</description>
     </item>
     
     <item>
@@ -2588,10 +2590,9 @@ GraphQL Schema definition type Warning {code: String! type: String! desc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/mapping/</guid>
-      <description>Map plugins extends HotelX allowing to match Seller and Buyer codes based on contexts.
-HotelCodeMatching Matches Seller hotel codes based on file code mapping.
-File Requirements The file should be in the below format:
- Encoding: UTF-8 File Name: [Context Source]_hotel_map.csv Header Row: Code Source, Context Destination, Code Destination Delimiter: Comma  Code Source, Context Destination, Code Destination 10,GUE,c11#10 10000,JCB,7604 10000,TOU,1274249  File must be uploaded to your organization directory SFTP</description>
+      <description>The map plugins are used for to change the supplier codes to client codes or vice versa, depending on the step. There are four types:
+ Hotel map  Board Map  Room Map  Rate Map   Our map formats have a common structure on all of them. Below is shown step by step as load your maps.
+Format File The file should be in the below format:</description>
     </item>
     
     <item>
@@ -2601,7 +2602,7 @@ File Requirements The file should be in the below format:
       
       <guid>/hotelx/quickstart/</guid>
       <description>This page shows you how to perform a basic hotel booking using GraphQL Playground.
-Before Starting  Follow the steps in Creating an API Key to get your API Key. Check the connectivity of your API Key. Open the sample Playground and modify HTTP HEADERS field Authorization with your API Key.  Step by Step Search a Hotel  Click on the search tab. Modify Query Variables with valid dates and send the request.</description>
+Before Starting  Follow the steps in Creating an API Key to get your API Key.  Check the connectivity of your API Key.  Open the sample Playground and modify HTTP HEADERS field Authorization with your API Key and indicated your client into request settings.   { &amp;quot;settings&amp;quot;: { &amp;quot;client&amp;quot;: &amp;quot;yourClient&amp;quot; } }  Step by Step Search a Hotel  Open search tabs.</description>
     </item>
     
     <item>
@@ -2629,13 +2630,12 @@ Before Starting  Follow the steps in Creating an API Key to get your API Key. Ch
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/aggregation/</guid>
-      <description>Aggregation plugins extends HotelX allowing filtering Supplier options and respones using different business rules.
+      <description>Aggregation plugins extends HotelX allowing filtering Supplier options and responses using different business rules.
 KeyFilter Filters Supplier options based on field keys applying a selector function over field values.
 It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
  Field Keys as a combination of:
- SupplierCode HotelCode BoardCode RoomCode Refundable  Functions:
- Min Max  Field Values:
- PriceNet PriceGross   Configuration { }  Parameters keys: [String!</description>
+ SupplierCode  HotelCode BoardCode RoomCode Refundable Market PaymentType Promotion Supplement Surcharges Rate rules   Functions:
+ Min Max  Field Values:</description>
     </item>
     
     <item>
@@ -2677,7 +2677,9 @@ How many hotels code are allowed to request at the same time? We recommend a max
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/markup/</guid>
-      <description> Overview </description>
+      <description>Markups type plugins permits to apply markup percentages over a price, markup is a field in price composed of a set of rules and a new price with an added percentage, the percentage is the sum of every rule applied.
+Although this plugin can be customized, we already offer an implementation.
+MarkupX This markup implementation is supported by our web application which permits the management of an organization&amp;rsquo;s rules, the modification of these rules are applied in your product at real time.</description>
     </item>
     
     <item>
@@ -2696,16 +2698,17 @@ How many hotels code are allowed to request at the same time? We recommend a max
       
       <guid>/hotelx/concepts/search-mode/search-single-mode/</guid>
       <description>On this page you will learn about Transactional Booking Flow to Search, quote and confirm a reservation. You will also see the difference between the Search Single Mode VS Search Multi Mode.
-Search Single Mode Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller. Performs an hotel availability search over 1 or more Seller accesses</description>
+Search Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that them want to use.</description>
     </item>
     
     <item>
-      <title>Converter</title>
+      <title>Currency Converter</title>
       <link>/hotelx/plugins/converter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/converter/</guid>
-      <description> Overview </description>
+      <description>Currency converter is an optional plugin and permits to apply currency conversion over all the prices in one Option.
+CurrencyX This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp, is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned.</description>
     </item>
     
     <item>
@@ -2714,10 +2717,20 @@ Search Single Mode Search, Quote and Book transactions must be executed sequenta
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/concepts/management-flow/</guid>
-      <description> On this page you will learn how to manage and control bookings and management flow. Managing operations can be used in order to operate above Seller&amp;rsquo;s bookings.
+      <description>On this page you will learn how to manage and control bookings and management flow. Managing operations can be used in order to operate above Seller&amp;rsquo;s bookings.
 Cancellation Performs a Seller booking cancellation.
-Operation { &amp;quot;mutation&amp;quot;: { &amp;quot;hotelCancel&amp;quot;: { } } } }  PlayGround Samples  hotelCancel  Booking Performs a Seller booking list or detail.
-Operation { &amp;quot;query&amp;quot;: { &amp;quot;booking&amp;quot;: { &amp;quot;hotel&amp;quot;: { } } } }  PlayGround Samples  booking  </description>
+Operation { &amp;quot;mutation&amp;quot;: { &amp;quot;hotelX&amp;quot;: { &amp;quot;cancel&amp;quot;: { } } } }  PlayGround Samples  cancel   Booking Performs a seller booking list.
+In this case you can search the bookings with references or by dates, the dates can be arrival dates or booking dates.</description>
+    </item>
+    
+    <item>
+      <title>Ne Price</title>
+      <link>/hotelx/plugins/net-price/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/net-price/</guid>
+      <description>Net Price is an optional plugin and allows to net all the prices in an option.
+NetPriceX This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices. Suppliers commission file specifies the commission applied to supplier’s prices.</description>
     </item>
     
     <item>
@@ -2756,8 +2769,8 @@ Authentication Authentication is the process of authorizing or making sure that 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/concepts/content/</guid>
-      <description>On this page you will learn how to manage content data in your site such as hotel, boards, categories, etc. Hotel Content operations allow changes to be made to static methods on HotelX. A system where hotels can be divided into different rankings or priorities in order to facilitate the mapping process.
-Hotels Ranking The main goal of this process is to create a hotel ranking and divide the whole portfolio so the hotel list is more manageable.</description>
+      <description>On this page you will learn how to manage content data in your site such as hotel, boards, categories, etc.
+Hotels Hotels query returns a hotel list of the one supplier access. This entity contains static data about the hotel like code, name, location, information about the hotel information, etc&amp;hellip; You can find all fields in the graph. You can get the hotels with hotel codes or with minimal destination codes.</description>
     </item>
     
     <item>

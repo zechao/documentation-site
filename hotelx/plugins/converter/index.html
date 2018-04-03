@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Converter | TravelgateX Documentation</title>
+    <title>Currency Converter | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.37.1" />
-<title>Converter :: TravelgateX Documentation</title>
+<title>Currency Converter :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -1544,7 +1544,12 @@
         </li>
           <li data-nav-id="/hotelx/plugins/converter/" class="dd-item active">
             <a href="/hotelx/plugins/converter/">
-              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
+            <a href="/hotelx/plugins/net-price/">
+              <span style="padding-left: 8px;">Ne Price</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
@@ -1739,13 +1744,74 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Converter</h1>
+              <h1 class="pageTitle">Currency Converter</h1>
               
 
 
     
 
-<h1 id="overview">Overview</h1>
+<p>Currency converter is an optional plugin and permits to apply currency conversion over all the prices in one Option.</p>
+
+<h2 id="currencyx">CurrencyX</h2>
+
+<p>This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp, is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned.</p>
+
+<h3 id="file-format">File Format</h3>
+
+<p>The file should be in the below format:</p>
+
+<ul>
+<li><strong>Encoding</strong>: UTF-8 </li>
+<li><strong>File Name</strong>: currency_map.csv </li>
+<li><strong>Header Row</strong>: Code, Rate </li>
+<li><strong>Delimiter</strong>:  Comma (“,”) </li>
+<li><strong>Directory</strong>: <a href="ftp://ftp.xmltravelgate.com/Purchasing/ ">ftp://ftp.xmltravelgate.com/Purchasing/ </a></li>
+</ul>
+
+<h4 id="sample-file">Sample File</h4>
+
+<p><strong>Name</strong>: currency_map.csv</p>
+
+<p><strong>Data</strong>:</p>
+
+<pre><code class="language-csv">Code,Rate
+AED,4.74
+CAD,1.61
+CHF,1.26
+EUR,1.09
+GBP,1.00
+INR,84.40
+MAD,12.17
+THB,42.91
+USD,1.29
+</code></pre>
+
+<p>In addition, is necessary that option currencies and parameter currency are in ftp file.</p>
+
+<h3 id="execution-example">Execution example</h3>
+
+<pre><code>{
+
+    &quot;plugins&quot;: {
+
+        &quot;step&quot;: &quot;RESPONSE\_OPTION&quot;,
+
+        &quot;pluginsType&quot;: [
+
+            {
+
+                &quot;type&quot;: &quot;CURRENCY\_CONVERSION&quot;
+
+                &quot;name&quot;: &quot;currencyX&quot;
+
+            }
+
+        ]
+
+    }
+
+}
+</code></pre>
 
 
 <hr/>
@@ -1776,7 +1842,17 @@
             <div>
               <nav id="TableOfContents">
 <ul>
-<li><a href="#overview">Overview</a></li>
+<li>
+<ul>
+<li><a href="#currencyx">CurrencyX</a>
+<ul>
+<li><a href="#file-format">File Format</a>
+<ul>
+<li><a href="#sample-file">Sample File</a></li>
+</ul></li>
+<li><a href="#execution-example">Execution example</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
             </div>

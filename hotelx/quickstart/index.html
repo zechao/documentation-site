@@ -1543,7 +1543,12 @@
         </li>
           <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
             <a href="/hotelx/plugins/converter/">
-              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
+            <a href="/hotelx/plugins/net-price/">
+              <span style="padding-left: 8px;">Ne Price</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
@@ -1749,33 +1754,67 @@
 <h3 id="before-starting">Before Starting</h3>
 
 <ol>
-<li>Follow the steps in <a href="/travelgatex/security/overview#creating-an-api-key">Creating an API Key</a> to get your API Key.</li>
-<li><a href="/travelgatex/overview/#making-requests">Check the connectivity</a> of your API Key.</li>
-<li>Open <a href="https://www.graphqlbin.com/mnOsA">the sample Playground</a> and modify <code>HTTP HEADERS</code> field Authorization with your API Key.</li>
+<li><p>Follow the steps in <a href="/travelgatex/security/overview#creating-an-api-key">Creating an API Key</a> to get your API Key. </p></li>
+
+<li><p><a href="travelgatex/overview/#making-requests">Check the connectivity</a> of your API Key. </p></li>
+
+<li><p>Open <a href="https://graphqlbin.com/2k65c8">the sample Playground</a> and modify HTTP HEADERS field Authorization with your API Key and indicated your <a href="#_ivb2cezalt05">client</a> into request settings. </p></li>
 </ol>
+
+<pre><code>{
+
+  &quot;settings&quot;: {
+
+    &quot;client&quot;: &quot;yourClient&quot;
+
+  }
+
+}
+</code></pre>
 
 <h2 id="step-by-step">Step by Step</h2>
 
 <h3 id="search-a-hotel">Search a Hotel</h3>
 
 <ol>
-<li>Click on the <code>search</code> tab.</li>
-<li>Modify <code>Query Variables</code> with valid dates and send the request.</li>
+<li>Open search <a href="https://graphqlbin.com/2kzRfE">tabs</a>.  </li>
+<li>Modify Query Variables with valid dates and send the request. Example in the first and third tab. </li>
+<li>You can replay the same search (the same dates, currency, language, market, nationality and occupancies) with the token generated per option, this token return a search only for the option’s hotel. Example in second one tab. </li>
 </ol>
 
 <h3 id="quote-a-hotel">Quote a Hotel</h3>
 
 <ol>
-<li>Click on the <code>quote</code> tab.</li>
-<li>In <code>Query Variables</code> modify <code>optionRefId</code> with option <code>id</code> value returned in search response and send the request.</li>
+<li>Open quote <a href="https://graphqlbin.com/31B2HR">tab</a>. </li>
+<li>In Query Variables modify optionRefId with option id value returned in search response and send the request. </li>
+<li>3.In this case you can modify the language, if you don&rsquo;t indicate the language, it uses the same language that in search. </li>
 </ol>
 
 <h3 id="book-a-hotel">Book a Hotel</h3>
 
 <ol>
-<li>Click on the <code>hotelBook</code> tab.</li>
-<li>In <code>Query Variables</code> modify <code>optionRefId</code> with <code>optionRefId</code> value returned in quote response and send the request.</li>
-<li>Next other information you can chek for book <code>Seller reference</code></li>
+<li>Open hotelBook <a href="https://graphqlbin.com/1wxWIp">tabs</a>. </li>
+<li>In Query Variables modify optionRefId with optionRefId value returned in quote response and send the request with the other mandatory information. </li>
+</ol>
+
+<h3 id="cancel-booking">Cancel Booking</h3>
+
+<ol>
+<li>Open hotelCancel <a href="https://graphqlbin.com/68LYhr">tab</a>. </li>
+<li>In Query Variables  modify the fields with your data. </li>
+</ol>
+
+<h3 id="booking-list">Booking List</h3>
+
+<ol>
+<li>Open booking <a href="https://graphqlbin.com/0RvEU2">tabs</a>. </li>
+<li>You’re going to found three tabs, modify the fields with your data:  
+
+<ol>
+<li>One of them search by booking reference. </li>
+<li>Another tab with search by booking date. </li>
+<li>And another with search by arrival date.</li>
+</ol></li>
 </ol>
 
 
@@ -1818,6 +1857,8 @@
 <li><a href="#search-a-hotel">Search a Hotel</a></li>
 <li><a href="#quote-a-hotel">Quote a Hotel</a></li>
 <li><a href="#book-a-hotel">Book a Hotel</a></li>
+<li><a href="#cancel-booking">Cancel Booking</a></li>
+<li><a href="#booking-list">Booking List</a></li>
 </ul></li>
 </ul></li>
 </ul>

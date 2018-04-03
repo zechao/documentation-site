@@ -1544,7 +1544,12 @@
         </li>
           <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
             <a href="/hotelx/plugins/converter/">
-              <span style="padding-left: 8px;">Converter</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
+            <a href="/hotelx/plugins/net-price/">
+              <span style="padding-left: 8px;">Ne Price</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
@@ -1745,7 +1750,7 @@
 
     
 
-<p><strong>Aggregation plugins</strong> extends <a href="/hotelx/">HotelX</a> allowing filtering <code>Supplier</code> options and respones using different business rules.</p>
+<p><strong>Aggregation plugins</strong> extends <a href="/hotelx/">HotelX</a> allowing filtering <code>Supplier</code> options and responses using different business rules.</p>
 
 <h3 id="keyfilter">KeyFilter</h3>
 
@@ -1757,11 +1762,17 @@
 <li><p><strong><em>Field Keys</em></strong> as a combination of:</p>
 
 <ul>
-<li>SupplierCode</li>
+<li>SupplierCode </li>
 <li>HotelCode</li>
 <li>BoardCode</li>
 <li>RoomCode</li>
 <li>Refundable</li>
+<li>Market</li>
+<li>PaymentType</li>
+<li>Promotion</li>
+<li>Supplement</li>
+<li>Surcharges</li>
+<li>Rate rules </li>
 </ul></li>
 
 <li><p><strong><em>Functions</em></strong>:</p>
@@ -1779,25 +1790,66 @@
 </ul></li>
 </ul>
 
-<h3 id="configuration">Configuration</h3>
-
-<pre><code class="language-json">{
-}
-</code></pre>
-
 <h3 id="parameters">Parameters</h3>
 
-<h4 id="keys-string">keys: [String!]</h4>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>value type</th>
+<th>condition</th>
+<th>description</th>
+</tr>
+</thead>
 
-<p>Values must be a valid Field Key.</p>
+<tbody>
+<tr>
+<td>primaryKey</td>
+<td>string</td>
+<td>mandatory</td>
+<td>is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:<br>example: “hotel,supplier,room”</td>
+</tr>
 
-<h4 id="function-string">function: String!</h4>
+<tr>
+<td>function</td>
+<td>string</td>
+<td>optional</td>
+<td>possible values: “min” and “max”, min is the default value.<br>The chosen option will be the cheapest when min function, and the expensivest when max function</td>
+</tr>
 
-<p>Value must be a valid Function.</p>
+<tr>
+<td>priceField</td>
+<td>string</td>
+<td>optional</td>
+<td>possible values: “net” or “gross”, net is the default value.<br>The function will operate over the field determined by this parameter</td>
+</tr>
 
-<h4 id="value-string">value: String!</h4>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>optional</td>
+<td>exchanges a price’s currency before applicating the filter. In order to make use of this functionality, the same setup in the CurrencyX plugin is needed.</td>
+</tr>
 
-<p>Value must be a valid Field Value.</p>
+<tr>
+<td>size</td>
+<td>int</td>
+<td>optional</td>
+<td>number of options in each aggregation group, the default value is 1</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="processor-pre-step-and-post-step">Processor (Pre Step and Post Step)</h3>
+
+<p>Processor plugins extends <a href="/hotelx/">HotelX</a> allowing multiple operation types. It can modify request and response messages, allowing a full range of operations:</p>
+
+<ul>
+<li>Split arrays</li>
+<li>Join arrays </li>
+<li>Modify object values </li>
+<li>Add or remove object instances </li>
+</ul>
 
 
 <hr/>
@@ -1833,13 +1885,8 @@
 <li>
 <ul>
 <li><a href="#keyfilter">KeyFilter</a></li>
-<li><a href="#configuration">Configuration</a></li>
-<li><a href="#parameters">Parameters</a>
-<ul>
-<li><a href="#keys-string">keys: [String!]</a></li>
-<li><a href="#function-string">function: String!</a></li>
-<li><a href="#value-string">value: String!</a></li>
-</ul></li>
+<li><a href="#parameters">Parameters</a></li>
+<li><a href="#processor-pre-step-and-post-step">Processor (Pre Step and Post Step)</a></li>
 </ul></li>
 </ul></li>
 </ul>
