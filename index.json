@@ -2010,7 +2010,7 @@
 },
 {
 	"uri": "/hotelx/plugins/net-price/",
-	"title": "Ne Price",
+	"title": "Net Price",
 	"tags": [],
 	"description": "",
 	"content": " Net Price is an optional plugin and allows to net all the prices in an option.\nNetPriceX This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices. Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to concrete hotel’s price. In one hand, if no hotels commission file is loaded in ftp, is applied net with the commission specified in commissions suppliers file. In other hand, if hotels commission file is loaded, this have preference over suppliers file. These files have to accomplish requirements below. In other cases, an error will be returned.\nFile Format The file should be in the below format:\n Encoding: UTF-8  File Name: commission_supplier.csv  Header Row: Supplier, Commission  Delimiter: Comma (“,”)  Directory: ftp://ftp.xmltravelgate.com/Purchasing/   Headers:\n Supplier → supplier code  Commission → commission value   Sample File Name: commission_supplier.csv\nData:\nSupplier,Commission AXI,0 AXI2,0  Hotel Commission File Format The hotel commission file should be in the below format:\n Encoding: UTF-8  File Name: commission_hotel.csv  Header Row: Supplier, Hotel, Commission Delimiter: Comma (“,”)  Directory: ftp://ftp.xmltravelgate.com/Purchasing/   Headers:\n Supplier → supplier code  Hotel → hotel code  Commission → commission value   Sample File Name: commission_supplier.csv\nData:\nSupplier,Hotel,Commission HOTELTEST,1,19 TTHOTTEST,1,11  Execution example { \u0026quot;plugins\u0026quot;: { \u0026quot;step\u0026quot;: \u0026quot;RESPONSE\\_OPTION\u0026quot;, \u0026quot;pluginsType\u0026quot;: [ { \u0026quot;type\u0026quot;: \u0026quot;CURRENCY\\_CONVERSION\u0026quot; \u0026quot;name\u0026quot;: \u0026quot;net\\_priceX\u0026quot; } ] } }  "
@@ -2062,7 +2062,7 @@
 	"title": "Plugins",
 	"tags": [],
 	"description": "Additional logic to your App",
-	"content": "Customize your additional features.\n\t\rOverview\rPlugins workflow execution\n\r\r\r\t\rMapping\rMap plugins\n\r\r\r\t\rAggregation\rAggregation plugins\n\r\r\r\t\rMarkup\rMarkup plugins\n\r\r\r\t\rCurrency Converter\rConverter plugins\n\r\r\r\t\rNe Price\r\r\r\r\t\rProcessor\rProcessor plugins\n\r\r\r\t\rDevelopment\rDevelop your own plugins\n\r\r\r\r"
+	"content": "Customize your additional features.\n\t\rOverview\rPlugins workflow execution\n\r\r\r\t\rMapping\rMap plugins\n\r\r\r\t\rAggregation\rAggregation plugins\n\r\r\r\t\rMarkup\rMarkup plugins\n\r\r\r\t\rCurrency Converter\rConverter plugins\n\r\r\r\t\rNet Price\r\r\r\r\t\rProcessor\rProcessor plugins\n\r\r\r\t\rDevelopment\rDevelop your own plugins\n\r\r\r\r"
 },
 {
 	"uri": "/statsx/",
