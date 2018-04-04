@@ -1966,7 +1966,7 @@ Join the TravelgateX partner program In order to start building your own API, yo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/resources/quotas-limits/</guid>
-      <description>ConnectX Hotel limits the maximum rate of requests and graph deep. Specific policies vary depending on resource availability, user profile, service usage history, and other factors, and are subject to change without notice</description>
+      <description>HotelX limits the maximum rate of requests and graph deep. Specific policies vary depending on resource availability, user profile, service usage history, and other factors, and are subject to change without notice</description>
     </item>
     
     <item>
@@ -2685,7 +2685,7 @@ Before Starting  Follow the steps in Creating an API Key to get your API Key.  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/resources/release-notes/</guid>
-      <description>This page documents production updates to connectX Hotel. We recommend that connectX hotel developers periodically check this list for any new announcements.</description>
+      <description>This page documents production updates to HotelX. We recommend that HotelX developers periodically check this list for any new announcements.</description>
     </item>
     
     <item>
