@@ -291,7 +291,7 @@
 	"title": "Build An OTA",
 	"tags": [],
 	"description": "Build Your Own Full Fledged OTA",
-	"content": ""
+	"content": " Online Travel Agency written in Angular For this quickstart tutorial, we have prepared a repository that contains the full Angular code for the OTA clone. All you need to do is to get TravelgateX credentials and connect it with the Angular application. Let\u0026rsquo;s get started!\nOTA Angular\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/businessrules/",
@@ -1159,14 +1159,14 @@
 	"title": "Overview",
 	"tags": [],
 	"description": "Learn the basics",
-	"content": "Get access to all of our products and services through a single endpoint API.\n                                                                                                                                                                                       \n"
+	"content": "Get access to all of our products through a single endpoint API.\n                                                                                                                                                                                       \n"
 },
 {
 	"uri": "/hotelx/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "HotelX Information",
-	"content": " HotelX is the ultimate connectivity solution. Besides enabling you to connect to multiple ’Suppliers’, it also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\n  Each and every layer described in the this figure is explained as follows:\nGraphQL Gateway Our gateway is the only endpoint to access all of our products, which has the authentication and authorization of our system. You can read about this, here.\nBusiness Logic We’ve added a new layer of business logic in front of the pure transformation API. A fast, totally scalable and flexible layer, which allows you to overwrite everything at the request level, or be left as is. The API is completely written in Go and Redis for performance and scalability. There’s also the possibility of writing plugins (in Go) in order to add any logic or add an extra functionality.\nSome of the functionalities of the business logic layer include:\n Configuration and access management  Hotel, Room and Board Mappings  Sort \u0026amp; Filter results  Add pricing/markups  Currency Exchange  Plugins   Plugins HotelX introduces a new concept to the industry: Plugins. A plugin is a piece of code that is executed inside our application. There are a few points in the request lifetime where anyone can develop a plugin. It receives the request or response as an input and outputs the changed request or response. Plugins are a core package in the Go Programming language. All the info about it can be found here.\nTransformation Layer The transformation layer takes care of the actual transformation into the Seller’s specific format and back. It generates requests to the supplier in an optimal way, known as Optimal Connector. The Optimal connector is the result of years of interacting with the ‘Sellers’, learning from them and understanding how to send them requests. Each different supplier has a different logic, and we know now exactly which request will be handled more effectively by the supplier.\nThe transformation layer keeps each and every Seller integration in an optimal level. If a new version is released, we will update our integration. Our team is constantly monitoring the traffic, both automatically and manually in order to make sure the connectivity just works.\nOptional Cache Layer Our cache layer, called Speed does exactly what the name says, it caches results to avoid knocking out the Sellers. From a high level perspective it is just a cache.\nWe use advanced Machine Learning models to predict how long each cached item will be valid from taking into account a large number of variables set in the request. This cache is hosted in Google’s BigTable, a “Massively Scalable NoSQL” database built with performance and scalability in mind.\nSuppliers Each and every ‘Supplier’ works in a different way. Most are old legacy SOAP APIs and none of them are GraphQL. We have developed them all, and learned from it. We are connected to more than 600 ‘Suppliers’ seamlessly.\n"
+	"content": " HotelX is the ultimate connectivity solution. Besides enabling you to connect to multiple ’Suppliers’, it also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\n  Each and every layer described in the this figure is explained as follows:\nGraphQL Gateway Our gateway is the only endpoint to access all of our products, which has the authentication and authorization of our system. You can read about this, here.\nBusiness Logic We’ve added a new layer of business logic in front of the pure transformation API. A fast, totally scalable and flexible layer, which allows you to overwrite everything at the request level, or be left as is. The API is completely written in Go and Redis for performance and scalability. There’s also the possibility of writing plugins (in Go) in order to add any logic or add an extra functionality.\nSome of the functionalities of the business logic layer include:\n Configuration and access management  Hotel, Room and Board Mappings  Agggregate, Sort \u0026amp; Filter results  Add pricing/markups  Currency Exchange  Plugins   Plugins HotelX introduces a new concept to the industry: Plugins. A plugin is a piece of code that is executed inside our application. There are a few points in the request lifetime where anyone can develop a plugin. It receives the request or response as an input and outputs the changed request or response. Plugins are a core package in the Go Programming language. All the info about it can be found here.\nTransformation Layer The transformation layer takes care of the actual transformation into the Seller’s specific format and back. It generates requests to the supplier in an optimal way, known as Optimal Connector. The Optimal connector is the result of years of interacting with the ‘Sellers’, learning from them and understanding how to send them requests. Each different supplier has a different logic, and we know now exactly which request will be handled more effectively by the supplier.\nThe transformation layer keeps each and every Seller integration in an optimal level. If a new version is released, we will update our integration. Our team is constantly monitoring the traffic, both automatically and manually in order to make sure the connectivity just works.\nOptional Cache Layer Our cache layer, called Speed does exactly what the name says, it caches results to avoid knocking out the Sellers. From a high level perspective it is just a cache.\nWe use advanced Machine Learning models to predict how long each cached item will be valid from taking into account a large number of variables set in the request. This cache is hosted in Google’s BigTable, a “Massively Scalable NoSQL” database built with performance and scalability in mind.\nSuppliers Each and every ‘Supplier’ works in a different way. Most are old legacy SOAP APIs and none of them are GraphQL. We have developed them all, and learned from it. We are connected to more than 600 ‘Suppliers’ seamlessly.\n"
 },
 {
 	"uri": "/hotelx/plugins/overview/",
@@ -1176,21 +1176,21 @@
 	"content": " Introduction Plugins are custom code, executed in HotelX servers, that add or modify specific features. Partner can develop custom plugins, but in most cases, HotelX offers enough basic plugins to use.\nFlows HotelX query or mutation determine what flow is executed. Plugins can be executed in different flows:\n search quote hotelBook hotelCancel  Steps Step is the minium container where plugins are executed sequentially.\n   Step When is executed     Request After Buyer requests message to HotelX.   Request Access Before send request to Supplier using Access and after Accesses has been calculated.   Response Option After Supplier responds message. For every option returned.   Response Access After all Access options has been responded.   Response Before HotelX responds message to to Buyer.    Plugin Types Plugin types supported by HotelX:\n Pre Step: First execution on every step. Hotel Map: Hotel mapping codes. Board Map: Board mapping codes. Room Map: Room mapping codes. Currency Conversion: Currency rate conversion. Net Price: Calculate the net price.  Markup: Markups to supplier price. Aggregation: Aggregate multiple supplier options. Post Step: Last execution on every step.  Plugin Context Execution Once message enters on HotelX it flows over different flows and steps. That\u0026rsquo;s why plugins are executed in different contexts.\nContext allows:\n Read objects involved in current query and/or mutations. Read objects available in all HotelX operations.  With context information developers can personalize plugin features, more information about plugin development can be found here.\nPlugin Step Execution HotelX determine the order and plugin types executed for each step.\n    search quote hotelBook hotelCancel     Request Pre Step\nPost Step Pre Step\nPost Step Pre Step\nPost Step Pre Step Post Step   Request Access Pre Step\nHotel Map\nPost Step Pre Step Post Step Pre Step Post Step Pre Step Post Step   Response Option Pre Step\nHotel Map\nBoard Map\nRoom Map\nRate Map\nCurrency Conversion\nNet Price\nMarkup\nAggregation\nPost Step Pre Step\nHotel Map\nBoard Map\nRoom Map\nCurrency Conversion\nNet Price\nMarkup\nPost Step Pre Step\nHotel Map\nBoard Map\nRoom Map\nCurrency Conversion\nNet Price\nMarkup\nPost Step Pre Step\nHotel Map\nBoard Map\nRoom Map\nCurrency Conversion\nNet Price\nPost Step   Response Pre Step\nAggregation\nPost Step Pre Step Post Step Pre Step Post Step Pre Step Post Step    "
 },
 {
-	"uri": "/insightsx/overview/",
+	"uri": "/insights/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "FlightX Information",
 	"content": "This page shows you how to perform basic hotel book using GraphQL Playground.\n"
 },
 {
-	"uri": "/mappeax/overview/",
+	"uri": "/mappea/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "FlightX Information",
 	"content": "This page shows you how to perform basic hotel book using GraphQL Playground.\n"
 },
 {
-	"uri": "/statsx/overview/",
+	"uri": "/stats/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "StatsX Information",
@@ -1369,7 +1369,7 @@
 	"title": "Quickstart",
 	"tags": [],
 	"description": "Try the API now",
-	"content": " Try it now and see how easy it is to use! If you\u0026rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below.\nJoin the TravelgateX partner program In order to start building your own API, you\u0026rsquo;ll need to join the TravelgateX partner program. The design of a registration form for developers is already in process but in the meantime you\u0026rsquo;re able to sign up through us directly to become a partner.\nProduct Quick Start Choose the desired product from the list with which you\u0026rsquo;d like to start building your app.\n HotelX: Hotel search, booking and content. StatsX: Track the messages sent and received, their response times and status codes. InsightsX: Become a true data-first decision maker. All the messages, all the searches, everything you\u0026rsquo;ve made with us will be available in Insight. MappeaX: A collaborative Hotel Mapping. Use this API to map your suppliers or to make that everything you have mapped is accurate.  Have a look at the documentation All the documentation is generated from GraphQL schema. Use the multiple columns navigation of the Playground to see and understand what information will be returned by each query.\nBe part of the community Join our free community forum using your TravelgateX username and password. Our community is being run by Discourse to simplify and give the best experience to our members.\nAlthough the API has been designed to be very intuitive and easy to read, we are aware that some concepts can be confusing and the process of creating an API overwhelming. That\u0026rsquo;s why we\u0026rsquo;re here to help! You have access to a complete API documentation guide available inside the Playground, a large community with questions being answered by experienced members to help each other and a support team ready to solve any doubts that you might have during the process.\nCan\u0026rsquo;t find your answer? Got any technical questions or need support from our team? We’re here to help. Get in touch through Jira Service Desk using the username and password that has been sent to you together with the welcome pack. Let us know if you haven\u0026rsquo;t received it or can\u0026rsquo;t find it so we can send it to your email address again\n"
+	"content": " Try it now and see how easy it is to use! If you\u0026rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below.\nJoin the TravelgateX partner program In order to start building your own API, you\u0026rsquo;ll need to join the TravelgateX partner program. The design of a registration form for developers is already in process but in the meantime you\u0026rsquo;re able to sign up through us directly to become a partner.\nProduct Quick Start Choose the desired product from the list with which you\u0026rsquo;d like to start building your app.\n HotelX: Hotel search, booking and content. Stats: Track the messages sent and received, their response times and status codes. Insights: Become a true data-first decision maker. All the messages, all the searches, everything you\u0026rsquo;ve made with us will be available in Insight. Mappea: A collaborative Hotel Mapping. Use this API to map your suppliers or to make that everything you have mapped is accurate.  Have a look at the documentation All the documentation is generated from GraphQL schema. Use the multiple columns navigation of the Playground to see and understand what information will be returned by each query.\nBe part of the community Join our free community forum using your TravelgateX username and password. Our community is being run by Discourse to simplify and give the best experience to our members.\nAlthough the API has been designed to be very intuitive and easy to read, we are aware that some concepts can be confusing and the process of creating an API overwhelming. That\u0026rsquo;s why we\u0026rsquo;re here to help! You have access to a complete API documentation guide available inside the Playground, a large community with questions being answered by experienced members to help each other and a support team ready to solve any doubts that you might have during the process.\nCan\u0026rsquo;t find your answer? Got any technical questions or need support from our team? We’re here to help. Get in touch through Jira Service Desk using the username and password that has been sent to you together with the welcome pack. Let us know if you haven\u0026rsquo;t received it or can\u0026rsquo;t find it so we can send it to your email address again\n"
 },
 {
 	"uri": "/admin/resources/quotas-limits/",
@@ -1841,13 +1841,6 @@
 	"content": " Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.\n --                                            1. SEARCH  2. QUOTE  3. BOOK                            OptionID  WHERE TO NEXT?   QuoteID  OptionID   ConfirmationID  QuoteID      \nSearch Performs a hotel availability search over 1 or more Seller accesses. Depending Seller, search operations implicit use supplier’s cache.\nOperation { \u0026quot;query\u0026quot;: { \u0026quot;hotelX\u0026quot;: { \u0026quot;search\u0026quot;: { } } } }  PlayGround Samples  search   Quote Performs an hotel quote over an option returned in Search Response.\nOperation { \u0026quot;query\u0026quot;: { \u0026quot;hotelX\u0026quot;: { \u0026quot;quote\u0026quot;: { } } } }  PlayGround Samples  quote   Book Performs a book or reservation over an option returned in Quote Response.\nOperation { \u0026quot;mutation\u0026quot;: { \u0026quot;hotelX\u0026quot;: { \u0026quot;book\u0026quot;: { } } } }  PlayGround Samples  book   "
 },
 {
-	"uri": "/travelgatex/tutorials/stats-dashboard/",
-	"title": "Build a Dashboard",
-	"tags": [],
-	"description": "Build a Dashboard",
-	"content": ""
-},
-{
 	"uri": "/learning-graphql/overview/",
 	"title": "GraphQL Overview",
 	"tags": [],
@@ -1978,7 +1971,7 @@
 	"title": "Concepts",
 	"tags": [],
 	"description": "Understanding the concepts",
-	"content": " TravelgateX offers a set of products ready to be integrated using a single GraphQL. If you\u0026rsquo;re not sure about a specific concept, feel free to check our guide bellow to understand the basic concepts.\nAPI Gateway \u0026ldquo;TravelgateX is the first company in the industry travel with an API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs and we faced a lot of problems with that kind technology. The benefit of using GraphQL, is that each client is ultimately responsible over what it wants to be returned.\nIt is a stable, secure and fault tolerant load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime. If you\u0026rsquo;re looking for more detailed analysis on GraphQL please have a look at our guide on how to use TravelgateX GraphQL API.\u0026rdquo;\nProduct A Product is an API domain which is available for the consumption of Resources. We organize our APIs by similarity and common features.\nEntities Entities or core resources are entities that define common objects in all our API domains.\nPartner A Partner can interact with TravelgateX API with a User identifying a person or a Service Account identifying an application.\nOrganization An Organization is made up of Partners (they can belong to one or more organizations), Resources, Settings, Permissions and other Metadata.\nProfile Organization use profiles for Partner interaction.\nBuyer A Buyer is a Profile who is connected to TravelgateX in the demand side in order to buy travel products from Sellers.\nSeller A Seller is a Profile who is connected to TravelgateX in the offering side in order to sell travel products to Buyers.\nSupplier A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers.\nPlatform Many Buyers or Providers use a third party platform in order to buy or sell travel products. These are usually tech companies specialized in developing custom software for other companies.\nContext A Context refers to the Supplier codes the request is using. It\u0026rsquo;s a way of specifiying which Supplier codes is being used so it can be transformed and standardized.\nAccess An Access is a set of credentials and configuration in order to access a Supplier.\n"
+	"content": " TravelgateX offers a set of products ready to be integrated using a single GraphQL. If you\u0026rsquo;re not sure about a specific concept, feel free to check our guide bellow to understand the basic concepts.\nAPI Gateway \u0026ldquo;TravelgateX is the first company in the industry travel with an API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs and we faced a lot of problems with that kind technology. The benefit of using GraphQL, is that each client is ultimately responsible over what it wants to be returned.\nIt is a stable, secure and fault tolerant load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime. If you\u0026rsquo;re looking for more detailed analysis on GraphQL please have a look at our guide on how to use TravelgateX GraphQL API.\u0026rdquo;\nProduct A Product is an API domain which is available for the consumption of Resources. We organize our APIs by similarity and common features.\nEntities Entities or core resources are entities that define common objects in all our API domains.\nPartner A Partner can interact with TravelgateX API with a User identifying a person or a Service Account identifying an application.\nOrganization An Organization is made up of Partners (they can belong to one or more organizations), Resources, Settings, Permissions and other Metadata.\nProfile Organization use profiles for Partner interaction.\nBuyer A Buyer is a Profile who is connected to TravelgateX in the demand side in order to buy travel products from Sellers.\nSeller A Seller is a Profile who is connected to TravelgateX in the offering side in order to sell travel products to Buyers.\nSupplier A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers.\nPlatform Many Buyers or Sellers use a third party platform in order to buy or sell travel products. These are usually tech companies specialized in developing custom software for other companies.\nContext A Context refers to the Supplier codes the request is using. It\u0026rsquo;s a way of specifiying which Supplier codes is being used so it can be transformed and standardized.\nAccess An Access is a set of credentials and configuration in order to access a Supplier.\n"
 },
 {
 	"uri": "/hotelx/concepts/",
@@ -2163,7 +2156,7 @@
 	"content": "Customize your additional features.\n\t\rOverview\rPlugins workflow execution\n\r\r\r\t\rMapping\rMap plugins\n\r\r\r\t\rAggregation\rAggregation plugins\n\r\r\r\t\rMarkup\rMarkup plugins\n\r\r\r\t\rCurrency Converter\rConverter plugins\n\r\r\r\t\rNet Price\r\r\r\r\t\rProcessor\rProcessor plugins\n\r\r\r\t\rDevelopment\rDevelop your own plugins\n\r\r\r\r"
 },
 {
-	"uri": "/statsx/",
+	"uri": "/stats/",
 	"title": "StatsX",
 	"tags": [],
 	"description": "",
@@ -2181,7 +2174,7 @@
 	"title": "Tutorials",
 	"tags": [],
 	"description": "Walkthrouhgs of common applications",
-	"content": "What you can build on TravelgateX\u0026rsquo;s platform Build An OTA\rBuild Your Own Full Fledged OTA\n\r\r\rBuild a Dashboard\rBuild a Dashboard\n\r\r\r\r"
+	"content": "What you can build on TravelgateX\u0026rsquo;s platform Build An OTA\rBuild Your Own Full Fledged OTA\n\r\r\r\r"
 },
 {
 	"uri": "/hotelx/plugins/development/",
@@ -2198,7 +2191,7 @@
 	"content": ""
 },
 {
-	"uri": "/mappeax/",
+	"uri": "/mappea/",
 	"title": "MappeaX",
 	"tags": [],
 	"description": "",
@@ -2233,7 +2226,7 @@
 	"content": " As you can see GraphQL is a fast growing ecosystem. Apart from Facebook\u0026rsquo;s and Graphql.org\u0026rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.\nHowever we want to be part of this community and help you discover this new technology and its features. That\u0026rsquo;s why we have gathered some of the best tutorials for you to learn, step by step, how to use it. Have a look at the list bellow and click on any of the resources, materials, podcast and documentation to start.\nEnjoy it!\nGraphQL Tutorials  https://github.com/blog/2412-learn-graphql-with-github  TODO: Falta chicha!!\rGraphQL Resources  GraphQL official documentation Apollo Relay official documentation Schema first development - Johannes Schickling Schema-first development with GraphQL GraphQL First in practice at Quri GraphQL First: A better way to build modern apps GraphQL User List  "
 },
 {
-	"uri": "/insightsx/",
+	"uri": "/insights/",
 	"title": "InsightsX",
 	"tags": [],
 	"description": "",

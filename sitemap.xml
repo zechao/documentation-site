@@ -675,15 +675,15 @@
   </url>
   
   <url>
-    <loc>/insightsx/overview/</loc>
+    <loc>/insights/overview/</loc>
   </url>
   
   <url>
-    <loc>/mappeax/overview/</loc>
+    <loc>/mappea/overview/</loc>
   </url>
   
   <url>
-    <loc>/statsx/overview/</loc>
+    <loc>/stats/overview/</loc>
   </url>
   
   <url>
@@ -1055,10 +1055,6 @@
   </url>
   
   <url>
-    <loc>/travelgatex/tutorials/stats-dashboard/</loc>
-  </url>
-  
-  <url>
     <loc>/learning-graphql/overview/</loc>
   </url>
   
@@ -1239,7 +1235,7 @@
   </url>
   
   <url>
-    <loc>/statsx/</loc>
+    <loc>/stats/</loc>
   </url>
   
   <url>
@@ -1259,7 +1255,7 @@
   </url>
   
   <url>
-    <loc>/mappeax/</loc>
+    <loc>/mappea/</loc>
   </url>
   
   <url>
@@ -1279,7 +1275,7 @@
   </url>
   
   <url>
-    <loc>/insightsx/</loc>
+    <loc>/insights/</loc>
   </url>
   
   <url>

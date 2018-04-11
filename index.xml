@@ -430,7 +430,8 @@ GraphQL Schema definition scalar BooleanRequire by PageInfo: HotelData: H
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/tutorials/ota-site/</guid>
-      <description></description>
+      <description>Online Travel Agency written in Angular For this quickstart tutorial, we have prepared a repository that contains the full Angular code for the OTA clone. All you need to do is to get TravelgateX credentials and connect it with the Angular application. Let&amp;rsquo;s get started!
+OTA Angular</description>
     </item>
     
     <item>
@@ -1646,7 +1647,7 @@ Require by OrganizationConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/overview/</guid>
-      <description>Get access to all of our products and services through a single endpoint API.</description>
+      <description>Get access to all of our products through a single endpoint API.</description>
     </item>
     
     <item>
@@ -1674,28 +1675,28 @@ Flows HotelX query or mutation determine what flow is executed. Plugins can be e
     
     <item>
       <title>Overview</title>
-      <link>/insightsx/overview/</link>
+      <link>/insights/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/insightsx/overview/</guid>
+      <guid>/insights/overview/</guid>
       <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
     </item>
     
     <item>
       <title>Overview</title>
-      <link>/mappeax/overview/</link>
+      <link>/mappea/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/mappeax/overview/</guid>
+      <guid>/mappea/overview/</guid>
       <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
     </item>
     
     <item>
       <title>Overview</title>
-      <link>/statsx/overview/</link>
+      <link>/stats/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/statsx/overview/</guid>
+      <guid>/stats/overview/</guid>
       <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
     </item>
     
@@ -2605,15 +2606,6 @@ GraphQL Schema definition type Warning {code: String! type: String! desc
       <guid>/hotelx/concepts/search-mode/booking-flow/</guid>
       <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.
  --                                            1. SEARCH  2. QUOTE  3.</description>
-    </item>
-    
-    <item>
-      <title>Build a Dashboard</title>
-      <link>/travelgatex/tutorials/stats-dashboard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/tutorials/stats-dashboard/</guid>
-      <description></description>
     </item>
     
     <item>
