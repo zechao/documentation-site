@@ -2624,8 +2624,10 @@ GraphQL Schema definition type Warning {code: String! type: String! desc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/mapping/</guid>
-      <description>The map plugins are used to change the supplier codes to client codes or vice versa. There are four types: * Hotel map * Board Map * Room Map * Rate Map Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
-Format File The file should be in the following format: * Encoding: UTF-8 * File Name: [Context Source]_hotel_map.</description>
+      <description>The map plugins are used to change the supplier codes to client codes or vice versa. There are four types:
+ Hotel map  Board Map  Room Map  Rate Map   Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
+Format File The file should be in the following format:
+ Encoding: UTF-8 File Name: [Context Source]_hotel_map.</description>
     </item>
     
     <item>
@@ -2936,6 +2938,15 @@ To design Schemas  APIs Guru&amp;rsquo;s graphql-faker: https://github.com/APIs-
       <guid>/learning-graphql/tutorials_resources/</guid>
       <description>As you can see GraphQL is a fast growing ecosystem. Apart from Facebook&amp;rsquo;s and Graphql.org&amp;rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.
 However we want to be part of this community and help you discover this new technology and its features. That&amp;rsquo;s why we have gathered some of the best tutorials for you to learn, step by step, how to use it.</description>
+    </item>
+    
+    <item>
+      <title>Changelog</title>
+      <link>/travelgatex/reference/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/changelog/</guid>
+      <description> Deprecations 2018-03-19connectUser This field is got only if the authorization header is of the type JWT. It is used for to change the user that has been set by default in the preload. @deprecated(reason: &amp;#34;deprecated from 2018-03-19. Redundant.&amp;#34;)2017-12-12useContext Indicates if you want use context, or not, by default is true. @deprecated(reason: &amp;#34;deprecated from 2017-12-12. Redundant.&amp;#34;)</description>
     </item>
     
     <item>

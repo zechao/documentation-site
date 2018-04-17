@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on TravelgateX Documentation</title>
+    <link>/getting-started/</link>
+    <description>Recent content in Getting Started on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Overview</title>
+      <link>/getting-started/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/getting-started/overview/</guid>
+      <description>Get access to all of our products through a single endpoint API.</description>
+    </item>
+    
+    <item>
+      <title>Quickstart</title>
+      <link>/getting-started/quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/getting-started/quickstart/</guid>
+      <description>Try it now and see how easy it is to use! If you&amp;rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below.
+Join the TravelgateX partner program In order to start building your own API, you&amp;rsquo;ll need to join the TravelgateX partner program. The design of a registration form for developers is already in process but in the meantime you&amp;rsquo;re able to sign up through us directly to become a partner.</description>
+    </item>
+    
+    <item>
+      <title>Concepts</title>
+      <link>/getting-started/concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/getting-started/concepts/</guid>
+      <description>TravelgateX offers a set of products ready to be integrated using a single GraphQL. If you&amp;rsquo;re not sure about a specific concept, feel free to check our guide bellow to understand the basic concepts.
+API Gateway &amp;ldquo;TravelgateX is the first company in the industry travel with an API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs and we faced a lot of problems with that kind technology.</description>
+    </item>
+    
+    <item>
+      <title>Playground</title>
+      <link>/getting-started/playground/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/getting-started/playground/</guid>
+      <description>Try it For Yourself API Playground is available for free! It lets you play, learn easily and it’s simple to set up. Allows learners of all levels to start exploring and creating quickly. Our Query Builder tool helps users get the most out of the TravelgateX API by creating custom queries and have access TravelgateX API data. You can even customize your responses to better serve your purpose.</description>
+    </item>
+    
+  </channel>
+</rss>

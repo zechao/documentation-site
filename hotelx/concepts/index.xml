@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Concepts on TravelgateX Documentation</title>
+    <link>/hotelx/concepts/</link>
+    <description>Recent content in Concepts on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/hotelx/concepts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Access, Supplier and Context</title>
+      <link>/hotelx/concepts/accesses-supplier-context/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/concepts/accesses-supplier-context/</guid>
+      <description>On this page you will learn more about Core Entities used in TravelgateX.
+Supplier Product segmentation over a provider API implementation. Supplier codes are uniques over all TravelgateX organizations.
+Access Configuration used when interacting with a supplier, which includes:
+ URLs  Credentials  Markets  Rate Types  Specific supplier settings   Client Client codes are unique over all TravelgateX organizations, like supplier codes. This codes are used for to identify who is doing the request and this client has a configuration assigned to it.</description>
+    </item>
+    
+    <item>
+      <title>Management Flow</title>
+      <link>/hotelx/concepts/management-flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/concepts/management-flow/</guid>
+      <description>On this page you will learn how to manage and control bookings and management flow. Managing operations can be used in order to operate above Seller&amp;rsquo;s bookings.
+Cancellation Performs a Seller booking cancellation.
+Operation { &amp;quot;mutation&amp;quot;: { &amp;quot;hotelX&amp;quot;: { &amp;quot;cancel&amp;quot;: { } } } }  PlayGround Samples  cancel   Booking Performs a seller booking list.
+In this case you can search the bookings with references or by dates, the dates can be arrival dates or booking dates.</description>
+    </item>
+    
+    <item>
+      <title>Hotel Content</title>
+      <link>/hotelx/concepts/content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/concepts/content/</guid>
+      <description>On this page you will learn how to manage content data in your site such as hotel, boards, categories, etc.
+Hotels Hotels query returns a hotel list of the one supplier access. This entity contains static data about the hotel like code, name, location, information about the hotel information, etc&amp;hellip; You can find all fields in the graph. You can get the hotels with hotel codes or with minimal destination codes.</description>
+    </item>
+    
+  </channel>
+</rss>

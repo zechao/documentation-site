@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scalars on TravelgateX Documentation</title>
+    <link>/travelgatex/reference/scalars/</link>
+    <description>Recent content in Scalars on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/travelgatex/reference/scalars/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Boolean</title>
+      <link>/travelgatex/reference/scalars/boolean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/boolean/</guid>
+      <description>The Boolean scalar type represents true or false.
+GraphQL Schema definition scalar BooleanRequire by PageInfo: HotelData: Hotel dataDestinationData: Information about destinantionHotelSettingsInput: Settings that you can edit for this avail. Values are loaded by default in our Back Office.SettingsBaseInput: Contains the time out and business rules of a supplier or an access.Room: Contains the room information of the option returned.</description>
+    </item>
+    
+    <item>
+      <title>Country</title>
+      <link>/travelgatex/reference/scalars/country/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/country/</guid>
+      <description>The Country type represents Country values. A good example might be a Passenger Nationality. In queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes &amp;ldquo;ES&amp;rdquo;.
+GraphQL Schema definition scalar CountryRequire by Location: Indicates the location of the hotel.HotelCriteriaSearchInput: Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.</description>
+    </item>
+    
+    <item>
+      <title>Currency</title>
+      <link>/travelgatex/reference/scalars/currency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/currency/</guid>
+      <description>The Currenty type represents Currency values. A good example might be a Rate Price Currency. In queries or mutations, Currency fields have to be specified in ISO 4217 format with enclosing double quotes &amp;ldquo;EUR&amp;rdquo;.
+GraphQL Schema definition scalar CurrencyRequire by HotelCriteriaSearchInput: Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.</description>
+    </item>
+    
+    <item>
+      <title>Date</title>
+      <link>/travelgatex/reference/scalars/date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/date/</guid>
+      <description>The Date type represents Date values. A good example might be a Hotel CheckIn Date. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22&amp;rdquo;.
+GraphQL Schema definition scalar DateRequire by HotelCriteriaSearchInput: Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.</description>
+    </item>
+    
+    <item>
+      <title>DateTime</title>
+      <link>/travelgatex/reference/scalars/datetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/datetime/</guid>
+      <description>The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
+GraphQL Schema definition scalar DateTimeRequire by Board: Board TypeNode: Category: Category TypeRoomStatic: Room TypeHotel: Hotel TypeMedia: Contains media information.</description>
+    </item>
+    
+    <item>
+      <title>Float</title>
+      <link>/travelgatex/reference/scalars/float/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/float/</guid>
+      <description>The Float scalar type represents signed double-precision fractional values as specified by IEEE 754.
+GraphQL Schema definition scalar FloatRequire by Coordinates: Geographical coordinates corresponding to a location.Stat: AuditData: Data sent &amp;amp; received in the supplier’s native format.Price: Price indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.</description>
+    </item>
+    
+    <item>
+      <title>ID</title>
+      <link>/travelgatex/reference/scalars/id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/id/</guid>
+      <description>The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
+GraphQL Schema definition scalar IDRequire by HotelXBoardQueryInput: Board: Board TypeNode: BoardData: Board dataHotelXCategoryQueryInput: Category: Category TypeCategoryData: Category dataHotelXRoomQueryInput: RoomStatic: Room TypeRoomData: Room dataHotelXHotelListInput: Hotel: Hotel TypeHotelData: Hotel dataDestinationData: Information about destinantionHotelXDestinationListInput: Destination: Destination TypeHotelXDestinationSearcherInput: HotelXAccessInput: AccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only.</description>
+    </item>
+    
+    <item>
+      <title>Int</title>
+      <link>/travelgatex/reference/scalars/int/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/int/</guid>
+      <description>The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
+GraphQL Schema definition scalar IntRequire by RelayInput: HotelXHotelListInput: HotelXDestinationListInput: HotelXDestinationSearcherInput: PaxInput: Pax object that contains the pax age.HotelSettingsInput: Settings that you can edit for this avail. Values are loaded by default in our Back Office.</description>
+    </item>
+    
+    <item>
+      <title>JSON</title>
+      <link>/travelgatex/reference/scalars/json/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/json/</guid>
+      <description>The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string. In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: &amp;ldquo;{&amp;ldquo;int&amp;rdquo;: 1, &amp;ldquo;string&amp;rdquo;: &amp;ldquo;value&amp;rdquo;}&amp;ldquo;.
+GraphQL Schema definition scalar JSONRequire by AddOns: Extra information about the option.AddOn: Extra information about the option.</description>
+    </item>
+    
+    <item>
+      <title>Language</title>
+      <link>/travelgatex/reference/scalars/language/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/language/</guid>
+      <description>The Language type represents Language values. A good example might be a Hotel Description Language. In queries or mutations, Language fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes &amp;ldquo;es&amp;rdquo;.
+GraphQL Schema definition scalar LanguageRequire by Text: HotelCriteriaSearchInput: Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.</description>
+    </item>
+    
+    <item>
+      <title>String</title>
+      <link>/travelgatex/reference/scalars/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/string/</guid>
+      <description>The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+GraphQL Schema definition scalar StringRequire by RelayInput: BoardEdge: BoardList Edge definitionError: Application errorsAdviseMessage: BoardData: Board dataText: PageInfo: CategoryEdge: CategoryList Edge definitionCategoryData: Category dataRoomEdge: RoomList Edge definitionRoomData: Room dataHotelConnection: HotelList definitionHotelEdge: HotelList Edge definitionHotelData: Hotel dataProperty: Indicates Property typeLocation: Indicates the location of the hotel.</description>
+    </item>
+    
+    <item>
+      <title>URI</title>
+      <link>/travelgatex/reference/scalars/uri/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/uri/</guid>
+      <description> The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &amp;ldquo;http:\www.travelgatex.com&amp;rdquo;.
+GraphQL Schema definition scalar URIRequire by Contact: Contact Data.Media: Contains media information.UrlsInput: Urls InputUrls: Url&amp;#39;s </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plugins on TravelgateX Documentation</title>
+    <link>/hotelx/plugins/</link>
+    <description>Recent content in Plugins on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/hotelx/plugins/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Overview</title>
+      <link>/hotelx/plugins/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/overview/</guid>
+      <description>Introduction Plugins are custom code, executed in HotelX servers, that add or modify specific features. Partner can develop custom plugins, but in most cases, HotelX offers enough basic plugins to use.
+Flows HotelX query or mutation determine what flow is executed. Plugins can be executed in different flows:
+ search quote hotelBook hotelCancel  Steps Step is the minium container where plugins are executed sequentially.
+   Step When is executed     Request After Buyer requests message to HotelX.</description>
+    </item>
+    
+    <item>
+      <title>Mapping</title>
+      <link>/hotelx/plugins/mapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/mapping/</guid>
+      <description>The map plugins are used to change the supplier codes to client codes or vice versa. There are four types:
+ Hotel map  Board Map  Room Map  Rate Map   Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
+Format File The file should be in the following format:
+ Encoding: UTF-8 File Name: [Context Source]_hotel_map.</description>
+    </item>
+    
+    <item>
+      <title>Aggregation</title>
+      <link>/hotelx/plugins/aggregation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/aggregation/</guid>
+      <description>Aggregation plugins extends HotelX allowing filtering Supplier options and responses using different business rules.
+KeyFilter Filters Supplier options based on field keys applying a selector function over field values.
+It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
+ Field Keys as a combination of:
+ SupplierCode  HotelCode BoardCode RoomCode Refundable Market PaymentType Promotion Supplement Surcharges Rate rules   Functions:
+ Min Max  Field Values:</description>
+    </item>
+    
+    <item>
+      <title>Markup</title>
+      <link>/hotelx/plugins/markup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/markup/</guid>
+      <description>Markups type plugins permits to apply markup percentages over a price, markup is a field in price composed of a set of rules and a new price with an added percentage, the percentage is the sum of every rule applied.
+Although this plugin can be customized, we already offer an implementation.
+MarkupX This markup implementation is supported by our web application which permits the management of an organization&amp;rsquo;s rules, the modification of these rules are applied in your product at real time.</description>
+    </item>
+    
+    <item>
+      <title>Currency Converter</title>
+      <link>/hotelx/plugins/converter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/converter/</guid>
+      <description>Currency converter is an optional plugin and permits to apply currency conversion over all the prices in one Option.
+CurrencyX This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp, is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned.</description>
+    </item>
+    
+    <item>
+      <title>Net Price</title>
+      <link>/hotelx/plugins/net-price/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/net-price/</guid>
+      <description>Net Price is an optional plugin and allows to net all the prices in an option.
+NetPriceX This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices. Suppliers commission file specifies the commission applied to supplier’s prices.</description>
+    </item>
+    
+    <item>
+      <title>Processor</title>
+      <link>/hotelx/plugins/processor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/processor/</guid>
+      <description>Processor plugins extends HotelX allowing multiple operation types. It can modify request and response messages, allowing a full range of operations:
+ Split arrays Join arrays Modify object values Add or remove object instances  </description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>/hotelx/plugins/development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/development/</guid>
+      <description>On this page you will learn how to develop your own HotelX plugin.</description>
+    </item>
+    
+  </channel>
+</rss>

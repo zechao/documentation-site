@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HotelX on TravelgateX Documentation</title>
+    <link>/hotelx/</link>
+    <description>Recent content in HotelX on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/hotelx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Overview</title>
+      <link>/hotelx/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/overview/</guid>
+      <description>HotelX is the ultimate connectivity solution. Besides enabling you to connect to multiple ’Suppliers’, it also adds business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.
+  Each and every layer described in the this figure is explained as follows:
+GraphQL Gateway Our gateway is the only endpoint to access all of our products, which has the authentication and authorization of our system.</description>
+    </item>
+    
+    <item>
+      <title>Quickstart</title>
+      <link>/hotelx/quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/quickstart/</guid>
+      <description>This page shows you how to perform a basic hotel booking using GraphQL Playground.
+Before Starting  Follow the steps in Creating an API Key to get your API Key.  Check the connectivity of your API Key.  Open the sample Playground and modify HTTP HEADERS field Authorization with your API Key and indicated your client into request settings.   { &amp;quot;settings&amp;quot;: { &amp;quot;client&amp;quot;: &amp;quot;yourClient&amp;quot; } }  Step by Step Search a Hotel  Open search tabs.</description>
+    </item>
+    
+  </channel>
+</rss>

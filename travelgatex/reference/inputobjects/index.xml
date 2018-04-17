@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Input objects on TravelgateX Documentation</title>
+    <link>/travelgatex/reference/inputobjects/</link>
+    <description>Recent content in Input objects on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/travelgatex/reference/inputobjects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AccessConfigurationInput</title>
+      <link>/travelgatex/reference/inputobjects/accessconfigurationinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/accessconfigurationinput/</guid>
+      <description>The information required to access the supplier&amp;rsquo;s system.
+GraphQL Schema definition type AccessConfigurationInput {isActive: Boolean! code: String! supplier: String! configuration: ConfigurationInput }Fields isActive(Boolean!):Indicates if the access is active.code(String!):Arbitrary not unique identifiersupplier(String!):Supplier to which this access belongsconfiguration(ConfigurationInput):Information required to access the supplier&amp;#39;s system.</description>
+    </item>
+    
+    <item>
+      <title>AccessConnectUserInput</title>
+      <link>/travelgatex/reference/inputobjects/accessconnectuserinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/accessconnectuserinput/</guid>
+      <description>Connect user input for data access management API
+GraphQL Schema definition type AccessConnectUserInput {code: String! isActive: Boolean! groups: [ConnectUserGroupInput!] }Fields code(String!):connect user codeisActive(Boolean!):Indicates if the connect user is active.groups([ConnectUserGroupInput!]):groups related to this connect user</description>
+    </item>
+    
+    <item>
+      <title>AccessFilter</title>
+      <link>/travelgatex/reference/inputobjects/accessfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/accessfilter/</guid>
+      <description>GraphQL Schema definition type AccessFilter {accessID: [ID] group: [ID] }Fields accessID([ID]):group([ID]):</description>
+    </item>
+    
+    <item>
+      <title>AccessFilterInput</title>
+      <link>/travelgatex/reference/inputobjects/accessfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/accessfilterinput/</guid>
+      <description>Include OR exclude accesses in this specific search query. If not specified, default accesses will be used. Only one list (includes or excludes) MUST be used.
+GraphQL Schema definition type AccessFilterInput {includes: [ID!] excludes: [ID!] }Fields includes([ID!]):These Access IDs will overwrite the default configuration. Only the IDs on this list will be used in the search query.excludes([ID!</description>
+    </item>
+    
+    <item>
+      <title>AccessInput</title>
+      <link>/travelgatex/reference/inputobjects/accessinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/accessinput/</guid>
+      <description>Access input
+GraphQL Schema definition type AccessInput {name: String! isActive: Boolean code: ID supplier: String isTest: Boolean user: String password: String urls: UrlsInput parameters: [ParameterInput] markets: [String!] rateRules: [RateRulesType!] shared: String group: ID }Fields name(String!</description>
+    </item>
+    
+    <item>
+      <title>AccessSupplierInput</title>
+      <link>/travelgatex/reference/inputobjects/accesssupplierinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/accesssupplierinput/</guid>
+      <description>Supplier input for data access management API
+GraphQL Schema definition type AccessSupplierInput {code: String! dll: String! isActive: Boolean! groups: [SupplierGroupInput!] }Fields code(String!):supplier codedll(String!):supplier instanceisActive(Boolean!):Indicates if the supplier is active.groups([SupplierGroupInput!]):groups related to this supplier</description>
+    </item>
+    
+    <item>
+      <title>BookPaxInput</title>
+      <link>/travelgatex/reference/inputobjects/bookpaxinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/bookpaxinput/</guid>
+      <description>Input BookPax contains basic information abaout pax suach as name, surname and age.
+GraphQL Schema definition type BookPaxInput {name: String! surname: String! age: Int! }Fields name(String!):The guest&amp;#39;s first namesurname(String!):The guest&amp;#39;s last nameage(Int!):The guest&amp;#39;s age</description>
+    </item>
+    
+    <item>
+      <title>BookReferenceInput</title>
+      <link>/travelgatex/reference/inputobjects/bookreferenceinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/bookreferenceinput/</guid>
+      <description>Reference object that contains the client reference and/or supplier reference.
+GraphQL Schema definition type BookReferenceInput {client: String supplier: String }Fields client(String):The client&amp;#39;s referencesupplier(String):The Supplier&amp;#39;s reference
+Require by HotelCancelInput: Cancellation Criteria.</description>
+    </item>
+    
+    <item>
+      <title>BookRoomInput</title>
+      <link>/travelgatex/reference/inputobjects/bookroominput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/bookroominput/</guid>
+      <description>Input BookRoom contains list of pax and the room&amp;rsquo;s reference.
+GraphQL Schema definition type BookRoomInput {occupancyRefId: Int! paxes: [BookPaxInput!]! }Fields occupancyRefId(Int!):The room&amp;#39;s reference in the bookingpaxes([BookPaxInput!]!):The list or lists of paxes of the room</description>
+    </item>
+    
+    <item>
+      <title>BusinessRulesInput</title>
+      <link>/travelgatex/reference/inputobjects/businessrulesinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/businessrulesinput/</guid>
+      <description>List of business rules to use as filter on the options.
+GraphQL Schema definition type BusinessRulesInput {optionsQuota: Int businessRulesType: BusinessRulesType }Fields optionsQuota(Int):Options quota per search. Maximum numbers of options to be returned by the search query.businessRulesType(BusinessRulesType):Different business rules to filter the returned options.
+Require by HotelSettingsInput: Settings that you can edit for this avail.</description>
+    </item>
+    
+    <item>
+      <title>ClientFilter</title>
+      <link>/travelgatex/reference/inputobjects/clientfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/clientfilter/</guid>
+      <description>GraphQL Schema definition type ClientFilter {clientID: [ID] groupID: [ID] isActive: Boolean }Fields clientID([ID]):groupID([ID]):isActive(Boolean):</description>
+    </item>
+    
+    <item>
+      <title>ClientInput</title>
+      <link>/travelgatex/reference/inputobjects/clientinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/clientinput/</guid>
+      <description>GraphQL Schema definition type ClientInput {code: ID! name: String isActive: Boolean }Fields code(ID!):ID identifier of a Clientname(String):Client complete nameisActive(Boolean):Indicates whether a Client is active</description>
+    </item>
+    
+    <item>
+      <title>ConfigurationInput</title>
+      <link>/travelgatex/reference/inputobjects/configurationinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/configurationinput/</guid>
+      <description>The information and credentials required to access the supplier’s system.
+GraphQL Schema definition type ConfigurationInput {username: String password: String urls: UrlsInput! parameters: [ParameterInput!] markets: [String!] rateRules: [RateRulesType!] }Fields username(String):User name for the connection.password(String):Password for the connection.urls(UrlsInput!):Url or endpoint for the connection.</description>
+    </item>
+    
+    <item>
+      <title>ConnectUserGroupInput</title>
+      <link>/travelgatex/reference/inputobjects/connectusergroupinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/connectusergroupinput/</guid>
+      <description>group related to a connect user
+GraphQL Schema definition type ConnectUserGroupInput {groupCode: String! isActive: Boolean! }Fields groupCode(String!):group code of the group related to this connect userisActive(Boolean!):Indicates if the connect user is active for its connect user</description>
+    </item>
+    
+    <item>
+      <title>CreateGroupInput</title>
+      <link>/travelgatex/reference/inputobjects/creategroupinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/creategroupinput/</guid>
+      <description>GraphQL Schema definition type CreateGroupInput {code: String! type: GroupType! info: String parent: ID! template: Template }Fields code(String!):type(GroupType!):info(String):parent(ID!):template(Template):</description>
+    </item>
+    
+    <item>
+      <title>CreateMemberInput</title>
+      <link>/travelgatex/reference/inputobjects/creatememberinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/creatememberinput/</guid>
+      <description>GraphQL Schema definition type CreateMemberInput {code: String info: String type: MemberType! group: String! roles: [String!]! resource: String! }Fields code(String):info(String):type(MemberType!):group(String!):roles([String!]!):resource(String!):</description>
+    </item>
+    
+    <item>
+      <title>CriteriaBookingDatesInput</title>
+      <link>/travelgatex/reference/inputobjects/criteriabookingdatesinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/criteriabookingdatesinput/</guid>
+      <description>Criteria by dates
+GraphQL Schema definition type CriteriaBookingDatesInput {dateType: DateType! start: Date! end: Date! }Fields dateType(DateType!):Type of date. Can be Arrival or Booking date.start(Date!):Start date. Format: yyyy-MM-dd.end(Date!):End date. Format: yyyy-MM-dd.
+Require by HotelCriteriaBookingInput: Criteria of book contains basic information to find a book or books.</description>
+    </item>
+    
+    <item>
+      <title>CriteriaBookingReferencesInput</title>
+      <link>/travelgatex/reference/inputobjects/criteriabookingreferencesinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/criteriabookingreferencesinput/</guid>
+      <description>Criteria by references
+GraphQL Schema definition type CriteriaBookingReferencesInput {hotelCode: String! currency: Currency! references: [BookReferenceInput!]! }Fields hotelCode(String!):The hotel code.currency(Currency!):The requested currency. The API will convert to this currency if supplier returns a different one.references([BookReferenceInput!]!):Contains the client reference and/or supplier reference.
+Require by HotelCriteriaBookingInput: Criteria of book contains basic information to find a book or books.</description>
+    </item>
+    
+    <item>
+      <title>DefaultSettingsBusinessRulesInput</title>
+      <link>/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput/</guid>
+      <description>Input delta price, indicates the price variation permitted by the client before failing the booking.
+GraphQL Schema definition type DefaultSettingsBusinessRulesInput {optionsQuota: Int! businessRulesType: BusinessRulesType! }Fields optionsQuota(Int!):Options quota per avail. Numbers of options wanted by avail.businessRulesType(BusinessRulesType!):Different business rules to filter the options that you are interested.
+Require by DefaultSettingsInput:</description>
+    </item>
+    
+    <item>
+      <title>DefaultSettingsInput</title>
+      <link>/travelgatex/reference/inputobjects/defaultsettingsinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/defaultsettingsinput/</guid>
+      <description>GraphQL Schema definition type DefaultSettingsInput {groupCode: String! connectUser: String! context: String language: Language! currency: Currency! nationality: Country! market: String! timeout: TimeoutInput! businessRules: DefaultSettingsBusinessRulesInput! }Fields groupCode(String!):Unique IdconnectUser(String!):This field is got only if the authorization header is of the type JWT.</description>
+    </item>
+    
+    <item>
+      <title>DeleteGroupInput</title>
+      <link>/travelgatex/reference/inputobjects/deletegroupinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/deletegroupinput/</guid>
+      <description>GraphQL Schema definition type DeleteGroupInput {code: ID! }Fields code(ID!):</description>
+    </item>
+    
+    <item>
+      <title>DeleteMemberInput</title>
+      <link>/travelgatex/reference/inputobjects/deletememberinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/deletememberinput/</guid>
+      <description>GraphQL Schema definition type DeleteMemberInput {code: ID! group: ID! }Fields code(ID!):group(ID!):</description>
+    </item>
+    
+    <item>
+      <title>DeltaPriceInput</title>
+      <link>/travelgatex/reference/inputobjects/deltapriceinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/deltapriceinput/</guid>
+      <description>Input delta price, indicates price variation permitted by the client
+GraphQL Schema definition type DeltaPriceInput {amount: Float percent: Float applyBoth: Boolean! }Fields amount(Float):The amount in the currency returned by the option that will be accepted by the client to be higher than the valuation price.percent(Float):The percentage accepted by the client to be higher than the valuation price.</description>
+    </item>
+    
+    <item>
+      <title>ExpireDateInput</title>
+      <link>/travelgatex/reference/inputobjects/expiredateinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/expiredateinput/</guid>
+      <description>The card expiration date
+GraphQL Schema definition type ExpireDateInput {month: Int! year: Int! }Fields month(Int!):Month MMyear(Int!):Year yy
+Require by PaymentCardInput: Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information</description>
+    </item>
+    
+    <item>
+      <title>FilterInput</title>
+      <link>/travelgatex/reference/inputobjects/filterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/filterinput/</guid>
+      <description>Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses. You must choose one of them, include or exclude, or the other alternative isn&amp;rsquo;t specified anything. If input both, you will receive a validation error that indicates this error.
+GraphQL Schema definition type FilterInput {access: AccessFilterInput rateRules: RateRulesFilterInput }Fields access(AccessFilterInput):You can specify one of the filters or any of them.</description>
+    </item>
+    
+    <item>
+      <title>GroupAccessInput</title>
+      <link>/travelgatex/reference/inputobjects/groupaccessinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/groupaccessinput/</guid>
+      <description>GraphQL Schema definition type GroupAccessInput {groupCodes: [String!] accesses: [AccessConfigurationInput!]! }Fields groupCodes([String!]):groups identifiers in which the access will be associatedaccesses([AccessConfigurationInput!]!):access related data</description>
+    </item>
+    
+    <item>
+      <title>GroupInput</title>
+      <link>/travelgatex/reference/inputobjects/groupinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/groupinput/</guid>
+      <description>GraphQL Schema definition type GroupInput {id: ID! groups: [ID] }Fields id(ID!):Id of the resource permissions to be granted.groups([ID]):Groups that will see this resoruce.</description>
+    </item>
+    
+    <item>
+      <title>HolderInput</title>
+      <link>/travelgatex/reference/inputobjects/holderinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/holderinput/</guid>
+      <description>Holder object that contains the pax name and surname.
+GraphQL Schema definition type HolderInput {name: String! surname: String! }Fields name(String!):The card holder&amp;#39;s namesurname(String!):The card holder&amp;#39;s surname
+Require by HotelBookInput: Criteria of book.PaymentCardInput: Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information</description>
+    </item>
+    
+    <item>
+      <title>HotelBookInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelbookinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelbookinput/</guid>
+      <description>Criteria of book.
+GraphQL Schema definition type HotelBookInput {optionRefId: String! language: Language clientReference: String! deltaPrice: DeltaPriceInput paymentCard: PaymentCardInput remarks: String holder: HolderInput! rooms: [BookRoomInput!]! }Fields optionRefId(String!):Option IDlanguage(Language):Language to be used in request.clientReference(String!):Booking ID in client&amp;#39;s system.</description>
+    </item>
+    
+    <item>
+      <title>HotelCancelInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelcancelinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelcancelinput/</guid>
+      <description>Cancellation Criteria.
+GraphQL Schema definition type HotelCancelInput {accessCode: String! language: Language hotelCode: String! reference: BookReferenceInput! }Fields accessCode(String!):The name of the access to use in the request.language(Language):The language code.hotelCode(String!):The hotel code.reference(BookReferenceInput!):Contains the client reference and/or supplier reference. One of them is mandatory.</description>
+    </item>
+    
+    <item>
+      <title>HotelCriteriaBookingInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelcriteriabookinginput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelcriteriabookinginput/</guid>
+      <description>Criteria of book contains basic information to find a book or books.
+GraphQL Schema definition type HotelCriteriaBookingInput {accessCode: String! language: Language typeSearch: BookingCriteriaType! references: CriteriaBookingReferencesInput dates: CriteriaBookingDatesInput }Fields accessCode(String!):Name of the access that have to use in the request.language(Language):The language code.typeSearch(BookingCriteriaType!):The search type criteria.</description>
+    </item>
+    
+    <item>
+      <title>HotelCriteriaQuoteInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelcriteriaquoteinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelcriteriaquoteinput/</guid>
+      <description>The quote criteria contains the option reference id, block and language.
+GraphQL Schema definition type HotelCriteriaQuoteInput {optionRefId: String! language: Language }Fields optionRefId(String!):Identifier of the option chosen in the search.language(Language):Language to be used in request.</description>
+    </item>
+    
+    <item>
+      <title>HotelCriteriaSearchInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelcriteriasearchinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelcriteriasearchinput/</guid>
+      <description>Criteria of search contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.
+GraphQL Schema definition type HotelCriteriaSearchInput {checkIn: Date! checkOut: Date! hotels: [String!]! occupancies: [RoomInput!]! language: Language currency: Currency nationality: Country market: String }Fields checkIn(Date!</description>
+    </item>
+    
+    <item>
+      <title>HotelSettingsInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelsettingsinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelsettingsinput/</guid>
+      <description>Settings that you can edit for this avail. Values are loaded by default in our Back Office.
+GraphQL Schema definition type HotelSettingsInput {context: String Show deprecated fieldsuseContext: : Boolean // Indicates if you want use context, or not, by default is true. @deprecated(reason: &amp;#34;deprecated from2017-12-12Redundant.&amp;#34;)connectUser: : String // This field is got only if the authorization header is of the type JWT.</description>
+    </item>
+    
+    <item>
+      <title>HotelXAccessInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxaccessinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxaccessinput/</guid>
+      <description>AccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.
+GraphQL Schema definition type HotelXAccessInput {accessId: ID! configuration: ConfigurationInput settings: SettingsBaseInput }Fields accessId(ID!):The accessID used to identify the existing access in our Back Office in order to overwrite it.</description>
+    </item>
+    
+    <item>
+      <title>HotelXBoardQueryInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxboardqueryinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxboardqueryinput/</guid>
+      <description>GraphQL Schema definition type HotelXBoardQueryInput {boardCodes: [String!] access: ID! }Fields boardCodes([String!]):access(ID!):</description>
+    </item>
+    
+    <item>
+      <title>HotelXCategoryQueryInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxcategoryqueryinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxcategoryqueryinput/</guid>
+      <description>GraphQL Schema definition type HotelXCategoryQueryInput {categoryCodes: [String!] access: ID! }Fields categoryCodes([String!]):access(ID!):</description>
+    </item>
+    
+    <item>
+      <title>HotelXDestinationListInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxdestinationlistinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxdestinationlistinput/</guid>
+      <description>GraphQL Schema definition type HotelXDestinationListInput {access: ID! destinationCodes: [String!] maxSize: Int }Fields access(ID!):Indicates the accessdestinationCodes([String!]):Search by hotel codesmaxSize(Int):Maxium number of items per page</description>
+    </item>
+    
+    <item>
+      <title>HotelXDestinationSearcherInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput/</guid>
+      <description>GraphQL Schema definition type HotelXDestinationSearcherInput {access: ID! text: String! maxSize: Int }Fields access(ID!):Indicates the accesstext(String!):Search by hotel name or destination namemaxSize(Int):Maxium number of items per type</description>
+    </item>
+    
+    <item>
+      <title>HotelXHotelListInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxhotellistinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxhotellistinput/</guid>
+      <description>GraphQL Schema definition type HotelXHotelListInput {access: ID! hotelCodes: [String!] destinationCodes: [String!] ranks: [Int!] maxSize: Int }Fields access(ID!):Indicates the accesshotelCodes([String!]):Search by hotel codesdestinationCodes([String!]):Search by destination codes, only search by minimal destinationsranks([Int!]):Filter by supplier rankmaxSize(Int):Maxium number of items per page</description>
+    </item>
+    
+    <item>
+      <title>HotelXRoomQueryInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxroomqueryinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxroomqueryinput/</guid>
+      <description>GraphQL Schema definition type HotelXRoomQueryInput {roomCodes: [String!] access: ID! }Fields roomCodes([String!]):access(ID!):</description>
+    </item>
+    
+    <item>
+      <title>HotelXSupplierInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxsupplierinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxsupplierinput/</guid>
+      <description>Supplier object. Contains its own settings, code and access.
+GraphQL Schema definition type HotelXSupplierInput {settings: SettingsBaseInput code: String! accesses: [HotelXAccessInput!] }Fields settings(SettingsBaseInput):You can configure an special settings for any supplier. This level overwrites the avail settings level but not the access settings level.code(String!):Code that represents a supplier in our system. This information is mandatory.</description>
+    </item>
+    
+    <item>
+      <title>IdAccessConfigurationInput</title>
+      <link>/travelgatex/reference/inputobjects/idaccessconfigurationinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/idaccessconfigurationinput/</guid>
+      <description>GraphQL Schema definition type IdAccessConfigurationInput {id: ID! isActive: Boolean! code: String! supplier: String! configuration: ConfigurationInput }Fields id(ID!):access unique identifierisActive(Boolean!):Indicates if the access is active.code(String!):Arbitrary not unique identifiersupplier(String!):Supplier to which this access belongsconfiguration(ConfigurationInput):Information required to access the supplier&amp;#39;s system.</description>
+    </item>
+    
+    <item>
+      <title>IdGroupAccessInput</title>
+      <link>/travelgatex/reference/inputobjects/idgroupaccessinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/idgroupaccessinput/</guid>
+      <description>GraphQL Schema definition type IdGroupAccessInput {groupCodes: [String!] accesses: [IdAccessConfigurationInput!]! }Fields groupCodes([String!]):identifier of the groups in which the access will be associatedaccesses([IdAccessConfigurationInput!]!):</description>
+    </item>
+    
+    <item>
+      <title>ParameterInput</title>
+      <link>/travelgatex/reference/inputobjects/parameterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/parameterinput/</guid>
+      <description>Parameters Input.
+GraphQL Schema definition type ParameterInput {key: String! value: String! }Fields key(String!):Contains the keyword/Id to identify a parameter. This information is mandatory.value(String!):Contains the parameter values. This information is mandatory.
+Require by AccessInput: Access input</description>
+    </item>
+    
+    <item>
+      <title>PaxInput</title>
+      <link>/travelgatex/reference/inputobjects/paxinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/paxinput/</guid>
+      <description>Pax object that contains the pax age.
+GraphQL Schema definition type PaxInput {age: Int! }Fields age(Int!):Pax age.</description>
+    </item>
+    
+    <item>
+      <title>PaymentCardInput</title>
+      <link>/travelgatex/reference/inputobjects/paymentcardinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/paymentcardinput/</guid>
+      <description>Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information
+GraphQL Schema definition type PaymentCardInput {cardType: String! holder: HolderInput! number: String! CVC: String! expire: ExpireDateInput! }Fields cardType(String!):Indicates the card type.holder(HolderInput!):Contains owner&amp;#39;s namenumber(String!</description>
+    </item>
+    
+    <item>
+      <title>PluginStepInput</title>
+      <link>/travelgatex/reference/inputobjects/pluginstepinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/pluginstepinput/</guid>
+      <description>Plugin to execute.
+GraphQL Schema definition type PluginStepInput {step: PluginStepType! pluginsType: [PluginsInput!] }Fields step(PluginStepType!):Indicates where the plugin will be executed.pluginsType([PluginsInput!]):</description>
+    </item>
+    
+    <item>
+      <title>PluginsInput</title>
+      <link>/travelgatex/reference/inputobjects/pluginsinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/pluginsinput/</guid>
+      <description>Plugin to execute.
+GraphQL Schema definition type PluginsInput {type: PluginType! name: String! parameters: [ParameterInput!] }Fields type(PluginType!):type of the plugins to executename(String!):name of plugin to executeparameters([ParameterInput!]):Plugin&amp;#39;s parameters</description>
+    </item>
+    
+    <item>
+      <title>RateRulesFilterInput</title>
+      <link>/travelgatex/reference/inputobjects/raterulesfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/raterulesfilterinput/</guid>
+      <description>If requested, only options with the specified rateRules will be returned
+GraphQL Schema definition type RateRulesFilterInput {includes: [RateRulesType!] excludes: [RateRulesType!] }Fields includes([RateRulesType!]):if includes not nil: only options without rate rules and options with rate rules found in includes will be returnedexcludes([RateRulesType!]):if excludes not nil: only options without rate rules and options with rate rules that haven&amp;#39;t been sent in excludes will be returned</description>
+    </item>
+    
+    <item>
+      <title>RelayInput</title>
+      <link>/travelgatex/reference/inputobjects/relayinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/relayinput/</guid>
+      <description>GraphQL Schema definition type RelayInput {first: Int last: Int before: String after: String }Fields first(Int):last(Int):before(String):after(String):</description>
+    </item>
+    
+    <item>
+      <title>RoomInput</title>
+      <link>/travelgatex/reference/inputobjects/roominput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/roominput/</guid>
+      <description>Occupancy for a room. It contains a list of pax ages.
+GraphQL Schema definition type RoomInput {paxes: [PaxInput!]! }Fields paxes([PaxInput!]!):Array of pax ages. The number of items in the array will indicate the pax occupancy.</description>
+    </item>
+    
+    <item>
+      <title>ServiceApiFilter</title>
+      <link>/travelgatex/reference/inputobjects/serviceapifilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/serviceapifilter/</guid>
+      <description>GraphQL Schema definition type ServiceApiFilter {ApiName: String OperationName: String OperationType: String }Fields ApiName(String):OperationName(String):OperationType(String):</description>
+    </item>
+    
+    <item>
+      <title>SettingsBaseInput</title>
+      <link>/travelgatex/reference/inputobjects/settingsbaseinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/settingsbaseinput/</guid>
+      <description>Contains the time out and business rules of a supplier or an access.
+GraphQL Schema definition type SettingsBaseInput {timeout: Int auditTransactions: Boolean businessRules: BusinessRulesInput }Fields timeout(Int):Milliseconds before the connection is closed.auditTransactions(Boolean):Specifies if transactions exchanged with the supplier have to be logged or not.businessRules(BusinessRulesInput):Business rules.
+Require by HotelXSupplierInput: Supplier object.</description>
+    </item>
+    
+    <item>
+      <title>SupplierFilter</title>
+      <link>/travelgatex/reference/inputobjects/supplierfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/supplierfilter/</guid>
+      <description>GraphQL Schema definition type SupplierFilter {supplierID: [ID] accessID: [ID] }Fields supplierID([ID]):accessID([ID]):</description>
+    </item>
+    
+    <item>
+      <title>SupplierGroupInput</title>
+      <link>/travelgatex/reference/inputobjects/suppliergroupinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/suppliergroupinput/</guid>
+      <description>group related to a supplier
+GraphQL Schema definition type SupplierGroupInput {groupCode: String! isActive: Boolean! }Fields groupCode(String!):group code of the group related to this supplierisActive(Boolean!):Indicates if the supplier is active for its supplier</description>
+    </item>
+    
+    <item>
+      <title>TimeoutInput</title>
+      <link>/travelgatex/reference/inputobjects/timeoutinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/timeoutinput/</guid>
+      <description>GraphQL Schema definition type TimeoutInput {search: Int! quote: Int! book: Int! }Fields search(Int!):Milliseconds before the search connection is closed.quote(Int!):Milliseconds before the quote connection is closed.book(Int!):Milliseconds before the book connection is closed.
+Require by DefaultSettingsInput:</description>
+    </item>
+    
+    <item>
+      <title>UpdateGroupInput</title>
+      <link>/travelgatex/reference/inputobjects/updategroupinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/updategroupinput/</guid>
+      <description>GraphQL Schema definition type UpdateGroupInput {api: String! code: String! info: String method: Method! }Fields api(String!):code(String!):info(String):method(Method!):</description>
+    </item>
+    
+    <item>
+      <title>UpdateMemberInput</title>
+      <link>/travelgatex/reference/inputobjects/updatememberinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/updatememberinput/</guid>
+      <description>GraphQL Schema definition type UpdateMemberInput {code: String! info: String group: String! roles: [String!]! resource: String! method: Method! }Fields code(String!):info(String):group(String!):roles([String!]!):resource(String!):method(Method!):</description>
+    </item>
+    
+    <item>
+      <title>UrlsInput</title>
+      <link>/travelgatex/reference/inputobjects/urlsinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/urlsinput/</guid>
+      <description>Urls Input
+GraphQL Schema definition type UrlsInput {search: URI quote: URI book: URI generic: URI }Fields search(URI):Specific Url for Availability method.quote(URI):Specific Url for Reservation method.book(URI):Specific Url for Valuation method.generic(URI):Supplier URL used for multiple methods.
+Require by ConfigurationInput: The information and credentials required to access the supplier’s system.</description>
+    </item>
+    
+  </channel>
+</rss>

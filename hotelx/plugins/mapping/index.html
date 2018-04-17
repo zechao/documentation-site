@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.38.2" />
 <title>Mapping :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -1370,6 +1370,11 @@
         </li>
             </ul>
         </li>
+          <li data-nav-id="/travelgatex/reference/changelog/" class="dd-item">
+            <a href="/travelgatex/reference/changelog/">
+              <span style="padding-left: 8px;">Changelog</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/security/" class="dd-item">
@@ -1815,31 +1820,64 @@
 
     
 
-<p>The map plugins are used to change the supplier codes to client codes or vice versa. There are four types:
-* Hotel map 
-* Board Map 
-* Room Map 
-* Rate Map 
-Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:</p>
+<p>The map plugins are used to change the supplier codes to client codes or vice versa. There are four types:</p>
+
+<ul>
+<li>Hotel map </li>
+<li>Board Map </li>
+<li>Room Map </li>
+<li>Rate Map </li>
+</ul>
+
+<p>Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:</p>
 
 <h2 id="format-file">Format File</h2>
 
-<p>The file should be in the following format:
-* <strong>Encoding</strong>: UTF-8
-* <strong>File Name</strong>: [Context Source]_hotel_map.csv
-* <strong>Header Row</strong>: Code Source, Context Destination, Code Destination
-* <strong>Delimiter</strong>: Comma (&ldquo;,&rdquo;)
-* <strong>Directory</strong>: <a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/[entity]/ ">ftp://ftp.xmltravelgate.com/Purchasing/Maps/[entity]/ </a></p>
+<p>The file should be in the following format:</p>
 
-<h3 id="file-names">File Names</h3>
+<ul>
+<li><strong>Encoding</strong>: UTF-8</li>
+<li><strong>File Name</strong>: [Context Source]_hotel_map.csv</li>
+<li><strong>Header Row</strong>: Code Source, Context Destination, Code Destination</li>
+<li><strong>Delimiter</strong>: Comma (&ldquo;,&rdquo;)</li>
 
-<p>All files must have the same name structure
-|Entity|File Name|
-|&mdash;|&mdash;-|
-|Hotel|[Context Source]_[Context Destination]_hotel_map.csv|
-|Board|[Context Source]_[Context Destination]_board_map.csv|
-|Room|[Context Source]_[Context Destination]_room_map.csv|
-|Rate|[Context Source]_[Context Destination]_rate_map.csv|</p>
+<li><p><strong>Directory</strong>: <a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/[entity]/ ">ftp://ftp.xmltravelgate.com/Purchasing/Maps/[entity]/ </a></p>
+
+<h3 id="file-names">File Names</h3></li>
+</ul>
+
+<p>All files must have the same name structure</p>
+
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>File Name</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Hotel</td>
+<td>[Context Source]_[Context Destination]_hotel_map.csv</td>
+</tr>
+
+<tr>
+<td>Board</td>
+<td>[Context Source]_[Context Destination]_board_map.csv</td>
+</tr>
+
+<tr>
+<td>Room</td>
+<td>[Context Source]_[Context Destination]_room_map.csv</td>
+</tr>
+
+<tr>
+<td>Rate</td>
+<td>[Context Source]_[Context Destination]_rate_map.csv</td>
+</tr>
+</tbody>
+</table>
 
 <h3 id="directories">Directories</h3>
 
@@ -1927,20 +1965,26 @@ Download file sample <a href="../sample.csv">here</a>.</p>
 
 <h2 id="files">Files</h2>
 
-<p>We have two files for this plugin:
-* Alias Table: it is used to replace some words from the description 
-* Noise Words: it deletes some words from the description </p>
+<p>We have two files for this plugin:</p>
+
+<ul>
+<li>Alias Table: it is used to replace some words from the description </li>
+<li>Noise Words: it deletes some words from the description </li>
+</ul>
 
 <h3 id="alias-table">Alias Table</h3>
 
 <h4 id="format-file-1">Format File</h4>
 
-<p>The file must be in the below format:
-* Encoding: UTF-8 
-* File Name: roomDescriptionMapX_aliasTable.csv 
-* Header Row: ToReplace, ReplaceWith, Order 
-* Delimiter:  Comma (“,”) 
-* Directory: <a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ ">ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ </a></p>
+<p>The file must be in the below format:</p>
+
+<ul>
+<li>Encoding: UTF-8 </li>
+<li>File Name: roomDescriptionMapX_aliasTable.csv </li>
+<li>Header Row: ToReplace, ReplaceWith, Order </li>
+<li>Delimiter:  Comma (“,”) </li>
+
+<li><p>Directory: <a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ ">ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ </a></p>
 
 <h4 id="sample-file-1">Sample File</h4>
 
@@ -1955,13 +1999,17 @@ apartment,apt,902</p>
 
 <h3 id="noise-words">Noise Words</h3>
 
-<h4 id="format-file-2">Format File</h4>
+<h4 id="format-file-2">Format File</h4></li>
+</ul>
 
-<p>The file must be in the below format:
-* <strong>Encoding</strong>: UTF-8 
-* <strong>File Name</strong>: roomDescriptionMapX_noiseWords.csv 
-* <strong>Header Row</strong>: ToRemove 
-* <strong>Directory</strong>: <a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ ">ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ </a></p>
+<p>The file must be in the below format:</p>
+
+<ul>
+<li><strong>Encoding</strong>: UTF-8 </li>
+<li><strong>File Name</strong>: roomDescriptionMapX_noiseWords.csv </li>
+<li><strong>Header Row</strong>: ToRemove </li>
+
+<li><p><strong>Directory</strong>: <a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ ">ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ </a></p>
 
 <h4 id="sample-file-2">Sample File</h4>
 
@@ -1974,12 +2022,17 @@ breakf</p>
 
 <h2 id="how-applies">How applies</h2>
 
-<p>When you execute the plugin the steps are:
-1. Get room description.
-1. Replace strings with roomDescriptionMapX_aliasTable.csv, the order to apply this replace depends on the order column.
-1. Sort the description words alphabetically 
-1. Remove words with roomDescriptionMapX_noiseWords.csv file. 
-1. Get your new code. </p>
+<p>When you execute the plugin the steps are:</p></li>
+
+<li><p>Get room description.</p></li>
+
+<li><p>Replace strings with roomDescriptionMapX_aliasTable.csv, the order to apply this replace depends on the order column.</p></li>
+
+<li><p>Sort the description words alphabetically </p></li>
+
+<li><p>Remove words with roomDescriptionMapX_noiseWords.csv file. </p></li>
+
+<li><p>Get your new code. </p>
 
 <h2 id="execution-example">Execution example</h2>
 
@@ -1994,7 +2047,8 @@ breakf</p>
         ]
     }
 }
-</code></pre>
+</code></pre></li>
+</ul>
 
 
 <hr/>

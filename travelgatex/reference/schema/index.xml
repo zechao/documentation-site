@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Schema on TravelgateX Documentation</title>
+    <link>/travelgatex/reference/schema/</link>
+    <description>Recent content in Schema on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/travelgatex/reference/schema/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mutation</title>
+      <link>/travelgatex/reference/schema/mutation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/schema/mutation/</guid>
+      <description>Mutations are operations that change or update data in the server.
+GraphQL Schema definition type Mutation {hotelX: HotelXMutation admin: AdminMutation Show deprecated fieldshotelBook(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload // deprecated from 2017-11-21. You can find it in query at HotelXhotelCancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload // deprecated from 2017-11-21. You can find it in query at HotelXloadFile(input: String!</description>
+    </item>
+    
+    <item>
+      <title>Query</title>
+      <link>/travelgatex/reference/schema/query/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/schema/query/</guid>
+      <description>GraphQL Schema definition type Query {hotelX: HotelXQuery admin: AdminQuery Show deprecated fieldssearch: : Search! // quote: : Quote! // booking: : Booking // defaultSettings(groupCode: String!,): DefaultSettings // deprecated from 2017-11-21. You can find it in query at Adminmapping(groupCode: String!,): Mapping!</description>
+    </item>
+    
+  </channel>
+</rss>

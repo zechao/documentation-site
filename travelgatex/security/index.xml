@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on TravelgateX Documentation</title>
+    <link>/travelgatex/security/</link>
+    <description>Recent content in Security on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/travelgatex/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Overview</title>
+      <link>/travelgatex/security/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/security/overview/</guid>
+      <description>Introduction Resources are granted to Partners belonging to Organizations.
+IAM lets partners administrators authorize who can take action on specific resources, giving you full control and visilibity to manage resources centrally.
+Authentication Authentication is the process of authorizing or making sure that the Partner is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it&amp;rsquo;s an API Key or a JSON Web Token.</description>
+    </item>
+    
+  </channel>
+</rss>

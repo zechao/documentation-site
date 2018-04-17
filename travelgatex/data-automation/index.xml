@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Automation on TravelgateX Documentation</title>
+    <link>/travelgatex/data-automation/</link>
+    <description>Recent content in Data Automation on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/travelgatex/data-automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Uploading Strategies</title>
+      <link>/travelgatex/data-automation/uploading-strategies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/data-automation/uploading-strategies/</guid>
+      <description>How to upload data to the platform There are two ways of uploading data to the platform:
+ Secure File Transfer Protocol (SFTP) GraphQL mutation  Secure File Transfer Protocol (SFTP) SFTP, or Secure File Transfer Protocol, is a network protocol that provides a secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in finance, technology, and consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.</description>
+    </item>
+    
+  </channel>
+</rss>

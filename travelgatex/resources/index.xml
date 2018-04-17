@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resources on TravelgateX Documentation</title>
+    <link>/travelgatex/resources/</link>
+    <description>Recent content in Resources on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/travelgatex/resources/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quotas &amp; Limits</title>
+      <link>/travelgatex/resources/quotas-limits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/resources/quotas-limits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Realeases Notes</title>
+      <link>/travelgatex/resources/release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/resources/release-notes/</guid>
+      <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
+2018-04-03 ⚠️ Input field accesses was removed from input object type ClientInput
+⚠️ Field accesses was removed from object type ClientData
+✅ Input field groupID was added to input object type ClientFilter
+✅ Field serviceApi was added to object type AdminQuery
+✅ Description for enum value BookStatusType.UNKNOWN changed from `The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.</description>
+    </item>
+    
+    <item>
+      <title>Roadmap</title>
+      <link>/travelgatex/resources/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/resources/roadmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Frequendly Asked Questions</title>
+      <link>/travelgatex/resources/frequently-asked-questions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/resources/frequently-asked-questions/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

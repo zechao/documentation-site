@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interfaces on TravelgateX Documentation</title>
+    <link>/travelgatex/reference/interfaces/</link>
+    <description>Recent content in Interfaces on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/travelgatex/reference/interfaces/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AdviseMessage</title>
+      <link>/travelgatex/reference/interfaces/advisemessage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/interfaces/advisemessage/</guid>
+      <description>GraphQL Schema definition interface AdviseMessage {code: String! type: String! description: String! }Fields code(String!):TODO: Error code: The following codes can be returned: XXX: XXXXXXXXX XXXXXXtype(String!):TODO: Error type: The following types are valid: XXX: asd asdñoajskd lña lddescription(String!):Error description</description>
+    </item>
+    
+    <item>
+      <title>BookableOptionSearch</title>
+      <link>/travelgatex/reference/interfaces/bookableoptionsearch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/interfaces/bookableoptionsearch/</guid>
+      <description>GraphQL Schema definition interface BookableOptionSearch {supplierCode: String! accessCode: String! id: String! }Fields supplierCode(String!):Supplier that offers this option.accessCode(String!):Access code of this option.id(String!):Indicates the id to be used on Quote as key</description>
+    </item>
+    
+    <item>
+      <title>GroupCommonData</title>
+      <link>/travelgatex/reference/interfaces/groupcommondata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/interfaces/groupcommondata/</guid>
+      <description>GraphQL Schema definition interface GroupCommonData {id: ID! code: ID! type: GroupType! info: String owner: Member isEditable: Boolean! members(codes: [ID!],first: Int,last: Int,before: String,after: String,): MemberConnection apis(codes: [ID!</description>
+    </item>
+    
+    <item>
+      <title>Node</title>
+      <link>/travelgatex/reference/interfaces/node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/interfaces/node/</guid>
+      <description>GraphQL Schema definition interface Node {code: ID! error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):ID codeerror([Error!]):Errors that will lead the service to abortcreatedAt(DateTime!):Create dateupdatedAt(DateTime!):Update date</description>
+    </item>
+    
+    <item>
+      <title>Priceable</title>
+      <link>/travelgatex/reference/interfaces/priceable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/interfaces/priceable/</guid>
+      <description>GraphQL Schema definition interface Priceable {currency: Currency! binding: Boolean! net: Float! gross: Float exchange: Exchange! }Fields currency(Currency!):Specifies the currency.binding(Boolean!):Is binding.net(Float!):Specifies the import net.gross(Float):Specifies the import gross.exchange(Exchange!):Specifies the exchange.</description>
+    </item>
+    
+    <item>
+      <title>Response</title>
+      <link>/travelgatex/reference/interfaces/response/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/interfaces/response/</guid>
+      <description>GraphQL Schema definition interface Response {stats(token: String!,): StatsRequest auditData: AuditData errors: [Error!] warnings: [Warning!] }Fields stats(StatsRequest):Application stats in string formatauditData(AuditData):Data sent &amp;amp; received in the supplier’s original format.errors([Error!]):Errors that lead the service to stopwarnings([Warning!]):Potentially harmful situations or errors that do not stop the service</description>
+    </item>
+    
+    <item>
+      <title>Text</title>
+      <link>/travelgatex/reference/interfaces/text/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/interfaces/text/</guid>
+      <description>GraphQL Schema definition interface Text {text: String! language: Language! }Fields text(String!):language(Language!):</description>
+    </item>
+    
+  </channel>
+</rss>
