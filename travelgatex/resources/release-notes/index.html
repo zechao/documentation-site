@@ -530,6 +530,26 @@
               <span style="padding-left: 8px;">Occupancy</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/objects/operation/" class="dd-item">
+            <a href="/travelgatex/reference/objects/operation/">
+              <span style="padding-left: 8px;">Operation</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/operationconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/operationconnection/">
+              <span style="padding-left: 8px;">OperationConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/operationdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/operationdata/">
+              <span style="padding-left: 8px;">OperationData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/operationedge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/operationedge/">
+              <span style="padding-left: 8px;">OperationEdge</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/objects/organization/" class="dd-item">
             <a href="/travelgatex/reference/objects/organization/">
               <span style="padding-left: 8px;">Organization</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1371,9 +1391,9 @@
         </li>
             </ul>
         </li>
-          <li data-nav-id="/travelgatex/reference/changelog/" class="dd-item">
-            <a href="/travelgatex/reference/changelog/">
-              <span style="padding-left: 8px;">Changelog</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/travelgatex/reference/deprecated/" class="dd-item">
+            <a href="/travelgatex/reference/deprecated/">
+              <span style="padding-left: 8px;">Log Deprecated Notices</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1795,19 +1815,6 @@
     </div>
     <div class="content">
       <div class="iso-input-search hidden-xs-down">
-        <div class="ico-label">
-            <i class="fa fa-search" aria-hidden="true"></i>
-        </div>
-        <input data-search-input class="form-control"  id="search-by" type="text" placeholder="Search docs...">
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <script type="text/javascript" src="/js/functions.js"></script>
-        <script type="text/javascript">
-            
-            var baseurl = "\/";
-            
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
       </div>
       <div class="container">
         <div class="row">
@@ -1820,6 +1827,118 @@
     
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
+
+<h2 id="2018-04-17">2018-04-17</h2>
+
+<p>⚠️  Field <code>MemberData.roles</code> changed type from <code>String</code> to <code>RoleConnection</code></p>
+
+<p>✅  Field <code>mappea</code> was added to object type <code>Mutation</code></p>
+
+<p>✅  Field <code>operations</code> was added to object type <code>APIData</code></p>
+
+<p>✅  Field <code>children</code> was added to object type <code>GroupData</code></p>
+
+<p>✅  Argument <code>codes: [ID!]</code> added to field <code>MemberData.roles</code></p>
+
+<p>✅  Argument <code>after: String</code> added to field <code>MemberData.roles</code></p>
+
+<p>✅  Argument <code>before: String</code> added to field <code>MemberData.roles</code></p>
+
+<p>✅  Argument <code>last: Int</code> added to field <code>MemberData.roles</code></p>
+
+<p>✅  Argument <code>first: Int</code> added to field <code>MemberData.roles</code></p>
+
+<p>✅  Field <code>children</code> was added to object type <code>GroupCommonData</code></p>
+
+<p>✅  Field <code>children</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Field <code>travelOperation</code> was added to object type <code>ServiceOperation</code></p>
+
+<p>✅  Field <code>operations</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Input field <code>HotelSettingsInput.client</code> description changed from `This field is got only if the authorization header is of the type JWT. It is used for to change the user that</p>
+
+<p>has been set by default in the preload.<code>to</code>This field is got only if the authorization header is of the type JWT. It is used to change the user that has been set by default in the preload.`</p>
+
+<p>✅  Input field <code>HotelSettingsInput.connectUser</code> description changed from `This field is got only if the authorization header is of the type JWT. It is used for to change the user that</p>
+
+<p>has been set by default in the preload.</p>
+
+<p>@deprecated(reason: &ldquo;deprecated from 2018-03-19. Redundant.&rdquo;)<code>to</code>This field is got only if the authorization header is of the type JWT. It is used to change the user that has been set by default in the preload.</p>
+
+<p>@deprecated(reason: &ldquo;deprecated from 2018-03-19. Redundant.&rdquo;)`</p>
+
+<p>✅  Input field <code>group</code> was added to input object type <code>HotelSettingsInput</code></p>
+
+<p>✅  Field <code>mappea</code> was added to object type <code>Query</code></p>
+
+<p>✅  Field <code>stats</code> was added to object type <code>Query</code></p>
+
+<p>✅  Type <code>LegacyData</code> was added</p>
+
+<p>✅  Type <code>MappeaXMapSupplierInput</code> was added</p>
+
+<p>✅  Type <code>MappeaXUploadFileInput</code> was added</p>
+
+<p>✅  Type <code>SupplierDetected</code> was added</p>
+
+<p>✅  Type <code>UploadFileData</code> was added</p>
+
+<p>✅  Type <code>UploadFileResponse</code> was added</p>
+
+<p>✅  Type <code>MappeaXSupplierConfirmedInput</code> was added</p>
+
+<p>✅  Type <code>MappeaXConfirmUploadInput</code> was added</p>
+
+<p>✅  Type <code>OnlyStatusResponse</code> was added</p>
+
+<p>✅  Type <code>MappeaMutation</code> was added</p>
+
+<p>✅  Type <code>MappeaXGetMappeaStatsInput</code> was added</p>
+
+<p>✅  Type <code>GetMappeaStatsData</code> was added</p>
+
+<p>✅  Type <code>GetMappeaStatsResponse</code> was added</p>
+
+<p>✅  Type <code>File</code> was added</p>
+
+<p>✅  Type <code>GetUploadedFilesData</code> was added</p>
+
+<p>✅  Type <code>GetUploadedFilesResponse</code> was added</p>
+
+<p>✅  Type <code>MappeaQuery</code> was added</p>
+
+<p>✅  Type <code>ServiceApiType</code> was added</p>
+
+<p>✅  Type <code>StatsFilterInput</code> was added</p>
+
+<p>✅  Type <code>ServiceOperationType</code> was added</p>
+
+<p>✅  Type <code>StatsInfoTypes</code> was added</p>
+
+<p>✅  Type <code>StatsInfo</code> was added</p>
+
+<p>✅  Type <code>OperationDetailed</code> was added</p>
+
+<p>✅  Type <code>Ratios</code> was added</p>
+
+<p>✅  Type <code>StatsData</code> was added</p>
+
+<p>✅  Type <code>Stats</code> was added</p>
+
+<p>✅  Type <code>StatsEdge</code> was added</p>
+
+<p>✅  Type <code>StatsConnection</code> was added</p>
+
+<p>✅  Type <code>StatsQuery</code> was added</p>
+
+<p>✅  Type <code>OperationData</code> was added</p>
+
+<p>✅  Type <code>Operation</code> was added</p>
+
+<p>✅  Type <code>OperationEdge</code> was added</p>
+
+<p>✅  Type <code>OperationConnection</code> was added</p>
 
 <h2 id="2018-04-03">2018-04-03</h2>
 
@@ -2758,6 +2877,7 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
 <ul>
 <li>
 <ul>
+<li><a href="#2018-04-17">2018-04-17</a></li>
 <li><a href="#2018-04-03">2018-04-03</a></li>
 <li><a href="#2018-03-20">2018-03-20</a></li>
 <li><a href="#2018-03-14">2018-03-14</a></li>

@@ -17,7 +17,7 @@
       
       <guid>/travelgatex/reference/objects/api/</guid>
       <description>GraphQL Schema definition type API {code: ID! error: [Error!] apiData: APIData createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):error([Error!]):apiData(APIData):createdAt(DateTime!):updatedAt(DateTime!):
-Require by APIEdge:</description>
+Require by APIEdge: OperationData:</description>
     </item>
     
     <item>
@@ -518,7 +518,7 @@ GraphQL Schema definition type GroupAccess {groupCodes: [String!]! accesses
       
       <guid>/travelgatex/reference/objects/groupconnection/</guid>
       <description>GraphQL Schema definition type GroupConnection {edges: [GroupEdge] pageInfo: PageInfo! }Fields edges([GroupEdge]):pageInfo(PageInfo!):
-Require by AdminQuery: MemberData: APIData:</description>
+Require by AdminQuery: OrganizationData: GroupCommonData: GroupData: MemberData: APIData:</description>
     </item>
     
     <item>
@@ -527,7 +527,7 @@ Require by AdminQuery: MemberData: APIData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/groupdata/</guid>
-      <description>GraphQL Schema definition type GroupData {id: ID! code: ID! type: GroupType! info: String parent: Group owner: Member isEditable: Boolean! productId: Int resourceId: Int members(codes: [ID!],first: Int,last: Int,before: String,after: String,): MemberConnection apis(codes: [ID!</description>
+      <description>GraphQL Schema definition type GroupData {id: ID! code: ID! type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,): GroupConnection owner: Member isEditable: Boolean!</description>
     </item>
     
     <item>
@@ -794,7 +794,7 @@ Require by AdminQuery: OrganizationData: GroupCommonData: GroupData:</d
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/memberdata/</guid>
-      <description>GraphQL Schema definition type MemberData {id: ID! code: ID! roles: String memberType: String groups(first: Int,last: Int,before: String,after: String,codes: [ID!],): GroupConnection }Fields id(ID!</description>
+      <description>GraphQL Schema definition type MemberData {id: ID! code: ID! memberType: String groups(first: Int,last: Int,before: String,after: String,codes: [ID!],): GroupConnection roles(first: Int,last: Int,before: String,after: String,codes: [ID!</description>
     </item>
     
     <item>
@@ -815,6 +815,46 @@ Require by MemberConnection:</description>
       <guid>/travelgatex/reference/objects/occupancy/</guid>
       <description>Information about occupancy.
 GraphQL Schema definition type Occupancy {id: Int! paxes: [Pax!]! }Fields id(Int!):Unique ID room in this option.paxes([Pax!]!):List of pax of this occupancy.</description>
+    </item>
+    
+    <item>
+      <title>Operation</title>
+      <link>/travelgatex/reference/objects/operation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/operation/</guid>
+      <description>GraphQL Schema definition type Operation {code: ID! error: [Error!] operationData: OperationData createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):error([Error!]):operationData(OperationData):createdAt(DateTime!):updatedAt(DateTime!):
+Require by OperationEdge:</description>
+    </item>
+    
+    <item>
+      <title>OperationConnection</title>
+      <link>/travelgatex/reference/objects/operationconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/operationconnection/</guid>
+      <description>GraphQL Schema definition type OperationConnection {edges: [OperationEdge] pageInfo: PageInfo! }Fields edges([OperationEdge]):pageInfo(PageInfo!):
+Require by AdminQuery: APIData:</description>
+    </item>
+    
+    <item>
+      <title>OperationData</title>
+      <link>/travelgatex/reference/objects/operationdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/operationdata/</guid>
+      <description>GraphQL Schema definition type OperationData {id: ID! code: ID! type: String! api: API }Fields id(ID!):code(ID!):type(String!):api(API):
+Require by Operation:</description>
+    </item>
+    
+    <item>
+      <title>OperationEdge</title>
+      <link>/travelgatex/reference/objects/operationedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/operationedge/</guid>
+      <description>GraphQL Schema definition type OperationEdge {cursor: String! node: Operation }Fields cursor(String!):node(Operation):
+Require by OperationConnection:</description>
     </item>
     
     <item>
@@ -843,7 +883,7 @@ Require by AdminQuery:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/organizationdata/</guid>
-      <description>GraphQL Schema definition type OrganizationData {id: ID! code: ID! type: GroupType! info: String owner: Member isEditable: Boolean! members(codes: [ID!],first: Int,last: Int,before: String,after: String,): MemberConnection apis(codes: [ID!</description>
+      <description>GraphQL Schema definition type OrganizationData {id: ID! code: ID! type: GroupType! info: String children(codes: [ID!],first: Int,last: Int,before: String,after: String,): GroupConnection owner: Member isEditable: Boolean!</description>
     </item>
     
     <item>
@@ -863,7 +903,7 @@ Require by OrganizationConnection:</description>
       
       <guid>/travelgatex/reference/objects/pageinfo/</guid>
       <description>GraphQL Schema definition type PageInfo {hasNextPage: Boolean! hasPreviousPage: Boolean! startCursor: String! endCursor: String! }Fields hasNextPage(Boolean!):hasPreviousPage(Boolean!):startCursor(String!):endCursor(String!):
-Require by BoardConnection: BoardList definitionCategoryConnection: CategoryList definitionRoomConnection: RoomList definitionHotelConnection: HotelList definitionDestinationConnection: DestinationList definitionAccessConnection: SupplierConnection: ClientConnection: OrganizationConnection: GroupConnection: MemberConnection: APIConnection: ResourceConnection: RoleConnection: ProductConnection:</description>
+Require by BoardConnection: BoardList definitionCategoryConnection: CategoryList definitionRoomConnection: RoomList definitionHotelConnection: HotelList definitionDestinationConnection: DestinationList definitionAccessConnection: SupplierConnection: ClientConnection: OrganizationConnection: GroupConnection: RoleConnection: ResourceConnection: APIConnection: OperationConnection: MemberConnection: ProductConnection:</description>
     </item>
     
     <item>
@@ -1037,7 +1077,7 @@ Require by ResourceEdge:</description>
       
       <guid>/travelgatex/reference/objects/resourceconnection/</guid>
       <description>GraphQL Schema definition type ResourceConnection {edges: [ResourceEdge] pageInfo: PageInfo! }Fields edges([ResourceEdge]):pageInfo(PageInfo!):
-Require by AdminQuery: APIData: RoleData:</description>
+Require by AdminQuery: RoleData: APIData:</description>
     </item>
     
     <item>
@@ -1076,7 +1116,7 @@ Require by RoleEdge:</description>
       
       <guid>/travelgatex/reference/objects/roleconnection/</guid>
       <description>GraphQL Schema definition type RoleConnection {edges: [RoleEdge] pageInfo: PageInfo! }Fields edges([RoleEdge]):pageInfo(PageInfo!):
-Require by AdminQuery: ResourceData:</description>
+Require by AdminQuery: MemberData: ResourceData:</description>
     </item>
     
     <item>
@@ -1210,7 +1250,7 @@ Require by AdminQuery:</description>
       
       <guid>/travelgatex/reference/objects/serviceoperation/</guid>
       <description>Information related to an API operation
-GraphQL Schema definition type ServiceOperation {code: ID! name: String! type: String! }Fields code(ID!):Service Operation IDname(String!):Service Operation nametype(String!):Service Operation type
+GraphQL Schema definition type ServiceOperation {code: ID! name: String! type: String! travelOperation: Int! }Fields code(ID!):Service Operation IDname(String!):Service Operation nametype(String!):Service Operation typetravelOperation(Int!):Service Operation Travel Operation ID (1: avail) (2: reservation) (3: batch) (4: batchLongRun)
 Require by ServiceApi: Information related to a Service API</description>
     </item>
     

@@ -639,6 +639,22 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/operation/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/operationconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/operationdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/operationedge/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/organization/</loc>
   </url>
   
@@ -1275,11 +1291,11 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/changelog/</loc>
+    <loc>/insights/</loc>
   </url>
   
   <url>
-    <loc>/insights/</loc>
+    <loc>/travelgatex/reference/deprecated/</loc>
   </url>
   
   <url>

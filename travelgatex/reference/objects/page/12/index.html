@@ -532,6 +532,26 @@
               <span style="padding-left: 8px;">Occupancy</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/objects/operation/" class="dd-item">
+            <a href="/travelgatex/reference/objects/operation/">
+              <span style="padding-left: 8px;">Operation</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/operationconnection/" class="dd-item">
+            <a href="/travelgatex/reference/objects/operationconnection/">
+              <span style="padding-left: 8px;">OperationConnection</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/operationdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/operationdata/">
+              <span style="padding-left: 8px;">OperationData</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/operationedge/" class="dd-item">
+            <a href="/travelgatex/reference/objects/operationedge/">
+              <span style="padding-left: 8px;">OperationEdge</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/objects/organization/" class="dd-item">
             <a href="/travelgatex/reference/objects/organization/">
               <span style="padding-left: 8px;">Organization</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1373,9 +1393,9 @@
         </li>
             </ul>
         </li>
-          <li data-nav-id="/travelgatex/reference/changelog/" class="dd-item">
-            <a href="/travelgatex/reference/changelog/">
-              <span style="padding-left: 8px;">Changelog</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/travelgatex/reference/deprecated/" class="dd-item">
+            <a href="/travelgatex/reference/deprecated/">
+              <span style="padding-left: 8px;">Log Deprecated Notices</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1797,19 +1817,6 @@
     </div>
     <div class="content">
       <div class="iso-input-search hidden-xs-down">
-        <div class="ico-label">
-            <i class="fa fa-search" aria-hidden="true"></i>
-        </div>
-        <input data-search-input class="form-control"  id="search-by" type="text" placeholder="Search docs...">
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <script type="text/javascript" src="/js/functions.js"></script>
-        <script type="text/javascript">
-            
-            var baseurl = "\/";
-            
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
       </div>
       <div class="container">
         <div class="row">
@@ -1834,6 +1841,78 @@
 
 </div>
 
+
+   <article class="post travelgatex">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/travelgatex/reference/objects/roledata/">RoleData</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>GraphQL Schema definition type RoleData {id: ID! code: ID! label: String! isCreate: Boolean! isRead: Boolean! isUpdate: Boolean! isDelete: Boolean! isEnable: Boolean! isExecutable: Boolean! isSpecial: Boolean! special: String resources(first: Int,last: Int,before: String,after: String,codes: [ID! <a class="read-more" href="/travelgatex/reference/objects/roledata/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post travelgatex">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/travelgatex/reference/objects/roleedge/">RoleEdge</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>GraphQL Schema definition type RoleEdge {cursor: String! node: Role }Fields cursor(String!):node(Role):
+Require by RoleConnection: <a class="read-more" href="/travelgatex/reference/objects/roleedge/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post travelgatex">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/travelgatex/reference/objects/room/">Room</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>Contains the room information of the option returned.
+GraphQL Schema definition type Room {occupancyRefId: Int! code: String! description: String refundable: Boolean units: Int roomPrice: RoomPrice! beds: [Bed!] ratePlans: [RatePlan!] promotions: [Promotion!] }Fields occupancyRefId(Int!):ID reference to the occupancy.code(String! <a class="read-more" href="/travelgatex/reference/objects/room/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post travelgatex">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/travelgatex/reference/objects/roomconnection/">RoomConnection</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>RoomList definition
+GraphQL Schema definition type RoomConnection {edges: [RoomEdge] pageInfo: PageInfo! }Fields edges([RoomEdge]):pageInfo(PageInfo!):
+Require by HotelXQuery: <a class="read-more" href="/travelgatex/reference/objects/roomconnection/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
 
    <article class="post travelgatex">
     <header class="post-header">
@@ -1935,81 +2014,6 @@ Require by RoomEdge: RoomList Edge definition <a class="read-more" href="/trave
     </header>
     <section class="post-excerpt">
         <p>GraphQL Schema definition type Rule {id: String! name: String type: MarkupRuleType! value: Float! }Fields id(String!):rule identifiername(String):rule nametype(MarkupRuleType!):type of the valuevalue(Float!):value applied by this rule <a class="read-more" href="/travelgatex/reference/objects/rule/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-        
-
-    </footer>
-</article>
-
-   <article class="post travelgatex">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/travelgatex/reference/objects/search/">Search</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>Available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.
-GraphQL Schema definition type Search {Show deprecated fieldshotel(token: String,criteria: HotelCriteriaSearchInput,settings: HotelSettingsInput,filter: FilterInput,): HotelSearch // deprecated from 2017-11-21. <a class="read-more" href="/travelgatex/reference/objects/search/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-        
-
-    </footer>
-</article>
-
-   <article class="post travelgatex">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/travelgatex/reference/objects/serviceapi/">ServiceApi</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>Information related to a Service API
-GraphQL Schema definition type ServiceApi {code: ID! name: String! operations: [ServiceOperation] }Fields code(ID!):Service API IDname(String!):Service API Nameoperations([ServiceOperation]):Operations that a Service Api has
-Require by AdminQuery: <a class="read-more" href="/travelgatex/reference/objects/serviceapi/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-        
-
-    </footer>
-</article>
-
-   <article class="post travelgatex">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/travelgatex/reference/objects/serviceoperation/">ServiceOperation</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>Information related to an API operation
-GraphQL Schema definition type ServiceOperation {code: ID! name: String! type: String! }Fields code(ID!):Service Operation IDname(String!):Service Operation nametype(String!):Service Operation type
-Require by ServiceApi: Information related to a Service API <a class="read-more" href="/travelgatex/reference/objects/serviceoperation/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-        
-
-    </footer>
-</article>
-
-   <article class="post travelgatex">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/travelgatex/reference/objects/servicestatus/">ServiceStatus</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>Indicates the status of the service
-GraphQL Schema definition type ServiceStatus {code: String type: String description: String }Fields code(String):Status codetype(String):Status typedescription(String):Status description
-Require by HotelXQuery: <a class="read-more" href="/travelgatex/reference/objects/servicestatus/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

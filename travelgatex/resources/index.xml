@@ -26,11 +26,13 @@
       
       <guid>/travelgatex/resources/release-notes/</guid>
       <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-04-03 ⚠️ Input field accesses was removed from input object type ClientInput
-⚠️ Field accesses was removed from object type ClientData
-✅ Input field groupID was added to input object type ClientFilter
-✅ Field serviceApi was added to object type AdminQuery
-✅ Description for enum value BookStatusType.UNKNOWN changed from `The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.</description>
+2018-04-17 ⚠️ Field MemberData.roles changed type from String to RoleConnection
+✅ Field mappea was added to object type Mutation
+✅ Field operations was added to object type APIData
+✅ Field children was added to object type GroupData
+✅ Argument codes: [ID!] added to field MemberData.roles
+✅ Argument after: String added to field MemberData.roles
+✅ Argument before: String added to field MemberData.</description>
     </item>
     
     <item>
