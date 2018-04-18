@@ -26,13 +26,12 @@
       
       <guid>/travelgatex/resources/release-notes/</guid>
       <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-04-17 ⚠️ Field MemberData.roles changed type from String to RoleConnection
-✅ Field mappea was added to object type Mutation
-✅ Field operations was added to object type APIData
-✅ Field children was added to object type GroupData
-✅ Argument codes: [ID!] added to field MemberData.roles
-✅ Argument after: String added to field MemberData.roles
-✅ Argument before: String added to field MemberData.</description>
+2018-04-18 ⚠️ Type for argument input on field AdminMutation.updateClient changed from ClientInput! to UpdateClientInput!
+⚠️ Type for argument input on field AdminMutation.createClient changed from ClientInput! to CreateClientInput!
+⚠️ Field StatsData was removed from object type Stats
+⚠️ ClientInput was removed
+✅ Field statsData was added to object type Stats
+✅ Type MappeaXEditOrganizationInput was added</description>
     </item>
     
     <item>
