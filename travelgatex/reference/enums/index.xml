@@ -197,6 +197,25 @@ GraphQL Schema definition enumRateRulesType{PACKAGE,OLDER55,OLDER60
     </item>
     
     <item>
+      <title>ServiceApiType</title>
+      <link>/travelgatex/reference/enums/serviceapitype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/enums/serviceapitype/</guid>
+      <description> Services Api available.
+GraphQL Schema definition enumServiceApiType{HOTEL,TRANSPORTATION,CAR,TRANSFERS,ACTIVITIES,VIRTUALACCOUNT,PAYMENT,PACKAGE,}  </description>
+    </item>
+    
+    <item>
+      <title>ServiceOperationType</title>
+      <link>/travelgatex/reference/enums/serviceoperationtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/enums/serviceoperationtype/</guid>
+      <description> GraphQL Schema definition enumServiceOperationType{ALL,SEARCH,QUOTE,BOOKING,OTHER,}  </description>
+    </item>
+    
+    <item>
       <title>ServiceType</title>
       <link>/travelgatex/reference/enums/servicetype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -204,6 +223,15 @@ GraphQL Schema definition enumRateRulesType{PACKAGE,OLDER55,OLDER60
       <guid>/travelgatex/reference/enums/servicetype/</guid>
       <description> Service Type
 GraphQL Schema definition enumServiceType{SKI_PASS,}  </description>
+    </item>
+    
+    <item>
+      <title>StatsInfoTypes</title>
+      <link>/travelgatex/reference/enums/statsinfotypes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/enums/statsinfotypes/</guid>
+      <description>GraphQL Schema definition enumStatsInfoTypes{ALL,OK,INTEGRATION,PROVIDER,COMMUNICATION,HUB,OTHER,}  Require by StatsInfo: Details of an specific error</description>
     </item>
     
     <item>

@@ -121,15 +121,6 @@ Require by HotelSettingsInput: Settings that you can edit for this avail.</desc
     </item>
     
     <item>
-      <title>ClientInput</title>
-      <link>/travelgatex/reference/inputobjects/clientinput/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/inputobjects/clientinput/</guid>
-      <description>GraphQL Schema definition type ClientInput {code: ID! name: String isActive: Boolean }Fields code(ID!):ID identifier of a Clientname(String):Client complete nameisActive(Boolean):Indicates whether a Client is active</description>
-    </item>
-    
-    <item>
       <title>ConfigurationInput</title>
       <link>/travelgatex/reference/inputobjects/configurationinput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -147,6 +138,15 @@ GraphQL Schema definition type ConfigurationInput {username: String passwor
       <guid>/travelgatex/reference/inputobjects/connectusergroupinput/</guid>
       <description>group related to a connect user
 GraphQL Schema definition type ConnectUserGroupInput {groupCode: String! isActive: Boolean! }Fields groupCode(String!):group code of the group related to this connect userisActive(Boolean!):Indicates if the connect user is active for its connect user</description>
+    </item>
+    
+    <item>
+      <title>CreateClientInput</title>
+      <link>/travelgatex/reference/inputobjects/createclientinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/createclientinput/</guid>
+      <description>GraphQL Schema definition type CreateClientInput {name: String! isActive: Boolean! group: String! }Fields name(String!):Client complete nameisActive(Boolean!):Indicates whether a Client is activegroup(String!):Group where the client will be assigned at first</description>
     </item>
     
     <item>
@@ -440,6 +440,69 @@ GraphQL Schema definition type HotelXSupplierInput {settings: SettingsBaseInpu
     </item>
     
     <item>
+      <title>MappeaXAddOrganizationInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeaxaddorganizationinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeaxaddorganizationinput/</guid>
+      <description>AddOrganization GraphQL Schema definition type MappeaXAddOrganizationInput {name: String! isActive: Boolean! isTest: Boolean! }Fields name(String!):isActive(Boolean!):isTest(Boolean!):</description>
+    </item>
+    
+    <item>
+      <title>MappeaXConfirmUploadInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeaxconfirmuploadinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeaxconfirmuploadinput/</guid>
+      <description>ConfirmUpload GraphQL Schema definition type MappeaXConfirmUploadInput {fileId: Int! suppliers: [MappeaXSupplierConfirmedInput!]! }Fields fileId(Int!):suppliers([MappeaXSupplierConfirmedInput!]!):</description>
+    </item>
+    
+    <item>
+      <title>MappeaXEditOrganizationInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeaxeditorganizationinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeaxeditorganizationinput/</guid>
+      <description>EditOrganization GraphQL Schema definition type MappeaXEditOrganizationInput {name: String! isActive: Boolean isTest: Boolean }Fields name(String!):isActive(Boolean):isTest(Boolean):</description>
+    </item>
+    
+    <item>
+      <title>MappeaXGetMappeaStatsInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeaxgetmappeastatsinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeaxgetmappeastatsinput/</guid>
+      <description>GetMappeaStats GraphQL Schema definition type MappeaXGetMappeaStatsInput {organizationName: String! supplierMapped: String }Fields organizationName(String!):supplierMapped(String):</description>
+    </item>
+    
+    <item>
+      <title>MappeaXMapSupplierInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeaxmapsupplierinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeaxmapsupplierinput/</guid>
+      <description>MapSupplier GraphQL Schema definition type MappeaXMapSupplierInput {requestId: ID! access: ID! fileId: Int! }Fields requestId(ID!):access(ID!):fileId(Int!):</description>
+    </item>
+    
+    <item>
+      <title>MappeaXSupplierConfirmedInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeaxsupplierconfirmedinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeaxsupplierconfirmedinput/</guid>
+      <description>GraphQL Schema definition type MappeaXSupplierConfirmedInput {code: ID! supplier: ID! }Fields code(ID!):supplier(ID!):</description>
+    </item>
+    
+    <item>
+      <title>MappeaXUploadFileInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeaxuploadfileinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeaxuploadfileinput/</guid>
+      <description>UploadFile GraphQL Schema definition type MappeaXUploadFileInput {requestId: String! fileName: String delimiter: String! fileContent: String! }Fields requestId(String!):fileName(String):delimiter(String!):fileContent(String!):</description>
+    </item>
+    
+    <item>
       <title>ParameterInput</title>
       <link>/travelgatex/reference/inputobjects/parameterinput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -540,6 +603,16 @@ Require by HotelXSupplierInput: Supplier object.</description>
     </item>
     
     <item>
+      <title>StatsFilterInput</title>
+      <link>/travelgatex/reference/inputobjects/statsfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/statsfilterinput/</guid>
+      <description>Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)
+GraphQL Schema definition type StatsFilterInput {suppliers: [ID!] serviceApis: [ServiceApiType!] operation: [ServiceOperationType!]! serviceOperations: [ID!] from: DateTime! to: DateTime! groupUsers: Boolean }Fields suppliers([ID!</description>
+    </item>
+    
+    <item>
       <title>SupplierFilter</title>
       <link>/travelgatex/reference/inputobjects/supplierfilter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -566,6 +639,15 @@ GraphQL Schema definition type SupplierGroupInput {groupCode: String! isAct
       <guid>/travelgatex/reference/inputobjects/timeoutinput/</guid>
       <description>GraphQL Schema definition type TimeoutInput {search: Int! quote: Int! book: Int! }Fields search(Int!):Milliseconds before the search connection is closed.quote(Int!):Milliseconds before the quote connection is closed.book(Int!):Milliseconds before the book connection is closed.
 Require by DefaultSettingsInput:</description>
+    </item>
+    
+    <item>
+      <title>UpdateClientInput</title>
+      <link>/travelgatex/reference/inputobjects/updateclientinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/updateclientinput/</guid>
+      <description>GraphQL Schema definition type UpdateClientInput {code: ID! name: String isActive: Boolean }Fields code(ID!):ID identifier of a Clientname(String):Client complete nameisActive(Boolean):Indicates whether a Client is active</description>
     </item>
     
     <item>

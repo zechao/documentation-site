@@ -235,10 +235,6 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/inputobjects/clientinput/</loc>
-  </url>
-  
-  <url>
     <loc>/travelgatex/reference/inputobjects/configurationinput/</loc>
   </url>
   
@@ -268,6 +264,10 @@
   
   <url>
     <loc>/travelgatex/reference/scalars/country/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/createclientinput/</loc>
   </url>
   
   <url>
@@ -375,11 +375,31 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/file/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/filterinput/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/scalars/float/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/getmappeastatsdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/getmappeastatsresponse/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/getuploadedfilesdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/getuploadedfilesresponse/</loc>
   </url>
   
   <url>
@@ -571,11 +591,51 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/legacydata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/location/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/objects/map/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/mappeamutation/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/mappeaquery/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/mappeaxaddorganizationinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/mappeaxconfirmuploadinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/mappeaxeditorganizationinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/mappeaxgetmappeastatsinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/mappeaxmapsupplierinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/mappeaxsupplierconfirmedinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/mappeaxuploadfileinput/</loc>
   </url>
   
   <url>
@@ -639,6 +699,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/onlystatusresponse/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/operation/</loc>
   </url>
   
@@ -648,6 +712,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/operationdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/operationdetailed/</loc>
   </url>
   
   <url>
@@ -831,6 +899,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/ratios/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/reference/</loc>
   </url>
   
@@ -931,7 +1003,15 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/enums/serviceapitype/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/serviceoperation/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/serviceoperationtype/</loc>
   </url>
   
   <url>
@@ -960,6 +1040,38 @@
   
   <url>
     <loc>/travelgatex/reference/objects/stattransaction/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/stats/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/statsconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/statsdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/statsedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/statsfilterinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/statsinfo/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/statsinfotypes/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/statsquery/</loc>
   </url>
   
   <url>
@@ -992,6 +1104,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/supplierdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/supplierdetected/</loc>
   </url>
   
   <url>
@@ -1043,11 +1159,23 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/inputobjects/updateclientinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/updategroupinput/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/inputobjects/updatememberinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/uploadfiledata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/uploadfileresponse/</loc>
   </url>
   
   <url>
@@ -1291,11 +1419,11 @@
   </url>
   
   <url>
-    <loc>/insights/</loc>
+    <loc>/travelgatex/reference/changelog/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/deprecated/</loc>
+    <loc>/insights/</loc>
   </url>
   
   <url>

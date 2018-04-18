@@ -56,7 +56,7 @@ Require by APIConnection:</description>
       
       <guid>/travelgatex/reference/objects/access/</guid>
       <description>GraphQL Schema definition type Access {code: ID! accessData: AccessData error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):accessData(AccessData):error([Error!]):Errors that will lead the service to abortcreatedAt(DateTime!):Create dateupdatedAt(DateTime!):Update date
-Require by AccessEdge: AccessData: AdminMutation:</description>
+Require by AccessEdge: AccessData: StatsData: AdminMutation:</description>
     </item>
     
     <item>
@@ -115,7 +115,7 @@ Require by HotelOptionSearch: An option includes hotel information, meal plan, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/adminmutation/</guid>
-      <description>GraphQL Schema definition type AdminMutation {createAccess(input: AccessInput!,): Access updateAccess(input: AccessInput!,): Access grantAccessToGroup(input: GroupInput!,): Access deleteAccessFromGroup(input: GroupInput!,): Access grantSupplierToGroup(input: GroupInput!,): Supplier deleteSupplierFromGroup(input: GroupInput!,): Supplier createClient(input: ClientInput!,): Client updateClient(input: ClientInput!,): Client createMember(member: CreateMemberInput!</description>
+      <description>GraphQL Schema definition type AdminMutation {createAccess(input: AccessInput!,): Access updateAccess(input: AccessInput!,): Access grantAccessToGroup(input: GroupInput!,): Access deleteAccessFromGroup(input: GroupInput!,): Access grantSupplierToGroup(input: GroupInput!,): Supplier deleteSupplierFromGroup(input: GroupInput!,): Supplier createClient(input: CreateClientInput!,): Client updateClient(input: UpdateClientInput!,): Client createMember(member: CreateMemberInput!</description>
     </item>
     
     <item>
@@ -313,7 +313,7 @@ Require by CategoryConnection: CategoryList definition</description>
       
       <guid>/travelgatex/reference/objects/client/</guid>
       <description>GraphQL Schema definition type Client {code: ID! clientData: ClientData error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):clientData(ClientData):error([Error!]):Errors that will lead the service to abortcreatedAt(DateTime!):Create dateupdatedAt(DateTime!):Update date
-Require by ClientEdge: AdminMutation:</description>
+Require by ClientEdge: StatsData: AdminMutation:</description>
     </item>
     
     <item>
@@ -477,7 +477,8 @@ Require by DestinationConnection: DestinationList definition</description>
       
       <guid>/travelgatex/reference/objects/error/</guid>
       <description>Application errors
-GraphQL Schema definition type Error {code: String! type: String! description: String! }Fields code(String!):Error codetype(String!):Error typedescription(String!):Error description</description>
+GraphQL Schema definition type Error {code: String! type: String! description: String! }Fields code(String!):Error codetype(String!):Error typedescription(String!):Error description
+Require by GetUploadedFilesResponse: ## GetUploadedFilesGetMappeaStatsResponse: OnlyStatusResponse: ## Common ItemsUploadFileResponse:</description>
     </item>
     
     <item>
@@ -489,6 +490,56 @@ GraphQL Schema definition type Error {code: String! type: String! descri
       <description>Informs about the currency of origin, and the rate applied over result returned by the supplier.
 GraphQL Schema definition type Exchange {currency: Currency! rate: Float! }Fields currency(Currency!):Informs about the currency of origin.rate(Float!):Informs about the rate applied over result.
 Require by Price: Price indicates the value of the room/option. Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.</description>
+    </item>
+    
+    <item>
+      <title>File</title>
+      <link>/travelgatex/reference/objects/file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/file/</guid>
+      <description>GraphQL Schema definition type File {fileName: String! fileId: Int! uploadTime: String! }Fields fileName(String!):fileId(Int!):uploadTime(String!):
+Require by GetUploadedFilesData:</description>
+    </item>
+    
+    <item>
+      <title>GetMappeaStatsData</title>
+      <link>/travelgatex/reference/objects/getmappeastatsdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/getmappeastatsdata/</guid>
+      <description>GraphQL Schema definition type GetMappeaStatsData {supplierMapped: String startTime: String endTime: String organizationHotels: Int contextHotels: Int suggestedHotels: Int }Fields supplierMapped(String):startTime(String):endTime(String):organizationHotels(Int):contextHotels(Int):suggestedHotels(Int):
+Require by GetMappeaStatsResponse:</description>
+    </item>
+    
+    <item>
+      <title>GetMappeaStatsResponse</title>
+      <link>/travelgatex/reference/objects/getmappeastatsresponse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/getmappeastatsresponse/</guid>
+      <description>GraphQL Schema definition type GetMappeaStatsResponse {data: [GetMappeaStatsData] error: Error warnings: [Warning] }Fields data([GetMappeaStatsData]):error(Error):warnings([Warning]):
+Require by MappeaQuery:</description>
+    </item>
+    
+    <item>
+      <title>GetUploadedFilesData</title>
+      <link>/travelgatex/reference/objects/getuploadedfilesdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/getuploadedfilesdata/</guid>
+      <description>GraphQL Schema definition type GetUploadedFilesData {files: [File] }Fields files([File]):
+Require by GetUploadedFilesResponse: ## GetUploadedFiles</description>
+    </item>
+    
+    <item>
+      <title>GetUploadedFilesResponse</title>
+      <link>/travelgatex/reference/objects/getuploadedfilesresponse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/getuploadedfilesresponse/</guid>
+      <description>GetUploadedFiles GraphQL Schema definition type GetUploadedFilesResponse {data: GetUploadedFilesData error: Error warnings: [Warning] }Fields data(GetUploadedFilesData):error(Error):warnings([Warning]):
+Require by MappeaQuery:</description>
     </item>
     
     <item>
@@ -699,6 +750,16 @@ GraphQL Schema definition type HotelSearch {context: String stats(token: S
     </item>
     
     <item>
+      <title>LegacyData</title>
+      <link>/travelgatex/reference/objects/legacydata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/legacydata/</guid>
+      <description>The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &amp;ldquo;http:\www.travelgatex.com&amp;rdquo;.
+GraphQL Schema definition type LegacyData {isPublic: Boolean! inDevelopment: Boolean giataType: String! giataCode: String! isDirect: Boolean!</description>
+    </item>
+    
+    <item>
       <title>Location</title>
       <link>/travelgatex/reference/objects/location/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -716,6 +777,26 @@ GraphQL Schema definition type Location {address: String city: String zi
       <guid>/travelgatex/reference/objects/map/</guid>
       <description>Map codes.
 GraphQL Schema definition type Map {code: String! maps: [String!] }Fields code(String!):Context code.maps([String!]):Equivalences of the supplier for the client code.</description>
+    </item>
+    
+    <item>
+      <title>MappeaMutation</title>
+      <link>/travelgatex/reference/objects/mappeamutation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/mappeamutation/</guid>
+      <description>GraphQL Schema definition type MappeaMutation {confirmUpload(input: MappeaXConfirmUploadInput!,): OnlyStatusResponse! uploadFile(input: MappeaXUploadFileInput!,): UploadFileResponse! mapSupplier(input: MappeaXMapSupplierInput!,): OnlyStatusResponse! }Fields confirmUpload(OnlyStatusResponse!):uploadFile(UploadFileResponse!):mapSupplier(OnlyStatusResponse!):
+Require by Mutation: Mutations are operations that change or update data in the server.</description>
+    </item>
+    
+    <item>
+      <title>MappeaQuery</title>
+      <link>/travelgatex/reference/objects/mappeaquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/mappeaquery/</guid>
+      <description>GraphQL Schema definition type MappeaQuery {getUploadedFiles: GetUploadedFilesResponse! getMappeaStats(input: MappeaXGetMappeaStatsInput!,): GetMappeaStatsResponse! }Fields getUploadedFiles(GetUploadedFilesResponse!):getMappeaStats(GetMappeaStatsResponse!):
+Require by Query:</description>
     </item>
     
     <item>
@@ -818,13 +899,23 @@ GraphQL Schema definition type Occupancy {id: Int! paxes: [Pax!]! }Fie
     </item>
     
     <item>
+      <title>OnlyStatusResponse</title>
+      <link>/travelgatex/reference/objects/onlystatusresponse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/onlystatusresponse/</guid>
+      <description>Common Items GraphQL Schema definition type OnlyStatusResponse {error: Error warnings: [Warning] }Fields error(Error):warnings([Warning]):
+Require by MappeaMutation:</description>
+    </item>
+    
+    <item>
       <title>Operation</title>
       <link>/travelgatex/reference/objects/operation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/operation/</guid>
       <description>GraphQL Schema definition type Operation {code: ID! error: [Error!] operationData: OperationData createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):error([Error!]):operationData(OperationData):createdAt(DateTime!):updatedAt(DateTime!):
-Require by OperationEdge:</description>
+Require by OperationEdge: OperationDetailed:</description>
     </item>
     
     <item>
@@ -845,6 +936,15 @@ Require by AdminQuery: APIData:</description>
       <guid>/travelgatex/reference/objects/operationdata/</guid>
       <description>GraphQL Schema definition type OperationData {id: ID! code: ID! type: String! api: API }Fields id(ID!):code(ID!):type(String!):api(API):
 Require by Operation:</description>
+    </item>
+    
+    <item>
+      <title>OperationDetailed</title>
+      <link>/travelgatex/reference/objects/operationdetailed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/operationdetailed/</guid>
+      <description>GraphQL Schema definition type OperationDetailed {operation: Operation totalHits: Int! detailedHits(type: [StatsInfoTypes!],code: [Int!],): [StatsInfo!] cache: Boolean! }Fields operation(Operation):totalHits(Int!):operation: String! operationType: ServiceOperationType! List of service apis. serviceApis: ServiceApiConnection! Total hits.detailedHits([StatsInfo!]):Total time time: Time!cache(Boolean!):</description>
     </item>
     
     <item>
@@ -903,7 +1003,7 @@ Require by OrganizationConnection:</description>
       
       <guid>/travelgatex/reference/objects/pageinfo/</guid>
       <description>GraphQL Schema definition type PageInfo {hasNextPage: Boolean! hasPreviousPage: Boolean! startCursor: String! endCursor: String! }Fields hasNextPage(Boolean!):hasPreviousPage(Boolean!):startCursor(String!):endCursor(String!):
-Require by BoardConnection: BoardList definitionCategoryConnection: CategoryList definitionRoomConnection: RoomList definitionHotelConnection: HotelList definitionDestinationConnection: DestinationList definitionAccessConnection: SupplierConnection: ClientConnection: OrganizationConnection: GroupConnection: RoleConnection: ResourceConnection: APIConnection: OperationConnection: MemberConnection: ProductConnection:</description>
+Require by AccessConnection: SupplierConnection: ClientConnection: OrganizationConnection: GroupConnection: RoleConnection: ResourceConnection: APIConnection: OperationConnection: MemberConnection: ProductConnection: BoardConnection: BoardList definitionCategoryConnection: CategoryList definitionRoomConnection: RoomList definitionHotelConnection: HotelList definitionDestinationConnection: DestinationList definitionStatsConnection:</description>
     </item>
     
     <item>
@@ -1036,6 +1136,17 @@ GraphQL Schema definition type Quote {Show deprecated fieldshotel(criteria:
       <guid>/travelgatex/reference/objects/rateplan/</guid>
       <description>Information about the rate of the option returned.
 GraphQL Schema definition type RatePlan {code: String! name: String effectiveDate: Date expireDate: Date }Fields code(String!):Specifies the rate code.name(String):Specifies the rate name.effectiveDate(Date):Start date in which the rate becomes effective.expireDate(Date):Expire date of the rate.</description>
+    </item>
+    
+    <item>
+      <title>Ratios</title>
+      <link>/travelgatex/reference/objects/ratios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/ratios/</guid>
+      <description>Details of look to quote and look to book.
+GraphQL Schema definition type Ratios {lookToQuote: Int! lookToBook: Int! quoteToBook: Int! }Fields lookToQuote(Int!):lookToBook(Int!):quoteToBook(Int!):
+Require by StatsData:</description>
     </item>
     
     <item>
@@ -1304,6 +1415,65 @@ Require by StatsRequest: Contains internal information.StatAccess:</descripti
     </item>
     
     <item>
+      <title>Stats</title>
+      <link>/travelgatex/reference/objects/stats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/stats/</guid>
+      <description>The service used to access the stats of every connection that uses the HUB
+GraphQL Schema definition type Stats {code: ID! statsData: StatsData error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):statsData(StatsData):error([Error!]):Errors that will lead the service to abortcreatedAt(DateTime!):Create dateupdatedAt(DateTime!</description>
+    </item>
+    
+    <item>
+      <title>StatsConnection</title>
+      <link>/travelgatex/reference/objects/statsconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/statsconnection/</guid>
+      <description>GraphQL Schema definition type StatsConnection {edges: [StatsEdge] pageInfo: PageInfo! }Fields edges([StatsEdge]):pageInfo(PageInfo!):
+Require by StatsQuery:</description>
+    </item>
+    
+    <item>
+      <title>StatsData</title>
+      <link>/travelgatex/reference/objects/statsdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/statsdata/</guid>
+      <description>GraphQL Schema definition type StatsData {access: Access! client: Client! from: DateTime! to: DateTime! ratios: Ratios! operations(type: [ServiceOperationType!],): [OperationDetailed!] }Fields access(Access!):client(Client!):from(DateTime!):From date of searchto(DateTime!):To date of searchratios(Ratios!):Details of look to quote and look to book.</description>
+    </item>
+    
+    <item>
+      <title>StatsEdge</title>
+      <link>/travelgatex/reference/objects/statsedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/statsedge/</guid>
+      <description>GraphQL Schema definition type StatsEdge {cursor: String! node: Stats }Fields cursor(String!):node(Stats):
+Require by StatsConnection:</description>
+    </item>
+    
+    <item>
+      <title>StatsInfo</title>
+      <link>/travelgatex/reference/objects/statsinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/statsinfo/</guid>
+      <description>Details of an specific error
+GraphQL Schema definition type StatsInfo {code: ID! type: StatsInfoTypes! hits: Int! time: Int! }Fields code(ID!):type(StatsInfoTypes!):hits(Int!):Total hits.time(Int!):Total time (ms)</description>
+    </item>
+    
+    <item>
+      <title>StatsQuery</title>
+      <link>/travelgatex/reference/objects/statsquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/statsquery/</guid>
+      <description>GraphQL Schema definition type StatsQuery {report(filter: StatsFilterInput!,first: Int,last: Int,before: String,after: String,): StatsConnection! }Fields report(StatsConnection!):The report query, represents all of the entry points into our object graph
+Require by Query:</description>
+    </item>
+    
+    <item>
       <title>StatsRequest</title>
       <link>/travelgatex/reference/objects/statsrequest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1330,7 +1500,7 @@ GraphQL Schema definition type Supplement {code: String! name: String de
       
       <guid>/travelgatex/reference/objects/supplier/</guid>
       <description>GraphQL Schema definition type Supplier {code: ID! supplierData: SupplierData error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):supplierData(SupplierData):error([Error!]):Errors that will lead the service to abortcreatedAt(DateTime!):Create dateupdatedAt(DateTime!):Update date
-Require by AccessData: SupplierEdge: AdminMutation:</description>
+Require by AccessData: SupplierEdge: AdminMutation: SupplierDetected:</description>
     </item>
     
     <item>
@@ -1350,6 +1520,15 @@ Require by AdminQuery:</description>
       
       <guid>/travelgatex/reference/objects/supplierdata/</guid>
       <description>GraphQL Schema definition type SupplierData {code: ID! name: String! isActive: Boolean! provider: Provider! context: String! serviceApi: Int! supplierGroup: ID accesses: AccessConnection }Fields code(ID!):unique identifier of a suppliername(String!):Supplier complete nameisActive(Boolean!):indicates whether a supplier is activeprovider(Provider!</description>
+    </item>
+    
+    <item>
+      <title>SupplierDetected</title>
+      <link>/travelgatex/reference/objects/supplierdetected/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/supplierdetected/</guid>
+      <description>GraphQL Schema definition type SupplierDetected {code: ID! supplier: Supplier numberOfHotels: Int! }Fields code(ID!):supplier(Supplier):numberOfHotels(Int!):</description>
     </item>
     
     <item>
@@ -1403,6 +1582,26 @@ GraphQL Schema definition type Transactions {request: String! response: Str
     </item>
     
     <item>
+      <title>UploadFileData</title>
+      <link>/travelgatex/reference/objects/uploadfiledata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/uploadfiledata/</guid>
+      <description>GraphQL Schema definition type UploadFileData {fileId: String! suppliers: [SupplierDetected!] numberOfLines: Int numberOfHotels: Int }Fields fileId(String!):suppliers([SupplierDetected!]):numberOfLines(Int):numberOfHotels(Int):
+Require by UploadFileResponse:</description>
+    </item>
+    
+    <item>
+      <title>UploadFileResponse</title>
+      <link>/travelgatex/reference/objects/uploadfileresponse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/uploadfileresponse/</guid>
+      <description>GraphQL Schema definition type UploadFileResponse {data: UploadFileData error: Error warnings: [Warning] }Fields data(UploadFileData):error(Error):warnings([Warning]):
+Require by MappeaMutation:</description>
+    </item>
+    
+    <item>
       <title>Urls</title>
       <link>/travelgatex/reference/objects/urls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1420,7 +1619,8 @@ Require by AccessData:</description>
       
       <guid>/travelgatex/reference/objects/warning/</guid>
       <description>Application warnings
-GraphQL Schema definition type Warning {code: String! type: String! description: String! }Fields code(String!):Warning codetype(String!):Warning typedescription(String!):Warning description</description>
+GraphQL Schema definition type Warning {code: String! type: String! description: String! }Fields code(String!):Warning codetype(String!):Warning typedescription(String!):Warning description
+Require by GetUploadedFilesResponse: ## GetUploadedFilesGetMappeaStatsResponse: OnlyStatusResponse: ## Common ItemsUploadFileResponse:</description>
     </item>
     
   </channel>

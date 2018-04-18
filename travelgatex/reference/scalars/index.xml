@@ -17,7 +17,7 @@
       
       <guid>/travelgatex/reference/scalars/boolean/</guid>
       <description>The Boolean scalar type represents true or false.
-GraphQL Schema definition scalar BooleanRequire by PageInfo: HotelData: Hotel dataDestinationData: Information about destinantionHotelSettingsInput: Settings that you can edit for this avail. Values are loaded by default in our Back Office.SettingsBaseInput: Contains the time out and business rules of a supplier or an access.Room: Contains the room information of the option returned.</description>
+GraphQL Schema definition scalar BooleanRequire by AccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimePageInfo: ClientFilter: ClientData: OrganizationData: GroupCommonData: GroupData: Member: RoleData: HotelData: Hotel dataDestinationData: Information about destinantionHotelSettingsInput: Settings that you can edit for this avail.</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@ GraphQL Schema definition scalar DateRequire by HotelCriteriaSearchInput: Cr
       
       <guid>/travelgatex/reference/scalars/datetime/</guid>
       <description>The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
-GraphQL Schema definition scalar DateTimeRequire by Board: Board TypeNode: Category: Category TypeRoomStatic: Room TypeHotel: Hotel TypeMedia: Contains media information.</description>
+GraphQL Schema definition scalar DateTimeRequire by Access: Node: Supplier: Client: Organization: Group: Member: Role: Resource: API: Operation: Product: Board: Board TypeCategory: Category TypeRoomStatic: Room TypeHotel: Hotel TypeMedia: Contains media information.</description>
     </item>
     
     <item>
@@ -77,7 +77,7 @@ GraphQL Schema definition scalar FloatRequire by Coordinates: Geographical c
       
       <guid>/travelgatex/reference/scalars/id/</guid>
       <description>The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL Schema definition scalar IDRequire by HotelXBoardQueryInput: Board: Board TypeNode: BoardData: Board dataHotelXCategoryQueryInput: Category: Category TypeCategoryData: Category dataHotelXRoomQueryInput: RoomStatic: Room TypeRoomData: Room dataHotelXHotelListInput: Hotel: Hotel TypeHotelData: Hotel dataDestinationData: Information about destinantionHotelXDestinationListInput: Destination: Destination TypeHotelXDestinationSearcherInput: HotelXAccessInput: AccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only.</description>
+GraphQL Schema definition scalar IDRequire by AccessFilter: Access: Node: AccessData: Supplier: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeParameter: Parameters for additional information for the supplier&amp;#39;s configuration.</description>
     </item>
     
     <item>
@@ -87,7 +87,7 @@ GraphQL Schema definition scalar IDRequire by HotelXBoardQueryInput: Board
       
       <guid>/travelgatex/reference/scalars/int/</guid>
       <description>The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-GraphQL Schema definition scalar IntRequire by RelayInput: HotelXHotelListInput: HotelXDestinationListInput: HotelXDestinationSearcherInput: PaxInput: Pax object that contains the pax age.HotelSettingsInput: Settings that you can edit for this avail. Values are loaded by default in our Back Office.</description>
+GraphQL Schema definition scalar IntRequire by SupplierData: ServiceOperation: Information related to an API operationGroupData: RelayInput: HotelXHotelListInput: HotelXDestinationListInput: HotelXDestinationSearcherInput: PaxInput: Pax object that contains the pax age.</description>
     </item>
     
     <item>
@@ -117,7 +117,7 @@ GraphQL Schema definition scalar LanguageRequire by Text: HotelCriteriaSea
       
       <guid>/travelgatex/reference/scalars/string/</guid>
       <description>The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL Schema definition scalar StringRequire by RelayInput: BoardEdge: BoardList Edge definitionError: Application errorsAdviseMessage: BoardData: Board dataText: PageInfo: CategoryEdge: CategoryList Edge definitionCategoryData: Category dataRoomEdge: RoomList Edge definitionRoomData: Room dataHotelConnection: HotelList definitionHotelEdge: HotelList Edge definitionHotelData: Hotel dataProperty: Indicates Property typeLocation: Indicates the location of the hotel.</description>
+GraphQL Schema definition scalar StringRequire by AccessEdge: Error: Application errorsAdviseMessage: AccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeParameter: Parameters for additional information for the supplier&amp;#39;s configuration.</description>
     </item>
     
     <item>
@@ -127,7 +127,7 @@ GraphQL Schema definition scalar StringRequire by RelayInput: BoardEdge: 
       
       <guid>/travelgatex/reference/scalars/uri/</guid>
       <description> The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &amp;ldquo;http:\www.travelgatex.com&amp;rdquo;.
-GraphQL Schema definition scalar URIRequire by Contact: Contact Data.Media: Contains media information.UrlsInput: Urls InputUrls: Url&amp;#39;s </description>
+GraphQL Schema definition scalar URIRequire by Urls: Url&amp;#39;sContact: Contact Data.Media: Contains media information.UrlsInput: Urls Input </description>
     </item>
     
   </channel>
