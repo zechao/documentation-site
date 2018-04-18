@@ -2479,7 +2479,7 @@
 },
 {
 	"uri": "/travelgatex/reference/changelog/",
-	"title": "Changelog",
+	"title": "Deprecated Notices",
 	"tags": [],
 	"description": "",
 	"content": " Deprecations \r2018-03-19\r\r\r\rconnectUser This field is got only if the authorization header is of the type JWT. It is used to change the user that has been set by default in the preload. @deprecated(reason: \u0026#34;deprecated from 2018-03-19. Redundant.\u0026#34;)\r\r\r\r\r2017-12-12\r\r\r\ruseContext Indicates if you want use context, or not, by default is true. @deprecated(reason: \u0026#34;deprecated from 2017-12-12. Redundant.\u0026#34;)\r\r\r\r"
