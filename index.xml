@@ -2964,7 +2964,7 @@ Require by GetUploadedFilesResponse: ## GetUploadedFilesGetMappeaStatsRespons
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/learning-graphql/overview/</guid>
-      <description>What is GraphQL? GraphQL is a query language for your API. It was first designed by Facebook and it&amp;rsquo;s new way of dealing and managing APIs and specially useful for decoupling client&amp;rsquo;s from server&amp;rsquo;s logic.
+      <description>What is GraphQL? GraphQL is a query language for your API. It was first designed by Facebook. It&amp;rsquo;s a new way of dealing with and managing data models via API, and is especially useful for decoupling client from server logic.
  GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.</description>
     </item>
     
