@@ -3080,9 +3080,8 @@ It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
       
       <guid>/learning-graphql/basic_concepts/</guid>
       <description>What are Queries &amp;amp; Mutations  At its simplest, GraphQL is about requesting specific fields on objects. Let&amp;rsquo;s start by looking at a very simple query and the result we get when we run it http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com
- There are two basic operations in GraphQL schemas:
-Queries http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com
-Just like a RESTful Get method, queries query the system. This operation reads values from the server using a Graph Object and gets a JSON as a response.</description>
+ There are two basic operations in GraphQL schemas: * Queries: Requesting data from a data model * Mutations: Making changes and carrying out transactions on data in the data model
+Queries Just like a RESTful GET method, queries query the system.</description>
     </item>
     
     <item>
