@@ -322,7 +322,7 @@ Require by BoardConnection: BoardList definition</description>
       
       <guid>/hotelx/howtos/howto-book/</guid>
       <description>Flow to book
-HotelX Settings In HotelX we have differents levels to configure the settings for a request. With the settings you can to configure some aspects of the request like:
+HotelX Settings In HotelX we have differents configuration level settings for a request. With settings, you can configure some aspect of the request:
    Field Description     Context Indicates the context codes that you want to send and to receive.   Timeout Set request timeout in the differents call types:* search * quote * book (includes book, cancel and booking)    Language What language you want to do the request.</description>
     </item>
     
@@ -1010,8 +1010,8 @@ Require by MappeaQuery:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/getuploadedfilesdata/</guid>
-      <description>GraphQL Schema definition type GetUploadedFilesData {files: [File] }Fields files([File]):
-Require by GetUploadedFilesResponse: ## GetUploadedFiles</description>
+      <description> GraphQL Schema definition type GetUploadedFilesData {files: [File] }Fields files([File]):
+Require by GetUploadedFilesResponse: ## GetUploadedFiles </description>
     </item>
     
     <item>
@@ -1705,7 +1705,7 @@ Require by MemberConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/schema/mutation/</guid>
-      <description>Mutations are operations that change or update data in the server.
+      <description>Mutations are operations that change or update data on the server.
 GraphQL Schema definition type Mutation {admin: AdminMutation hotelX: HotelXMutation mappea: MappeaMutation Show deprecated fieldshotelBook(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload // deprecated from 2017-11-21. You can find it in query at HotelXhotelCancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload // deprecated from 2017-11-21.</description>
     </item>
     
@@ -2996,7 +2996,7 @@ Format File The file should be in the following format:
       
       <guid>/hotelx/quickstart/</guid>
       <description>This page shows you how to perform a basic hotel booking using GraphQL Playground.
-Before Starting  Follow the steps in Creating an API Key to get your API Key.  Check the connectivity of your API Key.  Open the sample Playground and modify HTTP HEADERS field Authorization with your API Key and indicated your client into request settings.   { &amp;quot;settings&amp;quot;: { &amp;quot;client&amp;quot;: &amp;quot;yourClient&amp;quot; } }  Step by Step Search a Hotel  Open search tabs.</description>
+Before Starting  Follow the steps in Creating an API Key to get your API Key.  Check the connectivity of your API Key.  Open the sample Playground and modify HTTP HEADERS field Authorization with your API Key and indicated your client into request settings.   { &amp;quot;settings&amp;quot;: { &amp;quot;client&amp;quot;: &amp;quot;yourClient&amp;quot; } }  Step by Step Search a Hotel  Open search  Modify Query Variables with valid dates and send the request.</description>
     </item>
     
     <item>
@@ -3120,7 +3120,7 @@ How many hotels code are allowed to request at the same time? We recommend a max
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/resources/frequently-asked-questions/</guid>
-      <description></description>
+      <description>Do you have specific questions about TravelgateX GraphQL API? Check out the FAQs.</description>
     </item>
     
     <item>
@@ -3340,7 +3340,7 @@ Overview GOAL: Explicar el who, why, how de la plataforma
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/credits/</guid>
-      <description>github contributors .ghContributors{display:flex;flex-flow: wrap;align-content: flex-start}.ghContributors  div{width: 50% ;display: inline-flex;margin-bottom: 5px;}.ghContributors  div label{padding-left: 4px ;}.ghContributors  div span{font-size: x-small;padding-left: 4px ;}@vjeantet245 commits@matcornic49 commits@W-Floyd24 commits@gwleclerc21 commits@lierdakil16 commits@Pilskalns12 commits@jose-oc8 commits@SiamKreative6 commits@Xipas5 commits@altinnadmin4 commits@FMuro2 commits@Thiht2 commits@EnigmaCurry2 commits@aral2 commits@adamlamar1 commits@byzheng1 commits@zivbk11 commits@damoon1 commits@vielmetti1 commits@erikjasiak1 commits@giuliov1 commits@farmergreg1 commits@tarpdalton1 commits@JohnBlood1 commits@kamilchm1 commits@ripienaar1 commits@shazic1 commits@viertaxa1 commits@uweschaefer1 commits@eyoder1 commits@justin-yan1 commits@karlmacklin1 commits@petzi531 commits@remi310001 commits@xxxtonixxx1 commits Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services&amp;hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester.</description>
+      <description>github contributors .ghContributors{display:flex;flex-flow: wrap;align-content: flex-start}.ghContributors  div{width: 50% ;display: inline-flex;margin-bottom: 5px;}.ghContributors  div label{padding-left: 4px ;}.ghContributors  div span{font-size: x-small;padding-left: 4px ;}@vjeantet246 commits@matcornic49 commits@W-Floyd24 commits@gwleclerc21 commits@lierdakil16 commits@Pilskalns12 commits@jose-oc8 commits@SiamKreative6 commits@Xipas5 commits@altinnadmin4 commits@FMuro2 commits@EnigmaCurry2 commits@aral2 commits@adamlamar1 commits@byzheng1 commits@zivbk11 commits@damoon1 commits@vielmetti1 commits@erikjasiak1 commits@giuliov1 commits@farmergreg1 commits@jodumont1 commits@tarpdalton1 commits@jamestharpe1 commits@JohnBlood1 commits@kamilchm1 commits@ripienaar1 commits@shazic1 commits@viertaxa1 commits@uweschaefer1 commits@eyoder1 commits@justin-yan1 commits@karlmacklin1 commits@petzi531 commits@remi310001 commits@xxxtonixxx1 commits Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services&amp;hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester.</description>
     </item>
     
   </channel>

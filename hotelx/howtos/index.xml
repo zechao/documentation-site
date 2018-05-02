@@ -17,7 +17,7 @@
       
       <guid>/hotelx/howtos/howto-book/</guid>
       <description>Flow to book
-HotelX Settings In HotelX we have differents levels to configure the settings for a request. With the settings you can to configure some aspects of the request like:
+HotelX Settings In HotelX we have differents configuration level settings for a request. With settings, you can configure some aspect of the request:
    Field Description     Context Indicates the context codes that you want to send and to receive.   Timeout Set request timeout in the differents call types:* search * quote * book (includes book, cancel and booking)    Language What language you want to do the request.</description>
     </item>
     

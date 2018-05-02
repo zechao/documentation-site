@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/schema/mutation/</guid>
-      <description>Mutations are operations that change or update data in the server.
+      <description>Mutations are operations that change or update data on the server.
 GraphQL Schema definition type Mutation {admin: AdminMutation hotelX: HotelXMutation mappea: MappeaMutation Show deprecated fieldshotelBook(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload // deprecated from 2017-11-21. You can find it in query at HotelXhotelCancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload // deprecated from 2017-11-21.</description>
     </item>
     

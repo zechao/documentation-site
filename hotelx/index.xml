@@ -28,7 +28,7 @@ GraphQL Gateway Our gateway is the only endpoint to access all of our products, 
       
       <guid>/hotelx/quickstart/</guid>
       <description>This page shows you how to perform a basic hotel booking using GraphQL Playground.
-Before Starting  Follow the steps in Creating an API Key to get your API Key.  Check the connectivity of your API Key.  Open the sample Playground and modify HTTP HEADERS field Authorization with your API Key and indicated your client into request settings.   { &amp;quot;settings&amp;quot;: { &amp;quot;client&amp;quot;: &amp;quot;yourClient&amp;quot; } }  Step by Step Search a Hotel  Open search tabs.</description>
+Before Starting  Follow the steps in Creating an API Key to get your API Key.  Check the connectivity of your API Key.  Open the sample Playground and modify HTTP HEADERS field Authorization with your API Key and indicated your client into request settings.   { &amp;quot;settings&amp;quot;: { &amp;quot;client&amp;quot;: &amp;quot;yourClient&amp;quot; } }  Step by Step Search a Hotel  Open search  Modify Query Variables with valid dates and send the request.</description>
     </item>
     
   </channel>
