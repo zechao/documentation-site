@@ -3006,12 +3006,12 @@ Before Starting  Follow the steps in Creating an API Key to get your API Key.  
       
       <guid>/travelgatex/resources/release-notes/</guid>
       <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-04-18 ⚠️ Type for argument input on field AdminMutation.updateClient changed from ClientInput! to UpdateClientInput!
-⚠️ Type for argument input on field AdminMutation.createClient changed from ClientInput! to CreateClientInput!
-⚠️ Field StatsData was removed from object type Stats
-⚠️ ClientInput was removed
-✅ Field statsData was added to object type Stats
-✅ Type MappeaXEditOrganizationInput was added</description>
+2018-05-02 🛑 Enum value BOOK was removed from enum OperationType
+⚠️ Enum value BOOKING was added to enum OperationType
+✅ Input field accesses was added to input object type StatsFilterInput
+✅ Field accesses was added to object type GroupData
+✅ Field allMembers was added to object type GroupData
+✅ Field accesses was added to object type GroupCommonData</description>
     </item>
     
     <item>
