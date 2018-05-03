@@ -3006,12 +3006,12 @@ Before Starting  Follow the steps in Creating an API Key to get your API Key.  
       
       <guid>/travelgatex/resources/release-notes/</guid>
       <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-05-02 🛑 Enum value BOOK was removed from enum OperationType
-⚠️ Enum value BOOKING was added to enum OperationType
-✅ Input field accesses was added to input object type StatsFilterInput
-✅ Field accesses was added to object type GroupData
-✅ Field allMembers was added to object type GroupData
-✅ Field accesses was added to object type GroupCommonData</description>
+2018-05-03 ✅ Field asserts was added to object type StatsInfo
+✅ Field clients was added to object type GroupData
+✅ Field suppliers was added to object type GroupData
+✅ Field clients was added to object type GroupCommonData
+✅ Field suppliers was added to object type GroupCommonData
+✅ Field clients was added to object type OrganizationData</description>
     </item>
     
     <item>
