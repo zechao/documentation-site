@@ -130,7 +130,7 @@
 	"title": "AddOns",
 	"tags": [],
 	"description": "",
-	"content": " Extra information about the option.\nGraphQL Schema definition type AddOns {\r\rdistribution: [AddOn!] \r\rShow deprecated fields\r\r\rdistribute: : JSON // \r\r\r\r}\r\r\rFields distribution([AddOn!]):\rExtra information from the distribution layer\r\r\nRequire by HotelOptionSearch: \rAn option includes hotel information, meal plan, total price, conditions and room description.\r\rHotelOptionQuote: \rContains information about quote.\r\rHotelBookingDetail: \rContains information about booking.\r\r "
+	"content": " Extra information about the option.\nGraphQL Schema definition type AddOns {\r\rdistribution: [AddOn!] \r\rShow deprecated fields\r\r\rdistribute: : JSON // \r\r\r\r}\r\r\rFields distribution([AddOn!]):\rExtra information from the distribution layer\r\r\nRequire by HotelOptionSearch: \rAn option includes hotel information, meal plan, total price, conditions and room description.\r\rHotelOptionQuote: \rContains information about quote.\r\rHotelBookingDetail: \rContains information about booking.\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/adminmutation/",
@@ -690,7 +690,7 @@
 	"title": "GetUploadedFilesData",
 	"tags": [],
 	"description": "",
-	"content": " GraphQL Schema definition type GetUploadedFilesData {\r\rfiles: [File] \r\r}\r\r\rFields files([File]):\r\r\r\nRequire by GetUploadedFilesResponse: \r## GetUploadedFiles\r\r "
+	"content": " GraphQL Schema definition type GetUploadedFilesData {\r\rfiles: [File] \r\r}\r\r\rFields files([File]):\r\r\r\nRequire by GetUploadedFilesResponse: \r## GetUploadedFiles\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/getuploadedfilesresponse/",
