@@ -2022,57 +2022,51 @@
 
     
 
-<p>TravelgateX offers a set of products ready to be integrated using a single GraphQL. If you&rsquo;re not sure about a specific concept, feel free to check our guide bellow to understand the basic concepts.</p>
+<p>The TravelgateX platform and APIs all use a consistent set of basic concepts so that whatever API you use on our platform, you can be confident that it will work with the same definitions as all of the others you are familiar with.</p>
+
+<p>Here is an overview of the key concepts of our platform.</p>
 
 <h3 id="api-gateway">API Gateway</h3>
 
-<p>&ldquo;TravelgateX is the first company in the industry travel with an API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs and we faced a lot of problems with that kind technology. The benefit of using GraphQL, is that each client is ultimately responsible over what it wants to be returned.</p>
+<p>Our API gateway is stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime. We provide realtime details of our uptime and status <a href="http://status.travelgatex.com/">on our Status page</a> and work at maintaining a minimum 99.99% service performance level.</p>
 
-<p>It is a stable, secure and fault tolerant load balanced between many datacenters from four different cloud providers: <a href="https://azure.microsoft.com/">Microsoft Azure</a>, <a href="https://cloud.google.com/">Google Cloud Platform</a>, <a href="https://www.hetzner.de/">Hetzner</a> and <a href="http://totaluptime.com/">TotalUptime</a>. If you&rsquo;re looking for more detailed <a href="/learning-graphql/overview/#graphql-at-travelgatex">analysis on GraphQL</a> please have a look at our guide on <a href="/travelgatex/overview">how to use TravelgateX GraphQL API</a>.&rdquo;</p>
+<p>Our API gateway provides a single GraphQL endpoint which can be used to make queries against all of our APIs and travel services. This makes it easier for your clients (websites, applications and any other interface) to only call for the exact data that is needed, without parsing a heap of extra information in each API call. (Check out our <a href="https://docs.travelgatex.com/learning-graphql/">GraphQL resources</a> to learn more!)</p>
 
 <h3 id="product">Product</h3>
 
-<p>A <code>Product</code> is an API domain which is available for the consumption of <code>Resources</code>. We organize our APIs by similarity and common features.</p>
+<p>A <code>Product</code> is a TravelgateX platform API which is available for the consumption of Resources. We organize our APIs by similarity and common features. Our HotelX API is our first product now available for use in production environments.</p>
 
 <h3 id="entities">Entities</h3>
 
-<p><code>Entities</code> or core resources are entities that define common objects in all our API domains.</p>
+<p><code>Entities</code> or core resources define common objects that are consistent across all of our API products.</p>
 
 <h3 id="partner">Partner</h3>
 
-<p>A <code>Partner</code> can interact with TravelgateX API with a <code>User</code> identifying a person or a <code>Service Account</code> identifying an application.</p>
+<p>A <code>Partner</code> interacts with the TravelgateX API platform. A partners can be a User (that is, a person) or a Service Account (that is, an application). A partner is a member of an Organization, and can be a member of mutiple organizations.</p>
 
 <h3 id="organization">Organization</h3>
 
-<p>An <code>Organization</code> is made up of <a href="#Partner"><code>Partners</code></a> (they can belong to one or more organizations), <code>Resources</code>, <code>Settings</code>, <code>Permissions</code> and other <code>Metadata</code>.</p>
+<p>An <code>Organization</code> is made up of <code>Partners</code>, <code>Resources</code>, <code>Settings</code>, <code>Permissions</code> and other <code>Metadata</code>.</p>
 
 <h3 id="profile">Profile</h3>
 
-<p><code>Organization</code> use profiles for <code>Partner</code> interaction.</p>
+<p>An <code>Organization</code> uses profiles to determine what type of interaction is required on TravelgateX. At present, profiles are either a <code>Buyer</code> or a <code>Supplier</code>.</p>
 
 <h3 id="buyer">Buyer</h3>
 
-<p>A <code>Buyer</code> is a <code>Profile</code> who is connected to TravelgateX in the demand side in order to <strong>buy</strong> travel products from <code>Sellers</code>.</p>
-
-<h3 id="seller">Seller</h3>
-
-<p>A <code>Seller</code> is a <code>Profile</code> who is connected to TravelgateX in the offering side in order to <strong>sell</strong> travel products to <code>Buyers</code>.</p>
+<p>A <code>Buyer</code> <code>Profile</code> uses the TravelgateX platform to book travel services such as hotels for their customers. Buyers include online travel agents, tour operators, niche travel service providers, and travel and pricing apps.</p>
 
 <h3 id="supplier">Supplier</h3>
 
-<p>A <code>Supplier</code> is a <code>Partner</code> who is connected to TravelgateX on the supply side in order to <strong>sell their product</strong> to connected <code>Buyers</code>.</p>
-
-<h3 id="platform">Platform</h3>
-
-<p>Many  <code>Buyers</code> or <code>Sellers</code> use a third party platform in order to <strong>buy or sell travel products</strong>. These are usually tech companies specialized in developing custom software for other companies.</p>
+<p>A <code>Supplier</code> <code>Profile</code> uses the TravelgateX platfrom to make travel services available to buyers. Sellers can be suppliers with realtime databases of hotel room vacancies, tours, car rental providers, adventure and activity service suppliers, travel insurance providers or other travel industry service suppliers.</p>
 
 <h3 id="context">Context</h3>
 
-<p>A <code>Context</code> refers to the <code>Supplier</code> codes the request is using. It&rsquo;s a way of specifiying which <code>Supplier</code> codes is being used so it can be transformed and standardized.</p>
+<p>A <code>Context</code> refers to the <code>Supplier</code> codes the request is using. It&rsquo;s a way of specifiying which <code>Supplier</code> codes are being used so they can be transformed and standardized.</p>
 
 <h3 id="access">Access</h3>
 
-<p>An <code>Access</code> is a <strong>set of credentials and configuration</strong> in order to access a <code>Supplier</code>.</p>
+<p>An <code>Access</code> is a set of credentials and the authentication configuration that enables a <code>Buyer</code> to access a <code>Supplier</code>. To gain access, a <code>Buyer</code> needs to confirm with TravelgateX that they have an agreement in place with each <code>Supplier</code> with whom they want to integrate.</p>
 
 
 <hr/>
@@ -2117,9 +2111,7 @@
 <li><a href="#organization">Organization</a></li>
 <li><a href="#profile">Profile</a></li>
 <li><a href="#buyer">Buyer</a></li>
-<li><a href="#seller">Seller</a></li>
 <li><a href="#supplier">Supplier</a></li>
-<li><a href="#platform">Platform</a></li>
 <li><a href="#context">Context</a></li>
 <li><a href="#access">Access</a></li>
 </ul></li>
