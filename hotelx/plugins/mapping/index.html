@@ -2034,22 +2034,68 @@
 
 <p>Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:</p>
 
-<h2 id="format-file">Format File</h2>
+<h2 id="example-files">Example files</h2>
+
+<p>You can download example for the files structure <a href="/content/sample_mapping.zip">here</a></p>
+
+<h2 id="ftp-endpoint">Ftp Endpoint</h2>
+
+<p><a href="ftp://ftp.xmltravelgate.com">ftp://ftp.xmltravelgate.com</a></p>
+
+<h2 id="directory-format">Directory Format</h2>
+
+<h3 id="root-path">Root path</h3>
+
+<p>The structure of the directory should be in the below format, all files should be inside this directory</p>
+
+<p>/F[Folder code]<em>[Unique code]/HotelX</em>[Unique code]/
+* F[Folder code]<em>[Unique code]
+    * <strong>Folder code</strong>: corresponds to the folder number.
+    * <strong>Unique code</strong>: corresponds to the folder unique code in our system.
+* HotelX</em>[Unique code]
+    * <strong>Unique code</strong>: corresponds to the HotelX unique code in our system.</p>
+
+<h3 id="example">Example</h3>
+
+<ul>
+<li>/F<strong>0</strong>_<strong>178</strong>/HotelX_<strong>179</strong></li>
+</ul>
+
+<h2 id="entity-maps">Entity Maps</h2>
+
+<h3 id="file-format">File Format</h3>
 
 <p>The file should be in the following format:</p>
 
 <ul>
 <li><strong>Encoding</strong>: UTF-8</li>
-<li><strong>File Name</strong>: [Context Source]_hotel_map.csv</li>
-<li><strong>Header Row</strong>: Code Source, Context Destination, Code Destination</li>
-<li><strong>Delimiter</strong>: Comma (&ldquo;,&rdquo;)</li>
 
-<li><p><strong>Directory</strong>: <a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/[entity]/ ">ftp://ftp.xmltravelgate.com/Purchasing/Maps/[entity]/ </a></p>
+<li><p><strong>File Name</strong>: [Context Source]_[Context Destination]_[entity]_map.csv</p>
+
+<ul>
+<li>Context Source: correspond to the client code</li>
+<li>Context Destination: correspond to the supplier code
+
+<ul>
+<li>1 file for each supplier</li>
+</ul></li>
+</ul></li>
+
+<li><p><strong>Header Row</strong>: Code Source, Code Destination</p>
+
+<ul>
+<li>Context Source: correspond to the client codes</li>
+<li>Context Destination: correspond to the supplier codes</li>
+</ul></li>
+
+<li><p><strong>Delimiter</strong>: Comma (&ldquo;,&rdquo;)</p></li>
+
+<li><p><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/Maps/[entity]/</p>
 
 <h3 id="file-names">File Names</h3></li>
 </ul>
 
-<p>All files must have the same name structure</p>
+<p>All map files must have the same name structure as follow, you need create a file for <em>Context Destionation</em></p>
 
 <table>
 <thead>
@@ -2095,35 +2141,40 @@
 <tbody>
 <tr>
 <td>Hotel</td>
-<td><a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/Hotel/">ftp://ftp.xmltravelgate.com/Purchasing/Maps/Hotel/</a></td>
+<td>/F[folder code]_[unique code]/HotelX_[unique code]/Maps/Hotel/</td>
 </tr>
 
 <tr>
 <td>Board</td>
-<td><a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/Board/">ftp://ftp.xmltravelgate.com/Purchasing/Maps/Board/</a></td>
+<td>/F[folder code]_[unique code]/HotelX_[unique code]/Maps/Board/</td>
 </tr>
 
 <tr>
 <td>Room</td>
-<td><a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/Room/">ftp://ftp.xmltravelgate.com/Purchasing/Maps/Room/</a></td>
+<td>/F[folder code]_[unique code]/HotelX_[unique code]/Maps/Room/</td>
 </tr>
 
 <tr>
 <td>Rate</td>
-<td><a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/Rate/">ftp://ftp.xmltravelgate.com/Purchasing/Maps/Rate/</a></td>
+<td>/F[folder code]_[unique code]/HotelX_[unique code]/Maps/Rate/</td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="sample-file">Sample File</h3>
+<h3 id="samples-file">Samples File</h3>
+
+<p>Suppose we have the follow client code and supplier code, you need create one file for each supplier you have
+* Client code: GUE
+* Supplier Code: BVJ</p>
 
 <p><strong>Name</strong>: GUE_BVJ_hotel_map.csv
-<strong>Data</strong>:
-Code Source, Code Destination
-10,c11#10
+<strong>Data</strong>:</p>
+
+<pre><code class="language-csv">Code Source, Code Destination
+10,c11\#10
 10000,7604
 10000,1274249
-Download file sample <a href="../sample.csv">here</a>.</p>
+</code></pre>
 
 <h2 id="plugin-name">Plugin Name</h2>
 
@@ -2177,7 +2228,7 @@ Download file sample <a href="../sample.csv">here</a>.</p>
 
 <h3 id="alias-table">Alias Table</h3>
 
-<h4 id="format-file-1">Format File</h4>
+<h4 id="format-file">Format File</h4>
 
 <p>The file must be in the below format:</p>
 
@@ -2187,22 +2238,24 @@ Download file sample <a href="../sample.csv">here</a>.</p>
 <li>Header Row: ToReplace, ReplaceWith, Order </li>
 <li>Delimiter:  Comma (“,”) </li>
 
-<li><p>Directory: <a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ ">ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ </a></p>
+<li><p>Directory:  /F[folder code]_[unique code]/HotelX_[unique code]/Maps/plugin/</p>
 
-<h4 id="sample-file-1">Sample File</h4>
+<h4 id="sample-file">Sample File</h4>
 
 <p><strong>Name</strong>: roomDescriptionMapX_aliasTable.csv
-<strong>Data</strong>:
-ToReplace,ReplaceWith,Order
+<strong>Data</strong>:</p>
+
+<pre><code class="language-csv">ToReplace,ReplaceWith,Order
 1 bed,apt,102
 1 bedroom,apt,100
 2 bedroom,2-bedroom,200
 3 bed,3-bedroom,303
-apartment,apt,902</p>
+apartment,apt,902
+</code></pre>
 
 <h3 id="noise-words">Noise Words</h3>
 
-<h4 id="format-file-2">Format File</h4></li>
+<h4 id="format-file-1">Format File</h4></li>
 </ul>
 
 <p>The file must be in the below format:</p>
@@ -2212,16 +2265,18 @@ apartment,apt,902</p>
 <li><strong>File Name</strong>: roomDescriptionMapX_noiseWords.csv </li>
 <li><strong>Header Row</strong>: ToRemove </li>
 
-<li><p><strong>Directory</strong>: <a href="ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ ">ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ </a></p>
+<li><p><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/Maps/plugin/</p>
 
-<h4 id="sample-file-2">Sample File</h4>
+<h4 id="sample-file-1">Sample File</h4>
 
 <p><strong>Name</strong>: roomDescriptionMapX_noiseWords.csv
-<strong>Data</strong>:
-ToRemove
+<strong>Data</strong>:</p>
+
+<pre><code class="language-csv">ToRemove
 ad
 b&amp;b
-breakf</p>
+breakf
+</code></pre>
 
 <h2 id="how-applies">How applies</h2>
 
@@ -2287,11 +2342,19 @@ breakf</p>
 <ul>
 <li>
 <ul>
-<li><a href="#format-file">Format File</a>
+<li><a href="#example-files">Example files</a></li>
+<li><a href="#ftp-endpoint">Ftp Endpoint</a></li>
+<li><a href="#directory-format">Directory Format</a>
 <ul>
+<li><a href="#root-path">Root path</a></li>
+<li><a href="#example">Example</a></li>
+</ul></li>
+<li><a href="#entity-maps">Entity Maps</a>
+<ul>
+<li><a href="#file-format">File Format</a></li>
 <li><a href="#file-names">File Names</a></li>
 <li><a href="#directories">Directories</a></li>
-<li><a href="#sample-file">Sample File</a></li>
+<li><a href="#samples-file">Samples File</a></li>
 </ul></li>
 <li><a href="#plugin-name">Plugin Name</a></li>
 <li><a href="#other-maps">Other Maps</a>
@@ -2302,13 +2365,13 @@ breakf</p>
 <ul>
 <li><a href="#alias-table">Alias Table</a>
 <ul>
-<li><a href="#format-file-1">Format File</a></li>
-<li><a href="#sample-file-1">Sample File</a></li>
+<li><a href="#format-file">Format File</a></li>
+<li><a href="#sample-file">Sample File</a></li>
 </ul></li>
 <li><a href="#noise-words">Noise Words</a>
 <ul>
-<li><a href="#format-file-2">Format File</a></li>
-<li><a href="#sample-file-2">Sample File</a></li>
+<li><a href="#format-file-1">Format File</a></li>
+<li><a href="#sample-file-1">Sample File</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#how-applies">How applies</a></li>
