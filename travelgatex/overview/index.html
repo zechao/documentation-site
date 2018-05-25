@@ -2022,26 +2022,22 @@
 
     
 
-<p>This page provides an overview of <em>travelgateX</em> platform.</p>
+<p>This page provides an overview of the <em>TravelgateX</em> platform.</p>
 
 <h2 id="graphql-gateway">GraphQL Gateway</h2>
 
-<p><strong>TravelgateX</strong> is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, <a href="/learning-graphql/overview/#graphql-at-travelgatex">visit GraphQL guide</a>.</p>
+<p><strong>TravelgateX</strong> is the travel API completely based in GraphQL. Unlike many legacy XML Soap APIs, GraphQL enables each client to ask for and receive exactly the data that is needed. Learn more by reading our <a href="/learning-graphql/overview/#graphql-at-travelgatex">Learning GraphQL guides</a>.</p>
 
-<p>The architecture doesn&rsquo;t differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and also handles throttling. On the other hand, Analytics is also an important part in the gateway.</p>
-
-<p>Our Gateway is the only endpoint to <strong>access all of our APIs</strong>. It is written in NodeJS, making it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: <a href="https://azure.microsoft.com/">Microsoft Azure</a>, <a href="https://cloud.google.com/">Google Cloud Platform</a>, <a href="https://www.hetzner.de/">Hetzner</a> and <a href="http://totaluptime.com/">TotalUptime</a>.</p>
+<p>Our Gateway is the only endpoint to <strong>access all of our APIs</strong>. It is written in NodeJS. This makes it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: <a href="https://azure.microsoft.com/">Microsoft Azure</a>, <a href="https://cloud.google.com/">Google Cloud Platform</a>, <a href="https://www.hetzner.de/">Hetzner</a> and <a href="http://totaluptime.com/">TotalUptime</a>.</p>
 
 <h2 id="using-the-api">Using the API</h2>
 
-<p>The two types of allowed operations in TravelgateX GraphQL API are:</p>
+<p>There are two types of allowed operations in the TravelgateX GraphQL APIs:</p>
 
 <ul>
 <li><a href="http://graphql.org/learn/queries/">Queries</a></li>
 <li><a href="http://graphql.org/learn/queries/">Mutations</a></li>
 </ul>
-
-<p>If you wish to learn <a href="http://docs.travelgatex.com/learning-graphql/">how to use a GraphQL API</a> feel free to visit our guide.</p>
 
 <h2 id="graphql-endpoint">GraphQL Endpoint</h2>
 
@@ -2055,11 +2051,11 @@ role="alert"><a href="https://api.travelgatex.com">https://api.travelgatex.com</
 
 <h2 id="communicating-with-the-server">Communicating with the Server</h2>
 
-<p>To communicate with the GraphQL server, you&rsquo;ll need an access token with the right scopes. You are able to create a token by following the steps mentioned in <a href="/travelgatex/security/overview">Security Overview</a>.</p>
+<p>To communicate with our GraphQL server, you&rsquo;ll need an access token with the right scopes. You are able to create a token by following the steps mentioned in <a href="/travelgatex/security/overview">Security Overview</a>.</p>
 
 <h2 id="making-requests">Making Requests</h2>
 
-<p>Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls. There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use <a href="https://curl.haxx.se" target="_blank">curl</a> or any other HTTP-speaking library.</p>
+<p>The best place to test how to make GraphQL queries in TravelgateX is to start with our interactive <a href="https://api.travelgatex.com/">API Playground</a>. You can also use <a href="https://curl.haxx.se" target="_blank">curl</a> or any other HTTP-speaking library.</p>
 
 <div class="alert 
 alert-danger"
@@ -2083,22 +2079,24 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
 
 <h2 id="graph-reference">Graph Reference</h2>
 
-<p>There are several ways to know about our graph:</p>
-
-<ul>
-<li><a href="/travelgatex/reference/">Reference Documentation</a> renders TravelgateX graph in a pretty HTML documentation.</li>
-<li><a href="https://api.travelgatex.com">Schema Definition</a> allows interactive, multi-column schema documentation.</li>
-<li><a href="https://api.travelgatex.com/voyager">Graphql-voyager</a> displays <a href="https://api.travelgatex.com">our GraphQL API</a> in an interactive graph to help you understand its structure.</li>
-</ul>
+<p>There are several ways you can learn more about the full capabilities of our TravelgateX GraphQL data model
+* <a href="/travelgatex/reference/">Reference Documentation</a> provides complete reference documentation for all resources, fields and objects in our GraphQL data model.
+* <a href="https://api.travelgatex.com">API Playground</a> provides an interactive, multi-column schema definition based on the GraphiQL tool, but with many additional features.
+* <a href="https://api.travelgatex.com/voyager">GraphQL-voyager</a> displays our GraphQL API as an interactive relational database-like graph to help you understand the different parent and child tables within our schema.</p>
 
 <h2 id="examples">Examples</h2>
 
-<p>We share <a href="https://github.com/graphcool/graphql-playground">GraphQL Playgrounds</a> with common scenarios using products.
-Playgrounds are shared per product, for example you can use <a href="https://graphqlbin.com/JYRtB">HotelX Hotel Playground</a></p>
+<p>Check out our <a href="https://docs.travelgatex.com/getting-started/playground/">GraphQL Playground</a> to get started with making your first query and to work thropugh other query examples.</p>
 
-<p>Keep in mind that it&rsquo;s important to use the correct Headers. If you wish to use test headers, insert <code>&quot;Authorization&quot;:&quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;</code></p>
+<div class="alert 
+alert-warning"
+ 
+role="alert"><p>Keep in mind that it&rsquo;s important to use the correct Headers.
+If you wish to use test headers, insert <code>&quot;Authorization&quot;:&quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;</code></p>
+</div>
 
-<p>You can easily <strong>share your Queries with others by generating a link</strong> using the <em>share</em> button available on the <a href="https://github.com/graphcool/graphql-playground#how-does-graphql-bin-work">GraphQL Bin</a>. The GraphQL Bin works as a Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).</p>
+
+<p>You can easily <strong>share your Queries with others by generating a link</strong> using the <em>share</em> button available in the API Playground. This share function works as a Pastebin for your GraphQL query and includes the context (endpoint, HTTP headers, open tabs, etc) so you can share exactly what your Playground query setup looks like.</p>
 
 <h2 id="conventions">Conventions</h2>
 
@@ -2112,14 +2110,14 @@ Playgrounds are shared per product, for example you can use <a href="https://gra
 
 <h3 id="relay-implementation">Relay Implementation</h3>
 
-<p>TravelgateX uses <a href="https://facebook.github.io/relay/">Relay</a> schema requirements for its own Resources. Other resources, such as <em>Seller search response</em>, are not modeled with Relay practices.</p>
+<p>TravelgateX uses the <a href="https://facebook.github.io/relay/">Relay</a> schema requirements for our own Resources, but other resources, such as <em>Seller search response</em>, are not modeled with Relay practices.</p>
 
-<p>Relay helps TravelgateX API in order to standarize:</p>
+<p>We chose Relay at TravelgateX in order to standarize:</p>
 
 <ul>
-<li>Standards for querying paginated collections (&ldquo;Connections&rdquo; and &ldquo;Edges&rdquo;)</li>
-<li>Identifying objects directly from the root of a query (avoiding long nested queries)</li>
-<li>Provide mutation input data</li>
+<li>Querying paginated collections (&ldquo;Connections&rdquo; and &ldquo;Edges&rdquo;)</li>
+<li>Identifying objects directly from the root of a query (to avoid long nested queries)</li>
+<li>Providing mutation input data.</li>
 </ul>
 
 
