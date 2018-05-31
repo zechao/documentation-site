@@ -2027,7 +2027,7 @@
 
 <h2 id="currencyx">CurrencyX</h2>
 
-<p>This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp, is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned.</p>
+<p>This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp. Is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned.</p>
 
 <h3 id="file-format">File Format</h3>
 
@@ -2042,7 +2042,7 @@
 <li>Decimal separator for rate must be point (&ldquo;.&rdquo;)</li>
 </ul></li>
 <li><strong>Delimiter</strong>:  Comma (“,”) </li>
-<li><strong>Directory</strong>:  /F[folder code]_[unique code]/HotelX_[unique code]/</li>
+<li><strong>Directory</strong>:  /[folder code]_[unique code]/HotelX_[unique code]/</li>
 </ul>
 
 <h4 id="sample-file">Sample File</h4>
@@ -2063,30 +2063,46 @@ THB,42.91
 USD,1.29
 </code></pre>
 
-<p>In addition, is necessary that option currencies and parameter currency are in ftp file.</p>
+<p>The rate with value 1.00 is the base rate. Other rates are calculated from it.</p>
+
+<p>The value of step, type, and name is always the specified in the example below. The two parameters are mandatory and its value means:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&ldquo;currency&rdquo;:</strong> is a string value in ISO 4217 standard (&ldquo;XXX&rdquo;). Is the currency to which you want to convert.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&ldquo;exclude&rdquo;:</strong> is a Boolean value (true / false). This parameter only has an effect on the search query. It determine, if the options on which the currency change can not be applied (no currency found in ftp), are excluded. <br /></p>
+
+<p>In addition, is necessary that option and parameter currencies are in ftp file.</p>
 
 <h3 id="execution-example">Execution example</h3>
 
 <pre><code>{
-
-    &quot;plugins&quot;: {
-
-        &quot;step&quot;: &quot;RESPONSE\_OPTION&quot;,
-
-        &quot;pluginsType&quot;: [
-
-            {
-
-                &quot;type&quot;: &quot;CURRENCY\_CONVERSION&quot;
-
-                &quot;name&quot;: &quot;currencyX&quot;
-
-            }
-
-        ]
-
-    }
-
+    &quot;plugins&quot;: {
+    
+      &quot;step&quot;: &quot;RESPONSE_OPTION&quot;,
+      
+      &quot;pluginsType&quot;: {
+      
+        &quot;type&quot;: &quot;CURRENCY_CONVERSION&quot;,
+        
+        &quot;name&quot;: &quot;currency_exchange&quot;,
+        
+        &quot;parameters&quot;: [
+        
+          {
+          
+            &quot;key&quot;: &quot;currency&quot;,
+            
+            &quot;value&quot;: &quot;GBP&quot;
+          
+          },
+          {
+          
+            &quot;key&quot;: &quot;exclude&quot;,
+            
+            &quot;value&quot;: &quot;true&quot;
+          
+          }
+        ]
+      }
+    }
 }
 </code></pre>
 
