@@ -283,6 +283,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/inputobjects/createorganizationinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/criteriabookingdatesinput/</loc>
   </url>
   
@@ -607,6 +611,26 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/inputobjects/mappeaaddorganizationinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/mappeaconfirmuploadinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/mappeaeditorganizationinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/mappeagetmappeastatsinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/mappeamapsupplierinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/mappeamutation/</loc>
   </url>
   
@@ -615,31 +639,11 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/inputobjects/mappeaxaddorganizationinput/</loc>
+    <loc>/travelgatex/reference/inputobjects/mappeasupplierconfirmedinput/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/inputobjects/mappeaxconfirmuploadinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/mappeaxeditorganizationinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/mappeaxgetmappeastatsinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/mappeaxmapsupplierinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/mappeaxsupplierconfirmedinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/mappeaxuploadfileinput/</loc>
+    <loc>/travelgatex/reference/inputobjects/mappeauploadfileinput/</loc>
   </url>
   
   <url>
@@ -727,6 +731,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/enums/operationtype/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/organization/</loc>
   </url>
   
@@ -740,6 +748,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/organizationedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/organizationtemplate/</loc>
   </url>
   
   <url>
@@ -1052,6 +1064,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/stats/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/statsassert/</loc>
   </url>
   
   <url>
@@ -1415,7 +1431,7 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/deprecated-notices/</loc>
+    <loc>/travelgatex/reference/changelog/</loc>
   </url>
   
   <url>
