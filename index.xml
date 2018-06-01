@@ -611,6 +611,17 @@ GraphQL Schema definition type ConfigurationInput {username: String passwor
     </item>
     
     <item>
+      <title>Configure HotelX Security</title>
+      <link>/admin/howtos/howto-configure-permissions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/admin/howtos/howto-configure-permissions/</guid>
+      <description>Granting Permissions This topic describes how to configure permissions for a organization using HotelX and Stats
+Before you begin  Read about IAM, which contains information about how TravelgateX manages security Read about HotelX, which contains information about HotelX product  Scenario: Organization buying suppliers through HotelX In this scenario, orgnanization org_test signs on TravelgateX in order to use HotelX to buy product from suppliers.
+Distribution will be made through 2 different channels, end users will use org_test_B2C_site whereas that org_test_B2B_site will be used for business users.</description>
+    </item>
+    
+    <item>
       <title>ConnectUser</title>
       <link>/travelgatex/reference/objects/connectuser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2458,6 +2469,17 @@ GraphQL Schema definition type Search {Show deprecated fieldshotel(token
     </item>
     
     <item>
+      <title>Security Model</title>
+      <link>/admin/concepts/iam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/admin/concepts/iam/</guid>
+      <description>Overview TravelgateX Identity &amp;amp; Access Management (IAM) lets administrators authorize who can take action on specific resources, giving you full control and visibility to manage resources centrally. IAM provides a unified view into security policy across your entire organization, with built-in auditing to ease compliance processes.
+IAM lets you manage access control by defining who (member) has what access (role) for which resource:
+Identity and Access Management&amp;lt;b&amp;gt;Identity and Access Management&amp;lt;/b&amp;gt;Members[Not supported by viewer]Roles</description>
+    </item>
+    
+    <item>
       <title>ServiceApi</title>
       <link>/travelgatex/reference/objects/serviceapi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2961,6 +2983,18 @@ Require by GetUploadedFilesResponse: ## GetUploadedFilesGetMappeaStatsRespons
     </item>
     
     <item>
+      <title>Common Resources</title>
+      <link>/admin/concepts/common-resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/admin/concepts/common-resources/</guid>
+      <description>Overview Common resources are used in more than 1 TravelgateX product. So creating, updating or deleting one of them resources can impact on several product behaviors.
+Supplier A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers.
+Access An Access is a set of credentials and configuration in order to access a Supplier.
+Client Client identify who is doing the request and holds a configuraiotn assigned to it.</description>
+    </item>
+    
+    <item>
       <title>GraphQL Overview</title>
       <link>/learning-graphql/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2980,15 +3014,6 @@ Require by GetUploadedFilesResponse: ## GetUploadedFilesGetMappeaStatsRespons
  Hotel map  Board Map  Room Map  Rate Map   Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
 Example files You can download example for the files structure here
 Ftp Endpoint ftp://ftp.xmltravelgate.com</description>
-    </item>
-    
-    <item>
-      <title>Quickstart</title>
-      <link>/admin/quickstart/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/quickstart/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -3158,15 +3183,6 @@ Search Single Mode This mode is used when the client only wants to get options f
     </item>
     
     <item>
-      <title>Core Entities</title>
-      <link>/admin/concepts/core-entities/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/concepts/core-entities/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Currency Converter</title>
       <link>/hotelx/plugins/converter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3174,33 +3190,6 @@ Search Single Mode This mode is used when the client only wants to get options f
       <guid>/hotelx/plugins/converter/</guid>
       <description>Currency converter is an optional plugin and permits to apply currency conversion over all the prices in one Option.
 CurrencyX This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp. Is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned.</description>
-    </item>
-    
-    <item>
-      <title>Gateway Model</title>
-      <link>/admin/concepts/gateway-model/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/concepts/gateway-model/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Groups Model</title>
-      <link>/admin/concepts/groups-model/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/concepts/groups-model/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IAM Model</title>
-      <link>/admin/concepts/iam-model/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/concepts/iam-model/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -3231,9 +3220,9 @@ NetPriceX This plugin receives an Option by parameter and returns an Option with
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/security/overview/</guid>
-      <description>Introduction Resources are granted to Partners belonging to Organizations.
-IAM lets partners administrators authorize who can take action on specific resources, giving you full control and visilibity to manage resources centrally.
-Authentication Authentication is the process of authorizing or making sure that the Partner is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it&amp;rsquo;s an API Key or a JSON Web Token.</description>
+      <description>Introduction TravelgateX offers a fine-grained access control and visibility for centrally managing resources, which are granted to Partners belonging to Organizations.
+Authentication Authentication is the process of authorizing or making sure that the Partner is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it&amp;rsquo;s an API Key or a JSON Web Token.
+API Key The API key takes cares of the authentication of applications, normally created as Service Account with limited scopes.</description>
     </item>
     
     <item>

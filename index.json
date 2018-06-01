@@ -413,6 +413,13 @@
 	"content": " The information and credentials required to access the supplier’s system.\nGraphQL Schema definition type ConfigurationInput {\r\rusername: String \r\r\rpassword: String \r\r\rurls: UrlsInput! \r\r\rparameters: [ParameterInput!] \r\r\rmarkets: [String!] \r\r\rrateRules: [RateRulesType!] \r\r}\r\r\rFields username(String):\rUser name for the connection.\r\rpassword(String):\rPassword for the connection.\r\rurls(UrlsInput!):\rUrl or endpoint for the connection.\r\rparameters([ParameterInput!]):\rList of parameters with additional required information.\r\rmarkets([String!]):\rSource markets allowed for the access.\r\rrateRules([RateRulesType!]):\rRateRules allowed for the access.\r\r\nRequire by HotelXAccessInput: \rAccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.\r\rAccessConfigurationInput: \rThe information required to access the supplier\u0026#39;s system.\r\rIdAccessConfigurationInput: \r\r\r\n"
 },
 {
+	"uri": "/admin/howtos/howto-configure-permissions/",
+	"title": "Configure HotelX Security",
+	"tags": [],
+	"description": "",
+	"content": " Granting Permissions This topic describes how to configure permissions for a organization using HotelX and Stats\nBefore you begin  Read about IAM, which contains information about how TravelgateX manages security Read about HotelX, which contains information about HotelX product  Scenario: Organization buying suppliers through HotelX In this scenario, orgnanization org_test signs on TravelgateX in order to use HotelX to buy product from suppliers.\nDistribution will be made through 2 different channels, end users will use org_test_B2C_site whereas that org_test_B2B_site will be used for business users. Every channel could be configured separately.\nPurchase will be made through accesses access_0 and access_1 which configure credentials for supplier_0 and supplier_1.\nOnce org_test completes API development, decides to implement the role permission schema provided by TravelgateX identifying its teams and members:\n   Team Members Description     CTO cto@org_test.com Manage all members and its permissions   Development dev1@org_test.com\ndev2@org_test.com Full access to HotelX and view stats   Operations operation1@org_test.com Only view stats   Backoffice backoffice1@org_test.com Permissions to Book, Cancel and Retrive Bookings through HotelX    A security implementation of this scenario will look similar to the following:\nGroup hiereachy\u0026lt;b\u0026gt;Group hiereachy\u0026lt;/b\u0026gt;Organization[Not supported by viewer]org_test[Not supported by viewer]Folders[Not supported by viewer]purchase[Not supported by viewer]Products[Not supported by viewer]HotelX_0[Not supported by viewer]Stats_0[Not supported by viewer]Resources[Not supported by viewer]Clients[Not supported by viewer]org_test_B2C_site[Not supported by viewer]org_test_B2B_site[Not supported by viewer]Accesses[Not supported by viewer]access_0[Not supported by viewer]access_1[Not supported by viewer]Suppliers[Not supported by viewer]supplier_0[Not supported by viewer]supplier_1[Not supported by viewer]Clients[Not supported by viewer]org_test_B2C_site[Not supported by viewer]org_test_B2B_site[Not supported by viewer]org.owner[Not supported by viewer]cto@org_test.com[Not supported by viewer]hotelx.booking[Not supported by viewer]backoffice1@org_test.com[Not supported by viewer]stats.viewer[Not supported by viewer]operation1@org_test.com[Not supported by viewer]hotelx.owner, stats.owner[Not supported by viewer]dev1@org_test.com, dev2@org_test.com\u0026lt;div style=\u0026ldquo;text-align: center\u0026rdquo;\u0026gt;dev1@org_test.com, dev2@org_test.com\u0026lt;/div\u0026gt;\nGroup hierarchy is organized as:\n 1 organization named org_test 1 folder named purchase, wich manages all products hired by org_test:  HotelX to manage clients, suppliers and accesses Stats to view statistics   As long as the IAM policy manage these roles:\n org.owner: All permissions over all organization resources hotelx.owner: All permissions over all HotelX resources hotelx.booking: Book Permissions (Book, Cancel and Get Bookings) over HotelX operations stats.owner: All permissions over all Stats resources stats.viewer: View permissions over Stats  "
+},
+{
 	"uri": "/travelgatex/reference/objects/connectuser/",
 	"title": "ConnectUser",
 	"tags": [],
@@ -1736,6 +1743,13 @@
 	"content": " Available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the suppliers. The availability request is very straight forward.\nGraphQL Schema definition type Search {\rShow deprecated fields\r\r\rhotel(\r\r\r\rtoken: String,\r\r\r\r\rcriteria: HotelCriteriaSearchInput,\r\r\r\r\rsettings: HotelSettingsInput,\r\r\r\r\rfilter: FilterInput,\r\r\r\r\r): HotelSearch \r// deprecated from 2017-11-21. You can find it in query at HotelX\r\r\r}\r\r\rRequire by Query: \r\r\r\n"
 },
 {
+	"uri": "/admin/concepts/iam/",
+	"title": "Security Model",
+	"tags": [],
+	"description": "",
+	"content": " Overview TravelgateX Identity \u0026amp; Access Management (IAM) lets administrators authorize who can take action on specific resources, giving you full control and visibility to manage resources centrally. IAM provides a unified view into security policy across your entire organization, with built-in auditing to ease compliance processes.\nIAM lets you manage access control by defining who (member) has what access (role) for which resource:\nIdentity and Access Management\u0026lt;b\u0026gt;Identity and Access Management\u0026lt;/b\u0026gt;Members[Not supported by viewer]Roles\n[Not supported by viewer]Usersuserid@mail.com\n[Not supported by viewer]Service Accounts3434fAFE·EFF22\n[Not supported by viewer]owner[Not supported by viewer]viewer[Not supported by viewer]editor[Not supported by viewer]custom[Not supported by viewer]\nConcepts related to identity You grant access to members which can be of following types\n Users: Represents a developer, administrator or any other person who interacts with TravelgateX Platform. Any email address can be an identity.\n Service Accounts: Represents an application instead of to an individual end user. You can create as many service accounts as needed to represent the different logical components of your application.\n  Concepts related to access management When an authenticated member attempts to make a request, IAM makes an authorization decision about whether the member is allowed to perform the operation on a resource.\nResources and Groups You can grant access to member for a resource. Some examples of common resources are Suppliers, Accesses and Clients.\nGroups are organized hierachically, where the organization node is the root node in the hierachy, the folders are the children of the organization and the products are the children of the folders.\nHierarchy assignment Resources are assigned to groups and propagated by groups hierarchically from bottom to top.\nGroup hiereachy\u0026lt;b\u0026gt;Group hiereachy\u0026lt;/b\u0026gt;Organization[Not supported by viewer]organization_0[Not supported by viewer]Folders[Not supported by viewer]folder_0\u0026lt;\u0026lt;Seller Team\u0026gt;\u0026gt;[Not supported by viewer]folder_1\u0026lt;\u0026lt;Buyer Team\u0026gt;\u0026gt;[Not supported by viewer]Products[Not supported by viewer]Stats_0[Not supported by viewer]HotelX_1[Not supported by viewer]HotelX_0[Not supported by viewer]Stats_1[Not supported by viewer]Resources hierachy\u0026lt;b\u0026gt;Resources hierachy\u0026lt;/b\u0026gt;Resources[Not supported by viewer]InheritanceInheritanceInheritanceInheritanceaccess_0[Not supported by viewer]AssignmentAssignment\nPermissions and Roles Permissions determine what operations are allowed on a resource.\nA role is a collection of permissions. You cannot assign a permission to the member directly; instead you grant them a role. When you grant a role to a user, you grant them all the permissions that the role contains.\nYou can grant roles to members, which define who has what type of access. A policy is attached to a resource and identifies which member role is applied in every resource.\nMember permissions[Not supported by viewer]Members[Not supported by viewer]Role\n[Not supported by viewer]User[Not supported by viewer]viewer[Not supported by viewer]Service Account[Not supported by viewer]Belongs toBelongs toGroupsGroupsResourcesResourcesorganizations[Not supported by viewer]folders[Not supported by viewer]products[Not supported by viewer]accesses[Not supported by viewer]suppliers[Not supported by viewer]clients[Not supported by viewer]IAM Policy[Not supported by viewer]\n"
+},
+{
 	"uri": "/travelgatex/reference/objects/serviceapi/",
 	"title": "ServiceApi",
 	"tags": [],
@@ -2093,6 +2107,13 @@
 	"content": " Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.\n --                                            1. SEARCH  2. QUOTE  3. BOOK                            OptionID  WHERE TO NEXT?   QuoteID  OptionID   ConfirmationID  QuoteID      \nSearch Performs a hotel availability search over 1 or more Seller accesses. Depending Seller, search operations implicit use supplier’s cache.\nOperation { \u0026quot;query\u0026quot;: { \u0026quot;hotelX\u0026quot;: { \u0026quot;search\u0026quot;: { } } } }  PlayGround Samples  search   Quote Performs an hotel quote over an option returned in Search Response.\nOperation { \u0026quot;query\u0026quot;: { \u0026quot;hotelX\u0026quot;: { \u0026quot;quote\u0026quot;: { } } } }  PlayGround Samples  quote   Book Performs a book or reservation over an option returned in Quote Response.\nOperation { \u0026quot;mutation\u0026quot;: { \u0026quot;hotelX\u0026quot;: { \u0026quot;book\u0026quot;: { } } } }  PlayGround Samples  book   "
 },
 {
+	"uri": "/admin/concepts/common-resources/",
+	"title": "Common Resources",
+	"tags": [],
+	"description": "",
+	"content": " Overview Common resources are used in more than 1 TravelgateX product. So creating, updating or deleting one of them resources can impact on several product behaviors.\nSupplier A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers.\nAccess An Access is a set of credentials and configuration in order to access a Supplier.\nClient Client identify who is doing the request and holds a configuraiotn assigned to it.\n"
+},
+{
 	"uri": "/learning-graphql/overview/",
 	"title": "GraphQL Overview",
 	"tags": [],
@@ -2111,13 +2132,6 @@
 	"title": "Objects",
 	"tags": [],
 	"description": "",
-	"content": ""
-},
-{
-	"uri": "/admin/quickstart/",
-	"title": "Quickstart",
-	"tags": [],
-	"description": "Admin Quickstart",
 	"content": ""
 },
 {
@@ -2216,7 +2230,7 @@
 	"title": "Concepts",
 	"tags": [],
 	"description": "Understand TravelgateX basic concepts",
-	"content": "\rCore Entities\r\r\r\rGateway Model\r\r\r\rGroups Model\r\r\r\rIAM Model\r\r\r\r\r"
+	"content": "\rSecurity Model\r\r\r\rCommon Resources\r\r\r\r\r"
 },
 {
 	"uri": "/getting-started/concepts/",
@@ -2282,13 +2296,6 @@
 	"content": " On this page you will learn about Transactional Booking Flow to Search, quote and confirm a reservation. You will also see the difference between the Search Single Mode VS Search Multi Mode.\nSearch Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that them want to use. In the request have to use the access filter, you can find a sample here:\n{ \u0026quot;filter\u0026quot;: { \u0026quot;access\u0026quot;: { \u0026quot;includes\u0026quot;: [\u0026quot;yourAccess\u0026quot;] } } }                                                                   \nSearch Multi Mode If you don’t have any filter in the request and you have permissions for multimode, the search is multimode. By default, the request is for all the accesses that you have configured in the product, if you want to apply some filter, you have to use the filter and to indicate the rules that you want. Is important to know that you only can use includes or excludes in the same request, but never both in the same request.\n                                                                        \nIncludes Sample { \u0026quot;filter\u0026quot;: { \u0026quot;access\u0026quot;: { \u0026quot;includes\u0026quot;: [\u0026quot;yourAccess\u0026quot;,\u0026quot;yourAccess2\u0026quot;] } } }  Excludes Sample { \u0026quot;filter\u0026quot;: { \u0026quot;access\u0026quot;: { \u0026quot;excludes\u0026quot;: [\u0026quot;yourAccess\u0026quot;] } } }  "
 },
 {
-	"uri": "/admin/concepts/core-entities/",
-	"title": "Core Entities",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "/hotelx/plugins/converter/",
 	"title": "Currency Converter",
 	"tags": [],
@@ -2303,20 +2310,6 @@
 	"content": " Bulk Data Automation Many of TravelgateX\u0026rsquo;s products use client\u0026rsquo;s data in order to perform tasks. You can upload these data to our platform either by uploading it via SFTP or via a mutation. It\u0026rsquo;s up to you to decide how to get the data to our servers.\nOur APIs have been built from the ground up with performance in mind, this means that we must store data inside the application in order to keep the response time to a minimum.\nThe data we must store per product is the following:\nHotelX  Mappings Custom hotel lists  Uploading Strategies\rHow to Upload data\n\r\r\r\r"
 },
 {
-	"uri": "/admin/concepts/gateway-model/",
-	"title": "Gateway Model",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/admin/concepts/groups-model/",
-	"title": "Groups Model",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "/hotelx/",
 	"title": "HotelX",
 	"tags": [],
@@ -2324,18 +2317,18 @@
 	"content": "HotelX connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration costs and you can operate with hundreds of hotel sellers. HotelX has been designed from the ground up to be fast, reliable and scales to millions of requests.\n\t\rOverview\rHotelX Information\n\r\r\r\t\rQuickstart\rHotelX Quickstart\n\r\r\r\t\rConcepts\rUnderstand TravelgateX basic concepts\n\r\r\r\t\rHow-to Guides\rPerform specific tasks\n\r\r\r\t\rPlugins\rAdditional logic to your App\n\r\r\r\t\rReference\rReference Documentation\n\r\r\r\t\rResources\rQuotas, release notes\n\r\r\r\r"
 },
 {
-	"uri": "/hotelx/howtos/",
-	"title": "How-to Guides",
+	"uri": "/admin/howtos/",
+	"title": "How-to Admin Guides",
 	"tags": [],
 	"description": "Perform specific tasks",
 	"content": "How-to Guides\n"
 },
 {
-	"uri": "/admin/concepts/iam-model/",
-	"title": "IAM Model",
+	"uri": "/hotelx/howtos/",
+	"title": "How-to Guides",
 	"tags": [],
-	"description": "",
-	"content": ""
+	"description": "Perform specific tasks",
+	"content": "How-to Guides\n"
 },
 {
 	"uri": "/travelgatex/reference/interfaces/",
@@ -2363,7 +2356,7 @@
 	"title": "Overview",
 	"tags": [],
 	"description": "Learn Platform Security",
-	"content": " Introduction Resources are granted to Partners belonging to Organizations.\nIAM lets partners administrators authorize who can take action on specific resources, giving you full control and visilibity to manage resources centrally.\nAuthentication Authentication is the process of authorizing or making sure that the Partner is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it\u0026rsquo;s an API Key or a JSON Web Token.\nAPI Key The API key takes cares of the authentication of applications, normally created as Service Account with limited scopes. The correct way to send it to GraphQL server is via HTTP Header:\n API key: \u0026quot;Authorization: Apikey xxxxxxxxx\u0026quot;  curl -X\\ POST\\ -H \u0026quot;Content-Type: application/json\u0026quot; \\ -H \u0026quot;Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\u0026quot; \\ --data '{\u0026quot;query\u0026quot;:\u0026quot;{searchStatusService{code description}}\u0026quot;}' \\ --compressed \\ https://api.travelgatex.com  Creating an API Key For development purposes please use the following test Api Key q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\nJSON Web Token Coming soon\rAuthorization Once the Partner is authenticated we must authorize the partner to use the requested Resource.\nRole based access control (RBAC) is the de facto standard for authorization. However, it introduces many complexities for practical applications: roles can be inflexible to change and additional mapping between users and roles must be maintained separately.\nTravelgateX permissions are Resource Group Assigned rules, defined using GraphQL API and determined at runtime by the data graph of the application.\nFurther Reading  https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a  "
+	"content": " Introduction TravelgateX offers a fine-grained access control and visibility for centrally managing resources, which are granted to Partners belonging to Organizations.\nAuthentication Authentication is the process of authorizing or making sure that the Partner is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it\u0026rsquo;s an API Key or a JSON Web Token.\nAPI Key The API key takes cares of the authentication of applications, normally created as Service Account with limited scopes. The correct way to send it to GraphQL server is via HTTP Header:\n API key: \u0026quot;Authorization: Apikey xxxxxxxxx\u0026quot;  curl -X\\ POST\\ -H \u0026quot;Content-Type: application/json\u0026quot; \\ -H \u0026quot;Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\u0026quot; \\ --data '{\u0026quot;query\u0026quot;:\u0026quot;{searchStatusService{code description}}\u0026quot;}' \\ --compressed \\ https://api.travelgatex.com  Creating an API Key For development purposes please use the following test Api Key q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\nJSON Web Token (JWT) The JSON Web Token takes cares of the authentication of users, normally created as User.\nWhenever the user wants to access a protected resource, the user agent should send the JWT, in the Authorization header using the Bearer schema. The content of the header should look like the following:\n JWT: \u0026quot;Authorization: Bearer xxxxxxxxx\u0026quot;  Authorization Once the Member is authenticated we must authorize the partner to use the requested Resource.\nIAM lets partners administrators authorize who can take action on specific resources, giving you full control and visilibity to manage resources centrally.\nFurther Reading  Authentication JWT  "
 },
 {
 	"uri": "/hotelx/plugins/processor/",
@@ -2510,7 +2503,7 @@
 	"title": "Admin",
 	"tags": [],
 	"description": "",
-	"content": "\r\t\rOverview\rAdmin Information\n\r\r\r\t\rQuickstart\rAdmin Quickstart\n\r\r\r\t\rConcepts\rUnderstand TravelgateX basic concepts\n\r\r\r\t\rReference\rReference Documentation\n\r\r\r\t\rResources\rQuotas, release notes\n\r\r\r\r"
+	"content": "\r\t\rOverview\rAdmin Information\n\r\r\r\t\rConcepts\rUnderstand TravelgateX basic concepts\n\r\r\r\t\rHow-to Admin Guides\rPerform specific tasks\n\r\r\r\t\rReference\rReference Documentation\n\r\r\r\t\rResources\rQuotas, release notes\n\r\r\r\r"
 },
 {
 	"uri": "/learning-graphql/",

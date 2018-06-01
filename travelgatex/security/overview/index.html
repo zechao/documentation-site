@@ -1833,11 +1833,6 @@
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/admin/quickstart/" class="dd-item">
-            <a href="/admin/quickstart/">
-              <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
         <li data-nav-id="/admin/concepts/" class="dd-item">
 
             <a href="/admin/concepts/" class="directory">
@@ -1847,24 +1842,30 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/admin/concepts/core-entities/" class="dd-item">
-            <a href="/admin/concepts/core-entities/">
-              <span style="padding-left: 8px;">Core Entities</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/admin/concepts/iam/" class="dd-item">
+            <a href="/admin/concepts/iam/">
+              <span style="padding-left: 8px;">Security Model</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/admin/concepts/gateway-model/" class="dd-item">
-            <a href="/admin/concepts/gateway-model/">
-              <span style="padding-left: 8px;">Gateway Model</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/admin/concepts/common-resources/" class="dd-item">
+            <a href="/admin/concepts/common-resources/">
+              <span style="padding-left: 8px;">Common Resources</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/admin/concepts/groups-model/" class="dd-item">
-            <a href="/admin/concepts/groups-model/">
-              <span style="padding-left: 8px;">Groups Model</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
+            </ul>
         </li>
-          <li data-nav-id="/admin/concepts/iam-model/" class="dd-item">
-            <a href="/admin/concepts/iam-model/">
-              <span style="padding-left: 8px;">IAM Model</span><i class="fa fa-circle-thin read-icon"></i>
+        <li data-nav-id="/admin/howtos/" class="dd-item">
+
+            <a href="/admin/howtos/" class="directory">
+       
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+                How-to Admin Guides
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/admin/howtos/howto-configure-permissions/" class="dd-item">
+            <a href="/admin/howtos/howto-configure-permissions/">
+              <span style="padding-left: 8px;">Configure HotelX Security</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -2025,15 +2026,13 @@
 
 <h3 id="introduction">Introduction</h3>
 
-<p><em>Resources</em> are granted to <em>Partners</em> belonging to <em>Organizations</em>.</p>
-
-<p><a href="/admin/account/iam">IAM</a> lets partners administrators authorize who can take action on specific resources, giving you full control and visilibity to manage resources centrally.</p>
+<p>TravelgateX offers a fine-grained access control and visibility for centrally managing <em>resources</em>, which are granted to <em>Partners</em> belonging to <em>Organizations</em>.</p>
 
 <h3 id="authentication">Authentication</h3>
 
 <p>Authentication is the process of authorizing or making sure that the <em>Partner</em> is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it&rsquo;s an <a href="#api-key">API Key</a> or a <a href="#json-web-token">JSON Web Token</a>.</p>
 
-<h3 id="api-key">API Key</h3>
+<h4 id="api-key">API Key</h4>
 
 <p>The API key takes cares of the authentication of applications, normally created as <code>Service Account</code> with limited scopes.
 The correct way to send it to GraphQL server is via HTTP Header:</p>
@@ -2051,30 +2050,31 @@ The correct way to send it to GraphQL server is via HTTP Header:</p>
    https://api.travelgatex.com
 </code></pre>
 
-<h3 id="creating-an-api-key">Creating an API Key</h3>
+<h5 id="creating-an-api-key">Creating an API Key</h5>
 
 <p>For development purposes please use the following test Api Key <code>q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ</code></p>
 
-<h3 id="json-web-token">JSON Web Token</h3>
+<h3 id="json-web-token-jwt">JSON Web Token (JWT)</h3>
 
-<div class="alert 
-alert-warning"
- 
-role="alert">Coming soon</div>
+<p>The JSON Web Token takes cares of the authentication of users, normally created as <code>User</code>.</p>
 
+<p>Whenever the user wants to access a protected resource, the user agent should send the JWT, in the Authorization header using the Bearer schema. The content of the header should look like the following:</p>
+
+<ul>
+<li>JWT: <code>&quot;Authorization: Bearer xxxxxxxxx&quot;</code></li>
+</ul>
 
 <h3 id="authorization">Authorization</h3>
 
-<p>Once the <em>Partner</em> is authenticated we must authorize the partner to use the requested <em>Resource</em>.</p>
+<p>Once the <em>Member</em> is authenticated we must authorize the partner to use the requested <em>Resource</em>.</p>
 
-<p>Role based access control (RBAC) is the de facto standard for authorization. However, it introduces many complexities for practical applications: roles can be inflexible to change and additional mapping between users and roles must be maintained separately.</p>
-
-<p>TravelgateX permissions are Resource Group Assigned rules, defined using GraphQL API and determined at runtime by the data graph of the application.</p>
+<p><a href="/admin/concepts/iam">IAM</a> lets partners administrators authorize who can take action on specific resources, giving you full control and visilibity to manage resources centrally.</p>
 
 <h3 id="further-reading">Further Reading</h3>
 
 <ul>
-<li><a href="https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a">https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a</a></li>
+<li><a href="https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a">Authentication</a></li>
+<li><a href="https://jwt.io/introduction/">JWT</a></li>
 </ul>
 
 
@@ -2114,10 +2114,14 @@ role="alert">Coming soon</div>
 <li>
 <ul>
 <li><a href="#introduction">Introduction</a></li>
-<li><a href="#authentication">Authentication</a></li>
-<li><a href="#api-key">API Key</a></li>
+<li><a href="#authentication">Authentication</a>
+<ul>
+<li><a href="#api-key">API Key</a>
+<ul>
 <li><a href="#creating-an-api-key">Creating an API Key</a></li>
-<li><a href="#json-web-token">JSON Web Token</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#json-web-token-jwt">JSON Web Token (JWT)</a></li>
 <li><a href="#authorization">Authorization</a></li>
 <li><a href="#further-reading">Further Reading</a></li>
 </ul></li>

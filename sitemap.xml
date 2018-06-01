@@ -239,6 +239,10 @@
   </url>
   
   <url>
+    <loc>/admin/howtos/howto-configure-permissions/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/connectuser/</loc>
   </url>
   
@@ -995,6 +999,10 @@
   </url>
   
   <url>
+    <loc>/admin/concepts/iam/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/serviceapi/</loc>
   </url>
   
@@ -1199,6 +1207,10 @@
   </url>
   
   <url>
+    <loc>/admin/concepts/common-resources/</loc>
+  </url>
+  
+  <url>
     <loc>/learning-graphql/overview/</loc>
   </url>
   
@@ -1208,10 +1220,6 @@
   
   <url>
     <loc>/travelgatex/reference/objects/</loc>
-  </url>
-  
-  <url>
-    <loc>/admin/quickstart/</loc>
   </url>
   
   <url>
@@ -1307,10 +1315,6 @@
   </url>
   
   <url>
-    <loc>/admin/concepts/core-entities/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/plugins/converter/</loc>
   </url>
   
@@ -1319,23 +1323,15 @@
   </url>
   
   <url>
-    <loc>/admin/concepts/gateway-model/</loc>
-  </url>
-  
-  <url>
-    <loc>/admin/concepts/groups-model/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/</loc>
   </url>
   
   <url>
-    <loc>/hotelx/howtos/</loc>
+    <loc>/admin/howtos/</loc>
   </url>
   
   <url>
-    <loc>/admin/concepts/iam-model/</loc>
+    <loc>/hotelx/howtos/</loc>
   </url>
   
   <url>
