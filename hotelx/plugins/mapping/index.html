@@ -1769,6 +1769,11 @@
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/hotelx/plugins/blacklist/" class="dd-item">
+            <a href="/hotelx/plugins/blacklist/">
+              <span style="padding-left: 8px;">Blacklist</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/hotelx/plugins/mapping/" class="dd-item active">
             <a href="/hotelx/plugins/mapping/">
               <span style="padding-left: 8px;">Mapping</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2059,29 +2064,6 @@
 
 <p>You can download example for the files structure <a href="/content/sample_mapping.zip">here</a></p>
 
-<h2 id="ftp-endpoint">Ftp Endpoint</h2>
-
-<p><a href="ftp://ftp.xmltravelgate.com">ftp://ftp.xmltravelgate.com</a></p>
-
-<h2 id="directory-format">Directory Format</h2>
-
-<h3 id="root-path">Root path</h3>
-
-<p>The structure of the directory should be in the below format, all files should be inside this directory</p>
-
-<p>/F[Folder code]_[Unique code]/HotelX_[Unique code]/
-* F[Folder code]_[Unique code]
-    * <strong>Folder code</strong>: corresponds to the folder number.
-    * <strong>Unique code</strong>: corresponds to the folder unique code in our system.
-* HotelX_[Unique code]
-    * <strong>Unique code</strong>: corresponds to the HotelX unique code in our system.</p>
-
-<h3 id="example">Example</h3>
-
-<ul>
-<li>/F<strong>0</strong>_<strong>178</strong>/HotelX_<strong>179</strong></li>
-</ul>
-
 <h2 id="entity-maps">Entity Maps</h2>
 
 <h3 id="file-format">File Format</h3>
@@ -2089,32 +2071,32 @@
 <p>The file should be in the following format:</p>
 
 <ul>
-<li><strong>Encoding</strong>: UTF-8</li>
+<li><p><strong>Encoding</strong>: UTF-8</p></li>
 
 <li><p><strong>File Name</strong>: [Context Source]_[Context Destination]_[entity]_map.csv</p>
 
 <ul>
-<li>Context Source: correspond to the client code</li>
-<li>Context Destination: correspond to the supplier code
+<li><p>Context Source: correspond to the client code</p></li>
 
-<ul>
-<li>1 file for each supplier</li>
-</ul></li>
+<li><p>Context Destination: correspond to the supplier code</p></li>
+
+<li><p>1 file for each supplier</p></li>
 </ul></li>
 
 <li><p><strong>Header Row</strong>: Code Source, Code Destination</p>
 
 <ul>
-<li>Context Source: correspond to the client codes</li>
-<li>Context Destination: correspond to the supplier codes</li>
+<li><p>Context Source: correspond to the client codes</p></li>
+
+<li><p>Context Destination: correspond to the supplier codes</p></li>
 </ul></li>
 
 <li><p><strong>Delimiter</strong>: Comma (&ldquo;,&rdquo;)</p></li>
 
-<li><p><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/Maps/[entity]/</p>
-
-<h3 id="file-names">File Names</h3></li>
+<li><p><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/Maps/[entity]/</p></li>
 </ul>
+
+<h3 id="file-names">File Names</h3>
 
 <p>All map files must have the same name structure as follow, you need create a file for <em>Context Destionation</em></p>
 
@@ -2185,11 +2167,13 @@
 <h3 id="samples-file">Samples File</h3>
 
 <p>Suppose we have the follow client code and supplier code, you need create one file for each supplier you have
-* Client code: GUE
-* Supplier Code: BVJ</p>
+* Client code: GUE</p>
 
-<p><strong>Name</strong>: GUE_BVJ_hotel_map.csv
-<strong>Data</strong>:</p>
+<ul>
+<li>Supplier Code: BVJ</li>
+</ul>
+
+<p><strong>Name</strong>: GUE_BVJ_hotel_map.csv</p>
 
 <pre><code class="language-csv">Code Source, Code Destination
 10,c11\#10
@@ -2258,13 +2242,12 @@
 <li>File Name: roomDescriptionMapX_aliasTable.csv </li>
 <li>Header Row: ToReplace, ReplaceWith, Order </li>
 <li>Delimiter:  Comma (“,”) </li>
-
-<li><p>Directory:  /F[folder code]_[unique code]/HotelX_[unique code]/Maps/plugin/</p>
+<li>Directory:  /F[folder code]_[unique code]/HotelX_[unique code]/Maps/plugin/</li>
+</ul>
 
 <h4 id="sample-file">Sample File</h4>
 
-<p><strong>Name</strong>: roomDescriptionMapX_aliasTable.csv
-<strong>Data</strong>:</p>
+<p><strong>Name</strong>: roomDescriptionMapX_aliasTable.csv</p>
 
 <pre><code class="language-csv">ToReplace,ReplaceWith,Order
 1 bed,apt,102
@@ -2276,8 +2259,7 @@ apartment,apt,902
 
 <h3 id="noise-words">Noise Words</h3>
 
-<h4 id="format-file-1">Format File</h4></li>
-</ul>
+<h4 id="format-file-1">Format File</h4>
 
 <p>The file must be in the below format:</p>
 
@@ -2285,8 +2267,8 @@ apartment,apt,902
 <li><strong>Encoding</strong>: UTF-8 </li>
 <li><strong>File Name</strong>: roomDescriptionMapX_noiseWords.csv </li>
 <li><strong>Header Row</strong>: ToRemove </li>
-
-<li><p><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/Maps/plugin/</p>
+<li><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/Maps/plugin/</li>
+</ul>
 
 <h4 id="sample-file-1">Sample File</h4>
 
@@ -2301,33 +2283,30 @@ breakf
 
 <h2 id="how-applies">How applies</h2>
 
-<p>When you execute the plugin the steps are:</p></li>
+<p>When you execute the plugin the steps are:</p>
 
-<li><p>Get room description.</p></li>
-
-<li><p>Replace strings with roomDescriptionMapX_aliasTable.csv, the order to apply this replace depends on the order column.</p></li>
-
-<li><p>Sort the description words alphabetically </p></li>
-
-<li><p>Remove words with roomDescriptionMapX_noiseWords.csv file. </p></li>
-
-<li><p>Get your new code. </p>
+<ol>
+<li>Get room description.</li>
+<li>Replace strings with roomDescriptionMapX_aliasTable.csv, the order to apply this replace depends on the order column.</li>
+<li>Sort the description words alphabetically.</li>
+<li>Remove words with roomDescriptionMapX_noiseWords.csv file. </li>
+<li>Get your new code. </li>
+</ol>
 
 <h2 id="execution-example">Execution example</h2>
 
-<pre><code>{
+<pre><code class="language-json">{
     &quot;plugins&quot;: {
-        &quot;step&quot;: &quot;RESPONSE\_OPTION&quot;,
+        &quot;step&quot;: &quot;RESPONSE_OPTION&quot;,
         &quot;pluginsType&quot;: [
             {
-                &quot;type&quot;: &quot;ROOM\_MAP&quot;
-                &quot;name&quot;: &quot;mapping\_room\_description&quot;
+                &quot;type&quot;: &quot;ROOM_MAP&quot;,
+                &quot;name&quot;: &quot;mapping_room_description&quot;
             }
         ]
     }
 }
-</code></pre></li>
-</ul>
+</code></pre>
 
 
 <hr/>
@@ -2364,12 +2343,6 @@ breakf
 <li>
 <ul>
 <li><a href="#example-files">Example files</a></li>
-<li><a href="#ftp-endpoint">Ftp Endpoint</a></li>
-<li><a href="#directory-format">Directory Format</a>
-<ul>
-<li><a href="#root-path">Root path</a></li>
-<li><a href="#example">Example</a></li>
-</ul></li>
 <li><a href="#entity-maps">Entity Maps</a>
 <ul>
 <li><a href="#file-format">File Format</a></li>

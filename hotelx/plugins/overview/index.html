@@ -1769,6 +1769,11 @@
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/hotelx/plugins/blacklist/" class="dd-item">
+            <a href="/hotelx/plugins/blacklist/">
+              <span style="padding-left: 8px;">Blacklist</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/hotelx/plugins/mapping/" class="dd-item">
             <a href="/hotelx/plugins/mapping/">
               <span style="padding-left: 8px;">Mapping</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2178,6 +2183,39 @@
 </tbody>
 </table>
 
+<h3 id="ftp-endpoint">Ftp Endpoint</h3>
+
+<p><a href="ftp://ftp.xmltravelgate.com">ftp://ftp.xmltravelgate.com</a></p>
+
+<h3 id="directory-format">Directory Format</h3>
+
+<h4 id="root-path">Root path</h4>
+
+<p>The structure of the directory should be in the below format, all files should be inside this directory</p>
+
+<p>/F[Folder code]_[Unique code]/HotelX_[Unique code]/
+* F[Folder code]_[Unique code]</p>
+
+<pre><code>* **Folder code**: corresponds to the folder number. 
+* **Unique code**: corresponds to the folder unique code in our 
+
+system.
+</code></pre>
+
+<ul>
+<li><p>HotelX_[Unique code]</p>
+
+<ul>
+<li><strong>Unique code</strong>: corresponds to the HotelX unique code in our system.</li>
+</ul></li>
+</ul>
+
+<h4 id="example">Example</h4>
+
+<ul>
+<li>/F<strong>0</strong>_<strong>178</strong>/HotelX_<strong>179</strong><br /></li>
+</ul>
+
 
 <hr/>
 
@@ -2220,6 +2258,12 @@
 <li><a href="#plugin-types">Plugin Types</a></li>
 <li><a href="#plugin-context-execution">Plugin Context Execution</a></li>
 <li><a href="#plugin-step-execution">Plugin Step Execution</a></li>
+<li><a href="#ftp-endpoint">Ftp Endpoint</a></li>
+<li><a href="#directory-format">Directory Format</a>
+<ul>
+<li><a href="#root-path">Root path</a></li>
+<li><a href="#example">Example</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>

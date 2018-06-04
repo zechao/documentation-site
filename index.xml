@@ -3011,6 +3011,20 @@ Required by GetUploadedFilesResponse: ## GetUploadedFilesGetMappeaStatsRespon
     </item>
     
     <item>
+      <title>Blacklist</title>
+      <link>/hotelx/plugins/blacklist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/blacklist/</guid>
+      <description>The blacklist are used to ignorer hotel code when we make a search. the are 2 types of blacklist, you can filter hotel code by specific access or by specific provider.
+In order to load your blacklist you just need to follow the instructions below:
+Access blacklist Blacklist is applied for specific access
+File Format The file should be in the below format:
+ Encoding: UTF-8
+ File Name: access_blacklist.</description>
+    </item>
+    
+    <item>
       <title>Booking Flow</title>
       <link>/hotelx/concepts/search-mode/booking-flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3051,7 +3065,7 @@ Client Client identify who is doing the request and holds a configuraiotn assign
       <description>The map plugins are used to change the supplier codes to client codes or vice versa. There are four types:
  Hotel map  Board Map  Room Map  Rate Map   Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
 Example files You can download example for the files structure here
-Ftp Endpoint ftp://ftp.xmltravelgate.com</description>
+Entity Maps File Format The file should be in the following format:</description>
     </item>
     
     <item>
@@ -3175,9 +3189,7 @@ API Gateway Our API gateway is stable, secure, fault tolerant and load balanced 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/resources/frequently-asked-questions/</guid>
-      <description>Search Do I have access to all the hotels in the test environment? No, we use a test supplier, so there is a limited number of hotels in the data base to be used.
-Which are the languages allowed in the new aggregator? The new aggregator allows each language, it will depend from each supplier.
-How many hotels code are allowed to request at the same time? We recommend a maximum of 200 hotels, the new aggregator will split to each supplier the maximum hotels allowed in different batches in order to request to the supplier all the hotels.</description>
+      <description>Search Which Apikey do I have to use?  I already have the TGX Welcome Pack: Then you should use the Api Key facilitated. I did not receive TGX Welcome Pack: Then you should use our dummy Api Key facilitated on our sample Playground.  Do I have access to all the hotels in the test environment? No, we use a test supplier, so there is a limited number of hotels in the data base to be used.</description>
     </item>
     
     <item>
