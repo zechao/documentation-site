@@ -2050,6 +2050,728 @@
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
 
+<h2 id="2018-06-01">2018-06-01</h2>
+
+<p>🛑  Input field <code>member</code> was added to input object type <code>DeleteMemberInput</code></p>
+
+<p>🛑  Input field <code>code</code> was removed from input object type <code>DeleteMemberInput</code></p>
+
+<p>🛑  Input field <code>UpdateGroupInput.api</code> changed type from <code>String!</code> to <code>ID!</code></p>
+
+<p>🛑  Input field <code>group</code> was added to input object type <code>UpdateGroupInput</code></p>
+
+<p>🛑  Input field <code>method</code> was removed from input object type <code>UpdateGroupInput</code></p>
+
+<p>🛑  Input field <code>code</code> was removed from input object type <code>UpdateGroupInput</code></p>
+
+<p>🛑  Input field <code>UpdateMemberInput.group</code> changed type from <code>String!</code> to <code>ID!</code></p>
+
+<p>🛑  Input field <code>resources</code> was added to input object type <code>UpdateMemberInput</code></p>
+
+<p>🛑  Input field <code>role</code> was added to input object type <code>UpdateMemberInput</code></p>
+
+<p>🛑  Input field <code>member</code> was added to input object type <code>UpdateMemberInput</code></p>
+
+<p>🛑  Input field <code>resource</code> was removed from input object type <code>UpdateMemberInput</code></p>
+
+<p>🛑  Input field <code>roles</code> was removed from input object type <code>UpdateMemberInput</code></p>
+
+<p>🛑  Input field <code>code</code> was removed from input object type <code>UpdateMemberInput</code></p>
+
+<p>🛑  Input field <code>CreateGroupInput.type</code> changed type from <code>GroupType!</code> to <code>GroupTypeInput!</code></p>
+
+<p>🛑  Input field <code>group</code> was added to input object type <code>CreateGroupInput</code></p>
+
+<p>🛑  Input field <code>code</code> was removed from input object type <code>CreateGroupInput</code></p>
+
+<p>🛑  Input field <code>CreateMemberInput.group</code> changed type from <code>String!</code> to <code>ID!</code></p>
+
+<p>🛑  Input field <code>resources</code> was added to input object type <code>CreateMemberInput</code></p>
+
+<p>🛑  Input field <code>role</code> was added to input object type <code>CreateMemberInput</code></p>
+
+<p>🛑  Input field <code>resource</code> was removed from input object type <code>CreateMemberInput</code></p>
+
+<p>🛑  Input field <code>roles</code> was removed from input object type <code>CreateMemberInput</code></p>
+
+<p>🛑  Input field <code>code</code> was removed from input object type <code>CreateMemberInput</code></p>
+
+<p>🛑  Input field <code>CreateOrganizationInput.user</code> changed type from <code>String!</code> to <code>ID!</code></p>
+
+<p>🛑  Input field <code>organization</code> was added to input object type <code>CreateOrganizationInput</code></p>
+
+<p>🛑  Input field <code>code</code> was removed from input object type <code>CreateOrganizationInput</code></p>
+
+<p>🛑  Argument <code>method: Method!</code> added to field <code>AdminMutation.updateGroup</code></p>
+
+<p>🛑  <code>Warning</code> object type no longer implements <code>AdviseMessage</code> interface</p>
+
+<p>🛑  Field <code>AdviseMessage.code</code> changed type from <code>String!</code> to <code>ID!</code></p>
+
+<p>🛑  <code>Error</code> object type no longer implements <code>AdviseMessage</code> interface</p>
+
+<p>🛑  Field <code>error</code> was removed from object type <code>Node</code></p>
+
+<p>✅  Input field <code>member</code> was added to input object type <code>CreateMemberInput</code></p>
+
+<p>✅  Input field <code>testMode</code> was added to input object type <code>HotelSettingsInput</code></p>
+
+<p>✅  Input field <code>HotelCriteriaSearchInput.hotels</code> changed type from <code>[String!]!</code> to <code>[String!]</code></p>
+
+<p>✅  Input field <code>HotelCriteriaSearchInput.hotels</code> description changed from <code>Contains the list of hotels's ID</code> to <code>Hotel Codes.</code></p>
+
+<p>✅  Input field <code>destinations</code> was added to input object type <code>HotelCriteriaSearchInput</code></p>
+
+<p>✅  Field <code>isEditable</code> was added to object type <code>APIData</code></p>
+
+<p>✅  Argument <code>type: RoleType</code> added to field <code>ResourceData.roles</code></p>
+
+<p>✅  Field <code>isEditable</code> was added to object type <code>ResourceData</code></p>
+
+<p>✅  Field <code>isEditable</code> was added to object type <code>RoleData</code></p>
+
+<p>✅  Field <code>type</code> was added to object type <code>RoleData</code></p>
+
+<p>✅  Argument <code>type: RoleType</code> added to field <code>MemberData.roles</code></p>
+
+<p>✅  Argument <code>type: GroupType</code> added to field <code>GroupData.children</code></p>
+
+<p>✅  Field <code>roles</code> was added to object type <code>GroupData</code></p>
+
+<p>✅  Field <code>managedGroups</code> was added to object type <code>GroupData</code></p>
+
+<p>✅  Deprecation reason on field <code>AdviseMessage.type</code> has changed from `<code>to</code>deprecated from 2018-06-01.`</p>
+
+<p>✅  Field <code>AdviseMessage.type</code> description changed from `TODO:</p>
+
+<p>Error type: The following types are valid:</p>
+
+<p>XXX: asd asdñoajskd lña ld<code>to</code>Error type: The following types are valid:`</p>
+
+<p>✅  Field <code>AdviseMessage.code</code> description changed from `TODO:</p>
+
+<p>Error code: The following codes can be returned:</p>
+
+<p>XXX: XXXXXXXXX XXXXXX<code>to</code>AM code: The following codes can be returned:`</p>
+
+<p>✅  Field <code>correlationID</code> was added to object type <code>AdviseMessage</code></p>
+
+<p>✅  Field <code>external</code> was added to object type <code>AdviseMessage</code></p>
+
+<p>✅  Field <code>level</code> was added to object type <code>AdviseMessage</code></p>
+
+<p>✅  Argument <code>type: RoleType</code> added to field <code>AdminQuery.roles</code></p>
+
+<p>✅  Deprecation reason on field <code>Query.mapping</code> has changed from <code>deprecated from 2017-11-21. You can find it in query at Admin</code> to <code>deprecated from 2017-11-21. You can find it in query at HotelX</code></p>
+
+<p>✅  Deprecation reason on field <code>Query.defaultSettings</code> has changed from <code>deprecated from 2017-11-21. You can find it in query at Admin</code> to <code>deprecated from 2017-11-21. You can find it in query at HotelX</code></p>
+
+<p>✅  Type <code>ExternalMessage</code> was added</p>
+
+<p>✅  Type <code>AdviseMessageLevel</code> was added</p>
+
+<p>✅  Type <code>GroupTypeInput</code> was added</p>
+
+<p>✅  Type <code>RoleType</code> was added</p>
+
+<h2 id="2018-05-21">2018-05-21</h2>
+
+<p>🛑  Input field <code>AccessInput.name</code> changed type from <code>String</code> to <code>String!</code></p>
+
+<p>✅  Input field <code>IdAccessConfigurationInput.isActive</code> description changed from <code>Indicates if the access is active.</code> to <code>Indicates if Access is active</code></p>
+
+<p>✅  Input field <code>ConnectUserGroupInput.isActive</code> description changed from <code>Indicates if the connect user is active for its connect user</code> to <code>Indicates if the connect user is active for its connected user</code></p>
+
+<p>✅  Input field <code>ConnectUserGroupInput.groupCode</code> description changed from <code>group code of the group related to this connect user</code> to <code>Group code of the group related to this connected user</code></p>
+
+<p>✅  Input field <code>AccessConfigurationInput.isActive</code> description changed from <code>Indicates if the access is active.</code> to <code>Indicates if Access is active</code></p>
+
+<p>✅  Description <code>Pair of groups and accesses. All accesses returned will belong to all the groups in groupCodes</code> on type <code>GroupAccess</code> has changed to <code>Pairs of Groups and Accesses. All Accesses returned will belong to all the Groups in groupCodes.</code></p>
+
+<p>✅  Field <code>GroupAccess.groupCodes</code> description changed from <code>group identifiers</code> to <code>Group identifiers</code></p>
+
+<p>✅  Field <code>ConnectUserGroup.isActive</code> description changed from <code>Indicates if the connect user is active for its connect user</code> to <code>Indicates if the connect user is active for its connected user</code></p>
+
+<p>✅  Field <code>ConnectUserGroup.groupCode</code> description changed from <code>group code of the group related to this connect user</code> to <code>Group code of the group related to this connected user</code></p>
+
+<p>✅  Description <code>data related to a connect user and its groups</code> on type <code>ConnectUser</code> has changed to <code>Data related to a connected user and its groups</code></p>
+
+<p>✅  Field <code>ConnectUser.connectUserGroups</code> description changed from <code>connect user's related data of its groups</code> to <code>Connected user's related data based on its groups</code></p>
+
+<p>✅  Field <code>ConnectUser.isActive</code> description changed from <code>indicates whether a connect user is active</code> to <code>Indicates whether a connected user is active</code></p>
+
+<p>✅  Field <code>ConnectUser.code</code> description changed from <code>unique connect user of a supplier</code> to <code>Unique connected user of a supplier</code></p>
+
+<p>✅  Description <code>Context type, for now only Code is necessary</code> on type <code>Context</code> has changed to <code>Context type. Currently, only Code is necessary.</code></p>
+
+<p>✅  Field <code>Context.updatedAt</code> description changed from <code>Update date</code> to <code>Date updated</code></p>
+
+<p>✅  Field <code>Context.createdAt</code> description changed from <code>Create date</code> to <code>Date created</code></p>
+
+<p>✅  Field <code>Context.error</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Input field <code>DefaultSettingsBusinessRulesInput.businessRulesType</code> description changed from <code>Different business rules to filter the options that you are interested.</code> to <code>Different business rules for filtering options that you are interested in</code></p>
+
+<p>✅  Input field <code>DefaultSettingsBusinessRulesInput.optionsQuota</code> description changed from <code>Options quota per avail. Numbers of options wanted by avail.</code> to <code>Options quota per availability; numbers of options based on availability</code></p>
+
+<p>✅  Input field <code>DefaultSettingsInput.businessRules</code> description changed from <code>Business rules.</code> to <code>Business rules</code></p>
+
+<p>✅  Input field <code>DefaultSettingsInput.market</code> description changed from <code>Targeted zone, country or point of sale to be used in request.</code> to <code>Targeted zone, country or point-ofsale-to be used in request.</code></p>
+
+<p>✅  Input field <code>DefaultSettingsInput.nationality</code> description changed from <code>Nationality of the guest (use ISO3166_1_alfa_2).</code> to <code>Nationality of the guest (use ISO3166_1_alfa_2)</code></p>
+
+<p>✅  Input field <code>DefaultSettingsInput.currency</code> description changed from <code>Currency requested if supported by supplier.</code> to <code>Currency requested if supported by supplier</code></p>
+
+<p>✅  Input field <code>DefaultSettingsInput.language</code> description changed from <code>Language to be used in request.</code> to <code>Language to be used in request</code></p>
+
+<p>✅  Input field <code>DefaultSettingsInput.connectUser</code> description changed from `This field is got only if the authorization header is of the type JWT. It is used for to change the user that</p>
+
+<p>has been set by default in the preload.<code>to</code>This field is occurs only if the authorization header is of the type JWT.. It is used for to change the user that</p>
+
+<p>has been set by default in the preload.`</p>
+
+<p>✅  Field <code>HotelCancelPayload.warnings</code> description changed from <code>Potentially  harmful situations or errors that won't force the service to abort</code> to <code>Potentially harmful situations or errors, but ones that will not forcibly abort the service</code></p>
+
+<p>✅  Field <code>HotelCancelPayload.errors</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>HotelCancelPayload.auditData</code> description changed from <code>Data sent &amp; received in the supplier's native format.</code> to <code>Data sent and received in the supplier's native format.</code></p>
+
+<p>✅  Description <code>Holder object that contains the pax name and surname.</code> on type <code>HolderInput</code> has changed to <code>Holder object that contains the occupant's (pax's) name and surname.</code></p>
+
+<p>✅  Input field <code>HotelBookInput.language</code> description changed from <code>Language to be used in request.</code> to <code>Language to be used in request</code></p>
+
+<p>✅  Field <code>HotelBookPayload.warnings</code> description changed from <code>Potentially  harmful situations or errors that won't force the service to abort</code> to <code>Potentially harmful situations or errors, but ones that will not forcibly abort the service</code></p>
+
+<p>✅  Field <code>HotelBookPayload.errors</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>HotelBookPayload.auditData</code> description changed from <code>Data sent &amp; received in the supplier's native format.</code> to <code>Data sent and received in the supplier's native format.</code></p>
+
+<p>✅  Input field <code>UpdateClientInput.isActive</code> description changed from <code>Indicates whether a Client is active</code> to <code>Indicates whether a Client is active or inactive</code></p>
+
+<p>✅  Input field <code>CreateClientInput.isActive</code> description changed from <code>Indicates whether a Client is active</code> to <code>Indicates whether a Client is active or inactive</code></p>
+
+<p>✅  Input field <code>AccessInput.shared</code> description changed from <code>Parent access if Shared access.</code> to <code>Parent Access if Shared Access.</code></p>
+
+<p>✅  Input field <code>AccessInput.rateRules</code> description changed from <code>Business rules types for the access.</code> to <code>Business rule types for the Access</code></p>
+
+<p>✅  Input field <code>AccessInput.markets</code> description changed from <code>Markets allowed for the access.</code> to <code>Markets allowed for the Access</code></p>
+
+<p>✅  Input field <code>AccessInput.parameters</code> description changed from <code>List of parameters for additional information.</code> to <code>List of parameters for additional information</code></p>
+
+<p>✅  Input field <code>AccessInput.urls</code> description changed from <code>Specific Urls</code> to <code>Specific URLs</code></p>
+
+<p>✅  Input field <code>AccessInput.password</code> description changed from <code>Password for the connection.</code> to <code>Password for the connection</code></p>
+
+<p>✅  Input field <code>AccessInput.user</code> description changed from <code>User code to connect to supplier.</code> to <code>User code to connect to supplier</code></p>
+
+<p>✅  Input field <code>AccessInput.isTest</code> description changed from <code>Indicates if this access can be used for testing or not</code> to <code>Indicates if Access can be used for testing or not</code></p>
+
+<p>✅  Input field <code>AccessInput.supplier</code> description changed from <code>supplier for this access.</code> to <code>Supplier for this Access</code></p>
+
+<p>✅  Input field <code>AccessInput.isActive</code> description changed from <code>Indicates if the access is active.</code> to <code>Indicates if Access is active</code></p>
+
+<p>✅  Input field <code>AccessInput.name</code> description changed from <code>Access descriptive name</code> to <code>Access descriptive unique name</code></p>
+
+<p>✅  Field <code>AdminMutation.deleteGroup</code> description changed from <code>Delete group and members from this group.</code> to <code>Delete group and members from this group</code></p>
+
+<p>✅  Field <code>AdminMutation.deleteMember</code> description changed from <code>Delete member from specific group.</code> to <code>Delete a member from specific group</code></p>
+
+<p>✅  Field <code>AdminMutation.updateGroup</code> description changed from <code>Update group adding or removing apis.</code> to <code>Update group additions or remove APIs</code></p>
+
+<p>✅  Field <code>AdminMutation.updateMember</code> description changed from <code>Update member adding or removing roles.</code> to <code>Update member additions or remove roles</code></p>
+
+<p>✅  Field <code>AdminMutation.createGroup</code> description changed from <code>Create group. Group &quot;owner&quot; is optional.</code> to <code>Create group; group &quot;owner&quot; is optional</code></p>
+
+<p>✅  Field <code>AdminMutation.createMember</code> description changed from <code>Create member. Requires specific group and role.</code> to <code>Create member; requires specific group and role</code></p>
+
+<p>✅  Field <code>AdminMutation.deleteSupplierFromGroup</code> description changed from <code>Removes Supplier visibility to groups.</code> to <code>Removes Supplier visibility to groups</code></p>
+
+<p>✅  Field <code>AdminMutation.grantSupplierToGroup</code> description changed from <code>Grants Supplier visibility to a group.</code> to <code>Grants Supplier visibility to a group</code></p>
+
+<p>✅  Field <code>AdminMutation.deleteAccessFromGroup</code> description changed from <code>Removes Access visibility to groups.</code> to <code>Removes Access visibility to groups</code></p>
+
+<p>✅  Field <code>AdminMutation.grantAccessToGroup</code> description changed from <code>Grants Access visibility to a group.</code> to <code>Grants Access visibility to a group</code></p>
+
+<p>✅  Field <code>AdminMutation.updateAccess</code> description changed from <code>Updates an Access.</code> to <code>Updates an Access</code></p>
+
+<p>✅  Field <code>AdminMutation.createAccess</code> description changed from <code>Creates an Access.</code> to <code>Creates an Access</code></p>
+
+<p>✅  Field <code>createOrganization</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Description <code>Mutations are operations that change or update data in the server.</code> on type <code>Mutation</code> has changed to <code>Mutations are operations that change or update data on the server</code></p>
+
+<p>✅  Description <code>List of business rules to filter the options that you are interested.</code> on type <code>BusinessRules</code> has changed to <code>LList of business rules for filtering options based on your interests.</code></p>
+
+<p>✅  Field <code>BusinessRules.businessRulesType</code> description changed from <code>Different business rules to filter the options that you are interested.</code> to <code>Different business rules for filtering options that you are interested in</code></p>
+
+<p>✅  Field <code>BusinessRules.optionsQuota</code> description changed from <code>Options quota per avail. Numbers of options wanted by avail.</code> to <code>Options quota per availability; numbers of options based on availability</code></p>
+
+<p>✅  Field <code>DefaultSettings.businessRules</code> description changed from <code>Business rules.</code> to <code>Business rules</code></p>
+
+<p>✅  Field <code>DefaultSettings.market</code> description changed from <code>Targeted zone, country or point of sale to be used in request.</code> to <code>Targeted zone, country or point-ofsale-to be used in request.</code></p>
+
+<p>✅  Field <code>DefaultSettings.nationality</code> description changed from <code>Nationality of the guest (use ISO3166_1_alfa_2).</code> to <code>Nationality of the guest (use ISO3166_1_alfa_2)</code></p>
+
+<p>✅  Field <code>DefaultSettings.currency</code> description changed from <code>Currency requested if supported by supplier.</code> to <code>Currency requested if supported by supplier</code></p>
+
+<p>✅  Field <code>DefaultSettings.language</code> description changed from <code>Language to be used in request.</code> to <code>Language to be used in request</code></p>
+
+<p>✅  Field <code>DefaultSettings.connectUser</code> description changed from `This field is got only if the authorization header is of the type JWT. It is used for to change the user that</p>
+
+<p>has been set by default in the preload.<code>to</code>This field is occurs only if the authorization header is of the type JWT.. It is used for to change the user that</p>
+
+<p>has been set by default in the preload.`</p>
+
+<p>✅  Input field <code>organizations</code> was added to input object type <code>StatsFilterInput</code></p>
+
+<p>✅  Field <code>Stats.updatedAt</code> description changed from <code>Update date</code> to <code>Date updated</code></p>
+
+<p>✅  Field <code>Stats.createdAt</code> description changed from <code>Create date</code> to <code>Date created</code></p>
+
+<p>✅  Field <code>Stats.error</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>Mapping.errors</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Input field <code>CriteriaBookingDatesInput.end</code> description changed from `End date.</p>
+
+<p>Format: yyyy-MM-dd.<code>to</code>End date.</p>
+
+<p>Format: YYYY-MM-DD.`</p>
+
+<p>✅  Input field <code>CriteriaBookingDatesInput.start</code> description changed from `Start date.</p>
+
+<p>Format: yyyy-MM-dd.<code>to</code>Start date.</p>
+
+<p>Format: YYYY-MM-DD.`</p>
+
+<p>✅  Description for enum value <code>BookStatusType.UNKNOWN</code> changed from `The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.</p>
+
+<p>It is the client’s responsibility to check if the booking is OK<code>to</code>The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.</p>
+
+<p>It is the client’s responsibility to check if the booking is OK`</p>
+
+<p>✅  Description for enum value <code>BookStatusType.ON_REQUEST</code> changed from `The reservation was completed but the product is still not available, so the reservation goes into a waiting list.</p>
+
+<p>It is the client’s responsibility to check if the booking is OK<code>to</code>The reservation was completed but the product is still not available, so the reservation goes into a waiting list.</p>
+
+<p>It is the client’s responsibility to check if the booking is OK`</p>
+
+<p>✅  Field <code>BookingRoom.description</code> description changed from <code>Description about the room.</code> to <code>Description about the room</code></p>
+
+<p>✅  Field <code>BookingRoom.code</code> description changed from <code>Indicates the room code.</code> to <code>Indicates the room code</code></p>
+
+<p>✅  Field <code>BookingRoom.occupancyRefId</code> description changed from <code>ID reference to the occupancy.</code> to <code>ID reference to the occupancy</code></p>
+
+<p>✅  Field <code>BookingHotel.occupancies</code> description changed from <code>List of occupancies of the request.</code> to <code>List of occupancies for the request</code></p>
+
+<p>✅  Field <code>BookingHotel.checkOut</code> description changed from `Check-out date for the booking.</p>
+
+<p>Format: yyyy-MM-dd<code>to</code>Check-out date for the booking.</p>
+
+<p>Format: YYYY-MM-DD`</p>
+
+<p>✅  Field <code>BookingHotel.checkIn</code> description changed from `Check-in date for the booking.</p>
+
+<p>Format: yyyy-MM-dd<code>to</code>Check-in date for booking</p>
+
+<p>Format: YYYY-MM-DD`</p>
+
+<p>✅  Field <code>BookingHotel.creationDate</code> description changed from `Creation date of the booking.</p>
+
+<p>Format: yyyy-MM-dd<code>to</code>Creation date of the booking.</p>
+
+<p>Format: YYYY-MM-DD`</p>
+
+<p>✅  Description <code>Holder object that contains the pax name and surname.</code> on type <code>Holder</code> has changed to <code>Holder object that contains the occupant's (pax's) name and surname.</code></p>
+
+<p>✅  Description <code>Contains information about booking.</code> on type <code>HotelBookingDetail</code> has changed to <code>Contains information about booking</code></p>
+
+<p>✅  Field <code>HotelBookingDetail.addOns</code> description changed from <code>Extra information about the option.</code> to <code>Additional information about the option</code></p>
+
+<p>✅  Field <code>HotelBooking.warnings</code> description changed from <code>Potentially  harmful situations or errors that won't force the service to abort</code> to <code>Potentially harmful situations or errors, but ones that will not forcibly abort the service</code></p>
+
+<p>✅  Field <code>HotelBooking.errors</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>HotelBooking.auditData</code> description changed from <code>Data sent &amp; received in the supplier's native format.</code> to <code>Data sent and received in the supplier's native format.</code></p>
+
+<p>✅  Input field <code>HotelCriteriaQuoteInput.language</code> description changed from <code>Language to be used in request.</code> to <code>Language to be used in request</code></p>
+
+<p>✅  Description <code>Contains information about quote.</code> on type <code>HotelOptionQuote</code> has changed to <code>Contains information about quote(s)</code></p>
+
+<p>✅  Field <code>HotelOptionQuote.addOns</code> description changed from <code>Extra information about the option.</code> to <code>Additional information about the option</code></p>
+
+<p>✅  Field <code>HotelQuote.warnings</code> description changed from <code>Potentially  harmful situations or errors that won't force the service to abort</code> to <code>Potentially harmful situations or errors, but ones that will not forcibly abort the service</code></p>
+
+<p>✅  Field <code>HotelQuote.errors</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>HotelQuote.auditData</code> description changed from <code>Data sent &amp; received in the supplier's native format.</code> to <code>Data sent and received in the supplier's native format.</code></p>
+
+<p>✅  Description <code>Urls Input</code> on type <code>UrlsInput</code> has changed to <code>URLs Input</code></p>
+
+<p>✅  Input field <code>UrlsInput.book</code> description changed from <code>Specific Url for Valuation method.</code> to <code>Specific URL for Valuation method.</code></p>
+
+<p>✅  Input field <code>UrlsInput.quote</code> description changed from <code>Specific Url for Reservation method.</code> to <code>Specific URL for Reservation method.</code></p>
+
+<p>✅  Input field <code>UrlsInput.search</code> description changed from <code>Specific Url for Availability method.</code> to <code>Specific URL for Availability method.</code></p>
+
+<p>✅  Input field <code>ConfigurationInput.markets</code> description changed from <code>Source markets allowed for the access.</code> to <code>Source Markets allowed for the Access</code></p>
+
+<p>✅  Input field <code>ConfigurationInput.urls</code> description changed from <code>Url or endpoint for the connection.</code> to <code>URL or endpoint for the connection.</code></p>
+
+<p>✅  Input field <code>ConfigurationInput.password</code> description changed from <code>Password for the connection.</code> to <code>Password for the connection</code></p>
+
+<p>✅  Input field <code>SettingsBaseInput.businessRules</code> description changed from <code>Business rules.</code> to <code>Business rules</code></p>
+
+<p>✅  Input field <code>HotelSettingsInput.businessRules</code> description changed from <code>Business rules.</code> to <code>Business rules</code></p>
+
+<p>✅  Input field <code>HotelSettingsInput.client</code> description changed from <code>This field is got only if the authorization header is of the type JWT. It is used to change the user that has been set by default in the preload.</code> to <code>This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.</code></p>
+
+<p>✅  Input field <code>HotelSettingsInput.connectUser</code> description changed from `This field is got only if the authorization header is of the type JWT. It is used to change the user that has been set by default in the preload.</p>
+
+<p>@deprecated(reason: &ldquo;deprecated from 2018-03-19. Redundant.&rdquo;)<code>to</code>This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.</p>
+
+<p>@deprecated(reason: &ldquo;deprecated from 2018-03-19. Redundant.&rdquo;)`</p>
+
+<p>✅  Description `Criteria of search contains destination, travel dates and the number of pax in each room.</p>
+
+<p>You must preload the other fields in our system by complete the fields absents.<code>on type</code>HotelCriteriaSearchInput<code>has changed to</code>Search criteria contains destination, travel dates and the number of pax in each room.</p>
+
+<p>You must preload the other fields in our system by complete the fields absents.`</p>
+
+<p>✅  Input field <code>HotelCriteriaSearchInput.market</code> description changed from <code>Targeted zone, country or point of sale to be used in request.</code> to <code>Targeted zone, country or point-ofsale-to be used in request.</code></p>
+
+<p>✅  Input field <code>HotelCriteriaSearchInput.nationality</code> description changed from <code>Nationality of the guest (use ISO3166_1_alfa_2).</code> to <code>Nationality of the guest (use ISO3166_1_alfa_2)</code></p>
+
+<p>✅  Input field <code>HotelCriteriaSearchInput.currency</code> description changed from <code>Currency requested if supported by supplier.</code> to <code>Currency requested if supported by supplier</code></p>
+
+<p>✅  Input field <code>HotelCriteriaSearchInput.language</code> description changed from <code>Language to be used in request.</code> to <code>Language to be used in request</code></p>
+
+<p>✅  Input field <code>HotelCriteriaSearchInput.occupancies</code> description changed from `For multi room bookings, this array will contain multiple elements (rooms).</p>
+
+<p>For each room you have to specify its own occupancy.<code>to</code>For multi-room bookings, this array will contain multiple elements (rooms).</p>
+
+<p>For each room you have to specify its own occupancy.`</p>
+
+<p>✅  Input field <code>HotelCriteriaSearchInput.hotels</code> description changed from <code>Contains the list of hotels's ID.</code> to <code>Contains the list of hotels's ID</code></p>
+
+<p>✅  Input field <code>HotelCriteriaSearchInput.checkOut</code> description changed from `Check-out, date for the booking.</p>
+
+<p>Format: yyyy-MM-dd<code>to</code>Check-out, booking date</p>
+
+<p>Format: YYYY-MM-DD`</p>
+
+<p>✅  Input field <code>HotelCriteriaSearchInput.checkIn</code> description changed from `Check-in date for the booking.</p>
+
+<p>Format: yyyy-MM-dd<code>to</code>Check-in date for booking</p>
+
+<p>Format: YYYY-MM-DD`</p>
+
+<p>✅  Description <code>Extra information about the option.</code> on type <code>AddOn</code> has changed to <code>Additional information about the option</code></p>
+
+<p>✅  Field <code>AddOn.value</code> description changed from <code>Contains the AddOn values.</code> to <code>Contains AddOn values.</code></p>
+
+<p>✅  Field <code>AddOn.key</code> description changed from <code>Contains the keyword/Id to identify the AddOn.</code> to <code>Contains keyword/ID to identify the AddOn.</code></p>
+
+<p>✅  Description <code>Extra information about the option.</code> on type <code>AddOns</code> has changed to <code>Additional information about the option</code></p>
+
+<p>✅  Deprecation reason on field <code>AddOns.distribute</code> has changed from <code>deprecated from 2018-03-12. You can find it in distribution AddOn.</code> to <code>You can find it in distribution AddOn</code></p>
+
+<p>✅  Description <code>Contains information about a cancel penalty.</code> on type <code>CancelPenalty</code> has changed to <code>Contains information for cancellation penalities..</code></p>
+
+<p>✅  Field <code>CancelPenalty.value</code> description changed from <code>Value of the cancel policy.</code> to <code>Value of the cancellation policy</code></p>
+
+<p>✅  Field <code>CancelPenalty.currency</code> description changed from <code>Currency used in the cancel policy.</code> to <code>Currency used in the cancellation policy</code></p>
+
+<p>✅  Field <code>CancelPenalty.penaltyType</code> description changed from <code>Type of penalty. This can be Nights, Percent or Import.</code> to <code>Type of penalty; this can be Nights, Percent or Import</code></p>
+
+<p>✅  Field <code>CancelPenalty.hoursBefore</code> description changed from <code>Cancellation fees applicable x number of hours before the check in date.</code> to <code>Cancellation fees applicable X number of hours before the check-in date</code></p>
+
+<p>✅  Description <code>Contains information about a cancel policy.</code> on type <code>CancelPolicy</code> has changed to <code>Information about a policy cancellation.</code></p>
+
+<p>✅  Field <code>CancelPolicy.cancelPenalties</code> description changed from <code>List of cancel penalties.</code> to <code>List of cancellation penalties</code></p>
+
+<p>✅  Field <code>CancelPolicy.refundable</code> description changed from <code>Indicates if the option is refundable or not.</code> to <code>Indicates if the option is refundable or non-refundable</code></p>
+
+<p>✅  Field <code>Bed.shared</code> description changed from <code>Specifies if the bed is shared or not.</code> to <code>Specifies if the bed is shared or not</code></p>
+
+<p>✅  Field <code>Bed.count</code> description changed from <code>Indicates number of beds in the room.</code> to <code>Indicates number of beds in a room</code></p>
+
+<p>✅  Field <code>Bed.description</code> description changed from <code>Description about the bed.</code> to <code>Description about the bed</code></p>
+
+<p>✅  Field <code>Bed.type</code> description changed from <code>Specifies the bed type.</code> to <code>Specifies the bed type</code></p>
+
+<p>✅  Description <code>Informs about the currency of origin, and the rate applied over result returned by the supplier.</code> on type <code>Exchange</code> has changed to <code>Provides information about the currency of original, and its rate applied over the results returned by the Supplier.</code></p>
+
+<p>✅  Field <code>Exchange.rate</code> description changed from <code>Informs about the rate applied over result.</code> to <code>Provides information about the rate applied over results</code></p>
+
+<p>✅  Field <code>Exchange.currency</code> description changed from <code>Informs about the currency of origin.</code> to <code>Provide information about the currency of origin</code></p>
+
+<p>✅  Description `Price indicates the value of the room/option.</p>
+
+<p>Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.<code>on type</code>Price<code>has changed to</code>Price indicates the value of the room/option.</p>
+
+<p>Supplements and/or surcharges can be included into the price, and will be verified with nodes Supplements/Surcharges.`</p>
+
+<p>✅  Field <code>Price.exchange</code> description changed from `Informs about the currency of origin, and the rate applied over result returned by the supplier.</p>
+
+<p>This information is mandatory.<code>to</code>Provides information about the currency of original, and its rate applied over the results returned by the Supplier.</p>
+
+<p>This information is mandatory.`</p>
+
+<p>✅  Field <code>Room.description</code> description changed from <code>Description about the room.</code> to <code>Description about the room</code></p>
+
+<p>✅  Field <code>Room.code</code> description changed from <code>Indicates the room code.</code> to <code>Indicates the room code</code></p>
+
+<p>✅  Field <code>Room.occupancyRefId</code> description changed from <code>ID reference to the occupancy.</code> to <code>ID reference to the occupancy</code></p>
+
+<p>✅  Description <code>An option includes hotel information, meal plan, total price, conditions and room description.</code> on type <code>HotelOptionSearch</code> has changed to <code>An option includes hotel information, meal plan, total price, conditions and room description</code></p>
+
+<p>✅  Field <code>HotelOptionSearch.addOns</code> description changed from <code>Extra information about the option.</code> to <code>Additional information about the option</code></p>
+
+<p>✅  Field <code>HotelOptionSearch.occupancies</code> description changed from <code>List of occupancies of the request.</code> to <code>List of occupancies for the request</code></p>
+
+<p>✅  Description <code>Criteria of search contains destination, travel dates and the number of pax in each room.</code> on type <code>CriteriaSearch</code> has changed to <code>Search criteria contains destination, travel dates and the number of pax in each room.</code></p>
+
+<p>✅  Field <code>CriteriaSearch.market</code> description changed from <code>Targeted zone, country or point of sale to be used in request.</code> to <code>Targeted zone, country or point-ofsale-to be used in request.</code></p>
+
+<p>✅  Field <code>CriteriaSearch.nationality</code> description changed from <code>Nationality of the guest (use ISO3166_1_alfa_2).</code> to <code>Nationality of the guest (use ISO3166_1_alfa_2)</code></p>
+
+<p>✅  Field <code>CriteriaSearch.currency</code> description changed from <code>Currency requested if supported by supplier.</code> to <code>Currency requested if supported by supplier</code></p>
+
+<p>✅  Field <code>CriteriaSearch.language</code> description changed from <code>Language to be used in request.</code> to <code>Language to be used in request</code></p>
+
+<p>✅  Field <code>CriteriaSearch.occupancies</code> description changed from `For multi room bookings, this array will contain multiple elements (rooms).</p>
+
+<p>For each room you have to specify its own occupancy.<code>to</code>For multi-room bookings, this array will contain multiple elements (rooms).</p>
+
+<p>For each room you have to specify its own occupancy.`</p>
+
+<p>✅  Field <code>CriteriaSearch.hotels</code> description changed from <code>Contains the list of hotels's ID.</code> to <code>Contains the list of hotels's ID</code></p>
+
+<p>✅  Field <code>CriteriaSearch.checkOut</code> description changed from `Check-out, date for the booking.</p>
+
+<p>Format: yyyy-MM-dd<code>to</code>Check-out, booking date</p>
+
+<p>Format: YYYY-MM-DD`</p>
+
+<p>✅  Field <code>CriteriaSearch.checkIn</code> description changed from `Check-in date for the booking.</p>
+
+<p>Format: yyyy-MM-dd<code>to</code>Check-in date for booking</p>
+
+<p>Format: YYYY-MM-DD`</p>
+
+<p>✅  Description <code>Data sent &amp; received in the supplier’s native format.</code> on type <code>AuditData</code> has changed to <code>Data sent and received in the supplier’s native format.</code></p>
+
+<p>✅  Field <code>AuditData.transactions</code> description changed from <code>List of transactions data.</code> to <code>List of transactions data</code></p>
+
+<p>✅  Field <code>Response.auditData</code> description changed from <code>Data sent &amp; received in the supplier’s original format.</code> to <code>Data sent and received in the supplier’s original format.</code></p>
+
+<p>✅  Description <code>Results of Avail Hotel. Contains all the available options for a given date and itinerary.</code> on type <code>HotelSearch</code> has changed to <code>Results from Avail Hotel; contains all the available options for a given date and itinerary</code></p>
+
+<p>✅  Field <code>HotelSearch.errors</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>HotelSearch.auditData</code> description changed from <code>Data sent &amp; received in the supplier's native format.</code> to <code>Data sent and received in the supplier's native format.</code></p>
+
+<p>✅  Field <code>Destination.updatedAt</code> description changed from <code>Update date</code> to <code>Date updated</code></p>
+
+<p>✅  Field <code>Destination.createdAt</code> description changed from <code>Create date</code> to <code>Date created</code></p>
+
+<p>✅  Field <code>Destination.error</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>Media.updatedAt</code> description changed from <code>Update date.</code> to <code>Date updated.</code></p>
+
+<p>✅  Description <code>Something, such as a swimming pool or shopping centre, that is intended to make life more pleasant or comfortable for the people.</code> on type <code>Amenity</code> has changed to <code>An Amenity is defined as something intended to make life more pleasant or comfortable for people. Examples include: swimming pools, shopping centers, etc.</code></p>
+
+<p>✅  Field <code>Amenity.type</code> description changed from <code>Indicates the type of the amenity.</code> to <code>Indicates the type of Amenity.</code></p>
+
+<p>✅  Field <code>DestinationData.type</code> description changed from <code>Indicates destination type, zone or city.</code> to <code>Indicates destination type, zone or city</code></p>
+
+<p>✅  Field <code>DestinationData.parent</code> description changed from <code>Parent destination code.</code> to <code>Parent destination code</code></p>
+
+<p>✅  Field <code>DestinationData.closestDestinations</code> description changed from <code>Closest destinations, indicates the minimal destinations.</code> to <code>Closest destinations, indicates destinations in proximity</code></p>
+
+<p>✅  Field <code>DestinationData.available</code> description changed from <code>Indicates if you can search by destination.</code> to <code>Indicates if you can search by destination</code></p>
+
+<p>✅  Description <code>Indicates the location of the hotel.</code> on type <code>Location</code> has changed to <code>Indicates the location of the hotel</code></p>
+
+<p>✅  Field <code>HotelData.location</code> description changed from <code>Indicates the location of the hotel.</code> to <code>Indicates the location of the hotel</code></p>
+
+<p>✅  Field <code>Hotel.updatedAt</code> description changed from <code>Update date</code> to <code>Date updated</code></p>
+
+<p>✅  Field <code>Hotel.createdAt</code> description changed from <code>Create date</code> to <code>Date created</code></p>
+
+<p>✅  Field <code>Hotel.error</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>RoomData.roomCode</code> description changed from <code>Code of the hotel in the Supplier selected.</code> to <code>Code of the hotel in the Supplier selected</code></p>
+
+<p>✅  Field <code>RoomData.code</code> description changed from <code>Internal code to perform availability.</code> to <code>Internal code for checking availability</code></p>
+
+<p>✅  Field <code>RoomStatic.updatedAt</code> description changed from <code>Update date</code> to <code>Date updated</code></p>
+
+<p>✅  Field <code>RoomStatic.createdAt</code> description changed from <code>Create date</code> to <code>Date created</code></p>
+
+<p>✅  Field <code>RoomStatic.error</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>CategoryData.categoryCode</code> description changed from <code>Code of the hotel in the Supplier selected.</code> to <code>Code of the hotel based on the Supplier selected</code></p>
+
+<p>✅  Field <code>CategoryData.code</code> description changed from <code>Internal code to perform availability.</code> to <code>Internal code for checking availability</code></p>
+
+<p>✅  Field <code>Category.updatedAt</code> description changed from <code>Update date</code> to <code>Date updated</code></p>
+
+<p>✅  Field <code>Category.createdAt</code> description changed from <code>Create date</code> to <code>Date created</code></p>
+
+<p>✅  Field <code>Category.error</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>BoardData.boardCode</code> description changed from <code>Code of the hotel in the Supplier selected.</code> to <code>Code of the hotel in the Supplier selected</code></p>
+
+<p>✅  Field <code>BoardData.code</code> description changed from <code>Internal code to perform availability.</code> to <code>Internal code for checking availability</code></p>
+
+<p>✅  Description <code>Board Type</code> on type <code>Board</code> has changed to <code>Board type.</code></p>
+
+<p>✅  Field <code>Board.updatedAt</code> description changed from <code>Update date</code> to <code>Date updated</code></p>
+
+<p>✅  Field <code>Board.createdAt</code> description changed from <code>Create date</code> to <code>Date created</code></p>
+
+<p>✅  Field <code>Board.error</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>ClientData.isActive</code> description changed from <code>Indicates whether a Client is active</code> to <code>Indicates whether a Client is active or inactive</code></p>
+
+<p>✅  Field <code>Client.updatedAt</code> description changed from <code>Update date</code> to <code>Date updated</code></p>
+
+<p>✅  Field <code>Client.createdAt</code> description changed from <code>Create date</code> to <code>Date created</code></p>
+
+<p>✅  Field <code>Client.error</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>Urls.book</code> description changed from <code>Specific Url for Valuation method.</code> to <code>Specific URL for Valuation method.</code></p>
+
+<p>✅  Field <code>Urls.quote</code> description changed from <code>Specific Url for Reservation method.</code> to <code>Specific URL for Reservation method.</code></p>
+
+<p>✅  Field <code>Urls.search</code> description changed from <code>Specific Url for Availability method.</code> to <code>Specific URL for Availability method.</code></p>
+
+<p>✅  Field <code>Supplier.updatedAt</code> description changed from <code>Update date</code> to <code>Date updated</code></p>
+
+<p>✅  Field <code>Supplier.createdAt</code> description changed from <code>Create date</code> to <code>Date created</code></p>
+
+<p>✅  Field <code>Supplier.error</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>AccessData.shared</code> description changed from <code>Parent access if Shared access</code> to <code>Parent Access if Shared Access</code></p>
+
+<p>✅  Field <code>AccessData.rateRules</code> description changed from <code>Business rules types for the access.</code> to <code>Business rule types for the Access</code></p>
+
+<p>✅  Field <code>AccessData.markets</code> description changed from <code>Markets allowed for the access.</code> to <code>Markets allowed for the Access</code></p>
+
+<p>✅  Field <code>AccessData.parameters</code> description changed from <code>List of parameters for additional information.</code> to <code>List of parameters for additional information</code></p>
+
+<p>✅  Field <code>AccessData.urls</code> description changed from <code>Specific Urls</code> to <code>Specific URLs</code></p>
+
+<p>✅  Field <code>AccessData.password</code> description changed from <code>Password for the connection.</code> to <code>Password for the connection</code></p>
+
+<p>✅  Field <code>AccessData.user</code> description changed from <code>User code to connect to supplier.</code> to <code>User code to connect to supplier</code></p>
+
+<p>✅  Field <code>AccessData.isTest</code> description changed from <code>Indicates if this access can be used for testing or not</code> to <code>Indicates if Access can be used for testing or not</code></p>
+
+<p>✅  Field <code>AccessData.supplier</code> description changed from <code>supplier for this access.</code> to <code>Supplier for this Access</code></p>
+
+<p>✅  Field <code>AccessData.isActive</code> description changed from <code>Indicates if the access is active.</code> to <code>Indicates if Access is active</code></p>
+
+<p>✅  Field <code>Node.updatedAt</code> description changed from <code>Update date</code> to <code>Date updated</code></p>
+
+<p>✅  Field <code>Node.createdAt</code> description changed from <code>Create date</code> to <code>Date created</code></p>
+
+<p>✅  Field <code>Node.error</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>Access.updatedAt</code> description changed from <code>Update date</code> to <code>Date updated</code></p>
+
+<p>✅  Field <code>Access.createdAt</code> description changed from <code>Create date</code> to <code>Date created</code></p>
+
+<p>✅  Field <code>Access.error</code> description changed from <code>Errors that will lead the service to abort</code> to <code>Errors that abort services</code></p>
+
+<p>✅  Field <code>AdminQuery.operations</code> description changed from <code>Operations list. Specify operations codes to filter operations.</code> to <code>Operations list; specify operations codes to filter operations.</code></p>
+
+<p>✅  Field <code>AdminQuery.roles</code> description changed from <code>Roles list. Specify role codes to filter roles.</code> to <code>Roles list; specify role codes to filter roles.</code></p>
+
+<p>✅  Field <code>AdminQuery.resources</code> description changed from <code>Resources list. Specify resource codes to filter resources.</code> to <code>Resources list; specify resource codes to filter resources.</code></p>
+
+<p>✅  Field <code>AdminQuery.apis</code> description changed from <code>Apis list. Specify api codes to filter apis.</code> to <code>Apis list; specify api codes to filter apis.</code></p>
+
+<p>✅  Field <code>AdminQuery.groups</code> description changed from <code>Groups list. Specify group codes to filter groups.</code> to <code>Groups list; specify group codes to filter groups.</code></p>
+
+<p>✅  Field <code>AdminQuery.members</code> description changed from <code>Members list. Specify member codes to filter members.</code> to <code>Members list; specify member codes to filter members.</code></p>
+
+<p>✅  Field <code>AdminQuery.products</code> description changed from <code>Products list. Specify product codes to filter products.</code> to <code>Members list; specify member codes to filter members</code></p>
+
+<p>✅  Field <code>AdminQuery.organizations</code> description changed from <code>Organizations list. Specify organization codes to filter organizations.</code> to <code>Organizations list; specify organization codes to filter organizations</code></p>
+
+<p>✅  Field <code>AdminQuery.serviceApi</code> description changed from <code>Obtain a ServiceApi</code> to <code>Obtain a ServiceAPI</code></p>
+
+<p>✅  Field <code>AdminQuery.accesses</code> description changed from <code>Obtain a list of accesses for a filter.</code> to <code>Obtain a list of accesses for a filter</code></p>
+
+<p>✅  Type <code>OrganizationTemplate</code> was added</p>
+
+<p>✅  Type <code>CreateOrganizationInput</code> was added</p>
+
+<h2 id="2018-05-16">2018-05-16</h2>
+
+<p>🛑  Type for argument <code>input</code> on field <code>MappeaMutation.mapSupplier</code> changed from <code>MappeaXMapSupplierInput!</code> to <code>MappeaMapSupplierInput!</code></p>
+
+<p>🛑  Type for argument <code>input</code> on field <code>MappeaMutation.uploadFile</code> changed from <code>MappeaXUploadFileInput!</code> to <code>MappeaUploadFileInput!</code></p>
+
+<p>🛑  Type for argument <code>input</code> on field <code>MappeaMutation.confirmUpload</code> changed from <code>MappeaXConfirmUploadInput!</code> to <code>MappeaConfirmUploadInput!</code></p>
+
+<p>🛑  Type for argument <code>input</code> on field <code>MappeaQuery.getMappeaStats</code> changed from <code>MappeaXGetMappeaStatsInput!</code> to <code>MappeaGetMappeaStatsInput!</code></p>
+
+<p>🛑  Field <code>RoleData.label</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>🛑  Type <code>MappeaXEditOrganizationInput</code> was removed</p>
+
+<p>🛑  Type <code>MappeaXAddOrganizationInput</code> was removed</p>
+
+<p>🛑  Type <code>MappeaXMapSupplierInput</code> was removed</p>
+
+<p>🛑  Type <code>MappeaXUploadFileInput</code> was removed</p>
+
+<p>🛑  Type <code>MappeaXSupplierConfirmedInput</code> was removed</p>
+
+<p>🛑  Type <code>MappeaXConfirmUploadInput</code> was removed</p>
+
+<p>🛑  Type <code>MappeaXGetMappeaStatsInput</code> was removed</p>
+
+<p>✅  Input field <code>AccessInput.name</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>✅  Field <code>deleteClientFromGroup</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>grantClientToGroup</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>label</code> was added to object type <code>ProductData</code></p>
+
+<p>✅  Field <code>label</code> was added to object type <code>OperationData</code></p>
+
+<p>✅  Field <code>label</code> was added to object type <code>APIData</code></p>
+
+<p>✅  Field <code>label</code> was added to object type <code>ResourceData</code></p>
+
+<p>✅  Field <code>label</code> was added to object type <code>MemberData</code></p>
+
+<p>✅  Field <code>label</code> was added to object type <code>GroupData</code></p>
+
+<p>✅  Field <code>label</code> was added to object type <code>GroupCommonData</code></p>
+
+<p>✅  Field <code>label</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Type <code>MappeaEditOrganizationInput</code> was added</p>
+
+<p>✅  Type <code>MappeaAddOrganizationInput</code> was added</p>
+
+<p>✅  Type <code>MappeaMapSupplierInput</code> was added</p>
+
+<p>✅  Type <code>MappeaUploadFileInput</code> was added</p>
+
+<p>✅  Type <code>MappeaSupplierConfirmedInput</code> was added</p>
+
+<p>✅  Type <code>MappeaConfirmUploadInput</code> was added</p>
+
+<p>✅  Type <code>MappeaGetMappeaStatsInput</code> was added</p>
+
 <h2 id="2018-05-03">2018-05-03</h2>
 
 <p>✅  Field <code>asserts</code> was added to object type <code>StatsInfo</code></p>
@@ -3220,6 +3942,9 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
 <ul>
 <li>
 <ul>
+<li><a href="#2018-06-01">2018-06-01</a></li>
+<li><a href="#2018-05-21">2018-05-21</a></li>
+<li><a href="#2018-05-16">2018-05-16</a></li>
 <li><a href="#2018-05-03">2018-05-03</a></li>
 <li><a href="#2018-05-02">2018-05-02</a></li>
 <li><a href="#2018-04-25">2018-04-25</a></li>
