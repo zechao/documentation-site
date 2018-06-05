@@ -490,13 +490,6 @@
 	"content": " GraphQL schema definition type CreateMemberInput {\r\rcode: String \r\r\rinfo: String \r\r\rtype: MemberType! \r\r\rgroup: String! \r\r\rroles: [String!]! \r\r\rresource: String! \r\r}\r\r\rFields code(String):\r\r\rinfo(String):\r\r\rtype(MemberType!):\r\r\rgroup(String!):\r\r\rroles([String!]!):\r\r\rresource(String!):\r\r\r\n"
 },
 {
-	"uri": "/travelgatex/reference/inputobjects/createorganizationinput/",
-	"title": "CreateOrganizationInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type CreateOrganizationInput {\r\ruser: String! \r\r\rinfo: String \r\r\rcode: String! \r\r\rtemplate: OrganizationTemplate! \r\r}\r\r\rFields user(String!):\r\r\rinfo(String):\r\r\rcode(String!):\r\r\rtemplate(OrganizationTemplate!):\r\r\r\n"
-},
-{
 	"uri": "/travelgatex/reference/inputobjects/criteriabookingdatesinput/",
 	"title": "CriteriaBookingDatesInput",
 	"tags": [],
@@ -1064,41 +1057,6 @@
 	"content": " Map codes.\nGraphQL schema definition type Map {\r\rcode: String! \r\r\rmaps: [String!] \r\r}\r\r\rFields code(String!):\rContext code.\r\rmaps([String!]):\rEquivalences of the supplier for the client code.\r\r\n"
 },
 {
-	"uri": "/travelgatex/reference/inputobjects/mappeaaddorganizationinput/",
-	"title": "MappeaAddOrganizationInput",
-	"tags": [],
-	"description": "",
-	"content": " AddOrganization GraphQL schema definition type MappeaAddOrganizationInput {\r\rname: String! \r\r\risActive: Boolean! \r\r\risTest: Boolean! \r\r}\r\r\rFields name(String!):\r\r\risActive(Boolean!):\r\r\risTest(Boolean!):\r\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/mappeaconfirmuploadinput/",
-	"title": "MappeaConfirmUploadInput",
-	"tags": [],
-	"description": "",
-	"content": " ConfirmUpload GraphQL schema definition type MappeaConfirmUploadInput {\r\rfileId: Int! \r\r\rsuppliers: [MappeaSupplierConfirmedInput!]! \r\r}\r\r\rFields fileId(Int!):\r\r\rsuppliers([MappeaSupplierConfirmedInput!]!):\r\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/mappeaeditorganizationinput/",
-	"title": "MappeaEditOrganizationInput",
-	"tags": [],
-	"description": "",
-	"content": " EditOrganization GraphQL schema definition type MappeaEditOrganizationInput {\r\rname: String! \r\r\risActive: Boolean \r\r\risTest: Boolean \r\r}\r\r\rFields name(String!):\r\r\risActive(Boolean):\r\r\risTest(Boolean):\r\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/mappeagetmappeastatsinput/",
-	"title": "MappeaGetMappeaStatsInput",
-	"tags": [],
-	"description": "",
-	"content": " GetMappeaStats GraphQL schema definition type MappeaGetMappeaStatsInput {\r\rorganizationName: String! \r\r\rsupplierMapped: String \r\r}\r\r\rFields organizationName(String!):\r\r\rsupplierMapped(String):\r\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/mappeamapsupplierinput/",
-	"title": "MappeaMapSupplierInput",
-	"tags": [],
-	"description": "",
-	"content": " MapSupplier GraphQL schema definition type MappeaMapSupplierInput {\r\rrequestId: ID! \r\r\raccess: ID! \r\r\rfileId: Int! \r\r}\r\r\rFields requestId(ID!):\r\r\raccess(ID!):\r\r\rfileId(Int!):\r\r\r\n"
-},
-{
 	"uri": "/travelgatex/reference/objects/mappeamutation/",
 	"title": "MappeaMutation",
 	"tags": [],
@@ -1111,20 +1069,6 @@
 	"tags": [],
 	"description": "",
 	"content": " GraphQL schema definition type MappeaQuery {\r\rgetUploadedFiles: GetUploadedFilesResponse! \r\r\rgetMappeaStats(\rinput: MappeaGetMappeaStatsInput!,\r): GetMappeaStatsResponse! \r\r}\r\r\rFields getUploadedFiles(GetUploadedFilesResponse!):\r\r\rgetMappeaStats(GetMappeaStatsResponse!):\r\r\r\nRequired by Query: \r\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/mappeasupplierconfirmedinput/",
-	"title": "MappeaSupplierConfirmedInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type MappeaSupplierConfirmedInput {\r\rcode: ID! \r\r\rsupplier: ID! \r\r}\r\r\rFields code(ID!):\r\r\rsupplier(ID!):\r\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/mappeauploadfileinput/",
-	"title": "MappeaUploadFileInput",
-	"tags": [],
-	"description": "",
-	"content": " UploadFile GraphQL schema definition type MappeaUploadFileInput {\r\rrequestId: String! \r\r\rfileName: String \r\r\rdelimiter: String! \r\r\rfileContent: String! \r\r}\r\r\rFields requestId(String!):\r\r\rfileName(String):\r\r\rdelimiter(String!):\r\r\rfileContent(String!):\r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/mapping/",
@@ -1274,13 +1218,6 @@
 	"content": " GraphQL schema definition type OperationEdge {\r\rcursor: String! \r\r\rnode: Operation \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Operation):\r\r\r\nRequired by OperationConnection: \r\r\r\n"
 },
 {
-	"uri": "/travelgatex/reference/enums/operationtype/",
-	"title": "OperationType",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition \renum\rOperationType{\r\r\rSEARCH,\r\r\r\rQUOTE,\r\r\r\rBOOKING,\r\r\r\rCANCEL,\r\r\r\rSCHEDULER,\r\r\r\rCREATE,\r\r\r\rREAD,\r\r\r\rUPDATE,\r\r\r\rDELETE,\r\r\r\rEXECUTE,\r\r\r\rOTHER,\r\r\r} \r "
-},
-{
 	"uri": "/travelgatex/reference/objects/organization/",
 	"title": "Organization",
 	"tags": [],
@@ -1307,13 +1244,6 @@
 	"tags": [],
 	"description": "",
 	"content": " GraphQL schema definition type OrganizationEdge {\r\rcursor: String! \r\r\rnode: Organization \r\r}\r\r\rFields cursor(String!):\r\r\rnode(Organization):\r\r\r\nRequired by OrganizationConnection: \r\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/enums/organizationtemplate/",
-	"title": "OrganizationTemplate",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition \renum\rOrganizationTemplate{\r\r\rORGANIZATION_DEFAULT,\r\r\r} \r Required by CreateOrganizationInput: \r\r\r\n"
 },
 {
 	"uri": "/admin/overview/",
@@ -1860,13 +1790,6 @@
 	"tags": [],
 	"description": "",
 	"content": " The service used to access the stats of every connection that uses the HUB\nGraphQL schema definition type Stats {\r\rcode: ID! \r\r\rstatsData: StatsData \r\r\rerror: [Error!] \r\r\rcreatedAt: DateTime! \r\r\rupdatedAt: DateTime! \r\r}\r\r\rFields code(ID!):\r\r\rstatsData(StatsData):\r\r\rerror([Error!]):\rErrors that abort services\r\rcreatedAt(DateTime!):\rDate created\r\rupdatedAt(DateTime!):\rDate updated\r\r\nRequired by StatsEdge: \r\r\r\n"
-},
-{
-	"uri": "/travelgatex/reference/objects/statsassert/",
-	"title": "StatsAssert",
-	"tags": [],
-	"description": "",
-	"content": " Assert of an specific error\nGraphQL schema definition type StatsAssert {\r\rstartTime: DateTime! \r\r\rexecTime: Int! \r\r\rurl: URI! \r\r}\r\r\rFields startTime(DateTime!):\r\r\rexecTime(Int!):\r\r\rurl(URI!):\r\r\r\n"
 },
 {
 	"uri": "/travelgatex/reference/objects/statsconnection/",
@@ -2504,13 +2427,6 @@
 	"tags": [],
 	"description": "",
 	"content": " As you can see GraphQL is a fast growing ecosystem. Apart from Facebook\u0026rsquo;s and Graphql.org\u0026rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.\nHowever we want to be part of this community and help you discover this new technology and its features. That\u0026rsquo;s why we have gathered some of the best tutorials for you to learn, step by step, how to use it. Have a look at the list bellow and click on any of the resources, materials, podcast and documentation to start.\nEnjoy it!\nGraphQL Tutorials  https://github.com/blog/2412-learn-graphql-with-github  TODO: Falta chicha!!\rGraphQL Resources  GraphQL official documentation Apollo Relay official documentation Schema first development - Johannes Schickling Schema-first development with GraphQL GraphQL First in practice at Quri GraphQL First: A better way to build modern apps GraphQL User List  "
-},
-{
-	"uri": "/travelgatex/reference/changelog/",
-	"title": "Changelog",
-	"tags": [],
-	"description": "",
-	"content": " Deprecations \r2018-03-19\r\r\r\rconnectUser This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload. @deprecated(reason: \u0026#34;deprecated from 2018-03-19. Redundant.\u0026#34;)\r\r\r\r\r2017-12-12\r\r\r\ruseContext Indicates if you want use context, or not, by default is true. @deprecated(reason: \u0026#34;deprecated from 2017-12-12. Redundant.\u0026#34;)\r\r\r\r"
 },
 {
 	"uri": "/insights/",

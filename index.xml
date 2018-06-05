@@ -721,15 +721,6 @@ GraphQL schema definition scalar CountryRequired by Location: Indicates the 
     </item>
     
     <item>
-      <title>CreateOrganizationInput</title>
-      <link>/travelgatex/reference/inputobjects/createorganizationinput/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/inputobjects/createorganizationinput/</guid>
-      <description>GraphQL schema definition type CreateOrganizationInput {user: String! info: String code: String! template: OrganizationTemplate! }Fields user(String!):info(String):code(String!):template(OrganizationTemplate!):</description>
-    </item>
-    
-    <item>
       <title>CriteriaBookingDatesInput</title>
       <link>/travelgatex/reference/inputobjects/criteriabookingdatesinput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1521,51 +1512,6 @@ GraphQL schema definition type Map {code: String! maps: [String!] }Fie
     </item>
     
     <item>
-      <title>MappeaAddOrganizationInput</title>
-      <link>/travelgatex/reference/inputobjects/mappeaaddorganizationinput/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/inputobjects/mappeaaddorganizationinput/</guid>
-      <description>AddOrganization GraphQL schema definition type MappeaAddOrganizationInput {name: String! isActive: Boolean! isTest: Boolean! }Fields name(String!):isActive(Boolean!):isTest(Boolean!):</description>
-    </item>
-    
-    <item>
-      <title>MappeaConfirmUploadInput</title>
-      <link>/travelgatex/reference/inputobjects/mappeaconfirmuploadinput/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/inputobjects/mappeaconfirmuploadinput/</guid>
-      <description>ConfirmUpload GraphQL schema definition type MappeaConfirmUploadInput {fileId: Int! suppliers: [MappeaSupplierConfirmedInput!]! }Fields fileId(Int!):suppliers([MappeaSupplierConfirmedInput!]!):</description>
-    </item>
-    
-    <item>
-      <title>MappeaEditOrganizationInput</title>
-      <link>/travelgatex/reference/inputobjects/mappeaeditorganizationinput/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/inputobjects/mappeaeditorganizationinput/</guid>
-      <description>EditOrganization GraphQL schema definition type MappeaEditOrganizationInput {name: String! isActive: Boolean isTest: Boolean }Fields name(String!):isActive(Boolean):isTest(Boolean):</description>
-    </item>
-    
-    <item>
-      <title>MappeaGetMappeaStatsInput</title>
-      <link>/travelgatex/reference/inputobjects/mappeagetmappeastatsinput/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/inputobjects/mappeagetmappeastatsinput/</guid>
-      <description>GetMappeaStats GraphQL schema definition type MappeaGetMappeaStatsInput {organizationName: String! supplierMapped: String }Fields organizationName(String!):supplierMapped(String):</description>
-    </item>
-    
-    <item>
-      <title>MappeaMapSupplierInput</title>
-      <link>/travelgatex/reference/inputobjects/mappeamapsupplierinput/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/inputobjects/mappeamapsupplierinput/</guid>
-      <description>MapSupplier GraphQL schema definition type MappeaMapSupplierInput {requestId: ID! access: ID! fileId: Int! }Fields requestId(ID!):access(ID!):fileId(Int!):</description>
-    </item>
-    
-    <item>
       <title>MappeaMutation</title>
       <link>/travelgatex/reference/objects/mappeamutation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1583,24 +1529,6 @@ Required by Mutation: Mutations are operations that change or update data on th
       <guid>/travelgatex/reference/objects/mappeaquery/</guid>
       <description>GraphQL schema definition type MappeaQuery {getUploadedFiles: GetUploadedFilesResponse! getMappeaStats(input: MappeaGetMappeaStatsInput!,): GetMappeaStatsResponse! }Fields getUploadedFiles(GetUploadedFilesResponse!):getMappeaStats(GetMappeaStatsResponse!):
 Required by Query:</description>
-    </item>
-    
-    <item>
-      <title>MappeaSupplierConfirmedInput</title>
-      <link>/travelgatex/reference/inputobjects/mappeasupplierconfirmedinput/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/inputobjects/mappeasupplierconfirmedinput/</guid>
-      <description>GraphQL schema definition type MappeaSupplierConfirmedInput {code: ID! supplier: ID! }Fields code(ID!):supplier(ID!):</description>
-    </item>
-    
-    <item>
-      <title>MappeaUploadFileInput</title>
-      <link>/travelgatex/reference/inputobjects/mappeauploadfileinput/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/inputobjects/mappeauploadfileinput/</guid>
-      <description>UploadFile GraphQL schema definition type MappeaUploadFileInput {requestId: String! fileName: String delimiter: String! fileContent: String! }Fields requestId(String!):fileName(String):delimiter(String!):fileContent(String!):</description>
     </item>
     
     <item>
@@ -1809,15 +1737,6 @@ Required by OperationConnection:</description>
     </item>
     
     <item>
-      <title>OperationType</title>
-      <link>/travelgatex/reference/enums/operationtype/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/enums/operationtype/</guid>
-      <description> GraphQL schema definition enumOperationType{SEARCH,QUOTE,BOOKING,CANCEL,SCHEDULER,CREATE,READ,UPDATE,DELETE,EXECUTE,OTHER,}  </description>
-    </item>
-    
-    <item>
       <title>Organization</title>
       <link>/travelgatex/reference/objects/organization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1854,15 +1773,6 @@ Required by AdminQuery:</description>
       <guid>/travelgatex/reference/objects/organizationedge/</guid>
       <description>GraphQL schema definition type OrganizationEdge {cursor: String! node: Organization }Fields cursor(String!):node(Organization):
 Required by OrganizationConnection:</description>
-    </item>
-    
-    <item>
-      <title>OrganizationTemplate</title>
-      <link>/travelgatex/reference/enums/organizationtemplate/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/enums/organizationtemplate/</guid>
-      <description>GraphQL schema definition enumOrganizationTemplate{ORGANIZATION_DEFAULT,}  Required by CreateOrganizationInput:</description>
     </item>
     
     <item>
@@ -2638,16 +2548,6 @@ GraphQL schema definition type Stats {code: ID! statsData: StatsData err
     </item>
     
     <item>
-      <title>StatsAssert</title>
-      <link>/travelgatex/reference/objects/statsassert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/objects/statsassert/</guid>
-      <description>Assert of an specific error
-GraphQL schema definition type StatsAssert {startTime: DateTime! execTime: Int! url: URI! }Fields startTime(DateTime!):execTime(Int!):url(URI!):</description>
-    </item>
-    
-    <item>
       <title>StatsConnection</title>
       <link>/travelgatex/reference/objects/statsconnection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3330,15 +3230,6 @@ To design Schemas  APIs Guru&amp;rsquo;s graphql-faker: https://github.com/APIs-
       <guid>/learning-graphql/tutorials_resources/</guid>
       <description>As you can see GraphQL is a fast growing ecosystem. Apart from Facebook&amp;rsquo;s and Graphql.org&amp;rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.
 However we want to be part of this community and help you discover this new technology and its features. That&amp;rsquo;s why we have gathered some of the best tutorials for you to learn, step by step, how to use it.</description>
-    </item>
-    
-    <item>
-      <title>Changelog</title>
-      <link>/travelgatex/reference/changelog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/changelog/</guid>
-      <description> Deprecations 2018-03-19connectUser This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload. @deprecated(reason: &amp;#34;deprecated from 2018-03-19. Redundant.&amp;#34;)2017-12-12useContext Indicates if you want use context, or not, by default is true. @deprecated(reason: &amp;#34;deprecated from 2017-12-12. Redundant.&amp;#34;)</description>
     </item>
     
     <item>
