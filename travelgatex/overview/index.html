@@ -2001,23 +2001,23 @@
 <p>There are two types of allowed operations in the TravelgateX GraphQL APIs:</p>
 
 <ul>
-<li><a href="http://graphql.org/learn/queries/">Queries</a></li>
-<li><a href="http://graphql.org/learn/queries/">Mutations</a></li>
+<li><a href="https://docs.travelgatex.com/travelgatex/reference/schema/query/">Queries</a>: Queries are &ldquo;read only&rdquo; and are used to get data from our system. For example, getting a list of available hotel vacancies for a particular date and location is a <code>Query</code></li>
+<li><a href="https://docs.travelgatex.com/travelgatex/reference/schema/mutation/">Mutations</a>: Mutations change, add or delete the data in our system. For example, making a booking for a vacant hotel room is a <code>Mutation</code>.</li>
 </ul>
 
 <h2 id="graphql-endpoint">GraphQL Endpoint</h2>
 
-<p>One of the benefits of using GraphQL is that there&rsquo;s only one single endpoint. You can use this endpoint for all operations you want to perform:</p>
+<p>One of the benefits of using GraphQL is that there is only a single endpoint. You can use this endpoint for all the operations you want to perform.</p>
 
 <div class="alert 
-alert-warning"
+alert-info"
  
-role="alert"><a href="https://api.travelgatex.com">https://api.travelgatex.com</a></div>
+role="alert">Our GraphQL API endpoint for all operations is: <a href="https://api.travelgatex.com">https://api.travelgatex.com</a></div>
 
 
 <h2 id="communicating-with-the-server">Communicating with the Server</h2>
 
-<p>To communicate with our GraphQL server, you&rsquo;ll need an access token with the right scopes. You are able to create a token by following the steps mentioned in <a href="/travelgatex/security/overview">Security Overview</a>.</p>
+<p>To communicate with our GraphQL server, you&rsquo;ll need an access token with the right scopes. You are able to create a token by following the steps mentioned in the <a href="/travelgatex/security/overview">Security Overview</a>.</p>
 
 <h2 id="making-requests">Making Requests</h2>
 
@@ -2043,12 +2043,19 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
    https://api.travelgatex.com
 </code></pre>
 
-<h2 id="graph-reference">Graph Reference</h2>
+<h2 id="graphql-reference">GraphQL Reference</h2>
 
-<p>There are several ways you can learn more about the full capabilities of our TravelgateX GraphQL data model
-* <a href="/travelgatex/reference/">Reference Documentation</a> provides complete reference documentation for all resources, fields and objects in our GraphQL data model.
-* <a href="https://api.travelgatex.com">API Playground</a> provides an interactive, multi-column schema definition based on the GraphiQL tool, but with many additional features.
-* <a href="https://api.travelgatex.com/voyager">GraphQL-voyager</a> displays our GraphQL API as an interactive relational database-like graph to help you understand the different parent and child tables within our schema.</p>
+<p>There are several ways you can learn more about the full capabilities of our TravelgateX GraphQL data model</p>
+
+<ul>
+<li><p><a href="/travelgatex/reference/">Reference Documentation</a> provides complete reference documentation for all resources, fields and objects in our GraphQL data model (called a <code>Schema</code>).</p></li>
+
+<li><p><a href="https://api.travelgatex.com">API Playground</a> provides an interactive, multi-column schema definition based on the GraphiQL tool, but with many additional features.</p></li>
+
+<li><p><a href="https://api.travelgatex.com/voyager">GraphQL-voyager</a> displays our GraphQL API as an interactive relational database-like graph to help you understand the different parent and child tables within our schema.</p></li>
+
+<li><p><a href="https://docs.travelgatex.com/learning-graphql/">Learning GraphQL</a> is a set of resources to get to know GraphQL and to understand our schema.</p></li>
+</ul>
 
 <h2 id="examples">Examples</h2>
 
@@ -2071,7 +2078,7 @@ If you wish to use test headers, insert <code>&quot;Authorization&quot;:&quot;Ap
 <ul>
 <li><a href="#Relay Implementation">Relay schema requirements</a></li>
 <li><a href="#Custom Scalar Types">Definition of custom scalar types</a></li>
-<li><a href="/getting-started/security/#Authentication">Token Based Authentication</a></li>
+<li><a href="https://docs.travelgatex.com/travelgatex/security/overview/">Token Based Authentication</a></li>
 </ul>
 
 <h3 id="relay-implementation">Relay Implementation</h3>
@@ -2125,7 +2132,7 @@ If you wish to use test headers, insert <code>&quot;Authorization&quot;:&quot;Ap
 <li><a href="#graphql-endpoint">GraphQL Endpoint</a></li>
 <li><a href="#communicating-with-the-server">Communicating with the Server</a></li>
 <li><a href="#making-requests">Making Requests</a></li>
-<li><a href="#graph-reference">Graph Reference</a></li>
+<li><a href="#graphql-reference">GraphQL Reference</a></li>
 <li><a href="#examples">Examples</a></li>
 <li><a href="#conventions">Conventions</a>
 <ul>

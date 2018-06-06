@@ -2101,9 +2101,8 @@ Required by SupplierData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/quickstart/</guid>
-      <description>Four steps to using our API If you&amp;rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below: STEP 1: Get to know our APIs. Read through our documentation and test some sample calls in our API Playground.
-STEP 2: Sign an agreement with hotel suppliers to be using their booking databases.
-STEP 3: Sign up for TravelgateX API access.</description>
+      <description>Four steps to using our API If you&amp;rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below: STEP 1: Get to know our APIs. Read through our documentation and test some sample calls in our API Playground. You can use and start exoperimenting with our APIs straight away.
+STEP 2: Sign an agreement with hotel suppliers to be using their booking databases.</description>
     </item>
     
     <item>
