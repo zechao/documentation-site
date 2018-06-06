@@ -59,7 +59,7 @@ Required by AdminQuery: OrganizationData: GroupCommonData: GroupData: 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/apidata/</guid>
-      <description>GraphQL schema definition type APIData {id: ID! code: ID! label: String groups(codes: [ID!],type: GroupType,first: Int,last: Int,before: String,after: String,): GroupConnection resources(codes: [ID!</description>
+      <description>GraphQL schema definition type APIData {id: ID! code: ID! isEditable: Boolean! label: String groups(codes: [ID!],type: GroupType,first: Int,last: Int,before: String,after: String,): GroupConnection resources(codes: [ID!</description>
     </item>
     
     <item>
@@ -227,7 +227,16 @@ Required by HotelOptionSearch: An option includes hotel information, meal plan,
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/interfaces/advisemessage/</guid>
-      <description>GraphQL schema definition interface AdviseMessage {code: String! type: String! description: String! }Fields code(String!):TODO: Error code: The following codes can be returned: XXX: XXXXXXXXX XXXXXXtype(String!):TODO: Error type: The following types are valid: XXX: asd asdñoajskd lña lddescription(String!):Error description</description>
+      <description>GraphQL schema definition interface AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // }Fields code(ID!):AM code: The following codes can be returned:description(String!):Error descriptionlevel(AdviseMessageLevel!):Indicates the level of importance of the message: Posible values ERROR WARN INFOexternal(ExternalMessage):Specify the external message.</description>
+    </item>
+    
+    <item>
+      <title>AdviseMessageLevel</title>
+      <link>/travelgatex/reference/enums/advisemessagelevel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/enums/advisemessagelevel/</guid>
+      <description>GraphQL schema definition enumAdviseMessageLevel{WARN,ERROR,INFO,}  Required by AdviseMessage:</description>
     </item>
     
     <item>
@@ -421,7 +430,7 @@ GraphQL schema definition enumBookingCriteriaType{DATES,REFERENCES,}
       
       <guid>/travelgatex/reference/scalars/boolean/</guid>
       <description>The Boolean scalar type represents true or false.
-GraphQL schema definition scalar BooleanRequired by AccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimePageInfo: SupplierFilter: ClientFilter: ClientData: OrganizationData: GroupCommonData: GroupData: Member: RoleData: HotelData: Hotel dataDestinationData: Information about destinantionHotelSettingsInput: Settings that you can edit for this avail.</description>
+GraphQL schema definition scalar BooleanRequired by AccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimePageInfo: SupplierFilter: ClientFilter: ClientData: OrganizationData: GroupCommonData: GroupData: Member: RoleData: ResourceData: APIData: HotelData: Hotel dataDestinationData: Information about destinantionHotelSettingsInput: Settings that you can edit for this avail.</description>
     </item>
     
     <item>
@@ -617,7 +626,7 @@ GraphQL schema definition type ConfigurationInput {username: String passwor
       
       <guid>/admin/howtos/howto-configure-permissions/</guid>
       <description>Granting Permissions This topic describes how to configure permissions for a organization using HotelX and Stats
-Before you begin  Read about IAM, which contains information about how TravelgateX manages security Read about HotelX, which contains information about HotelX product  Scenario: Organization buying suppliers through HotelX In this scenario, orgnanization org_test signs on TravelgateX in order to use HotelX to buy product from suppliers.
+Before you begin  Read about IAM, which contains information about how TravelgateX manages security Read about HotelX, which contains information about HotelX  Scenario: Organization buying suppliers through HotelX In this scenario, organanization org_test logs on to TravelgateX in order to use HotelX to buy product from suppliers.
 Distribution will be made through 2 different channels, end users will use org_test_B2C_site whereas that org_test_B2B_site will be used for business users.</description>
     </item>
     
@@ -708,7 +717,7 @@ GraphQL schema definition scalar CountryRequired by Location: Indicates the 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/creategroupinput/</guid>
-      <description>GraphQL schema definition type CreateGroupInput {code: String! type: GroupType! info: String parent: ID! template: Template }Fields code(String!):type(GroupType!):info(String):parent(ID!):template(Template):</description>
+      <description>GraphQL schema definition type CreateGroupInput {group: ID! type: GroupTypeInput! info: String parent: ID! template: Template }Fields group(ID!):type(GroupTypeInput!):info(String):parent(ID!):template(Template):</description>
     </item>
     
     <item>
@@ -717,7 +726,16 @@ GraphQL schema definition scalar CountryRequired by Location: Indicates the 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/creatememberinput/</guid>
-      <description>GraphQL schema definition type CreateMemberInput {code: String info: String type: MemberType! group: String! roles: [String!]! resource: String! }Fields code(String):info(String):type(MemberType!):group(String!):roles([String!]!):resource(String!):</description>
+      <description>GraphQL schema definition type CreateMemberInput {member: ID info: String type: MemberType! group: ID! role: ID! resources: [ID!]! }Fields member(ID):info(String):type(MemberType!):group(ID!):role(ID!):resources([ID!]!):</description>
+    </item>
+    
+    <item>
+      <title>CreateOrganizationInput</title>
+      <link>/travelgatex/reference/inputobjects/createorganizationinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/createorganizationinput/</guid>
+      <description>GraphQL schema definition type CreateOrganizationInput {user: ID! info: String organization: ID! template: OrganizationTemplate! }Fields user(ID!):info(String):organization(ID!):template(OrganizationTemplate!):</description>
     </item>
     
     <item>
@@ -827,7 +845,7 @@ Required by DefaultSettingsInput:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/deletegroupinput/</guid>
-      <description>GraphQL schema definition type DeleteGroupInput {code: ID! }Fields code(ID!):</description>
+      <description>GraphQL schema definition type DeleteGroupInput {group: ID! }Fields group(ID!):</description>
     </item>
     
     <item>
@@ -836,7 +854,7 @@ Required by DefaultSettingsInput:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/deletememberinput/</guid>
-      <description>GraphQL schema definition type DeleteMemberInput {code: ID! group: ID! }Fields code(ID!):group(ID!):</description>
+      <description>GraphQL schema definition type DeleteMemberInput {member: ID! group: ID! }Fields member(ID!):group(ID!):</description>
     </item>
     
     <item>
@@ -966,6 +984,16 @@ Required by PaymentCardInput: Input PaymentCard, if the payment is done by cred
     </item>
     
     <item>
+      <title>ExternalMessage</title>
+      <link>/travelgatex/reference/objects/externalmessage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/externalmessage/</guid>
+      <description>GraphQL schema definition type ExternalMessage {code: String message: String! }Fields code(String):External Codemessage(String!):External Message
+Required by AdviseMessage:</description>
+    </item>
+    
+    <item>
       <title>File</title>
       <link>/travelgatex/reference/objects/file/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1089,7 +1117,7 @@ Required by AdminQuery: OrganizationData: GroupCommonData: GroupData: 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/groupdata/</guid>
-      <description>GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,): GroupConnection owner: Member isEditable: Boolean!</description>
+      <description>GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],type: GroupType,first: Int,last: Int,before: String,after: String,): GroupConnection parents(codes: [ID!</description>
     </item>
     
     <item>
@@ -1117,7 +1145,16 @@ Required by GroupConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/enums/grouptype/</guid>
-      <description>GraphQL schema definition enumGroupType{ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by OrganizationData: GroupCommonData: GroupData: CreateGroupInput:</description>
+      <description>GraphQL schema definition enumGroupType{ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by OrganizationData: GroupCommonData: GroupData:</description>
+    </item>
+    
+    <item>
+      <title>GroupTypeInput</title>
+      <link>/travelgatex/reference/enums/grouptypeinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/enums/grouptypeinput/</guid>
+      <description>GraphQL schema definition enumGroupTypeInput{GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by CreateGroupInput:</description>
     </item>
     
     <item>
@@ -1512,6 +1549,51 @@ GraphQL schema definition type Map {code: String! maps: [String!] }Fie
     </item>
     
     <item>
+      <title>MappeaAddOrganizationInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeaaddorganizationinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeaaddorganizationinput/</guid>
+      <description>AddOrganization GraphQL schema definition type MappeaAddOrganizationInput {name: String! isActive: Boolean! isTest: Boolean! }Fields name(String!):isActive(Boolean!):isTest(Boolean!):</description>
+    </item>
+    
+    <item>
+      <title>MappeaConfirmUploadInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeaconfirmuploadinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeaconfirmuploadinput/</guid>
+      <description>ConfirmUpload GraphQL schema definition type MappeaConfirmUploadInput {fileId: Int! suppliers: [MappeaSupplierConfirmedInput!]! }Fields fileId(Int!):suppliers([MappeaSupplierConfirmedInput!]!):</description>
+    </item>
+    
+    <item>
+      <title>MappeaEditOrganizationInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeaeditorganizationinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeaeditorganizationinput/</guid>
+      <description>EditOrganization GraphQL schema definition type MappeaEditOrganizationInput {name: String! isActive: Boolean isTest: Boolean }Fields name(String!):isActive(Boolean):isTest(Boolean):</description>
+    </item>
+    
+    <item>
+      <title>MappeaGetMappeaStatsInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeagetmappeastatsinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeagetmappeastatsinput/</guid>
+      <description>GetMappeaStats GraphQL schema definition type MappeaGetMappeaStatsInput {organizationName: String! supplierMapped: String }Fields organizationName(String!):supplierMapped(String):</description>
+    </item>
+    
+    <item>
+      <title>MappeaMapSupplierInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeamapsupplierinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeamapsupplierinput/</guid>
+      <description>MapSupplier GraphQL schema definition type MappeaMapSupplierInput {requestId: ID! access: ID! fileId: Int! }Fields requestId(ID!):access(ID!):fileId(Int!):</description>
+    </item>
+    
+    <item>
       <title>MappeaMutation</title>
       <link>/travelgatex/reference/objects/mappeamutation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1529,6 +1611,24 @@ Required by Mutation: Mutations are operations that change or update data on th
       <guid>/travelgatex/reference/objects/mappeaquery/</guid>
       <description>GraphQL schema definition type MappeaQuery {getUploadedFiles: GetUploadedFilesResponse! getMappeaStats(input: MappeaGetMappeaStatsInput!,): GetMappeaStatsResponse! }Fields getUploadedFiles(GetUploadedFilesResponse!):getMappeaStats(GetMappeaStatsResponse!):
 Required by Query:</description>
+    </item>
+    
+    <item>
+      <title>MappeaSupplierConfirmedInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeasupplierconfirmedinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeasupplierconfirmedinput/</guid>
+      <description>GraphQL schema definition type MappeaSupplierConfirmedInput {code: ID! supplier: ID! }Fields code(ID!):supplier(ID!):</description>
+    </item>
+    
+    <item>
+      <title>MappeaUploadFileInput</title>
+      <link>/travelgatex/reference/inputobjects/mappeauploadfileinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/mappeauploadfileinput/</guid>
+      <description>UploadFile GraphQL schema definition type MappeaUploadFileInput {requestId: String! fileName: String delimiter: String! fileContent: String! }Fields requestId(String!):fileName(String):delimiter(String!):fileContent(String!):</description>
     </item>
     
     <item>
@@ -1645,7 +1745,7 @@ Required by MemberConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/enums/method/</guid>
-      <description>GraphQL schema definition enumMethod{ADD,DEL,}  Required by UpdateMemberInput: UpdateGroupInput:</description>
+      <description>GraphQL schema definition enumMethod{ADD,DEL,}  Required by UpdateMemberInput:</description>
     </item>
     
     <item>
@@ -1664,7 +1764,7 @@ GraphQL schema definition type Mutation {admin: AdminMutation hotelX: Hotel
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/interfaces/node/</guid>
-      <description>GraphQL schema definition interface Node {code: ID! error: [Error!] createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):ID codeerror([Error!]):Errors that abort servicescreatedAt(DateTime!):Date createdupdatedAt(DateTime!):Date updated</description>
+      <description>GraphQL schema definition interface Node {code: ID! createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):ID codecreatedAt(DateTime!):Date createdupdatedAt(DateTime!):Date updated</description>
     </item>
     
     <item>
@@ -1737,6 +1837,15 @@ Required by OperationConnection:</description>
     </item>
     
     <item>
+      <title>OperationType</title>
+      <link>/travelgatex/reference/enums/operationtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/enums/operationtype/</guid>
+      <description> GraphQL schema definition enumOperationType{SEARCH,QUOTE,BOOKING,CANCEL,SCHEDULER,CREATE,READ,UPDATE,DELETE,EXECUTE,OTHER,}  </description>
+    </item>
+    
+    <item>
       <title>Organization</title>
       <link>/travelgatex/reference/objects/organization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1773,6 +1882,15 @@ Required by AdminQuery:</description>
       <guid>/travelgatex/reference/objects/organizationedge/</guid>
       <description>GraphQL schema definition type OrganizationEdge {cursor: String! node: Organization }Fields cursor(String!):node(Organization):
 Required by OrganizationConnection:</description>
+    </item>
+    
+    <item>
+      <title>OrganizationTemplate</title>
+      <link>/travelgatex/reference/enums/organizationtemplate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/enums/organizationtemplate/</guid>
+      <description>GraphQL schema definition enumOrganizationTemplate{ORGANIZATION_DEFAULT,}  Required by CreateOrganizationInput:</description>
     </item>
     
     <item>
@@ -2092,7 +2210,7 @@ Required by SupplierData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/schema/query/</guid>
-      <description>GraphQL schema definition type Query {admin: AdminQuery hotelX: HotelXQuery stats: StatsQuery mappea: MappeaQuery Show deprecated fieldssearch: : Search! // quote: : Quote! // booking: : Booking // defaultSettings(groupCode: String!,): DefaultSettings // deprecated from 2017-11-21. You can find it in query at Adminmapping(groupCode: String!</description>
+      <description>GraphQL schema definition type Query {admin: AdminQuery hotelX: HotelXQuery stats: StatsQuery mappea: MappeaQuery Show deprecated fieldssearch: : Search! // quote: : Quote! // booking: : Booking // defaultSettings(groupCode: String!,): DefaultSettings // deprecated from 2017-11-21. You can find it in query at HotelXmapping(groupCode: String!</description>
     </item>
     
     <item>
@@ -2101,7 +2219,7 @@ Required by SupplierData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/quickstart/</guid>
-      <description>Four steps to using our API If you&amp;rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below: STEP 1: Get to know our APIs. Read through our documentation and test some sample calls in our API Playground. You can use and start exoperimenting with our APIs straight away.
+      <description>Four steps to using our API If you&amp;rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below: STEP 1: Get to know our APIs. Read through our documentation and test some sample calls in our API Playground. You can use a test API key and start experimenting with our APIs straight away.
 STEP 2: Sign an agreement with hotel suppliers to be using their booking databases.</description>
     </item>
     
@@ -2240,7 +2358,7 @@ Required by AdminQuery: RoleData: APIData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/resourcedata/</guid>
-      <description>GraphQL schema definition type ResourceData {id: ID! code: ID! label: String apis(codes: [ID!],first: Int,last: Int,before: String,after: String,): APIConnection roles(codes: [ID!],first: Int,last: Int,before: String,after: String,): RoleConnection }Fields id(ID!</description>
+      <description>GraphQL schema definition type ResourceData {id: ID! code: ID! isEditable: Boolean! label: String apis(codes: [ID!],first: Int,last: Int,before: String,after: String,): APIConnection roles(codes: [ID!</description>
     </item>
     
     <item>
@@ -2279,7 +2397,7 @@ Required by RoleEdge:</description>
       
       <guid>/travelgatex/reference/objects/roleconnection/</guid>
       <description>GraphQL schema definition type RoleConnection {edges: [RoleEdge] pageInfo: PageInfo! }Fields edges([RoleEdge]):pageInfo(PageInfo!):
-Required by AdminQuery: MemberData: ResourceData:</description>
+Required by AdminQuery: GroupData: MemberData: ResourceData:</description>
     </item>
     
     <item>
@@ -2288,7 +2406,7 @@ Required by AdminQuery: MemberData: ResourceData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/roledata/</guid>
-      <description>GraphQL schema definition type RoleData {id: ID! code: ID! label: String isCreate: Boolean! isRead: Boolean! isUpdate: Boolean! isDelete: Boolean! isEnable: Boolean! isExecutable: Boolean! isSpecial: Boolean! special: String resources(codes: [ID!],first: Int,last: Int,before: String,after: String,): ResourceConnection }Fields id(ID!</description>
+      <description>GraphQL schema definition type RoleData {id: ID! code: ID! type: RoleType! isEditable: Boolean! label: String isCreate: Boolean! isRead: Boolean! isUpdate: Boolean! isDelete: Boolean! isEnable: Boolean! isExecutable: Boolean! isSpecial: Boolean! special: String resources(codes: [ID!</description>
     </item>
     
     <item>
@@ -2299,6 +2417,15 @@ Required by AdminQuery: MemberData: ResourceData:</description>
       <guid>/travelgatex/reference/objects/roleedge/</guid>
       <description>GraphQL schema definition type RoleEdge {cursor: String! node: Role }Fields cursor(String!):node(Role):
 Required by RoleConnection:</description>
+    </item>
+    
+    <item>
+      <title>RoleType</title>
+      <link>/travelgatex/reference/enums/roletype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/enums/roletype/</guid>
+      <description>GraphQL schema definition enumRoleType{VIEWER,EDITOR,ADMIN,EXECUTOR,SPECIFIC,}  Required by RoleData:</description>
     </item>
     
     <item>
@@ -2411,8 +2538,8 @@ GraphQL schema definition type Search {Show deprecated fieldshotel(token
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/admin/concepts/iam/</guid>
-      <description>Overview TravelgateX Identity &amp;amp; Access Management (IAM) lets administrators authorize who can take action on specific resources, giving you full control and visibility to manage resources centrally. IAM provides a unified view into security policy across your entire organization, with built-in auditing to ease compliance processes.
-IAM lets you manage access control by defining who (member) has what access (role) for which resource:
+      <description>Overview TravelgateX Identity &amp;amp; Access Management (IAM) lets administrators authorize who can take action on specific resources, giving you full control and visibility to manage resources centrally. IAM provides an unified view of security policy across your entire organization, with built-in auditing to ease compliance processes.
+IAM lets you manage access control by defining who (member) has what kind of access (role) to whichvale resource:
 Identity and Access Management&amp;lt;b&amp;gt;Identity and Access Management&amp;lt;/b&amp;gt;Members[Not supported by viewer]Roles</description>
     </item>
     
@@ -2547,6 +2674,16 @@ GraphQL schema definition type Stats {code: ID! statsData: StatsData err
     </item>
     
     <item>
+      <title>StatsAssert</title>
+      <link>/travelgatex/reference/objects/statsassert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/objects/statsassert/</guid>
+      <description>Assert of an specific error
+GraphQL schema definition type StatsAssert {startTime: DateTime! execTime: Int! url: URI! }Fields startTime(DateTime!):execTime(Int!):url(URI!):</description>
+    </item>
+    
+    <item>
       <title>StatsConnection</title>
       <link>/travelgatex/reference/objects/statsconnection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2641,7 +2778,7 @@ GraphQL schema definition enumStatusType{OK,RQ,}  Required by Hotel
       
       <guid>/travelgatex/reference/scalars/string/</guid>
       <description>The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar StringRequired by AccessEdge: Error: Application errorsAdviseMessage: AccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeParameter: Parameters for additional information for the supplier&amp;#39;s configuration.</description>
+GraphQL schema definition scalar StringRequired by AccessEdge: AccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeError: Application errorsParameter: Parameters for additional information for the supplier&amp;#39;s configuration.</description>
     </item>
     
     <item>
@@ -2834,7 +2971,7 @@ GraphQL schema definition enumUnitTimeType{DAY,HOUR,}  Required by 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/updategroupinput/</guid>
-      <description>GraphQL schema definition type UpdateGroupInput {api: String! code: String! info: String method: Method! }Fields api(String!):code(String!):info(String):method(Method!):</description>
+      <description>GraphQL schema definition type UpdateGroupInput {api: ID! group: ID! info: String }Fields api(ID!):group(ID!):info(String):</description>
     </item>
     
     <item>
@@ -2843,7 +2980,7 @@ GraphQL schema definition enumUnitTimeType{DAY,HOUR,}  Required by 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/updatememberinput/</guid>
-      <description>GraphQL schema definition type UpdateMemberInput {code: String! info: String group: String! roles: [String!]! resource: String! method: Method! }Fields code(String!):info(String):group(String!):roles([String!]!):resource(String!):method(Method!):</description>
+      <description>GraphQL schema definition type UpdateMemberInput {member: ID! info: String group: ID! role: ID! resources: [ID!]! method: Method! }Fields member(ID!):info(String):group(ID!):role(ID!):resources([ID!]!):method(Method!):</description>
     </item>
     
     <item>
@@ -2939,10 +3076,10 @@ File Format The file should be in the below format:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/admin/concepts/common-resources/</guid>
-      <description>Overview Common resources are used in more than 1 TravelgateX product. So creating, updating or deleting one of them resources can impact on several product behaviors.
+      <description>Overview Common resources are those used in more than one TravelgateX product, so creating, updating or deleting a resources can impact on several product behaviors.
 Supplier A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers.
-Access An Access is a set of credentials and configuration in order to access a Supplier.
-Client Client identify who is doing the request and holds a configuraiotn assigned to it.</description>
+Access An Access is a set of credentials and configuration in order to access the system of a Supplier.
+Client Client identifies who is making the request and holds the configuration assigned to it.</description>
     </item>
     
     <item>
@@ -2973,8 +3110,10 @@ Entity Maps File Format The file should be in the following format:</description
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/quickstart/</guid>
-      <description>This page shows you how to perform a basic hotel booking using GraphQL Playground.
-Before Starting  Follow the steps in Creating an API Key to get your API Key.  Check the connectivity of your API Key.  Open the sample Playground and modify HTTP HEADERS field Authorization with your API Key and indicated your client into request settings.   { &amp;quot;settings&amp;quot;: { &amp;quot;client&amp;quot;: &amp;quot;yourClient&amp;quot; } }  Step by Step Search a Hotel  Open search  Modify Query Variables with valid dates and send the request.</description>
+      <description>In this section you will find all the queries necessaries in order to perform a booking flow using GraphQL Playground.
+You will be able to visualize the main necessary queries and responses through our sample Playground.
+Step by Step In order to perform a booking flow, please follow the steps below:
+Authorization First of all, to be able to run any query you should have an Apikey as an authentication.</description>
     </item>
     
     <item>
@@ -3170,7 +3309,7 @@ NetPriceX This plugin receives an Option by parameter and returns an Option with
       <guid>/travelgatex/security/overview/</guid>
       <description>Introduction TravelgateX offers a fine-grained access control and visibility for centrally managing resources, which are granted to Partners belonging to Organizations.
 Authentication Authentication is the process of authorizing or making sure that the Partner is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it&amp;rsquo;s an API Key or a JSON Web Token.
-API Key The API key takes cares of the authentication of applications, normally created as Service Account with limited scopes.</description>
+API Key The API key takes cares of the authentication of applications, normally created as a Service Account with limited scopes.</description>
     </item>
     
     <item>
@@ -3229,6 +3368,15 @@ To design Schemas  APIs Guru&amp;rsquo;s graphql-faker: https://github.com/APIs-
       <guid>/learning-graphql/tutorials_resources/</guid>
       <description>As you can see GraphQL is a fast growing ecosystem. Apart from Facebook&amp;rsquo;s and Graphql.org&amp;rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.
 However we want to be part of this community and help you discover this new technology and its features. That&amp;rsquo;s why we have gathered some of the best tutorials for you to learn, step by step, how to use it.</description>
+    </item>
+    
+    <item>
+      <title>Changelog</title>
+      <link>/travelgatex/reference/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/changelog/</guid>
+      <description> Deprecations 2018-03-19connectUser This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload. @deprecated(reason: &amp;#34;deprecated from 2018-03-19. Redundant.&amp;#34;)2017-12-12useContext Indicates if you want use context, or not, by default is true. @deprecated(reason: &amp;#34;deprecated from 2017-12-12. Redundant.&amp;#34;)</description>
     </item>
     
     <item>
