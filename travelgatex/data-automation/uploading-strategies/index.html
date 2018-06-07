@@ -2082,9 +2082,14 @@
 <li>GraphQL <code>mutation</code></li>
 </ul>
 
+<div class="alert 
+alert-info"
+ 
+role="alert"><p>We <strong>recommend</strong> continuing to use SFTP at present while we build out more GraphQL resources. While you can make your updates via a <code>mutation</code>, we have not yet written up resources to show you how to do that. If you require these resources immediately, please contact us via <a href="https://slack.travelgatex.com/">Slack</a>, <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7">Jira</a> or by <a href="https://github.com/travelgateX/Issue-tracker">raising an issue in GitHub</a>.{% /alert %}}</p>
+
 <h3 id="secure-file-transfer-protocol-sftp">Secure File Transfer Protocol (SFTP)</h3>
 
-<p>SFTP, or Secure File Transfer Protocol, is a network protocol that provides a secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in finance, technology, and consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.</p>
+<p>SFTP, or Secure File Transfer Protocol, is a network protocol that provides secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in finance, technology, and consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.</p>
 
 <h4 id="security">Security</h4>
 
@@ -2092,25 +2097,34 @@
 
 <ul>
 <li><strong>Password-based</strong> authentication.</li>
-<li><strong>IP Whitelisting</strong>: we whitelist the IP Addresses from where you&rsquo;ll be accessing your SFTP server to ensure you are the only one allowed.</li>
-<li><strong>Anomaly Detection</strong>: to ensure no loss of data, we detect anomalies in your uploads to the SFTP server and immediatly warn you when an upload is about to significantly change your account.</li>
-<li><strong>Encryption</strong>: data is encrypted, keeping your information safe and private.</li>
+<li><strong>IP Whitelisting</strong>: We whitelist the IP Addresses from where you&rsquo;ll be accessing your SFTP server to ensure you are the only one allowed to access your account.</li>
+<li><strong>Anomaly Detection</strong>: To ensure no loss of data, we detect anomalies in your uploads to the SFTP server and immediatly warn you when an upload is about to significantly change your account.</li>
+<li><strong>Encryption</strong>: Data is encrypted, keeping your information safe and private.</li>
 </ul>
 
 <h3 id="setup">Setup</h3>
 
-<p>To get your FTP Credential Details raise a <em>customer care request</em> in <a href="/getting-started/quickstart/#jira-service-desk">Jira Service Desk</a>.</p>
+<p>To get your FTP Credential Details raise a <em>customer care request</em> in <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7">Jira Service Desk</a>.</p>
 
 <h3 id="naming-conventions">Naming Conventions</h3>
 
-<p>Keep in mind that the file is loaded using a specific name depending on the data being uploaded. <strong>Remember to always</strong> overwrite the last file, because only the last file will be loaded into the platform. If in some case you need to revert to an old version, don&rsquo;t worry because we keep a copy of the old files. For each file name please see the specific file documentation in each product&rsquo;s section.</p>
-
-<h2 id="graphql-mutation">GraphQL Mutation</h2>
+<p>Keep in mind that the file is loaded using a specific name, depending on the data being uploaded. For the appropriate file name, please see the specific file documentation in each API product section.</p>
 
 <div class="alert 
 alert-warning"
  
-role="alert">Coming soon</div>
+role="alert"><p><strong>Remember to always</strong> overwrite the last file, because only the last file will be loaded into the platform.</p>
+
+<p>If in some case you need to revert to an old version, don&rsquo;t worry because we keep a copy of the old files.</p>
+</div>
+
+<h2 id="graphql-mutation">GraphQL Mutation</h2>
+
+<div class="alert 
+alert-info"
+ 
+role="alert">Resources to help you upload your data via GraphQL <code>mutation</code> are coming soon. Please submit an issue to <a href="https://github.com/travelgateX/Issue-tracker">our issue tracker</a> if you require these resources immediately.</div>
+</div>
 
 
 
@@ -2147,16 +2161,7 @@ role="alert">Coming soon</div>
 <ul>
 <li>
 <ul>
-<li><a href="#how-to-upload-data-to-the-platform">How to upload data to the platform</a>
-<ul>
-<li><a href="#secure-file-transfer-protocol-sftp">Secure File Transfer Protocol (SFTP)</a>
-<ul>
-<li><a href="#security">Security</a></li>
-</ul></li>
-<li><a href="#setup">Setup</a></li>
-<li><a href="#naming-conventions">Naming Conventions</a></li>
-</ul></li>
-<li><a href="#graphql-mutation">GraphQL Mutation</a></li>
+<li><a href="#how-to-upload-data-to-the-platform">How to upload data to the platform</a></li>
 </ul></li>
 </ul>
 </nav>

@@ -2071,62 +2071,28 @@
                 </a>
               </div>
 
+	<p>The TravelgateX GraphQL API Schema is a powerful way to access all of our functionalities as you need them. GraphQL allows you to ask for the exact information you need, so that you get responses that can be used in your clients (applications, websites and other interfaces) directly, without having to parse information from long-winded or cluttered API responses.</p>
+
+<div class="alert 
+alert-info"
+ 
+role="alert">You can also see our ‘schema’ in action by using our <a href="https://docs.travelgatex.com/getting-started/playground/">API playground</a>. You can create sample queries and the schema will autocomplete with available fields.</div>
 
 
-
-<div class="extra-pagination inner">
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
-
-</div>
+<div class="alert 
+alert-info"
+ 
+role="alert">Check out our <a href="https://docs.travelgatex.com/hotelx/quickstart/">sample query guides</a> to walk through some common queries to see how you can pick and choose from our <code>Schema</code> to get just the information you need.</div>
 
 
-   <article class="post travelgatex">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/travelgatex/reference/schema/mutation/">Mutation</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>Mutations are operations that change or update data on the server
-GraphQL schema definition type Mutation {admin: AdminMutation hotelX: HotelXMutation mappea: MappeaMutation Show deprecated fieldshotelBook(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload // deprecated from 2017-11-21. You can find it in query at HotelXhotelCancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload // deprecated from 2017-11-21. <a class="read-more" href="/travelgatex/reference/schema/mutation/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
+<p>The <code>Schema</code> enables two main operations:
+- <strong>Queries</strong>: Queries are “read only” and are used to get data from our system. For example, getting a list of available hotel vacancies for a particular date and location is a <code>Query</code>
+- <strong>Mutations</strong>: Mutations change, add or delete the data in our system. For example, making a booking for a vacant hotel room is a <code>Mutation</code>.</p>
 
-        
-        
-
-    </footer>
-</article>
-
-   <article class="post travelgatex">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/travelgatex/reference/schema/query/">Query</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>GraphQL schema definition type Query {admin: AdminQuery hotelX: HotelXQuery stats: StatsQuery mappea: MappeaQuery Show deprecated fieldssearch: : Search! // quote: : Quote! // booking: : Booking // defaultSettings(groupCode: String!,): DefaultSettings // deprecated from 2017-11-21. You can find it in query at HotelXmapping(groupCode: String! <a class="read-more" href="/travelgatex/reference/schema/query/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-        
-
-    </footer>
-</article>
-
-
-<div style="margin-bottom:2rem"></div>
-
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
+<div class="alert 
+alert-info"
+ 
+role="alert">In GraphQL, <code>!</code> indicates mandatory fields that must be included in your queries. For more information about GraphQL, check out our <a href="https://docs.travelgatex.com/learning-graphql/">Learning GraphQL guides</a>.</div>
 
 
 

@@ -2074,36 +2074,38 @@
 
 <h3 id="what-are-queries-mutations">What are Queries &amp; Mutations</h3>
 
-<blockquote>
-<p>At its simplest, GraphQL is about requesting specific fields on objects. Let&rsquo;s start by looking at a very simple query and the result we get when we run it <cite><a href="http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com">http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com</a></cite></p>
-</blockquote>
-
 <p>There are two basic operations in GraphQL schemas:
-* Queries: Requesting data from a data model
-* Mutations: Making changes and carrying out transactions on data in the data model</p>
+- <strong>Queries</strong>: Requesting data from a data model. An example <code>Query</code> would be: checking availability of hotels for a particular date and location
+- <strong>Mutations</strong>: Making changes and carrying out transactions on data in the data model. An example <code>Mutation</code> would be: making a booking to reserve a hotel room on a particular date.</p>
 
 <h2 id="queries">Queries</h2>
 
-<p>Just like a RESTful <em>GET</em> method, queries <em>query</em> the system. This operation reads values from the server using a Graph Object and returns JSON text as a response.</p>
+<p>Queries ask the system to provide some data, based on specfic parameters. This operation reads values from the server using a GraphQL <code>Object</code> and returns JSON text as a response.</p>
 
-<p>Unlike a RESTful service, <em>queries</em> are interactive. They allow the user to choose exactly what data you want to get returned. This way, <strong>if the API owner makes a change to the API, the client will not be affected as long as the query does not change</strong>. Think of it like a good old SQL query. As long as you send the same one, the result is always <em>predictable</em>. This makes versioning totally unnecessary in GraphQL APIs. There&rsquo;s no need to specify which version you want to consume, beacuse you are in charge of deciding which fields you want to retrieve.</p>
+<p>Queries are interactive. You can use our <a href="api.travelgatex.com">API Playground</a> to test your queries.</p>
 
-<p>As a bonus, the GraphQL specification includes handling of <a href="http://facebook.github.io/graphql/October2016/#sec-Object-Field-deprecation?utm_source=docs.travelgatex.com"><code>deprecated</code></a> fields and marks a field as <code>is-deprecated</code> by adding a <a href="http://graphql.org/graphql-js/type/#graphqlobjecttype?utm_source=docs.travelgatex.com"><code>deprecationReason</code></a> to the field.</p>
-
-<p><a href="/product/connectx/hotel/concepts/book-transactions/#playground-samples">Query example</a></p>
-
-<p><code>EJEMPLO PEQUE DE DISPO</code>
 <div class="alert 
-alert-danger"
+alert-info"
  
-role="alert"><strong>TODO: Falta ejemplo!!</strong></div>
-</p>
+role="alert"><p>Our <a href="https://docs.travelgatex.com/hotelx/quickstart/">HotelX Getting Started guide</a> shows you how to make queries to search for available hotels and get quotes. {% /alert %}}</p>
 
 <h2 id="mutations">Mutations</h2>
 
-<p>Mutations are methods that change the data on the server. That is, mutations make a physical change to the data. This can include inserting a new object in a database, or deleting, or updating a data record. Mutations are like the POST, PUT and DELETE methods in a REST API or INSERT, UPDATE and DELETE in SQL.</p>
+<p>Mutations are methods that change the data on the server. That is, mutations make a physical change to the data. This can include inserting a new object in a database, or deleting, or updating a data record.</p>
 
-<p><a href="/product/connectx/hotel/concepts/book-transactions/#playground-samples">Mutation example</a>:</p>
+<div class="alert 
+alert-info"
+ 
+role="alert"><p>Our <a href="https://docs.travelgatex.com/hotelx/quickstart/">HotelX Getting Started guide</a> shows you how to make mutations to book and cancel reservations. {% /alert %}}</p>
+
+<div class="alert 
+alert-info"
+ 
+role="alert"><p>Join us on <a href="https://slack.travelgatex.com/">Slack</a> to talk with us about how to use HotelX in your websites, apps, and products. You can also send us a <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7">Jira service desk request</a>. If you would like any new features or more information in our documentation, send us an <a href="https://github.com/travelgateX/Issue-tracker">issues request</a>.{% /alert %}}</p>
+</div>
+</div>
+</div>
+
 
 
 <hr/>
@@ -2144,7 +2146,6 @@ role="alert"><strong>TODO: Falta ejemplo!!</strong></div>
 <li><a href="#what-are-queries-mutations">What are Queries &amp; Mutations</a></li>
 </ul></li>
 <li><a href="#queries">Queries</a></li>
-<li><a href="#mutations">Mutations</a></li>
 </ul></li>
 </ul>
 </nav>

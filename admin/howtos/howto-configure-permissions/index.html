@@ -2075,24 +2075,24 @@
 
 <h2 id="granting-permissions">Granting Permissions</h2>
 
-<p>This topic describes how to configure permissions for a organization using <a href="/hotelx">HotelX</a> and Stats</p>
+<p>This topic describes how to configure permissions for a organization using <a href="/hotelx">HotelX</a> and Stats.</p>
 
 <h2 id="before-you-begin">Before you begin</h2>
 
 <ul>
-<li>Read about <a href="/admin/concepts/iam/">IAM</a>, which contains information about how TravelgateX manages security</li>
-<li>Read about <a href="/hotelx/">HotelX</a>, which contains information about HotelX</li>
+<li>Read <a href="/admin/concepts/iam/">IAM</a>, which contains information about how TravelgateX manages security</li>
+<li>Read <a href="/hotelx/">HotelX</a>, which contains information about the HotelX API</li>
 </ul>
 
 <h2 id="scenario-organization-buying-suppliers-through-hotelx">Scenario: Organization buying suppliers through HotelX</h2>
 
 <p>In this scenario, organanization <em>org_test</em> logs on to TravelgateX in order to use HotelX to <strong>buy</strong> product from suppliers.</p>
 
-<p>Distribution will be made through 2 different channels, end users will use <em>org_test_B2C_site</em> whereas that <em>org_test_B2B_site</em> will be used for business users. Every channel can be configured separately.</p>
+<p>Distribution will be made through 2 different channels, end users will use <em>org_test_B2C_site</em> whereas that <em>org_test_B2B_site</em> will be used for business users. Every channel will be configured separately.</p>
 
-<p>Purchase will be made through accesses <em>access_0</em> and <em>access_1</em> which configure credentials for <em>supplier_0</em> and <em>supplier_1</em>.</p>
+<p>Purchases will be made through accesses <em>access_0</em> and <em>access_1</em> which configure credentials for <em>supplier_0</em> and <em>supplier_1</em>.</p>
 
-<p>Once <em>org_test</em> completes API development and is certified, then it needs to implement the role permission schema provided by TravelgateX identifying its teams and members:</p>
+<p>Once <em>org_test</em> integrates the HotelX API into their system and is certified, then they need to implement the role permission schema provided by TravelgateX to identify teams and members:</p>
 
 <table>
 <thead>
@@ -2151,8 +2151,8 @@
 <ul>
 <li><strong><em>org.owner</em></strong>: All permissions over all organization resources</li>
 <li><strong><em>hotelx.owner</em></strong>: All permissions over all HotelX resources</li>
-<li><strong><em>hotelx.booking</em></strong>: Book Permissions (Book, Cancel and Get Bookings) over HotelX operations</li>
-<li><strong><em>stats.owner</em></strong>: All permissions over all Stats resources</li>
+<li><strong><em>hotelx.booking</em></strong>: Booking permissions (Book, Cancel and Get Bookings) for HotelX operations</li>
+<li><strong><em>stats.owner</em></strong>: All permissions for all Stats resources</li>
 <li><strong><em>stats.viewer</em></strong>: View permissions over Stats</li>
 </ul>
 

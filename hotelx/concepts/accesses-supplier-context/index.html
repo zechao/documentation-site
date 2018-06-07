@@ -2073,15 +2073,15 @@
 
     
 
-<p>On this page you will learn more about Core Entities used in TravelgateX.</p>
+<p>On this page you will learn more about Core Entities used in HotelX. You can also refer to the overarching <a href="https://docs.travelgatex.com/getting-started/concepts/">core concepts that apply to all TravelgateX APIs</a>.</p>
 
 <h3 id="supplier">Supplier</h3>
 
-<p>Product segmentation over a <em>provider</em> API implementation. <em>Supplier</em> codes are uniques over all TravelgateX organizations.</p>
+<p>Product segmentation over a <code>Supplier</code> API implementation. Each <code>Supplier</code> has a <code>Supplier</code> code. These are unique values and used consistently throughout all TravelgateX implementations. See our <a href="https://www.travelgatex.com/partners/seller">Supplier database</a>, or ask us via our <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7">Jira Service desk</a> for a list of <code>Supplier</code> codes.</p>
 
 <h3 id="access">Access</h3>
 
-<p>Configuration used when interacting with a <em>supplier</em>, which includes:</p>
+<p>Configuration used when interacting with a <code>Supplier</code>, which includes:</p>
 
 <ul>
 <li><p>URLs </p></li>
@@ -2092,18 +2092,18 @@
 
 <li><p>Rate Types </p></li>
 
-<li><p>Specific <em>supplier</em> settings </p></li>
+<li><p>Specific <code>Supplier</code> settings </p></li>
 </ul>
 
 <h3 id="client">Client</h3>
 
-<p><em>Client</em> codes are unique over all TravelgateX organizations, like supplier codes. This codes are used for to identify who is doing the request and this client has a configuration assigned to it. If you want to read more about settings go <a href="#_ngp49vy37y6b">HotelX settings</a>.</p>
+<p><code>Client</code> codes are consistent throughout all TravelgateX implementations. These codes are used to identify the business that is making the request and to confirm that the business has a configuration assigned to it.</p>
 
 <h3 id="context">Context</h3>
 
-<p><em>Context</em> is the way codes are formed. Every platform can manage its own contexts or reuse existing ones. Different sellers and buyers can manage the same codes context. For example <a href="https://www.smyrooms.com/">SmyRooms</a> supplier uses SMY contexts.</p>
+<p><code>Context</code> is the way codes are formed and used in implementations. Each <code>Profile</code> (either a <code>Buyer</code> or <code>Supplier</code>) can manage your own contexts or reuse existing ones. Different buyers or sellers can also manage the same codes context. For example, the <code>Supplier</code><a href="https://www.travelgatex.com/partner/seller/smyrooms">SmyRooms</a> uses SMY contexts for their implementations.</p>
 
-<p>Context apply to:</p>
+<p><code>Context</code> applies to:</p>
 
 <ul>
 <li><p>Hotel Codes </p></li>
@@ -2113,9 +2113,16 @@
 <li><p>Room Codes </p></li>
 </ul>
 
-<p>With the built-in solution you will be able to choose the context that you wish to use when requesting an <a href="/hotelx/">HotelX</a> operation. This context will be used in order to <a href="/hotelx/plugins/mappings">map</a> with other suppliers contexts.</p>
+<p>With our built-in solution, you are able to choose the context that you wish to use when requesting a HotelX operation. For example, if you are a <code>Buyer</code>, you can <a href="/hotelx/plugins/mappings">map</a> your context to your Suppliers contexts.</p>
 
-<p>We recommend using the biggest <em>context</em> possible or using your own context, so all supplier mappings can be resolved.</p>
+<p>We recommend using the widest <code>Context</code> possible or use your own context. That way, all supplier mappings will be resolved.</p>
+
+<div class="alert 
+alert-info"
+ 
+role="alert"><p>For more information on setting contexts, check out our <strong>[Plugin guide on Mapping]</strong>(<a href="https://docs.travelgatex.com/hotelx/plugins/mapping/).{%">https://docs.travelgatex.com/hotelx/plugins/mapping/).{%</a> /alert %}}</p>
+</div>
+
 
 
 <hr/>
