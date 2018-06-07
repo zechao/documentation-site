@@ -1489,6 +1489,17 @@ GraphQL schema definition scalar IDRequired by AccessFilter: Access: No
     </item>
     
     <item>
+      <title>Identity and Access Management</title>
+      <link>/admin/concepts/iam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/admin/concepts/iam/</guid>
+      <description>Overview TravelgateX Identity &amp;amp; Access Management (IAM) lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.
+IAM provides an unified view of your security policy across your entire organization, with built-in auditing to ease compliance processes.
+As an administrator, when you register with us, we provide you with login details to access your TravelgateX accoynt, including a username and password.</description>
+    </item>
+    
+    <item>
       <title>Int</title>
       <link>/travelgatex/reference/scalars/int/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2533,17 +2544,6 @@ GraphQL schema definition type Search {Show deprecated fieldshotel(token
     </item>
     
     <item>
-      <title>Security Model</title>
-      <link>/admin/concepts/iam/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/concepts/iam/</guid>
-      <description>Overview TravelgateX Identity &amp;amp; Access Management (IAM) lets administrators authorize who can take action on specific resources, giving you full control and visibility to manage resources centrally. IAM provides an unified view of security policy across your entire organization, with built-in auditing to ease compliance processes.
-IAM lets you manage access control by defining who (member) has what kind of access (role) to whichvale resource:
-Identity and Access Management&amp;lt;b&amp;gt;Identity and Access Management&amp;lt;/b&amp;gt;Members[Not supported by viewer]Roles</description>
-    </item>
-    
-    <item>
       <title>ServiceApi</title>
       <link>/travelgatex/reference/objects/serviceapi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3420,7 +3420,7 @@ Overview GOAL: Explicar el who, why, how de la plataforma
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/credits/</guid>
-      <description>github contributors .ghContributors{display:flex;flex-flow: wrap;align-content: flex-start}.ghContributors  div{width: 50% ;display: inline-flex;margin-bottom: 5px;}.ghContributors  div label{padding-left: 4px ;}.ghContributors  div span{font-size: x-small;padding-left: 4px ;}@vjeantet246 commits@matcornic49 commits@W-Floyd24 commits@gwleclerc21 commits@lierdakil16 commits@Pilskalns12 commits@jose-oc8 commits@SiamKreative6 commits@Xipas5 commits@altinnadmin4 commits@FMuro2 commits@EnigmaCurry2 commits@aral2 commits@adamlamar1 commits@byzheng1 commits@zivbk11 commits@damoon1 commits@vielmetti1 commits@erikjasiak1 commits@giuliov1 commits@farmergreg1 commits@jodumont1 commits@tarpdalton1 commits@jamestharpe1 commits@JohnBlood1 commits@kamilchm1 commits@ripienaar1 commits@shazic1 commits@viertaxa1 commits@uweschaefer1 commits@eyoder1 commits@justin-yan1 commits@karlmacklin1 commits@petzi531 commits@remi310001 commits@xxxtonixxx1 commits Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services&amp;hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester.</description>
+      <description>github contributors .ghContributors{display:flex;flex-flow: wrap;align-content: flex-start}.ghContributors  div{width: 50% ;display: inline-flex;margin-bottom: 5px;}.ghContributors  div label{padding-left: 4px ;}.ghContributors  div span{font-size: x-small;padding-left: 4px ;}Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services&amp;hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester.</description>
     </item>
     
   </channel>

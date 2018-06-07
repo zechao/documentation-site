@@ -599,6 +599,10 @@
   </url>
   
   <url>
+    <loc>/admin/concepts/iam/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/int/</loc>
   </url>
   
@@ -1024,10 +1028,6 @@
   
   <url>
     <loc>/travelgatex/reference/objects/search/</loc>
-  </url>
-  
-  <url>
-    <loc>/admin/concepts/iam/</loc>
   </url>
   
   <url>
