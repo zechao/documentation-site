@@ -3194,7 +3194,7 @@ It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/learning-graphql/basic_concepts/</guid>
-      <description>What are Queries &amp;amp; Mutations There are two basic operations in GraphQL schemas: - Queries: Requesting data from a data model. An example Query would be: checking availability of hotels for a particular date and location - Mutations: Making changes and carrying out transactions on data in the data model. An example Mutation would be: making a booking to reserve a hotel room on a particular date.
+      <description>What are Queries &amp;amp; Mutations There are two basic operations in GraphQL schemas:  Queries: Requesting data from a data model. An example Query would be: checking availability of hotels for a particular date and location  Mutations: Making changes and carrying out transactions on data in the data model. An example Mutation would be: making a booking to reserve a hotel room on a particular date.
 Queries Queries ask the system to provide some data, based on specfic parameters.</description>
     </item>
     
