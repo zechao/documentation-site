@@ -1676,7 +1676,7 @@
         </li>
           <li data-nav-id="/travelgatex/resources/release-notes/" class="dd-item">
             <a href="/travelgatex/resources/release-notes/">
-              <span style="padding-left: 8px;">Realeases Notes</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Release Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/resources/roadmap/" class="dd-item">
@@ -2070,44 +2070,36 @@
                 </a>
               </div>
 
+	<p>Our reference pages explain all aspects of our GraphQL schema.</p>
+
+<p>These pages are divided into the following sections:</p>
+
+<p><strong>Schema</strong>: Explains how our Schema works and the two key operations: Queries and Mutations</p>
+
+<p><strong>Objects</strong>: A complete list of all objects in our schema, their definitions, what fields they use and when they are mandatory.</p>
+
+<div class="notices info" >We are currently building out examples for every <code>Object</code> page. Please send us a <strong>Pull request</strong> if you would like to see an example for a particular <code>Object</code>, or if you would like to share your own example with the TravelgateX community.</div>
 
 
+<p><strong>Scalars</strong>: A complete list of the types of objects that are available in our schema (such as <code>String</code> or <code>Integer</code>). By defining scalars we make sure you can only enter or receive data that fits the objects in our data model.</p>
 
-<div class="extra-pagination inner">
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
+<p><strong>Interfaces</strong>: An abstract type that includes a certain set of fields that a type must include. For example, our <code>AdviseMessage</code> interface requires the error code, error type and error description fields to be used together.</p>
 
+<p><strong>Input Objects</strong>: Similar to an <code>Interface</code>, this is an abstract type that includes a set of fields that can be used together when making a query. For exaple our <code>HotelCriteriaSearchInput</code> lists which fields must be completed to filter search results for a hotel booking. In this case, it is mandatory to include checkin and checkout dates, the number of hotel options you want to receive, and the number of rooms you need. There are also non-mandatory fields that can be included such as currency for prices, and the nationality of traveler.</p>
+
+<p><strong>Enums</strong>: These are a particular type of scalar that works like a drop-down, single selection menu. Each type of <code>Enum</code> has a number of choices defined, and users must select one of the choices when querying the Enum. For example, you could make a <code>Query</code> asking for only hotels with a particular penalty cancellation policy (<code>enum CancelPentaltyType</code>). You then choose whether to see hotels with either a <code>Nights</code>, <code>Percent</code> or <code>Import</code> penalty type.</p>
+
+<div class="notices info" ><p>You can also see our <code>Schema</code> in action by using our <a href="https://api.travelgatex.com/">API Playground</a>. You can create sample queries and the <code>Schema</code> will autocomplete with available fields.</p>
 </div>
 
 
-   <article class="post travelgatex">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/travelgatex/reference/changelog/">Changelog</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p> Deprecations 2018-03-19connectUser This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload. @deprecated(reason: &#34;deprecated from 2018-03-19. Redundant.&#34;)2017-12-12useContext Indicates if you want use context, or not, by default is true. @deprecated(reason: &#34;deprecated from 2017-12-12. Redundant.&#34;) <a class="read-more" href="/travelgatex/reference/changelog/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-        
-
-    </footer>
-</article>
+<div class="notices info" ><p>In GraphQL, <code>!</code> indicates mandatory fields that must be included in your queries. For more information about GraphQL, check out our <a href="https://docs.travelgatex.com/learning-graphql/">Learning GraphQL guides</a>.</p>
+</div>
 
 
-<div style="margin-bottom:2rem"></div>
-
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
+<div class="notices info" ><p>Keep in mind that it&rsquo;s important to use the correct Headers.
+If you wish to use test headers, insert <code>&quot;Authorization&quot;:&quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&quot;</code></p>
+</div>
 
 
 

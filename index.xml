@@ -17,8 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/api/</guid>
-      <description>GraphQL schema definition type API {code: ID! error: [Error!] apiData: APIData createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):error([Error!]):apiData(APIData):createdAt(DateTime!):updatedAt(DateTime!):
-Required by APIEdge: OperationData:</description>
+      <description>In GraphQL, ! indicates mandatory fields that must be included in your queries. For more information about GraphQL, check out our Learning GraphQL guides.GraphQL schema definition type API {code: ID! error: [Error!] apiData: APIData createdAt: DateTime! updatedAt: DateTime! }Fields code(ID!):error([Error!]):apiData(APIData):createdAt(DateTime!):updatedAt(DateTime!</description>
     </item>
     
     <item>
@@ -3119,20 +3118,6 @@ Authorization First of all, to be able to run any query you should have an Apike
     </item>
     
     <item>
-      <title>Realeases Notes</title>
-      <link>/travelgatex/resources/release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/resources/release-notes/</guid>
-      <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-06-01 🛑 Input field member was added to input object type DeleteMemberInput
-🛑 Input field code was removed from input object type DeleteMemberInput
-🛑 Input field UpdateGroupInput.api changed type from String! to ID!
-🛑 Input field group was added to input object type UpdateGroupInput
-🛑 Input field method was removed from input object type UpdateGroupInput</description>
-    </item>
-    
-    <item>
       <title>Release Notes</title>
       <link>/admin/resources/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3148,6 +3133,20 @@ Authorization First of all, to be able to run any query you should have an Apike
       
       <guid>/hotelx/resources/release-notes/</guid>
       <description>This page documents production updates to HotelX. We recommend that HotelX developers periodically check this list for any new announcements.</description>
+    </item>
+    
+    <item>
+      <title>Release Notes</title>
+      <link>/travelgatex/resources/release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/resources/release-notes/</guid>
+      <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
+2018-06-01 🛑 Input field member was added to input object type DeleteMemberInput
+🛑 Input field code was removed from input object type DeleteMemberInput
+🛑 Input field UpdateGroupInput.api changed type from String! to ID!
+🛑 Input field group was added to input object type UpdateGroupInput
+🛑 Input field method was removed from input object type UpdateGroupInput</description>
     </item>
     
     <item>

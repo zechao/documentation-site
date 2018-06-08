@@ -1263,10 +1263,6 @@
   </url>
   
   <url>
-    <loc>/travelgatex/resources/release-notes/</loc>
-  </url>
-  
-  <url>
     <loc>/travelgatex/reference/</loc>
   </url>
   
@@ -1276,6 +1272,10 @@
   
   <url>
     <loc>/hotelx/resources/release-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/resources/release-notes/</loc>
   </url>
   
   <url>
