@@ -3230,12 +3230,13 @@ Access An Access is a set of credentials and the authentication configuration th
     </item>
     
     <item>
-      <title>Frequendly Asked Questions</title>
+      <title>Frequently Asked Questions</title>
       <link>/travelgatex/resources/frequently-asked-questions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/resources/frequently-asked-questions/</guid>
-      <description>Do you have specific questions about TravelgateX GraphQL API? Check out the FAQs.</description>
+      <description>TravelgateX Platform FAQs Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+ Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!</description>
     </item>
     
     <item>
@@ -3328,7 +3329,7 @@ API Key The API key takes cares of the authentication of applications, normally 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/learning-graphql/thinking_in_graphql/</guid>
-      <description>A Paradigm Shift GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back and ee get to choose exactly what data we want to retrieve. As opposed to JSON, each piece of data has its own type, so we know exactly what to expect, it&amp;rsquo;s a typed language. This gives it a lot of predictability, something we really appreciate, especially when dealing with third party APIs, where we have no control of what&amp;rsquo;s going on on the other side.</description>
+      <description>A Paradigm Shift GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. With GraphQL, you can choose exactly what data you want to retrieve. GraohQL is a typed query language. That means that it has a lot of predictability, as each piece of data has its own type, so we know what sort of data we will be getting back.</description>
     </item>
     
     <item>
