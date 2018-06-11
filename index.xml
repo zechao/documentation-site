@@ -2256,8 +2256,8 @@ STEP 2: Sign an agreement with hotel suppliers to be using their booking databas
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/resources/quotas-limits/</guid>
-      <description>Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
- Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!</description>
+      <description>Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+Join us on Slack and let us know what resources you need us to prirotizeSend us a Jira service desk requestLog an issues request with usWrite this page yourself!</description>
     </item>
     
     <item>
@@ -3111,7 +3111,7 @@ Entity Maps File Format The file should be in the following format:</description
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/quickstart/</guid>
-      <description>In this section you will find all the queries necessaries in order to perform a booking flow using GraphQL Playground.
+      <description>In this section you will find all the queries necessaries in order to perform a booking flow using GraphQL.
 You will be able to visualize the main necessary queries and responses through our sample Playground.
 Step by Step In order to perform a booking flow, please follow the steps below:
 Authorization First of all, to be able to run any query you should have an Apikey as an authentication.</description>
@@ -3235,8 +3235,8 @@ Access An Access is a set of credentials and the authentication configuration th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/resources/frequently-asked-questions/</guid>
-      <description>TravelgateX Platform FAQs Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
- Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!</description>
+      <description>TravelgateX Platform FAQs Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+Join us on Slack and let us know what resources you need us to prirotizeSend us a Jira service desk requestLog an issues request with usWrite this page yourself!</description>
     </item>
     
     <item>
