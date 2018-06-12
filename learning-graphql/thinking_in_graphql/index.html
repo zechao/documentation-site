@@ -2083,7 +2083,7 @@
 <p>There are a number of ways you can understand our <code>Schema</code>:
 <ul><li>You can see all elements of our data model by clicking on the green <code>Schema</code> button on the right hand side of our <a href="api.travelgatex.com">API playground</a>.</li>
 <li>You can review our Reference Documentation which provides a page by page analysis of all <code>Objects</code> and fields used in our <code>Schema</code>.</li>
-  <li>You can see how all of the data fields are connected by exploring the <a href="https://api.travelgatex.com/voyager">GraphQL Voyager tool</a>.</li></p>
+  <li>You can see how all of the data fields are connected by exploring the <a href="https://api.travelgatex.com/voyager">GraphQL Voyager tool</a>.</li></ul></p>
 
 <div class="alert 
 alert-info"
@@ -2096,18 +2096,18 @@ role="alert">At TravelgateX we would like to give a hat tip to <strong>API Guru<
 <p>You can test a <code>Query</code> in the <a href="api.travelgatex.com">API playground</a>.</p>
 
 <p>A query has the following components:
-- <strong>Operation type</strong>: When searching data in GraphQL, we use <code>Query</code> to indicate the operation type (see below for <code>Mutation</code> operation type
-- <strong>Operation name</strong>: <em>(optional)</em> You can give your <code>Query</code> a name so that it is easy to find in later code. This is the similar to creating a function in other programming languages.
-- <strong>Variable definitions</strong>: You can set what variables need to be completed in order to run your query. You declare a name for the variables you will use by using a $. A common variable name we use is $criteriaSearch. After declaring a variable name, use the colon and then describe what inputs are needed. You can choose from some of the input objects we have already created. For example, we often use the <code>HotelCriteriaSearchInput</code> input object. This input object requires the following fields as mandatory (indicate by a <code>!</code>): Check in date, check out date, number of hotels to be returned in a response, and number of people to occupy the rooms. You can also add language, currency, nationality and market fields as variables to this input object, for more filtered responses.
-- <strong>Selection set</strong>: After the variables have been defined, you can use the <code>{</code> brackets to start listing what objects you want to query to get the data you need. Each selection set starts with a <code>{</code> and ends with a <code>}</code>. You can nest (indent) these selection sets so it is easier to read a query.
-- <strong>Response</strong>: Once you have completed defining your query, you will receive a response in JSON format. This will be nested as well, so it is easier to read.</p>
+<ul><li><strong>Operation type</strong>: When searching data in GraphQL, we use <code>Query</code> to indicate the operation type (see below for <code>Mutation</code> operation type</li>
+<li><strong>Operation name</strong>: <em>(optional)</em> You can give your <code>Query</code> a name so that it is easy to find in later code. This is the similar to creating a function in other programming languages.</li>
+<li><strong>Variable definitions</strong>: You can set what variables need to be completed in order to run your query. You declare a name for the variables you will use by using a $. A common variable name we use is $criteriaSearch. After declaring a variable name, use the colon and then describe what inputs are needed. You can choose from some of the input objects we have already created. For example, we often use the <code>HotelCriteriaSearchInput</code> input object. This input object requires the following fields as mandatory (indicate by a <code>!</code>): Check in date, check out date, number of hotels to be returned in a response, and number of people to occupy the rooms. You can also add language, currency, nationality and market fields as variables to this input object, for more filtered responses.</li>
+<li><strong>Selection set</strong>: After the variables have been defined, you can use the <code>{</code> brackets to start listing what objects you want to query to get the data you need. Each selection set starts with a <code>{</code> and ends with a <code>}</code>. You can nest (indent) these selection sets so it is easier to read a query.</li>
+<li><strong>Response</strong>: Once you have completed defining your query, you will receive a response in JSON format. This will be nested as well, so it is easier to read.</li></ul></p>
 
 <h4 id="further-reading">Further reading</h4>
 
 <p>We recommend the following resources to learn more about making GraphQL queries:
 <ul><li><a href="https://dev-blog.apollodata.com/the-anatomy-of-a-graphql-query-6dffa9e9e747">The Anatomy of a GraphQL query</a> by <a href="https://github.com/stubailo">Sashko Stubailo</a></li>
   <li><a href="https://dev-blog.apollodata.com/graphql-explained-5844742f195e">GraphQL explained</a> by <a href="https://twitter.com/databricks">Jonas Helfer</a></li>
-  <li><a href="https://graphql.org/learn/queries/">Queries and Mutations</a> by <a href="https://graphql.org/">GraphQL.org</a></li></p>
+  <li><a href="https://graphql.org/learn/queries/">Queries and Mutations</a> by <a href="https://graphql.org/">GraphQL.org</a></li></ul></p>
   
 
 <h3 id="building-mutations">Building Mutations</h3>
@@ -2115,11 +2115,11 @@ role="alert">At TravelgateX we would like to give a hat tip to <strong>API Guru<
 <p>You can test a <code>Mutation</code> in the <a href="api.travelgatex.com">API playground</a>. We recommend that you work through our <a href="https://docs.travelgatex.com/hotelx/quickstart/">example HotelX mutation to book a hotel</a>.</p>
 
 <p>A query has the following components:
-- <strong>Operation type</strong>: When searching data in GraphQL, we use <code>Mutation</code> to indicate the operation type, that is, we are going to change some data on the server
-- <strong>Operation name</strong>: <em>(optional)</em> You can give your <code>Mutation</code> a name so that it is easy to find in later code. This is the similar to creating a function in other programming languages.
-- <strong>Variable definitions</strong>: You can set what variables need to be completed in order to run your mutation. You declare a name for the variables you will use by using a $. A common variable name we use is $bookInput. After declaring a variable name, use the colon and then describe what inputs are needed. You can choose from some of the input objects we have already created. For example, we often use the <code>HotelBookInput</code> input object. We added an <code>!</code> in <a href="https://docs.travelgatex.com/hotelx/quickstart/">our example</a>. The <code>!</code> in GraphQL means it is mandatory. So while only three fields of the <code>HotelBookInput</code> are usually mandatory, by adding the <code>!</code> to our variable definition, we have made all input object fields mandatory.
-- <strong>Selection set</strong>: After the variables have been defined, you can use the <code>{</code> brackets to start listing what objects you want to query to get the data you need. Each selection set starts with a <code>{</code> and ends with a <code>}</code>. You can nest (indent) these selection sets so it is easier to read a query.
-- <strong>Response</strong>: Once you have completed defining your mutation, you will receive a response in JSON format. This will be nested as well, so it is easier to read. Look for the field <code>Status</code> and make sure it has OK to confirm that the data has been added/updated/deleted.</p>
+<ul><li><strong>Operation type</strong>: When searching data in GraphQL, we use <code>Mutation</code> to indicate the operation type, that is, we are going to change some data on the server</li>
+<li><strong>Operation name</strong>: <em>(optional)</em> You can give your <code>Mutation</code> a name so that it is easy to find in later code. This is the similar to creating a function in other programming languages.</li>
+<li><strong>Variable definitions</strong>: You can set what variables need to be completed in order to run your mutation. You declare a name for the variables you will use by using a $. A common variable name we use is $bookInput. After declaring a variable name, use the colon and then describe what inputs are needed. You can choose from some of the input objects we have already created. For example, we often use the <code>HotelBookInput</code> input object. We added an <code>!</code> in <a href="https://docs.travelgatex.com/hotelx/quickstart/">our example</a>. The <code>!</code> in GraphQL means it is mandatory. So while only three fields of the <code>HotelBookInput</code> are usually mandatory, by adding the <code>!</code> to our variable definition, we have made all input object fields mandatory.</li>
+<li><strong>Selection set</strong>: After the variables have been defined, you can use the <code>{</code> brackets to start listing what objects you want to query to get the data you need. Each selection set starts with a <code>{</code> and ends with a <code>}</code>. You can nest (indent) these selection sets so it is easier to read a query. </li>
+<li><strong>Response</strong>: Once you have completed defining your mutation, you will receive a response in JSON format. This will be nested as well, so it is easier to read. Look for the field <code>Status</code> and make sure it has OK to confirm that the data has been added/updated/deleted.</li></ul></p>
 
 <div class="alert 
 alert-danger"
@@ -2166,8 +2166,10 @@ role="alert"><p>We have identified pagination as a topic we need to cover on thi
         </div>
       </div>
     </div>
-    
-<footer id="footer_docs" role="contentinfo">
+    <div id="navigation" style="display:block!important;background-color: red">
+<a class="nav nav-prev" href="/learning-graphql/basic_concepts/" title="Go to previous page | Basic Concepts"> <i class="fa fa-chevron-left"></i></a>
+    <a class="nav nav-next" href="/learning-graphql/tooling/" title="Go to next page | Tools" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
+    <footer id="footer_docs" role="contentinfo">
 	
   <div class="top-footer hidden-sm-down">
     <div class="container">
@@ -2176,12 +2178,12 @@ role="alert"><p>We have identified pagination as a topic we need to cover on thi
           <h5 class="tit">Company</h5>
           <div class="separator"></div>
           <ul class="list-unstyled">
-            <li><a title="TGX" target="_blank" href="https://www.travelgatex.com/">XML Travelgate</a></li>
+            <li><a title="XML Travelgate" target="_blank" href="https://www.xmltravelgate.com/">XML Travelgate</a></li>
             <li><a href="#">The Team</a></li>
             <li><a href="#">The Numbers</a></li>
             <li><a href="#">The Platform</a></li>
             <li><a href="#">The Booking Globe</a></li>
-            <li><a title="Blog" target="_blank" href="https://blog.xmltravelgate.com/tagged/traveltech">Blog</a></li>
+            <li><a title="TravelgateX's Developers Blog" target="_blank" href="https://blog.xmltravelgate.com/tagged/traveltech">Blog</a></li>
           </ul>
         </div>
         <div class="col-sm-6 col-md-2 col-lg-2">
@@ -2223,10 +2225,10 @@ role="alert"><p>We have identified pagination as a topic we need to cover on thi
           <h5 class="tit">Developers</h5>
           <div class="separator"></div>
           <ul class="list-unstyled">
-            <li><a class="docs" href="http://docs.travelgatex.com/">Documentation</a></li>
-            <li><a class="docs" href="http://docs.travelgatex.com/getting-started/">API Reference</a></li>
-            <li><a class="docs" href="http://status.travelgatex.com/">API Status</a></li>
-            <li><a class="docs" href="https://github.com/travelgateX">Open Source</a></li>
+            <li><a class="docs" title="TravelgateX Documentation" href="http://docs.travelgatex.com/">Documentation</a></li>
+            <li><a class="docs" title="TravelgateX API Reference" href="http://docs.travelgatex.com/getting-started/">API Reference</a></li>
+            <li><a class="docs" title="TravelgateX API Status" href="http://status.travelgatex.com/">API Status</a></li>
+            <li><a class="docs" title="TravelgateX Open Source" href="https://github.com/travelgateX">Open Source</a></li>
           </ul>
         </div>
         <div class="col-sm-6 col-md-2 col-lg-2">
@@ -2244,10 +2246,10 @@ role="alert"><p>We have identified pagination as a topic we need to cover on thi
       <div class="row">
         <div class="col-sm-12">
           <ul class="text-center list-inline">
-            <li class="list-inline-item"><img class="certification" src="../../images/footer_images/logo_pci.png" alt="png"></li>
-            <li class="list-inline-item"><img class="certification" src="../../images/footer_images/logo_microsoft.png" alt="microsoft"></li>
-            <li class="list-inline-item"><img class="certification" src="../../images/footer_images/logo_google.png" alt="google"></li>
-            <li class="list-inline-item"><img class="certification" src="../../images/footer_images/logo_ndc.png" alt="ndc"></li>
+            <li class="list-inline-item"><img class="certification" src="/images/footer_images/logo_pci.png" alt="png" title="PCI/DSS Level 2 Certified" /></li>
+            <li class="list-inline-item"><img class="certification" src="/images/footer_images/logo_microsoft.png" alt="Microsoft Gold Partner" title="Microsoft Gold Partner" /></li>
+            <li class="list-inline-item"><img class="certification" src="/images/footer_images/logo_google.png" alt="Google Cloud Partner" title="Google Cloud Partner" /></li>
+            <li class="list-inline-item"><img class="certification" src="/images/footer_images/logo_ndc.png" alt="ndc" title="NDC Level 2 Compliant"></li>
           </ul>
         </div>
       </div>
@@ -2258,7 +2260,7 @@ role="alert"><p>We have identified pagination as a topic we need to cover on thi
       <div class="row">
         <div class="hidden-sm-down col-md-3 d-flex align-items-center">
 				  <a title="TGX" target="_blank" href="https://www.travelgatex.com/">
-            <img src="../../images/xtg_logo.svg" alt="travelgatex_logo">
+            <img src="/images/xtg_logo.svg" alt="travelgatex_logo">
 					</a>
         </div>
         <div class="col-xs-12 col-md-6">
@@ -2266,9 +2268,9 @@ role="alert"><p>We have identified pagination as a topic we need to cover on thi
         </div>
         <div class="hidden-sm-down col-md-3">
           <ul class="social social-circle">
-						<li><a href="https://twitter.com/travelgatex?lang=es"><i class="icon-twitter"></i></a></li>
-						<li><a href="https://www.facebook.com/XmlTravelgate"><i class="icon-facebook"></i></a></li>
-						<li><a href="https://es.linkedin.com/company/xml-travelgate"><i class="icon-linkedin"></i></a></li>
+						<li><a href="https://twitter.com/travelgatex" title="TravelgateX Twitter"><i class="icon-twitter"></i></a></li>
+						<li><a href="https://www.facebook.com/XmlTravelgate" title="TravelgateX Facebook"><i class="icon-facebook"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/xml-travelgate" title="TravelgateX LinkedIn"><i class="icon-linkedin"></i></a></li>
 					</ul>
         </div>
       </div>
