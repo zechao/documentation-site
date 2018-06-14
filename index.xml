@@ -425,8 +425,8 @@ GraphQL schema definition scalar BooleanRequired by AccessData: SupplierDa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/tutorials/ota-site/</guid>
-      <description>Online Travel Agency written in Angular For this quickstart tutorial, we have prepared a repository that contains the full Angular code for the OTA clone. All you need to do is to get TravelgateX credentials and connect it with the Angular application. Let&amp;rsquo;s get started!
-OTA Angular</description>
+      <description>Creating your full OTA This topic describes how to build your own OTA using HotelX.
+Before you begin  Basic knowledge of Angular Read HotelX, which contains information about the HotelX API  Scenario: Create an Online Travel Agency written in Angular For this quickstart tutorial, we have prepared a repository that contains the full Angular code for the OTA clone. All you need to do is to get TravelgateX credentials and connect it with the Angular application.</description>
     </item>
     
     <item>
@@ -3100,11 +3100,10 @@ Authorization First of all, to be able to run any query you should have an Apike
       
       <guid>/travelgatex/resources/release-notes/</guid>
       <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-06-01 🛑 Input field member was added to input object type DeleteMemberInput
-🛑 Input field code was removed from input object type DeleteMemberInput
-🛑 Input field UpdateGroupInput.api changed type from String! to ID!
-🛑 Input field group was added to input object type UpdateGroupInput
-🛑 Input field method was removed from input object type UpdateGroupInput</description>
+2018-06-12 🛑 Input field group was added to input object type DeleteGroupInput
+🛑 Input field code was removed from input object type DeleteGroupInput
+🛑 Type LegacyData was removed
+✅ Description Input delta price, indicates price variation permitted by the client on type DeltaPriceInput has changed to Input delta price, indicates price variation permitted by the client An error will be returned if the new price does not abide to DeltaPrice.</description>
     </item>
     
     <item>
@@ -3350,10 +3349,9 @@ Overview GOAL: Explicar el who, why, how de la plataforma
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/concepts/common-resources/</guid>
-      <description>Overview Common resources are those used in more than one TravelgateX product, so creating, updating or deleting a resources can impact on several product behaviors.
+      <description>On this page you will learn more about common resources used in TravelgateX. You can also refer to the overarching core concepts that apply to all TravelgateX APIs.
 Supplier A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers.
-Access An Access is a set of credentials and configuration in order to access the system of a Supplier.
-Client Client identifies who is making the request and holds the configuration assigned to it.</description>
+Access An Access is a set of credentials and configuration in order to access the system of a Supplier.</description>
     </item>
     
     <item>

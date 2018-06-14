@@ -2032,6 +2032,381 @@
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
 
+<h2 id="2018-06-12">2018-06-12</h2>
+
+<p>🛑  Input field <code>group</code> was added to input object type <code>DeleteGroupInput</code></p>
+
+<p>🛑  Input field <code>code</code> was removed from input object type <code>DeleteGroupInput</code></p>
+
+<p>🛑  Type <code>LegacyData</code> was removed</p>
+
+<p>✅  Description <code>Input delta price, indicates price variation permitted by the client</code> on type <code>DeltaPriceInput</code> has changed to <code>Input delta price, indicates price variation permitted by the client
+An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue
+(price is lower or equal to the price showed in valuation).
+This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation
+will be done automatically in reservation method.</code></p>
+
+<p>✅  Input field <code>DeltaPriceInput.applyBoth</code> description changed from <code>Indicates that the range between valuation price and the new price does not exceed the amount and/or porcentage indicated by the client.</code> to <code>Depending on the value of applyBoth:
+applyBoth = false: Indicates that one of the conditions (amount or percentage) has to meet the criteria before reservation.
+applyBoth = true: Indicates that the new price cannot exceed the amount or percentage indicated by the client.</code></p>
+
+<p>✅  Deprecation reason on field <code>HotelXMutation.loadFile</code> has changed from `<code>to</code>deprecated from 2018-06-06`</p>
+
+<p>✅  Description `<code>on type</code>AdminMutation<code>has changed to</code>The admin query root of TravelgateX&rsquo;s for implementing GraphQL mutations.`</p>
+
+<p>✅  Description <code>Mutations are operations that change or update data on the server</code> on type <code>Mutation</code> has changed to <code>The root query for implementing GraphQL mutations. Mutations are operations that change or update data on the server</code></p>
+
+<p>✅  Field <code>paymentX</code> was added to object type <code>Mutation</code></p>
+
+<p>✅  Description <code>LList of business rules for filtering options based on your interests.</code> on type <code>BusinessRules</code> has changed to <code>List of business rules for filtering options based on your interests.</code></p>
+
+<p>✅  Description for enum value <code>ServiceApiType.PACKAGE</code> changed from `<code>to</code>When the request has been done against the Package API`</p>
+
+<p>✅  Description for enum value <code>ServiceApiType.PAYMENT</code> changed from `<code>to</code>When the request has been done against the Payment API`</p>
+
+<p>✅  Description for enum value <code>ServiceApiType.VIRTUALACCOUNT</code> changed from `<code>to</code>When the request has been done against the Virtual Account API`</p>
+
+<p>✅  Description for enum value <code>ServiceApiType.ACTIVITIES</code> changed from `<code>to</code>When the request has been done against the Activities API`</p>
+
+<p>✅  Description for enum value <code>ServiceApiType.TRANSFERS</code> changed from `<code>to</code>When the request has been done against the Transfers API`</p>
+
+<p>✅  Description for enum value <code>ServiceApiType.CAR</code> changed from `<code>to</code>When the request has been done against the Car API`</p>
+
+<p>✅  Description for enum value <code>ServiceApiType.TRANSPORTATION</code> changed from `<code>to</code>When the request has been done against the Transportation API`</p>
+
+<p>✅  Description for enum value <code>ServiceApiType.HOTEL</code> changed from `<code>to</code>When the request has been done against the Hotel API`</p>
+
+<p>✅  Description for enum value <code>ServiceOperationType.OTHER</code> changed from `<code>to</code>When the type of the request is Other`</p>
+
+<p>✅  Description for enum value <code>ServiceOperationType.BOOKING</code> changed from `<code>to</code>When the type of the request is Booking`</p>
+
+<p>✅  Description for enum value <code>ServiceOperationType.QUOTE</code> changed from `<code>to</code>When the type of the request is Quote`</p>
+
+<p>✅  Description for enum value <code>ServiceOperationType.SEARCH</code> changed from `<code>to</code>When the type of the request is Search`</p>
+
+<p>✅  Field <code>StatsAssert.url</code> description changed from `<code>to</code>Endpoint to download the full XML of the request with its response`</p>
+
+<p>✅  Field <code>StatsAssert.execTime</code> description changed from `<code>to</code>Execution time of the request`</p>
+
+<p>✅  Field <code>StatsAssert.startTime</code> description changed from `<code>to</code>Start time of the request`</p>
+
+<p>✅  Description for enum value <code>StatsInfoTypes.OTHER</code> changed from `<code>to</code>Stats in NOK state caused by other causes`</p>
+
+<p>✅  Description for enum value <code>StatsInfoTypes.HUB</code> changed from `<code>to</code>Stats in NOK state caused by HUB issues`</p>
+
+<p>✅  Description for enum value <code>StatsInfoTypes.COMMUNICATION</code> changed from `<code>to</code>Stats in NOK state caused by Timeout`</p>
+
+<p>✅  Description for enum value <code>StatsInfoTypes.PROVIDER</code> changed from `<code>to</code>Stats in NOK state caused by supplier issues`</p>
+
+<p>✅  Description for enum value <code>StatsInfoTypes.INTEGRATION</code> changed from `<code>to</code>Stats in NOK state caused by integration issues`</p>
+
+<p>✅  Description for enum value <code>StatsInfoTypes.OK</code> changed from `<code>to</code>Stats in OK state`</p>
+
+<p>✅  Field <code>StatsInfo.asserts</code> description changed from `<code>to</code>Details about errors.`</p>
+
+<p>✅  Field <code>StatsInfo.time</code> description changed from <code>Total time (ms)</code> to <code>Average time (ms)</code></p>
+
+<p>✅  Field <code>StatsInfo.hits</code> description changed from <code>Total hits.</code> to <code>Total hits</code></p>
+
+<p>✅  Field <code>StatsInfo.type</code> description changed from `<code>to</code>Stats type`</p>
+
+<p>✅  Description `<code>on type</code>OperationDetailed<code>has changed to</code>Stats information per operation`</p>
+
+<p>✅  Field <code>OperationDetailed.cache</code> description changed from `<code>to</code>Responsible for the execution of the this stats. If TRUE then cache, else client`</p>
+
+<p>✅  Field <code>OperationDetailed.detailedHits</code> description changed from <code>Total time
+time: Time!</code> to <code>Hits grouped depending on their status</code></p>
+
+<p>✅  Field <code>OperationDetailed.totalHits</code> description changed from <code>operation: String!
+operationType: ServiceOperationType!
+List of service apis.
+serviceApis: ServiceApiConnection!
+Total hits.</code> to <code>Total hits.</code></p>
+
+<p>✅  Field <code>OperationDetailed.operation</code> changed type from <code>Operation</code> to <code>Operation!</code></p>
+
+<p>✅  Field <code>OperationDetailed.operation</code> description changed from `<code>to</code>Operation information`</p>
+
+<p>✅  Description <code>Details of look to quote and look to book.</code> on type <code>Ratios</code> has changed to <code>Ratios details</code></p>
+
+<p>✅  Field <code>Ratios.quoteToBook</code> description changed from `<code>to</code>Quotes needed to do a booking`</p>
+
+<p>✅  Field <code>Ratios.lookToBook</code> description changed from `<code>to</code>Searches needed to do a booking`</p>
+
+<p>✅  Field <code>Ratios.lookToQuote</code> description changed from `<code>to</code>Searches needed to do a quote`</p>
+
+<p>✅  Field <code>StatsData.operations</code> description changed from `<code>to</code>Stats information per operation`</p>
+
+<p>✅  Field <code>StatsData.ratios</code> description changed from <code>Details of look to quote and look to book.</code> to <code>Ratios details</code></p>
+
+<p>✅  Field <code>StatsData.client</code> description changed from `<code>to</code>Owner client`</p>
+
+<p>✅  Field <code>StatsData.access</code> description changed from `<code>to</code>Owner access`</p>
+
+<p>✅  Field <code>Stats.updatedAt</code> description changed from <code>Date updated</code> to <code>Update date</code></p>
+
+<p>✅  Field <code>Stats.createdAt</code> description changed from <code>Date created</code> to <code>Create date</code></p>
+
+<p>✅  Field <code>Stats.error</code> description changed from <code>Errors that abort services</code> to <code>Errors that will lead the service to abort</code></p>
+
+<p>✅  Field <code>Stats.statsData</code> description changed from `<code>to</code>GUID
+The data returned by a `Stats` query.`</p>
+
+<p>✅  Description <code>Plugin Type</code> on type <code>PluginType</code> has changed to <code>Plugin Type. https://docs.travelgatex.com/hotelx/plugins/overview/</code></p>
+
+<p>✅  Description <code>Plugin Step Type</code> on type <code>PluginStepType</code> has changed to <code>Plugin Step Type. https://docs.travelgatex.com/hotelx/plugins/overview/</code></p>
+
+<p>✅  Input field <code>PluginStepInput.pluginsType</code> description changed from `<code>to</code>Indicates the plugin that will be executed.`</p>
+
+<p>✅  Input field <code>HotelSettingsInput.testMode</code> description changed from <code>Use test access</code> to <code>This flag allows only the accesses checked as test. By default is production.</code></p>
+
+<p>✅  Description `<code>on type</code>MarkupRuleType<code>has changed to</code>Indicates what type of value is the markup, by percentage or is an import.`</p>
+
+<p>✅  Description <code>Options status</code> on type <code>StatusType</code> has changed to <code>Indicartes options status</code></p>
+
+<p>✅  Field <code>Response.stats</code> description changed from <code>Application stats in string format</code> to <code>Application stats</code></p>
+
+<p>✅  Field <code>DestinationConnection.pageInfo</code> description changed from `<code>to</code>Indicates info about page`</p>
+
+<p>✅  Field <code>HotelConnection.pageInfo</code> description changed from `<code>to</code>Indicates info about page`</p>
+
+<p>✅  Input field <code>HotelXRoomQueryInput.access</code> description changed from `<code>to</code>Indicates the access that you want use.`</p>
+
+<p>✅  Input field <code>HotelXRoomQueryInput.roomCodes</code> description changed from `<code>to</code>Indicates the room codes that you want filter.`</p>
+
+<p>✅  Field <code>RoomConnection.pageInfo</code> description changed from `<code>to</code>Indicates info about page`</p>
+
+<p>✅  Input field <code>HotelXCategoryQueryInput.access</code> description changed from `<code>to</code>Indicates the access that you want use.`</p>
+
+<p>✅  Input field <code>HotelXCategoryQueryInput.categoryCodes</code> description changed from `<code>to</code>Indicates the category codes that you want filter.`</p>
+
+<p>✅  Field <code>CategoryConnection.pageInfo</code> description changed from `<code>to</code>Indicates info about page`</p>
+
+<p>✅  Input field <code>HotelXBoardQueryInput.access</code> description changed from `<code>to</code>Indicates the access that you want use.`</p>
+
+<p>✅  Input field <code>HotelXBoardQueryInput.boardCodes</code> description changed from `<code>to</code>Indicates the board codes that you want filter.`</p>
+
+<p>✅  Field <code>BoardConnection.pageInfo</code> description changed from `<code>to</code>Indicates info about page`</p>
+
+<p>✅  Field <code>HotelXQuery.mapping</code> description changed from `<code>to</code>Returns map codes of a group. You can get hotel map, room map, and board map.`</p>
+
+<p>✅  Field <code>HotelXQuery.bookingStatusService</code> description changed from <code>TODO: me no understand...
+Returns status of the booking service.</code> to <code>Returns status of the booking service.</code></p>
+
+<p>✅  Field <code>ProductData.apis</code> description changed from `<code>to</code>A Product has many APIs`</p>
+
+<p>✅  Description `<code>on type</code>Product<code>has changed to</code>An APIs collection.`</p>
+
+<p>✅  Field <code>Product.updatedAt</code> description changed from `<code>to</code>Date updated`</p>
+
+<p>✅  Field <code>Product.createdAt</code> description changed from `<code>to</code>Date created`</p>
+
+<p>✅  Field <code>Product.error</code> description changed from `<code>to</code>Errors that abort services`</p>
+
+<p>✅  Field <code>Operation.updatedAt</code> description changed from `<code>to</code>Date updated`</p>
+
+<p>✅  Field <code>Operation.createdAt</code> description changed from `<code>to</code>Date created`</p>
+
+<p>✅  Field <code>Operation.error</code> description changed from `<code>to</code>Errors that abort services`</p>
+
+<p>✅  Description <code>on type `APIData` has changed to</code></p>
+
+<p>✅  Field <code>APIData.operations</code> description changed from `<code>to</code>which operations are asigned this API?`</p>
+
+<p>✅  Field <code>APIData.resources</code> description changed from `<code>to</code>which resources are asigned this API?`</p>
+
+<p>✅  Field <code>APIData.groups</code> description changed from `<code>to</code>which groups are asigned this API?`</p>
+
+<p>✅  Field <code>APIData.label</code> description changed from `<code>to</code>API label`</p>
+
+<p>✅  Field <code>APIData.isEditable</code> description changed from `<code>to</code>Is API Editable or not.`</p>
+
+<p>✅  Field <code>APIData.code</code> description changed from `<code>to</code>API Code`</p>
+
+<p>✅  Field <code>APIData.id</code> description changed from `<code>to</code>API ID`</p>
+
+<p>✅  Field <code>API.updatedAt</code> description changed from `<code>to</code>Date updated`</p>
+
+<p>✅  Field <code>API.createdAt</code> description changed from `<code>to</code>Date created`</p>
+
+<p>✅  Field <code>API.error</code> description changed from `<code>to</code>Errors that abort services`</p>
+
+<p>✅  Field <code>ResourceData.roles</code> description changed from `<code>to</code>which roles are asigned or are possibles in this resource?`</p>
+
+<p>✅  Field <code>ResourceData.apis</code> description changed from `<code>to</code>which API have asigned this resource?`</p>
+
+<p>✅  Description `<code>on type</code>Resource<code>has changed to</code>Resources are those used in APIs and Products.`</p>
+
+<p>✅  Field <code>Resource.updatedAt</code> description changed from `<code>to</code>Date updated`</p>
+
+<p>✅  Field <code>Resource.createdAt</code> description changed from `<code>to</code>Date created`</p>
+
+<p>✅  Field <code>Resource.error</code> description changed from `<code>to</code>Errors that abort services`</p>
+
+<p>✅  Description for enum value <code>RoleType.SPECIFIC</code> changed from `<code>to</code>Allows a User to make othen kind of operation with the resource. Defined by API.`</p>
+
+<p>✅  Description for enum value <code>RoleType.EXECUTOR</code> changed from `<code>to</code>Allows a User to make use of reources only for extecutations queries.`</p>
+
+<p>✅  Description for enum value <code>RoleType.ADMIN</code> changed from `<code>to</code>Allows a User to make All (changes) to the resource`</p>
+
+<p>✅  Description for enum value <code>RoleType.EDITOR</code> changed from `<code>to</code>Allows a User to make Mutations (changes) to the resource data`</p>
+
+<p>✅  Description for enum value <code>RoleType.VIEWER</code> changed from `<code>to</code>Allows a User to make Queries of resources, but not change any resource data`</p>
+
+<p>✅  Field <code>RoleData.resources</code> description changed from `<code>to</code>Resources used`</p>
+
+<p>✅  Field <code>RoleData.special</code> description changed from `<code>to</code>Special permission`</p>
+
+<p>✅  Field <code>RoleData.isSpecial</code> description changed from `<code>to</code>Has any other non-basic permission/s?`</p>
+
+<p>✅  Field <code>RoleData.isExecutable</code> description changed from `<code>to</code>Has resource Executable permission?`</p>
+
+<p>✅  Field <code>RoleData.isEnable</code> description changed from `<code>to</code>Is role enabled or not?`</p>
+
+<p>✅  Field <code>RoleData.isDelete</code> description changed from `<code>to</code>Has resource Delete permission?`</p>
+
+<p>✅  Field <code>RoleData.isUpdate</code> description changed from `<code>to</code>Has resource Update permission?`</p>
+
+<p>✅  Field <code>RoleData.isRead</code> description changed from `<code>to</code>Has resource Create permission?`</p>
+
+<p>✅  Field <code>RoleData.isCreate</code> description changed from `<code>to</code>Has resource Create permission?`</p>
+
+<p>✅  Description `<code>on type</code>Role<code>has changed to</code>Permissions determine what operations are allowed on a resource`</p>
+
+<p>✅  Field <code>Role.updatedAt</code> description changed from `<code>to</code>Date updated`</p>
+
+<p>✅  Field <code>Role.createdAt</code> description changed from `<code>to</code>Date created`</p>
+
+<p>✅  Field <code>Role.error</code> description changed from `<code>to</code>Errors that abort services`</p>
+
+<p>✅  Field <code>MemberData.roles</code> description changed from `<code>to</code>which roles the member has in?`</p>
+
+<p>✅  Field <code>MemberData.groups</code> description changed from `<code>to</code>which groups the member is in?`</p>
+
+<p>✅  Field <code>MemberData.type</code> description changed from `<code>to</code>Member Type`</p>
+
+<p>✅  Description `<code>on type</code>Member<code>has changed to</code>You grant access to members which can be either:
+Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform. An email address can be used as the identity of a User.
+Service Accounts: An application (Client) instead of an individual User. If you prefer, you can create as many Service Accounts as needed to represent different logical components of your application.`</p>
+
+<p>✅  Field <code>Member.updatedAt</code> description changed from `<code>to</code>Date updated`</p>
+
+<p>✅  Field <code>Member.createdAt</code> description changed from `<code>to</code>Date created`</p>
+
+<p>✅  Field <code>Member.isActive</code> description changed from `<code>to</code>Errors that abort services`</p>
+
+<p>✅  Field <code>GroupData.roles</code> description changed from `<code>to</code>You can grant roles to members, which define the roles catalog for a group.`</p>
+
+<p>✅  Field <code>GroupData.clients</code> description changed from `<code>to</code>Clients resources in a group`</p>
+
+<p>✅  Field <code>GroupData.suppliers</code> description changed from `<code>to</code>Supplier resources in a group`</p>
+
+<p>✅  Field <code>GroupData.accesses</code> description changed from `<code>to</code>Access resources in a group`</p>
+
+<p>✅  Field <code>GroupData.allMembers</code> description changed from `<code>to</code>Response all members in this group&rsquo;s childrens (hierarchically),`</p>
+
+<p>✅  Field <code>GroupData.managedGroups</code> description changed from `<code>to</code>Responses all groups in its group&rsquo;s childrens (hierarchically),`</p>
+
+<p>✅  Field <code>GroupData.apis</code> description changed from `<code>to</code>APIs assigned to this group. Products have APIs.`</p>
+
+<p>✅  Field <code>GroupData.members</code> description changed from `<code>to</code>Only responses members in this group`</p>
+
+<p>✅  Field <code>GroupData.children</code> description changed from `<code>to</code>Only responses children.(non-hierarchically)`</p>
+
+<p>✅  Description `<code>on type</code>Group<code>has changed to</code>Groups are organized hierarchically.`</p>
+
+<p>✅  Field <code>Group.updatedAt</code> description changed from `<code>to</code>Date updated`</p>
+
+<p>✅  Field <code>Group.createdAt</code> description changed from `<code>to</code>Date created`</p>
+
+<p>✅  Field <code>Group.error</code> description changed from `<code>to</code>Errors that abort services`</p>
+
+<p>✅  Field <code>OrganizationData.clients</code> description changed from `<code>to</code>Clients resources in a organization`</p>
+
+<p>✅  Field <code>OrganizationData.suppliers</code> description changed from `<code>to</code>Supplier resources in a organization`</p>
+
+<p>✅  Field <code>OrganizationData.accesses</code> description changed from `<code>to</code>Access resources in a organization`</p>
+
+<p>✅  Field <code>OrganizationData.allMembers</code> description changed from `<code>to</code>Response all members in this group&rsquo;s childrens (hierarchically)`</p>
+
+<p>✅  Field <code>OrganizationData.products</code> description changed from `<code>to</code>Products asign to a organization`</p>
+
+<p>✅  Field <code>OrganizationData.apis</code> description changed from `<code>to</code>APIs assigned to this group. Products have APIs.`</p>
+
+<p>✅  Field <code>OrganizationData.children</code> description changed from `<code>to</code>Only responses folders.(non-hierarchically)`</p>
+
+<p>✅  Description `<code>on type</code>Organization<code>has changed to</code>Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.`</p>
+
+<p>✅  Field <code>Organization.updatedAt</code> description changed from `<code>to</code>Date updated`</p>
+
+<p>✅  Field <code>Organization.createdAt</code> description changed from `<code>to</code>Date created`</p>
+
+<p>✅  Field <code>Organization.error</code> description changed from `<code>to</code>Errors that abort services`</p>
+
+<p>✅  Description `<code>on type</code>Client<code>has changed to</code>Client identifies who is making the request and holds the configuration assigned to it.`</p>
+
+<p>✅  Description `<code>on type</code>Supplier<code>has changed to</code>A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers`</p>
+
+<p>✅  Description `<code>on type</code>Access<code>has changed to</code>An Access is a set of credentials and configuration in order to access the system of a Supplier.`</p>
+
+<p>✅  Description `<code>on type</code>AdminQuery<code>has changed to</code>The admin query root of TravelgateX&rsquo;s GraphQL interface.`</p>
+
+<p>✅  Field <code>pointsOfSale</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Description `<code>on type</code>Query<code>has changed to</code>The query root of TravelgateX&rsquo;s GraphQL interface.`</p>
+
+<p>✅  Field <code>Query.mappea</code> description changed from `<code>to</code>The Mappea product query root for implementing GraphQL query.`</p>
+
+<p>✅  Field <code>Query.stats</code> description changed from `<code>to</code>The Stats product query root for implementing GraphQL query.`</p>
+
+<p>✅  Field <code>Query.hotelX</code> description changed from `<code>to</code>The hotelX product query root for implementing GraphQL query.`</p>
+
+<p>✅  Field <code>Query.admin</code> description changed from `<code>to</code>The admin query root of TravelgateX&rsquo;s for implementing GraphQL query.`</p>
+
+<p>✅  Field <code>paymentX</code> was added to object type <code>Query</code></p>
+
+<p>✅  Type <code>PaymentXBookingInfoDeleteInput</code> was added</p>
+
+<p>✅  Type <code>PointOfSaleInput</code> was added</p>
+
+<p>✅  Type <code>PaymentXBookingInfoInput</code> was added</p>
+
+<p>✅  Type <code>PaymentXStoreCardInput</code> was added</p>
+
+<p>✅  Type <code>PaymentXMutation</code> was added</p>
+
+<p>✅  Type <code>PaymentXBookingInfoFilterInput</code> was added</p>
+
+<p>✅  Type <code>ExpireDate</code> was added</p>
+
+<p>✅  Type <code>CVC</code> was added</p>
+
+<p>✅  Type <code>CardNumber</code> was added</p>
+
+<p>✅  Type <code>PaymentCard</code> was added</p>
+
+<p>✅  Type <code>PaymentXBookingInfo</code> was added</p>
+
+<p>✅  Type <code>StoredCardData</code> was added</p>
+
+<p>✅  Type <code>StoredCard</code> was added</p>
+
+<p>✅  Type <code>StoredCardEdge</code> was added</p>
+
+<p>✅  Type <code>StoredCardConnection</code> was added</p>
+
+<p>✅  Type <code>PaymentXQuery</code> was added</p>
+
+<p>✅  Type <code>PointOfSaleFilter</code> was added</p>
+
+<p>✅  Type <code>PointOfSaleData</code> was added</p>
+
+<p>✅  Type <code>PointOfSale</code> was added</p>
+
+<p>✅  Type <code>PointOfSaleEdge</code> was added</p>
+
+<p>✅  Type <code>PointOfSaleConnection</code> was added</p>
+
 <h2 id="2018-06-01">2018-06-01</h2>
 
 <p>🛑  Input field <code>member</code> was added to input object type <code>DeleteMemberInput</code></p>
@@ -3908,6 +4283,7 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
 <ul>
 <li>
 <ul>
+<li><a href="#2018-06-12">2018-06-12</a></li>
 <li><a href="#2018-06-01">2018-06-01</a></li>
 <li><a href="#2018-05-21">2018-05-21</a></li>
 <li><a href="#2018-05-16">2018-05-16</a></li>
