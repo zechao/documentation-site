@@ -7,10 +7,6 @@
   </url>
   
   <url>
-    <loc>/admin/reference/api-reference/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/reference/api-reference/</loc>
   </url>
   
@@ -240,10 +236,6 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/configurationinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/admin/howtos/howto-configure-permissions/</loc>
   </url>
   
   <url>
@@ -599,10 +591,6 @@
   </url>
   
   <url>
-    <loc>/admin/concepts/iam/</loc>
-  </url>
-  
-  <url>
     <loc>/travelgatex/reference/scalars/int/</loc>
   </url>
   
@@ -771,10 +759,6 @@
   </url>
   
   <url>
-    <loc>/admin/overview/</loc>
-  </url>
-  
-  <url>
     <loc>/flightx/overview/</loc>
   </url>
   
@@ -804,6 +788,10 @@
   
   <url>
     <loc>/travelgatex/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/security/overview/</loc>
   </url>
   
   <url>
@@ -900,10 +888,6 @@
   
   <url>
     <loc>/getting-started/quickstart/</loc>
-  </url>
-  
-  <url>
-    <loc>/admin/resources/quotas-limits/</loc>
   </url>
   
   <url>
@@ -1243,11 +1227,19 @@
   </url>
   
   <url>
-    <loc>/admin/concepts/common-resources/</loc>
+    <loc>/travelgatex/concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/tutorials/howto-configure-permissions/</loc>
   </url>
   
   <url>
     <loc>/learning-graphql/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/security/iam/</loc>
   </url>
   
   <url>
@@ -1267,10 +1259,6 @@
   </url>
   
   <url>
-    <loc>/admin/resources/release-notes/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/resources/release-notes/</loc>
   </url>
   
@@ -1279,19 +1267,11 @@
   </url>
   
   <url>
-    <loc>/admin/resources/roadmap/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/resources/roadmap/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/resources/roadmap/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/security/</loc>
   </url>
   
   <url>
@@ -1311,19 +1291,11 @@
   </url>
   
   <url>
-    <loc>/admin/concepts/</loc>
-  </url>
-  
-  <url>
     <loc>/getting-started/concepts/</loc>
   </url>
   
   <url>
     <loc>/hotelx/concepts/</loc>
-  </url>
-  
-  <url>
-    <loc>/admin/resources/frequently-asked-questions/</loc>
   </url>
   
   <url>
@@ -1355,15 +1327,7 @@
   </url>
   
   <url>
-    <loc>/travelgatex/data-automation/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/</loc>
-  </url>
-  
-  <url>
-    <loc>/admin/howtos/</loc>
   </url>
   
   <url>
@@ -1383,15 +1347,19 @@
   </url>
   
   <url>
-    <loc>/travelgatex/security/overview/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/plugins/processor/</loc>
   </url>
   
   <url>
+    <loc>/travelgatex/security/</loc>
+  </url>
+  
+  <url>
     <loc>/learning-graphql/thinking_in_graphql/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/data-automation/</loc>
   </url>
   
   <url>
@@ -1435,10 +1403,6 @@
   </url>
   
   <url>
-    <loc>/admin/reference/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/reference/</loc>
   </url>
   
@@ -1459,15 +1423,7 @@
   </url>
   
   <url>
-    <loc>/admin/resources/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/resources/</loc>
-  </url>
-  
-  <url>
-    <loc>/admin/</loc>
   </url>
   
   <url>
@@ -1491,6 +1447,10 @@
   <url>
     <loc>/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/concepts/common-resources/</loc>
   </url>
   
   <url>

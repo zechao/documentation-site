@@ -22,17 +22,6 @@
     
     <item>
       <title>API Reference</title>
-      <link>/admin/reference/api-reference/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/reference/api-reference/</guid>
-      <description> This API reference is organized by graphql operations related to product.
-Query Operations Mutation Operations Documentation Schema documentation
-Samples  Search, Quote, Book, Cancel and Retrieve bookings  </description>
-    </item>
-    
-    <item>
-      <title>API Reference</title>
       <link>/hotelx/reference/api-reference/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -614,17 +603,6 @@ Required by ClientConnection:</description>
       <guid>/travelgatex/reference/inputobjects/configurationinput/</guid>
       <description>The information and credentials required to access the supplier’s system.
 GraphQL schema definition type ConfigurationInput {username: String password: String urls: UrlsInput! parameters: [ParameterInput!] markets: [String!] rateRules: [RateRulesType!] }Fields username(String):User name for the connection.password(String):Password for the connectionurls(UrlsInput!):URL or endpoint for the connection.</description>
-    </item>
-    
-    <item>
-      <title>Configure HotelX Security</title>
-      <link>/admin/howtos/howto-configure-permissions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/howtos/howto-configure-permissions/</guid>
-      <description>Granting Permissions This topic describes how to configure permissions for a organization using HotelX and Stats.
-Before you begin  Read IAM, which contains information about how TravelgateX manages security Read HotelX, which contains information about the HotelX API  Scenario: Organization buying suppliers through HotelX In this scenario, organanization org_test logs on to TravelgateX in order to use HotelX to buy product from suppliers.
-Distribution will be made through 2 different channels, end users will use org_test_B2C_site whereas that org_test_B2B_site will be used for business users.</description>
     </item>
     
     <item>
@@ -1486,17 +1464,6 @@ GraphQL schema definition scalar IDRequired by AccessFilter: Access: No
     </item>
     
     <item>
-      <title>Identity and Access Management</title>
-      <link>/admin/concepts/iam/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/concepts/iam/</guid>
-      <description>Overview TravelgateX Identity &amp;amp; Access Management (IAM) lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.
-IAM provides an unified view of your security policy across your entire organization, with built-in auditing to ease compliance processes.
-As an administrator, when you register with us, we provide you with login details to access your TravelgateX accoynt, including a username and password.</description>
-    </item>
-    
-    <item>
       <title>Int</title>
       <link>/travelgatex/reference/scalars/int/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1903,15 +1870,6 @@ Required by OrganizationConnection:</description>
     
     <item>
       <title>Overview</title>
-      <link>/admin/overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/overview/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Overview</title>
       <link>/flightx/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1988,6 +1946,17 @@ Flows HotelX query or mutation determine what flow is executed. Plugins can be e
       <description>This page provides an overview of the TravelgateX platform.
 GraphQL Gateway TravelgateX is the travel API completely based in GraphQL. Unlike many legacy XML Soap APIs, GraphQL enables each client to ask for and receive exactly the data that is needed. Learn more by reading our Learning GraphQL guides.
 Our Gateway is the only endpoint to access all of our APIs. It is written in NodeJS. This makes it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/travelgatex/security/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/security/overview/</guid>
+      <description>Introduction TravelgateX offers a fine-grained access control and visibility for centrally managing resources, which are granted to Partners belonging to Organizations.
+Authentication Authentication is the process of authorizing or making sure that the Partner is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it&amp;rsquo;s an API Key or a JSON Web Token.
+API Key The API key takes cares of the authentication of applications, normally created as a Service Account with limited scopes.</description>
     </item>
     
     <item>
@@ -2229,15 +2198,6 @@ Required by SupplierData:</description>
       <guid>/getting-started/quickstart/</guid>
       <description>Four steps to using our API If you&amp;rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below: STEP 1: Get to know our APIs. Read through our documentation and test some sample calls in our API Playground. You can use a test API key and start experimenting with our APIs straight away.
 STEP 2: Sign an agreement with hotel suppliers to be using their booking databases.</description>
-    </item>
-    
-    <item>
-      <title>Quotas &amp; Limits</title>
-      <link>/admin/resources/quotas-limits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/resources/quotas-limits/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -3070,15 +3030,14 @@ File Format The file should be in the below format:
     </item>
     
     <item>
-      <title>Common Resources</title>
-      <link>/admin/concepts/common-resources/</link>
+      <title>Configure HotelX Security</title>
+      <link>/travelgatex/tutorials/howto-configure-permissions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/admin/concepts/common-resources/</guid>
-      <description>Overview Common resources are those used in more than one TravelgateX product, so creating, updating or deleting a resources can impact on several product behaviors.
-Supplier A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers.
-Access An Access is a set of credentials and configuration in order to access the system of a Supplier.
-Client Client identifies who is making the request and holds the configuration assigned to it.</description>
+      <guid>/travelgatex/tutorials/howto-configure-permissions/</guid>
+      <description>Granting Permissions This topic describes how to configure permissions for a organization using HotelX and Stats.
+Before you begin  Read IAM, which contains information about how TravelgateX manages security Read HotelX, which contains information about the HotelX API  Scenario: Organization buying suppliers through HotelX In this scenario, organanization org_test logs on to TravelgateX in order to use HotelX to buy product from suppliers.
+Distribution will be made through 2 different channels, end users will use org_test_B2C_site whereas that org_test_B2B_site will be used for business users.</description>
     </item>
     
     <item>
@@ -3089,6 +3048,17 @@ Client Client identifies who is making the request and holds the configuration a
       <guid>/learning-graphql/overview/</guid>
       <description>What is GraphQL? GraphQL is a query language for your API. It was first designed by Facebook. It&amp;rsquo;s a new way of dealing with and managing data models via API, and is especially useful for decoupling client from server logic.
  GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.</description>
+    </item>
+    
+    <item>
+      <title>Identity and Access Management</title>
+      <link>/travelgatex/security/iam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/security/iam/</guid>
+      <description>Overview TravelgateX Identity &amp;amp; Access Management (IAM) lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.
+IAM provides an unified view of your security policy across your entire organization, with built-in auditing to ease compliance processes.
+As an administrator, when you register with us, we provide you with login details to access your TravelgateX accoynt, including a username and password.</description>
     </item>
     
     <item>
@@ -3117,15 +3087,6 @@ Authorization First of all, to be able to run any query you should have an Apike
     
     <item>
       <title>Release Notes</title>
-      <link>/admin/resources/release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/resources/release-notes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Release Notes</title>
       <link>/hotelx/resources/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3145,15 +3106,6 @@ Authorization First of all, to be able to run any query you should have an Apike
 🛑 Input field UpdateGroupInput.api changed type from String! to ID!
 🛑 Input field group was added to input object type UpdateGroupInput
 🛑 Input field method was removed from input object type UpdateGroupInput</description>
-    </item>
-    
-    <item>
-      <title>Roadmap</title>
-      <link>/admin/resources/roadmap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/resources/roadmap/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -3207,15 +3159,6 @@ Queries Queries ask the system to provide some data, based on specfic parameters
       <description>The TravelgateX platform and APIs all use a consistent set of basic concepts so that whatever API you use on our platform, you can be confident that it will work with the same definitions as all of the others you are familiar with.
 Here is an overview of the key concepts of our platform.
 Access An Access is a set of credentials and the authentication configuration that enables a Buyer to access a Supplier.</description>
-    </item>
-    
-    <item>
-      <title>Frequendly Asked Questions</title>
-      <link>/admin/resources/frequently-asked-questions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/admin/resources/frequently-asked-questions/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -3298,17 +3241,6 @@ In this case you can search the bookings with references or by dates, the dates 
       <guid>/hotelx/plugins/net-price/</guid>
       <description>Net Price is an optional plugin and allows to net all the prices in an option.
 NetPriceX This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices. Suppliers commission file specifies the commission applied to supplier’s prices.</description>
-    </item>
-    
-    <item>
-      <title>Overview</title>
-      <link>/travelgatex/security/overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/security/overview/</guid>
-      <description>Introduction TravelgateX offers a fine-grained access control and visibility for centrally managing resources, which are granted to Partners belonging to Organizations.
-Authentication Authentication is the process of authorizing or making sure that the Partner is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it&amp;rsquo;s an API Key or a JSON Web Token.
-API Key The API key takes cares of the authentication of applications, normally created as a Service Account with limited scopes.</description>
     </item>
     
     <item>
@@ -3411,6 +3343,18 @@ Overview GOAL: Explicar el who, why, how de la plataforma
  HOW: Diagrama Platforma
  HOW: Utilización de GraphQL: EndPoint único
  WHY: Fast. Scalable. Reliable.</description>
+    </item>
+    
+    <item>
+      <title>Common Resources</title>
+      <link>/travelgatex/concepts/common-resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/concepts/common-resources/</guid>
+      <description>Overview Common resources are those used in more than one TravelgateX product, so creating, updating or deleting a resources can impact on several product behaviors.
+Supplier A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers.
+Access An Access is a set of credentials and configuration in order to access the system of a Supplier.
+Client Client identifies who is making the request and holds the configuration assigned to it.</description>
     </item>
     
     <item>
