@@ -1935,7 +1935,7 @@ Completely rebuilt in GraphQL from our many years of experience with travel XML 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/overview/</guid>
-      <description>The HotelX API is a powerful travel aggregation solution that will speed up your travel websites and apps and expand your catalogue of hotel booking services.
+      <description>The HotelX API is a powerful accomodation aggregation solution that will speed up your travel websites and apps and expand your catalogue of hotel booking services.
 Using HotelX, you can improve your hotel search response times and their accuracy by customizing aggregated responses based on your preferred criteria.
 The below map shows our architecture and the average impact on response rates caused by each layer.
   Each and every layer described in the this figure is explained as follows:</description>
@@ -1947,10 +1947,9 @@ The below map shows our architecture and the average impact on response rates ca
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/overview/</guid>
-      <description>Introduction Plugins are custom code, executed in HotelX servers, that add or modify specific features. Partner can develop custom plugins, but in most cases, HotelX offers enough basic plugins to use.
-Flows HotelX query or mutation determine what flow is executed. Plugins can be executed in different flows:
- search quote hotelBook hotelCancel  Steps Step is the minium container where plugins are executed sequentially.
-   Step When is executed     Request After Buyer requests message to HotelX.</description>
+      <description>Introduction Plugins are custom code, executed in HotelX servers, that add or modify specific functionalities. Any Partner can develop custom Plugins, nevertheless HotelX, HotelX has developed many Plugins available for anyone to use out of the box.
+Flows HotelX query or mutation determine what flow is executed. Plugins can be executed in different Queries or Mutations:
+ Search Quote Book Cancel  Steps Step is the minium container where plugins are executed sequentially.</description>
     </item>
     
     <item>
@@ -3053,12 +3052,11 @@ Required by GetUploadedFilesResponse: ## GetUploadedFilesGetMappeaStatsRespon
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/blacklist/</guid>
-      <description>The blacklist are used to ignorer hotel code when we make a search. the are 2 types of blacklist, you can filter hotel code by specific access or by specific provider.
-In order to load your blacklist you just need to follow the instructions below:
-Access blacklist Blacklist is applied for specific access
+      <description>The blacklist plugin is used to ignore hotel code(s) when we a search query is executed. There are 2 types of blacklists:
+ Filter hotel code of a specific Access Filter hotel codes of a specific Supplier  Loading a blacklist is as easy as following the steps below:
+Access Blacklist Blacklist is applied for specific Access
 File Format The file should be in the below format:
- Encoding: UTF-8
- File Name: access_blacklist.</description>
+ Encoding: UTF-8</description>
     </item>
     
     <item>
@@ -3344,12 +3342,12 @@ Hotels Hotels query returns a hotel list of the one supplier access. This entity
     
     <item>
       <title>Tools</title>
-      <link>/learning-graphql/tooling/</link>
+      <link>/learning-graphql/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/learning-graphql/tooling/</guid>
+      <guid>/learning-graphql/tools/</guid>
       <description>Top tools to develop in GraphQL Here is a collection of tools we&amp;rsquo;ve been using that have help us develop in GraphQL:
-To design Schemas  APIs Guru&amp;rsquo;s graphql-faker: https://github.com/APIs-guru/graphql-faker  TODO: Falta chicha!!Go Packages Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources. Also because of the ability to develop plugins. We&amp;rsquo;ve used many libraries and packages to help us, hereby our list:</description>
+Schemas Design  APIs Guru&amp;rsquo;s graphql-faker  Go Packages Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources. Also because of the ability to develop plugins. We&amp;rsquo;ve used many libraries and packages to help us, hereby our list:</description>
     </item>
     
     <item>
@@ -3358,7 +3356,7 @@ To design Schemas  APIs Guru&amp;rsquo;s graphql-faker: https://github.com/APIs-
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/development/</guid>
-      <description>On this page you will learn how to develop your own HotelX plugin.</description>
+      <description>On this page you will learn how to develop your own HotelX Plugin.</description>
     </item>
     
     <item>
@@ -3367,8 +3365,8 @@ To design Schemas  APIs Guru&amp;rsquo;s graphql-faker: https://github.com/APIs-
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/learning-graphql/tutorials_resources/</guid>
-      <description>As you can see GraphQL is a fast growing ecosystem. Apart from Facebook&amp;rsquo;s and Graphql.org&amp;rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.
-However we want to be part of this community and help you discover this new technology and its features. That&amp;rsquo;s why we have gathered some of the best tutorials for you to learn, step by step, how to use it.</description>
+      <description>Although GraphQL is a very young technology, it&amp;rsquo;s quickly gaining momentum and already has a fast growing yet vast ecosystem. Apart from Facebook&amp;rsquo;s and Graphql.org&amp;rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.
+We want to be part of this community and hopefully help you discover this new technology and its features.</description>
     </item>
     
     <item>

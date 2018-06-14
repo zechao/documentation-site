@@ -21,7 +21,7 @@
 <link href="/css/magnific-popup.css" rel="stylesheet">
 <link href="/css/bootstrap.css" rel="stylesheet">
 <link href="/css/elate-style.css" rel="stylesheet">
-<link href="/css/https:/fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -30,11 +30,11 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="HotelX Information">
+<meta name="description" content="HotelX Overview">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
     
-    <meta name="description" content="HotelX Information">
+    <meta name="description" content="HotelX Overview">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
@@ -47,11 +47,15 @@
             <a class="navbar-brand" href="/">
                 <img src="/images/xtg_logo.svg">
             </a>
+
+            <div class="pull-right iso-input-search" style="left:-9%;">
+                
+            </div>
+
            
         </nav>
     </div>
 </div>
-
 
     
     <div id="navbar" class="menu-left">
@@ -1971,8 +1975,8 @@
               <span style="padding-left: 8px;">Thinking in GraphQL</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/learning-graphql/tooling/" class="dd-item">
-            <a href="/learning-graphql/tooling/">
+          <li data-nav-id="/learning-graphql/tools/" class="dd-item">
+            <a href="/learning-graphql/tools/">
               <span style="padding-left: 8px;">Tools</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
@@ -2056,7 +2060,7 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">HotelX Intro</h1>
+              <h1 class="pageTitle">HotelX Overview</h1>
 
               
                 
@@ -2072,11 +2076,10 @@
 
     
 
-<p>The HotelX API is a powerful travel aggregation solution that will speed up your travel websites and apps and expand your catalogue of hotel booking services.</p>
+<p>The HotelX API is a powerful accomodation aggregation solution that will speed up your travel websites and apps and expand your catalogue of hotel booking services.</p>
 
-<p>Using HotelX, you can improve your hotel search response times and their accuracy by customizing aggregated responses based on your preferred criteria.</p>
-
-<p>The below map shows our architecture and the average impact on response rates caused by each layer.</p>
+<p>Using HotelX, you can improve your hotel search response times and their accuracy by customizing aggregated responses based on your preferred criteria.<br />
+The below map shows our architecture and the average impact on response rates caused by each layer.</p>
 
 
 <figure>
@@ -2091,7 +2094,7 @@
 
 <h3 id="graphql-gateway">GraphQL Gateway</h3>
 
-<p>Our gateway is the only endpoint to access all of our products. Teh gateway also manages <a href="https://docs.travelgatex.com/travelgatex/security/overview/">authentication and authorization</a> of our system. You can read about this, <a href="http://docs.travelgatex.com/travelgatex/overview/">here</a>.</p>
+<p>Our gateway is the only endpoint to access all of our products. Teh gateway also manages <a href="https://docs.travelgatex.com/travelgatex/security/overview/" target="_blank">authentication and authorization</a> of our system. You can read about this, <a href="http://docs.travelgatex.com/travelgatex/overview/" target="_blank">here</a>.</p>
 
 <h3 id="business-logic">Business Logic</h3>
 
@@ -2118,13 +2121,15 @@ alert-info"
 role="alert">A <strong>plugin</strong> is a piece of code that is executed inside our application.</div>
 
 
-<p>There are a few points in the request lifetime where anyone can <a href="https://docs.travelgatex.com/hotelx/plugins/">develop a plugin</a>. A plugin receives the request or response as an input and outputs the changed request or response.</p>
+<p>There are a few points in the request lifetime where anyone can <a href="https://docs.travelgatex.com/hotelx/plugins/" target="_blank">develop a plugin</a>. A plugin receives the request or response as an input and outputs the changed request or response.</p>
 
 <div class="alert 
 alert-info"
  
-role="alert"><p>Plugins are a core package in the <a href="https://golang.org/">Go Programming language</a>.
-You can learn more about how to use plugins <a href="https://golang.org/pkg/plugin/">here</a>.{% /alert %}}</p>
+role="alert"><p>Plugins are a core package in the <a href="https://golang.org/" target="_blank">Go Programming language</a>.
+You can learn more about how to use plugins <a href="https://golang.org/pkg/plugin/" target="_blank">here</a>.</p>
+</div>
+
 
 <h3 id="transformation-layer">Transformation Layer</h3>
 
@@ -2134,9 +2139,9 @@ You can learn more about how to use plugins <a href="https://golang.org/pkg/plug
 
 <h3 id="optional-cache-layer">Optional Cache Layer</h3>
 
-<p>Our cache layer, called <a href="https://www.travelgatex.com/products/speed.html">Speed</a> does exactly what the name says! It is an optional layer that ensures your responses are lightening fast, by creating a cache.</p>
+<p>Our cache layer, called <a href="https://www.travelgatex.com/products/speed.html" target="_blank">Speed</a> does exactly what the name says! It is an optional layer that ensures your responses are lightening fast, by creating a cache.</p>
 
-<p>We use advanced Machine Learning models to predict how long each cached item will be valid. This takes into account a large number of variables set in the request. The cache is hosted in <a href="https://cloud.google.com/bigtable/">Google’s BigTable</a>, a “Massively Scalable NoSQL” database, built with performance and scalability in mind.</p>
+<p>We use advanced Machine Learning models to predict how long each cached item will be valid. This takes into account a large number of variables set in the request. The cache is hosted in <a href="https://cloud.google.com/bigtable/" target="_blank">Google’s BigTable</a>, a “Massively Scalable NoSQL” database, built with performance and scalability in mind.</p>
 
 <h3 id="suppliers">Suppliers</h3>
 
@@ -2145,10 +2150,9 @@ You can learn more about how to use plugins <a href="https://golang.org/pkg/plug
 <div class="alert 
 alert-info"
  
-role="alert"><p>Join us on <a href="https://slack.travelgatex.com/">Slack</a> to talk with us about how to use HotelX in your websites, apps, and products.
-You can also send us a <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7">Jira service desk request</a>.
-If you would like any new features or more information in our documentation, send us an <a href="https://github.com/travelgateX/Issue-tracker">issues request</a>.</p>
-</div>
+role="alert"><p>Join us on <a href="https://slack.travelgatex.com/" target="_blank">Slack</a> to talk with us about how to use HotelX in your websites, apps, and products.
+You can also send us a <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7" target="_blank">Jira service desk request</a>.
+If you would like any new features or more information in our documentation, send us an <a href="https://github.com/travelgateX/Issue-tracker" target="_blank">issues request</a>.</p>
 </div>
 
 
@@ -2177,6 +2181,9 @@ If you would like any new features or more information in our documentation, sen
 <ul>
 <li><a href="#plugins">Plugins</a></li>
 </ul></li>
+<li><a href="#transformation-layer">Transformation Layer</a></li>
+<li><a href="#optional-cache-layer">Optional Cache Layer</a></li>
+<li><a href="#suppliers">Suppliers</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -2187,95 +2194,71 @@ If you would like any new features or more information in our documentation, sen
         </div>
       </div>
     </div>
-    <div id="navigation" style="display:block!important;background-color: red">
-<a class="nav nav-prev" href="/hotelx/" title="Go to previous page | HotelX"> <i class="fa fa-chevron-left"></i></a>
-    <a class="nav nav-next" href="/hotelx/quickstart/" title="Go to next page | Quickstart" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
+    <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
+    <li class="page-item">
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/hotelx/" title="Go to previous page | HotelX"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Previous</a>
+            </li>
+        <li class="page-item">
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/hotelx/quickstart/" title="Go to next page | Quickstart" style="margin-right: 0px;">Next<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+            </li></ul>
+
     <footer id="footer_docs" role="contentinfo">
 	
   <div class="top-footer hidden-sm-down">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-md-2 col-lg-2">
-          <h5 class="tit">Company</h5>
-          <div class="separator"></div>
-          <ul class="list-unstyled">
-            <li><a title="XML Travelgate" target="_blank" href="https://www.xmltravelgate.com/">XML Travelgate</a></li>
-            <li><a href="#">The Team</a></li>
-            <li><a href="#">The Numbers</a></li>
-            <li><a href="#">The Platform</a></li>
-            <li><a href="#">The Booking Globe</a></li>
-            <li><a title="TravelgateX's Developers Blog" target="_blank" href="https://blog.xmltravelgate.com/tagged/traveltech">Blog</a></li>
-          </ul>
+        <div class="col-sm-12 col-md-2 col-lg-2">
+
         </div>
         <div class="col-sm-6 col-md-2 col-lg-2">
-          <h5 class="tit">Products</h5>
-          <div class="separator"></div>
+          <h5 class="tit">Reference</h5>
           <ul class="list-unstyled">
-            <li><a href="#">Connect</a></li>
-            <li><a href="#">Speed</a></li>
-            <li><a href="#">Swappt</a></li>
-            <li><a href="#">Stats</a></li>
-            <li><a href="#">Insights</a></li>
-            <li><a href="#">Mappea</a></li>
-            <li><a href="#">Inventory</a></li>
-            <li><a href="#">Distribution</a></li>
+            <li><a title="Getting Started" target="_blank" href="https://docs.travelgatex.com/getting-started/">Getting Started</a></li>
+						<li><a title="API Playground" target="_blank" href="https://docs.travelgatex.com/getting-started/playground/" >API Playground</a></li>
+						<li><a title="Key Concepts" target="_blank" href="https://docs.travelgatex.com/getting-started/concepts/" >Key Concepts</a></li>
+						<li><a title="Authentication" target="_blank" href="https://docs.travelgatex.com/travelgatex/security/overview/" >Authentication</a></li>
+						<li><a title="API reference" target="_blank" href="https://docs.travelgatex.com/travelgatex/reference/" >API reference</a></li>
           </ul>
         </div>
-        <div class="col-sm-6 col-md-2 col-lg-2">
-          <h5 class="tit">Services</h5>
-          <div class="separator"></div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <h5 class="tit">Quickstart Guides</h5>
           <ul class="list-unstyled">
-            <li><a href="#">Optimization</a></li>
-            <li><a href="#">Consultancy</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Training</a></li>
-            <li><a href="#">Reciprocals</a></li>
+            <li><a title="TravelgateX" target="_blank" href="https://docs.travelgatex.com/travelgatex/tutorials/" >TravelgateX</a></li>
+            <li><a title="HotelX" target="_blank" href="https://docs.travelgatex.com/hotelx/quickstart/" >HotelX</a></li>
           </ul>
         </div>
-        <div class="col-sm-6 col-md-2 col-lg-2">
-          <h5 class="tit">Partners</h5>
-          <div class="separator"></div>
+        <div class="col-sm-6 col-md-3 col-lg-4" >
+          <h5 class="tit">Support</h5>
+          <div class="col-sm-3 col-md-2 col-lg-6" style="padding-left: 0;">
           <ul class="list-unstyled">
-            <li><a href="#">Why partner with us?</a></li>
-            <li><a href="#">Register as a new partner</a></li>
-            <li><a href="#">Partner Directory</a></li>
-            <li><a href="#">Partner Testimonials</a></li>
+            <li><a title="Slack" target="_blank" href="https://slack.travelgatex.com/" >Slack</a></li>
+            <li><a title="Jira Service Desk (Customer Support)" target="_blank" href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7" >Customer Support</a></li>
+            <li><a title="Issues Tracker" target="_blank" href="https://github.com/travelgateX/Issue-tracker" >Issues Tracker</a></li>
+            <li><a title="Feature Request" target="_blank" href="https://github.com/travelgateX/Issue-tracker/issues?q=is%3Aopen+is%3Aissue+label%3A%22Feature+Request%22" >Feature Request</a></li>
           </ul>
         </div>
-        <div class="col-sm-6 col-md-2 col-lg-2">
-          <h5 class="tit">Developers</h5>
-          <div class="separator"></div>
-          <ul class="list-unstyled">
-            <li><a class="docs" title="TravelgateX Documentation" href="http://docs.travelgatex.com/">Documentation</a></li>
-            <li><a class="docs" title="TravelgateX API Reference" href="http://docs.travelgatex.com/getting-started/">API Reference</a></li>
-            <li><a class="docs" title="TravelgateX API Status" href="http://status.travelgatex.com/">API Status</a></li>
-            <li><a class="docs" title="TravelgateX Open Source" href="https://github.com/travelgateX">Open Source</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-md-2 col-lg-2">
-          <h5 class="tit">Resources</h5>
-          <div class="separator"></div>
-          <ul class="list-unstyled">
-            <li><a href="#">Support Center</a></li>
-            <li><a class="contact" title="TGX" href="https://www.travelgatex.com/contact">Contact us</a></li>
-            <li><a href="#">White Papers</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Cookies</a></li>
-          </ul>
-        </div>
+        <div class="col-sm-3 col-md-4 col-lg-6">
+        <ul class="list-unstyled">
+          <li><a title="Roadmap" target="_blank" href="https://github.com/orgs/travelgateX/projects/4" >Roadmap</a></li>
+          <li><a title="FAQ" target="_blank" href="https://docs.travelgatex.com/travelgatex/resources/frequently-asked-questions/" >FAQ</a></li>
+          <li><a title="Contact Us" target="_blank" href="https://www.travelgatex.com/contact" >Contact Us</a></li>
+        </ul>
       </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <ul class="text-center list-inline">
-            <li class="list-inline-item"><img class="certification" src="/images/footer_images/logo_pci.png" alt="png" title="PCI/DSS Level 2 Certified" /></li>
-            <li class="list-inline-item"><img class="certification" src="/images/footer_images/logo_microsoft.png" alt="Microsoft Gold Partner" title="Microsoft Gold Partner" /></li>
-            <li class="list-inline-item"><img class="certification" src="/images/footer_images/logo_google.png" alt="Google Cloud Partner" title="Google Cloud Partner" /></li>
-            <li class="list-inline-item"><img class="certification" src="/images/footer_images/logo_ndc.png" alt="ndc" title="NDC Level 2 Compliant"></li>
-          </ul>
+      <div class="col-sm-3 col-md-4 col-lg-6">
+      <ul class="list-unstyled">
+        <li><a title="Issues TravelgateX" target="_blank" href="https://github.com/travelgateX/Issue-tracker" ><img class="badge-img" src="https://img.shields.io/github/issues/travelgatex/Issue-tracker.svg"></a></li>
+        <li><a title="Slack TravelgateX" target="_blank" href="https://slack.travelgatex.com/" ><img class="badge-img" src="https://slack.travelgatex.com/badge.svg"></a></li>
+
+      </ul>
+    </div>
         </div>
+
+
       </div>
     </div>
   </div>
+
+
   <div class="bottom-footer">
     <div class="container">
       <div class="row">
@@ -2300,8 +2283,6 @@ If you would like any new features or more information in our documentation, sen
 </footer>
 
 
-
-
     <script src="/js/clipboard.min.js"></script>
     <script src="/js/featherlight.min.js"></script>
     
@@ -2309,7 +2290,7 @@ If you would like any new features or more information in our documentation, sen
     <script>hljs.initHighlightingOnLoad();</script>
     
     <script src="/theme-flex/script.js"></script>
-    <script src="/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
