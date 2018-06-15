@@ -123,10 +123,6 @@
   </url>
   
   <url>
-    <loc>/hotelx/howtos/howto-book/</loc>
-  </url>
-  
-  <url>
     <loc>/travelgatex/reference/inputobjects/bookpaxinput/</loc>
   </url>
   
@@ -183,6 +179,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/scalars/cvc/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/cancelpenalty/</loc>
   </url>
   
@@ -192,6 +192,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/cancelpolicy/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/scalars/cardnumber/</loc>
   </url>
   
   <url>
@@ -236,6 +240,10 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/configurationinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/howtos/howto-connect-supplier/</loc>
   </url>
   
   <url>
@@ -372,6 +380,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/exchange/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/expiredate/</loc>
   </url>
   
   <url>
@@ -603,10 +615,6 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/legacydata/</loc>
-  </url>
-  
-  <url>
     <loc>/travelgatex/reference/objects/location/</loc>
   </url>
   
@@ -815,11 +823,43 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/paymentcard/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/paymentcardinput/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/enums/paymenttype/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/paymentxbookinginfo/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfofilterinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfoinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/paymentxmutation/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/paymentxquery/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/paymentxstorecardinput/</loc>
   </url>
   
   <url>
@@ -836,6 +876,30 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/pluginsinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/pointofsale/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/pointofsaleconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/pointofsaledata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/pointofsaleedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/pointofsalefilter/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/pointofsaleinput/</loc>
   </url>
   
   <url>
@@ -1107,6 +1171,22 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/storedcard/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/storedcardconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/storedcarddata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/storedcardedge/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/string/</loc>
   </url>
   
@@ -1219,7 +1299,39 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/scalars/examples__json/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/fake__locale/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/fake__types/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/fake__color/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/fake__imagecategory/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/fake__loremsize/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/fake__options/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/plugins/blacklist/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/howtos/howto-book/</loc>
   </url>
   
   <url>
@@ -1415,7 +1527,7 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/changelog/</loc>
+    <loc>/travelgatex/reference/deprecated_notes/</loc>
   </url>
   
   <url>
