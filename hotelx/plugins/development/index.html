@@ -1810,6 +1810,16 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
+          <li data-nav-id="/travelgatex/tutorials/ota-site/" class="dd-item">
+            <a href="/travelgatex/tutorials/ota-site/">
+              <span style="padding-left: 8px;">Build An OTA</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/tutorials/howto-configure-permissions/" class="dd-item">
+            <a href="/travelgatex/tutorials/howto-configure-permissions/">
+              <span style="padding-left: 8px;">Configure HotelX Security</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/resources/" class="dd-item alwaysopen">
@@ -2071,8 +2081,8 @@
  
   function resizeElements(){
     const footer = $('#footer_docs');
-    const winWidth = $(window).width();
-    const navWidth = $('#navbar').width();
+    const winWidth = $(window).outerWidth();
+    const navWidth = $('#navbar').outerWidth();
     const newFooterWidth = winWidth - navWidth;
     
     footer.css({"width":`${newFooterWidth}px`,"left":navWidth+"px"});
