@@ -37,6 +37,13 @@
     <meta name="description" content="Try our API now">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/fetch/0.9.0/fetch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/react/15.4.2/react-dom.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.js"></script>
   </head>
   <body data-url="/getting-started/playground/">
 
@@ -2214,8 +2221,236 @@
 <pre><code class="language-bash">(put in query response)
 </code></pre>
 
-<iframe src="https://api.travelgatex.com" width="800" height="1000" > </iframe>
+<p><script>
+  const apiKeyJO = "q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ";
+  const apiKeyDC = "64780338-49c8-4439-7c7d-d03c2033b145";
 
+  $(document).ready(main);
+  function main() {
+    const q = '[{\x22apikey\x22:\x22q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/ba0469dda654a1639294edaadfed1a65\/raw\x22,\x22divname\x22:\x22div_main_playground\x22}]';
+    const queries = JSON.parse(q);
+    
+    for (const q of queries) {
+      iterateQueries(q)
+    }
+  }
+
+  function iterateQueries(q) {
+    if(!q.gist.includes('http')) return;
+    $.get(q.gist, function (data) {
+      q.data = data;
+      renderGist(q);
+    });
+  }
+
+  function renderGist(q) {
+    
+
+    var fetchURL = 'https://api.travelgatex.com';
+
+    
+    var search = window.location.search;
+    var parameters = {};
+    search.substr(1).split('&').forEach(function (entry) {
+      var eq = entry.indexOf('=');
+      if (eq >= 0) {
+        parameters[decodeURIComponent(entry.slice(0, eq))] =
+          decodeURIComponent(entry.slice(eq + 1));
+      }
+    });
+
+    
+    parameters.variables = ''; 
+
+    const formattedQuery = q.data;
+    parameters.query = formattedQuery;
+
+
+    if (parameters.variables) {
+      try {
+        parameters.variables =
+          JSON.stringify(JSON.parse(parameters.variables), null, 2);
+      } catch (e) {
+        
+        
+      }
+    }
+
+    
+    
+
+    function onEditQuery(newQuery) {
+      parameters.query = newQuery;
+      console.log(parameters.query);
+      updateURL();
+    }
+
+    function onEditVariables(newVariables) {
+      parameters.variables = newVariables;
+      updateURL();
+    }
+
+    function onEditOperationName(newOperationName) {
+      parameters.operationName = newOperationName;
+      updateURL();
+    }
+
+    function updateURL() {
+      var newSearch = '?' + Object.keys(parameters).filter(function (key) {
+        return Boolean(parameters[key]);
+      }).map(function (key) {
+        return encodeURIComponent(key) + '=' +
+          encodeURIComponent(parameters[key]);
+      }).join('&');
+      history.replaceState(null, null, newSearch);
+    }
+
+    
+    
+    
+    function graphQLFetcher(graphQLParams) {
+      const token = q.apikey;
+      
+      
+      
+      return fetch(fetchURL, {
+        method: 'post',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Authorization': token ? 'Apikey ' + token : null
+        },
+        body: JSON.stringify(graphQLParams),
+        
+      }).then(function (response) {
+        
+        return response.text();
+      }).then(function (responseBody) {
+        try {
+          return JSON.parse(responseBody);
+        } catch (error) {
+          return responseBody;
+        }
+      });
+    }
+
+    
+    
+    
+    
+    ReactDOM.render(
+      React.createElement(GraphiQL, {
+        fetcher: graphQLFetcher,
+        query: parameters.query,
+        variables: parameters.variables,
+        operationName: parameters.operationName,
+        onEditQuery: onEditQuery,
+        onEditVariables: onEditVariables,
+        onEditOperationName: onEditOperationName
+      }),
+      document.getElementById(q.divname),
+      _ => {
+        const element = $(`#${q.divname}`);
+        const button = $(element).find('button.execute-button')[0]
+        $(element).append(button);
+      }
+    );
+  }
+</script>
+<style>
+  .graphiql-display {
+    height: 400px;
+    position: relative;
+    z-index: 0;
+  }
+
+  div.graphiql-display>button {
+    background: linear-gradient(#fdfdfd, #d2d3d6);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .25);
+    cursor: pointer;
+    fill: #444;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    width: 55px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 1004;
+    transform: translate(-50%);
+  }
+
+  div.graphiql-display>button:focus {
+    outline: none;
+  }
+
+  div.title,
+  div.toolbar,
+  div.variable-editor,
+  button.docExplorerShow {
+    display: none !important;
+  }
+
+  .pulse-holder {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%);
+
+  }
+
+  .pulse {
+    width: 1px;
+    height: 1px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    animation: pulse 3s infinite;
+  }
+
+  .pulse:hover {
+    animation: none;
+  }
+
+  div.pulse-holder>img {
+    width: 100%;
+		animation: rotation 2s infinite linear;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(84, 145, 242, 0.4);
+    }
+    85% {
+      box-shadow:0 0 0 60px rgba(84, 145, 242, 0.1);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    }
+  }
+
+
+@keyframes rotation {
+		from {
+				transform: rotate3d(0,0,0,0deg);
+		}
+		to {
+				transform: rotate3d(0,1,0,359deg);
+		}
+}
+</style>
+<div id='div_main_playground' class='graphiql-display'>
+    <div class="pulse-holder">
+        <div class="pulse"></div>
+        <img src="/images/iconX.png">
+    </div>
+</div></p>
 
 <h2 id="more-queries">More Queries</h2>
 

@@ -37,6 +37,13 @@
     <meta name="description" content="HotelX Quickstart">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/fetch/0.9.0/fetch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/react/15.4.2/react-dom.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.js"></script>
   </head>
   <body data-url="/hotelx/quickstart/">
 
@@ -2190,7 +2197,232 @@
 
     
 
-<p>In this section you will find all the queries necessaries in order to perform a booking flow using GraphQL.</p>
+<p><script>
+  const apiKeyJO = "q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ";
+  const apiKeyDC = "64780338-49c8-4439-7c7d-d03c2033b145";
+
+  $(document).ready(main);
+  function main() {
+    const q = '[{\x22apikey\x22:\x22q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/533a8e1259e5245a4c3f590964ec506d\/raw\x22,\x22divname\x22:\x22div_search\x22},{\x22apikey\x22:\x22q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/b4e691b2b1567c0a80f5926b833170e1\/raw\x22,\x22divname\x22:\x22div_quote\x22},{\x22apikey\x22:\x22q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/bbbb043c0cdfe1adb33a897f69a04e2f\/raw\x22,\x22divname\x22:\x22div_book\x22},{\x22apikey\x22:\x22q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/034dcbeb8affb2c4875b2046ea385c0d\/raw\x22,\x22divname\x22:\x22div_cancel\x22},{\x22apikey\x22:\x22q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/36e1ade6d5eb2a074dc6cb1141ac2136\/raw\x22,\x22divname\x22:\x22div_bookinglist\x22}]';
+    const queries = JSON.parse(q);
+    
+    for (const q of queries) {
+      iterateQueries(q)
+    }
+  }
+
+  function iterateQueries(q) {
+    if(!q.gist.includes('http')) return;
+    $.get(q.gist, function (data) {
+      q.data = data;
+      renderGist(q);
+    });
+  }
+
+  function renderGist(q) {
+    
+
+    var fetchURL = 'https://api.travelgatex.com';
+
+    
+    var search = window.location.search;
+    var parameters = {};
+    search.substr(1).split('&').forEach(function (entry) {
+      var eq = entry.indexOf('=');
+      if (eq >= 0) {
+        parameters[decodeURIComponent(entry.slice(0, eq))] =
+          decodeURIComponent(entry.slice(eq + 1));
+      }
+    });
+
+    
+    parameters.variables = ''; 
+
+    const formattedQuery = q.data;
+    parameters.query = formattedQuery;
+
+
+    if (parameters.variables) {
+      try {
+        parameters.variables =
+          JSON.stringify(JSON.parse(parameters.variables), null, 2);
+      } catch (e) {
+        
+        
+      }
+    }
+
+    
+    
+
+    function onEditQuery(newQuery) {
+      parameters.query = newQuery;
+      console.log(parameters.query);
+      updateURL();
+    }
+
+    function onEditVariables(newVariables) {
+      parameters.variables = newVariables;
+      updateURL();
+    }
+
+    function onEditOperationName(newOperationName) {
+      parameters.operationName = newOperationName;
+      updateURL();
+    }
+
+    function updateURL() {
+      var newSearch = '?' + Object.keys(parameters).filter(function (key) {
+        return Boolean(parameters[key]);
+      }).map(function (key) {
+        return encodeURIComponent(key) + '=' +
+          encodeURIComponent(parameters[key]);
+      }).join('&');
+      history.replaceState(null, null, newSearch);
+    }
+
+    
+    
+    
+    function graphQLFetcher(graphQLParams) {
+      const token = q.apikey;
+      
+      
+      
+      return fetch(fetchURL, {
+        method: 'post',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Authorization': token ? 'Apikey ' + token : null
+        },
+        body: JSON.stringify(graphQLParams),
+        
+      }).then(function (response) {
+        
+        return response.text();
+      }).then(function (responseBody) {
+        try {
+          return JSON.parse(responseBody);
+        } catch (error) {
+          return responseBody;
+        }
+      });
+    }
+
+    
+    
+    
+    
+    ReactDOM.render(
+      React.createElement(GraphiQL, {
+        fetcher: graphQLFetcher,
+        query: parameters.query,
+        variables: parameters.variables,
+        operationName: parameters.operationName,
+        onEditQuery: onEditQuery,
+        onEditVariables: onEditVariables,
+        onEditOperationName: onEditOperationName
+      }),
+      document.getElementById(q.divname),
+      _ => {
+        const element = $(`#${q.divname}`);
+        const button = $(element).find('button.execute-button')[0]
+        $(element).append(button);
+      }
+    );
+  }
+</script>
+<style>
+  .graphiql-display {
+    height: 400px;
+    position: relative;
+    z-index: 0;
+  }
+
+  div.graphiql-display>button {
+    background: linear-gradient(#fdfdfd, #d2d3d6);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .25);
+    cursor: pointer;
+    fill: #444;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    width: 55px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 1004;
+    transform: translate(-50%);
+  }
+
+  div.graphiql-display>button:focus {
+    outline: none;
+  }
+
+  div.title,
+  div.toolbar,
+  div.variable-editor,
+  button.docExplorerShow {
+    display: none !important;
+  }
+
+  .pulse-holder {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%);
+
+  }
+
+  .pulse {
+    width: 1px;
+    height: 1px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    animation: pulse 3s infinite;
+  }
+
+  .pulse:hover {
+    animation: none;
+  }
+
+  div.pulse-holder>img {
+    width: 100%;
+		animation: rotation 2s infinite linear;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(84, 145, 242, 0.4);
+    }
+    85% {
+      box-shadow:0 0 0 60px rgba(84, 145, 242, 0.1);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    }
+  }
+
+
+@keyframes rotation {
+		from {
+				transform: rotate3d(0,0,0,0deg);
+		}
+		to {
+				transform: rotate3d(0,1,0,359deg);
+		}
+}
+</style></p>
+
+<p>In this section you will find all the queries necessaries in order to perform a booking flow using <a href="https://api.travelgatex.com/" target="_blank">GraphQL Playground</a>.</p>
 
 <p>You will be able to visualize the main necessary queries and responses through our <a href="https://graphqlbin.com/2k65c8" target="_blank">sample Playground</a>.</p>
 
@@ -2202,15 +2434,19 @@
 
 <p>First of all, to be able to run any query you should have an Apikey as an authentication.</p>
 
-<p>In case you have an Apikey you can use it by introducing it in the HTTP Headers. Otherwise, you can use the following Apikey for test purposes: q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ</p>
+<p>In case you have an Apikey you can use it by introducing it in the HTTP Headers. Otherwise, you can use the following Apikey for test purposes: <code>q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ</code></p>
 
 <h3 id="search">Search</h3>
 
 <p>By means of the following query, you will be able to perform an availability search for a given specific criteria.
-Modify “criteriaSearch” fields using valid dates and press the button play to send the query.</p>
+Modify &ldquo;criteriaSearch&rdquo; fields using valid dates and press the button play to send the query.</p>
 
-<p><object data="https://graphqlbin.com/2kzRfE" type="text/html" width="100%" height="400px" align="left">
-</object></p>
+<div id='div_search' class='graphiql-display'>
+    <div class="pulse-holder">
+        <div class="pulse"></div>
+        <img src="/images/iconX.png">
+    </div>
+</div>
 
 <p>In case you need to replicate the search, there is a possibility to do so by using our token (see second tab). This token is obtained in the response of a search query and you will find it in each of the options returned.</p>
 
@@ -2218,8 +2454,12 @@ Modify “criteriaSearch” fields using valid dates and press the button play t
 
 <p>This query aims to return the total price and cancellation policies of the option selected in the previous step. In Query Variables modify optionRefId with option id value returned in search response and send the query:</p>
 
-<p><object data="https://graphqlbin.com/31B2HR" type="text/html" width="100%" height="400px" align="left">
-</object></p>
+<div id='div_quote' class='graphiql-display'>
+    <div class="pulse-holder">
+        <div class="pulse"></div>
+        <img src="/images/iconX.png">
+    </div>
+</div>
 
 <p>In this case you can modify the language, if you don’t indicate the language, it uses the same language that in search.</p>
 
@@ -2227,15 +2467,29 @@ Modify “criteriaSearch” fields using valid dates and press the button play t
 
 <p>This query allows you to book a previously quoted option. In Query Variables modify optionRefId with optionRefId value returned in quote response and send the query with the other mandatory information:</p>
 
-<p><object data="https://graphqlbin.com/1wxWIp" type="text/html" width="100%" height="400px" align="left">
-</object></p>
+<!--<object data="https://graphqlbin.com/1wxWIp" type="text/html" width="100%" height="400px" align="left">
+</object>-->
+
+<div id='div_book' class='graphiql-display'>
+    <div class="pulse-holder">
+        <div class="pulse"></div>
+        <img src="/images/iconX.png">
+    </div>
+</div>
 
 <h3 id="cancel">Cancel</h3>
 
 <p>This query allows you to perform a book cancellation. In Query Variables you should introduce all the necessary information of the book that you want to cancel:</p>
 
-<p><object data="https://graphqlbin.com/68LYhr" type="text/html" width="100%" height="400px" align="left">
-</object></p>
+<!--<object data="https://graphqlbin.com/68LYhr" type="text/html" width="100%" height="400px" align="left">
+</object>-->
+
+<div id='div_cancel' class='graphiql-display'>
+    <div class="pulse-holder">
+        <div class="pulse"></div>
+        <img src="/images/iconX.png">
+    </div>
+</div>
 
 <h3 id="booking-list">Booking List</h3>
 
@@ -2244,8 +2498,14 @@ Modify “criteriaSearch” fields using valid dates and press the button play t
     2. Per booking dates
     3. Per arrival dates</p>
 
-<p><object data="https://graphqlbin.com/0RvEU2" type="text/html" width="100%" height="400px" align="left">
-</object></p>
+<p><!--<object data="https://graphqlbin.com/0RvEU2" type="text/html" width="100%" height="400px" align="left">
+</object>-->
+<div id='div_bookinglist' class='graphiql-display'>
+    <div class="pulse-holder">
+        <div class="pulse"></div>
+        <img src="/images/iconX.png">
+    </div>
+</div></p>
 
 
 <hr/>
