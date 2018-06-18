@@ -1785,8 +1785,8 @@
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/security/iam/" class="dd-item">
-            <a href="/travelgatex/security/iam/">
+          <li data-nav-id="/travelgatex/security/identity-access-management/" class="dd-item">
+            <a href="/travelgatex/security/identity-access-management/">
               <span style="padding-left: 8px;">Identity and Access Management</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
@@ -2217,7 +2217,7 @@
 <p>Let&rsquo;s get these things out of the way right up front:</p>
 
 <ul>
-<li>Don&rsquo;t sell or do marketing.</li>
+<li>Don&rsquo;t sell or do marketing. -&gt; TBD</li>
 <li>Don&rsquo;t editorialize. Document.</li>
 <li>Don&rsquo;t make assumptions about your reader unless you state the assumptions up front.</li>
 <li>Don&rsquo;t use absolutes, such as &ldquo;instantaneously,&rdquo; &ldquo;perfectly,&rdquo; &ldquo;absolutely,&rdquo; &ldquo;totally,&rdquo; or &ldquo;100%,&rdquo; unless you can back up what you&rsquo;re saying with documentation.</li>
@@ -2362,23 +2362,23 @@ tutorial doc types. Use these sections to start your outlines.</p>
 <p>Follow these guidelines for how to organize your documents:</p>
 
 <ul>
-<li>Create a new folder for your document.</li>
+<li>If necessary, create a new folder for your document.</li>
 <li>Name the folder by <a href="http://slugify.net/" target="_blank">slugifying</a> your doc&rsquo;s title. You can omit articles such as &ldquo;and&rdquo; and &ldquo;the.&rdquo;</li>
 <li>Name your new doc <code>index.md</code>.</li>
-<li>Store images in the same folder.</li>
+<li>Store media in the same folder. i.e. <code>/images</code> as discused <a href="https://discourse.gohugo.io/t/best-practices-assets-with-content/9984" target="_blank">here</a>.</li>
 </ul>
 
-<p>For example, if you submit a tutorial named &ldquo;Using Cloud SQL to Conquer the World&rdquo;:</p>
+<p>For example, if you submit a tutorial named &ldquo;Identity and Access Management&rdquo;:</p>
 
 <ul>
-<li><strong>Folder name</strong>: <code>using-cloud-sql-conquer-world</code></li>
-<li><strong>URL</strong>: <code>https://cloud.google.com/community/tutorials/using-cloud-sql-conquer-world/</code></li>
+<li><strong>Folder name</strong>: <code>security</code></li>
+<li><strong>URL</strong>: <code>https://cloud.google.com/travelgatex/security/identity-access-management</code></li>
 </ul>
 
 <p>If you don&rsquo;t have any additional files that go along with your tutorial, you can
-simply make a top-level Markdown file within the <code>tutorials/</code> folder, e.g.
-<code>tutorials/using-cloud-sql-conquer-world.md</code> instead of
-<code>tutorials/using-cloud-sql-conquer-world/index.md</code>.</p>
+simply make a top-level Markdown file within the <code>security/</code> folder, e.g.
+<code>security/identity-access-management.md</code> instead of
+<code>security/identity-access-manangement/index.md</code>.</p>
 
 <h2 id="general-content-guidelines">General content guidelines</h2>
 
@@ -2402,9 +2402,21 @@ simply make a top-level Markdown file within the <code>tutorials/</code> folder,
 
 <p>Here are style guidelines to help you craft a great article.</p>
 
+<h3 id="acronyms">Acronyms</h3>
+
+<p>Don’t create acronyms from product or feature names.
+Only use acronyms that your audience is familiar with. The A–Z word list has guidelines for many common acronyms, and some acronyms are so widely used that they’re in <a href="https://ahdictionary.com/" target="_blank">The American Heritage Dictionary</a>.</p>
+
+<p><strong>For example:</strong>
+Conversation as a platform (CaaP) has the potential to make booking a flight as easy as sending a text message.
+Developers are also looking to CaaP to make computing more accessible to users of all abilities.
+Learn how to connect a USB device to your Microsoft Surface.</p>
+
 <h3 id="headings">Headings</h3>
 
 <p>Use headings to organize your page into sections and subsections. Headings make it easier for readers to skim and understand what the article is about. Capitalize only the first word and product names in your headings.</p>
+
+<p>Avoid using an acronym for the first time in a title or heading, unless it’s a keyword that you need to place in the title or heading for SEO. If the first use of the acronym is in a title or heading, introduce the acronym (in parentheses, following the spelled-out term) in the following body text.</p>
 
 <p><strong>For example:</strong></p>
 
@@ -2514,6 +2526,50 @@ simply make a top-level Markdown file within the <code>tutorials/</code> folder,
 </ul>
 
 <p>Provide direct links to pages in the Google Cloud Console when you give Cloud Console-based instructions. These <em>deep links</em> save the reader time spent looking for the right page and can save you time writing descriptions of how to find the page. Deep links open the page with the project set to the user&rsquo;s last-used project.</p>
+
+<ul>
+<li>Write short link text (four or fewer words) that&rsquo;s descriptive and includes keywords.</li>
+<li>If it works, use the title or description of the target page as link text.</li>
+<li>Link to background and related information rather than summarizing it.</li>
+</ul>
+
+<h3 id="formatting-common-text-elements">Formatting common text elements</h3>
+
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Convention</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Database names</td>
+<td>Bold. The capitalization of database names varies</td>
+<td><strong>Contoso</strong> database</td>
+</tr>
+
+<tr>
+<td>Emphasis</td>
+<td>It’s OK to use italic formatting sparingly for emphasis</td>
+<td>Cybercriminals might call you and claim to be from Microsoft. <em>Be aware that Microsoft will never call you to charge for security or software fixes.</em></td>
+</tr>
+
+<tr>
+<td>New terms</td>
+<td>Italicize the first mention of a new term if you&rsquo;re going to define it immediately in text</td>
+<td>Profile may consist of <em>buyer</em> or <em>seller</em></td>
+</tr>
+
+<tr>
+<td>Products, services, apps, and trademarks</td>
+<td>Usually title-style capitalization</td>
+<td>HotelX<br>Stats</td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="markdown-usage">Markdown usage</h2>
 
@@ -2703,6 +2759,7 @@ user to view real source code files.</p>
 </ul></li>
 <li><a href="#general-style-guidelines">General style guidelines</a>
 <ul>
+<li><a href="#acronyms">Acronyms</a></li>
 <li><a href="#headings">Headings</a></li>
 <li><a href="#lists">Lists</a></li>
 <li><a href="#numbered-lists">Numbered lists</a></li>
@@ -2712,6 +2769,7 @@ user to view real source code files.</p>
 <li><a href="#images">Images</a></li>
 <li><a href="#code">Code</a></li>
 <li><a href="#linking">Linking</a></li>
+<li><a href="#formatting-common-text-elements">Formatting common text elements</a></li>
 </ul></li>
 <li><a href="#markdown-usage">Markdown usage</a>
 <ul>

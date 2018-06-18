@@ -1786,8 +1786,8 @@
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/security/iam/" class="dd-item">
-            <a href="/travelgatex/security/iam/">
+          <li data-nav-id="/travelgatex/security/identity-access-management/" class="dd-item">
+            <a href="/travelgatex/security/identity-access-management/">
               <span style="padding-left: 8px;">Identity and Access Management</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
@@ -2201,51 +2201,55 @@
 
 <p><strong>Here is an overview of the key concepts of our platform.</strong></p>
 
-<h3 id="access">Access</h3>
+<h2 id="access">Access</h2>
 
 <p>An <code>Access</code> is a set of credentials and the authentication configuration that enables a <code>Buyer</code> to access a <code>Supplier</code>. To gain access, a <code>Buyer</code> needs to confirm with TravelgateX that they have an agreement in place with each <code>Supplier</code> with whom they want to integrate.</p>
 
-<h3 id="api-gateway">API Gateway</h3>
+<h2 id="api-gateway">API Gateway</h2>
 
-<p>Our API gateway is stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime. We provide realtime details of our uptime and status <a href="http://status.travelgatex.com/">on our Status page</a> and work at maintaining a minimum 99.99% service performance level.</p>
+<p>Our API gateway is stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime. We provide realtime details of our uptime and status <a href="http://status.travelgatex.com" target="_blank">on our Status page</a> and work at maintaining a minimum 99.99% service performance level.</p>
 
 <p>Our API gateway provides a single GraphQL endpoint which can be used to make queries against all of our APIs and travel services. This makes it easier for your clients (websites, applications and any other interface) to only call for the exact data that is needed, without parsing a heap of extra information in each API call. (Check out our <a href="/learning-graphql/">GraphQL resources</a> to learn more!)</p>
 
-<h3 id="buyer">Buyer</h3>
+<h2 id="profile">Profile</h2>
 
-<p>A <code>Buyer</code> <code>Profile</code> uses the TravelgateX platform to book travel services such as hotels for their customers. Buyers include online travel agents, tour operators, niche travel service providers, and travel and pricing apps.</p>
+<p>An <code>Organization</code> uses profiles to determine what type of interaction is required on TravelgateX. At present, profiles are either a <code>Buyer</code> or a <code>Seller</code>.</p>
 
-<h3 id="context">Context</h3>
+<h2 id="buyer">Buyer</h2>
 
-<p>A <code>Context</code> refers to the <code>Supplier</code> codes the request is using. It&rsquo;s a way of specifiying which <code>Supplier</code> codes are being used so they can be transformed and standardized.</p>
+<p>A <code>Buyer Profile</code> uses the TravelgateX platform to book travel services such as hotels for their customers. Buyers include online travel agents, tour operators, niche travel service providers, and travel and pricing apps.</p>
 
-<h3 id="entities">Entities</h3>
+<h2 id="seller">Seller</h2>
 
-<p><code>Entities</code> or core resources define common objects that are consistent across all of our API products.</p>
+<p>A <code>Seller Profile</code> uses the TravelgateX platform to sell travel services such as hotels for their customers. Sellers include tour operators, niche travel service providers..</p>
 
-<h3 id="hub">HUB</h3>
-
-<p><code>HUB</code> is the command center of the TravelgateX platform. All connections pass through the HUB.</p>
-
-<h3 id="organization">Organization</h3>
+<h2 id="organization">Organization</h2>
 
 <p>An <code>Organization</code> is made up of <code>Partners</code>, <code>Resources</code>, <code>Settings</code>, <code>Permissions</code> and other <code>Metadata</code>.</p>
 
-<h3 id="partner">Partner</h3>
+<h2 id="partner">Partner</h2>
 
 <p>A <code>Partner</code> interacts with the TravelgateX API platform. A partners can be a User (that is, a person) or a Service Account (that is, an application). A partner is a member of an Organization, and can be a member of mutiple organizations.</p>
 
-<h3 id="product">Product</h3>
+<h2 id="supplier">Supplier</h2>
+
+<p>A <code>Supplier</code> uses the TravelgateX platfrom to make travel services available to buyers. Suppliers can be suppliers with realtime databases of hotel room vacancies, tours, car rental providers, adventure and activity service suppliers, travel insurance providers or other travel industry service suppliers.</p>
+
+<h2 id="context">Context</h2>
+
+<p>A <code>Context</code> refers to the <code>Supplier</code> codes the request is using. It&rsquo;s a way of specifiying which <code>Supplier</code> codes are being used so they can be transformed and standardized.</p>
+
+<h2 id="common-resources">Common Resources</h2>
+
+<p><code>Common resources</code> define common objects that are consistent across all of our API products.</p>
+
+<h2 id="hub">HUB</h2>
+
+<p><code>HUB</code> is the command center of the TravelgateX platform. All connections pass through the HUB.</p>
+
+<h2 id="product">Product</h2>
 
 <p>A <code>Product</code> is a TravelgateX platform API which is available for the consumption of Resources. We organize our APIs by similarity and common features. Our HotelX API is our first product now available for use in production environments.</p>
-
-<h3 id="profile">Profile</h3>
-
-<p>An <code>Organization</code> uses profiles to determine what type of interaction is required on TravelgateX. At present, profiles are either a <code>Buyer</code> or a <code>Supplier</code>.</p>
-
-<h3 id="supplier">Supplier</h3>
-
-<p>A <code>Supplier</code> <code>Profile</code> uses the TravelgateX platfrom to make travel services available to buyers. Sellers can be suppliers with realtime databases of hotel room vacancies, tours, car rental providers, adventure and activity service suppliers, travel insurance providers or other travel industry service suppliers.</p>
 
 <div class="alert 
 alert-info"
@@ -2274,20 +2278,18 @@ role="alert"><p>Join us on <a href="https://slack.travelgatex.com/" target="_bla
 <ul>
 <li>
 <ul>
-<li>
-<ul>
 <li><a href="#access">Access</a></li>
 <li><a href="#api-gateway">API Gateway</a></li>
+<li><a href="#profile">Profile</a></li>
 <li><a href="#buyer">Buyer</a></li>
-<li><a href="#context">Context</a></li>
-<li><a href="#entities">Entities</a></li>
-<li><a href="#hub">HUB</a></li>
+<li><a href="#seller">Seller</a></li>
 <li><a href="#organization">Organization</a></li>
 <li><a href="#partner">Partner</a></li>
-<li><a href="#product">Product</a></li>
-<li><a href="#profile">Profile</a></li>
 <li><a href="#supplier">Supplier</a></li>
-</ul></li>
+<li><a href="#context">Context</a></li>
+<li><a href="#common-resources">Common Resources</a></li>
+<li><a href="#hub">HUB</a></li>
+<li><a href="#product">Product</a></li>
 </ul></li>
 </ul>
 </nav>

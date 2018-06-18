@@ -2350,7 +2350,8 @@ GraphQL schema definition type Query {admin: AdminQuery hotelX: HotelXQuery
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/quickstart/</guid>
-      <description>Four steps to using our API If you&amp;rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below: STEP 1: Get to know our APIs. Read through our documentation and test some sample calls in our API Playground. You can use a test API key and start experimenting with our APIs straight away.</description>
+      <description>Four steps to using our API If you&amp;rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below:
+ STEP 1: Get to know our APIs. Read through our documentation and test some sample calls in our API Playground. You can use a test API key and start experimenting with our APIs straight away.</description>
     </item>
     
     <item>
@@ -2939,7 +2940,7 @@ GraphQL schema definition scalar StringRequired by OrganizationEdge: Organ
       <guid>/community/style-guide/</guid>
       <description>This document provides guidance for contributors to the TravelgateX Platform Community site.
  Caveats Types of documentation Designing a doc Visual assets File organization in GitHub General content guidelines General style guidelines Markdown usage Voice and tone Including source code Writing resources  Caveats Let&amp;rsquo;s get these things out of the way right up front:
- Don&amp;rsquo;t sell or do marketing. Don&amp;rsquo;t editorialize. Document. Don&amp;rsquo;t make assumptions about your reader unless you state the assumptions up front.</description>
+ Don&amp;rsquo;t sell or do marketing. -&amp;gt; TBD Don&amp;rsquo;t editorialize. Document. Don&amp;rsquo;t make assumptions about your reader unless you state the assumptions up front.</description>
     </item>
     
     <item>
@@ -3330,13 +3331,14 @@ Distribution will be made through 2 different channels, end users will use org_t
     
     <item>
       <title>Identity and Access Management</title>
-      <link>/travelgatex/security/iam/</link>
+      <link>/travelgatex/security/identity-access-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/security/iam/</guid>
-      <description>Overview TravelgateX Identity &amp;amp; Access Management (IAM) lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.
-IAM provides an unified view of your security policy across your entire organization, with built-in auditing to ease compliance processes.
-As an administrator, when you register with us, we provide you with login details to access your TravelgateX accoynt, including a username and password.</description>
+      <guid>/travelgatex/security/identity-access-management/</guid>
+      <description>This section provides an overview of Identity and access management
+TravelgateX Identity and acccess management lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.
+Identity and access management provides an unified view of your security policy across your entire organization, with built-in auditing to ease compliance processes.
+As an administrator, when you register with us, we provide you with login details to access your TravelgateX account, including a username and password.</description>
     </item>
     
     <item>
@@ -3482,7 +3484,7 @@ In the API Playground, as you start to type the query, it will autocomplete with
       
       <guid>/hotelx/concepts/search-mode/search-single-mode/</guid>
       <description>On this page you will learn about Transactional Booking Flow to Search, quote and confirm a reservation. You will also see the difference between the Search Single Mode VS Search Multi Mode.
-Search Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that them want to use.</description>
+Search Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use.</description>
     </item>
     
     <item>
