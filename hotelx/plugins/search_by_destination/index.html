@@ -2236,24 +2236,24 @@
 
 <p>The conversion must be done at the &lsquo;REQUEST&rsquo; step, either in type &lsquo;PRE_STEP&rsquo; or &lsquo;POST_STEP&rsquo;. The parameter with key &ldquo;accessID&rdquo; is mandatory and is the access used to convert destinations to hotel from its hotel list, which means that the hotel codes obtained are in the same context as the access.</p>
 
-<p>```
-{
-    &ldquo;plugins&rdquo;: {
-        &ldquo;step&rdquo;: &ldquo;REQUEST&rdquo;,
-        &ldquo;pluginsType&rdquo;: [
+<pre><code>{
+    &quot;plugins&quot;: {
+        &quot;step&quot;: &quot;REQUEST&quot;,
+        &quot;pluginsType&quot;: [
             {
-                &ldquo;type&rdquo;: &ldquo;POST_STEP&rdquo;,
-                &ldquo;name&rdquo;: &ldquo;search_by_destination&rdquo;,
-                &ldquo;parameters&rdquo;: [
+                &quot;type&quot;: &quot;POST_STEP&quot;,
+                &quot;name&quot;: &quot;search_by_destination&quot;,
+                &quot;parameters&quot;: [
                     {
-                        &ldquo;key&rdquo;: &ldquo;accessID&rdquo;,
-                        &ldquo;value&rdquo;: &ldquo;x&rdquo;
+                        &quot;key&quot;: &quot;accessID&quot;,
+                        &quot;value&quot;: &quot;x&quot;
                     }
                 ]
             }
         ]
     }
-}</p>
+}
+</code></pre>
 
 
 <hr/>
