@@ -77,6 +77,26 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
+          <li data-nav-id="/getting-started/overview/" class="dd-item">
+            <a href="/getting-started/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/getting-started/quickstart/" class="dd-item">
+            <a href="/getting-started/quickstart/">
+              <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/getting-started/concepts/" class="dd-item">
+            <a href="/getting-started/concepts/">
+              <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/getting-started/playground/" class="dd-item">
+            <a href="/getting-started/playground/">
+              <span style="padding-left: 8px;">Playground</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/" class="dd-item parent">
@@ -2131,7 +2151,39 @@
 </script>
     </div>
     <div class="content">
-      <div class="pull-right iso-input-search" style="left:-9%;">
+
+      
+    <div id="searchbar" class="container iso-input-search">
+        <div class="sb_search_div">
+          <div class="ico-label">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <input data-search-input class="form-control" id="search-by" type="text" placeholder="Search docs..." style="border-bottom: 0px !important;">
+        </div>
+        <div class="sb_menu_div">
+          <ul class="nav justify-content-end">
+            <li>
+              <a href="https://slack.travelgatex.com/" target="_blank">
+                <span>Chat</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/travelgateX/Issue-tracker" target="_blank">
+                <span>Issues Tracker</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://api.travelgatex.com" target="_blank">
+                <span>Playground
+                  <i title="Play →" class="icon-control-play"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pull-right iso-input-search" style="left:-9%; display:none">
 
       <div class="iso-input-search hidden-xs-down" style="width:30%">
         <div class="ico-label">
@@ -2160,7 +2212,7 @@
       </div>
 
       <div class="container">
-        <div class="row">
+        <div class="container_row">
           <div class="content-center">
             <div class="p-4">
               <h1 class="pageTitle">GroupAccessInput</h1>

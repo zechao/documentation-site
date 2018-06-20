@@ -1891,6 +1891,27 @@
               <span style="padding-left: 8px;">Access, Supplier and Context</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+        <li data-nav-id="/hotelx/concepts/search-mode/" class="dd-item">
+
+            <a href="/hotelx/concepts/search-mode/" class="wasdirectory">
+       
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+                Booking Flow
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/concepts/search-mode/booking-flow/" class="dd-item">
+            <a href="/hotelx/concepts/search-mode/booking-flow/">
+              <span style="padding-left: 8px;">Booking Flow</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/concepts/search-mode/search-single-mode/" class="dd-item">
+            <a href="/hotelx/concepts/search-mode/search-single-mode/">
+              <span style="padding-left: 8px;">Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
           <li data-nav-id="/hotelx/concepts/management-flow/" class="dd-item">
             <a href="/hotelx/concepts/management-flow/">
               <span style="padding-left: 8px;">Management Flow</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2127,7 +2148,39 @@
 </script>
     </div>
     <div class="content">
-      <div class="pull-right iso-input-search" style="left:-9%;">
+
+      
+    <div id="searchbar" class="container iso-input-search">
+        <div class="sb_search_div">
+          <div class="ico-label">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <input data-search-input class="form-control" id="search-by" type="text" placeholder="Search docs..." style="border-bottom: 0px !important;">
+        </div>
+        <div class="sb_menu_div">
+          <ul class="nav justify-content-end">
+            <li>
+              <a href="https://slack.travelgatex.com/" target="_blank">
+                <span>Chat</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/travelgateX/Issue-tracker" target="_blank">
+                <span>Issues Tracker</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://api.travelgatex.com" target="_blank">
+                <span>Playground
+                  <i title="Play →" class="icon-control-play"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pull-right iso-input-search" style="left:-9%; display:none">
 
       <div class="iso-input-search hidden-xs-down" style="width:30%">
         <div class="ico-label">
@@ -2156,7 +2209,7 @@
       </div>
 
       <div class="container">
-        <div class="row">
+        <div class="container_row">
           <div class="content-center">
             <div class="p-4">
               <h1 class="pageTitle">header</h1>

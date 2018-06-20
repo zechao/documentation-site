@@ -2149,7 +2149,39 @@
 </script>
     </div>
     <div class="content">
-      <div class="pull-right iso-input-search" style="left:-9%;">
+
+      
+    <div id="searchbar" class="container iso-input-search">
+        <div class="sb_search_div">
+          <div class="ico-label">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <input data-search-input class="form-control" id="search-by" type="text" placeholder="Search docs..." style="border-bottom: 0px !important;">
+        </div>
+        <div class="sb_menu_div">
+          <ul class="nav justify-content-end">
+            <li>
+              <a href="https://slack.travelgatex.com/" target="_blank">
+                <span>Chat</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/travelgateX/Issue-tracker" target="_blank">
+                <span>Issues Tracker</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://api.travelgatex.com" target="_blank">
+                <span>Playground
+                  <i title="Play →" class="icon-control-play"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pull-right iso-input-search" style="left:-9%; display:none">
 
       <div class="iso-input-search hidden-xs-down" style="width:30%">
         <div class="ico-label">
@@ -2178,7 +2210,7 @@
       </div>
 
       <div class="container">
-        <div class="row">
+        <div class="container_row">
           <div class="content-center">
             <div class="p-4">
               <h1 class="pageTitle">Quickstart</h1>
@@ -2335,26 +2367,35 @@
 </script>
 <style>
   .graphiql-display {
-    height: 400px;
     position: relative;
     z-index: 0;
+    margin: 3.3rem 0 3.3rem 0;
   }
 
   div.graphiql-display>button {
-    background: linear-gradient(#fdfdfd, #d2d3d6);
+    width: 47.5px!important;
+    height: 47.5px!important;
+    background-color: #b6bbbf !important;
+    border: none;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, .25);
     cursor: pointer;
-    fill: #444;
-    height: 55px;
     margin: 0;
     padding: 0;
-    width: 55px;
     position: absolute;
-    top: 25%;
+    top: 100px;
     left: 50%;
     z-index: 1004;
-    transform: translate(-50%);
+    transform: translateX(-50%);
+  }
+
+  div.graphiql-display>button svg {
+    fill: #fff !important;
+    width: 30px;
+    height: 28px;
+}
+
+  div.graphiql-display>button:hover {
+    background-color: #98a0a6 !important;
   }
 
   div.graphiql-display>button:focus {
@@ -2419,6 +2460,20 @@
 		to {
 				transform: rotate3d(0,1,0,359deg);
 		}
+}
+
+
+
+ 
+.queryWrap {
+  width: 50%;
+}
+.CodeMirror-sizer {
+  max-width: auto !important;
+  min-width: auto !important;
+}
+.graphiql-container .CodeMirror {
+  position: relative !important;
 }
 </style></p>
 
