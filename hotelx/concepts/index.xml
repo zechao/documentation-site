@@ -33,13 +33,24 @@ In this case you can search the bookings with references or by dates, the dates 
     </item>
     
     <item>
-      <title>Hotel Content</title>
+      <title>Content</title>
       <link>/hotelx/concepts/content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/concepts/content/</guid>
       <description>On this page you will learn how to manage content data in your site such as hotel, boards, categories, etc.
 Hotels Hotels query returns a hotel list of the one supplier access. This entity contains static data about the hotel like code, name, location, information about the hotel information, etc&amp;hellip; You can find all fields in the graph. You can get the hotels with hotel codes or with minimal destination codes.</description>
+    </item>
+    
+    <item>
+      <title>Ranking</title>
+      <link>/hotelx/concepts/ranking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/concepts/ranking/</guid>
+      <description>On this page you will learn how to rank hotels.
+Overview Hotel Content operations allow changes to be made to static methods on HotelX. A system where hotels can be divided into different rankings or priorities in order to facilitate the mapping process.
+The main goal of this process is to create a hotel ranking and divide the whole portfolio so the hotel list is more manageable. Each classification or sub-list responds to specific commercial criteria, such as, the hotels directly contracted, the best offers, the best sales hotels, etc.</description>
     </item>
     
   </channel>

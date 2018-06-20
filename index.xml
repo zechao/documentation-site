@@ -3330,13 +3330,13 @@ Distribution will be made through 2 different channels, end users will use org_t
     </item>
     
     <item>
-      <title>Identity and Access Management</title>
+      <title>Identity and access management</title>
       <link>/travelgatex/security/identity-access-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/security/identity-access-management/</guid>
-      <description>This section provides an overview of Identity and access management
-TravelgateX Identity and acccess management lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.
+      <description>This section provides an overview of Identity and access management.
+TravelgateX identity and acccess management lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.
 Identity and access management provides an unified view of your security policy across your entire organization, with built-in auditing to ease compliance processes.
 As an administrator, when you register with us, we provide you with login details to access your TravelgateX account, including a username and password.</description>
     </item>
@@ -3548,7 +3548,7 @@ NetPriceX This plugin receives an Option by parameter and returns an Option with
     </item>
     
     <item>
-      <title>Hotel Content</title>
+      <title>Content</title>
       <link>/hotelx/concepts/content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3574,6 +3574,17 @@ Schemas Design  APIs Guru&amp;rsquo;s graphql-faker  Go Packages Nowadays most o
       
       <guid>/hotelx/plugins/development/</guid>
       <description>On this page you will learn how to develop your own HotelX Plugin.</description>
+    </item>
+    
+    <item>
+      <title>Ranking</title>
+      <link>/hotelx/concepts/ranking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/concepts/ranking/</guid>
+      <description>On this page you will learn how to rank hotels.
+Overview Hotel Content operations allow changes to be made to static methods on HotelX. A system where hotels can be divided into different rankings or priorities in order to facilitate the mapping process.
+The main goal of this process is to create a hotel ranking and divide the whole portfolio so the hotel list is more manageable. Each classification or sub-list responds to specific commercial criteria, such as, the hotels directly contracted, the best offers, the best sales hotels, etc.</description>
     </item>
     
     <item>

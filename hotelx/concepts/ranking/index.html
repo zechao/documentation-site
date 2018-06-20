@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tutorials | TravelgateX Documentation</title>
+    <title>Ranking | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.40.1" />
-<title>Tutorials :: TravelgateX Documentation</title>
+<title>Ranking :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -30,11 +30,11 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="Walkthrouhgs of common applications">
+<meta name="description" content="Learn about how to rank hotels">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
     
-    <meta name="description" content="Walkthrouhgs of common applications">
+    <meta name="description" content="Learn about how to rank hotels">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -45,7 +45,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.js"></script>
   </head>
-  <body data-url="/travelgatex/tutorials/">
+  <body data-url="/hotelx/concepts/ranking/">
 
     <div class="mo-header fixed-top">
     <div class="top-header">
@@ -99,12 +99,11 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/travelgatex/" class="dd-item parent">
+        <li data-nav-id="/travelgatex/" class="dd-item">
 
             <a href="/travelgatex/" class="">
        
-            <span>
-                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
                 TravelgateX
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -1804,12 +1803,11 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/travelgatex/tutorials/" class="dd-item parent active">
+        <li data-nav-id="/travelgatex/tutorials/" class="dd-item">
 
             <a href="/travelgatex/tutorials/" class="wasdirectory">
        
-            <span>
-                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
                 Tutorials
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -1860,11 +1858,12 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/hotelx/" class="dd-item">
+        <li data-nav-id="/hotelx/" class="dd-item parent">
 
             <a href="/hotelx/" class="">
        
-            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+            <span>
+                    <i class="fa fa-angle-down fa-lg category-icon"></i>
                 HotelX
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -1879,11 +1878,12 @@
               <span style="padding-left: 8px;">Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-        <li data-nav-id="/hotelx/concepts/" class="dd-item">
+        <li data-nav-id="/hotelx/concepts/" class="dd-item parent">
 
             <a href="/hotelx/concepts/" class="wasdirectory">
        
-            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+            <span>
+                    <i class="fa fa-angle-down fa-lg category-icon"></i>
                 Concepts
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -1924,7 +1924,7 @@
               <span style="padding-left: 8px;">Content</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/concepts/ranking/" class="dd-item">
+          <li data-nav-id="/hotelx/concepts/ranking/" class="dd-item active">
             <a href="/hotelx/concepts/ranking/">
               <span style="padding-left: 8px;">Ranking</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
@@ -2219,45 +2219,142 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Tutorials and How Tos</h1>
+              <h1 class="pageTitle">Rank hotels</h1>
 
               
                 
                 
                 
               <div id="top-github-link">
-                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/travelgatex/tutorials/_index.md" target="blank">
+                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/hotelx/concepts/ranking.md" target="blank">
                   <i class="fa fa-code-fork"></i>
                   Edit page
                 </a>
               </div>
 
-	<p>What you can build on TravelgateX&rsquo;s platform
+
+    
+
+<p>On this page you will learn how to rank hotels.</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>Hotel Content operations allow changes to be made to static methods on HotelX. A system where hotels can be divided into different rankings or priorities in order to facilitate the mapping process.</p>
+
+<p>The main goal of this process is to create a hotel ranking and divide the whole portfolio so the hotel list is more manageable. Each classification or sub-list responds to specific commercial criteria, such as, the hotels directly contracted, the best offers, the best sales hotels, etc.</p>
+
+<p>Once the hotel ranking file(s) have been uploaded, the static hotel list method can filter hotels according to this ranking. To set up hotel ranking lists you must upload a file in csv format using a specific name to identify the ranking in your organisation’s FTP.</p>
+
+<h3 id="file-names-mandatory">File Names (mandatory)</h3>
+
+<p>Each file can have different meanings. It’s up to the file creator to give it a meaning according to his/her business needs. In order to process files correctly, they must be named according to the following naming convention:</p>
+
+<table>
+<thead>
+<tr>
+<th>File Nane</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>rank1.csv</td>
+<td>Rank 1, for example direct contracts</td>
+</tr>
+
+<tr>
+<td>rank2.csv</td>
+<td>Rank 2, for example best deals</td>
+</tr>
+
+<tr>
+<td>rank3.csv</td>
+<td>Rank 3, for example top sales</td>
+</tr>
+
+<tr>
+<td>rank4.csv</td>
+<td>Rank 4, for example competitive hotels</td>
+</tr>
+
+<tr>
+<td>rankN.csv</td>
+<td>Rank N, any type of information.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="header-fields-mandatory">Header fields (mandatory)</h3>
+
+<p>In order to be correctly processed, the header fields must have the following format:</p>
+
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Data Type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>provider_id</td>
+<td>string</td>
+</tr>
+
+<tr>
+<td>hotel_code</td>
+<td>string</td>
+</tr>
+
+<tr>
+<td>rank</td>
+<td>boolean [1,0]</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="example">Example:</h3>
+
+<table>
+<thead>
+<tr>
+<th>provider_id</th>
+<th>hotel_code</th>
+<th>rank</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>travelgatex</td>
+<td>2018</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>travelgatey</td>
+<td>2017</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="process-file">Process file</h3>
+
+<p>To process the file, it must be uploaded to your organization’s FTP folder in the TravelgateX Platform. More info on how to upload files please refer to the <a href="/travelgatex/data-automation/">data automation section</a>.</p>
+
+<h3 id="template-file">Template File</h3>
+
+<p>For your convinience you can <a href="/content/rank1.csv">download a template CSV file</a>.</p>
 
 
-<div class="flex card-lv2-div">
-		
-        <a class="card card-lv2" href="/travelgatex/tutorials/ota-site/">
-            <h5 class="text-headline">Build An OTA</h5>
-            <div class="topic">
-                    <p>Build your own full fledged OTA</p>
-            </div>
-            <div class="icon fa fa-arrow-right"></div>
-        </a>
-        <a class="card card-lv2" href="/travelgatex/tutorials/howto-configure-permissions/">
-            <h5 class="text-headline">Configure HotelX Security</h5>
-            <div class="topic">
-                    <p>Configure your own HotelX security model</p>
-            </div>
-            <div class="icon fa fa-arrow-right"></div>
-        </a>
-</div>
+<hr/>
 
 
+  
 
-
-
-</p>
 
 
 
@@ -2266,7 +2363,21 @@
           </div>
           <div class="menu-right">
             <div>
-              
+              <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#overview">Overview</a>
+<ul>
+<li><a href="#file-names-mandatory">File Names (mandatory)</a></li>
+<li><a href="#header-fields-mandatory">Header fields (mandatory)</a></li>
+<li><a href="#example">Example:</a></li>
+<li><a href="#process-file">Process file</a></li>
+<li><a href="#template-file">Template File</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
             </div>
           </div>
           <div class="clear"></div>
@@ -2275,10 +2386,10 @@
     </div>
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/travelgatex/data-automation/uploading-strategies/" title="Go to previous page | Uploading Strategies"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Uploading Strategies</a>
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/hotelx/concepts/content/" title="Go to previous page | Content"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Content</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/travelgatex/tutorials/ota-site/" title="Go to next page | Build An OTA" style="margin-right: 0px;">Build An OTA<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/hotelx/howtos/" title="Go to next page | How-to Guides" style="margin-right: 0px;">How-to Guides<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

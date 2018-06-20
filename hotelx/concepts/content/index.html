@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hotel Content | TravelgateX Documentation</title>
+    <title>Content | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.40.1" />
-<title>Hotel Content :: TravelgateX Documentation</title>
+<title>Content :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -1782,7 +1782,7 @@
         </li>
           <li data-nav-id="/travelgatex/security/identity-access-management/" class="dd-item">
             <a href="/travelgatex/security/identity-access-management/">
-              <span style="padding-left: 8px;">Identity and Access Management</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Identity and access management</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1921,7 +1921,12 @@
         </li>
           <li data-nav-id="/hotelx/concepts/content/" class="dd-item active">
             <a href="/hotelx/concepts/content/">
-              <span style="padding-left: 8px;">Hotel Content</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Content</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/concepts/ranking/" class="dd-item">
+            <a href="/hotelx/concepts/ranking/">
+              <span style="padding-left: 8px;">Ranking</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -2214,7 +2219,7 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Hotel Content (Static Content)</h1>
+              <h1 class="pageTitle">Content (Static Content)</h1>
 
               
                 
@@ -2242,118 +2247,6 @@
 <li><a href="https://graphqlbin.com/58y0Sp" target="_blank">hotels</a> </li>
 </ul>
 
-<h2 id="hotels-ranking">Hotels Ranking</h2>
-
-<p>Hotel Content operations allow changes to be made to static methods on HotelX. A system where hotels can be divided into different rankings or priorities in order to facilitate the mapping process.</p>
-
-<p>The main goal of this process is to create a hotel ranking and divide the whole portfolio so the hotel list is more manageable. Each classification or sub-list responds to specific commercial criteria, such as, the hotels directly contracted, the best offers, the best sales hotels, etc.</p>
-
-<p>Once the hotel ranking file(s) have been uploaded, the static hotel list method can filter hotels according to this ranking. To set up hotel ranking lists you must upload a file in csv format using a specific name to identify the ranking in your organisation’s FTP.</p>
-
-<h3 id="file-names-mandatory">File Names (mandatory)</h3>
-
-<p>Each file can have different meanings. It’s up to the file creator to give it a meaning according to his/her business needs. In order to process files correctly, they must be named according to the following naming convention:</p>
-
-<table>
-<thead>
-<tr>
-<th>File Nane</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>rank1.csv</td>
-<td>Rank 1, for example direct contracts</td>
-</tr>
-
-<tr>
-<td>rank2.csv</td>
-<td>Rank 2, for example best deals</td>
-</tr>
-
-<tr>
-<td>rank3.csv</td>
-<td>Rank 3, for example top sales</td>
-</tr>
-
-<tr>
-<td>rank4.csv</td>
-<td>Rank 4, for example competitive hotels</td>
-</tr>
-
-<tr>
-<td>rankN.csv</td>
-<td>Rank N, any type of information.</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="header-fields-mandatory">Header fields (mandatory)</h3>
-
-<p>In order to be correctly processed, the header fields must have the following format:</p>
-
-<table>
-<thead>
-<tr>
-<th>Field Name</th>
-<th>Data Type</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>provider_id</td>
-<td>string</td>
-</tr>
-
-<tr>
-<td>hotel_code</td>
-<td>string</td>
-</tr>
-
-<tr>
-<td>rank</td>
-<td>boolean [1,0]</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="example">Example:</h3>
-
-<table>
-<thead>
-<tr>
-<th>provider_id</th>
-<th>hotel_code</th>
-<th>rank</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>travelgatex</td>
-<td>2018</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>travelgatey</td>
-<td>2017</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="process-file">Process file</h3>
-
-<p>To process the file, it must be uploaded to your organization’s FTP folder in the TravelgateX Platform. More info on how to upload files please refer to the <a href="/travelgatex/data-automation/">data automation section</a>.</p>
-
-<h3 id="template-file">Template File</h3>
-
-<p>For your convinience you can <a href="/content/rank1.csv">download a template CSV file</a>.</p>
-
 <h2 id="destinations">Destinations</h2>
 
 <p>Destination query returns a list of static data about destinations for a supplier access. By default if you don’t set the destination codes are all the codes. Like than hotels you can get the other pages with the continuation token.</p>
@@ -2361,7 +2254,7 @@
 <h3 id="playground-samples-1">Playground Samples</h3>
 
 <ul>
-<li><a href="https://graphqlbin.com/763zsZ" target="_blank">destinations</a> </li>
+<li><a href="https://graphqlbin.com/763zsZ" target="_blank">destinations</a></li>
 </ul>
 
 <h2 id="boards">Boards</h2>
@@ -2371,7 +2264,7 @@
 <h3 id="playground-samples-2">Playground Samples</h3>
 
 <ul>
-<li><a href="https://graphqlbin.com/6687tV" target="_blank">boards</a> </li>
+<li><a href="https://graphqlbin.com/6687tV" target="_blank">boards</a></li>
 </ul>
 
 <h2 id="rooms">Rooms</h2>
@@ -2381,7 +2274,7 @@
 <h3 id="playground-samples-3">Playground Samples</h3>
 
 <ul>
-<li><a href="https://graphqlbin.com/98rmiY" target="_blank">rooms</a> </li>
+<li><a href="https://graphqlbin.com/98rmiY" target="_blank">rooms</a></li>
 </ul>
 
 <h2 id="categories">Categories</h2>
@@ -2391,7 +2284,7 @@
 <h3 id="playground-samples-4">Playground Samples</h3>
 
 <ul>
-<li><a href="https://graphqlbin.com/mwZjT6" target="_blank">categories</a> </li>
+<li><a href="https://graphqlbin.com/mwZjT6" target="_blank">categories</a></li>
 </ul>
 
 
@@ -2415,14 +2308,6 @@
 <li><a href="#hotels">Hotels</a>
 <ul>
 <li><a href="#playground-samples">Playground Samples</a></li>
-</ul></li>
-<li><a href="#hotels-ranking">Hotels Ranking</a>
-<ul>
-<li><a href="#file-names-mandatory">File Names (mandatory)</a></li>
-<li><a href="#header-fields-mandatory">Header fields (mandatory)</a></li>
-<li><a href="#example">Example:</a></li>
-<li><a href="#process-file">Process file</a></li>
-<li><a href="#template-file">Template File</a></li>
 </ul></li>
 <li><a href="#destinations">Destinations</a>
 <ul>
@@ -2454,7 +2339,7 @@
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/hotelx/concepts/management-flow/" title="Go to previous page | Management Flow"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Management Flow</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/hotelx/howtos/" title="Go to next page | How-to Guides" style="margin-right: 0px;">How-to Guides<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/hotelx/concepts/ranking/" title="Go to next page | Ranking" style="margin-right: 0px;">Ranking<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

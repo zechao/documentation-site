@@ -1479,15 +1479,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/concepts/content/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/data-automation/</loc>
   </url>
   
   <url>
     <loc>/flightx/</loc>
-  </url>
-  
-  <url>
-    <loc>/hotelx/concepts/content/</loc>
   </url>
   
   <url>
@@ -1524,6 +1524,10 @@
   
   <url>
     <loc>/mappea/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/concepts/ranking/</loc>
   </url>
   
   <url>
