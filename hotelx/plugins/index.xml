@@ -16,10 +16,22 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/overview/</guid>
-      <description>Introduction Plugins are custom code, executed in HotelX servers, that add or modify specific features. Partner can develop custom plugins, but in most cases, HotelX offers enough basic plugins to use.
-Flows HotelX query or mutation determine what flow is executed. Plugins can be executed in different flows:
- search quote hotelBook hotelCancel  Steps Step is the minium container where plugins are executed sequentially.
-   Step When is executed     Request After Buyer requests message to HotelX.</description>
+      <description>Introduction Plugins are custom code, executed in HotelX servers, that add or modify specific functionalities. Any Partner can develop custom Plugins, nevertheless HotelX, HotelX has developed many Plugins available for anyone to use out of the box.
+Flows HotelX query or mutation determine what flow is executed. Plugins can be executed in different Queries or Mutations:
+ Search Quote Book Cancel  Steps Step is the minium container where plugins are executed sequentially.</description>
+    </item>
+    
+    <item>
+      <title>Blacklist</title>
+      <link>/hotelx/plugins/blacklist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/blacklist/</guid>
+      <description>The blacklist plugin is used to ignore hotel code(s) when we a search query is executed. There are 2 types of blacklists:
+ Filter hotel code of a specific Access Filter hotel codes of a specific Supplier  Loading a blacklist is as easy as following the steps below:
+Access Blacklist Blacklist is applied for specific Access
+File Format The file should be in the below format:
+ Encoding: UTF-8</description>
     </item>
     
     <item>
@@ -30,8 +42,8 @@ Flows HotelX query or mutation determine what flow is executed. Plugins can be e
       <guid>/hotelx/plugins/mapping/</guid>
       <description>The map plugins are used to change the supplier codes to client codes or vice versa. There are four types:
  Hotel map  Board Map  Room Map  Rate Map   Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
-Format File The file should be in the following format:
- Encoding: UTF-8 File Name: [Context Source]_hotel_map.</description>
+Example files You can download example for the files structure here
+Entity Maps File Format The file should be in the following format:</description>
     </item>
     
     <item>
@@ -66,7 +78,7 @@ MarkupX This markup implementation is supported by our web application which per
       
       <guid>/hotelx/plugins/converter/</guid>
       <description>Currency converter is an optional plugin and permits to apply currency conversion over all the prices in one Option.
-CurrencyX This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp, is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned.</description>
+CurrencyX This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp. Is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned.</description>
     </item>
     
     <item>
@@ -90,12 +102,21 @@ NetPriceX This plugin receives an Option by parameter and returns an Option with
     </item>
     
     <item>
+      <title>Search by destination</title>
+      <link>/hotelx/plugins/search_by_destination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/search_by_destination/</guid>
+      <description>Search by destination is a feature to search by destinations codes in the Search query. To use it, codes must be sent in &amp;lsquo;CriteriaSearch&amp;rsquo;. Destination codes will be converted to hotel codes, then merged with the hotel codes sent in criteria if any, and finally the request will be sent to the supplier. In order to achieve the destination to hotel conversion, a source must be specified in a plugin.</description>
+    </item>
+    
+    <item>
       <title>Development</title>
       <link>/hotelx/plugins/development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/development/</guid>
-      <description>On this page you will learn how to develop your own HotelX plugin.</description>
+      <description>On this page you will learn how to develop your own HotelX Plugin.</description>
     </item>
     
   </channel>

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.40.1" />
 <title>Overview :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -125,7 +125,7 @@
             <ul>
           <li data-nav-id="/travelgatex/concepts/common-resources/" class="dd-item">
             <a href="/travelgatex/concepts/common-resources/">
-              <span style="padding-left: 8px;">Common Resources</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Common resources</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -1765,11 +1765,6 @@
         </li>
             </ul>
         </li>
-          <li data-nav-id="/travelgatex/reference/deprecated_notes/" class="dd-item">
-            <a href="/travelgatex/reference/deprecated_notes/">
-              <span style="padding-left: 8px;">Deprecated notes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/security/" class="dd-item">
@@ -1998,6 +1993,11 @@
           <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
             <a href="/hotelx/plugins/processor/">
               <span style="padding-left: 8px;">Processor</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/search_by_destination/" class="dd-item">
+            <a href="/hotelx/plugins/search_by_destination/">
+              <span style="padding-left: 8px;">Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/development/" class="dd-item">
@@ -2230,7 +2230,7 @@ role="alert">Our GraphQL API endpoint for all operations is: <a href="https://ap
 
 <h2 id="making-requests">Making Requests</h2>
 
-<p>The best place to test how to make GraphQL queries in TravelgateX is to start with our interactive <a href="https://api.travelgatex.com/">API Playground</a>. You can also use <a href="https://curl.haxx.se" target="_blank">curl</a> or any other HTTP-speaking library.</p>
+<p>The best place to test how to make GraphQL queries in TravelgateX is to start with our interactive <a href="https://api.travelgatex.com/" target="_blank">API Playground</a>. You can also use <a href="https://curl.haxx.se" target="_blank">curl</a> or any other HTTP-speaking library.</p>
 
 <div class="alert 
 alert-danger"
@@ -2241,7 +2241,7 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
 <pre><code class="language-html">Accept-Encoding: gzip
 </code></pre>
 
-<p>To query GraphQL using <a href="https://curl.haxx.se" target="_blank">curl</a> , make a POST request with a JSON payload. The payload must contain a string called query:</p>
+<p>To query GraphQL using <a href="https://curl.haxx.se" target="_blank">curl</a>, make a POST request with a JSON payload. The payload must contain a string called query:</p>
 
 <pre><code class="language-bash">curl -X\
    POST\
@@ -2285,21 +2285,9 @@ If you wish to use test headers, insert <code>&quot;Authorization&quot;:&quot;Ap
 <p>TravelgateX follows some conventions about schema definition:</p>
 
 <ul>
-<li><a href="#Relay Implementation">Relay schema requirements</a></li>
+<li><a href="https://facebook.github.io/relay/" target="_blank">Relay schema implementation</a></li>
 <li><a href="/travelgatex/reference/scalars/">Definition of custom scalar types</a></li>
 <li><a href="/travelgatex/security/overview/">Token Based Authentication</a></li>
-</ul>
-
-<h3 id="relay-implementation">Relay Implementation</h3>
-
-<p>TravelgateX uses the <a href="https://facebook.github.io/relay/" target="_blank">Relay</a> schema requirements for our own Resources, but other resources, such as <em>Seller search response</em>, are not modeled with Relay practices.</p>
-
-<p>We chose Relay at TravelgateX in order to standarize:</p>
-
-<ul>
-<li>Querying paginated collections (&ldquo;Connections&rdquo; and &ldquo;Edges&rdquo;)</li>
-<li>Identifying objects directly from the root of a query (to avoid long nested queries)</li>
-<li>Providing mutation input data.</li>
 </ul>
 
 
@@ -2327,10 +2315,7 @@ If you wish to use test headers, insert <code>&quot;Authorization&quot;:&quot;Ap
 <li><a href="#making-requests">Making Requests</a></li>
 <li><a href="#graphql-reference">GraphQL Reference</a></li>
 <li><a href="#examples">Examples</a></li>
-<li><a href="#conventions">Conventions</a>
-<ul>
-<li><a href="#relay-implementation">Relay Implementation</a></li>
-</ul></li>
+<li><a href="#conventions">Conventions</a></li>
 </ul></li>
 </ul>
 </nav>

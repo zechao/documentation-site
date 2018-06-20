@@ -16,9 +16,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/overview/</guid>
-      <description>This page provides an overview of travelgateX platform.
-GraphQL Gateway TravelgateX is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, visit GraphQL guide.
-The architecture doesn&amp;rsquo;t differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and also handles throttling.</description>
+      <description>This page provides an overview of the TravelgateX platform.
+GraphQL Gateway TravelgateX is the travel API completely based in GraphQL. Unlike many legacy XML Soap APIs, GraphQL enables each client to ask for and receive exactly the data that is needed. Learn more by reading our Learning GraphQL guides.
+Our Gateway is the only endpoint to access all of our APIs. It is written in NodeJS. This makes it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime.</description>
     </item>
     
   </channel>

@@ -16,7 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/overview/</guid>
-      <description>Get access to all of our products through a single endpoint API.</description>
+      <description>TravelgateX provides a single API endpoint for all of our API products. This makes it easy for you to integrate our full travel catalog and services into your applications (regardless of whether you are integrating to a website, mobile app, widget, or other interface).
+Completely rebuilt in GraphQL from our many years of experience with travel XML integrations, we are offering state of the art, cutting edge API technology that is quick to learn and makes integration simple and fast.</description>
     </item>
     
     <item>
@@ -25,8 +26,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/quickstart/</guid>
-      <description>Try it now and see how easy it is to use! If you&amp;rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below.
-Join the TravelgateX partner program In order to start building your own API, you&amp;rsquo;ll need to join the TravelgateX partner program. The design of a registration form for developers is already in process but in the meantime you&amp;rsquo;re able to sign up through us directly to become a partner.</description>
+      <description>Four steps to using our API If you&amp;rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below:
+ STEP 1: Get to know our APIs. Read through our documentation and test some sample calls in our API Playground. You can use a test API key and start experimenting with our APIs straight away.</description>
     </item>
     
     <item>
@@ -35,8 +36,9 @@ Join the TravelgateX partner program In order to start building your own API, yo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/concepts/</guid>
-      <description>TravelgateX offers a set of products ready to be integrated using a single GraphQL. If you&amp;rsquo;re not sure about a specific concept, feel free to check our guide bellow to understand the basic concepts.
-API Gateway &amp;ldquo;TravelgateX is the first company in the industry travel with an API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs and we faced a lot of problems with that kind technology.</description>
+      <description>The TravelgateX platform and APIs all use a consistent set of basic concepts so that whatever API you use on our platform, you can be confident that it will work with the same definitions as all of the others you are familiar with.
+Here is an overview of the key concepts of our platform.
+Access An Access is a set of credentials and the authentication configuration that enables a Buyer to access a Supplier.</description>
     </item>
     
     <item>
@@ -45,7 +47,8 @@ API Gateway &amp;ldquo;TravelgateX is the first company in the industry travel w
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/getting-started/playground/</guid>
-      <description>Try it For Yourself API Playground is available for free! It lets you play, learn easily and it’s simple to set up. Allows learners of all levels to start exploring and creating quickly. Our Query Builder tool helps users get the most out of the TravelgateX API by creating custom queries and have access TravelgateX API data. You can even customize your responses to better serve your purpose.</description>
+      <description>Try it For Yourself API Playground is an interactive, fun, and super quick way to get to know our APIs.
+In the API Playground, as you start to type the query, it will autocomplete with the fields available to complete your query parameters. You can also click on the green Schema button on the right of the Playground window to learn more about our data model and to see all of the options available for building your query.</description>
     </item>
     
   </channel>

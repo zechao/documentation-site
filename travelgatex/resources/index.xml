@@ -16,22 +16,21 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/resources/quotas-limits/</guid>
-      <description></description>
+      <description>Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+ Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!</description>
     </item>
     
     <item>
-      <title>Realeases Notes</title>
+      <title>Release Notes</title>
       <link>/travelgatex/resources/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/resources/release-notes/</guid>
       <description>Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-05-03 ✅ Field asserts was added to object type StatsInfo
-✅ Field clients was added to object type GroupData
-✅ Field suppliers was added to object type GroupData
-✅ Field clients was added to object type GroupCommonData
-✅ Field suppliers was added to object type GroupCommonData
-✅ Field clients was added to object type OrganizationData</description>
+2018-06-12 🛑 Input field group was added to input object type DeleteGroupInput
+🛑 Input field code was removed from input object type DeleteGroupInput
+🛑 Type LegacyData was removed
+✅ Description Input delta price, indicates price variation permitted by the client on type DeltaPriceInput has changed to Input delta price, indicates price variation permitted by the client An error will be returned if the new price does not abide to DeltaPrice.</description>
     </item>
     
     <item>
@@ -44,12 +43,13 @@
     </item>
     
     <item>
-      <title>Frequendly Asked Questions</title>
+      <title>Frequently Asked Questions</title>
       <link>/travelgatex/resources/frequently-asked-questions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/resources/frequently-asked-questions/</guid>
-      <description>Do you have specific questions about TravelgateX GraphQL API? Check out the FAQs.</description>
+      <description>TravelgateX Platform FAQs Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+ Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!</description>
     </item>
     
   </channel>

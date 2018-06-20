@@ -16,10 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/concepts/accesses-supplier-context/</guid>
-      <description>On this page you will learn more about Core Entities used in TravelgateX.
-Supplier Product segmentation over a provider API implementation. Supplier codes are uniques over all TravelgateX organizations.
-Access Configuration used when interacting with a supplier, which includes:
- URLs  Credentials  Markets  Rate Types  Specific supplier settings   Client Client codes are unique over all TravelgateX organizations, like supplier codes. This codes are used for to identify who is doing the request and this client has a configuration assigned to it.</description>
+      <description>On this page you will learn more about Core Entities used in HotelX. You can also refer to the overarching core concepts that apply to all TravelgateX APIs.
+Supplier Product segmentation over a Supplier API implementation. Each Supplier has a Supplier code. These are unique values and used consistently throughout all TravelgateX implementations. See our Supplier database, or ask us via our Jira Service desk for a list of Supplier codes.</description>
     </item>
     
     <item>

@@ -43,9 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/resources/frequently-asked-questions/</guid>
-      <description>Search Do I have access to all the hotels in the test environment? No, we use a test supplier, so there is a limited number of hotels in the data base to be used.
-Which are the languages allowed in the new aggregator? The new aggregator allows each language, it will depend from each supplier.
-How many hotels code are allowed to request at the same time? We recommend a maximum of 200 hotels, the new aggregator will split to each supplier the maximum hotels allowed in different batches in order to request to the supplier all the hotels.</description>
+      <description>Search Which Apikey do I have to use?  I already have the TGX Welcome Pack: Then you should use the Api Key facilitated. I did not receive TGX Welcome Pack: Then you should use our dummy Api Key facilitated on our sample Playground.  Do I have access to all the hotels in the test environment? No, we use a test supplier, so there is a limited number of hotels in the data base to be used.</description>
     </item>
     
   </channel>

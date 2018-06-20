@@ -16,8 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/schema/mutation/</guid>
-      <description>Mutations are operations that change or update data on the server.
-GraphQL Schema definition type Mutation {admin: AdminMutation hotelX: HotelXMutation mappea: MappeaMutation Show deprecated fieldshotelBook(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload // deprecated from 2017-11-21. You can find it in query at HotelXhotelCancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload // deprecated from 2017-11-21.</description>
+      <description>The root query for implementing GraphQL mutations. Mutations are operations that change or update data on the server
+GraphQL schema definition type Mutation {  admin: AdminMutation    hotelX: HotelXMutation    mappea: MappeaMutation    paymentX: PaymentXMutation   Show deprecated fields   hotelBook( input: HotelBookInput!, settings: HotelSettingsInput, ): HotelBookPayload  // deprecated from 2017-11-21. You can find it in query at HotelX   hotelCancel( input: HotelCancelInput!</description>
     </item>
     
     <item>
@@ -26,7 +26,8 @@ GraphQL Schema definition type Mutation {admin: AdminMutation hotelX: Hotel
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/schema/query/</guid>
-      <description>GraphQL Schema definition type Query {admin: AdminQuery hotelX: HotelXQuery stats: StatsQuery mappea: MappeaQuery Show deprecated fieldssearch: : Search! // quote: : Quote! // booking: : Booking // defaultSettings(groupCode: String!,): DefaultSettings // deprecated from 2017-11-21. You can find it in query at Adminmapping(groupCode: String!</description>
+      <description>The query root of TravelgateX&amp;rsquo;s GraphQL interface.
+GraphQL schema definition type Query {  admin: AdminQuery    hotelX: HotelXQuery    mappea: MappeaQuery    paymentX: PaymentXQuery    stats: StatsQuery   Show deprecated fields   search: : Search! //     quote: : Quote! //     booking: : Booking //     defaultSettings( groupCode: String!</description>
     </item>
     
   </channel>

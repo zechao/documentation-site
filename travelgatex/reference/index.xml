@@ -10,14 +10,5 @@
 	<atom:link href="/travelgatex/reference/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Deprecated Notices</title>
-      <link>/travelgatex/reference/deprecated-notices/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/deprecated-notices/</guid>
-      <description> Deprecations 2018-03-19connectUser This field is got only if the authorization header is of the type JWT. It is used to change the user that has been set by default in the preload. @deprecated(reason: &amp;#34;deprecated from 2018-03-19. Redundant.&amp;#34;)2017-12-12useContext Indicates if you want use context, or not, by default is true. @deprecated(reason: &amp;#34;deprecated from 2017-12-12. Redundant.&amp;#34;)</description>
-    </item>
-    
   </channel>
 </rss>

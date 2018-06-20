@@ -26,9 +26,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/learning-graphql/basic_concepts/</guid>
-      <description>What are Queries &amp;amp; Mutations  At its simplest, GraphQL is about requesting specific fields on objects. Let&amp;rsquo;s start by looking at a very simple query and the result we get when we run it http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com
- There are two basic operations in GraphQL schemas: * Queries: Requesting data from a data model * Mutations: Making changes and carrying out transactions on data in the data model
-Queries Just like a RESTful GET method, queries query the system.</description>
+      <description>What are Queries &amp;amp; Mutations There are two basic operations in GraphQL schemas:  Queries: Requesting data from a data model. An example Query would be: checking availability of hotels for a particular date and location  Mutations: Making changes and carrying out transactions on data in the data model. An example Mutation would be: making a booking to reserve a hotel room on a particular date.
+Queries Queries ask the system to provide some data, based on specfic parameters.</description>
     </item>
     
     <item>
@@ -37,17 +36,17 @@ Queries Just like a RESTful GET method, queries query the system.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/learning-graphql/thinking_in_graphql/</guid>
-      <description>A Paradigm Shift GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back and ee get to choose exactly what data we want to retrieve. As opposed to JSON, each piece of data has its own type, so we know exactly what to expect, it&amp;rsquo;s a typed language. This gives it a lot of predictability, something we really appreciate, especially when dealing with third party APIs, where we have no control of what&amp;rsquo;s going on on the other side.</description>
+      <description>A Paradigm Shift GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. With GraphQL, you can choose exactly what data you want to retrieve. GraohQL is a typed query language. That means that it has a lot of predictability, as each piece of data has its own type, so we know what sort of data we will be getting back.</description>
     </item>
     
     <item>
       <title>Tools</title>
-      <link>/learning-graphql/tooling/</link>
+      <link>/learning-graphql/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/learning-graphql/tooling/</guid>
+      <guid>/learning-graphql/tools/</guid>
       <description>Top tools to develop in GraphQL Here is a collection of tools we&amp;rsquo;ve been using that have help us develop in GraphQL:
-To design Schemas  APIs Guru&amp;rsquo;s graphql-faker: https://github.com/APIs-guru/graphql-faker  TODO: Falta chicha!!Go Packages Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources. Also because of the ability to develop plugins. We&amp;rsquo;ve used many libraries and packages to help us, hereby our list:</description>
+Schemas Design  APIs Guru&amp;rsquo;s graphql-faker  Go Packages Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources. Also because of the ability to develop plugins. We&amp;rsquo;ve used many libraries and packages to help us, hereby our list:</description>
     </item>
     
     <item>
@@ -56,8 +55,8 @@ To design Schemas  APIs Guru&amp;rsquo;s graphql-faker: https://github.com/APIs-
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/learning-graphql/tutorials_resources/</guid>
-      <description>As you can see GraphQL is a fast growing ecosystem. Apart from Facebook&amp;rsquo;s and Graphql.org&amp;rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.
-However we want to be part of this community and help you discover this new technology and its features. That&amp;rsquo;s why we have gathered some of the best tutorials for you to learn, step by step, how to use it.</description>
+      <description>Although GraphQL is a very young technology, it&amp;rsquo;s quickly gaining momentum and already has a fast growing yet vast ecosystem. Apart from Facebook&amp;rsquo;s and Graphql.org&amp;rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.
+We want to be part of this community and hopefully help you discover this new technology and its features.</description>
     </item>
     
   </channel>

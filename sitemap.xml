@@ -1467,6 +1467,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/plugins/search_by_destination/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/security/</loc>
   </url>
   
@@ -1532,10 +1536,6 @@
   
   <url>
     <loc>/learning-graphql/tutorials_resources/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/deprecated_notes/</loc>
   </url>
   
   <url>
