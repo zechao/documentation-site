@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.37.1" />
 <title>Query :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2289,77 +2289,58 @@
                 </li>
             
         
-
+            
+                <li>
+                    <span class="tab">
+                        
+<span class="meta">search</span>: <a class="support type" href="/travelgatex/reference/objects/search">Search!</a> 
+                    </span>
+                </li>
+            
         
-            <div class="deprecated-button-container" >
-                <button class="btn btn-sm btn-info" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
-            </div>
-            <div class="deprecated-entities-container">
             
-                
-                
                 <li>
-                        <span class="tab">
-                            <span class="meta">search: : <a class="support type" href="/travelgatex/reference/objects/search">Search!</a> <span class="text-secondary">// 
-                                
-                            </span></span>
-                        </span>
-                    </li>
-                
+                    <span class="tab">
+                        
+<span class="meta">quote</span>: <a class="support type" href="/travelgatex/reference/objects/quote">Quote!</a> 
+                    </span>
+                </li>
             
-                
-                
+        
+            
                 <li>
-                        <span class="tab">
-                            <span class="meta">quote: : <a class="support type" href="/travelgatex/reference/objects/quote">Quote!</a> <span class="text-secondary">// 
-                                
-                            </span></span>
-                        </span>
-                    </li>
-                
+                    <span class="tab">
+                        
+<span class="meta">booking</span>: <a class="support type" href="/travelgatex/reference/objects/booking">Booking</a> 
+                    </span>
+                </li>
+            
+        
             
                 
-                
-                <li>
+                    <li>
                         <span class="tab">
-                            <span class="meta">booking: : <a class="support type" href="/travelgatex/reference/objects/booking">Booking</a> <span class="text-secondary">// 
-                                
-                            </span></span>
-                        </span>
-                    </li>
-                
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">defaultSettings</span>(
+                            <span class="meta">defaultSettings</span>(
 <span class="meta">groupCode</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String!</a>,
 ): <a class="support type" href="/travelgatex/reference/objects/defaultsettings">DefaultSettings</a> 
-                            </span>
-                            
-                            <span class="text-secondary">// deprecated from 2017-11-21. You can find it in query at HotelX</span>
-                            
-                        </li>
-                    
+                        </span>
+                    </li>
                 
             
+        
+            
                 
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">mapping</span>(
+                    <li>
+                        <span class="tab">
+                            <span class="meta">mapping</span>(
 <span class="meta">groupCode</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String!</a>,
 ): <a class="support type" href="/travelgatex/reference/objects/mapping">Mapping!</a> 
-                            </span>
-                            
-                            <span class="text-secondary">// deprecated from 2017-11-21. You can find it in query at HotelX</span>
-                            
-                        </li>
-                    
+                        </span>
+                    </li>
                 
             
-            </div>
+        
+
         
         <li>}</li>
     </ul>
@@ -2395,6 +2376,31 @@
     <li class="lifields">
         <a href="/travelgatex/reference/objects/statsquery">stats(StatsQuery):</a>
         <span class="description">The Stats product query root for implementing GraphQL query.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/search">search(Search!):</a>
+        <span class="description">Available options for a given date and itinerary.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/quote">quote(Quote!):</a>
+        <span class="description">Returns the total price and cancellation policies of the Option selected in the previous step (Search).</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/booking">booking(Booking):</a>
+        <span class="description">Returns detailed information about books.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/defaultsettings">defaultSettings(DefaultSettings):</a>
+        <span class="description">Reads defaultSettings of the given group</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/mapping">mapping(Mapping!):</a>
+        <span class="description">Returns the mapping for a group, is necessary specify the group.</span>
     </li>
     
 </ul></p>

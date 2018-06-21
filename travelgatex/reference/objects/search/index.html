@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.37.1" />
 <title>Search :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2246,20 +2246,13 @@ forward.</p>
     <ul class="code">
         <li><span class="keyword operator ts">type</span> <span class="identifier">Search</span> {</li>
         
-
-        
-            <div class="deprecated-button-container" >
-                <button class="btn btn-sm btn-info" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
-            </div>
-            <div class="deprecated-entities-container">
             
                 
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">hotel</span>(
-                            </span>
-                        </li>
+                    <li>
+                        <span class="tab">
+                            <span class="meta">hotel</span>(
+                        </span>
+                    </li>
 <li>
     <span class="tab">
         <span class="tab">
@@ -2289,18 +2282,15 @@ forward.</p>
     </span>
 </li>
 
-                        <li>
-                            <span class="tab">
-                                ): <a class="support type" href="/travelgatex/reference/objects/hotelsearch">HotelSearch</a> 
-                            </span>
-                            
-                            <span class="text-secondary">// deprecated from 2017-11-21. You can find it in query at HotelX</span>
-                            
-                        </li>
-                    
+                    <li>
+                        <span class="tab">
+                            ): <a class="support type" href="/travelgatex/reference/objects/hotelsearch">HotelSearch</a> 
+                        </span>
+                    </li>
                 
             
-            </div>
+        
+
         
         <li>}</li>
     </ul>
@@ -2309,6 +2299,19 @@ forward.</p>
 
 
 
+
+<h2 id="fields">Fields</h2>
+
+<p><ul class="field">
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/hotelsearch">hotel(HotelSearch):</a>
+        <span class="description">Available options of an hotel for a given date and itinerary. It does not filter different classes, times or
+fares. It will always retrieve all results returned by the suppliers. The availability request is very straight
+forward. It only requires the criteria of search (destination, travel dates and the number of pax in each room).
+But you must preload the other fields in our system by complete the fields absents.</span>
+    </li>
+    
+</ul></p>
 
 <h2 id="required-by">Required by</h2>
 
@@ -2341,6 +2344,7 @@ forward.</p>
 <li>
 <ul>
 <li><a href="#graphql-schema-definition">GraphQL schema definition</a></li>
+<li><a href="#fields">Fields</a></li>
 <li><a href="#required-by">Required by</a></li>
 </ul></li>
 </ul>
