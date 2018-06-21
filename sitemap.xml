@@ -375,6 +375,18 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/objects/entity/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/entityconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/entityedge/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/error/</loc>
   </url>
   
@@ -932,6 +944,26 @@
   
   <url>
     <loc>/travelgatex/reference/objects/productedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/profile/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/profileconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/profiledata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/profileedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/profilefilter/</loc>
   </url>
   
   <url>
