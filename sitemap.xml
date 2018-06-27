@@ -1597,6 +1597,10 @@
   </url>
   
   <url>
+    <loc>/community/do-you-like-programming/</loc>
+  </url>
+  
+  <url>
     <loc>/guion/</loc>
   </url>
   
@@ -1611,6 +1615,11 @@
   
   <url>
     <loc>/credits/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/faq/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

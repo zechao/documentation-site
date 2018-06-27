@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.40.1" />
 <title>Book :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2265,15 +2265,16 @@
                 
                 
                 
+                
+                
               <div id="top-github-link">
                 <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/hotelx/howtos/howto-book.md" target="blank">
                   <i class="fa fa-code-fork"></i>
                   Edit page
                 </a>
               </div>
+              
 
-
-    
 
 <p>Flow to book</p>
 
@@ -2378,13 +2379,8 @@
 
 <p>Plugins are a Go language feature and we are using the <a href="https://golang.org/pkg/plugin/" target="_blank">native package</a> in order to implement them. Therefore, a plugin is simply a go file that contains a set of functions that we will specify, the interface is yet to be defined.</p>
 
-
 <hr/>
-
-
   
-
-
 
 
             </div>
@@ -2413,6 +2409,11 @@
         </div>
       </div>
     </div>
+    <div style="left:20%;top:-100px;position:relative">
+        
+
+    </div>
+
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/hotelx/howtos/howto-connect-supplier/" title="Go to previous page | Connect a New Supplier"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Connect a New Supplier</a>
@@ -2422,14 +2423,14 @@
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">
-	
+	<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
   <div class="top-footer hidden-sm-down">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-2 col-lg-2">
 
         </div>
-        <div class="col-sm-6 col-md-2 col-lg-2">
+        <div class="col-xs-8 col-sm-6 col-md-2 col-lg-2">
           <h5 class="tit">Reference</h5>
           <ul class="list-unstyled">
             <li><a title="Getting Started" target="_blank" href="https://docs.travelgatex.com/getting-started/">Getting Started</a></li>
@@ -2500,6 +2501,18 @@
     </div>
   </div>
 </footer>
+<script>
+    $('.js-gotop').on('click', function(event){
+        
+        event.preventDefault();
+  
+        $('html, body').animate({
+          scrollTop: $('html').offset().top
+        }, 500);
+        
+        return false;
+      });
+  </script>
 
 
     <script src="/js/clipboard.min.js"></script>

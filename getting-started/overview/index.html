@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.40.1" />
 <title>Overview :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -2264,15 +2264,16 @@
                 
                 
                 
+                
+                
               <div id="top-github-link">
                 <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/getting-started/overview.md" target="blank">
                   <i class="fa fa-code-fork"></i>
                   Edit page
                 </a>
               </div>
-
-
-    <p>TravelgateX provides a single API endpoint for all of our API products. This makes it easy for you to integrate our full travel catalog and services into your applications (regardless of whether you are integrating to a website, mobile app, widget, or other interface).</p>
+              
+<p>TravelgateX provides a single API endpoint for all of our API products. This makes it easy for you to integrate our full travel catalog and services into your applications (regardless of whether you are integrating to a website, mobile app, widget, or other interface).</p>
 
 <p>Completely rebuilt in GraphQL from our many years of experience with travel XML integrations, we are offering state of the art, cutting edge API technology that is quick to learn and makes integration simple and fast. Our first API &ndash; <a href="/hotelx">HotelX</a> &ndash; is currently available and provides access to over 600 hotel booking suppliers, with thousands of properties available.</p>
 
@@ -2564,13 +2565,8 @@ alert-warning"
 role="alert">Our <a href="/hotelx">HotelX API</a> is now live and able to integrate thousands of hotel beds into your client applications. Check out our roadmap pages for details of our forthcoming APIs, including an optional Speed API to speed up response times and bookings to large hotel databases, our next-generation Mappea mapping API, and APIs that help you track statistics and travel demands so that you have better insight into tourism trends and changing consumer patterns.</div>
 
 
-
 <hr/>
-
-
   
-
-
 
 
             </div>
@@ -2585,6 +2581,11 @@ role="alert">Our <a href="/hotelx">HotelX API</a> is now live and able to integr
         </div>
       </div>
     </div>
+    <div style="left:20%;top:-100px;position:relative">
+        
+
+    </div>
+
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/getting-started/" title="Go to previous page | Getting Started"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Getting Started</a>
@@ -2594,14 +2595,14 @@ role="alert">Our <a href="/hotelx">HotelX API</a> is now live and able to integr
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">
-	
+	<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
   <div class="top-footer hidden-sm-down">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-2 col-lg-2">
 
         </div>
-        <div class="col-sm-6 col-md-2 col-lg-2">
+        <div class="col-xs-8 col-sm-6 col-md-2 col-lg-2">
           <h5 class="tit">Reference</h5>
           <ul class="list-unstyled">
             <li><a title="Getting Started" target="_blank" href="https://docs.travelgatex.com/getting-started/">Getting Started</a></li>
@@ -2672,6 +2673,18 @@ role="alert">Our <a href="/hotelx">HotelX API</a> is now live and able to integr
     </div>
   </div>
 </footer>
+<script>
+    $('.js-gotop').on('click', function(event){
+        
+        event.preventDefault();
+  
+        $('html, body').animate({
+          scrollTop: $('html').offset().top
+        }, 500);
+        
+        return false;
+      });
+  </script>
 
 
     <script src="/js/clipboard.min.js"></script>

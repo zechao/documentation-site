@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/interfaces/advisemessage/</guid>
-      <description>GraphQL schema definition interface AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! //     }   Fields code(ID!): AM code: The following codes can be returned:  description(String!): Error description  level(AdviseMessageLevel!): Indicates the level of importance of the message: Posible values ERROR WARN INFO  external(ExternalMessage): Specify the external message.</description>
+      <description>GraphQL schema definition interface AdviseMessage {  code: ID!    type: String!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   }   Fields code(ID!): AM code: The following codes can be returned:  type(String!): Error type: The following types are valid:  description(String!): Error description  level(AdviseMessageLevel!): Indicates the level of importance of the message: Posible values ERROR WARN INFO  external(ExternalMessage): Specify the external message.</description>
     </item>
     
     <item>

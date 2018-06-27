@@ -224,7 +224,7 @@ Required by DefaultSettingsInput:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/deletegroupinput/</guid>
-      <description>GraphQL schema definition type DeleteGroupInput {  code: ID!   }   Fields code(ID!):</description>
+      <description>GraphQL schema definition type DeleteGroupInput {  group: ID!   }   Fields group(ID!):</description>
     </item>
     
     <item>
@@ -352,7 +352,7 @@ GraphQL schema definition type HotelCriteriaSearchInput {  checkIn: Date!    che
       
       <guid>/travelgatex/reference/inputobjects/hotelsettingsinput/</guid>
       <description>Settings that you can edit for this avail. Values are loaded by default in our Back Office.
-GraphQL schema definition type HotelSettingsInput {  context: String   Show deprecated fields   useContext: : Boolean // Indicates if you want use context, or not, by default is true. @deprecated(reason: &amp;#34;deprecated from 2017-12-12 Redundant.&amp;#34;)     connectUser: : String // This field is occurs only if the authorization header is of the type JWT.</description>
+GraphQL schema definition type HotelSettingsInput {  context: String    useContext: Boolean    connectUser: String    client: String    group: String    timeout: Int    auditTransactions: Boolean    businessRules: BusinessRulesInput    suppliers: [HotelXSupplierInput!]    plugins: [PluginStepInput!</description>
     </item>
     
     <item>
@@ -614,6 +614,15 @@ GraphQL schema definition type PluginsInput {  type: PluginType!    name: String
       <guid>/travelgatex/reference/inputobjects/pointofsaleinput/</guid>
       <description>GraphQL schema definition type PointOfSaleInput {  code: ID!    name: String!   }   Fields code(ID!): POS Identifier  name(String!): POS Name  
 Required by PaymentXBookingInfoInput:</description>
+    </item>
+    
+    <item>
+      <title>ProfileFilter</title>
+      <link>/travelgatex/reference/inputobjects/profilefilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/profilefilter/</guid>
+      <description>GraphQL schema definition type ProfileFilter {  profileIDs: [ID]    groupIDs: [ID]   }   Fields profileIDs([ID]):   groupIDs([ID]):</description>
     </item>
     
     <item>
