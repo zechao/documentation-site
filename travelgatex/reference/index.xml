@@ -10,14 +10,5 @@
 	<atom:link href="/travelgatex/reference/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Deprecated notes</title>
-      <link>/travelgatex/reference/deprecated_notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/deprecated_notes/</guid>
-      <description>Deprecation date Deletion date Days left Name Location Deprecation Reason     2017-11-21 2018-02-19 Already passed hotel Booking You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed booking Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Quote You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Search You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed createDefaultSettings Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed loadFile Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed search Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed quote Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed deleteDefaultSettings Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed defaultSettings Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed mapping Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotelBook Mutation You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotelCancel Mutation You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed updateDefaultSettings Mutation You can find it in query at Admin   2017-12-12 2018-03-12 Already passed useContext HotelSettingsInput Redundant.</description>
-    </item>
-    
   </channel>
 </rss>

@@ -56,5 +56,14 @@ The Project has a few columns that act as the status whereas cards are the items
       <description>What is TravelgateX? TravelgateX platform provides a single API endpoint for all of our API products. This makes it easy for you to integrate our full travel catalog and services into your applications (regardless of whether you are integrating to a website, mobile app, widget, or other interface). Instead of having to deal with REST APIs, you&amp;rsquo;ll be able to use full poser of GraphQL to interact with your data.</description>
     </item>
     
+    <item>
+      <title>Deprecated notes</title>
+      <link>/travelgatex/resources/deprecated_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/resources/deprecated_notes/</guid>
+      <description>Deprecation date Deletion date Days left Name Location Deprecation Reason     2017-11-21 2018-02-19 Already passed hotel Booking You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed booking Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Quote You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Search You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed createDefaultSettings Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed loadFile Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed search Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed quote Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed deleteDefaultSettings Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed defaultSettings Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed mapping Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotelBook Mutation You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotelCancel Mutation You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed updateDefaultSettings Mutation You can find it in query at Admin   2017-12-12 2018-03-12 Already passed useContext HotelSettingsInput Redundant.</description>
+    </item>
+    
   </channel>
 </rss>

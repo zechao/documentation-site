@@ -2783,7 +2783,7 @@
 	"title": "Resources",
 	"tags": [],
 	"description": "New Updates &amp; Releases",
-	"content": " Quotas \u0026amp; Limits    Release Notes Release Notes and Changelog\n   Roadmap    Frequently Asked Questions Do you have specific questions about TravelgateX? Check out the FAQs\n    "
+	"content": " Quotas \u0026amp; Limits    Release Notes Release Notes and Changelog\n   Roadmap    Frequently Asked Questions Do you have specific questions about TravelgateX? Check out the FAQs\n   Deprecated notes     "
 },
 {
 	"uri": "/learning-graphql/tutorials_resources/",
@@ -2793,7 +2793,7 @@
 	"content": " Although GraphQL is a very young technology, it\u0026rsquo;s quickly gaining momentum and already has a fast growing yet vast ecosystem. Apart from Facebook\u0026rsquo;s and Graphql.org\u0026rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.\nWe want to be part of this community and hopefully help you discover this new technology and its features. That\u0026rsquo;s why we have gathered some of the best articles and tutorials for you to get to know GraphQL and learn how to use it step by step. Have a look at the list bellow and click on any of the resources, materials, podcast and documentation to start.\nEnjoy it!\nGraphQL Articles and discussions  REST APIs are REST-in-Peace APIs. Long Live GraphQL. Hacker News Thread Living APIs and the Case for GraphQL  GraphQL Tutorials  Learn GraphQL with GitHub The free and open-source tutorial to learn all around GraphQL to go from zero to production. Learn GraphQL by querying a schema based on JSON data  GraphQL Resources  GraphQL official documentation Apollo Relay official documentation Schema first development - Johannes Schickling Schema-first development with GraphQL GraphQL First in practice at Quri GraphQL First: A better way to build modern apps GraphQL User List  GraphQL Books  Introducing The GraphQL Guide by John Resig Learn To Build Fullstack Graphql Applications by Julian Mayorga  Other Graph Related Resources  Graph Data Structures for Beginners   "
 },
 {
-	"uri": "/travelgatex/reference/deprecated_notes/",
+	"uri": "/travelgatex/resources/deprecated_notes/",
 	"title": "Deprecated notes",
 	"tags": [],
 	"description": "",
