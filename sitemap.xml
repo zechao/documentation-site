@@ -291,6 +291,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/inputobjects/createprofileinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/criteriabookingdatesinput/</loc>
   </url>
   
@@ -372,6 +376,10 @@
   
   <url>
     <loc>/travelgatex/reference/enums/durationtype/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/entitiesinput/</loc>
   </url>
   
   <url>
@@ -583,6 +591,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/inputobjects/hotelxhotelfilterinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/hotelxhotellistinput/</loc>
   </url>
   
@@ -620,6 +632,10 @@
   
   <url>
     <loc>/travelgatex/reference/scalars/json/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/scalars/jwt/</loc>
   </url>
   
   <url>
@@ -1303,11 +1319,19 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/inputobjects/updateentitiesinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/updategroupinput/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/inputobjects/updatememberinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/updateprofileinput/</loc>
   </url>
   
   <url>
@@ -1572,6 +1596,10 @@
   
   <url>
     <loc>/learning-graphql/tutorials_resources/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/resources/deprecated_notes/</loc>
   </url>
   
   <url>
