@@ -39,7 +39,7 @@ In this case you can search the bookings with references or by dates, the dates 
       
       <guid>/hotelx/concepts/content/</guid>
       <description>On this page you will learn how to manage content data in your site such as hotel, boards, categories, etc.
-Hotels Hotels query returns a hotel list of the one supplier access. This entity contains static data about the hotel like code, name, location, information about the hotel information, etc&amp;hellip; You can find all fields in the graph. You can get the hotels with hotel codes or with minimal destination codes.</description>
+Hotels Hotels query returns a hotel list of one supplier&amp;rsquo;s access. This entity contains static data about the hotel like code, name, location, information about the hotel information, etc&amp;hellip; You can find all fields in the graph. You can get the hotels with hotel codes or with minimal destination codes.</description>
     </item>
     
     <item>

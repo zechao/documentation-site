@@ -126,7 +126,7 @@ GraphQL schema definition type AdminMutation {  a: Boolean    createOrganization
       
       <guid>/travelgatex/reference/objects/adminquery/</guid>
       <description>The admin query root of TravelgateX&amp;rsquo;s GraphQL interface.
-GraphQL schema definition type AdminQuery {  a: Boolean    organizations(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): OrganizationConnection!    products(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): ProductConnection!</description>
+GraphQL schema definition type AdminQuery {  jwt: JWT    organizations(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): OrganizationConnection!    products(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): ProductConnection!</description>
     </item>
     
     <item>

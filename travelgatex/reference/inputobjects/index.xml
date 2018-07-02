@@ -177,6 +177,15 @@ GraphQL schema definition type ConnectUserGroupInput {  groupCode: String!    is
     </item>
     
     <item>
+      <title>CreateProfileInput</title>
+      <link>/travelgatex/reference/inputobjects/createprofileinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/createprofileinput/</guid>
+      <description>GraphQL schema definition type CreateProfileInput {  label: String!    group: String!    entities: EntitiesInput   }   Fields label(String!): Label of the Profile  group(String!): Group where Profile has to be placed  entities(EntitiesInput): Entities of the Profile</description>
+    </item>
+    
+    <item>
       <title>CriteriaBookingDatesInput</title>
       <link>/travelgatex/reference/inputobjects/criteriabookingdatesinput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -243,6 +252,16 @@ Required by DefaultSettingsInput:</description>
       
       <guid>/travelgatex/reference/inputobjects/deltapriceinput/</guid>
       <description>Input delta price, indicates price variation permitted by the client An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue (price is lower or equal to the price showed in valuation). This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation.</description>
+    </item>
+    
+    <item>
+      <title>EntitiesInput</title>
+      <link>/travelgatex/reference/inputobjects/entitiesinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/entitiesinput/</guid>
+      <description>GraphQL schema definition type EntitiesInput {  suppliers: [ID!]    clients: [ID!]    access: [ID!]   }   Fields suppliers([ID!]):   clients([ID!]):   access([ID!]):   
+Required by CreateProfileInput:    UpdateEntitiesInput:</description>
     </item>
     
     <item>
@@ -399,6 +418,16 @@ GraphQL schema definition type HotelXAccessInput {  accessId: ID!    configurati
       
       <guid>/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput/</guid>
       <description>GraphQL schema definition type HotelXDestinationSearcherInput {  access: ID!    text: String!    maxSize: Int   }   Fields access(ID!): Indicates the access  text(String!): Search by hotel name or destination name  maxSize(Int): Maxium number of items per type</description>
+    </item>
+    
+    <item>
+      <title>HotelXHotelFilterInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxhotelfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxhotelfilterinput/</guid>
+      <description>By default: Logical AND on all given filters.
+GraphQL schema definition type HotelXHotelFilterInput {  AND: [HotelXHotelFilterInput!]    OR: [HotelXHotelFilterInput!]    createdAt_in: [DateTime!]    createdAt_not_in: [DateTime!]    createdAt_lt: DateTime    createdAt_lte: DateTime    createdAt_gt: DateTime    createdAt_gte: DateTime    updatedAt_in: [DateTime!]    updatedAt_not_in: [DateTime!]    updatedAt_lt: DateTime    updatedAt_lte: DateTime    updatedAt_gt: DateTime    updatedAt_gte: DateTime   }   Fields AND([HotelXHotelFilterInput!</description>
     </item>
     
     <item>
@@ -723,6 +752,15 @@ Required by DefaultSettingsInput:</description>
     </item>
     
     <item>
+      <title>UpdateEntitiesInput</title>
+      <link>/travelgatex/reference/inputobjects/updateentitiesinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/updateentitiesinput/</guid>
+      <description>GraphQL schema definition type UpdateEntitiesInput {  code: ID!    entities: EntitiesInput   }   Fields code(ID!): Profile Code  entities(EntitiesInput): Entities to add/remove</description>
+    </item>
+    
+    <item>
       <title>UpdateGroupInput</title>
       <link>/travelgatex/reference/inputobjects/updategroupinput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -738,6 +776,15 @@ Required by DefaultSettingsInput:</description>
       
       <guid>/travelgatex/reference/inputobjects/updatememberinput/</guid>
       <description>GraphQL schema definition type UpdateMemberInput {  member: ID!    info: String    group: ID!    role: ID!    resources: [ID!]!    method: Method!   }   Fields member(ID!):   info(String):   group(ID!):   role(ID!):   resources([ID!]!):   method(Method!):</description>
+    </item>
+    
+    <item>
+      <title>UpdateProfileInput</title>
+      <link>/travelgatex/reference/inputobjects/updateprofileinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/updateprofileinput/</guid>
+      <description>GraphQL schema definition type UpdateProfileInput {  code: ID!    label: String!   }   Fields code(ID!): Profile Code  label(String!): Label of the Profile</description>
     </item>
     
     <item>

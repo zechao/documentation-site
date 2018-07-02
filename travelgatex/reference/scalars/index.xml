@@ -17,7 +17,7 @@
       
       <guid>/travelgatex/reference/scalars/boolean/</guid>
       <description>The Boolean scalar type represents true or false.
-GraphQL schema definition scalar Boolean   Required by AdminQuery:  The admin query root of TravelgateX&amp;#39;s GraphQL interface.  OrganizationData:    GroupCommonData:    GroupData:    Member:  You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform. An email address can be used as the identity of a User.</description>
+GraphQL schema definition scalar Boolean   Required by OrganizationData:    GroupCommonData:    GroupData:    Member:  You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform. An email address can be used as the identity of a User. Service Accounts: An application (Client) instead of an individual User.</description>
     </item>
     
     <item>
@@ -116,6 +116,16 @@ GraphQL schema definition scalar Int   Required by GroupData:    SupplierData:  
       <guid>/travelgatex/reference/scalars/json/</guid>
       <description> The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string. In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: &amp;ldquo;{\&amp;ldquo;int\&amp;rdquo;: 1, \&amp;ldquo;string\&amp;rdquo;: \&amp;ldquo;value\&amp;ldquo;}&amp;rdquo;.
 GraphQL schema definition scalar JSON   Required by AddOns:  Additional information about the option  AddOn:  Additional information about the option   </description>
+    </item>
+    
+    <item>
+      <title>JWT</title>
+      <link>/travelgatex/reference/scalars/jwt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/jwt/</guid>
+      <description> JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
+GraphQL schema definition scalar JWT   Required by AdminQuery:  The admin query root of TravelgateX&amp;#39;s GraphQL interface.   </description>
     </item>
     
     <item>
