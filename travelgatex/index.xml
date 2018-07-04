@@ -21,5 +21,14 @@ GraphQL Gateway TravelgateX is the travel API completely based in GraphQL. Unlik
 Our Gateway is the only endpoint to access all of our APIs. It is written in NodeJS. This makes it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime.</description>
     </item>
     
+    <item>
+      <title>Deprecated notes</title>
+      <link>/travelgatex/deprecated_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/deprecated_notes/</guid>
+      <description>Deprecation date Deletion date Days left Name Location Deprecation Reason     2017-11-21 2018-02-19 Already passed hotel Booking You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed booking Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Quote You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Search You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed createDefaultSettings Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed loadFile Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed search Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed quote Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed deleteDefaultSettings Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed defaultSettings Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed mapping Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotelBook Mutation You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotelCancel Mutation You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed updateDefaultSettings Mutation You can find it in query at Admin   2017-12-12 2018-03-12 Already passed useContext HotelSettingsInput Redundant.</description>
+    </item>
+    
   </channel>
 </rss>

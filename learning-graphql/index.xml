@@ -36,7 +36,7 @@ Queries Queries ask the system to provide some data, based on specfic parameters
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/learning-graphql/thinking_in_graphql/</guid>
-      <description>A Paradigm Shift GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. With GraphQL, you can choose exactly what data you want to retrieve. GraohQL is a typed query language. That means that it has a lot of predictability, as each piece of data has its own type, so we know what sort of data we will be getting back.</description>
+      <description>A Paradigm Shift GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. With GraphQL, you can choose exactly what data you want to retrieve. GraphQL is a typed query language. That means that it has a lot of predictability, as each piece of data has its own type, so we know what sort of data we will be getting back.</description>
     </item>
     
     <item>

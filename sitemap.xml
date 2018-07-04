@@ -1359,6 +1359,10 @@
   </url>
   
   <url>
+    <loc>/community/release-notes/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/examples__json/</loc>
   </url>
   
@@ -1596,6 +1600,10 @@
   
   <url>
     <loc>/learning-graphql/tutorials_resources/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/deprecated_notes/</loc>
   </url>
   
   <url>

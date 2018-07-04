@@ -3349,6 +3349,16 @@ Required by GetUploadedFilesResponse:  ## GetUploadedFiles  GetMappeaStatsRespon
     </item>
     
     <item>
+      <title>Writting release notes</title>
+      <link>/community/release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/community/release-notes/</guid>
+      <description>This document assists on write release notes with the changelog of products.
+ General Principles  What is a release note? Why keep a release note? Who needs a release note?  How do I make a good release note?  Guiding Principles Types of changes  How can I reduce the effort required to maintain a release notes document? Can release notes be bad?  Do not document commit log diffs Do not ignore deprecations Avoid confusing dates  Release notes example Writing resources  General Principles What is a release note?</description>
+    </item>
+    
+    <item>
       <title>examples__JSON</title>
       <link>/travelgatex/reference/scalars/examples__json/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3688,7 +3698,7 @@ NetPriceX This plugin receives an Option by parameter and returns an Option with
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/learning-graphql/thinking_in_graphql/</guid>
-      <description>A Paradigm Shift GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. With GraphQL, you can choose exactly what data you want to retrieve. GraohQL is a typed query language. That means that it has a lot of predictability, as each piece of data has its own type, so we know what sort of data we will be getting back.</description>
+      <description>A Paradigm Shift GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. With GraphQL, you can choose exactly what data you want to retrieve. GraphQL is a typed query language. That means that it has a lot of predictability, as each piece of data has its own type, so we know what sort of data we will be getting back.</description>
     </item>
     
     <item>
@@ -3739,6 +3749,15 @@ The main goal of this process is to create a hotel ranking and divide the whole 
       <guid>/learning-graphql/tutorials_resources/</guid>
       <description>Although GraphQL is a very young technology, it&amp;rsquo;s quickly gaining momentum and already has a fast growing yet vast ecosystem. Apart from Facebook&amp;rsquo;s and Graphql.org&amp;rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.
 We want to be part of this community and hopefully help you discover this new technology and its features.</description>
+    </item>
+    
+    <item>
+      <title>Deprecated notes</title>
+      <link>/travelgatex/deprecated_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/deprecated_notes/</guid>
+      <description>Deprecation date Deletion date Days left Name Location Deprecation Reason     2017-11-21 2018-02-19 Already passed hotel Booking You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed booking Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Quote You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Search You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed createDefaultSettings Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed loadFile Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed search Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed quote Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed deleteDefaultSettings Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed defaultSettings Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed mapping Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotelBook Mutation You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotelCancel Mutation You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed updateDefaultSettings Mutation You can find it in query at Admin   2017-12-12 2018-03-12 Already passed useContext HotelSettingsInput Redundant.</description>
     </item>
     
     <item>
