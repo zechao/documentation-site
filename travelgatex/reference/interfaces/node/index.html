@@ -2063,6 +2063,11 @@
               <span style="padding-left: 8px;">Aggregation</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
+            <a href="/hotelx/plugins/net-price/">
+              <span style="padding-left: 8px;">Commission</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/hotelx/plugins/markup/" class="dd-item">
             <a href="/hotelx/plugins/markup/">
               <span style="padding-left: 8px;">Markup</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2071,11 +2076,6 @@
           <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
             <a href="/hotelx/plugins/converter/">
               <span style="padding-left: 8px;">Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/hotelx/plugins/net-price/" class="dd-item">
-            <a href="/hotelx/plugins/net-price/">
-              <span style="padding-left: 8px;">Net Price</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/processor/" class="dd-item">
@@ -2092,6 +2092,91 @@
             <a href="/hotelx/plugins/development/">
               <span style="padding-left: 8px;">Development</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
+        </li>
+        <li data-nav-id="/hotelx/plugins/entities/" class="dd-item">
+
+            <a href="/hotelx/plugins/entities/" class="wasdirectory">
+       
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+                Entities filename processing
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/plugins/entities/entity_table/" class="dd-item">
+            <a href="/hotelx/plugins/entities/entity_table/">
+              <span style="padding-left: 8px;">Entity file processing values</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/hotelx/plugins/format-files/" class="dd-item">
+
+            <a href="/hotelx/plugins/format-files/" class="wasdirectory">
+       
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+                Format files
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+        <li data-nav-id="/hotelx/plugins/format-files/net-price/" class="dd-item">
+
+            <a href="/hotelx/plugins/format-files/net-price/" class="wasdirectory">
+       
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+                Net price files
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/plugins/format-files/net-price/commission_supplier/" class="dd-item">
+            <a href="/hotelx/plugins/format-files/net-price/commission_supplier/">
+              <span style="padding-left: 8px;">Commission supplier file</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/format-files/net-price/commission_old/" class="dd-item">
+            <a href="/hotelx/plugins/format-files/net-price/commission_old/">
+              <span style="padding-left: 8px;">Hotel Commission file</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/hotelx/plugins/format-files/commission/" class="dd-item">
+
+            <a href="/hotelx/plugins/format-files/commission/" class="wasdirectory">
+       
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+                Commission files
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/plugins/format-files/commission/commission/" class="dd-item">
+            <a href="/hotelx/plugins/format-files/commission/commission/">
+              <span style="padding-left: 8px;">Commission files format</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/hotelx/plugins/format-files/group/" class="dd-item">
+
+            <a href="/hotelx/plugins/format-files/group/" class="wasdirectory">
+       
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+                Group files
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/hotelx/plugins/format-files/group/group/" class="dd-item">
+            <a href="/hotelx/plugins/format-files/group/group/">
+              <span style="padding-left: 8px;">Group file format</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+          <li data-nav-id="/hotelx/plugins/format-files/entities/entity_table/" class="dd-item">
+            <a href="/hotelx/plugins/format-files/entities/entity_table/">
+              <span style="padding-left: 8px;">Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
         </li>
             </ul>
         </li>
@@ -2315,34 +2400,51 @@
         <li><span class="keyword operator ts">interface</span> <span class="identifier">Node</span> {</li>
         
             
-                <li>
-                    <span class="tab">
-                        
+                
+                    <li>
+                        <span class="tab">
+                            
 <span class="meta">code</span>: <a class="support type" href="/travelgatex/reference/scalars/id">ID!</a> 
-                    </span>
-                </li>
+                        </span>
+                    </li>
+                
             
         
             
-                <li>
-                    <span class="tab">
-                        
+                
+                    <li>
+                        <span class="tab">
+                            
 <span class="meta">createdAt</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">DateTime!</a> 
-                    </span>
-                </li>
+                        </span>
+                    </li>
+                
             
         
             
-                <li>
-                    <span class="tab">
-                        
+                
+                    <li>
+                        <span class="tab">
+                            
 <span class="meta">updatedAt</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">DateTime!</a> 
-                    </span>
-                </li>
+                        </span>
+                    </li>
+                
             
         
-
+            
+        <div class="deprecated-button-container" >
+            <button class="btn btn-sm btn-info" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
+        </div>
+        <div class="deprecated-entities-container">
         
+            
+        
+            
+        
+            
+        
+        </div>
         <li>}</li>
     </ul>
 </div>

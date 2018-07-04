@@ -1467,6 +1467,18 @@
   </url>
   
   <url>
+    <loc>/hotelx/plugins/net-price/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/format-files/commission/commission/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/format-files/net-price/commission_supplier/</loc>
+  </url>
+  
+  <url>
     <loc>/getting-started/concepts/</loc>
   </url>
   
@@ -1483,7 +1495,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/plugins/format-files/group/group/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/plugins/markup/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/format-files/net-price/</loc>
   </url>
   
   <url>
@@ -1499,7 +1519,23 @@
   </url>
   
   <url>
+    <loc>/hotelx/plugins/format-files/commission/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/plugins/converter/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/entities/entity_table/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/format-files/group/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/format-files/net-price/commission_old/</loc>
   </url>
   
   <url>
@@ -1516,10 +1552,6 @@
   
   <url>
     <loc>/hotelx/concepts/management-flow/</loc>
-  </url>
-  
-  <url>
-    <loc>/hotelx/plugins/net-price/</loc>
   </url>
   
   <url>
@@ -1579,6 +1611,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/plugins/format-files/entities/entity_table/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/enums/</loc>
   </url>
   
@@ -1616,6 +1652,14 @@
   
   <url>
     <loc>/hotelx/resources/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/entities/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/format-files/</loc>
   </url>
   
   <url>

@@ -61,6 +61,18 @@ It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
     </item>
     
     <item>
+      <title>Commission</title>
+      <link>/hotelx/plugins/net-price/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/net-price/</guid>
+      <description>Net Price is an optional plugin and allows to net all the prices in an option.
+ NetpriceX
+ CommissionX (NetpriceX Extended funcionality)
+  NetPriceX (future deprecation) This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices.</description>
+    </item>
+    
+    <item>
       <title>Markup</title>
       <link>/hotelx/plugins/markup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -79,16 +91,6 @@ MarkupX This markup implementation is supported by our web application which per
       <guid>/hotelx/plugins/converter/</guid>
       <description>Currency converter is an optional plugin and permits to apply currency conversion over all the prices in one Option.
 CurrencyX This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp. Is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned.</description>
-    </item>
-    
-    <item>
-      <title>Net Price</title>
-      <link>/hotelx/plugins/net-price/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/plugins/net-price/</guid>
-      <description>Net Price is an optional plugin and allows to net all the prices in an option.
-NetPriceX This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices. Suppliers commission file specifies the commission applied to supplier’s prices.</description>
     </item>
     
     <item>
