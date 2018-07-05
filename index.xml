@@ -3383,7 +3383,7 @@ Required by GetUploadedFilesResponse:  ## GetUploadedFiles  GetMappeaStatsRespon
       
       <guid>/community/release-notes/</guid>
       <description>This document assists on write release notes with the changelog of products.
- General Principles  What is a release note? Why keep a release note? Who needs a release note?  How do I make a good release note?  Guiding Principles Types of changes  How can I reduce the effort required to maintain a release notes document? Can release notes be bad?  Do not document commit log diffs Do not ignore deprecations Avoid confusing dates  Release notes example Writing resources  General Principles What is a release note?</description>
+ Release Notes Organization How to keep a good changelog  General Principles  What is a changelog? Why keep a changelog? Who needs a changelog?   How do I make a good changelog?  Guiding Principles Types of changes  How can I reduce the effort required to maintain a changelogs document? Can changelogs be bad?</description>
     </item>
     
     <item>

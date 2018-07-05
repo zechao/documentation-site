@@ -2470,51 +2470,70 @@
 <p>This document assists on write release notes with the changelog of products.</p>
 
 <ul>
+<li><a href="#release-notes-organization">Release Notes Organization</a></li>
+<li><a href="#how-to-keep-a-good-changelog">How to keep a good changelog</a>
+
+<ul>
 <li><a href="#general-principles">General Principles</a>
 
 <ul>
-<li><a href="#what-is-a-release-note">What is a release note?</a></li>
-<li><a href="#why-keep-a-release-note">Why keep a release note?</a></li>
-<li><a href="#who-needs-a-release-note">Who needs a release note?</a></li>
+<li><a href="#what-is-a-changelog">What is a changelog?</a></li>
+<li><a href="#why-keep-a-changelog">Why keep a changelog?</a></li>
+<li><a href="#who-needs-a-changelog">Who needs a changelog?</a></li>
 </ul></li>
-<li><a href="#how-do-i-make-a-good-release-note">How do I make a good release note?</a>
+</ul></li>
+<li><a href="#how-do-i-make-a-good-changelog">How do I make a good changelog?</a>
 
 <ul>
 <li><a href="#guiding-principles">Guiding Principles</a></li>
 <li><a href="#types-of-changes">Types of changes</a></li>
 </ul></li>
-<li><a href="#how-can-i-reduce-the-effort-required-to-maintain-a-release-notes-document">How can I reduce the effort required to maintain a release notes document?</a></li>
-<li><a href="#can-release-notes-be-bad">Can release notes be bad?</a>
+<li><a href="#how-can-i-reduce-the-effort-required-to-maintain-a-changelogs-document">How can I reduce the effort required to maintain a changelogs document?</a></li>
+<li><a href="#can-changelogs-be-bad">Can changelogs be bad?</a>
 
 <ul>
 <li><a href="#do-not-document-commit-log-diffs">Do not document commit log diffs</a></li>
 <li><a href="#do-not-ignore-deprecations">Do not ignore deprecations</a></li>
 <li><a href="#avoid-confusing-dates">Avoid confusing dates</a></li>
 </ul></li>
-<li><a href="#release-notes-example">Release notes example</a></li>
+<li><a href="#changelog-example">Changelog example</a></li>
 <li><a href="#writing-resources">Writing resources</a></li>
 </ul>
 
-<h2 id="general-principles">General Principles</h2>
+<h2 id="release-notes-organization">Release Notes Organization</h2>
 
-<h3 id="what-is-a-release-note">What is a release note?</h3>
+<p>Release notes includes:
+* <code>Roadmap</code>: GIT repository where we publish future functionalities and term planned for being released.
+* <code>Changelogs</code>: Documents containing a chronologically ordered list of notable changes. We have:
+    * A general platform changelog with common changes
+    * Product specific changelogs hosted at TravelgateX/Release Notes or directly at the Product Space/Release Notes (if exists) for example: <a href="https://docs.travelgatex.com/hotelx/release-notes/changelog/" target="_blank">https://docs.travelgatex.com/hotelx/release-notes/changelog/</a>
+    * You can find an specific instructions to fill the changelog on this document.
+* <code>GraphQL Schema Changes</code>: Is a list of recent and upcoming changes to our GraphQL API schema.
+* <code>Deprecated Schema Changes</code>: Specific list of changes that can break existing queries to the GraphQL API.
+* <code>Deleted Schema Changes</code>: Contains a changes history of deprecated notes previously announced.</p>
 
-<p>A release note is a file which contains a curated, chronologically ordered list of notable changes for each version of a project.</p>
+<h2 id="how-to-keep-a-good-changelog">How to keep a good changelog</h2>
 
-<h3 id="why-keep-a-release-note">Why keep a release note?</h3>
+<h3 id="general-principles">General Principles</h3>
+
+<h4 id="what-is-a-changelog">What is a changelog?</h4>
+
+<p>A changelog is a file which contains a curated, chronologically ordered list of notable changes for each version of a project.</p>
+
+<h4 id="why-keep-a-changelog">Why keep a changelog?</h4>
 
 <p>To make it easier for users and contributors to see precisely what notable changes have been made on the project.</p>
 
-<h3 id="who-needs-a-release-note">Who needs a release note?</h3>
+<h4 id="who-needs-a-changelog">Who needs a changelog?</h4>
 
 <p>People do. Whether consumers or developers, the end users of software are human beings who care about what&rsquo;s in the software. When the software changes, people want to know why and how.</p>
 
-<h2 id="how-do-i-make-a-good-release-note">How do I make a good release note?</h2>
+<h2 id="how-do-i-make-a-good-changelog">How do I make a good changelog?</h2>
 
 <h3 id="guiding-principles">Guiding Principles</h3>
 
 <ul>
-<li>Release notes are for humans, not machines.</li>
+<li>changelogs are for humans, not machines.</li>
 <li>The same types of changes should be grouped.</li>
 <li>Versions and sections should be linkable.</li>
 <li>The latest changes comes first.</li>
@@ -2532,7 +2551,7 @@
 <li><code>Security</code> in case of vulnerabilities.</li>
 </ul>
 
-<h2 id="how-can-i-reduce-the-effort-required-to-maintain-a-release-notes-document">How can I reduce the effort required to maintain a release notes document?</h2>
+<h2 id="how-can-i-reduce-the-effort-required-to-maintain-a-changelogs-document">How can I reduce the effort required to maintain a changelogs document?</h2>
 
 <p>Keep an Unreleased section at the top to track upcoming changes.</p>
 
@@ -2540,31 +2559,31 @@
 - People can see what changes they might expect in upcoming releases
 - At release time, you can move the Unreleased section changes into a new release version section.</p>
 
-<h2 id="can-release-notes-be-bad">Can release notes be bad?</h2>
+<h2 id="can-changelogs-be-bad">Can changelogs be bad?</h2>
 
 <p>Yes. Here are a few ways they can be less than useful.</p>
 
 <h3 id="do-not-document-commit-log-diffs">Do not document commit log diffs</h3>
 
-<p>Using commit log diffs as release notes is a bad idea: they&rsquo;re full of noise. Things like merge commits, commits with obscure titles, documentation changes, etc.</p>
+<p>Using commit log diffs as changelogs is a bad idea: they&rsquo;re full of noise. Things like merge commits, commits with obscure titles, documentation changes, etc.</p>
 
 <p>The purpose of a commit is to document a step in the evolution of the source code. Some projects clean up commits, some don&rsquo;t.</p>
 
-<p>The purpose of a release note entry is to document the noteworthy difference, often across multiple commits, to communicate them clearly to end users.</p>
+<p>The purpose of a changelog entry is to document the noteworthy difference, often across multiple commits, to communicate them clearly to end users.</p>
 
 <h3 id="do-not-ignore-deprecations">Do not ignore deprecations</h3>
 
 <p>When people upgrade from one version to another, it should be painfully clear when something will break. It should be possible to upgrade to a version that lists deprecations, remove what&rsquo;s deprecated, then upgrade to the version where the deprecations become removals.</p>
 
-<p>If you do nothing else, list deprecations, removals, and any breaking changes in your release note.</p>
+<p>If you do nothing else, list deprecations, removals, and any breaking changes in your changelog.</p>
 
 <h3 id="avoid-confusing-dates">Avoid confusing dates</h3>
 
 <p>Regional date formats vary throughout the world and it&rsquo;s often difficult to find a human-friendly date format that feels intuitive to everyone. The advantage of dates formatted like <code>2017-07-17</code> is that they follow the order of largest to smallest units: year, month, and day. This format also doesn&rsquo;t overlap in ambiguous ways with other date formats, unlike some regional formats that switch the position of month and day numbers. These reasons, and the fact this date format is an <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank">ISO standard</a>, are why it is the recommended date format for changelog entries.</p>
 
-<h2 id="release-notes-example">Release notes example</h2>
+<h2 id="changelog-example">Changelog example</h2>
 
-<pre><code class="language-markdown"># release note
+<pre><code class="language-markdown"># Changelog
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
@@ -2574,8 +2593,8 @@ All notable changes to this project will be documented in this file.
 - New visual identity by @tylerfortune8.
 - Version navigation.
 - Links to latest released version in previous versions.
-- &quot;Why keep a release note?&quot; section.
-- &quot;How do I make a release note?&quot; section.
+- &quot;Why keep a changelog?&quot; section.
+- &quot;How do I make a changelog?&quot; section.
 
 ### Changed
 - Start versioning based on the current English version at 0.3.0 to help
@@ -2583,7 +2602,7 @@ translation authors keep things up-to-date.
 - Rewrite &quot;What makes unicorns cry?&quot; section.
 
 ### Removed
-- Section about &quot;release note&quot; vs &quot;release note&quot;.
+- Section about &quot;changelog&quot; vs &quot;change log&quot;.
 
 ## 2015-12-03
 ### Added
@@ -2621,25 +2640,29 @@ translation authors keep things up-to-date.
 <ul>
 <li>
 <ul>
+<li><a href="#release-notes-organization">Release Notes Organization</a></li>
+<li><a href="#how-to-keep-a-good-changelog">How to keep a good changelog</a>
+<ul>
 <li><a href="#general-principles">General Principles</a>
 <ul>
-<li><a href="#what-is-a-release-note">What is a release note?</a></li>
-<li><a href="#why-keep-a-release-note">Why keep a release note?</a></li>
-<li><a href="#who-needs-a-release-note">Who needs a release note?</a></li>
+<li><a href="#what-is-a-changelog">What is a changelog?</a></li>
+<li><a href="#why-keep-a-changelog">Why keep a changelog?</a></li>
+<li><a href="#who-needs-a-changelog">Who needs a changelog?</a></li>
 </ul></li>
-<li><a href="#how-do-i-make-a-good-release-note">How do I make a good release note?</a>
+</ul></li>
+<li><a href="#how-do-i-make-a-good-changelog">How do I make a good changelog?</a>
 <ul>
 <li><a href="#guiding-principles">Guiding Principles</a></li>
 <li><a href="#types-of-changes">Types of changes</a></li>
 </ul></li>
-<li><a href="#how-can-i-reduce-the-effort-required-to-maintain-a-release-notes-document">How can I reduce the effort required to maintain a release notes document?</a></li>
-<li><a href="#can-release-notes-be-bad">Can release notes be bad?</a>
+<li><a href="#how-can-i-reduce-the-effort-required-to-maintain-a-changelogs-document">How can I reduce the effort required to maintain a changelogs document?</a></li>
+<li><a href="#can-changelogs-be-bad">Can changelogs be bad?</a>
 <ul>
 <li><a href="#do-not-document-commit-log-diffs">Do not document commit log diffs</a></li>
 <li><a href="#do-not-ignore-deprecations">Do not ignore deprecations</a></li>
 <li><a href="#avoid-confusing-dates">Avoid confusing dates</a></li>
 </ul></li>
-<li><a href="#release-notes-example">Release notes example</a></li>
+<li><a href="#changelog-example">Changelog example</a></li>
 <li><a href="#writing-resources">Writing resources</a></li>
 </ul></li>
 </ul>
