@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Release Notes on TravelgateX Documentation</title>
+    <link>/hotelx/release-notes/</link>
+    <description>Recent content in Release Notes on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/hotelx/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Roadmap</title>
+      <link>/hotelx/release-notes/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/release-notes/roadmap/</guid>
+      <description>We have put together a GitHub Project where we will keep updating on the things we’ve in our plans.
+Here is the GitHub project with Public Roadmap of TravelgateX.
+The Project has a few columns that act as the status whereas cards are the items that we have in our plans. We have also labelled each issue so it would clarify if the item would be added in the HotelX, Documentation, etc&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Changelog</title>
+      <link>/hotelx/release-notes/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/release-notes/changelog/</guid>
+      <description> To make it easier for users and contributors to see precisely what notable changes have been made on HotelX product.
+All notable changes on our platform will be documented in this page. 2018-07-04 Fixed  Wrong behaviour that made options to be discarded when price in supplements was empty in Search query.  </description>
+    </item>
+    
+    <item>
+      <title>GraphQL Schema Changes</title>
+      <link>/hotelx/release-notes/graphql-schema-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/release-notes/graphql-schema-changes/</guid>
+      <description>The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
+Check out this list of new releases and changes applied on the HotelX GraphQL API.
+Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
+    </item>
+    
+    <item>
+      <title>Deprecated Schema Notes</title>
+      <link>/hotelx/release-notes/deprecated_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/release-notes/deprecated_notes/</guid>
+      <description>Changes that can break existing queries to the GraphQL API. For example, removing a field would be a breaking change Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+ Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!</description>
+    </item>
+    
+    <item>
+      <title>Deleted Schema Notes</title>
+      <link>/hotelx/release-notes/deleted_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/release-notes/deleted_notes/</guid>
+      <description>Changes history of deprecated notes previously announced Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+ Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -21,6 +21,15 @@ Supplier Product segmentation over a Supplier API implementation. Each Supplier 
     </item>
     
     <item>
+      <title>Quotas &amp; Limits</title>
+      <link>/hotelx/concepts/quotas-limits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/concepts/quotas-limits/</guid>
+      <description>HotelX limits the maximum rate of requests and graph deep. Specific policies vary depending on resource availability, user profile, service usage history, and other factors, and are subject to change without notice</description>
+    </item>
+    
+    <item>
       <title>Management Flow</title>
       <link>/hotelx/concepts/management-flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

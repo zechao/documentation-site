@@ -11,11 +11,65 @@
     
     
     <item>
+      <title>Deleted Notes</title>
+      <link>/tags/deleted-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/deleted-notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deprecated Notes</title>
+      <link>/tags/deprecated-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/deprecated-notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Faq</title>
       <link>/tags/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/faq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphql Changelog</title>
+      <link>/tags/graphql-changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/graphql-changelog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Products Changelog</title>
+      <link>/tags/products-changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/products-changelog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Release Notes</title>
+      <link>/tags/release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/release-notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Roadmap</title>
+      <link>/tags/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/roadmap/</guid>
       <description></description>
     </item>
     

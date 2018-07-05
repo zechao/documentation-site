@@ -31,14 +31,5 @@
  General Principles  What is a release note? Why keep a release note? Who needs a release note?  How do I make a good release note?  Guiding Principles Types of changes  How can I reduce the effort required to maintain a release notes document? Can release notes be bad?  Do not document commit log diffs Do not ignore deprecations Avoid confusing dates  Release notes example Writing resources  General Principles What is a release note?</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>/community/do-you-like-programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/community/do-you-like-programming/</guid>
-      <description> Do you like programming? I&amp;rsquo;m a good programmer I love Mallorca  </description>
-    </item>
-    
   </channel>
 </rss>

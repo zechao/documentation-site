@@ -21,5 +21,15 @@ Supplier A Supplier is a Partner who is connected to TravelgateX on the supply s
 Access An Access is a set of credentials and configuration in order to access the system of a Supplier.</description>
     </item>
     
+    <item>
+      <title>Quotas &amp; Limits</title>
+      <link>/travelgatex/concepts/quotas-limits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/concepts/quotas-limits/</guid>
+      <description>Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+ Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!</description>
+    </item>
+    
   </channel>
 </rss>
