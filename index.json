@@ -788,7 +788,7 @@
 	"title": "Getting Started",
 	"tags": [],
 	"description": "",
-	"content": "Welcome to TravelgateX! Learn the basics of using our APIs, and start making integrations quickly and securely.\n\t\rOverview\rSee how the TravelgateX platform and APIs fit together\n\r\r\r\t\rQuickstart\rHow to get support for using our APIs\n\r\r\r\t\rConcepts\rBasic concepts for all of the TravelgateX platform\n\r\r\r\t\rPlayground\rTry our API now\n\r\r\r\rThe basic concepts of TravelgateX will help you build a wide range of travel products and services. With TravelgateX you can: Build a basic booking website, Offer curated travel offers in niche markets Create realtime apps that reveal the best deals of the moment. Anything is possible! "
+	"content": "Welcome to TravelgateX! Learn the basics of using our APIs, and start making integrations quickly and securely.\n\r\rOverview\rSee how the TravelgateX platform and APIs fit together\n\r\r\r\r\rQuickstart\rHow to get support for using our APIs\n\r\r\r\r\rConcepts\rBasic concepts for all of the TravelgateX platform\n\r\r\r\r\rPlayground\rTry our API now\n\r\r\r\rThe basic concepts of TravelgateX will help you build a wide range of travel products and services. With TravelgateX you can: Build a basic booking website, Offer curated travel offers in niche markets Create realtime apps that reveal the best deals of the moment. Anything is possible! "
 },
 {
 	"uri": "/travelgatex/reference/objects/group/",
@@ -2559,7 +2559,7 @@
 	"title": "TravelgateX",
 	"tags": [],
 	"description": "TravelgateX - The Ultimate Platform For The Travel Trade",
-	"content": "The TravelgateX platform lets you build lightening fast applications and websites that connect to a wide range of travel suppliers in realtime. Integrations to new suppliers take less than 2 days to connect, rather than 2 weeks. Once the integration is in place, response times for showing hotel bookings is in the milliseconds, regardless of the size of the hotel booking database.\n\t\rOverview\rTravelgateX Platform Information\n\r\r\r\t\rConcepts\rUnderstand TravelgateX basic concepts\n\r\r\r\t\rReference\rReference Documentation\n\r\r\r\t\rSecurity\rAuthorization \u0026amp; Authentication\n\r\r\r\t\rData Automation\rAutomate bulk data operations\n\r\r\r\t\rTutorials\rWalkthrouhgs of common applications\n\r\r\r\t\rRelease Notes\rNew Updates \u0026amp; Releases\n\r\r\r\t\rResources\rNew Updates \u0026amp; Releases\n\r\r\r\t\rFAQs\rDo you have specific questions about TravelgateX? Check out the FAQs\n\r\r\r\r"
+	"content": "The TravelgateX platform lets you build lightening fast applications and websites that connect to a wide range of travel suppliers in realtime. Integrations to new suppliers take less than 2 days to connect, rather than 2 weeks. Once the integration is in place, response times for showing hotel bookings is in the milliseconds, regardless of the size of the hotel booking database.\n\r\rOverview\rTravelgateX Platform Information\n\r\r\r\r\rConcepts\rUnderstand TravelgateX basic concepts\n\r\r\r\r\rReference\rReference Documentation\n\r\r\r\r\rSecurity\rAuthorization \u0026amp; Authentication\n\r\r\r\r\rData Automation\rAutomate bulk data operations\n\r\r\r\r\rTutorials\rWalkthrouhgs of common applications\n\r\r\r\r\rRelease Notes\rNew Updates \u0026amp; Releases\n\r\r\r\r\rResources\rNew Updates \u0026amp; Releases\n\r\r\r\r\rFAQs\rDo you have specific questions about TravelgateX? Check out the FAQs\n\r\r\r\r"
 },
 {
 	"uri": "/hotelx/plugins/aggregation/",
@@ -2734,7 +2734,7 @@
 	"title": "HotelX",
 	"tags": [],
 	"description": "HotelX: NextGen Hotel Search API",
-	"content": "With HotelX, you can connect to multiple Suppliers and add business logic to reflect your pricing and unique offers.\nThere are no integration costs and you can integrate with hundreds of hotel Suppliers. HotelX has been designed from the ground up to be fast, reliable and capable of scaling to millions of requests.\nJoin us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.\r\t\rOverview\rHotelX Overview\n\r\r\r\t\rQuickstart\rHotelX Quickstart\n\r\r\r\t\rConcepts\rUnderstand TravelgateX basic concepts\n\r\r\r\t\rHow-to Guides\rPerform specific tasks\n\r\r\r\t\rPlugins\rAdditional logic to your App\n\r\r\r\t\rReference\rReference Documentation\n\r\r\r\t\rRelease Notes\rNew Updates \u0026amp; Releases\n\r\r\r\t\rFAQs\rDo you have specific questions about HotelX? Check out the FAQs\n\r\r\r\r"
+	"content": "With HotelX, you can connect to multiple Suppliers and add business logic to reflect your pricing and unique offers.\nThere are no integration costs and you can integrate with hundreds of hotel Suppliers. HotelX has been designed from the ground up to be fast, reliable and capable of scaling to millions of requests.\nJoin us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.\r\r\rOverview\rHotelX Overview\n\r\r\r\r\rQuickstart\rHotelX Quickstart\n\r\r\r\r\rConcepts\rUnderstand TravelgateX basic concepts\n\r\r\r\r\rHow-to Guides\rPerform specific tasks\n\r\r\r\r\rPlugins\rAdditional logic to your App\n\r\r\r\r\rReference\rReference Documentation\n\r\r\r\r\rRelease Notes\rNew Updates \u0026amp; Releases\n\r\r\r\r\rFAQs\rDo you have specific questions about HotelX? Check out the FAQs\n\r\r\r\r"
 },
 {
 	"uri": "/hotelx/howtos/",
@@ -2825,7 +2825,7 @@
 	"title": "FlightX",
 	"tags": [],
 	"description": "",
-	"content": "FlightX connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel sellers. FlightX has been desined to be fast, reliable and offer strong performance.\n\t\rOverview\rFlightX Information\n\r\r\r\r"
+	"content": "FlightX connects you to multiple sellers addding business logic solving most of the problems commonly found in the travel business in an elegant and efficient way.\nThere are no integration investments and you can operate with hundreds of hotel sellers. FlightX has been desined to be fast, reliable and offer strong performance.\n\r\rOverview\rFlightX Information\n\r\r\r\r"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/",
@@ -2839,7 +2839,7 @@
 	"title": "Plugins",
 	"tags": [],
 	"description": "Additional logic to your App",
-	"content": "HotelX Plugins are the secret sauce of the HotelX API. They can be used to fully customize the request and response in any way one can think.\nHotelX Plugins are a separate Go application, that get compiled into the main application and run natively in our servers.\nAnyone can write a HotelX Plugin, and which Plugins get executed can be specified at the request level, or be configured by default.\nFollowing is the list of Plugins TravelgateX has already developed and are completely free to use.\n\t\rOverview\rPlugins Overview. What they are, when they get executed and how to execute them.\n\r\r\r\t\rBlacklist\rHotel codes blacklist: filter out specific hotels from the search query.\n\r\r\r\t\rMapping\rMap different codes from different suppliers in order to get a de-duped response.\n\r\r\r\t\rAggregation\rAggregate different Suppliers response based on different criteria.\n\r\r\r\t\rCommission\rConvert Gross Prices into Net Prices.\n\r\r\r\t\rMarkup\rMark up or down the price coming from the Supplier based on different criteria.\n\r\r\r\t\rCurrency Converter\rConvert currency in order to have a unified response.\n\r\r\r\t\rProcessor\rModify objects on both request and response.\n\r\r\r\t\rSearch by destination\rEnables search query to request per destinations by converting destination codes to hotel codes\n\r\r\r\t\rDevelopment\rLearn how to develop your own plugins and addd your magic to the API.\n\r\r\r\rEntities filename processing\rEntities filename processing explanation.\n\r\r\r\rFormat files\rFormat files explanation.\n\r\r\r\r"
+	"content": "HotelX Plugins are the secret sauce of the HotelX API. They can be used to fully customize the request and response in any way one can think.\nHotelX Plugins are a separate Go application, that get compiled into the main application and run natively in our servers.\nAnyone can write a HotelX Plugin, and which Plugins get executed can be specified at the request level, or be configured by default.\nFollowing is the list of Plugins TravelgateX has already developed and are completely free to use.\n\r\rOverview\rPlugins Overview. What they are, when they get executed and how to execute them.\n\r\r\r\r\rBlacklist\rHotel codes blacklist: filter out specific hotels from the search query.\n\r\r\r\r\rMapping\rMap different codes from different suppliers in order to get a de-duped response.\n\r\r\r\r\rAggregation\rAggregate different Suppliers response based on different criteria.\n\r\r\r\r\rCommission\rConvert Gross Prices into Net Prices.\n\r\r\r\r\rMarkup\rMark up or down the price coming from the Supplier based on different criteria.\n\r\r\r\r\rCurrency Converter\rConvert currency in order to have a unified response.\n\r\r\r\r\rProcessor\rModify objects on both request and response.\n\r\r\r\r\rSearch by destination\rEnables search query to request per destinations by converting destination codes to hotel codes\n\r\r\r\r\rDevelopment\rLearn how to develop your own plugins and addd your magic to the API.\n\r\r\r\rEntities filename processing\rEntities filename processing explanation.\n\r\r\r\rFormat files\rFormat files explanation.\n\r\r\r\r"
 },
 {
 	"uri": "/travelgatex/release-notes/products-changelogs/changelog-speed/",
@@ -2853,7 +2853,7 @@
 	"title": "StatsX",
 	"tags": [],
 	"description": "",
-	"content": "\r\t\rOverview\rStatsX Information\n\r\r\r\r"
+	"content": "\r\r\rOverview\rStatsX Information\n\r\r\r\r"
 },
 {
 	"uri": "/learning-graphql/tools/",
@@ -2874,7 +2874,7 @@
 	"title": "Community",
 	"tags": [],
 	"description": "",
-	"content": "\r\t\rStyle Guide\rCommunity Style Guide\n\r\r\r\t\rWritting release notes\rRelease notes, document with the changelog\n\r\r\r\r"
+	"content": "\r\r\rStyle Guide\rCommunity Style Guide\n\r\r\r\r\rWritting release notes\rRelease notes, document with the changelog\n\r\r\r\r"
 },
 {
 	"uri": "/hotelx/plugins/development/",
@@ -2909,14 +2909,14 @@
 	"title": "MappeaX",
 	"tags": [],
 	"description": "",
-	"content": "\r\t\rOverview\rFlightX Information\n\r\r\r\r"
+	"content": "\r\r\rOverview\rFlightX Information\n\r\r\r\r"
 },
 {
 	"uri": "/travelgatex/release-notes/products-changelogs/",
 	"title": "Products changelogs",
 	"tags": ["products-changelog"],
 	"description": "Contains a curated, chronologically ordered list of notable changes by product",
-	"content": "\r\t\rChannelX\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\t\rFlightsX\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\t\rMappea\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\t\rInventory\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\t\rSpeed\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\t\rInsights\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\t\rDistribution\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\t\rStats\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r"
+	"content": "\r\r\rChannelX\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r\rFlightsX\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r\rMappea\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r\rInventory\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r\rSpeed\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r\rInsights\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r\rDistribution\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r\rStats\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r"
 },
 {
 	"uri": "/hotelx/concepts/ranking/",
@@ -2937,14 +2937,14 @@
 	"title": "Release Notes",
 	"tags": ["release-notes"],
 	"description": "New Updates &amp; Releases",
-	"content": "\r\t\rRoadmap\rWe have put together a GitHub Project where we will keep updating on the things we’ve in our plans.\n\r\r\r\t\rChangelog\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\t\rGraphQL Schema Changes\rIt includes backwards-compatible changes, schema previews, and upcoming breaking changes.\n\r\r\r\t\rDeprecated Schema Notes\rChanges that can break existing queries to the GraphQL API. For example, removing a field would be a breaking change\n\r\r\r\t\rDeleted Schema Notes\rChanges history of deprecated notes previously announced\n\r\r\r\r"
+	"content": "\r\r\rRoadmap\rWe have put together a GitHub Project where we will keep updating on the things we’ve in our plans.\n\r\r\r\r\rChangelog\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r\rGraphQL Schema Changes\rIt includes backwards-compatible changes, schema previews, and upcoming breaking changes.\n\r\r\r\r\rDeprecated Schema Notes\rChanges that can break existing queries to the GraphQL API. For example, removing a field would be a breaking change\n\r\r\r\r\rDeleted Schema Notes\rChanges history of deprecated notes previously announced\n\r\r\r\r"
 },
 {
 	"uri": "/travelgatex/release-notes/",
 	"title": "Release Notes",
 	"tags": ["release-notes"],
 	"description": "New Updates &amp; Releases",
-	"content": "\r\t\rRoadmap\rWe have put together a GitHub Project where we will keep updating on the things we’ve in our plans.\n\r\r\r\t\rChangelog\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\t\rGraphQL Schema Changes\rIt includes backwards-compatible changes, schema previews, and upcoming breaking changes.\n\r\r\r\t\rDeprecated Schema Notes\rChanges that can break existing queries to the GraphQL API. For example, removing a field would be a breaking change\n\r\r\r\t\rDeleted Schema Notes\rChanges history of deprecated notes previously announced\n\r\r\r\t\rProducts changelogs\rContains a curated, chronologically ordered list of notable changes by product\n\r\r\r\r"
+	"content": "\r\r\rRoadmap\rWe have put together a GitHub Project where we will keep updating on the things we’ve in our plans.\n\r\r\r\r\rChangelog\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r\rGraphQL Schema Changes\rIt includes backwards-compatible changes, schema previews, and upcoming breaking changes.\n\r\r\r\r\rDeprecated Schema Notes\rChanges that can break existing queries to the GraphQL API. For example, removing a field would be a breaking change\n\r\r\r\r\rDeleted Schema Notes\rChanges history of deprecated notes previously announced\n\r\r\r\r\rProducts changelogs\rContains a curated, chronologically ordered list of notable changes by product\n\r\r\r\r"
 },
 {
 	"uri": "/travelgatex/resources/",
@@ -2986,7 +2986,7 @@
 	"title": "InsightsX",
 	"tags": [],
 	"description": "",
-	"content": "\r\t\rOverview\rFlightX Information\n\r\r\r\r"
+	"content": "\r\r\rOverview\rFlightX Information\n\r\r\r\r"
 },
 {
 	"uri": "/travelgatex/release-notes/products-changelogs/changelog-stats/",
