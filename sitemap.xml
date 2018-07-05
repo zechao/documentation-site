@@ -215,6 +215,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/release-notes/products-changelogs/changelog-channelx/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/enums/chargetype/</loc>
   </url>
   
@@ -236,6 +240,10 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/clientfilter/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/concepts/common-resources/</loc>
   </url>
   
   <url>
@@ -1003,11 +1011,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/resources/quotas-limits/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/resources/quotas-limits/</loc>
+    <loc>/hotelx/concepts/quotas-limits/</loc>
   </url>
   
   <url>
@@ -1060,6 +1064,14 @@
   
   <url>
     <loc>/travelgatex/reference/interfaces/response/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/release-notes/roadmap/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/release-notes/roadmap/</loc>
   </url>
   
   <url>
@@ -1403,11 +1415,23 @@
   </url>
   
   <url>
+    <loc>/hotelx/release-notes/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/release-notes/changelog/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/concepts/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/tutorials/howto-configure-permissions/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/release-notes/products-changelogs/changelog-flightsx/</loc>
   </url>
   
   <url>
@@ -1431,23 +1455,11 @@
   </url>
   
   <url>
+    <loc>/travelgatex/concepts/quotas-limits/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/</loc>
-  </url>
-  
-  <url>
-    <loc>/hotelx/resources/release-notes/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/resources/release-notes/</loc>
-  </url>
-  
-  <url>
-    <loc>/hotelx/resources/roadmap/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/resources/roadmap/</loc>
   </url>
   
   <url>
@@ -1487,15 +1499,19 @@
   </url>
   
   <url>
-    <loc>/hotelx/resources/frequently-asked-questions/</loc>
+    <loc>/hotelx/release-notes/graphql-schema-changes/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/resources/frequently-asked-questions/</loc>
+    <loc>/travelgatex/release-notes/graphql-schema-changes/</loc>
   </url>
   
   <url>
     <loc>/hotelx/plugins/format-files/group/group/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/release-notes/products-changelogs/changelog-mappea/</loc>
   </url>
   
   <url>
@@ -1527,6 +1543,14 @@
   </url>
   
   <url>
+    <loc>/hotelx/release-notes/deprecated_notes/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/release-notes/deprecated_notes/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/plugins/entities/entity_table/</loc>
   </url>
   
@@ -1548,6 +1572,10 @@
   
   <url>
     <loc>/travelgatex/reference/interfaces/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/release-notes/products-changelogs/changelog-inventory/</loc>
   </url>
   
   <url>
@@ -1579,6 +1607,14 @@
   </url>
   
   <url>
+    <loc>/hotelx/release-notes/deleted_notes/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/release-notes/deleted_notes/</loc>
+  </url>
+  
+  <url>
     <loc>/flightx/</loc>
   </url>
   
@@ -1588,6 +1624,10 @@
   
   <url>
     <loc>/hotelx/plugins/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/release-notes/products-changelogs/changelog-speed/</loc>
   </url>
   
   <url>
@@ -1619,7 +1659,15 @@
   </url>
   
   <url>
+    <loc>/travelgatex/release-notes/products-changelogs/changelog-insights/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/release-notes/products-changelogs/</loc>
   </url>
   
   <url>
@@ -1631,6 +1679,14 @@
   </url>
   
   <url>
+    <loc>/hotelx/release-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/release-notes/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/resources/</loc>
   </url>
   
@@ -1639,11 +1695,15 @@
   </url>
   
   <url>
-    <loc>/travelgatex/deprecated_notes/</loc>
+    <loc>/travelgatex/release-notes/products-changelogs/changelog-distribution/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/resources/deprecated_notes/</loc>
+    <loc>/hotelx/frequently-asked-questions/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/frequently-asked-questions/</loc>
   </url>
   
   <url>
@@ -1651,7 +1711,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/resources/</loc>
+    <loc>/travelgatex/release-notes/products-changelogs/changelog-stats/</loc>
   </url>
   
   <url>
@@ -1677,10 +1737,6 @@
   </url>
   
   <url>
-    <loc>/community/do-you-like-programming/</loc>
-  </url>
-  
-  <url>
     <loc>/guion/</loc>
   </url>
   
@@ -1690,15 +1746,41 @@
   </url>
   
   <url>
-    <loc>/travelgatex/concepts/common-resources/</loc>
-  </url>
-  
-  <url>
     <loc>/credits/</loc>
   </url>
   
   <url>
+    <loc>/tags/deleted-notes/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/deprecated-notes/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/faq/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/graphql-changelog/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/products-changelog/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/release-notes/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/roadmap/</loc>
     <priority>0</priority>
   </url>
   
