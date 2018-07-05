@@ -2698,7 +2698,7 @@
 	"uri": "/hotelx/release-notes/deprecated_notes/",
 	"title": "Deprecated Schema Notes",
 	"tags": ["deprecated-notes"],
-	"description": "Changes that can break existing queries to the GraphQL API. For example, removing a field would be a breaking change",
+	"description": "Changes that can break existing queries to the GraphQL HotelX API. For example, removing a field would be a breaking change",
 	"content": "Changes that can break existing queries to the GraphQL API. For example, removing a field would be a breaking change\rUnder construction!\rWe have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n\rJoin us on Slack and let us know what resources you need us to prirotize\rSend us a Jira service desk request\rLog an issues request with us\rWrite this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.\r\r"
 },
 {
@@ -2937,7 +2937,7 @@
 	"title": "Release Notes",
 	"tags": ["release-notes"],
 	"description": "New Updates &amp; Releases",
-	"content": "\r\r\rRoadmap\rWe have put together a GitHub Project where we will keep updating on the things we’ve in our plans.\n\r\r\r\r\rChangelog\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r\rGraphQL Schema Changes\rIt includes backwards-compatible changes, schema previews, and upcoming breaking changes.\n\r\r\r\r\rDeprecated Schema Notes\rChanges that can break existing queries to the GraphQL API. For example, removing a field would be a breaking change\n\r\r\r\r\rDeleted Schema Notes\rChanges history of deprecated notes previously announced\n\r\r\r\r"
+	"content": "\r\r\rRoadmap\rWe have put together a GitHub Project where we will keep updating on the things we’ve in our plans.\n\r\r\r\r\rChangelog\rContains a curated, chronologically ordered list of notable changes\n\r\r\r\r\rGraphQL Schema Changes\rIt includes backwards-compatible changes, schema previews, and upcoming breaking changes.\n\r\r\r\r\rDeprecated Schema Notes\rChanges that can break existing queries to the GraphQL HotelX API. For example, removing a field would be a breaking change\n\r\r\r\r\rDeleted Schema Notes\rChanges history of deprecated notes previously announced\n\r\r\r\r"
 },
 {
 	"uri": "/travelgatex/release-notes/",
