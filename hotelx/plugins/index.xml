@@ -69,7 +69,7 @@ It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
       <description>Net Price is an optional plugin and allows to net all the prices in an option.
  NetpriceX
  CommissionX (NetpriceX Extended funcionality)
-  NetPriceX (future deprecation) This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices.</description>
+  NetPriceX Goals This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. It is mandatory to load at least supplier&amp;rsquo;s commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices.</description>
     </item>
     
     <item>
@@ -119,6 +119,19 @@ CurrencyX This plugin receives an Option and a currency and returns the same opt
       
       <guid>/hotelx/plugins/development/</guid>
       <description>On this page you will learn how to develop your own HotelX Plugin.</description>
+    </item>
+    
+    <item>
+      <title>Entities</title>
+      <link>/hotelx/plugins/entity_table_file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/entity_table_file/</guid>
+      <description>Entities processed types: Sequential Type of processing sequentially, the first rule that coincides will be the one applied.
+Supplier Rules applied or indexed at the supplier level.
+Access Rules applied or indexed at the access level.
+Hotel The key to indexing is of the hotel type, we hope that the reference is by a hotel code where the type will be given by the context.
+Destination Idem hotel.</description>
     </item>
     
   </channel>

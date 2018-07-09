@@ -3612,30 +3612,18 @@ Queries Queries ask the system to provide some data, based on specfic parameters
       <description>Net Price is an optional plugin and allows to net all the prices in an option.
  NetpriceX
  CommissionX (NetpriceX Extended funcionality)
-  NetPriceX (future deprecation) This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices.</description>
+  NetPriceX Goals This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. It is mandatory to load at least supplier&amp;rsquo;s commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices.</description>
     </item>
     
     <item>
-      <title>Commission files format</title>
-      <link>/hotelx/plugins/format-files/commission/commission/</link>
+      <title>Commission supplier</title>
+      <link>/hotelx/plugins/format-file/commission_supplier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotelx/plugins/format-files/commission/commission/</guid>
-      <description> The commission file should be in the below format:
- Encoding: UTF-8 File Name:  Context Sequential commission  Extension file: csv Headers:  ruleId supplierCodes notSupplierCodes creationDateFrom createionDateTo checkInFrom hotelCodes nothotelCodes chainsCodes notChainCodes destinationCodes notDestinationCodes percentage force  Delimiter: Comma (“,”)  Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: context\sequential_commission.csv
-Data:
-ruleId,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,force CE1,DIN,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false CE2,DIN,,,,,,3846,,,,,,15.00,false  </description>
-    </item>
-    
-    <item>
-      <title>Commission supplier file</title>
-      <link>/hotelx/plugins/format-files/net-price/commission_supplier/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/plugins/format-files/net-price/commission_supplier/</guid>
+      <guid>/hotelx/plugins/format-file/commission_supplier/</guid>
       <description> The commission supplier file should be in the below format:
 Commission supplier File Format The file should be in the below format:
- Encoding: UTF-8  File Name: commission_supplier.csv  supplier commission  Extension file: csv Headers:  supplier Commission → commission value, decimal separator must be point (&amp;ldquo;.&amp;rdquo;)  Delimiter: Comma (“,”)  Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: commission_supplier.csv
+ Encoding: UTF-8  File Name: commission_supplier.csv  supplier commission  Extension file: csv Headers:  supplier → supplier code commission → commission value, decimal separator must be point (&amp;ldquo;.&amp;rdquo;)  Delimiter: Comma (“,”)  Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: commission_supplier.csv
 Data:
 Supplier,Commission AXI,0 AXI2,0  </description>
     </item>
@@ -3674,19 +3662,6 @@ Check out this list of new releases and changes applied on the TravelgateX Graph
 ✅ Field Stats.statsData description changed from `GUID
 The data returned by a `Stats` query.toGUID
 The data returned by a Stats query.</description>
-    </item>
-    
-    <item>
-      <title>Group file format</title>
-      <link>/hotelx/plugins/format-files/group/group/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/plugins/format-files/group/group/</guid>
-      <description> The hotel group file should be in the below format:
- Encoding: UTF-8  File Name: context_entity_group.csv  Context Entity (file will be indexed by this field) Format (indicate format file)  Extension file: csv Headers:  key hotelCodes chainCodes destinationCodes  Delimiter: Comma (“,”)  Directory: /F[folder code]\Maps/HotelX\Hotel/  Sample File Name: context_entity_group.csv
-Data:
-Hotel entity example
-key,chainCodes,destinationCodes 1,OHTEL,DNBFQ;BYWRS;BUJSY;BTENE;CGGSZ;CGUNN;COMERCIAL152 2,000-INDEP,3PR;BYQIW;GCNR;BUJSF;BTENB;CGGSZ;CGUNN;COMERCIAL76  Possible values entity filename    Entity chainCodes destinationCodes hotelCodes     hotel Yes Yes No   destination Yes No Yes    </description>
     </item>
     
     <item>
@@ -3761,24 +3736,14 @@ CurrencyX This plugin receives an Option and a currency and returns the same opt
     </item>
     
     <item>
-      <title>Entity file processing values</title>
-      <link>/hotelx/plugins/entities/entity_table/</link>
+      <title>Hotel Commission</title>
+      <link>/hotelx/plugins/format-file/commission_netprice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotelx/plugins/entities/entity_table/</guid>
-      <description>File proccessing types:
-Sequential A file is processed sequentially.</description>
-    </item>
-    
-    <item>
-      <title>Hotel Commission file</title>
-      <link>/hotelx/plugins/format-files/net-price/commission_old/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/plugins/format-files/net-price/commission_old/</guid>
+      <guid>/hotelx/plugins/format-file/commission_netprice/</guid>
       <description>The commission file should be in the below format:
 Hotel Commission File Format The hotel commission file should be in the below format:
- Encoding: UTF-8  File Name: commission_hotel.csv  commission hotel  Extension file: csv Headers:  Supplier → supplier code  Hotel → hotel code  Commission → commission value, decimal separator must be point (&amp;ldquo;.&amp;rdquo;)  Delimiter: Comma (“,”)  Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: commission_supplier.</description>
+ Encoding: UTF-8  File Name: commission_hotel.csv  commission hotel  Extension file: csv Headers:  supplier → supplier code  hotel → hotel code  commission → commission value, decimal separator must be point (&amp;ldquo;.&amp;rdquo;)  Delimiter: Comma (“,”)  Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: commission_supplier.</description>
     </item>
     
     <item>
@@ -3862,6 +3827,18 @@ In this case you can search the bookings with references or by dates, the dates 
     </item>
     
     <item>
+      <title>Group</title>
+      <link>/hotelx/plugins/format-file/group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/format-file/group/</guid>
+      <description>The hotel group file should be in the below format:
+ Encoding: UTF-8  File Name: context_entity_group.csv  Context Entity (file will be indexed by this field). Format (indicates format file)  Extension file: csv Headers:  key → Entity. hotelCodes → hotel code chainCodes → chain code destinationCodes → destination code  Delimiter: Comma (“,”)  Directory: /F[folder code]\Maps/HotelX\Hotel/  Sample File Name: context_entity_group.csv
+Data:
+Hotel entity example</description>
+    </item>
+    
+    <item>
       <title>Speed</title>
       <link>/travelgatex/release-notes/products-changelogs/changelog-speed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3883,6 +3860,16 @@ Schemas Design  APIs Guru&amp;rsquo;s graphql-faker  Go Packages Nowadays most o
     </item>
     
     <item>
+      <title>Commission</title>
+      <link>/hotelx/plugins/format-file/commission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/format-file/commission/</guid>
+      <description>The commission file should be in the below format:
+ Encoding: UTF-8 File Name:  context sequential commission  Extension file: csv Headers:  ruleId → rule identifier supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date creationDateTo → end creation date checkInFrom → checkin date hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.</description>
+    </item>
+    
+    <item>
       <title>Development</title>
       <link>/hotelx/plugins/development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3893,12 +3880,12 @@ Schemas Design  APIs Guru&amp;rsquo;s graphql-faker  Go Packages Nowadays most o
     
     <item>
       <title>Entity Table values</title>
-      <link>/hotelx/plugins/format-files/entities/entity_table/</link>
+      <link>/hotelx/plugins/format-file/entity_table/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotelx/plugins/format-files/entities/entity_table/</guid>
+      <guid>/hotelx/plugins/format-file/entity_table/</guid>
       <description>We have different combinations values from entities values this table show this combinations:
-   Entity ChainCodes DestinationCodes HotelCodes     chain Yes No No   hotel No No Yes   destination No Yes No    </description>
+   entity chainCodes destinationCodes hotelCodes     chain Yes No No   hotel No No Yes   destination No Yes No    </description>
     </item>
     
     <item>
@@ -3942,6 +3929,19 @@ We want to be part of this community and hopefully help you discover this new te
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on the product.
 Product Page Link
 All notable changes to this product will be documented in this page. Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
+    </item>
+    
+    <item>
+      <title>Entities</title>
+      <link>/hotelx/plugins/entity_table_file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/entity_table_file/</guid>
+      <description>Entities processed types: Sequential Type of processing sequentially, the first rule that coincides will be the one applied.
+Supplier Rules applied or indexed at the supplier level.
+Access Rules applied or indexed at the access level.
+Hotel The key to indexing is of the hotel type, we hope that the reference is by a hotel code where the type will be given by the context.
+Destination Idem hotel.</description>
     </item>
     
     <item>

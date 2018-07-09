@@ -1483,11 +1483,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/format-files/commission/commission/</loc>
-  </url>
-  
-  <url>
-    <loc>/hotelx/plugins/format-files/net-price/commission_supplier/</loc>
+    <loc>/hotelx/plugins/format-file/commission_supplier/</loc>
   </url>
   
   <url>
@@ -1507,19 +1503,11 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/format-files/group/group/</loc>
-  </url>
-  
-  <url>
     <loc>/travelgatex/release-notes/products-changelogs/changelog-mappea/</loc>
   </url>
   
   <url>
     <loc>/hotelx/plugins/markup/</loc>
-  </url>
-  
-  <url>
-    <loc>/hotelx/plugins/format-files/net-price/</loc>
   </url>
   
   <url>
@@ -1535,10 +1523,6 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/format-files/commission/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/plugins/converter/</loc>
   </url>
   
@@ -1551,15 +1535,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/entities/entity_table/</loc>
-  </url>
-  
-  <url>
-    <loc>/hotelx/plugins/format-files/group/</loc>
-  </url>
-  
-  <url>
-    <loc>/hotelx/plugins/format-files/net-price/commission_old/</loc>
+    <loc>/hotelx/plugins/format-file/commission_netprice/</loc>
   </url>
   
   <url>
@@ -1619,6 +1595,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/plugins/format-file/group/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/</loc>
   </url>
   
@@ -1643,6 +1623,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/plugins/format-file/commission/</loc>
+  </url>
+  
+  <url>
     <loc>/community/</loc>
   </url>
   
@@ -1651,11 +1635,15 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/format-files/entities/entity_table/</loc>
+    <loc>/hotelx/plugins/format-file/entity_table/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/enums/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/format-file/</loc>
   </url>
   
   <url>
@@ -1699,6 +1687,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/plugins/entity_table_file/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/frequently-asked-questions/</loc>
   </url>
   
@@ -1712,14 +1704,6 @@
   
   <url>
     <loc>/travelgatex/release-notes/products-changelogs/changelog-stats/</loc>
-  </url>
-  
-  <url>
-    <loc>/hotelx/plugins/entities/</loc>
-  </url>
-  
-  <url>
-    <loc>/hotelx/plugins/format-files/</loc>
   </url>
   
   <url>
