@@ -1483,7 +1483,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/format-file/commission_supplier/</loc>
+    <loc>/hotelx/plugins/format-files/commission_supplier/</loc>
   </url>
   
   <url>
@@ -1535,7 +1535,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/format-file/commission_netprice/</loc>
+    <loc>/hotelx/plugins/format-files/commission_netprice/</loc>
   </url>
   
   <url>
@@ -1595,7 +1595,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/format-file/group/</loc>
+    <loc>/hotelx/plugins/format-files/group/</loc>
   </url>
   
   <url>
@@ -1623,7 +1623,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/format-file/commission/</loc>
+    <loc>/hotelx/plugins/format-files/commission/</loc>
   </url>
   
   <url>
@@ -1635,7 +1635,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/format-file/entity_table/</loc>
+    <loc>/hotelx/plugins/format-files/entity_table/</loc>
   </url>
   
   <url>
@@ -1643,7 +1643,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/format-file/</loc>
+    <loc>/hotelx/plugins/format-files/</loc>
   </url>
   
   <url>

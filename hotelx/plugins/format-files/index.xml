@@ -11,13 +11,59 @@
     
     
     <item>
-      <title>Entity Table values</title>
-      <link>/hotelx/plugins/format-files/entities/entity_table/</link>
+      <title>Commission supplier</title>
+      <link>/hotelx/plugins/format-files/commission_supplier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotelx/plugins/format-files/entities/entity_table/</guid>
+      <guid>/hotelx/plugins/format-files/commission_supplier/</guid>
+      <description> The commission supplier file should be in the below format:
+Commission supplier File Format The file should be in the below format:
+ Encoding: UTF-8  File Name: commission_supplier.csv  supplier commission  Extension file: csv Headers:  supplier → supplier code commission → commission value, decimal separator must be point (&amp;ldquo;.&amp;rdquo;)  Delimiter: Comma (“,”)  Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: commission_supplier.csv
+Data:
+Supplier,Commission AXI,0 AXI2,0  </description>
+    </item>
+    
+    <item>
+      <title>Hotel Commission</title>
+      <link>/hotelx/plugins/format-files/commission_netprice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/format-files/commission_netprice/</guid>
+      <description>The commission file should be in the below format:
+Hotel Commission File Format The hotel commission file should be in the below format:
+ Encoding: UTF-8  File Name: commission_hotel.csv  commission hotel  Extension file: csv Headers:  supplier → supplier code  hotel → hotel code  commission → commission value, decimal separator must be point (&amp;ldquo;.&amp;rdquo;)  Delimiter: Comma (“,”)  Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: commission_supplier.</description>
+    </item>
+    
+    <item>
+      <title>Group</title>
+      <link>/hotelx/plugins/format-files/group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/format-files/group/</guid>
+      <description>The hotel group file should be in the below format:
+ Encoding: UTF-8  File Name: context_entity_group.csv  Context Entity (file will be indexed by this field). Format (indicates format file)  Extension file: csv Headers:  key → Entity. hotelCodes → hotel code chainCodes → chain code destinationCodes → destination code  Delimiter: Comma (“,”)  Directory: /F[folder code]\Maps/HotelX\Hotel/  Sample File Name: context_entity_group.csv
+Data:
+Hotel entity example</description>
+    </item>
+    
+    <item>
+      <title>Commission</title>
+      <link>/hotelx/plugins/format-files/commission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/format-files/commission/</guid>
+      <description>The commission file should be in the below format:
+ Encoding: UTF-8 File Name:  context sequential commission  Extension file: csv Headers:  ruleId → rule identifier supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date creationDateTo → end creation date checkInFrom → checkin date hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.</description>
+    </item>
+    
+    <item>
+      <title>Entity Table values</title>
+      <link>/hotelx/plugins/format-files/entity_table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/format-files/entity_table/</guid>
       <description>We have different combinations values from entities values this table show this combinations:
-   Entity ChainCodes DestinationCodes HotelCodes     chain Yes No No   hotel No No Yes   destination No Yes No    </description>
+   entity chainCodes destinationCodes hotelCodes     chain Yes No No   hotel No No Yes   destination No Yes No    </description>
     </item>
     
   </channel>
