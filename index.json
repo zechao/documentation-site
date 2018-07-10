@@ -2762,7 +2762,7 @@
 	"title": "Data Automation",
 	"tags": [],
 	"description": "Automate bulk data operations",
-	"content": " Bulk Data Automation Several of our TravelgateX API products use your data in order to perform tasks.\nFor example, your application may use certain field names to describe rooms, hotel amenities, and rates. These need to be matched to field names for your suppliers.\nYou can upload your data to our platform by: - Uploading it via SFTP or - Changing data via a mutation.\nYou can decide what is the best way for you to get your updated data into our servers.\nOur APIs have been built from the ground up with performance in mind. That means we must store data inside the application in order to keep the response time to a minimum.\nThe data we must store following specificitations:\nHotelX  Mappings Custom hotel lists  Uploading Strategies How to Upload data\n    "
+	"content": " Bulk Data Automation Several of our TravelgateX API products use your data in order to perform tasks.\nFor example, your application may use certain field names to describe rooms, hotel amenities, and rates. These need to be matched to field names for your suppliers.\nYou can upload your data to our platform by: - Uploading it via SFTP or - Changing data via a mutation.\nYou can decide what is the best way for you to get your updated data into our servers.\nOur APIs have been built from the ground up with performance in mind. That means we must store data inside the application in order to keep the response time to a minimum.\nThe data we must store following specificitations:\nHotelX  Mappings Custom hotel lists    Uploading Strategies How to Upload data\n    "
 },
 {
 	"uri": "/hotelx/release-notes/deleted_notes/",
