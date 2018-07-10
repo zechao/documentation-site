@@ -2580,7 +2580,7 @@
 	"title": "Booking Flow",
 	"tags": [],
 	"description": "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation",
-	"content": " Booking Flow Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n   Search Single Mode \u0026amp; Multi Mode Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n    "
+	"content": "   Booking Flow Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n     Search Single Mode \u0026amp; Multi Mode Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n    "
 },
 {
 	"uri": "/hotelx/plugins/net-price/",
@@ -2608,7 +2608,7 @@
 	"title": "Concepts",
 	"tags": [],
 	"description": "Understand TravelgateX basic concepts",
-	"content": " Access, Supplier and Context Learn about entities used in HotelX\n   Quotas \u0026amp; Limits    Booking Flow Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n   Booking Flow: Learn about Transactional Booking flow. Search, Quote and Confirm Reservation   Search Single Mode \u0026amp; Multi Mode: Learn about Transactional Booking flow. Search, Quote and Confirm Reservation      Management Flow Learn about Management Flow. Cancellations and Booking List\n   Content Learn about how manage content data to manage in your site. Hotel, Boards, Categories...\n   Ranking Learn about how to rank hotels\n    "
+	"content": "   Access, Supplier and Context Learn about entities used in HotelX\n     Quotas \u0026amp; Limits      Booking Flow Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n     Management Flow Learn about Management Flow. Cancellations and Booking List\n     Content Learn about how manage content data to manage in your site. Hotel, Boards, Categories...\n     Ranking Learn about how to rank hotels\n    "
 },
 {
 	"uri": "/hotelx/release-notes/graphql-schema-changes/",
