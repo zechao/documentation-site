@@ -2476,35 +2476,27 @@ USD,1.29
 <h3 id="execution-example">Execution example</h3>
 
 <pre><code>{
-    &quot;plugins&quot;: {
-    
+  &quot;plugins&quot;: [
+    {
       &quot;step&quot;: &quot;RESPONSE_OPTION&quot;,
-      
-      &quot;pluginsType&quot;: {
-      
-        &quot;type&quot;: &quot;CURRENCY_CONVERSION&quot;,
-        
-        &quot;name&quot;: &quot;currency_exchange&quot;,
-        
-        &quot;parameters&quot;: [
-        
-          {
-          
-            &quot;key&quot;: &quot;currency&quot;,
-            
-            &quot;value&quot;: &quot;GBP&quot;
-          
-          },
-          {
-          
-            &quot;key&quot;: &quot;exclude&quot;,
-            
-            &quot;value&quot;: &quot;true&quot;
-          
-          }
-        ]
-      }
+      &quot;pluginsType&quot;: [
+        {
+          &quot;type&quot;: &quot;CURRENCY_CONVERSION&quot;,
+          &quot;name&quot;: &quot;currency_exchange&quot;,
+          &quot;parameters&quot;: [
+            {
+              &quot;key&quot;: &quot;currency&quot;,
+              &quot;value&quot;: &quot;GBP&quot;
+            },
+            {
+              &quot;key&quot;: &quot;exclude&quot;,
+              &quot;value&quot;: &quot;true&quot;
+            }
+          ]
+        }
+      ]
     }
+  ]
 }
 </code></pre>
 
