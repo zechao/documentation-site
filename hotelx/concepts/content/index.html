@@ -2779,7 +2779,20 @@ div.result-window > div.CodeMirror {
 
 <h3 id="rooms">Rooms</h3>
 
-<p>Room static data returns a simple map of the rooms that can be returned with its translation to other languages.</p>
+<p>Room static data returns a simple map of the rooms that can be returned with its translation to other languages. You can get the rooms from room codes. The full response, such as hotel query, is splitted by pages. By default, the number of rooms in each page are 1000, however you can choose the size with a value between 100 and 10000.</p>
+
+<h3 id="criteria-1">Criteria</h3>
+
+<p><strong>Mandatory fields</strong><br />
+- access-&gt; It represents the access for which you want to get the room description.</p>
+
+<p><strong>Optional fields</strong><br />
+- roomCodes-&gt; it allows to filter by room codes<br />
+- maxSize-&gt; it allows to specify the number of elements per page</p>
+
+<h3 id="token-1">Token</h3>
+
+<p>The token allows to request the next page of rooms. The correct way of obtaining a multiple pages of rooms is mantain this field empty for the first execution and request the token field in the response graph. Then send other/s query/ies filling the token field in the input with the value returned in the previous response.</p>
 
 <h4 id="playground-samples-3">Playground Samples</h4>
 
@@ -2837,7 +2850,9 @@ div.result-window > div.CodeMirror {
 <ul>
 <li><a href="#playground-samples-2">Playground Samples</a></li>
 </ul></li>
-<li><a href="#rooms">Rooms</a>
+<li><a href="#rooms">Rooms</a></li>
+<li><a href="#criteria-1">Criteria</a></li>
+<li><a href="#token-1">Token</a>
 <ul>
 <li><a href="#playground-samples-3">Playground Samples</a></li>
 </ul></li>

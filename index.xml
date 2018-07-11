@@ -3527,8 +3527,8 @@ HotelX Settings In HotelX we have differents configuration level settings for a 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/release-notes/changelog/</guid>
-      <description> To make it easier for users and contributors to see precisely what notable changes have been made on HotelX product.
-All notable changes on our platform will be documented in this page.2018-07-04 Fixed  Wrong behaviour that made options to be discarded when price in supplements was empty in Search query.  </description>
+      <description>To make it easier for users and contributors to see precisely what notable changes have been made on HotelX product.
+All notable changes on our platform will be documented in this page.2018-07-11 Changed  Improvement of the Rooms schema with paged list and max number of elements per page. By defect are 1000 rooms.  2018-07-04 Fixed  Wrong behaviour that made options to be discarded when price in supplements was empty in Search query.</description>
     </item>
     
     <item>
@@ -3538,7 +3538,7 @@ All notable changes on our platform will be documented in this page.2018-07-04 
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description> To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page.2018-07-04 Fixed  Wrong behaviour that made options to be discarded when price in supplements was empty in Search query.  </description>
+All notable changes on TravelgateX platform will be documented in this page.2018-07-10 Added  Deleted schema notes  Changed  GraphQL Schema updated. New version of Deprecated schema notes  </description>
     </item>
     
     <item>
