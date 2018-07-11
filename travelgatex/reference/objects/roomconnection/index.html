@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.37.1" />
 <title>RoomConnection :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -235,6 +235,16 @@
           <li data-nav-id="/travelgatex/reference/objects/adminquery/" class="dd-item">
             <a href="/travelgatex/reference/objects/adminquery/">
               <span style="padding-left: 8px;">AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airport/">
+              <span style="padding-left: 8px;">Airport</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airportdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airportdata/">
+              <span style="padding-left: 8px;">AirportData</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/amenity/" class="dd-item">
@@ -1520,6 +1530,11 @@
               <span style="padding-left: 8px;">PaymentCardInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/">
+              <span style="padding-left: 8px;">PaymentXBookingInfoCriteriaInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/">
               <span style="padding-left: 8px;">PaymentXBookingInfoDeleteInput</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2443,6 +2458,17 @@
                     <li>
                         <span class="tab">
                             
+<span class="meta">token</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            
 <span class="meta">pageInfo</span>: <a class="support type" href="/travelgatex/reference/objects/pageinfo">PageInfo!</a> 
                         </span>
                     </li>
@@ -2454,6 +2480,8 @@
             <button class="btn btn-sm btn-info" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
         </div>
         <div class="deprecated-entities-container">
+        
+            
         
             
         
@@ -2477,9 +2505,26 @@
     </li>
     
     <li class="lifields">
+        <a href="/travelgatex/reference/scalars/string">token(String):</a>
+        <span class="description"></span>
+    </li>
+    
+    <li class="lifields">
         <a href="/travelgatex/reference/objects/pageinfo">pageInfo(PageInfo!):</a>
         <span class="description">Indicates info about page</span>
     </li>
+    
+</ul></p>
+
+<h2 id="required-by">Required by</h2>
+
+<p><ul class="require-by">
+        <li class="lifields">
+            <a href="/travelgatex/reference/objects/hotelxquery">
+                HotelXQuery: 
+            </a>
+            <span></span>
+        </li>
     
 </ul></p>
 
@@ -2498,6 +2543,7 @@
 <ul>
 <li><a href="#graphql-schema-definition">GraphQL schema definition</a></li>
 <li><a href="#fields">Fields</a></li>
+<li><a href="#required-by">Required by</a></li>
 </ul></li>
 </ul>
 </nav>

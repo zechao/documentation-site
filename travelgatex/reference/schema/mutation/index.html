@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.37.1" />
 <title>Mutation :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -235,6 +235,16 @@
           <li data-nav-id="/travelgatex/reference/objects/adminquery/" class="dd-item">
             <a href="/travelgatex/reference/objects/adminquery/">
               <span style="padding-left: 8px;">AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airport/">
+              <span style="padding-left: 8px;">Airport</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airportdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airportdata/">
+              <span style="padding-left: 8px;">AirportData</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/amenity/" class="dd-item">
@@ -1520,6 +1530,11 @@
               <span style="padding-left: 8px;">PaymentCardInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/">
+              <span style="padding-left: 8px;">PaymentXBookingInfoCriteriaInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/">
               <span style="padding-left: 8px;">PaymentXBookingInfoDeleteInput</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2472,18 +2487,6 @@
             
         
             
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
         <div class="deprecated-button-container" >
             <button class="btn btn-sm btn-info" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
         </div>
@@ -2495,110 +2498,6 @@
         
             
         
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">hotelBook</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelbookinput">HotelBookInput!</a>,
-<span class="meta">settings</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelsettingsinput">HotelSettingsInput</a>,
-): <a class="support type" href="/travelgatex/reference/objects/hotelbookpayload">HotelBookPayload</a> 
-                            </span>
-                            
-                            <span class="text-secondary">// deprecated from 2017-11-21. You can find it in query at HotelX</span>
-                            
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">hotelCancel</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelcancelinput">HotelCancelInput!</a>,
-<span class="meta">settings</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelsettingsinput">HotelSettingsInput</a>,
-): <a class="support type" href="/travelgatex/reference/objects/hotelcancelpayload">HotelCancelPayload</a> 
-                            </span>
-                            
-                            <span class="text-secondary">// deprecated from 2017-11-21. You can find it in query at HotelX</span>
-                            
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">loadFile</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String!</a>,
-): <a class="support type" href="/travelgatex/reference/scalars/string">String!</a> 
-                            </span>
-                            
-                            <span class="text-secondary">// deprecated from 2017-11-21. You can find it in query at Admin</span>
-                            
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">createDefaultSettings</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/defaultsettingsinput">DefaultSettingsInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/defaultsettings">DefaultSettings</a> 
-                            </span>
-                            
-                            <span class="text-secondary">// deprecated from 2017-11-21. You can find it in query at Admin</span>
-                            
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">updateDefaultSettings</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/defaultsettingsinput">DefaultSettingsInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/defaultsettings">DefaultSettings</a> 
-                            </span>
-                            
-                            <span class="text-secondary">// deprecated from 2017-11-21. You can find it in query at Admin</span>
-                            
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">deleteDefaultSettings</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String!</a>,
-): <a class="support type" href="/travelgatex/reference/scalars/boolean">Boolean!</a> 
-                            </span>
-                            
-                            <span class="text-secondary">// deprecated from 2017-11-21. You can find it in query at Admin</span>
-                            
-                        </li>
-                    
-                
             
         
         </div>
@@ -2631,36 +2530,6 @@
     <li class="lifields">
         <a href="/travelgatex/reference/objects/paymentxmutation">paymentX(PaymentXMutation):</a>
         <span class="description"></span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/hotelbookpayload">hotelBook(HotelBookPayload):</a>
-        <span class="description">Creates a new hotel booking consisting of an option of 1 or more rooms.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/hotelcancelpayload">hotelCancel(HotelCancelPayload):</a>
-        <span class="description">Cancels an existing hotel booking consisting of an option of 1 or more rooms.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/scalars/string">loadFile(String!):</a>
-        <span class="description">Load mapping files for a group.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/defaultsettings">createDefaultSettings(DefaultSettings):</a>
-        <span class="description">Creates a defaultSettings for a given group</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/defaultsettings">updateDefaultSettings(DefaultSettings):</a>
-        <span class="description">Updates a defaultSettings for a given group</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/scalars/boolean">deleteDefaultSettings(Boolean!):</a>
-        <span class="description">Deletes a defaultSettings for a given group</span>
     </li>
     
 </ul></p>

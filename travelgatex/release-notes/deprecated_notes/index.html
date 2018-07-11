@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.37.1" />
 <title>Deprecated Schema Notes :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -233,6 +233,16 @@
           <li data-nav-id="/travelgatex/reference/objects/adminquery/" class="dd-item">
             <a href="/travelgatex/reference/objects/adminquery/">
               <span style="padding-left: 8px;">AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airport/">
+              <span style="padding-left: 8px;">Airport</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airportdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airportdata/">
+              <span style="padding-left: 8px;">AirportData</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/amenity/" class="dd-item">
@@ -1518,6 +1528,11 @@
               <span style="padding-left: 8px;">PaymentCardInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/">
+              <span style="padding-left: 8px;">PaymentXBookingInfoCriteriaInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/">
               <span style="padding-left: 8px;">PaymentXBookingInfoDeleteInput</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2428,7 +2443,7 @@ role="alert">Changes that can break existing queries to the GraphQL API. For exa
 <thead>
 <tr>
 <th align="left">Deprecation date</th>
-<th align="left">Deletion date</th>
+<th align="left">Expected deletion date</th>
 <th align="left">Days left</th>
 <th align="left">Name</th>
 <th align="left">Location</th>
@@ -2443,15 +2458,6 @@ role="alert">Changes that can break existing queries to the GraphQL API. For exa
 <td align="left">Already passed</td>
 <td align="left"><a href="/travelgatex/reference/objects/hotelbooking">hotel</a></td>
 <td align="left">Booking</td>
-<td align="left">You can find it in query at HotelX</td>
-</tr>
-
-<tr>
-<td align="left">2017-11-21</td>
-<td align="left">2018-02-19</td>
-<td align="left">Already passed</td>
-<td align="left"><a href="/travelgatex/reference/objects/booking">booking</a></td>
-<td align="left">Query</td>
 <td align="left">You can find it in query at HotelX</td>
 </tr>
 
@@ -2474,96 +2480,6 @@ role="alert">Changes that can break existing queries to the GraphQL API. For exa
 </tr>
 
 <tr>
-<td align="left">2017-11-21</td>
-<td align="left">2018-02-19</td>
-<td align="left">Already passed</td>
-<td align="left"><a href="/travelgatex/reference/objects/defaultsettings">createDefaultSettings</a></td>
-<td align="left">Mutation</td>
-<td align="left">You can find it in query at Admin</td>
-</tr>
-
-<tr>
-<td align="left">2017-11-21</td>
-<td align="left">2018-02-19</td>
-<td align="left">Already passed</td>
-<td align="left"><a href="/travelgatex/reference/scalars/string">loadFile</a></td>
-<td align="left">Mutation</td>
-<td align="left">You can find it in query at Admin</td>
-</tr>
-
-<tr>
-<td align="left">2017-11-21</td>
-<td align="left">2018-02-19</td>
-<td align="left">Already passed</td>
-<td align="left"><a href="/travelgatex/reference/objects/search">search</a></td>
-<td align="left">Query</td>
-<td align="left">You can find it in query at HotelX</td>
-</tr>
-
-<tr>
-<td align="left">2017-11-21</td>
-<td align="left">2018-02-19</td>
-<td align="left">Already passed</td>
-<td align="left"><a href="/travelgatex/reference/objects/quote">quote</a></td>
-<td align="left">Query</td>
-<td align="left">You can find it in query at HotelX</td>
-</tr>
-
-<tr>
-<td align="left">2017-11-21</td>
-<td align="left">2018-02-19</td>
-<td align="left">Already passed</td>
-<td align="left"><a href="/travelgatex/reference/scalars/boolean">deleteDefaultSettings</a></td>
-<td align="left">Mutation</td>
-<td align="left">You can find it in query at Admin</td>
-</tr>
-
-<tr>
-<td align="left">2017-11-21</td>
-<td align="left">2018-02-19</td>
-<td align="left">Already passed</td>
-<td align="left"><a href="/travelgatex/reference/objects/defaultsettings">defaultSettings</a></td>
-<td align="left">Query</td>
-<td align="left">You can find it in query at HotelX</td>
-</tr>
-
-<tr>
-<td align="left">2017-11-21</td>
-<td align="left">2018-02-19</td>
-<td align="left">Already passed</td>
-<td align="left"><a href="/travelgatex/reference/objects/mapping">mapping</a></td>
-<td align="left">Query</td>
-<td align="left">You can find it in query at HotelX</td>
-</tr>
-
-<tr>
-<td align="left">2017-11-21</td>
-<td align="left">2018-02-19</td>
-<td align="left">Already passed</td>
-<td align="left"><a href="/travelgatex/reference/objects/hotelbookpayload">hotelBook</a></td>
-<td align="left">Mutation</td>
-<td align="left">You can find it in query at HotelX</td>
-</tr>
-
-<tr>
-<td align="left">2017-11-21</td>
-<td align="left">2018-02-19</td>
-<td align="left">Already passed</td>
-<td align="left"><a href="/travelgatex/reference/objects/hotelcancelpayload">hotelCancel</a></td>
-<td align="left">Mutation</td>
-<td align="left">You can find it in query at HotelX</td>
-</tr>
-
-<tr>
-<td align="left">2017-11-21</td>
-<td align="left">2018-02-19</td>
-<td align="left">Already passed</td>
-<td align="left"><a href="/travelgatex/reference/objects/defaultsettings">updateDefaultSettings</a></td>
-<td align="left">Mutation</td>
-<td align="left">You can find it in query at Admin</td>
-</tr>
-
-<tr>
 <td align="left">2017-12-12</td>
 <td align="left">2018-03-12</td>
 <td align="left">Already passed</td>
@@ -2582,21 +2498,30 @@ role="alert">Changes that can break existing queries to the GraphQL API. For exa
 </tr>
 
 <tr>
-<td align="left">2018-06-01</td>
-<td align="left">2018-08-30</td>
-<td align="left">58</td>
-<td align="left"><a href="/travelgatex/reference/scalars/string">type</a></td>
-<td align="left">AdviseMessage</td>
-<td align="left"></td>
+<td align="left">2018-08-03</td>
+<td align="left">2018-11-01</td>
+<td align="left">112</td>
+<td align="left"><a href="/travelgatex/reference/scalars/string">organization</a></td>
+<td align="left">PaymentXBookingInfoFilterInput</td>
+<td align="left">Please use PaymentXBookingInfoCriteriaInput</td>
 </tr>
 
 <tr>
-<td align="left">2018-06-06</td>
-<td align="left">2018-09-04</td>
-<td align="left">63</td>
-<td align="left"><a href="/travelgatex/reference/scalars/string">loadFile</a></td>
-<td align="left">HotelXMutation</td>
-<td align="left"></td>
+<td align="left">2018-08-03</td>
+<td align="left">2018-11-01</td>
+<td align="left">112</td>
+<td align="left"><a href="/travelgatex/reference/scalars/id">pointOfSaleCode</a></td>
+<td align="left">PaymentXBookingInfoFilterInput</td>
+<td align="left">Please use PaymentXBookingInfoCriteriaInput</td>
+</tr>
+
+<tr>
+<td align="left">2018-08-03</td>
+<td align="left">2018-11-01</td>
+<td align="left">112</td>
+<td align="left"><a href="/travelgatex/reference/scalars/string">bookingReference</a></td>
+<td align="left">PaymentXBookingInfoFilterInput</td>
+<td align="left">Please use PaymentXBookingInfoCriteriaInput</td>
 </tr>
 
 <tr>

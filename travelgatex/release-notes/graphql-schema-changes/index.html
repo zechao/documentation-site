@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.37.1" />
 <title>GraphQL Schema Changes :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -233,6 +233,16 @@
           <li data-nav-id="/travelgatex/reference/objects/adminquery/" class="dd-item">
             <a href="/travelgatex/reference/objects/adminquery/">
               <span style="padding-left: 8px;">AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airport/">
+              <span style="padding-left: 8px;">Airport</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airportdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airportdata/">
+              <span style="padding-left: 8px;">AirportData</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/amenity/" class="dd-item">
@@ -1518,6 +1528,11 @@
               <span style="padding-left: 8px;">PaymentCardInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/">
+              <span style="padding-left: 8px;">PaymentXBookingInfoCriteriaInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/">
               <span style="padding-left: 8px;">PaymentXBookingInfoDeleteInput</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2428,6 +2443,124 @@
 <p>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.</p>
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
+
+<h2 id="20180710">2018-07-10</h2>
+
+<p>🛑  Field <code>deleteDefaultSettings</code> was removed from object type <code>Mutation</code></p>
+
+<p>🛑  Field <code>updateDefaultSettings</code> was removed from object type <code>Mutation</code></p>
+
+<p>🛑  Field <code>createDefaultSettings</code> was removed from object type <code>Mutation</code></p>
+
+<p>🛑  Field <code>loadFile</code> was removed from object type <code>Mutation</code></p>
+
+<p>🛑  Field <code>hotelCancel</code> was removed from object type <code>Mutation</code></p>
+
+<p>🛑  Field <code>hotelBook</code> was removed from object type <code>Mutation</code></p>
+
+<p>🛑  Field <code>Destination.error</code> changed type from <code>[Error!]</code> to <code>[AdviseMessage!]</code></p>
+
+<p>🛑  Field <code>Hotel.error</code> changed type from <code>[Error!]</code> to <code>[AdviseMessage!]</code></p>
+
+<p>🛑  Field <code>mapping</code> was removed from object type <code>Query</code></p>
+
+<p>🛑  Field <code>defaultSettings</code> was removed from object type <code>Query</code></p>
+
+<p>🛑  Field <code>booking</code> was removed from object type <code>Query</code></p>
+
+<p>🛑  Field <code>quote</code> was removed from object type <code>Query</code></p>
+
+<p>🛑  Field <code>search</code> was removed from object type <code>Query</code></p>
+
+<p>✅  Input field <code>AccessInput.name</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>✅  Field <code>removeEntitiesFromProfile</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>addEntitiesToProfile</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>updateProfile</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>createProfile</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Input field <code>PaymentXBookingInfoFilterInput.bookingReference</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>✅  Input field <code>PaymentXBookingInfoFilterInput.bookingReference</code> description changed from <code>Indicates the referece of the booking</code> to <code>Indicates the referece of the booking. @deprecated(reason: &quot;deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput&quot;)</code></p>
+
+<p>✅  Input field <code>PaymentXBookingInfoFilterInput.pointOfSaleCode</code> changed type from <code>ID!</code> to <code>ID</code></p>
+
+<p>✅  Input field <code>PaymentXBookingInfoFilterInput.pointOfSaleCode</code> description changed from <code>Indicates the code of the booked property</code> to <code>Indicates the code of the booked property. @deprecated(reason: &quot;deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput&quot;)</code></p>
+
+<p>✅  Input field <code>PaymentXBookingInfoFilterInput.organization</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>✅  Input field <code>PaymentXBookingInfoFilterInput.organization</code> description changed from <code>Responsible organization of the booked property.</code> to <code>Responsible organization of the booked property. @deprecated(reason: &quot;deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput&quot;)</code></p>
+
+<p>✅  Input field <code>checkOut_gte</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>checkOut_gt</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>checkOut_lte</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>checkOut_lt</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>checkOut_not_in</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>checkOut_in</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>checkIn_gte</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>checkIn_gt</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>checkIn_lte</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>checkIn_lt</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>checkIn_not_in</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>checkIn_in</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>OR</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Input field <code>AND</code> was added to input object type <code>PaymentXBookingInfoFilterInput</code></p>
+
+<p>✅  Argument <code>bookingInfoCriteria: PaymentXBookingInfoCriteriaInput</code> added to field <code>PaymentXQuery.cards</code></p>
+
+<p>✅  Input field <code>HotelXHotelListInput.access</code> changed type from <code>ID!</code> to <code>ID</code></p>
+
+<p>✅  Input field <code>group</code> was added to input object type <code>HotelXHotelListInput</code></p>
+
+<p>✅  Field <code>airports</code> was added to object type <code>Location</code></p>
+
+<p>✅  Input field <code>maxSize</code> was added to input object type <code>HotelXRoomQueryInput</code></p>
+
+<p>✅  Field <code>token</code> was added to object type <code>RoomConnection</code></p>
+
+<p>✅  Field <code>HotelXQuery.destinationSearcher</code> description changed from <code>Returns hotels and destinations that contains the indicated text.</code> to <code>Returns hotels and destinations that contains the indicated text.</code></p>
+
+<p>✅  Argument <code>filter: HotelXHotelFilterInput</code> added to field <code>HotelXQuery.hotels</code></p>
+
+<p>✅  Argument <code>token: String</code> added to field <code>HotelXQuery.rooms</code></p>
+
+<p>✅  Field <code>AdminQuery.products</code> description changed from <code>Members list; specify member codes to filter members</code> to <code>Product catalog; specify products codes to filter</code></p>
+
+<p>✅  Field <code>jwt</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Type <code>UpdateEntitiesInput</code> was added</p>
+
+<p>✅  Type <code>UpdateProfileInput</code> was added</p>
+
+<p>✅  Type <code>EntitiesInput</code> was added</p>
+
+<p>✅  Type <code>CreateProfileInput</code> was added</p>
+
+<p>✅  Type <code>PaymentXBookingInfoCriteriaInput</code> was added</p>
+
+<p>✅  Type <code>HotelXHotelFilterInput</code> was added</p>
+
+<p>✅  Type <code>AirportData</code> was added</p>
+
+<p>✅  Type <code>Airport</code> was added</p>
+
+<p>✅  Type <code>JWT</code> was added</p>
 
 <h2 id="2018-06-21">2018-06-21</h2>
 
@@ -4711,6 +4844,7 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
 <ul>
 <li>
 <ul>
+<li><a href="#20180710">2018-07-10</a></li>
 <li><a href="#2018-06-21">2018-06-21</a></li>
 <li><a href="#2018-06-12">2018-06-12</a></li>
 <li><a href="#2018-06-01">2018-06-01</a></li>
