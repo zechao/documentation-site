@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.40.1" />
 <title>AdminMutation :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -235,16 +235,6 @@
           <li data-nav-id="/travelgatex/reference/objects/adminquery/" class="dd-item">
             <a href="/travelgatex/reference/objects/adminquery/">
               <span style="padding-left: 8px;">AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
-            <a href="/travelgatex/reference/objects/airport/">
-              <span style="padding-left: 8px;">Airport</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/reference/objects/airportdata/" class="dd-item">
-            <a href="/travelgatex/reference/objects/airportdata/">
-              <span style="padding-left: 8px;">AirportData</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/amenity/" class="dd-item">
@@ -1530,11 +1520,6 @@
               <span style="padding-left: 8px;">PaymentCardInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/" class="dd-item">
-            <a href="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/">
-              <span style="padding-left: 8px;">PaymentXBookingInfoCriteriaInput</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/">
               <span style="padding-left: 8px;">PaymentXBookingInfoDeleteInput</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1947,9 +1932,9 @@
               <span style="padding-left: 8px;">Deprecated Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/release-notes/deleted_notes/" class="dd-item">
-            <a href="/travelgatex/release-notes/deleted_notes/">
-              <span style="padding-left: 8px;">Deleted Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/travelgatex/release-notes/breaking-changes/" class="dd-item">
+            <a href="/travelgatex/release-notes/breaking-changes/">
+              <span style="padding-left: 8px;">GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
         <li data-nav-id="/travelgatex/release-notes/products-changelogs/" class="dd-item">
@@ -2349,6 +2334,14 @@
       $('#backgroundMenu').removeClass('toogled');
     });
 
+     $('#TableOfContents a[href^="#"]').click(function() {
+      var target = $(this.hash);
+      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+      if (target.length == 0) target = $('html');
+      $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
+      return false;
+  });
+
     $('a[href^="#"].gotop').on('click',function (e) {
 	    e.preventDefault();
       $('html, body').animate({
@@ -2444,197 +2437,12 @@
         
             
                 
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">createAccess</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/accessinput">AccessInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/access">Access</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">updateAccess</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/accessinput">AccessInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/access">Access</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">grantAccessToGroup</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/groupinput">GroupInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/access">Access</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">deleteAccessFromGroup</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/groupinput">GroupInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/access">Access</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">grantSupplierToGroup</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/groupinput">GroupInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/supplier">Supplier</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">deleteSupplierFromGroup</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/groupinput">GroupInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/supplier">Supplier</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">grantClientToGroup</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/groupinput">GroupInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/client">Client</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">deleteClientFromGroup</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/groupinput">GroupInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/client">Client</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">createClient</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/createclientinput">CreateClientInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/client">Client</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">updateClient</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/updateclientinput">UpdateClientInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/client">Client</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">createProfile</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/createprofileinput">CreateProfileInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/profile">Profile</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">updateProfile</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/updateprofileinput">UpdateProfileInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/profile">Profile</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">addEntitiesToProfile</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/updateentitiesinput">UpdateEntitiesInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/profile">Profile</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">removeEntitiesFromProfile</span>(
-<span class="meta">input</span>: <a class="support type" href="/travelgatex/reference/inputobjects/updateentitiesinput">UpdateEntitiesInput!</a>,
-): <a class="support type" href="/travelgatex/reference/objects/profile">Profile</a> 
-                            </span>
-                        </li>
-                    
+                    <li>
+                        <span class="tab">
+                            
+<span class="meta">a</span>: <a class="support type" href="/travelgatex/reference/scalars/boolean">Boolean</a> 
+                        </span>
+                    </li>
                 
             
         
@@ -2759,32 +2567,6 @@
         
             
         
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
         </div>
         <li>}</li>
     </ul>
@@ -2798,73 +2580,8 @@
 
 <p><ul class="field">
     <li class="lifields">
-        <a href="/travelgatex/reference/objects/access">createAccess(Access):</a>
-        <span class="description">Creates an Access</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/access">updateAccess(Access):</a>
-        <span class="description">Updates an Access</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/access">grantAccessToGroup(Access):</a>
-        <span class="description">Grants Access visibility to a group</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/access">deleteAccessFromGroup(Access):</a>
-        <span class="description">Removes Access visibility to groups</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/supplier">grantSupplierToGroup(Supplier):</a>
-        <span class="description">Grants Supplier visibility to a group</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/supplier">deleteSupplierFromGroup(Supplier):</a>
-        <span class="description">Removes Supplier visibility to groups</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/client">grantClientToGroup(Client):</a>
-        <span class="description">Grants Client visibility to a group.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/client">deleteClientFromGroup(Client):</a>
-        <span class="description">Removes Client visibility to groups.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/client">createClient(Client):</a>
-        <span class="description">Creates a Client.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/client">updateClient(Client):</a>
-        <span class="description">Updates a Client.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/profile">createProfile(Profile):</a>
-        <span class="description">Creates a Profile.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/profile">updateProfile(Profile):</a>
-        <span class="description">Updates a Profile.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/profile">addEntitiesToProfile(Profile):</a>
-        <span class="description">Adds entities to a Profile.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/profile">removeEntitiesFromProfile(Profile):</a>
-        <span class="description">Removes entities from a Profile.</span>
+        <a href="/travelgatex/reference/scalars/boolean">a(Boolean):</a>
+        <span class="description"></span>
     </li>
     
     <li class="lifields">

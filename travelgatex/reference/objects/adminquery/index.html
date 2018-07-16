@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.40.1" />
 <title>AdminQuery :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -235,16 +235,6 @@
           <li data-nav-id="/travelgatex/reference/objects/adminquery/" class="dd-item active">
             <a href="/travelgatex/reference/objects/adminquery/">
               <span style="padding-left: 8px;">AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
-            <a href="/travelgatex/reference/objects/airport/">
-              <span style="padding-left: 8px;">Airport</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/reference/objects/airportdata/" class="dd-item">
-            <a href="/travelgatex/reference/objects/airportdata/">
-              <span style="padding-left: 8px;">AirportData</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/amenity/" class="dd-item">
@@ -1530,11 +1520,6 @@
               <span style="padding-left: 8px;">PaymentCardInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/" class="dd-item">
-            <a href="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/">
-              <span style="padding-left: 8px;">PaymentXBookingInfoCriteriaInput</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/">
               <span style="padding-left: 8px;">PaymentXBookingInfoDeleteInput</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1947,9 +1932,9 @@
               <span style="padding-left: 8px;">Deprecated Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/release-notes/deleted_notes/" class="dd-item">
-            <a href="/travelgatex/release-notes/deleted_notes/">
-              <span style="padding-left: 8px;">Deleted Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/travelgatex/release-notes/breaking-changes/" class="dd-item">
+            <a href="/travelgatex/release-notes/breaking-changes/">
+              <span style="padding-left: 8px;">GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
         <li data-nav-id="/travelgatex/release-notes/products-changelogs/" class="dd-item">
@@ -2349,6 +2334,14 @@
       $('#backgroundMenu').removeClass('toogled');
     });
 
+     $('#TableOfContents a[href^="#"]').click(function() {
+      var target = $(this.hash);
+      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+      if (target.length == 0) target = $('html');
+      $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
+      return false;
+  });
+
     $('a[href^="#"].gotop').on('click',function (e) {
 	    e.preventDefault();
       $('html, body').animate({
@@ -2450,207 +2443,6 @@
 <span class="meta">jwt</span>: <a class="support type" href="/travelgatex/reference/scalars/jwt">JWT</a> 
                         </span>
                     </li>
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">accesses</span>(
-                            </span>
-                        </li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">first</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">last</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">before</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">after</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">filter</span>: <a class="support type" href="/travelgatex/reference/inputobjects/accessfilter">AccessFilter</a>,
-        </span>
-    </span>
-</li>
-
-                        <li>
-                            <span class="tab">
-                                ): <a class="support type" href="/travelgatex/reference/objects/accessconnection">AccessConnection</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">suppliers</span>(
-                            </span>
-                        </li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">first</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">last</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">before</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">after</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">filter</span>: <a class="support type" href="/travelgatex/reference/inputobjects/supplierfilter">SupplierFilter</a>,
-        </span>
-    </span>
-</li>
-
-                        <li>
-                            <span class="tab">
-                                ): <a class="support type" href="/travelgatex/reference/objects/supplierconnection">SupplierConnection</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">clients</span>(
-                            </span>
-                        </li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">first</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">last</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">before</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">after</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
-        </span>
-    </span>
-</li>
-<li>
-    <span class="tab">
-        <span class="tab">
-<span class="meta">filter</span>: <a class="support type" href="/travelgatex/reference/inputobjects/clientfilter">ClientFilter</a>,
-        </span>
-    </span>
-</li>
-
-                        <li>
-                            <span class="tab">
-                                ): <a class="support type" href="/travelgatex/reference/objects/clientconnection">ClientConnection</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">serviceApi</span>(
-<span class="meta">filter</span>: <a class="support type" href="/travelgatex/reference/inputobjects/serviceapifilter">ServiceApiFilter</a>,
-): <a class="support type" href="/travelgatex/reference/objects/serviceapi">ServiceApi</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">pointsOfSale</span>(
-<span class="meta">filter</span>: <a class="support type" href="/travelgatex/reference/inputobjects/pointofsalefilter">PointOfSaleFilter</a>,
-): <a class="support type" href="/travelgatex/reference/objects/pointofsaleconnection">PointOfSaleConnection</a> 
-                            </span>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        <li>
-                            <span class="tab">
-                                <span class="meta">profiles</span>(
-<span class="meta">filter</span>: <a class="support type" href="/travelgatex/reference/inputobjects/profilefilter">ProfileFilter</a>,
-): <a class="support type" href="/travelgatex/reference/objects/profileconnection">ProfileConnection</a> 
-                            </span>
-                        </li>
-                    
                 
             
         
@@ -3130,18 +2922,6 @@
         
             
         
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
         </div>
         <li>}</li>
     </ul>
@@ -3157,36 +2937,6 @@
     <li class="lifields">
         <a href="/travelgatex/reference/scalars/jwt">jwt(JWT):</a>
         <span class="description">Get JSON Web Token (JWT) linked to Member</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/accessconnection">accesses(AccessConnection):</a>
-        <span class="description">Obtain a list of accesses for a filter</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/supplierconnection">suppliers(SupplierConnection):</a>
-        <span class="description">Obtain all suppliers for a filter.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/clientconnection">clients(ClientConnection):</a>
-        <span class="description">Obtain all clients for a filter.</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/serviceapi">serviceApi(ServiceApi):</a>
-        <span class="description">Obtain a ServiceAPI</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/pointofsaleconnection">pointsOfSale(PointOfSaleConnection):</a>
-        <span class="description">Obtain all Points of Sale for the filters</span>
-    </li>
-    
-    <li class="lifields">
-        <a href="/travelgatex/reference/objects/profileconnection">profiles(ProfileConnection):</a>
-        <span class="description">Obtain all Profiles for the filters</span>
     </li>
     
     <li class="lifields">
@@ -3278,7 +3028,7 @@
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/travelgatex/reference/objects/adminmutation/" title="Go to previous page | AdminMutation"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>AdminMutation</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/travelgatex/reference/objects/airport/" title="Go to next page | Airport" style="margin-right: 0px;">Airport<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/travelgatex/reference/objects/amenity/" title="Go to next page | Amenity" style="margin-right: 0px;">Amenity<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

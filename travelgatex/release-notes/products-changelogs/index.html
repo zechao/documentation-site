@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.40.1" />
 <title>Products changelogs :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -233,16 +233,6 @@
           <li data-nav-id="/travelgatex/reference/objects/adminquery/" class="dd-item">
             <a href="/travelgatex/reference/objects/adminquery/">
               <span style="padding-left: 8px;">AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
-            <a href="/travelgatex/reference/objects/airport/">
-              <span style="padding-left: 8px;">Airport</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/reference/objects/airportdata/" class="dd-item">
-            <a href="/travelgatex/reference/objects/airportdata/">
-              <span style="padding-left: 8px;">AirportData</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/amenity/" class="dd-item">
@@ -1528,11 +1518,6 @@
               <span style="padding-left: 8px;">PaymentCardInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/" class="dd-item">
-            <a href="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/">
-              <span style="padding-left: 8px;">PaymentXBookingInfoCriteriaInput</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/">
               <span style="padding-left: 8px;">PaymentXBookingInfoDeleteInput</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1946,9 +1931,9 @@
               <span style="padding-left: 8px;">Deprecated Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/release-notes/deleted_notes/" class="dd-item">
-            <a href="/travelgatex/release-notes/deleted_notes/">
-              <span style="padding-left: 8px;">Deleted Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/travelgatex/release-notes/breaking-changes/" class="dd-item">
+            <a href="/travelgatex/release-notes/breaking-changes/">
+              <span style="padding-left: 8px;">GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
         <li data-nav-id="/travelgatex/release-notes/products-changelogs/" class="dd-item parent active">
@@ -2349,6 +2334,14 @@
       $('#backgroundMenu').removeClass('toogled');
     });
 
+     $('#TableOfContents a[href^="#"]').click(function() {
+      var target = $(this.hash);
+      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+      if (target.length == 0) target = $('html');
+      $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
+      return false;
+  });
+
     $('a[href^="#"].gotop').on('click',function (e) {
 	    e.preventDefault();
       $('html, body').animate({
@@ -2551,7 +2544,7 @@
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/travelgatex/release-notes/deleted_notes/" title="Go to previous page | Deleted Schema Notes"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Deleted Schema Notes</a>
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/travelgatex/release-notes/breaking-changes/" title="Go to previous page | GraphQL Schema breaking changes"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>GraphQL Schema breaking changes</a>
             </li>
         <li class="page-item">
                 <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/travelgatex/release-notes/products-changelogs/changelog-channelx/" title="Go to next page | ChannelX" style="margin-right: 0px;">ChannelX<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>

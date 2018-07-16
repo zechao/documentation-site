@@ -91,14 +91,6 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/airport/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/airportdata/</loc>
-  </url>
-  
-  <url>
     <loc>/travelgatex/reference/objects/amenity/</loc>
   </url>
   
@@ -883,10 +875,6 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/</loc>
-  </url>
-  
-  <url>
     <loc>/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/</loc>
   </url>
   
@@ -1599,11 +1587,11 @@
   </url>
   
   <url>
-    <loc>/travelgatex/release-notes/deleted_notes/</loc>
+    <loc>/flightx/</loc>
   </url>
   
   <url>
-    <loc>/flightx/</loc>
+    <loc>/travelgatex/release-notes/breaking-changes/</loc>
   </url>
   
   <url>
@@ -1767,6 +1755,11 @@
   
   <url>
     <loc>/tags/products-changelog/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/reaking-changes/</loc>
     <priority>0</priority>
   </url>
   

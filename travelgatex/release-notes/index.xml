@@ -27,8 +27,8 @@ The Project has a few columns that act as the status whereas cards are the items
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/release-notes/changelog/</guid>
-      <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page. Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
+      <description> To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
+All notable changes on TravelgateX platform will be documented in this page. 2018-07-10 Added  Deleted schema notes  Changed  GraphQL Schema updated. New version of Deprecated schema notes  </description>
     </item>
     
     <item>
@@ -39,10 +39,9 @@ All notable changes on TravelgateX platform will be documented in this page. Und
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-06-21 🛑 Field group was removed from object type PointOfSaleData
-✅ Field Stats.statsData description changed from `GUID
-The data returned by a `Stats` query.toGUID
-The data returned by a Stats query.</description>
+2018-07-10 🛑 Field deleteDefaultSettings was removed from object type Mutation
+🛑 Field updateDefaultSettings was removed from object type Mutation
+🛑 Field createDefaultSettings was removed from object type Mutation</description>
     </item>
     
     <item>
@@ -51,17 +50,16 @@ The data returned by a Stats query.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/release-notes/deprecated_notes/</guid>
-      <description>Changes that can break existing queries to the GraphQL API. For example, removing a field would be a breaking change    Deprecation date Deletion date Days left Name Location Deprecation Reason     2017-11-21 2018-02-19 Already passed hotel Booking You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed booking Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Quote You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Search You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed createDefaultSettings Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed loadFile Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed search Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed quote Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed deleteDefaultSettings Mutation You can find it in query at Admin   2017-11-21 2018-02-19 Already passed defaultSettings Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed mapping Query You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotelBook Mutation You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotelCancel Mutation You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed updateDefaultSettings Mutation You can find it in query at Admin   2017-12-12 2018-03-12 Already passed useContext HotelSettingsInput Redundant.</description>
+      <description>Changes that can break existing queries to the GraphQL API. For example, removing a field would be a breaking change    Deprecation date Expected deletion date Days left Name Location Deprecation Reason     2017-11-21 2018-02-19 Already passed hotel Booking You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Quote You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Search You can find it in query at HotelX   2017-12-12 2018-03-12 Already passed useContext HotelSettingsInput Redundant.</description>
     </item>
     
     <item>
-      <title>Deleted Schema Notes</title>
-      <link>/travelgatex/release-notes/deleted_notes/</link>
+      <title>GraphQL Schema breaking changes</title>
+      <link>/travelgatex/release-notes/breaking-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/release-notes/deleted_notes/</guid>
-      <description>Changes history of deprecated notes previously announced Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
- Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!</description>
+      <guid>/travelgatex/release-notes/breaking-changes/</guid>
+      <description>Changes history of deprecated notes previously announced Unreleased  Unreleased removal of distribute from AddOns. Reason: You can find it in distribution AddOn. . Unreleased removal of hotel from Booking. Reason: You can find it in query at HotelX. . Unreleased removal of hotel from Quote. Reason: You can find it in query at HotelX. . Unreleased removal of hotel from Search. Reason: You can find it in query at HotelX.</description>
     </item>
     
   </channel>

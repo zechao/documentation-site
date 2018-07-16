@@ -29,10 +29,9 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-06-21 🛑 Field group was removed from object type PointOfSaleData
-✅ Field Stats.statsData description changed from `GUID
-The data returned by a `Stats` query.toGUID
-The data returned by a Stats query.</description>
+2018-07-10 🛑 Field deleteDefaultSettings was removed from object type Mutation
+🛑 Field updateDefaultSettings was removed from object type Mutation
+🛑 Field createDefaultSettings was removed from object type Mutation</description>
     </item>
     
   </channel>
