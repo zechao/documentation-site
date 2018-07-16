@@ -3528,7 +3528,7 @@ HotelX Settings In HotelX we have differents configuration level settings for a 
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on HotelX product.
-All notable changes on our platform will be documented in this page.2018-07-11  Improvement of the Rooms schema with paged list and max number of elements per page. By defect are 1000 rooms.   2018-07-04  Wrong behaviour that made options to be discarded when price in supplements was empty in Search query.</description>
+All notable changes on our platform will be documented in this page.2018-07-16  HotelX concepts content examples.   2018-07-11  Improvement of the Rooms schema with paged list and max number of elements per page. By defect are 1000 rooms.   2018-07-04  Wrong behaviour that made options to be discarded when price in supplements was empty in Search query.</description>
     </item>
     
     <item>
