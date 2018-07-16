@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.37.1" />
 <title>PaymentXBookingInfoFilterInput :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -234,6 +234,16 @@
           <li data-nav-id="/travelgatex/reference/objects/adminquery/" class="dd-item">
             <a href="/travelgatex/reference/objects/adminquery/">
               <span style="padding-left: 8px;">AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airport/">
+              <span style="padding-left: 8px;">Airport</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airportdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airportdata/">
+              <span style="padding-left: 8px;">AirportData</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/amenity/" class="dd-item">
@@ -1520,6 +1530,11 @@
               <span style="padding-left: 8px;">PaymentCardInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/">
+              <span style="padding-left: 8px;">PaymentXBookingInfoCriteriaInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/">
               <span style="padding-left: 8px;">PaymentXBookingInfoDeleteInput</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1927,11 +1942,6 @@
               <span style="padding-left: 8px;">GraphQL Schema Changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/release-notes/deprecated_notes/" class="dd-item">
-            <a href="/travelgatex/release-notes/deprecated_notes/">
-              <span style="padding-left: 8px;">Deprecated Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/travelgatex/release-notes/breaking-changes/" class="dd-item">
             <a href="/travelgatex/release-notes/breaking-changes/">
               <span style="padding-left: 8px;">GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2220,14 +2230,9 @@
               <span style="padding-left: 8px;">GraphQL Schema Changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/release-notes/deprecated_notes/" class="dd-item">
-            <a href="/hotelx/release-notes/deprecated_notes/">
-              <span style="padding-left: 8px;">Deprecated Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/hotelx/release-notes/deleted_notes/" class="dd-item">
-            <a href="/hotelx/release-notes/deleted_notes/">
-              <span style="padding-left: 8px;">Deleted Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/hotelx/release-notes/breaking-changes/" class="dd-item">
+            <a href="/hotelx/release-notes/breaking-changes/">
+              <span style="padding-left: 8px;">GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -2434,11 +2439,17 @@
         <li><span class="keyword operator ts">type</span> <span class="identifier">PaymentXBookingInfoFilterInput</span> {</li>
         
             
+        
+            
+        
+            
+        
+            
                 
                     <li>
                         <span class="tab">
                             
-<span class="meta">organization</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String!</a> 
+<span class="meta">AND</span>: <a class="support type" href="/travelgatex/reference/inputobjects/paymentxbookinginfofilterinput">[PaymentXBookingInfoFilterInput!]</a> 
                         </span>
                     </li>
                 
@@ -2449,7 +2460,7 @@
                     <li>
                         <span class="tab">
                             
-<span class="meta">pointOfSaleCode</span>: <a class="support type" href="/travelgatex/reference/scalars/id">ID!</a> 
+<span class="meta">OR</span>: <a class="support type" href="/travelgatex/reference/inputobjects/paymentxbookinginfofilterinput">[PaymentXBookingInfoFilterInput!]</a> 
                         </span>
                     </li>
                 
@@ -2460,7 +2471,128 @@
                     <li>
                         <span class="tab">
                             
-<span class="meta">bookingReference</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String!</a> 
+<span class="meta">checkIn_in</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">[DateTime!]</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            
+<span class="meta">checkIn_not_in</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">[DateTime!]</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            
+<span class="meta">checkIn_lt</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">DateTime</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            
+<span class="meta">checkIn_lte</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">DateTime</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            
+<span class="meta">checkIn_gt</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">DateTime</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            
+<span class="meta">checkIn_gte</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">DateTime</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            
+<span class="meta">checkOut_in</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">[DateTime!]</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            
+<span class="meta">checkOut_not_in</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">[DateTime!]</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            
+<span class="meta">checkOut_lt</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">DateTime</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            
+<span class="meta">checkOut_lte</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">DateTime</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            
+<span class="meta">checkOut_gt</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">DateTime</a> 
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                    <li>
+                        <span class="tab">
+                            
+<span class="meta">checkOut_gte</span>: <a class="support type" href="/travelgatex/reference/scalars/datetime">DateTime</a> 
                         </span>
                     </li>
                 
@@ -2471,6 +2603,79 @@
             <button class="btn btn-sm btn-info" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
         </div>
         <div class="deprecated-entities-container">
+        
+            
+                
+                
+                <li>
+                        <span class="tab">
+                            <span class="meta">organization: : <a class="support type" href="/travelgatex/reference/scalars/string">String</a> <span class="text-secondary">// 
+                                
+                                Responsible organization of the booked property. @deprecated(reason: &#34;deprecated from
+                                <a href="/travelgateX/reference/changelog/#2018-08-03">2018-08-03</a>
+                                Please use PaymentXBookingInfoCriteriaInput&#34;)
+                                
+                            </span></span>
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                
+                <li>
+                        <span class="tab">
+                            <span class="meta">pointOfSaleCode: : <a class="support type" href="/travelgatex/reference/scalars/id">ID</a> <span class="text-secondary">// 
+                                
+                                Indicates the code of the booked property. @deprecated(reason: &#34;deprecated from
+                                <a href="/travelgateX/reference/changelog/#2018-08-03">2018-08-03</a>
+                                Please use PaymentXBookingInfoCriteriaInput&#34;)
+                                
+                            </span></span>
+                        </span>
+                    </li>
+                
+            
+        
+            
+                
+                
+                <li>
+                        <span class="tab">
+                            <span class="meta">bookingReference: : <a class="support type" href="/travelgatex/reference/scalars/string">String</a> <span class="text-secondary">// 
+                                
+                                Indicates the referece of the booking. @deprecated(reason: &#34;deprecated from
+                                <a href="/travelgateX/reference/changelog/#2018-08-03">2018-08-03</a>
+                                Please use PaymentXBookingInfoCriteriaInput&#34;)
+                                
+                            </span></span>
+                        </span>
+                    </li>
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -2491,18 +2696,88 @@
 
 <p><ul class="field">
     <li class="lifields">
-        <a href="/travelgatex/reference/scalars/string">organization(String!):</a>
-        <span class="description">Responsible organization of the booked property.</span>
+        <a href="/travelgatex/reference/scalars/string">organization(String):</a>
+        <span class="description">Responsible organization of the booked property. @deprecated(reason: &#34;deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput&#34;)</span>
     </li>
     
     <li class="lifields">
-        <a href="/travelgatex/reference/scalars/id">pointOfSaleCode(ID!):</a>
-        <span class="description">Indicates the code of the booked property</span>
+        <a href="/travelgatex/reference/scalars/id">pointOfSaleCode(ID):</a>
+        <span class="description">Indicates the code of the booked property. @deprecated(reason: &#34;deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput&#34;)</span>
     </li>
     
     <li class="lifields">
-        <a href="/travelgatex/reference/scalars/string">bookingReference(String!):</a>
-        <span class="description">Indicates the referece of the booking</span>
+        <a href="/travelgatex/reference/scalars/string">bookingReference(String):</a>
+        <span class="description">Indicates the referece of the booking. @deprecated(reason: &#34;deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput&#34;)</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/inputobjects/paymentxbookinginfofilterinput">AND([PaymentXBookingInfoFilterInput!]):</a>
+        <span class="description">Logical AND on all given filters.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/inputobjects/paymentxbookinginfofilterinput">OR([PaymentXBookingInfoFilterInput!]):</a>
+        <span class="description">Logical OR on all given filters.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/scalars/datetime">checkIn_in([DateTime!]):</a>
+        <span class="description">All values that are contained in given list.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/scalars/datetime">checkIn_not_in([DateTime!]):</a>
+        <span class="description">All values that are not contained in given list.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/scalars/datetime">checkIn_lt(DateTime):</a>
+        <span class="description">All values less than the given value.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/scalars/datetime">checkIn_lte(DateTime):</a>
+        <span class="description">All values less than or equal the given value.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/scalars/datetime">checkIn_gt(DateTime):</a>
+        <span class="description">All values greater than the given value.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/scalars/datetime">checkIn_gte(DateTime):</a>
+        <span class="description">All values greater than or equal the given value.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/scalars/datetime">checkOut_in([DateTime!]):</a>
+        <span class="description">All values that are contained in given list.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/scalars/datetime">checkOut_not_in([DateTime!]):</a>
+        <span class="description">All values that are not contained in given list.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/scalars/datetime">checkOut_lt(DateTime):</a>
+        <span class="description">All values less than the given value.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/scalars/datetime">checkOut_lte(DateTime):</a>
+        <span class="description">All values less than or equal the given value.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/scalars/datetime">checkOut_gt(DateTime):</a>
+        <span class="description">All values greater than the given value.</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/scalars/datetime">checkOut_gte(DateTime):</a>
+        <span class="description">All values greater than or equal the given value.</span>
     </li>
     
 </ul></p>

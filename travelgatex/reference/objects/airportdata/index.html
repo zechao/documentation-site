@@ -1942,14 +1942,9 @@
               <span style="padding-left: 8px;">GraphQL Schema Changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/release-notes/deprecated_notes/" class="dd-item">
-            <a href="/travelgatex/release-notes/deprecated_notes/">
-              <span style="padding-left: 8px;">Deprecated Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/release-notes/deleted_notes/" class="dd-item">
-            <a href="/travelgatex/release-notes/deleted_notes/">
-              <span style="padding-left: 8px;">Deleted Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/travelgatex/release-notes/breaking-changes/" class="dd-item">
+            <a href="/travelgatex/release-notes/breaking-changes/">
+              <span style="padding-left: 8px;">GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
         <li data-nav-id="/travelgatex/release-notes/products-changelogs/" class="dd-item">
@@ -2235,14 +2230,9 @@
               <span style="padding-left: 8px;">GraphQL Schema Changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/release-notes/deprecated_notes/" class="dd-item">
-            <a href="/hotelx/release-notes/deprecated_notes/">
-              <span style="padding-left: 8px;">Deprecated Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/hotelx/release-notes/deleted_notes/" class="dd-item">
-            <a href="/hotelx/release-notes/deleted_notes/">
-              <span style="padding-left: 8px;">Deleted Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/hotelx/release-notes/breaking-changes/" class="dd-item">
+            <a href="/hotelx/release-notes/breaking-changes/">
+              <span style="padding-left: 8px;">GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -2348,6 +2338,14 @@
       $('#navbar').removeClass('toogled');
       $('#backgroundMenu').removeClass('toogled');
     });
+
+     $('#TableOfContents a[href^="#"]').click(function() {
+      var target = $(this.hash);
+      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+      if (target.length == 0) target = $('html');
+      $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
+      return false;
+  });
 
     $('a[href^="#"].gotop').on('click',function (e) {
 	    e.preventDefault();

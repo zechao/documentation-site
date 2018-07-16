@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.37.1" />
 <title>HotelXQuery :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -235,6 +235,16 @@
           <li data-nav-id="/travelgatex/reference/objects/adminquery/" class="dd-item">
             <a href="/travelgatex/reference/objects/adminquery/">
               <span style="padding-left: 8px;">AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airport/">
+              <span style="padding-left: 8px;">Airport</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airportdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airportdata/">
+              <span style="padding-left: 8px;">AirportData</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/amenity/" class="dd-item">
@@ -1520,6 +1530,11 @@
               <span style="padding-left: 8px;">PaymentCardInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/">
+              <span style="padding-left: 8px;">PaymentXBookingInfoCriteriaInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/">
               <span style="padding-left: 8px;">PaymentXBookingInfoDeleteInput</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1927,11 +1942,6 @@
               <span style="padding-left: 8px;">GraphQL Schema Changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/release-notes/deprecated_notes/" class="dd-item">
-            <a href="/travelgatex/release-notes/deprecated_notes/">
-              <span style="padding-left: 8px;">Deprecated Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/travelgatex/release-notes/breaking-changes/" class="dd-item">
             <a href="/travelgatex/release-notes/breaking-changes/">
               <span style="padding-left: 8px;">GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2220,14 +2230,9 @@
               <span style="padding-left: 8px;">GraphQL Schema Changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/release-notes/deprecated_notes/" class="dd-item">
-            <a href="/hotelx/release-notes/deprecated_notes/">
-              <span style="padding-left: 8px;">Deprecated Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/hotelx/release-notes/deleted_notes/" class="dd-item">
-            <a href="/hotelx/release-notes/deleted_notes/">
-              <span style="padding-left: 8px;">Deleted Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/hotelx/release-notes/breaking-changes/" class="dd-item">
+            <a href="/hotelx/release-notes/breaking-changes/">
+              <span style="padding-left: 8px;">GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -2435,12 +2440,169 @@
         
             
                 
-                    <li>
-                        <span class="tab">
-                            
-<span class="meta">a</span>: <a class="support type" href="/travelgatex/reference/scalars/boolean">Boolean</a> 
-                        </span>
-                    </li>
+                    
+                        <li>
+                            <span class="tab">
+                                <span class="meta">boards</span>(
+<span class="meta">criteria</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelxboardqueryinput">HotelXBoardQueryInput!</a>,
+<span class="meta">relay</span>: <a class="support type" href="/travelgatex/reference/inputobjects/relayinput">RelayInput!</a>,
+): <a class="support type" href="/travelgatex/reference/objects/boardconnection">BoardConnection!</a> 
+                            </span>
+                        </li>
+                    
+                
+            
+        
+            
+                
+                    
+                        <li>
+                            <span class="tab">
+                                <span class="meta">categories</span>(
+<span class="meta">criteria</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelxcategoryqueryinput">HotelXCategoryQueryInput!</a>,
+<span class="meta">relay</span>: <a class="support type" href="/travelgatex/reference/inputobjects/relayinput">RelayInput!</a>,
+): <a class="support type" href="/travelgatex/reference/objects/categoryconnection">CategoryConnection!</a> 
+                            </span>
+                        </li>
+                    
+                
+            
+        
+            
+                
+                    
+                        <li>
+                            <span class="tab">
+                                <span class="meta">hotels</span>(
+                            </span>
+                        </li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">criteria</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelxhotellistinput">HotelXHotelListInput!</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">relay</span>: <a class="support type" href="/travelgatex/reference/inputobjects/relayinput">RelayInput!</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">token</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">filter</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelxhotelfilterinput">HotelXHotelFilterInput</a>,
+        </span>
+    </span>
+</li>
+
+                        <li>
+                            <span class="tab">
+                                ): <a class="support type" href="/travelgatex/reference/objects/hotelconnection">HotelConnection!</a> 
+                            </span>
+                        </li>
+                    
+                
+            
+        
+            
+                
+                    
+                        <li>
+                            <span class="tab">
+                                <span class="meta">rooms</span>(
+                            </span>
+                        </li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">criteria</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelxroomqueryinput">HotelXRoomQueryInput!</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">relay</span>: <a class="support type" href="/travelgatex/reference/inputobjects/relayinput">RelayInput!</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">token</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+
+                        <li>
+                            <span class="tab">
+                                ): <a class="support type" href="/travelgatex/reference/objects/roomconnection">RoomConnection!</a> 
+                            </span>
+                        </li>
+                    
+                
+            
+        
+            
+                
+                    
+                        <li>
+                            <span class="tab">
+                                <span class="meta">destinations</span>(
+                            </span>
+                        </li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">criteria</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelxdestinationlistinput">HotelXDestinationListInput!</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">relay</span>: <a class="support type" href="/travelgatex/reference/inputobjects/relayinput">RelayInput!</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">token</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+
+                        <li>
+                            <span class="tab">
+                                ): <a class="support type" href="/travelgatex/reference/objects/destinationconnection">DestinationConnection!</a> 
+                            </span>
+                        </li>
+                    
+                
+            
+        
+            
+                
+                    
+                        <li>
+                            <span class="tab">
+                                <span class="meta">destinationSearcher</span>(
+<span class="meta">criteria</span>: <a class="support type" href="/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput">HotelXDestinationSearcherInput!</a>,
+): <a class="support type" href="#">[DestinationSearchResult]!</a> 
+                            </span>
+                        </li>
+                    
                 
             
         
@@ -2615,6 +2777,16 @@
         
             
         
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
         </div>
         <li>}</li>
     </ul>
@@ -2628,8 +2800,33 @@
 
 <p><ul class="field">
     <li class="lifields">
-        <a href="/travelgatex/reference/scalars/boolean">a(Boolean):</a>
-        <span class="description"></span>
+        <a href="/travelgatex/reference/objects/boardconnection">boards(BoardConnection!):</a>
+        <span class="description">Query to obtain Boards</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/categoryconnection">categories(CategoryConnection!):</a>
+        <span class="description">Query to obtain Categories</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/hotelconnection">hotels(HotelConnection!):</a>
+        <span class="description">Query to obtain Hotels</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/roomconnection">rooms(RoomConnection!):</a>
+        <span class="description">Query to obtain rooms</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/destinationconnection">destinations(DestinationConnection!):</a>
+        <span class="description">Query to obtain Destinations</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="#">destinationSearcher([DestinationSearchResult]!):</a>
+        <span class="description">Returns hotels and destinations that contains the indicated text.</span>
     </li>
     
     <li class="lifields">

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.37.1" />
 <title>GraphQL Schema Changes :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -233,6 +233,16 @@
           <li data-nav-id="/travelgatex/reference/objects/adminquery/" class="dd-item">
             <a href="/travelgatex/reference/objects/adminquery/">
               <span style="padding-left: 8px;">AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airport/">
+              <span style="padding-left: 8px;">Airport</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/reference/objects/airportdata/" class="dd-item">
+            <a href="/travelgatex/reference/objects/airportdata/">
+              <span style="padding-left: 8px;">AirportData</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/travelgatex/reference/objects/amenity/" class="dd-item">
@@ -1518,6 +1528,11 @@
               <span style="padding-left: 8px;">PaymentCardInput</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/" class="dd-item">
+            <a href="/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/">
+              <span style="padding-left: 8px;">PaymentXBookingInfoCriteriaInput</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/" class="dd-item">
             <a href="/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/">
               <span style="padding-left: 8px;">PaymentXBookingInfoDeleteInput</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1926,11 +1941,6 @@
               <span style="padding-left: 8px;">GraphQL Schema Changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/release-notes/deprecated_notes/" class="dd-item">
-            <a href="/travelgatex/release-notes/deprecated_notes/">
-              <span style="padding-left: 8px;">Deprecated Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/travelgatex/release-notes/breaking-changes/" class="dd-item">
             <a href="/travelgatex/release-notes/breaking-changes/">
               <span style="padding-left: 8px;">GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2219,14 +2229,9 @@
               <span style="padding-left: 8px;">GraphQL Schema Changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/release-notes/deprecated_notes/" class="dd-item">
-            <a href="/hotelx/release-notes/deprecated_notes/">
-              <span style="padding-left: 8px;">Deprecated Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/hotelx/release-notes/deleted_notes/" class="dd-item">
-            <a href="/hotelx/release-notes/deleted_notes/">
-              <span style="padding-left: 8px;">Deleted Schema Notes</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/hotelx/release-notes/breaking-changes/" class="dd-item">
+            <a href="/hotelx/release-notes/breaking-changes/">
+              <span style="padding-left: 8px;">GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -2436,6 +2441,20 @@
 <p>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.</p>
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
+
+<h2 id="20180716">2018-07-16</h2>
+
+<p>🛑  Input field <code>organizations</code> was removed from input object type <code>StatsFilterInput</code></p>
+
+<p>🛑  Field <code>error</code> was removed from object type <code>Stats</code></p>
+
+<p>✅  Input field <code>groups</code> was added to input object type <code>StatsFilterInput</code></p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>Stats</code></p>
+
+<p>✅  Field <code>StoredCard.adviseMessage</code> description changed from <code>List of messages</code> to <code>List of advise messages.</code></p>
+
+<p>✅  Description `<code>on type</code>AdviseMessage<code>has changed to</code>List of advise messages.`</p>
 
 <h2 id="20180710">2018-07-10</h2>
 
@@ -4837,6 +4856,7 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
 <ul>
 <li>
 <ul>
+<li><a href="#20180716">2018-07-16</a></li>
 <li><a href="#20180710">2018-07-10</a></li>
 <li><a href="#2018-06-21">2018-06-21</a></li>
 <li><a href="#2018-06-12">2018-06-12</a></li>
@@ -4887,7 +4907,7 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/travelgatex/release-notes/changelog/" title="Go to previous page | Changelog"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Changelog</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/travelgatex/release-notes/deprecated_notes/" title="Go to next page | Deprecated Schema Notes" style="margin-right: 0px;">Deprecated Schema Notes<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/travelgatex/release-notes/breaking-changes/" title="Go to next page | GraphQL Schema breaking changes" style="margin-right: 0px;">GraphQL Schema breaking changes<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">
