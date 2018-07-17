@@ -1146,8 +1146,8 @@ Required by MappeaQuery:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/getuploadedfilesdata/</guid>
-      <description>GraphQL schema definition type GetUploadedFilesData {files: [File] Show deprecated fields}Fields files([File]):
-Required by GetUploadedFilesResponse: ## GetUploadedFiles</description>
+      <description> GraphQL schema definition type GetUploadedFilesData {files: [File] Show deprecated fields}Fields files([File]):
+Required by GetUploadedFilesResponse: ## GetUploadedFiles </description>
     </item>
     
     <item>
@@ -3839,7 +3839,7 @@ In this case you can search the bookings with references or by dates, the dates 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announcedUnreleased  Unreleased removal of distribute from AddOns. Reason: You can find it in distribution AddOn. . Unreleased removal of hotel from Booking. Reason: You can find it in query at HotelX. . Unreleased removal of hotel from Quote. Reason: You can find it in query at HotelX. . Unreleased removal of hotel from Search. Reason: You can find it in query at HotelX.</description>
+      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Expected deleted on 2018-08-19. Removal of hotel from Booking. Reason: You can find it in query at HotelX. Expected deleted on 2018-02-19. Removal of hotel from Quote. Reason: You can find it in query at HotelX. Expected deleted on 2018-02-19. Removal of hotel from Search. Reason: You can find it in query at HotelX.</description>
     </item>
     
     <item>

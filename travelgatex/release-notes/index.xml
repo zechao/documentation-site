@@ -27,8 +27,8 @@ The Project has a few columns that act as the status whereas cards are the items
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/release-notes/changelog/</guid>
-      <description> To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page. 2018-07-10 Added  Deleted schema notes  Changed  GraphQL Schema updated. New version of Deprecated schema notes  </description>
+      <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
+All notable changes on TravelgateX platform will be documented in this page.2018-07-16  GraphQL Schema breaking changes. Sustitutes and fixes to Deprecated and Deleted Notes pages.    GraphQL Schema updated. Changelog based on keep a changelog    Deprecated schema notes pages. Deleted schema notes pages.    Documentation pages&amp;rsquo; styles</description>
     </item>
     
     <item>
@@ -39,18 +39,9 @@ All notable changes on TravelgateX platform will be documented in this page. 201
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-07-10 🛑 Field deleteDefaultSettings was removed from object type Mutation
-🛑 Field updateDefaultSettings was removed from object type Mutation
-🛑 Field createDefaultSettings was removed from object type Mutation</description>
-    </item>
-    
-    <item>
-      <title>Deprecated Schema Notes</title>
-      <link>/travelgatex/release-notes/deprecated_notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/release-notes/deprecated_notes/</guid>
-      <description>Changes that can break existing queries to the GraphQL API. For example, removing a field would be a breaking change    Deprecation date Expected deletion date Days left Name Location Deprecation Reason     2017-11-21 2018-02-19 Already passed hotel Booking You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Quote You can find it in query at HotelX   2017-11-21 2018-02-19 Already passed hotel Search You can find it in query at HotelX   2017-12-12 2018-03-12 Already passed useContext HotelSettingsInput Redundant.</description>
+2018-07-16 🛑 Input field organizations was removed from input object type StatsFilterInput
+🛑 Field error was removed from object type Stats
+✅ Input field groups was added to input object type StatsFilterInput</description>
     </item>
     
     <item>
@@ -59,7 +50,7 @@ Check out this list of new releases and changes applied on the TravelgateX Graph
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announced Unreleased  Unreleased removal of distribute from AddOns. Reason: You can find it in distribution AddOn. . Unreleased removal of hotel from Booking. Reason: You can find it in query at HotelX. . Unreleased removal of hotel from Quote. Reason: You can find it in query at HotelX. . Unreleased removal of hotel from Search. Reason: You can find it in query at HotelX.</description>
+      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Expected deleted on 2018-08-19. Removal of hotel from Booking. Reason: You can find it in query at HotelX. Expected deleted on 2018-02-19. Removal of hotel from Quote. Reason: You can find it in query at HotelX. Expected deleted on 2018-02-19. Removal of hotel from Search. Reason: You can find it in query at HotelX.</description>
     </item>
     
   </channel>
