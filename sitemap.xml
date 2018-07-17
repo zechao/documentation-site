@@ -91,14 +91,6 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/airport/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/airportdata/</loc>
-  </url>
-  
-  <url>
     <loc>/travelgatex/reference/objects/amenity/</loc>
   </url>
   
@@ -880,10 +872,6 @@
   
   <url>
     <loc>/travelgatex/reference/objects/paymentxbookinginfo/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/</loc>
   </url>
   
   <url>
