@@ -2290,10 +2290,6 @@
       },0);
   }
   $(document).ready(()=>{
-    const schemaLIs = $('li[data-nav-id="/travelgatex/reference/schema/"]').find('ul').children();
-    if((schemaLIs || []).length){
-      $(schemaLIs)[0].prepend($(schemaLIs)[1]);
-    }
     resizeElements();
     $(window).resize(resizeElements);
     $('#navbar').resize(resizeElements);
@@ -2515,9 +2511,9 @@ Users (List of users), Suppliers (List of suppliers), ServiceApis (List of servi
             
         
             
-        <div class="deprecated-button-container" >
-            <button class="btn btn-sm btn-info" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
-        </div>
+        <li class="deprecated-button-container p-2">
+            <button class="btn btn-sm btn-info ml-5" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
+        </li>
         <div class="deprecated-entities-container">
         
             
@@ -2540,6 +2536,18 @@ Users (List of users), Suppliers (List of suppliers), ServiceApis (List of servi
         <li>}</li>
     </ul>
 </div>
+
+<script>
+    
+    window.onload = _ => {
+        const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0];
+        if (deprecatedContainer.children.length) {
+            const list = document.querySelectorAll('li.deprecated-button-container')[0];
+            list.style.display = 'block';
+            console.log(list.style);
+        }
+    }
+</script>
 
 
 

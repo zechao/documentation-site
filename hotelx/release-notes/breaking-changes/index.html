@@ -2289,10 +2289,6 @@
       },0);
   }
   $(document).ready(()=>{
-    const schemaLIs = $('li[data-nav-id="/travelgatex/reference/schema/"]').find('ul').children();
-    if((schemaLIs || []).length){
-      $(schemaLIs)[0].prepend($(schemaLIs)[1]);
-    }
     resizeElements();
     $(window).resize(resizeElements);
     $('#navbar').resize(resizeElements);
@@ -2414,21 +2410,15 @@
                 
                 
                 
+
+
 <div class="alert 
 alert-info"
  
 role="alert">Changes history of deprecated notes previously announced</div>
 
 
-<p><p><strong>Under construction!</strong>
-We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</p>
-<ul>
-<li>Join us on <a href="https://slack.travelgatex.com/">Slack</a> and let us know what resources you need us to prirotize</li>
-<li>Send us a <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7">Jira service desk request</a></li>
-<li>Log an <a href="https://github.com/travelgateX/Issue-tracker">issues request</a> with us</li>
-<li>Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the  <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Edit page</code>  button and issue a Pull Request via GitHub with your suggested edits.</li>
-</ul>
-</p>
+<h3 id="no-deletions-to-date">No deletions to date</h3>
 
 <hr/>
   
@@ -2439,7 +2429,17 @@ We have logged this resource on our roadmap and we are currently working through
           </div>
           <div class="menu-right">
             <div>
-              
+              <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#no-deletions-to-date">No deletions to date</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
             </div>
           </div>
           <div class="clear"></div>

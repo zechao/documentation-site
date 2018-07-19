@@ -2288,10 +2288,6 @@
       },0);
   }
   $(document).ready(()=>{
-    const schemaLIs = $('li[data-nav-id="/travelgatex/reference/schema/"]').find('ul').children();
-    if((schemaLIs || []).length){
-      $(schemaLIs)[0].prepend($(schemaLIs)[1]);
-    }
     resizeElements();
     $(window).resize(resizeElements);
     $('#navbar').resize(resizeElements);
@@ -2477,15 +2473,6 @@ role="alert">Join us on <a href="https://slack.travelgatex.com/" target="_blank"
 			<div>
 				<h3 class="text-headline">Plugins</h3>
 					<p>Additional logic to your App</p>
-			</div>
-		</div>
-	</a>
-	<a href="/hotelx/reference/" class="card">
-		<div class="inner-card">
-				<div class="material-icons fa fa-book"></div>
-			<div>
-				<h3 class="text-headline">Reference</h3>
-					<p>Reference Documentation</p>
 			</div>
 		</div>
 	</a>

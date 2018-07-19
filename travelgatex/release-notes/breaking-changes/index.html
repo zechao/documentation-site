@@ -2289,10 +2289,6 @@
       },0);
   }
   $(document).ready(()=>{
-    const schemaLIs = $('li[data-nav-id="/travelgatex/reference/schema/"]').find('ul').children();
-    if((schemaLIs || []).length){
-      $(schemaLIs)[0].prepend($(schemaLIs)[1]);
-    }
     resizeElements();
     $(window).resize(resizeElements);
     $('#navbar').resize(resizeElements);
@@ -2426,15 +2422,15 @@ role="alert">Changes history of deprecated notes previously announced</div>
 
 <div class="release-types type-u">
         <ul>
-<li>Removal of <code>distribute</code> from <code>AddOns</code>. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.Expected removal on 2018-08-19.</li>
-<li>Removal of <code>hotel</code> from <code>Booking</code>. Reason: You can find it in query at HotelX.  Deprecated on 2017-11-21.To be removed soon.</li>
-<li>Removal of <code>hotel</code> from <code>Quote</code>. Reason: You can find it in query at HotelX.  Deprecated on 2017-11-21.To be removed soon.</li>
-<li>Removal of <code>hotel</code> from <code>Search</code>. Reason: You can find it in query at HotelX.  Deprecated on 2017-11-21.To be removed soon.</li>
-<li>Removal of <code>useContext</code> from <code>HotelSettingsInput</code>. Reason: Redundant..  Deprecated on 2017-12-12.To be removed soon.</li>
-<li>Removal of <code>connectUser</code> from <code>HotelSettingsInput</code>. Reason: Redundant..  Deprecated on 2018-03-19.To be removed soon.</li>
+<li>Removal of <code>hotel</code> from <code>Booking</code>. Reason: You can find it in query at HotelX.  Deprecated on 2017-11-21.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>hotel</code> from <code>Quote</code>. Reason: You can find it in query at HotelX.  Deprecated on 2017-11-21.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>hotel</code> from <code>Search</code>. Reason: You can find it in query at HotelX.  Deprecated on 2017-11-21.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>useContext</code> from <code>HotelSettingsInput</code>. Reason: Redundant..  Deprecated on 2017-12-12.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>connectUser</code> from <code>HotelSettingsInput</code>. Reason: Redundant..  Deprecated on 2018-03-19.<strong>To be removed soon</strong>.</li>
 <li>Removal of <code>organization</code> from <code>PaymentXBookingInfoFilterInput</code>. Reason: Please use PaymentXBookingInfoCriteriaInput.  Deprecated on 2018-08-03.Expected removal on 2018-11-01.</li>
 <li>Removal of <code>pointOfSaleCode</code> from <code>PaymentXBookingInfoFilterInput</code>. Reason: Please use PaymentXBookingInfoCriteriaInput.  Deprecated on 2018-08-03.Expected removal on 2018-11-01.</li>
 <li>Removal of <code>bookingReference</code> from <code>PaymentXBookingInfoFilterInput</code>. Reason: Please use PaymentXBookingInfoCriteriaInput.  Deprecated on 2018-08-03.Expected removal on 2018-11-01.</li>
+<li>Removal of <code>distribute</code> from <code>AddOns</code>. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.Expected removal on 2018-08-19.</li>
 </ul>
 
 </div>
