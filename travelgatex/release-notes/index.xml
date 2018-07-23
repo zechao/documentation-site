@@ -28,7 +28,7 @@ The Project has a few columns that act as the status whereas cards are the items
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page.2018-07-16  GraphQL Schema breaking changes. Sustitutes and fixes to Deprecated and Deleted Notes pages.    GraphQL Schema updated. Changelog based on keep a changelog    Deprecated schema notes pages. Deleted schema notes pages.    Documentation pages&amp;rsquo; styles</description>
+All notable changes on TravelgateX platform will be documented in this page. 2018-07-16  GraphQL Schema breaking changes. Sustitutes and fixes to Deprecated and Deleted Notes pages.    GraphQL Schema updated. Changelog based on keep a changelog    Deprecated schema notes pages. Deleted schema notes pages.    Documentation pages&amp;rsquo; styles</description>
     </item>
     
     <item>
@@ -50,7 +50,7 @@ Check out this list of new releases and changes applied on the TravelgateX Graph
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of hotel from Booking. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21.To be removed soon. Removal of hotel from Quote. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21.To be removed soon. Removal of hotel from Search. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21.To be removed soon. Removal of useContext from HotelSettingsInput.</description>
+      <description>Changes history of deprecated notes previously announced Unreleased  Removal of hotel from Booking. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21.To be removed soon. Removal of hotel from Quote. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21.To be removed soon. Removal of hotel from Search. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21.To be removed soon. Removal of useContext from HotelSettingsInput.</description>
     </item>
     
   </channel>
