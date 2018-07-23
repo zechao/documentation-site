@@ -1903,6 +1903,16 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
+          <li data-nav-id="/travelgatex/tutorials/ota-site/" class="dd-item">
+            <a href="/travelgatex/tutorials/ota-site/">
+              <span style="padding-left: 8px;">Build An OTA</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/travelgatex/tutorials/howto-configure-permissions/" class="dd-item">
+            <a href="/travelgatex/tutorials/howto-configure-permissions/">
+              <span style="padding-left: 8px;">Configure HotelX Security</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/release-notes/" class="dd-item">
@@ -2454,14 +2464,14 @@
 <li><em>destinationCodes</em>  → destination code</li>
 <li><em>notDestinationCodes</em>  → destination code</li>
 <li><em>percentage</em>  → commission value, decimal separator must be point (&ldquo;.&rdquo;)</li>
-<li><em>force</em>  → (boolean value <strong>true/false</strong>)
+
+<li><p><em>force</em>  → (boolean value <strong>true/false</strong>)</p>
 
 <ul>
 <li><strong>false value</strong> (if value is false the rule will not be applied despite of matching all its conditions criteria if a commission is received from the supplier trough the integration).</li>
 <li><strong>true value</strong> if value is true the rule will be applied if matching all its conditions criteria regardless of if a commission is received or not from the supplier trough the integration).</li>
 <li><strong>Example</strong><br />
 <br /></li>
-</ul></li>
 </ul>
 
 <pre><code class="language-csv">commission received,forced,result from supplier
@@ -2469,7 +2479,124 @@ no,no,rule applied (if matching all its criteria conditions)
 no,yes,rule applied (if matching all its criteria conditions)
 yes,no,rule NOT applied regardless of matching all its criteria conditions
 yes,yes,rule applied (if matching all its criteria conditions)
-</code></pre></li>
+</code></pre>
+
+<ul>
+<li><strong>List file fields</strong>
+<br /></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Mandatory</th>
+<th>Excluded fileds</th>
+<th>Multi-value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ruleId</td>
+<td>Yes</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>supplierCodes</td>
+<td>Yes</td>
+<td>notSupplierCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notSupplierCodes</td>
+<td>No</td>
+<td>supplierCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>creationDateFrom</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>creationDateTo</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>checkInFrom</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>hotelCodes</td>
+<td>No</td>
+<td>nothotelCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>nothotelCodes</td>
+<td>No</td>
+<td>hotelCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>chainsCodes</td>
+<td>No</td>
+<td>notChainCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notChainCodes</td>
+<td>No</td>
+<td>chainsCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>DestinationCodes</td>
+<td>No</td>
+<td>notDestinationCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notDestinationCodes</td>
+<td>No</td>
+<td>DestinationCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>percentage</td>
+<td>Yes</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>force</td>
+<td>Yes</td>
+<td>-</td>
+<td>No</td>
+</tr>
+</tbody>
+</table></li>
+</ul></li>
 
 <li><p><strong>Delimiter</strong>:  Comma (“,”)</p></li>
 
