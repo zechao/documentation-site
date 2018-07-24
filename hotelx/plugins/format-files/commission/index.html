@@ -2491,7 +2491,7 @@ yes,yes,rule applied (if matching all its criteria conditions)
 <tr>
 <th>Field</th>
 <th>Mandatory</th>
-<th>Excluded fileds</th>
+<th>Excluded fileds*</th>
 <th>Multi-value</th>
 </tr>
 </thead>
@@ -2513,7 +2513,7 @@ yes,yes,rule applied (if matching all its criteria conditions)
 
 <tr>
 <td>notSupplierCodes</td>
-<td>No</td>
+<td>Yes</td>
 <td>supplierCodes</td>
 <td>Yes</td>
 </tr>
@@ -2595,7 +2595,9 @@ yes,yes,rule applied (if matching all its criteria conditions)
 <td>No</td>
 </tr>
 </tbody>
-</table></li>
+</table>
+
+<p>*Excluded fileds <strong>The informed field will be ignored</strong></p></li>
 </ul></li>
 
 <li><p><strong>Delimiter</strong>:  Comma (“,”)</p></li>
@@ -2611,8 +2613,17 @@ yes,yes,rule applied (if matching all its criteria conditions)
 
 <p><strong>Data</strong>:</p>
 
+<p><strong>Simple value field</strong></p>
+
 <pre><code class="language-csv">ruleId,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,force
 CE1,DIN,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false
+CE2,DIN,,,,,,3846,,,,,,15.00,false
+</code></pre>
+
+<p><strong>Multivalue field</strong></p>
+
+<pre><code class="language-csv">ruleId,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,force
+CE1,DIN;HOB;JMB,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false
 CE2,DIN,,,,,,3846,,,,,,15.00,false
 </code></pre>
 
