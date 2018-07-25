@@ -63,7 +63,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/addon/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/addon/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/addons/</loc>
   </url>
   
   <url>
@@ -79,7 +87,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/interfaces/advisemessage/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/interfaces/advisemessage/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/enums/advisemessagelevel/</loc>
   </url>
   
   <url>
@@ -87,7 +103,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/airport/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/airport/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/airportdata/</loc>
   </url>
   
   <url>
@@ -95,7 +119,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/amenity/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/amenity/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/enums/applicationareatype/</loc>
   </url>
   
   <url>
@@ -103,7 +135,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/auditdata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/auditdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/bed/</loc>
   </url>
   
   <url>
@@ -111,7 +151,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/board/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/board/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/boardconnection/</loc>
   </url>
   
   <url>
@@ -119,7 +167,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/boarddata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/boarddata/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/boardedge/</loc>
   </url>
   
   <url>
@@ -139,6 +195,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/enums/bookstatustype/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/enums/bookstatustype/</loc>
   </url>
   
@@ -155,11 +215,23 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/bookinghotel/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/bookinghotel/</loc>
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/bookingroom/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/bookingroom/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/scalars/boolean/</loc>
   </url>
   
   <url>
@@ -187,11 +259,23 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/cancelpenalty/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/cancelpenalty/</loc>
   </url>
   
   <url>
+    <loc>/hotelx/reference/enums/cancelpenaltytype/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/enums/cancelpenaltytype/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/cancelpolicy/</loc>
   </url>
   
   <url>
@@ -203,7 +287,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/category/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/category/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/categoryconnection/</loc>
   </url>
   
   <url>
@@ -211,7 +303,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/categorydata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/categorydata/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/categoryedge/</loc>
   </url>
   
   <url>
@@ -220,6 +320,10 @@
   
   <url>
     <loc>/travelgatex/release-notes/products-changelogs/changelog-channelx/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/enums/chargetype/</loc>
   </url>
   
   <url>
@@ -271,6 +375,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/contact/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/contact/</loc>
   </url>
   
@@ -279,7 +387,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/coordinates/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/coordinates/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/scalars/country/</loc>
   </url>
   
   <url>
@@ -315,7 +431,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/criteriasearch/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/criteriasearch/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/scalars/currency/</loc>
   </url>
   
   <url>
@@ -323,7 +447,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/scalars/date/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/date/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/scalars/datetime/</loc>
   </url>
   
   <url>
@@ -359,7 +491,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/description/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/description/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/enums/descriptiontype/</loc>
   </url>
   
   <url>
@@ -367,7 +507,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/destination/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/destination/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/destinationconnection/</loc>
   </url>
   
   <url>
@@ -375,7 +523,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/destinationdata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/destinationdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/destinationedge/</loc>
   </url>
   
   <url>
@@ -383,7 +539,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/enums/destinationtype/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/enums/destinationtype/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/enums/durationtype/</loc>
   </url>
   
   <url>
@@ -407,7 +571,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/error/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/error/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/exchange/</loc>
   </url>
   
   <url>
@@ -423,6 +595,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/externalmessage/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/externalmessage/</loc>
   </url>
   
@@ -432,6 +608,10 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/filterinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/scalars/float/</loc>
   </url>
   
   <url>
@@ -499,6 +679,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/holder/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/holder/</loc>
   </url>
   
@@ -507,7 +691,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/hotel/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/hotel/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/hotelbookinput/</loc>
   </url>
   
   <url>
@@ -515,7 +707,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/hotelbookpayload/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/hotelbookpayload/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/hotelbooking/</loc>
   </url>
   
   <url>
@@ -523,7 +723,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/hotelbookingdetail/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/hotelbookingdetail/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/hotelcanceldetail/</loc>
   </url>
   
   <url>
@@ -531,7 +739,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/hotelcancelinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/hotelcancelinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/hotelcancelpayload/</loc>
   </url>
   
   <url>
@@ -539,11 +755,23 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/hotelconnection/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/hotelconnection/</loc>
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/hotelcriteriabookinginput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/hotelcriteriabookinginput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/hotelcriteriaquoteinput/</loc>
   </url>
   
   <url>
@@ -555,7 +783,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/hoteldata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/hoteldata/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/hoteledge/</loc>
   </url>
   
   <url>
@@ -563,7 +799,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/hoteloptionquote/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/hoteloptionquote/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/hoteloptionsearch/</loc>
   </url>
   
   <url>
@@ -571,7 +815,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/hotelquote/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/hotelquote/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/hotelsearch/</loc>
   </url>
   
   <url>
@@ -587,7 +839,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/hotelxboardqueryinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/hotelxboardqueryinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/hotelxcategoryqueryinput/</loc>
   </url>
   
   <url>
@@ -595,7 +855,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/hotelxdestinationlistinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/hotelxdestinationlistinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/hotelxdestinationsearcherinput/</loc>
   </url>
   
   <url>
@@ -607,6 +875,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/hotelxhotellistinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/hotelxhotellistinput/</loc>
   </url>
   
@@ -615,7 +887,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/schema/query/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/hotelxquery/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/hotelxroomqueryinput/</loc>
   </url>
   
   <url>
@@ -624,6 +904,10 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/hotelxsupplierinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/scalars/id/</loc>
   </url>
   
   <url>
@@ -639,7 +923,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/scalars/int/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/int/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/scalars/json/</loc>
   </url>
   
   <url>
@@ -651,11 +943,23 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/scalars/language/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/language/</loc>
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/location/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/location/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/map/</loc>
   </url>
   
   <url>
@@ -699,7 +1003,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/mapping/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/mapping/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/mappingcontext/</loc>
   </url>
   
   <url>
@@ -707,7 +1019,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/mappingentity/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/mappingentity/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/markup/</loc>
   </url>
   
   <url>
@@ -715,7 +1035,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/enums/markupruletype/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/enums/markupruletype/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/media/</loc>
   </url>
   
   <url>
@@ -748,6 +1076,10 @@
   
   <url>
     <loc>/travelgatex/reference/interfaces/node/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/occupancy/</loc>
   </url>
   
   <url>
@@ -839,6 +1171,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/pageinfo/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/pageinfo/</loc>
   </url>
   
@@ -848,6 +1184,10 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/parameterinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/pax/</loc>
   </url>
   
   <url>
@@ -864,6 +1204,10 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/paymentcardinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/enums/paymenttype/</loc>
   </url>
   
   <url>
@@ -943,7 +1287,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/price/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/price/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/pricebreakdown/</loc>
   </url>
   
   <url>
@@ -995,7 +1347,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/promotion/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/promotion/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/property/</loc>
   </url>
   
   <url>
@@ -1023,11 +1383,19 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/rateplan/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/rateplan/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/inputobjects/raterulesfilterinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/enums/raterulestype/</loc>
   </url>
   
   <url>
@@ -1039,11 +1407,23 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/reference/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/reference/</loc>
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/relayinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/relayinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/resort/</loc>
   </url>
   
   <url>
@@ -1099,7 +1479,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/room/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/room/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/roomconnection/</loc>
   </url>
   
   <url>
@@ -1107,11 +1495,23 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/roomcriteria/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/roomcriteria/</loc>
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/roomdata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/roomdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/roomedge/</loc>
   </url>
   
   <url>
@@ -1123,7 +1523,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/roomprice/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/roomprice/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/roomstatic/</loc>
   </url>
   
   <url>
@@ -1131,7 +1539,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/rule/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/rule/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/schema/</loc>
   </url>
   
   <url>
@@ -1163,6 +1579,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/servicestatus/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/servicestatus/</loc>
   </url>
   
@@ -1175,7 +1595,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/stat/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/stat/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/stataccess/</loc>
   </url>
   
   <url>
@@ -1183,7 +1611,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/statplugin/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/statplugin/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/stattransaction/</loc>
   </url>
   
   <url>
@@ -1227,7 +1663,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/statsrequest/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/statsrequest/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/enums/statustype/</loc>
   </url>
   
   <url>
@@ -1251,6 +1695,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/scalars/string/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/string/</loc>
   </url>
   
@@ -1259,7 +1707,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/supplement/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/supplement/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/enums/supplementtype/</loc>
   </url>
   
   <url>
@@ -1299,11 +1755,19 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/surcharge/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/surcharge/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/enums/template/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/interfaces/text/</loc>
   </url>
   
   <url>
@@ -1319,11 +1783,23 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/transactions/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/transactions/</loc>
   </url>
   
   <url>
+    <loc>/hotelx/reference/scalars/uri/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/uri/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/enums/unittimetype/</loc>
   </url>
   
   <url>
@@ -1368,6 +1844,10 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/urlsinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/objects/warning/</loc>
   </url>
   
   <url>
@@ -1443,6 +1923,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/schema/mutation/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/security/identity-access-management/</loc>
   </url>
   
@@ -1455,6 +1939,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/objects/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/</loc>
   </url>
   
@@ -1464,6 +1952,10 @@
   
   <url>
     <loc>/travelgatex/concepts/quotas-limits/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/</loc>
   </url>
   
   <url>
@@ -1527,6 +2019,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/scalars/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/</loc>
   </url>
   
@@ -1548,6 +2044,10 @@
   
   <url>
     <loc>/hotelx/howtos/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/interfaces/</loc>
   </url>
   
   <url>
@@ -1603,6 +2103,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/</loc>
   </url>
   
@@ -1640,6 +2144,10 @@
   
   <url>
     <loc>/hotelx/plugins/format-files/entity_table/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/enums/</loc>
   </url>
   
   <url>

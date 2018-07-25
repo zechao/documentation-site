@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Input objects on TravelgateX Documentation</title>
+    <link>/hotelx/reference/inputobjects/</link>
+    <description>Recent content in Input objects on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/hotelx/reference/inputobjects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HotelBookInput</title>
+      <link>/hotelx/reference/inputobjects/hotelbookinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelbookinput/</guid>
+      <description>Criteria of book.
+GraphQL schema definition type HotelBookInput {optionRefId: String! language: Language clientReference: String! deltaPrice: DeltaPriceInput paymentCard: PaymentCardInput remarks: String holder: HolderInput! rooms: [BookRoomInput!]! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
+    </item>
+    
+    <item>
+      <title>HotelCancelInput</title>
+      <link>/hotelx/reference/inputobjects/hotelcancelinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelcancelinput/</guid>
+      <description>Cancellation Criteria.
+GraphQL schema definition type HotelCancelInput {accessCode: String! language: Language hotelCode: String! reference: BookReferenceInput! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields accessCode(String!):The name of the access to use in the request.</description>
+    </item>
+    
+    <item>
+      <title>HotelCriteriaBookingInput</title>
+      <link>/hotelx/reference/inputobjects/hotelcriteriabookinginput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelcriteriabookinginput/</guid>
+      <description>Criteria of book contains basic information to find a book or books.
+GraphQL schema definition type HotelCriteriaBookingInput {accessCode: String! language: Language typeSearch: BookingCriteriaType! references: CriteriaBookingReferencesInput dates: CriteriaBookingDatesInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.</description>
+    </item>
+    
+    <item>
+      <title>HotelCriteriaQuoteInput</title>
+      <link>/hotelx/reference/inputobjects/hotelcriteriaquoteinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelcriteriaquoteinput/</guid>
+      <description>The quote criteria contains the option reference id, block and language.
+GraphQL schema definition type HotelCriteriaQuoteInput {optionRefId: String! language: Language Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields optionRefId(String!):Identifier of the option chosen in the search.language(Language):Language to be used in request</description>
+    </item>
+    
+    <item>
+      <title>HotelXBoardQueryInput</title>
+      <link>/hotelx/reference/inputobjects/hotelxboardqueryinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelxboardqueryinput/</guid>
+      <description>GraphQL schema definition type HotelXBoardQueryInput {boardCodes: [String!] access: ID! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields boardCodes([String!]):Indicates the board codes that you want filter.access(ID!):Indicates the access that you want use.</description>
+    </item>
+    
+    <item>
+      <title>HotelXCategoryQueryInput</title>
+      <link>/hotelx/reference/inputobjects/hotelxcategoryqueryinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelxcategoryqueryinput/</guid>
+      <description>GraphQL schema definition type HotelXCategoryQueryInput {categoryCodes: [String!] access: ID! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields categoryCodes([String!]):Indicates the category codes that you want filter.access(ID!):Indicates the access that you want use.</description>
+    </item>
+    
+    <item>
+      <title>HotelXDestinationListInput</title>
+      <link>/hotelx/reference/inputobjects/hotelxdestinationlistinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelxdestinationlistinput/</guid>
+      <description>GraphQL schema definition type HotelXDestinationListInput {access: ID! destinationCodes: [String!] maxSize: Int Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields access(ID!):Indicates the accessdestinationCodes([String!]):Search by hotel codesmaxSize(Int):Maxium number of items per page</description>
+    </item>
+    
+    <item>
+      <title>HotelXDestinationSearcherInput</title>
+      <link>/hotelx/reference/inputobjects/hotelxdestinationsearcherinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelxdestinationsearcherinput/</guid>
+      <description>GraphQL schema definition type HotelXDestinationSearcherInput {access: ID! text: String! maxSize: Int Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields access(ID!):Indicates the accesstext(String!):Search by hotel name or destination namemaxSize(Int):Maxium number of items per type</description>
+    </item>
+    
+    <item>
+      <title>HotelXHotelListInput</title>
+      <link>/hotelx/reference/inputobjects/hotelxhotellistinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelxhotellistinput/</guid>
+      <description>GraphQL schema definition type HotelXHotelListInput {access: ID hotelCodes: [String!] destinationCodes: [String!] ranks: [Int!] maxSize: Int group: ID Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields access(ID):Indicates the accesshotelCodes([String!</description>
+    </item>
+    
+    <item>
+      <title>HotelXRoomQueryInput</title>
+      <link>/hotelx/reference/inputobjects/hotelxroomqueryinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelxroomqueryinput/</guid>
+      <description>GraphQL schema definition type HotelXRoomQueryInput {access: ID! roomCodes: [String!] maxSize: Int Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields access(ID!):Indicates the access that you want use.roomCodes([String!]):Indicates the room codes that you want filter.</description>
+    </item>
+    
+    <item>
+      <title>RelayInput</title>
+      <link>/hotelx/reference/inputobjects/relayinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/relayinput/</guid>
+      <description>GraphQL schema definition type RelayInput {first: Int last: Int before: String after: String Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields first(Int):last(Int):before(String):after(String):</description>
+    </item>
+    
+  </channel>
+</rss>
