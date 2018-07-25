@@ -2117,8 +2117,8 @@
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/plugins/blacklist/" class="dd-item">
-            <a href="/hotelx/plugins/blacklist/">
+          <li data-nav-id="/hotelx/plugins/black-list/" class="dd-item">
+            <a href="/hotelx/plugins/black-list/">
               <span style="padding-left: 8px;">Blacklist</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
@@ -2140,6 +2140,11 @@
           <li data-nav-id="/hotelx/plugins/markup/" class="dd-item">
             <a href="/hotelx/plugins/markup/">
               <span style="padding-left: 8px;">Markup</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/safety_margin/" class="dd-item">
+            <a href="/hotelx/plugins/safety_margin/">
+              <span style="padding-left: 8px;">Safety Margin</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/hotelx/plugins/converter/" class="dd-item">
@@ -2194,6 +2199,11 @@
           <li data-nav-id="/hotelx/plugins/format-files/entity_table/" class="dd-item">
             <a href="/hotelx/plugins/format-files/entity_table/">
               <span style="padding-left: 8px;">Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/plugins/format-files/safety_margin/" class="dd-item">
+            <a href="/hotelx/plugins/format-files/safety_margin/">
+              <span style="padding-left: 8px;">Safety margin</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -2437,6 +2447,16 @@
 <p>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.</p>
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
+
+<h2 id="20180725">2018-07-25</h2>
+
+<p>🛑  Input field <code>HotelSettingsInput.group</code> changed type from <code>String</code> to <code>ID</code></p>
+
+<p>🛑  Input field <code>HotelSettingsInput.client</code> changed type from <code>String</code> to <code>ID</code></p>
+
+<p>✅  Input field <code>HotelSettingsInput.client</code> description changed from <code>This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.</code> to <code>Client name, this field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.</code></p>
+
+<p>✅  Input field <code>clientTokens</code> was added to input object type <code>HotelSettingsInput</code></p>
 
 <h2 id="20180716">2018-07-16</h2>
 
@@ -4852,6 +4872,7 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
 <ul>
 <li>
 <ul>
+<li><a href="#20180725">2018-07-25</a></li>
 <li><a href="#20180716">2018-07-16</a></li>
 <li><a href="#20180710">2018-07-10</a></li>
 <li><a href="#2018-06-21">2018-06-21</a></li>

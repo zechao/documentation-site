@@ -17,7 +17,7 @@
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on HotelX product.
-All notable changes on our platform will be documented in this page. 2018-07-18  Hotel, board, room and rate maps caches are now updated synchronously. This will improve the user experience when 1st time debugging operations. Hotel maps cache refactoring to reduce number of cached items and cache operations. Hotel maps cache requests are now pipelined to reduce Round Trip Time.</description>
+All notable changes on our platform will be documented in this page. 2018-07-24  New plugin, safety margin. You can see the documentation here(/hotelx/plugins/safety-margin/).   2018-07-18  Hotel, board, room and rate maps caches are now updated synchronously. This will improve the user experience when 1st time debugging operations.</description>
     </item>
     
     <item>

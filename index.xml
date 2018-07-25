@@ -3416,10 +3416,10 @@ Required by fake__options:</description>
     
     <item>
       <title>Blacklist</title>
-      <link>/hotelx/plugins/blacklist/</link>
+      <link>/hotelx/plugins/black-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotelx/plugins/blacklist/</guid>
+      <guid>/hotelx/plugins/black-list/</guid>
       <description>The blacklist plugin is used to ignore hotel code(s) when we a search query is executed. There are 2 types of blacklists:
  Filter hotel code of a specific Access Filter hotel codes of a specific Supplier  Loading a blacklist is as easy as following the steps below:
 Access Blacklist Blacklist is applied for specific Access
@@ -3455,7 +3455,7 @@ HotelX Settings In HotelX we have differents configuration level settings for a 
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on HotelX product.
-All notable changes on our platform will be documented in this page. 2018-07-18  Hotel, board, room and rate maps caches are now updated synchronously. This will improve the user experience when 1st time debugging operations. Hotel maps cache refactoring to reduce number of cached items and cache operations. Hotel maps cache requests are now pipelined to reduce Round Trip Time.</description>
+All notable changes on our platform will be documented in this page. 2018-07-24  New plugin, safety margin. You can see the documentation here(/hotelx/plugins/safety-margin/).   2018-07-18  Hotel, board, room and rate maps caches are now updated synchronously. This will improve the user experience when 1st time debugging operations.</description>
     </item>
     
     <item>
@@ -3465,7 +3465,7 @@ All notable changes on our platform will be documented in this page. 2018-07-18 
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page. 2018-07-16  GraphQL Schema breaking changes. Sustitutes and fixes to Deprecated and Deleted Notes pages.    GraphQL Schema updated. Changelog based on keep a changelog    Deprecated schema notes pages. Deleted schema notes pages.    Documentation pages&amp;rsquo; styles</description>
+All notable changes on TravelgateX platform will be documented in this page. 2018-07-25  GraphQL Schema updated. Admin permissions management for groups.    Old support Apikey    Team&amp;rsquo;s permission management for groups.    Flow (Cascade) permissions. Inprove time response of groups resolvers.</description>
     </item>
     
     <item>
@@ -3630,9 +3630,9 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-07-16 🛑 Input field organizations was removed from input object type StatsFilterInput
-🛑 Field error was removed from object type Stats
-✅ Input field groups was added to input object type StatsFilterInput</description>
+2018-07-25 🛑 Input field HotelSettingsInput.group changed type from String to ID
+🛑 Input field HotelSettingsInput.client changed type from String to ID
+✅ Input field HotelSettingsInput.client description changed from This field is occurs only if the authorization header is of the type JWT.</description>
     </item>
     
     <item>
@@ -3665,6 +3665,16 @@ MarkupX This markup implementation is supported by our web application which per
       <guid>/getting-started/playground/</guid>
       <description>Try it For Yourself API Playground is an interactive, fun, and super quick way to get to know our APIs.
 In the API Playground, as you start to type the query, it will autocomplete with the fields available to complete your query parameters. You can also click on the green Schema button on the right of the Playground window to learn more about our data model and to see all of the options available for building your query.</description>
+    </item>
+    
+    <item>
+      <title>Safety Margin</title>
+      <link>/hotelx/plugins/safety_margin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/safety_margin/</guid>
+      <description>Safety Margin is an optional plugin and allows discards those options that have a commission higher than expected.
+Margin safe Goals The safety margin plugin discards those options that have a commission higher than expected. In this way, only those options that have a commission equal or less than those reported in the file will be returned. Sequentially, the rules will be evaluated until a match is found, upon finding the process is stopped and the commission is evaluated, otherwise, if the rule is found, the option will be validated.</description>
     </item>
     
     <item>
@@ -3764,7 +3774,7 @@ In this case you can search the bookings with references or by dates, the dates 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/release-notes/breaking-changes/</guid>
-      <description> Changes history of deprecated notes previously announced No deletions to date </description>
+      <description> Changes history of deprecated notes previously announced Unreleased  Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.Expected removal on 2018-08-19.   2018-07-19  Removed distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21 .   2018-05-21  Deprecated distribute from AddOns. Reason: You can find it in distribution AddOn. Finally removed on 2018-07-19 .   </description>
     </item>
     
     <item>
@@ -3859,6 +3869,17 @@ All notable changes to this product will be documented in this page. Under const
       <description>On this page you will learn how to rank hotels.
 Overview On this page, you will learn how to manage content data such as hotels, boards, categories, etc. in your site. Hotel Content operations allow changes to be made into static methods on HotelX, so that hotels can be divided into different rankings or priorities in order to facilitate the mapping process.
 The main goal of this process is to create a hotel ranking and divide the whole portfolio in order to make the hotel list more manageable.</description>
+    </item>
+    
+    <item>
+      <title>Safety margin</title>
+      <link>/hotelx/plugins/format-files/safety_margin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/format-files/safety_margin/</guid>
+      <description>The safety margin file should be in the below format:
+ Encoding: UTF-8 File Name:  context sequential margin  Extension file: csv Headers:
+ ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date creationDateTo → end creation date checkInFrom → checkinfrom date checkInTo → checkinto date hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.</description>
     </item>
     
     <item>

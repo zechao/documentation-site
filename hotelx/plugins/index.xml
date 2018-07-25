@@ -23,10 +23,10 @@ Flows HotelX query or mutation determine what flow is executed. Plugins can be e
     
     <item>
       <title>Blacklist</title>
-      <link>/hotelx/plugins/blacklist/</link>
+      <link>/hotelx/plugins/black-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotelx/plugins/blacklist/</guid>
+      <guid>/hotelx/plugins/black-list/</guid>
       <description>The blacklist plugin is used to ignore hotel code(s) when we a search query is executed. There are 2 types of blacklists:
  Filter hotel code of a specific Access Filter hotel codes of a specific Supplier  Loading a blacklist is as easy as following the steps below:
 Access Blacklist Blacklist is applied for specific Access
@@ -81,6 +81,16 @@ It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
       <description>Markups type plugins permits to apply markup percentages over a price, markup is a field in price composed of a set of rules and a new price with an added percentage, the percentage is the sum of every rule applied.
 Although this plugin can be customized, we already offer an implementation.
 MarkupX This markup implementation is supported by our web application which permits the management of an organization&amp;rsquo;s rules, the modification of these rules are applied in your product at real time.</description>
+    </item>
+    
+    <item>
+      <title>Safety Margin</title>
+      <link>/hotelx/plugins/safety_margin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/safety_margin/</guid>
+      <description>Safety Margin is an optional plugin and allows discards those options that have a commission higher than expected.
+Margin safe Goals The safety margin plugin discards those options that have a commission higher than expected. In this way, only those options that have a commission equal or less than those reported in the file will be returned. Sequentially, the rules will be evaluated until a match is found, upon finding the process is stopped and the commission is evaluated, otherwise, if the rule is found, the option will be validated.</description>
     </item>
     
     <item>

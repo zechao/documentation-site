@@ -29,9 +29,9 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-07-16 🛑 Input field organizations was removed from input object type StatsFilterInput
-🛑 Field error was removed from object type Stats
-✅ Input field groups was added to input object type StatsFilterInput</description>
+2018-07-25 🛑 Input field HotelSettingsInput.group changed type from String to ID
+🛑 Input field HotelSettingsInput.client changed type from String to ID
+✅ Input field HotelSettingsInput.client description changed from This field is occurs only if the authorization header is of the type JWT.</description>
     </item>
     
   </channel>

@@ -1407,7 +1407,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/plugins/blacklist/</loc>
+    <loc>/hotelx/plugins/black-list/</loc>
   </url>
   
   <url>
@@ -1520,6 +1520,10 @@
   
   <url>
     <loc>/getting-started/playground/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/safety_margin/</loc>
   </url>
   
   <url>
@@ -1672,6 +1676,10 @@
   
   <url>
     <loc>/travelgatex/resources/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/format-files/safety_margin/</loc>
   </url>
   
   <url>

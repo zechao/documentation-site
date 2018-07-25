@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/release-notes/breaking-changes/</guid>
-      <description> Changes history of deprecated notes previously announced No deletions to date </description>
+      <description> Changes history of deprecated notes previously announced Unreleased  Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.Expected removal on 2018-08-19.   2018-07-19  Removed distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21 .   2018-05-21  Deprecated distribute from AddOns. Reason: You can find it in distribution AddOn. Finally removed on 2018-07-19 .   </description>
     </item>
     
     <item>
