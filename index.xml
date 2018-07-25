@@ -3878,7 +3878,7 @@ The main goal of this process is to create a hotel ranking and divide the whole 
       
       <guid>/hotelx/plugins/format-files/safety_margin/</guid>
       <description>The safety margin file should be in the below format:
- Encoding: UTF-8 File Name:  context sequential margin  Extension file: csv Headers:
+ Encoding: UTF-8 File Name:  context sequential safetymargin  Extension file: csv Headers:
  ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date creationDateTo → end creation date checkInFrom → checkinfrom date checkInTo → checkinto date hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.</description>
     </item>
     
