@@ -4646,7 +4646,8 @@ All notable changes on our platform will be documented in this page.2018-07-24 
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page.2018-07-25  GraphQL Schema updated. Admin permissions management for groups.    Old support Apikey    Team&amp;rsquo;s permission management for groups.    Flow (Cascade) permissions. Inprove time response of groups resolvers.</description>
+All notable changes on TravelgateX platform will be documented in this page.2018-07-27  Organizations queries resolvers   2018-07-26  GraphQL Schema updated.    Groups resolvers  
+2018-07-25  GraphQL Schema updated. Admin permissions management for groups.    Old support Apikey    Team&amp;rsquo;s permission management for groups.</description>
     </item>
     
     <item>
@@ -4820,9 +4821,9 @@ Under construction!We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-07-25 🛑 Input field HotelSettingsInput.group changed type from String to ID
-🛑 Input field HotelSettingsInput.client changed type from String to ID
-✅ Input field HotelSettingsInput.client description changed from This field is occurs only if the authorization header is of the type JWT.</description>
+2018-07-26 ⚠️ Enum value ORG was added to enum GroupTypeInput
+⚠️ Enum value ROOT was added to enum GroupTypeInput
+⚠️ Enum value ROOT was added to enum `GroupType</description>
     </item>
     
     <item>

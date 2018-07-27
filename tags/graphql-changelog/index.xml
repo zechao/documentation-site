@@ -29,9 +29,9 @@ Under construction!We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-07-25 🛑 Input field HotelSettingsInput.group changed type from String to ID
-🛑 Input field HotelSettingsInput.client changed type from String to ID
-✅ Input field HotelSettingsInput.client description changed from This field is occurs only if the authorization header is of the type JWT.</description>
+2018-07-26 ⚠️ Enum value ORG was added to enum GroupTypeInput
+⚠️ Enum value ROOT was added to enum GroupTypeInput
+⚠️ Enum value ROOT was added to enum `GroupType</description>
     </item>
     
   </channel>
