@@ -18,7 +18,7 @@
       <guid>/hotelx/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the HotelX GraphQL API.
-Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
+Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
     </item>
     
     <item>
@@ -29,9 +29,8 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-07-26 ⚠️ Enum value ORG was added to enum GroupTypeInput
-⚠️ Enum value ROOT was added to enum GroupTypeInput
-⚠️ Enum value ROOT was added to enum `GroupType</description>
+2018-07-31 ✅ Field StoredCard.adviseMessage description changed from List of advise messages. to List of messages
+✅ Deprecation reason on field AddOns.distribute has changed from You can find it in distribution AddOn to deprecated from 2018-05-21.</description>
     </item>
     
   </channel>
