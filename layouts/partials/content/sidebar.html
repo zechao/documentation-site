@@ -141,6 +141,27 @@
       $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
       return false;
     });
+
+    $('span.fa.fa-star').on("mouseover", function (e) {
+            $('span.fa.fa-star').removeClass('active');
+
+            const stars = $(e.target).prevAll();
+            stars.push(e.target);
+
+            $(stars).addClass('active');
+
+        });
+        $('span.fa.fa-star').on("click", function (e) {
+            $('span.fa.fa-star').removeClass('checked');
+            const stars = $(e.target).prevAll();
+            stars.push(e.target);
+
+            $(stars).addClass('checked');
+
+        });
+        $('div#stars').on("mouseleave", function () {
+            $('span.fa.fa-star').removeClass('active');
+        });
   })
 
 </script>

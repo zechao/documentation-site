@@ -156,7 +156,6 @@ iframe {
   height: 400px;
 }
 
-
 .menu-right {
   font-size: 15px;
   position: fixed;
@@ -524,7 +523,6 @@ a.card-lv2:hover {
 .menu-left.toogled {
   transform: translateX(0%);
 }
-
 
 .menu-left nav {
   position: relative;
@@ -1854,4 +1852,31 @@ div.release-types.type-u > ul > li:nth-of-type(1)::before {
 div.alert.alert-info + h3#unreleased {
   visibility: hidden;
   height: 0;
+}
+
+div#stars {
+  width: 20%;
+  min-width: 200px;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+@media (max-width: 1000px) {
+  div#stars {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+div#stars > span.checked {
+  color: goldenrod;
+}
+
+div#stars > span.active {
+  color: yellow;
+}
+
+div#stars > span.active.checked {
+  color: gold;
 }

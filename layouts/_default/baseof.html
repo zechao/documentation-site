@@ -93,7 +93,13 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">{{if .Params.pagetitle }}{{ .Params.pagetitle }}{{else}}{{ .Params.title }}{{end}}</h1>
+              <h1 class="pageTitle"><span>{{if .Params.pagetitle }}{{ .Params.pagetitle }}{{else}}{{ .Params.title }}{{end}}</span><div id="stars">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div> </h1>
 
               {{ if and (or .IsPage .IsSection) .Site.Params.editURL }}
                 {{ $File := .File }}
