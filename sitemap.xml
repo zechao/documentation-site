@@ -427,6 +427,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/faqs/frequently-asked-questions/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/file/</loc>
   </url>
   
@@ -1427,6 +1431,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/faqs/common-errors/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/concepts/</loc>
   </url>
   
@@ -1695,7 +1703,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/frequently-asked-questions/</loc>
+    <loc>/hotelx/faqs/</loc>
   </url>
   
   <url>
@@ -1740,6 +1748,11 @@
   
   <url>
     <loc>/credits/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/errors/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

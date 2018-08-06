@@ -1059,6 +1059,19 @@ Required by AdviseMessage:  List of advise messages.</description>
     </item>
     
     <item>
+      <title>FAQs</title>
+      <link>/hotelx/faqs/frequently-asked-questions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/faqs/frequently-asked-questions/</guid>
+      <description>Hotels in test Do I have access to all the hotels in the test environment?
+No, we use a test supplier, so there is a limited number of hotels in the data base to be used.
+Languages allowed Which are the languages allowed in HotelX?
+The new aggregator allows each language, it will depend from each supplier.
+Maxium hotels code How many hotels code are allowed to request at the same time?</description>
+    </item>
+    
+    <item>
       <title>File</title>
       <link>/travelgatex/reference/objects/file/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3469,6 +3482,17 @@ All notable changes on TravelgateX platform will be documented in this page.  Su
     </item>
     
     <item>
+      <title>Common Errors</title>
+      <link>/hotelx/faqs/common-errors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/faqs/common-errors/</guid>
+      <description>Error 204 - No Results Found Error “204 No results found” is a common error that you can receive in the Search Query response. This error means that the product you are trying to obtain is not available.
+There are several potential reasons as to why this error occurs:
+ The product is not available for the dates in the request. The product is not available for the number of passengers selected in the request.</description>
+    </item>
+    
+    <item>
       <title>Configure HotelX Security</title>
       <link>/travelgatex/tutorials/howto-configure-permissions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3913,17 +3937,6 @@ Supplier Rules applied or indexed at the supplier level.
 Access Rules applied or indexed at the access level.
 Hotel The key to indexing is of the hotel type, we hope that the reference is by a hotel code where the type will be given by the context.
 Destination Idem hotel.</description>
-    </item>
-    
-    <item>
-      <title>FAQs</title>
-      <link>/hotelx/frequently-asked-questions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/frequently-asked-questions/</guid>
-      <description>Do I have access to all the hotels in the test environment? No, we use a test supplier, so there is a limited number of hotels in the data base to be used.
-Which are the languages allowed in HotelX? The new aggregator allows each language, it will depend from each supplier.
-How many hotels code are allowed to request at the same time? We recommend a maximum of 200 hotels, the new aggregator will split to each supplier the maximum hotels allowed in different batches in order to request to the supplier all the hotels.</description>
     </item>
     
     <item>

@@ -742,6 +742,13 @@
 	"content": " GraphQL schema definition type ExternalMessage {  code: String    message: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(String): External Code  message(String!): External Message  \nRequired by AdviseMessage:  List of advise messages.  \n"
 },
 {
+	"uri": "/hotelx/faqs/frequently-asked-questions/",
+	"title": "FAQs",
+	"tags": ["faq"],
+	"description": "Do you have specific questions about HotelX? Check out the FAQs",
+	"content": " Hotels in test Do I have access to all the hotels in the test environment?\nNo, we use a test supplier, so there is a limited number of hotels in the data base to be used.\nLanguages allowed Which are the languages allowed in HotelX?\nThe new aggregator allows each language, it will depend from each supplier.\nMaxium hotels code How many hotels code are allowed to request at the same time?\nWe recommend a maximum of 200 hotels, the new aggregator will split to each supplier the maximum hotels allowed in different batches in order to request to the supplier all the hotels. Please take note: The current formula and rate limit are subject to change.\nSearch request filters Which are the possible filters in the Search Request?\nRight now the only option is by hotel code. In the future will be possible to request by Destination or by Geocode.\nThe main search methods will be: - Hotel code - Destination (Coming soon) - Geocode (Coming soon)\nGIATA codes It is possible to use GIATA codes?\nYes, It is possible request availability using GIATA codes, first of all you need to provide us your GIATA credentials in order to set up your Apikey. After that you will be able to request using GIATA codes, receive the availability response with GIATA codes, etc…\nCountry names How can I get the names of the countries?\nThe response of the hotelX query contains location.country in ISO standard format.\nDaily-prices Can I get Daily-prices in Search Response?\nIt will depend if the supplier offer the information. In case that the information is returned by the supplier, you will find it through Roomprice string\u0026ndash;\u0026gt;PriceBreakdown.\nCurrency not supported What happen if I request availability with a currency that the supplier doesn´t have it?\nFor these cases you will have two options: - Apply the exchange rates using a pluggin (this pluggin contains the exchange rates previously loaded by you) - Don´t apply any exchange rate and you will receive the supplier´s currency.\nCancellation costs Is it possible to perform a cancellation as a query to just retrieve the cancellation costs, but not to cancel the booked item itself?\nYou will be able to check the booking information (cancel policies included) with the HotelBooking query.\nResponse time How is the response time of the different providers managed in the aggregator mode?\nHotelX will return information from all the suppliers at the same time, once all the responses have been obtained by them. The requests that have timed out, will be signaled by a warning in the response.\nTime out In aggregator mode is it possible to set a time out for each provider?\nNo, the time out will be applied to all providers, using the parameter setting: timeout.\n"
+},
+{
 	"uri": "/travelgatex/reference/objects/file/",
 	"title": "File",
 	"tags": [],
@@ -2492,6 +2499,13 @@
 	"content": " To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.\nAll notable changes on TravelgateX platform will be documented in this page.  Support Tracing by request.   2018-07-31  GraphQL Schema updated.    Fix IAM mutations    Delete member mutation (Delete Apikeys or uninvite user emails)   2018-07-30  Improvements on the organization selector  Sorted organizations by alphabetical order. Autoselect when there is just one org. available. Popup when there is no org. selected. Prettier component.     Iam members  Label, created at and updated at columns on members table. Option to assign roles by macro-roles  Seller \u0026ldquo;WHOLESALER\u0026rdquo; to the partners filter on the directory and partners screen.  \n2018-07-27  Organizations queries resolvers   2018-07-26  GraphQL Schema updated.    Groups resolvers  \n2018-07-25  GraphQL Schema updated. Admin permissions management for groups.    Old support Apikey    Team\u0026rsquo;s permission management for groups.    Flow (Cascade) permissions. Inprove time response of groups resolvers.  \n2018-07-16  GraphQL Schema breaking changes. Sustitutes and fixes to Deprecated and Deleted Notes pages.    GraphQL Schema updated. Changelog based on keep a changelog    Deprecated schema notes pages. Deleted schema notes pages.    Documentation pages\u0026rsquo; styles  \n2018-07-10  Deleted schema notes Documentation pages\u0026rsquo; index    GraphQL Schema updated. New version of Deprecated schema notes   2018-07-09  Previously deprecated queries. See more   "
 },
 {
+	"uri": "/hotelx/faqs/common-errors/",
+	"title": "Common Errors",
+	"tags": ["faq", "errors"],
+	"description": "FAQs on common errors",
+	"content": " Error 204 - No Results Found Error “204 No results found” is a common error that you can receive in the Search Query response. This error means that the product you are trying to obtain is not available.\nThere are several potential reasons as to why this error occurs:\n The product is not available for the dates in the request. The product is not available for the number of passengers selected in the request. The product is not available for the destination selected in the request.  In case an error of this type is received, you should first contact the supplier directly on a commercial level and check with them whether there should be availability for the product you are trying to obtain with the specific search criteria (dates, passenger quantity, passenger age, destination you have chosen, etc.). In case the supplier confirms that there should be availability but you are still not obtaining it, you should contact our Customer Care department.\n"
+},
+{
 	"uri": "/travelgatex/concepts/",
 	"title": "Concepts",
 	"tags": [],
@@ -2961,11 +2975,11 @@
 	"content": " Entities processed types: Sequential Type of processing sequentially, the first rule that coincides will be the one applied.\nSupplier Rules applied or indexed at the supplier level.\nAccess Rules applied or indexed at the access level.\nHotel The key to indexing is of the hotel type, we hope that the reference is by a hotel code where the type will be given by the context.\nDestination Idem hotel.\n"
 },
 {
-	"uri": "/hotelx/frequently-asked-questions/",
+	"uri": "/hotelx/faqs/",
 	"title": "FAQs",
-	"tags": ["faq"],
+	"tags": [],
 	"description": "Do you have specific questions about HotelX? Check out the FAQs",
-	"content": " Do I have access to all the hotels in the test environment? No, we use a test supplier, so there is a limited number of hotels in the data base to be used.\nWhich are the languages allowed in HotelX? The new aggregator allows each language, it will depend from each supplier.\nHow many hotels code are allowed to request at the same time? We recommend a maximum of 200 hotels, the new aggregator will split to each supplier the maximum hotels allowed in different batches in order to request to the supplier all the hotels. Please take note: The current formula and rate limit are subject to change.\nWhich are the possible filters in the Search Request? Right now the only option is by hotel code. In the future will be possible to request by Destination or by Geocode.\nThe main search methods will be: - Hotel code - Destination (Coming soon) - Geocode (Coming soon)\nIt is possible to use GIATA codes? Yes, It is possible request availability using GIATA codes, first of all you need to provide us your GIATA credentials in order to set up your Apikey. After that you will be able to request using GIATA codes, receive the availability response with GIATA codes, etc…\nHow can I get the names of the countries? The response of the hotelX query contains location.country in ISO standard format.\nCan I get Daily-prices in Search Response? It will depend if the supplier offer the information. In case that the information is returned by the supplier, you will find it through Roomprice string\u0026ndash;\u0026gt;PriceBreakdown.\nWhat happen if I request availability with a currency that the supplier doesn´t have it? For these cases you will have two options: - Apply the exchange rates using a pluggin (this pluggin contains the exchange rates previously loaded by you) - Don´t apply any exchange rate and you will receive the supplier´s currency.\nIs it possible to perform a cancellation as a query to just retrieve the cancellation costs, but not to cancel the booked item itself? You will be able to check the booking information (cancel policies included) with the HotelBooking query.\nHow is the response time of the different providers managed in the aggregator mode? HotelX will return information from all the suppliers at the same time, once all the responses have been obtained by them. The requests that have timed out, will be signaled by a warning in the response.\nIn aggregator mode is it possible to set a time out for each provider? No, the time out will be applied to all providers, using the parameter setting: timeout\n"
+	"content": " Faqs pages FAQs and common errors pages:\n  FAQs Do you have specific questions about HotelX? Check out the FAQs\n     Common Errors FAQs on common errors\n    "
 },
 {
 	"uri": "/travelgatex/frequently-asked-questions/",
@@ -3036,6 +3050,13 @@
 	"tags": [],
 	"description": "contributors and packages used by hugo-theme-docdock",
 	"content": " github contributors Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester. clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support reveal-js - The HTML Presentation Framework  Tooling  Netlify - Continuous deployement and hosting of this documentation Hugo    "
+},
+{
+	"uri": "/tags/errors/",
+	"title": "Errors",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "/tags/faq/",
