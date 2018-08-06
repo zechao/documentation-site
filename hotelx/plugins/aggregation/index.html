@@ -2561,6 +2561,30 @@
 <li>Add or remove object instances </li>
 </ul>
 
+<h3 id="execution-example">Execution example</h3>
+
+<pre><code>{
+    &quot;plugins&quot;: {
+        &quot;step&quot;: &quot;REQUEST_OPTION/RESPONSE&quot;,
+        &quot;pluginsType&quot;: [
+            {
+                &quot;type&quot;: &quot;PRE_STEP&quot;,
+                &quot;name&quot;: &quot;aggregation&quot;,
+                &quot;parameters&quot;: [
+                    {
+            {&quot;key&quot;: &quot;primaryKey&quot;,&quot;value&quot;: &quot;hotel,supplier,room&quot;},
+                        {&quot;key&quot;: &quot;function&quot;,&quot;value&quot;: &quot;min&quot;},
+                        {&quot;key&quot;: &quot;priceField&quot;,&quot;value&quot;: &quot;net&quot;},
+                        {&quot;key&quot;: &quot;currency&quot;,&quot;value&quot;: &quot;EUR&quot;},
+                        {&quot;key&quot;: &quot;size&quot;,&quot;value&quot;: 1}
+                    }
+                ]
+            }
+        ]
+    }
+}
+</code></pre>
+
 <hr/>
   
 
@@ -2579,6 +2603,7 @@
 <li><a href="#keyfilter">KeyFilter</a></li>
 <li><a href="#parameters">Parameters</a></li>
 <li><a href="#processor-pre-step-and-post-step">Processor (Pre Step and Post Step)</a></li>
+<li><a href="#execution-example">Execution example</a></li>
 </ul></li>
 </ul></li>
 </ul>
