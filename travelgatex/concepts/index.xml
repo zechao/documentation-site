@@ -27,8 +27,20 @@ Access An Access is a set of credentials and configuration in order to access th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/concepts/quotas-limits/</guid>
-      <description>Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
- Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!</description>
+      <description>Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+Join us on Slack and let us know what resources you need us to prirotizeSend us a Jira service desk requestLog an issues request with usWrite this page yourself!</description>
+    </item>
+    
+    <item>
+      <title>Request Headers</title>
+      <link>/travelgatex/concepts/request-headers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/concepts/request-headers/</guid>
+      <description>The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and are required on all API requests.
+Authorization The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header. no
+Syntax Authorization: &amp;lt;type&amp;gt; &amp;lt;credentials&amp;gt;  Directives &amp;lt;type&amp;gt;: * ApiKey * Bearer
+&amp;lt;credential&amp;gt;: String</description>
     </item>
     
   </channel>

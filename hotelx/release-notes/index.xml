@@ -28,7 +28,7 @@ The Project has a few columns that act as the status whereas cards are the items
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on HotelX product.
-All notable changes on our platform will be documented in this page. 2018-07-24  New plugin, safety margin. You can see the documentation here.   2018-07-18  Hotel, board, room and rate maps caches are now updated synchronously. This will improve the user experience when 1st time debugging operations.</description>
+All notable changes on our platform will be documented in this page.2018-07-24  New plugin, safety margin. You can see the documentation here.   2018-07-18  Hotel, board, room and rate maps caches are now updated synchronously. This will improve the user experience when 1st time debugging operations.</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@ All notable changes on our platform will be documented in this page. 2018-07-24 
       <guid>/hotelx/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the HotelX GraphQL API.
-Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
+Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/release-notes/breaking-changes/</guid>
-      <description> Changes history of deprecated notes previously announced Unreleased  Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.Expected removal on 2018-08-19.   2018-07-19  Removed distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21 .   2018-05-21  Deprecated distribute from AddOns. Reason: You can find it in distribution AddOn. Finally removed on 2018-07-19 .   </description>
+      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.Expected removal on 2018-08-19.   2018-07-26  Removed useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12 . Removed connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19 .   2018-07-24  Removed distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21 .</description>
     </item>
     
   </channel>

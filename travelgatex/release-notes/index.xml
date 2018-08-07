@@ -28,7 +28,7 @@ The Project has a few columns that act as the status whereas cards are the items
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page.  Support Tracing by request.   2018-07-31  GraphQL Schema updated.    Fix IAM mutations    Delete member mutation (Delete Apikeys or uninvite user emails)   2018-07-30  Improvements on the organization selector  Sorted organizations by alphabetical order.</description>
+All notable changes on TravelgateX platform will be documented in this page.2018-08-08  GraphQL Schema updated.    TGX Headers page Support basic Tracing by request using header TGX-Tracing: 1 Return groups codes in entities queries (accessData,suppierData,clientData,profileData).   2018-07-31  GraphQL Schema updated.    Fix IAM mutations    Delete member mutation (Delete Apikeys or uninvite user emails)   2018-07-30  Improvements on the organization selector  Sorted organizations by alphabetical order.</description>
     </item>
     
     <item>
@@ -39,8 +39,9 @@ All notable changes on TravelgateX platform will be documented in this page.  Su
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-07-31 ✅ Field StoredCard.adviseMessage description changed from List of advise messages. to List of messages
-✅ Deprecation reason on field AddOns.distribute has changed from You can find it in distribution AddOn to deprecated from 2018-05-21.</description>
+2018-08-08 ✅ Input field currency was added to input object type SettingsBaseInput
+✅ Field parents was added to object type GroupData
+✅ Deprecation reason on field Group.</description>
     </item>
     
     <item>
@@ -49,7 +50,7 @@ Check out this list of new releases and changes applied on the TravelgateX Graph
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announced Unreleased  Removal of hotel from Booking. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21.To be removed soon. Removal of hotel from Quote. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21.To be removed soon. Removal of hotel from Search. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21.To be removed soon. Removal of useContext from HotelSettingsInput.</description>
+      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of organization from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03.Expected removal on 2018-11-01. Removal of pointOfSaleCode from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03.Expected removal on 2018-11-01. Removal of bookingReference from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03.Expected removal on 2018-11-01. Removal of error from Group. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-01.Expected removal on 2018-10-30. Removal of distribute from AddOns.</description>
     </item>
     
   </channel>
