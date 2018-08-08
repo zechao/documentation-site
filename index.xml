@@ -5436,7 +5436,7 @@ All notable changes on our platform will be documented in this page.2018-07-24 
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page.2018-08-08  GraphQL Schema updated.    TGX Headers page Support basic Tracing by request using header TGX-Tracing: 1 Return groups codes in entities queries (accessData,suppierData,clientData,profileData).   2018-07-31  GraphQL Schema updated.    Fix IAM mutations    Delete member mutation (Delete Apikeys or uninvite user emails)   2018-07-30  Improvements on the organization selector  Sorted organizations by alphabetical order.</description>
+All notable changes on TravelgateX platform will be documented in this page.2018-08-08  GraphQL Schema updated.    TGX Headers page Support basic Tracing by request using header TGX-Tracing: 1 Return groups codes on entities queries (accessData,suppierData,clientData,profileData). Access name filter New default group when user account is deleted, hard delete when Audit members has been added in createMember and deleteMember    Response of Access and Supplier query when no accesses on requested Entity propagation Permission check Update member auditions and refactor that funcionality URL resolver api/resource resolvers roles funtion with new admin permissions   2018-07-31  GraphQL Schema updated.</description>
     </item>
     
     <item>
@@ -5682,9 +5682,9 @@ In the API Playground, as you start to type the query, it will autocomplete with
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/concepts/request-headers/</guid>
-      <description>The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and are required on all API requests.
-Authorization The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header. no
-Syntax Authorization: &amp;lt;type&amp;gt; &amp;lt;credentials&amp;gt;  Directives &amp;lt;type&amp;gt;: * ApiKey * Bearer
+      <description>The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and they are required in all API requests.
+Authorization (Required) The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.
+Syntax Authorization: &amp;lt;type&amp;gt; &amp;lt;credentials&amp;gt;  Directives &amp;lt;type&amp;gt;: - ApiKey - Bearer
 &amp;lt;credential&amp;gt;: String</description>
     </item>
     

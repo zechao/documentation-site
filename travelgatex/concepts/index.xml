@@ -37,9 +37,9 @@ Access An Access is a set of credentials and configuration in order to access th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/concepts/request-headers/</guid>
-      <description>The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and are required on all API requests.
-Authorization The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header. no
-Syntax Authorization: &amp;lt;type&amp;gt; &amp;lt;credentials&amp;gt;  Directives &amp;lt;type&amp;gt;: * ApiKey * Bearer
+      <description>The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and they are required in all API requests.
+Authorization (Required) The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.
+Syntax Authorization: &amp;lt;type&amp;gt; &amp;lt;credentials&amp;gt;  Directives &amp;lt;type&amp;gt;: - ApiKey - Bearer
 &amp;lt;credential&amp;gt;: String</description>
     </item>
     

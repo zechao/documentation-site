@@ -2598,11 +2598,11 @@
               
 
 
-<p>The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and are required on all API requests.</p>
+<p>The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and they are required in all API requests.</p>
 
-<h2 id="authorization">Authorization</h2>
+<h2 id="authorization-required">Authorization (Required)</h2>
 
-<p>The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.   no</p>
+<p>The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.</p>
 
 <h3 id="syntax">Syntax</h3>
 
@@ -2612,8 +2612,8 @@
 <h3 id="directives">Directives</h3>
 
 <p><code>&lt;type&gt;</code>:
-* <code>ApiKey</code>
-* <code>Bearer</code></p>
+- <code>ApiKey</code>
+- <code>Bearer</code></p>
 
 <p><code>&lt;credential&gt;</code>: String</p>
 
@@ -2621,7 +2621,7 @@
 
 <p>Authorization: Apikey q8ggx-poVDW76Kw9-18hwnnRvxlZm-AP2QZ</p>
 
-<h2 id="tgx-audit">TGX-Audit</h2>
+<h2 id="tgx-audit-optional">TGX-Audit (Optional)</h2>
 
 <p>Force audit the request in TravelgateX systems.</p>
 
@@ -2633,14 +2633,14 @@
 <h3 id="directives-1">Directives</h3>
 
 <p><code>&lt;number&gt;</code>:
-* 0: The requester prefers to allow tracking on the target system.
-* 1: The requester prefers not to be tracked on the targe system.</p>
+- 0: The requester prefers to allow tracking on the target system.
+- 1: The requester prefers not to be tracked on the target system.</p>
 
 <p><code>&lt;credential&gt;</code>: String</p>
 
-<h2 id="tgx-tracing">TGX-Tracing</h2>
+<h2 id="tgx-tracing-optional">TGX-Tracing (Optional)</h2>
 
-<p>Performance traces alongside the data returned.</p>
+<p>When activated, it returns performance traces alongside the data requested.</p>
 
 <h3 id="syntax-2">Syntax</h3>
 
@@ -2650,8 +2650,8 @@
 <h3 id="directives-2">Directives</h3>
 
 <p><code>&lt;number&gt;</code>:
-* 0: Default value. Tracing not enabled.
-* 1: Tracing enabled.</p>
+- 0: Default value. Tracing not enabled.
+- 1: Tracing enabled.</p>
 
 <p><code>&lt;credential&gt;</code>: String</p>
 
@@ -2668,18 +2668,18 @@
 <ul>
 <li>
 <ul>
-<li><a href="#authorization">Authorization</a>
+<li><a href="#authorization-required">Authorization (Required)</a>
 <ul>
 <li><a href="#syntax">Syntax</a></li>
 <li><a href="#directives">Directives</a></li>
 <li><a href="#example">Example</a></li>
 </ul></li>
-<li><a href="#tgx-audit">TGX-Audit</a>
+<li><a href="#tgx-audit-optional">TGX-Audit (Optional)</a>
 <ul>
 <li><a href="#syntax-1">Syntax</a></li>
 <li><a href="#directives-1">Directives</a></li>
 </ul></li>
-<li><a href="#tgx-tracing">TGX-Tracing</a>
+<li><a href="#tgx-tracing-optional">TGX-Tracing (Optional)</a>
 <ul>
 <li><a href="#syntax-2">Syntax</a></li>
 <li><a href="#directives-2">Directives</a></li>
