@@ -5684,8 +5684,8 @@ In the API Playground, as you start to type the query, it will autocomplete with
       <guid>/travelgatex/concepts/request-headers/</guid>
       <description>The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and they are required in all API requests.
 Authorization (Required) The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.
-Syntax Authorization: &amp;lt;type&amp;gt; &amp;lt;credentials&amp;gt;  Directives &amp;lt;type&amp;gt;: - ApiKey - Bearer
-&amp;lt;credential&amp;gt;: String</description>
+Syntax Authorization: &amp;lt;type&amp;gt; &amp;lt;credentials&amp;gt;  Directives &amp;lt;type&amp;gt;:
+ ApiKey Bearer  &amp;lt;credential&amp;gt;: String</description>
     </item>
     
     <item>
