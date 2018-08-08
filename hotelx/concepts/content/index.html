@@ -33,7 +33,8 @@
 <meta name="description" content="Learn about how to manage content data in your site: Hotels, Boards, Categories...">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
-
+<link href="/mermaid/mermaid.css" rel="stylesheet">
+<script src="/mermaid/mermaid.js"></script>
     
     <meta name="description" content="Learn about how to manage content data in your site: Hotels, Boards, Categories...">
     <meta charset='utf-8'>
@@ -2200,14 +2201,14 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
+      <li data-nav-id="/hotelx/concepts/settings/" class="dd-item">
+        <a href="/hotelx/concepts/settings/">
+          <span>Settings</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/hotelx/concepts/accesses-supplier-context/" class="dd-item">
         <a href="/hotelx/concepts/accesses-supplier-context/">
           <span>Access, Supplier and Context</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/hotelx/concepts/quotas-limits/" class="dd-item">
-        <a href="/hotelx/concepts/quotas-limits/">
-          <span>Quotas &amp; Limits</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
     <li data-nav-id="/hotelx/concepts/search-mode/" class="dd-item">
@@ -2226,6 +2227,11 @@
         </a>
     </li>
         </ul>
+    </li>
+      <li data-nav-id="/hotelx/concepts/quotas-limits/" class="dd-item">
+        <a href="/hotelx/concepts/quotas-limits/">
+          <span>Quotas &amp; Limits</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
     </li>
       <li data-nav-id="/hotelx/concepts/management-flow/" class="dd-item">
         <a href="/hotelx/concepts/management-flow/">
@@ -2922,7 +2928,7 @@ As for the response, the full response is split into pages: By default, the maxi
 
 <h3 id="boards">Boards</h3>
 
-<p>Boards Query returns a simple map of the boards that can be returned with its translation to other languages.</p>
+<p>Boards Query returns a simple boards map that can include translations to other languages.</p>
 
 <h4 id="playground-samples-2">Playground Samples</h4>
 
@@ -2938,7 +2944,7 @@ As for the response, the full response is split into pages: By default, the maxi
 
 <h3 id="rooms">Rooms</h3>
 
-<p>Rooms Query returns a simple map of the rooms that can be returned with its translation to other languages. You can search by room codes, if you don&rsquo;t introduce any room codes, you will receive all of them. The full response is split into pages. By default, the number of rooms in each page is 1000, however, you can choose the size with a value between 100 and 10000.</p>
+<p>Rooms Query returns a simple rooms map that can include translations to other languages. You can search by room codes, if you don&rsquo;t introduce any room codes, you will receive all of them. The full response is split into pages. By default, the number of rooms in each page is 1000, however, you can choose the size with a value between 100 and 10000.</p>
 
 <h3 id="criteria-1">Criteria</h3>
 
@@ -2967,7 +2973,7 @@ As for the response, the full response is split into pages: By default, the maxi
 
 <h3 id="categories">Categories</h3>
 
-<p>Category static data returns a simple map of the categories that can be returned with its translation to other languages.</p>
+<p>Category static data returns a simple categories map that can include translations to other languages.</p>
 
 <h4 id="playground-samples-4">Playground Samples</h4>
 

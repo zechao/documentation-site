@@ -156,16 +156,6 @@ GraphQL schema definition type Access {code: ID! accessData: AccessData 
     </item>
     
     <item>
-      <title>Access, Supplier and Context</title>
-      <link>/hotelx/concepts/accesses-supplier-context/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/concepts/accesses-supplier-context/</guid>
-      <description>On this page you will learn more about Core Entities used in HotelX. You can also refer to the overarching core concepts that apply to all TravelgateX APIs.
-Supplier Product segmentation over a Supplier API implementation. Each Supplier has a Supplier code. These are unique values and used consistently throughout all TravelgateX implementations. See our Supplier database, or ask us via our Jira Service desk for a list of Supplier codes.</description>
-    </item>
-    
-    <item>
       <title>AccessConnection</title>
       <link>/mappea/reference/objects/accessconnection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3839,15 +3829,6 @@ GraphQL schema definition type Query {admin: AdminQuery hotelX: HotelXQuery
     </item>
     
     <item>
-      <title>Quotas &amp; Limits</title>
-      <link>/hotelx/concepts/quotas-limits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/concepts/quotas-limits/</guid>
-      <description>HotelX limits the maximum rate of requests and graph deep. Specific policies vary depending on resource availability, user profile, service usage history, and other factors, and are subject to change without notice</description>
-    </item>
-    
-    <item>
       <title>RatePlan</title>
       <link>/hotelx/reference/objects/rateplan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4498,6 +4479,19 @@ GraphQL schema definition type ServiceStatus {code: String type: String 
       <guid>/travelgatex/reference/objects/servicestatus/</guid>
       <description>Indicates the status of the service
 GraphQL schema definition type ServiceStatus {code: String type: String description: String Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(String):Status codetype(String):Status typedescription(String):Status description</description>
+    </item>
+    
+    <item>
+      <title>Settings</title>
+      <link>/hotelx/concepts/settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/concepts/settings/</guid>
+      <description>On this page you will learn more about settings in HotelX.
+What are settings? Settings are loaded by default in our Back Office and determine the behavior of Hotelx by default.
+This link shows how are Settings structured:
+HotelX Settings
+settings: { suppliers: {code: &amp;quot;HOTELTEST&amp;quot;}, plugins: {step: REQUEST, pluginsType: [{type: POST_STEP, name: &amp;quot;search_by_destination&amp;quot;, parameters: [{key: &amp;quot;accessID&amp;quot;, value: &amp;quot;422&amp;quot;}]}]}, businessRules: null, timeout: 24700, context: &amp;quot;HOTELTEST&amp;quot;, client: &amp;quot;Demo_Client&amp;quot;, testMode: true }  Base Settings</description>
     </item>
     
     <item>
@@ -5386,6 +5380,16 @@ GraphQL schema definition type Warning {code: String! type: String! desc
     </item>
     
     <item>
+      <title>Access, Supplier and Context</title>
+      <link>/hotelx/concepts/accesses-supplier-context/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/concepts/accesses-supplier-context/</guid>
+      <description>On this page you will learn more about Core Entities used in HotelX. You can also refer to the overarching core concepts that apply to all TravelgateX APIs.
+Supplier Product segmentation over a Supplier API implementation. Each Supplier has a Supplier code. These are unique values and they are used consistently throughout all TravelgateX implementations. See our Supplier database, or ask us via our Jira Service desk for a list of Supplier codes.</description>
+    </item>
+    
+    <item>
       <title>Blacklist</title>
       <link>/hotelx/plugins/black-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5436,7 +5440,7 @@ All notable changes on our platform will be documented in this page.2018-07-24 
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page.2018-08-08  GraphQL Schema updated.    TGX Headers page Support basic Tracing by request using header TGX-Tracing: 1 Return groups codes on entities queries (accessData,suppierData,clientData,profileData). Access name filter New default group when user account is deleted, hard delete when Audit members has been added in createMember and deleteMember    Response of Access and Supplier query when no accesses on requested Entity propagation Permission check Update member auditions and refactor that funcionality URL resolver api/resource resolvers roles funtion with new admin permissions   2018-07-31  GraphQL Schema updated.</description>
+All notable changes on TravelgateX platform will be documented in this page.2018-08-08  GraphQL Schema updated.    TGX Headers page Support basic Tracing by request using header TGX-Tracing: 1 Return groups codes on entities queries (accessData,suppierData,clientData,profileData). Access name filter New default group when user account is deleted. Audit members has been added in createMember and deleteMember    Response of Access and Supplier query when no accesses on the request Entity propagation Permission check Update member auditions and refactor that funcionality URL resolver API/resource resolvers Roles function with new admin permissions   2018-07-31  GraphQL Schema updated.</description>
     </item>
     
     <item>
@@ -5674,6 +5678,15 @@ MarkupX This markup implementation is supported by our web application which per
       <guid>/getting-started/playground/</guid>
       <description>Try it For Yourself API Playground is an interactive, fun, and super quick way to get to know our APIs.
 In the API Playground, as you start to type the query, it will autocomplete with the fields available to complete your query parameters. You can also click on the green Schema button on the right of the Playground window to learn more about our data model and to see all of the options available for building your query.</description>
+    </item>
+    
+    <item>
+      <title>Quotas &amp; Limits</title>
+      <link>/hotelx/concepts/quotas-limits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/concepts/quotas-limits/</guid>
+      <description>HotelX limits the maximum rate of requests and graph deep. Specific policies vary depending on resource availability, user profile, service usage history, and other factors, and are subject to change without notice</description>
     </item>
     
     <item>

@@ -63,10 +63,6 @@
   </url>
   
   <url>
-    <loc>/hotelx/concepts/accesses-supplier-context/</loc>
-  </url>
-  
-  <url>
     <loc>/mappea/reference/objects/accessconnection/</loc>
   </url>
   
@@ -1571,10 +1567,6 @@
   </url>
   
   <url>
-    <loc>/hotelx/concepts/quotas-limits/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/reference/objects/rateplan/</loc>
   </url>
   
@@ -1856,6 +1848,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/servicestatus/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/concepts/settings/</loc>
   </url>
   
   <url>
@@ -2223,6 +2219,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/concepts/accesses-supplier-context/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/plugins/black-list/</loc>
   </url>
   
@@ -2384,6 +2384,10 @@
   
   <url>
     <loc>/getting-started/playground/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/concepts/quotas-limits/</loc>
   </url>
   
   <url>

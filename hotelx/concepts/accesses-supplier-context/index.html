@@ -33,7 +33,8 @@
 <meta name="description" content="Learn about entities used in HotelX">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
-
+<link href="/mermaid/mermaid.css" rel="stylesheet">
+<script src="/mermaid/mermaid.js"></script>
     
     <meta name="description" content="Learn about entities used in HotelX">
     <meta charset='utf-8'>
@@ -2200,14 +2201,14 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
+      <li data-nav-id="/hotelx/concepts/settings/" class="dd-item">
+        <a href="/hotelx/concepts/settings/">
+          <span>Settings</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/hotelx/concepts/accesses-supplier-context/" class="dd-item active">
         <a href="/hotelx/concepts/accesses-supplier-context/">
           <span>Access, Supplier and Context</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/hotelx/concepts/quotas-limits/" class="dd-item">
-        <a href="/hotelx/concepts/quotas-limits/">
-          <span>Quotas &amp; Limits</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
     <li data-nav-id="/hotelx/concepts/search-mode/" class="dd-item">
@@ -2226,6 +2227,11 @@
         </a>
     </li>
         </ul>
+    </li>
+      <li data-nav-id="/hotelx/concepts/quotas-limits/" class="dd-item">
+        <a href="/hotelx/concepts/quotas-limits/">
+          <span>Quotas &amp; Limits</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
     </li>
       <li data-nav-id="/hotelx/concepts/management-flow/" class="dd-item">
         <a href="/hotelx/concepts/management-flow/">
@@ -2602,7 +2608,7 @@
 
 <h3 id="supplier">Supplier</h3>
 
-<p>Product segmentation over a <code>Supplier</code> API implementation. Each <code>Supplier</code> has a <code>Supplier</code> code. These are unique values and used consistently throughout all TravelgateX implementations. See our <a href="https://www.travelgatex.com/partners/seller" rel="nofollow" target="_blank">Supplier database</a>, or ask us via our <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7" rel="nofollow" target="_blank">Jira Service desk</a> for a list of <code>Supplier</code> codes.</p>
+<p>Product segmentation over a <code>Supplier</code> API implementation. Each <code>Supplier</code> has a <code>Supplier</code> code. These are unique values and they are used consistently throughout all TravelgateX implementations. See our <a href="https://www.travelgatex.com/partners/seller" rel="nofollow" target="_blank">Supplier database</a>, or ask us via our <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7" rel="nofollow" target="_blank">Jira Service desk</a> for a list of <code>Supplier</code> codes.</p>
 
 <h3 id="access">Access</h3>
 
@@ -2626,7 +2632,7 @@
 
 <h3 id="context">Context</h3>
 
-<p><code>Context</code> is the way codes are formed and used in implementations. Each <code>Profile</code> (either a <code>Buyer</code> or <code>Supplier</code>) can manage your own contexts or reuse existing ones. Different buyers or sellers can also manage the same codes context. For example, the <code>Supplier</code><a href="https://www.travelgatex.com/partner/seller/smyrooms" rel="nofollow" target="_blank">SmyRooms</a> uses SMY contexts for their implementations.</p>
+<p><code>Context</code> is the way codes are formed and used in implementations. Each <code>Profile</code> (either a <code>Buyer</code> or <code>Supplier</code>) can manage their own contexts or reuse existing ones. Different buyers or sellers can also manage the same codes context. For example, the <code>Supplier</code><a href="https://www.travelgatex.com/partner/seller/smyrooms" rel="nofollow" target="_blank">SmyRooms</a> uses SMY contexts for their implementations.</p>
 
 <p><code>Context</code> applies to:</p>
 
@@ -2638,9 +2644,9 @@
 <li><p>Room Codes </p></li>
 </ul>
 
-<p>With our built-in solution, you are able to choose the context that you wish to use when requesting a HotelX operation. For example, if you are a <code>Buyer</code>, you can <a href="/hotelx/plugins/mappings">map</a> your context to your Suppliers contexts.</p>
+<p>With our built-in solution, you are able to choose the context that you wish to use when requesting a HotelX operation. For example, if you are a <code>Buyer</code>, you can <a href="/hotelx/plugins/mappings">map</a> your context to your Suppliers&rsquo; contexts.</p>
 
-<p>We recommend using the widest <code>Context</code> possible or use your own context. That way, all supplier mappings will be resolved.</p>
+<p>Should you be using the aggregator mode, we recommend that you use the widest <code>Context</code> possible (the one that includes more portfolio) or that you use your own context - in doing so, all supplier mappings will be solved/unified.</p>
 
 <div class="alert 
 alert-info"
@@ -2684,10 +2690,10 @@ role="alert">For more information on setting contexts, check out our <a href="/h
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/hotelx/concepts/" title="Go to previous page | Concepts"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Concepts</a>
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/hotelx/concepts/settings/" title="Go to previous page | Settings"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Settings</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/hotelx/concepts/quotas-limits/" title="Go to next page | Quotas &amp; Limits" style="margin-right: 0px;">Quotas &amp; Limits<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/hotelx/concepts/search-mode/" title="Go to next page | Booking Flow" style="margin-right: 0px;">Booking Flow<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">
