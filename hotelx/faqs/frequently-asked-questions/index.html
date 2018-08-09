@@ -3221,6 +3221,38 @@
 
 <p>No, the time out will be applied to all providers, using the parameter setting: timeout.</p>
 
+<h2 id="content">Content</h2>
+
+<p><strong>How to Manage HotelX Content?</strong></p>
+
+<p>HotelX allows you to do two types of Queries:</p>
+
+<ul>
+<li><strong>Search to a HotelCode level</strong>: in order to receive the information of a specific HotelCode(s), you should introduce the HotelCode(s) of your query:</li>
+</ul>
+
+<pre><code class="language-json">{
+  &quot;criteria&quot;: {
+    &quot;access&quot;: &quot;yourAccess&quot;,
+    &quot;hotelCodes&quot;:[&quot;A159&quot;, &quot;B357&quot;, &quot;C568&quot;]
+  }
+}
+</code></pre>
+
+<ul>
+<li><strong>Search the complete HotelList from a supplier’s access</strong>: in order to receive the complete hotel list from a supplier’s access, you should introduce the number of hotels you want to receive in the response of the query. Since the hotel list includes a large amount of hotels, it is divided into several batches, each one of a different number of hotels. In this case, the minimum size you can request is 100, and the max. is 10000.</li>
+</ul>
+
+<pre><code class="language-json">{
+  &quot;criteria&quot;: {
+    &quot;access&quot;: &quot;yourAccess&quot;,
+    &quot;maxSize&quot;: 500
+  }
+}
+</code></pre>
+
+<p><a href="/hotelx/concepts/content/">More info on HotelX content.</a></p>
+
 <hr/>
   
 
@@ -3245,6 +3277,7 @@
 <li><a href="#cancellation-costs">Cancellation costs</a></li>
 <li><a href="#response-time">Response time</a></li>
 <li><a href="#time-out">Time out</a></li>
+<li><a href="#content">Content</a></li>
 </ul></li>
 </ul>
 </nav>
