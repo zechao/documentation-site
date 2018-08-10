@@ -18,7 +18,7 @@
       <guid>/hotelx/concepts/settings/</guid>
       <description>On this page you will learn more about settings in HotelX.
 What are settings? Settings are loaded by default in our Back Office and determine the behavior of Hotelx by default.
-This link shows how are the different settings structures by level:
+This link shows how are the different setting structures by level:
 HotelX Settings
 settings: { suppliers: {code: &amp;quot;HOTELTEST&amp;quot;}, plugins: {step: REQUEST, pluginsType: [{type: POST_STEP, name: &amp;quot;search_by_destination&amp;quot;, parameters: [{key: &amp;quot;accessID&amp;quot;, value: &amp;quot;422&amp;quot;}]}]}, businessRules: null, timeout: 24700, context: &amp;quot;HOTELTEST&amp;quot;, client: &amp;quot;Demo_Client&amp;quot;, testMode: true }  Base Settings</description>
     </item>
