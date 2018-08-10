@@ -17,10 +17,10 @@
       
       <guid>/hotelx/faqs/frequently-asked-questions/</guid>
       <description>Hotels in test Do I have access to all the hotels in the test environment?
-No, we use a test supplier, so there is a limited number of hotels in the data base to be used.
+No, we use a test supplier, so there is a limited number of hotels in the database to be used.
 Languages allowed Which are the languages allowed in HotelX?
-The new aggregator allows each language, it will depend from each supplier.
-Maxium hotels code How many hotels code are allowed to request at the same time?</description>
+The new aggregator allows every language, it will depend from each supplier.
+Maximum hotels code How many hotels code are allowed to be requested at the same time?</description>
     </item>
     
     <item>

@@ -3152,56 +3152,56 @@
 
 <p><strong>Do I have access to all the hotels in the test environment?</strong></p>
 
-<p>No, we use a test supplier, so there is a limited number of hotels in the data base to be used.</p>
+<p>No, we use a test supplier, so there is a limited number of hotels in the database to be used.</p>
 
 <h2 id="languages-allowed">Languages allowed</h2>
 
 <p><strong>Which are the languages allowed in HotelX?</strong></p>
 
-<p>The new aggregator allows each language, it will depend from each supplier.</p>
+<p>The new aggregator allows every language, it will depend from each supplier.</p>
 
-<h2 id="maxium-hotels-code">Maxium hotels code</h2>
+<h2 id="maximum-hotels-code">Maximum hotels code</h2>
 
-<p><strong>How many hotels code are allowed to request at the same time?</strong></p>
+<p><strong>How many hotels code are allowed to be requested at the same time?</strong></p>
 
-<p>We recommend a maximum of 200 hotels, the new aggregator will split to each supplier the maximum hotels allowed in different batches in order to request to the supplier all the hotels. Please take note: The current formula and rate limit are subject to change.</p>
+<p>We recommend a maximum of 200 hotels, the new aggregator will split them for each supplier into different batches in order to request all the hotels. Please take note: The current formula and rate limit are subject to change.</p>
 
 <h2 id="search-request-filters">Search request filters</h2>
 
 <p><strong>Which are the possible filters in the Search Request?</strong></p>
 
-<p>Right now the only option is by hotel code. In the future will be possible to request by Destination or by Geocode.</p>
+<p>Right now, you can search by hotel code and by destination. In the future, it will be possible to request by Geocode.</p>
 
 <p>The main search methods will be:
 - Hotel code
-- Destination (Coming soon)
+- Destination
 - Geocode (Coming soon)</p>
 
 <h2 id="giata-codes">GIATA codes</h2>
 
 <p><strong>It is possible to use GIATA codes?</strong></p>
 
-<p>Yes, It is possible request availability  using GIATA codes, first of all you need to provide us your GIATA credentials in order to set up your Apikey. After that you will be able to request using GIATA codes, receive the availability response with GIATA codes, etc…</p>
+<p>Yes, it is possible to request availability  using GIATA codes. First of all, you wil need to provide us your GIATA credentials in order to set up your Apikey. After that, you will be able to request using GIATA codes, receive the availability responses with GIATA codes, etc.</p>
 
 <h2 id="country-names">Country names</h2>
 
 <p><strong>How can I get the names of the countries?</strong></p>
 
-<p>The response of the hotelX query contains location.country in ISO standard format.</p>
+<p>The response of the HotelX Query contains location.country in ISO standard format.</p>
 
 <h2 id="daily-prices">Daily-prices</h2>
 
 <p><strong>Can I get Daily-prices in Search Response?</strong></p>
 
-<p>It will depend if the supplier offer the information. In case that the information is returned by the supplier, you will find it through Roomprice string&ndash;&gt;PriceBreakdown.</p>
+<p>It will depend if the supplier offers the information. In case that the information is returned by the supplier, you will find it through the Roomprice string&ndash;&gt;PriceBreakdown.</p>
 
 <h2 id="currency-not-supported">Currency not supported</h2>
 
 <p><strong>What happen if I request availability with a currency that the supplier doesn´t have it?</strong></p>
 
-<p>For these cases you will have two options:
-- Apply the exchange rates using a pluggin (this pluggin contains the exchange rates previously loaded by you)
-- Don´t apply any exchange rate and you will receive the supplier´s currency.</p>
+<p>For these cases, you will have two options:
+- Applying the exchange rates using a pluggin (this pluggin contains the exchange rates previously loaded by you)
+- Not applying any exchange rate and you will receive the supplier´s currency.</p>
 
 <h2 id="cancellation-costs">Cancellation costs</h2>
 
@@ -3213,19 +3213,19 @@
 
 <p><strong>How is the response time of the different providers managed in the aggregator mode?</strong></p>
 
-<p>HotelX will return information from all the suppliers at the same time, once all the responses have been obtained by them. The requests that have timed out, will be signaled by a warning in the response.</p>
+<p>HotelX will return the information from all the suppliers at the same time, once all the responses have been obtained by them. As for the requests that have timed out, they will be signaled by a warning in the response.</p>
 
 <h2 id="time-out">Time out</h2>
 
-<p><strong>In aggregator mode is it possible to set a time out for each provider?</strong></p>
+<p><strong>In aggregator mode, is it possible to set a time out for each provider?</strong></p>
 
 <p>No, the time out will be applied to all providers, using the parameter setting: timeout.</p>
 
 <h2 id="content">Content</h2>
 
-<p><strong>How to Manage HotelX Content?</strong></p>
+<p><strong>How to Manage HotelX Content</strong></p>
 
-<p>HotelX allows you to do two types of Queries:</p>
+<p>HotelX allows two types of Queries:</p>
 
 <ul>
 <li><strong>Search to a HotelCode level</strong>: in order to receive the information of a specific HotelCode(s), you should introduce the HotelCode(s) of your query:</li>
@@ -3268,7 +3268,7 @@
 <ul>
 <li><a href="#hotels-in-test">Hotels in test</a></li>
 <li><a href="#languages-allowed">Languages allowed</a></li>
-<li><a href="#maxium-hotels-code">Maxium hotels code</a></li>
+<li><a href="#maximum-hotels-code">Maximum hotels code</a></li>
 <li><a href="#search-request-filters">Search request filters</a></li>
 <li><a href="#giata-codes">GIATA codes</a></li>
 <li><a href="#country-names">Country names</a></li>
@@ -3293,9 +3293,9 @@
 	<h3>See Also</h3>
 	<ul>
 		
-		<li><a href="/hotelx/faqs/common-errors/">HotelX Common Errors</a></li>
-		
 		<li><a href="/travelgatex/frequently-asked-questions/">TravelgateX Frequently Asked Questions</a></li>
+		
+		<li><a href="/hotelx/faqs/common-errors/">HotelX Common Errors</a></li>
 		
 	</ul>
 </div>
