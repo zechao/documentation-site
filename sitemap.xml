@@ -3,7 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/mappea/reference/objects/api/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/api/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/api/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/api/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/apiconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/apiconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/apiconnection/</loc>
   </url>
   
   <url>
@@ -11,7 +35,31 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/apidata/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/apidata/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/apidata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/apidata/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/apiedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/apiedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/apiedge/</loc>
   </url>
   
   <url>
@@ -19,15 +67,31 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/access/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/access/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/access/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/access/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/inputobjects/accessconfigurationinput/</loc>
+    <loc>/mappea/reference/objects/accessconnection/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/inputobjects/accessconnectuserinput/</loc>
+    <loc>/paymentx/reference/objects/accessconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/accessconnection/</loc>
   </url>
   
   <url>
@@ -35,7 +99,31 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/accessdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/accessdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/accessdata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/accessdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/accessedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/accessedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/accessedge/</loc>
   </url>
   
   <url>
@@ -47,15 +135,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/accessfilterinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/accessfilterinput/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/inputobjects/accessinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/accesssupplierinput/</loc>
   </url>
   
   <url>
@@ -87,11 +175,35 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/interfaces/advisemessage/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/interfaces/advisemessage/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/interfaces/advisemessage/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/interfaces/advisemessage/</loc>
   </url>
   
   <url>
     <loc>/hotelx/reference/enums/advisemessagelevel/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/enums/advisemessagelevel/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/enums/advisemessagelevel/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/enums/advisemessagelevel/</loc>
   </url>
   
   <url>
@@ -179,11 +291,23 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/bookpaxinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/bookpaxinput/</loc>
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/bookreferenceinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/bookreferenceinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/bookroominput/</loc>
   </url>
   
   <url>
@@ -199,11 +323,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/interfaces/bookableoptionsearch/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/interfaces/bookableoptionsearch/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/booking/</loc>
+    <loc>/hotelx/reference/enums/bookingcriteriatype/</loc>
   </url>
   
   <url>
@@ -231,6 +359,18 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/scalars/boolean/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/scalars/boolean/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/scalars/boolean/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/boolean/</loc>
   </url>
   
@@ -239,7 +379,7 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/businessrules/</loc>
+    <loc>/hotelx/reference/inputobjects/businessrulesinput/</loc>
   </url>
   
   <url>
@@ -247,7 +387,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/enums/businessrulestype/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/enums/businessrulestype/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/scalars/cvc/</loc>
   </url>
   
   <url>
@@ -276,6 +424,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/cancelpolicy/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/scalars/cardnumber/</loc>
   </url>
   
   <url>
@@ -327,7 +479,31 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/client/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/client/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/client/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/client/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/clientconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/clientconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/clientconnection/</loc>
   </url>
   
   <url>
@@ -335,7 +511,31 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/clientdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/clientdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/clientdata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/clientdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/clientedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/clientedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/clientedge/</loc>
   </url>
   
   <url>
@@ -351,6 +551,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/configurationinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/configurationinput/</loc>
   </url>
   
@@ -359,27 +563,11 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/connectuser/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/connectusergroup/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/connectusergroupinput/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/reference/objects/contact/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/objects/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/context/</loc>
   </url>
   
   <url>
@@ -419,7 +607,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/criteriabookingdatesinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/criteriabookingdatesinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/criteriabookingreferencesinput/</loc>
   </url>
   
   <url>
@@ -447,6 +643,10 @@
   </url>
   
   <url>
+    <loc>/paymentx/reference/scalars/date/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/date/</loc>
   </url>
   
@@ -455,23 +655,27 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/scalars/datetime/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/scalars/datetime/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/scalars/datetime/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/datetime/</loc>
   </url>
   
   <url>
+    <loc>/hotelx/reference/enums/datetype/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/enums/datetype/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/defaultsettings/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/defaultsettingsinput/</loc>
   </url>
   
   <url>
@@ -480,6 +684,10 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/deletememberinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/deltapriceinput/</loc>
   </url>
   
   <url>
@@ -567,7 +775,23 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/inputobjects/entityfilter/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/objects/error/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/error/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/error/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/error/</loc>
   </url>
   
   <url>
@@ -583,7 +807,11 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/expiredate/</loc>
+    <loc>/hotelx/reference/inputobjects/expiredateinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/inputobjects/expiredateinput/</loc>
   </url>
   
   <url>
@@ -595,6 +823,18 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/externalmessage/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/externalmessage/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/externalmessage/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/externalmessage/</loc>
   </url>
   
@@ -603,7 +843,15 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/file/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/file/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/filterinput/</loc>
   </url>
   
   <url>
@@ -619,7 +867,15 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/getmappeastatsdata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/getmappeastatsdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/getmappeastatsresponse/</loc>
   </url>
   
   <url>
@@ -627,7 +883,15 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/getuploadedfilesdata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/getuploadedfilesdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/getuploadedfilesresponse/</loc>
   </url>
   
   <url>
@@ -639,15 +903,31 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/group/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/group/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/group/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/group/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/groupaccess/</loc>
+    <loc>/mappea/reference/interfaces/groupcommondata/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/inputobjects/groupaccessinput/</loc>
+    <loc>/paymentx/reference/interfaces/groupcommondata/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/interfaces/groupcommondata/</loc>
   </url>
   
   <url>
@@ -655,11 +935,47 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/groupconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/groupconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/groupconnection/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/groupconnection/</loc>
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/groupdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/groupdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/groupdata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/groupdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/groupedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/groupedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/groupedge/</loc>
   </url>
   
   <url>
@@ -668,6 +984,18 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/groupinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/enums/grouptype/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/enums/grouptype/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/enums/grouptype/</loc>
   </url>
   
   <url>
@@ -683,7 +1011,19 @@
   </url>
   
   <url>
+    <loc>/paymentx/reference/objects/holder/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/holder/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/holderinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/inputobjects/holderinput/</loc>
   </url>
   
   <url>
@@ -779,6 +1119,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/hotelcriteriasearchinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/hotelcriteriasearchinput/</loc>
   </url>
   
@@ -831,7 +1175,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/hotelsettingsinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/hotelsettingsinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/hotelxaccessinput/</loc>
   </url>
   
   <url>
@@ -871,6 +1223,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/hotelxhotelfilterinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/hotelxhotelfilterinput/</loc>
   </url>
   
@@ -903,6 +1259,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/hotelxsupplierinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/hotelxsupplierinput/</loc>
   </url>
   
@@ -911,19 +1271,35 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/scalars/id/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/scalars/id/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/scalars/id/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/id/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/inputobjects/idaccessconfigurationinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/idgroupaccessinput/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/reference/scalars/int/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/scalars/int/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/scalars/int/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/scalars/int/</loc>
   </url>
   
   <url>
@@ -959,6 +1335,70 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/managedgroup/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/managedgroup/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/managedgroup/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/managedgroup/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/managedgroupconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/managedgroupconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/managedgroupconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/managedgroupconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/managedgroupdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/managedgroupdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/managedgroupdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/managedgroupdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/managedgroupedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/managedgroupedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/managedgroupedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/managedgroupedge/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/objects/map/</loc>
   </url>
   
@@ -967,7 +1407,7 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/inputobjects/mappeaaddorganizationinput/</loc>
+    <loc>/mappea/reference/inputobjects/mappeaconfirmuploadinput/</loc>
   </url>
   
   <url>
@@ -975,11 +1415,15 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/inputobjects/mappeaeditorganizationinput/</loc>
+    <loc>/mappea/reference/inputobjects/mappeagetmappeastatsinput/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/inputobjects/mappeagetmappeastatsinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/inputobjects/mappeamapsupplierinput/</loc>
   </url>
   
   <url>
@@ -991,11 +1435,23 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/schema/query/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/mappeaquery/</loc>
   </url>
   
   <url>
+    <loc>/mappea/reference/inputobjects/mappeasupplierconfirmedinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/mappeasupplierconfirmedinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/inputobjects/mappeauploadfileinput/</loc>
   </url>
   
   <url>
@@ -1051,7 +1507,31 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/member/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/member/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/member/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/member/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/memberconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/memberconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/memberconnection/</loc>
   </url>
   
   <url>
@@ -1059,11 +1539,47 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/memberdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/memberdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/memberdata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/memberdata/</loc>
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/memberedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/memberedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/memberedge/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/memberedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/enums/membertype/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/enums/membertype/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/enums/membertype/</loc>
   </url>
   
   <url>
@@ -1072,6 +1588,22 @@
   
   <url>
     <loc>/travelgatex/reference/enums/method/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/interfaces/node/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/interfaces/node/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/interfaces/node/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/interfaces/node/</loc>
   </url>
   
   <url>
@@ -1087,7 +1619,23 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/onlystatusresponse/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/onlystatusresponse/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/operation/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/operation/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/operation/</loc>
   </url>
   
   <url>
@@ -1095,7 +1643,31 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/operationconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/operationconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/operationconnection/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/operationconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/operationdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/operationdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/operationdata/</loc>
   </url>
   
   <url>
@@ -1103,11 +1675,39 @@
   </url>
   
   <url>
+    <loc>/stats/reference/objects/operationdetailed/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/operationdetailed/</loc>
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/operationedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/operationedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/operationedge/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/operationedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/enums/operationtype/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/enums/operationtype/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/enums/operationtype/</loc>
   </url>
   
   <url>
@@ -1175,11 +1775,39 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/pageinfo/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/pageinfo/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/pageinfo/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/pageinfo/</loc>
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/parameter/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/parameter/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/parameter/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/parameter/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/parameterinput/</loc>
   </url>
   
   <url>
@@ -1195,11 +1823,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/paxinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/paxinput/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/paymentcard/</loc>
+    <loc>/hotelx/reference/inputobjects/paymentcardinput/</loc>
   </url>
   
   <url>
@@ -1215,23 +1847,11 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/paymentxbookinginfo/</loc>
+    <loc>/paymentx/reference/objects/paymentxexpiredate/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfofilterinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfoinput/</loc>
+    <loc>/travelgatex/reference/objects/paymentxexpiredate/</loc>
   </url>
   
   <url>
@@ -1239,11 +1859,71 @@
   </url>
   
   <url>
+    <loc>/paymentx/reference/schema/query/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/paymentxquery/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/inputobjects/paymentxstorecardinput/</loc>
+    <loc>/paymentx/reference/objects/paymentxstoredcard/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/paymentxstoredcard/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/paymentxstoredcardconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/paymentxstoredcardconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/paymentxstoredcarddata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/paymentxstoredcarddata/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/paymentxstoredcardedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/paymentxstoredcardedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/inputobjects/paymentxstoredcardfilterinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/paymentxstoredcardfilterinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/inputobjects/paymentxstoredcardidinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/paymentxstoredcardidinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/inputobjects/paymentxstoredcardinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/paymentxstoredcardinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/pluginstepinput/</loc>
   </url>
   
   <url>
@@ -1251,7 +1931,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/enums/pluginsteptype/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/enums/pluginsteptype/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/enums/plugintype/</loc>
   </url>
   
   <url>
@@ -1259,7 +1947,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/pluginsinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/pluginsinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/pointofsale/</loc>
   </url>
   
   <url>
@@ -1268,6 +1964,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/pointofsaleconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/pointofsaledata/</loc>
   </url>
   
   <url>
@@ -1280,10 +1980,6 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/pointofsalefilter/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/pointofsaleinput/</loc>
   </url>
   
   <url>
@@ -1303,7 +1999,7 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/enums/pricetype/</loc>
+    <loc>/hotelx/reference/interfaces/priceable/</loc>
   </url>
   
   <url>
@@ -1363,6 +2059,18 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/provider/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/provider/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/provider/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/provider/</loc>
   </url>
   
@@ -1375,15 +2083,15 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/quote/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/reference/objects/rateplan/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/objects/rateplan/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/raterulesfilterinput/</loc>
   </url>
   
   <url>
@@ -1395,7 +2103,23 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/enums/raterulestype/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/enums/raterulestype/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/enums/raterulestype/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/enums/raterulestype/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/ratios/</loc>
   </url>
   
   <url>
@@ -1427,7 +2151,31 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/resource/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/resource/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/resource/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/resource/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/resourceconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/resourceconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/resourceconnection/</loc>
   </url>
   
   <url>
@@ -1435,11 +2183,39 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/resourcedata/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/resourcedata/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/resourcedata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/resourcedata/</loc>
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/resourceedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/resourceedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/resourceedge/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/resourceedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/interfaces/response/</loc>
   </url>
   
   <url>
@@ -1455,7 +2231,31 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/role/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/role/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/role/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/role/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/roleconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/roleconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/roleconnection/</loc>
   </url>
   
   <url>
@@ -1463,11 +2263,47 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/roledata/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/roledata/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/roledata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/roledata/</loc>
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/roleedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/roleedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/roleedge/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/roleedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/enums/roletype/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/enums/roletype/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/enums/roletype/</loc>
   </url>
   
   <url>
@@ -1515,6 +2351,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/roominput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/roominput/</loc>
   </url>
   
@@ -1547,11 +2387,19 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/schema/</loc>
+    <loc>/mappea/reference/schema/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/search/</loc>
+    <loc>/paymentx/reference/schema/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/schema/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/schema/</loc>
   </url>
   
   <url>
@@ -1563,11 +2411,19 @@
   </url>
   
   <url>
+    <loc>/stats/reference/enums/serviceapitype/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/enums/serviceapitype/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/objects/serviceoperation/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/enums/serviceoperationtype/</loc>
   </url>
   
   <url>
@@ -1583,11 +2439,11 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/enums/servicetype/</loc>
+    <loc>/hotelx/concepts/settings/</loc>
   </url>
   
   <url>
-    <loc>/hotelx/concepts/settings/</loc>
+    <loc>/hotelx/reference/inputobjects/settingsbaseinput/</loc>
   </url>
   
   <url>
@@ -1627,7 +2483,15 @@
   </url>
   
   <url>
+    <loc>/stats/reference/objects/stats/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/stats/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/statsassert/</loc>
   </url>
   
   <url>
@@ -1635,7 +2499,15 @@
   </url>
   
   <url>
+    <loc>/stats/reference/objects/statsconnection/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/statsconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/statsdata/</loc>
   </url>
   
   <url>
@@ -1643,7 +2515,15 @@
   </url>
   
   <url>
+    <loc>/stats/reference/objects/statsedge/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/statsedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/inputobjects/statsfilterinput/</loc>
   </url>
   
   <url>
@@ -1651,11 +2531,23 @@
   </url>
   
   <url>
+    <loc>/stats/reference/objects/statsinfo/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/statsinfo/</loc>
   </url>
   
   <url>
+    <loc>/stats/reference/enums/statsinfotypes/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/enums/statsinfotypes/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/schema/query/</loc>
   </url>
   
   <url>
@@ -1679,23 +2571,19 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/storedcard/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/storedcardconnection/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/storedcarddata/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/storedcardedge/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/reference/scalars/string/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/scalars/string/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/scalars/string/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/scalars/string/</loc>
   </url>
   
   <url>
@@ -1723,7 +2611,31 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/supplier/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/supplier/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/supplier/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/supplier/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/supplierconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/supplierconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/supplierconnection/</loc>
   </url>
   
   <url>
@@ -1731,11 +2643,39 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/supplierdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/supplierdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/supplierdata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/supplierdata/</loc>
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/supplierdetected/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/supplierdetected/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/supplieredge/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/supplieredge/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/supplieredge/</loc>
   </url>
   
   <url>
@@ -1744,14 +2684,6 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/supplierfilter/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/suppliergroup/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/suppliergroupinput/</loc>
   </url>
   
   <url>
@@ -1775,14 +2707,6 @@
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/timeout/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/timeoutinput/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/reference/objects/transactions/</loc>
   </url>
   
@@ -1792,6 +2716,18 @@
   
   <url>
     <loc>/hotelx/reference/scalars/uri/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/scalars/uri/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/scalars/uri/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/scalars/uri/</loc>
   </url>
   
   <url>
@@ -1827,7 +2763,15 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/uploadfiledata/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/uploadfiledata/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/objects/uploadfileresponse/</loc>
   </url>
   
   <url>
@@ -1839,7 +2783,23 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/urls/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/urls/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/urls/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/urls/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/urlsinput/</loc>
   </url>
   
   <url>
@@ -1851,39 +2811,15 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/warning/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/warning/</loc>
   </url>
   
   <url>
     <loc>/community/release-notes/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/scalars/examples__json/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/enums/fake__locale/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/enums/fake__types/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/fake__color/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/enums/fake__imagecategory/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/enums/fake__loremsize/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/fake__options/</loc>
   </url>
   
   <url>
@@ -1939,6 +2875,10 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/schema/mutation/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/plugins/mapping/</loc>
   </url>
   
@@ -1951,7 +2891,23 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/objects/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/objects/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/objects/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/objects/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/schema/mutation/</loc>
   </url>
   
   <url>
@@ -1964,6 +2920,18 @@
   
   <url>
     <loc>/hotelx/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/</loc>
   </url>
   
   <url>
@@ -2039,6 +3007,18 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/scalars/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/scalars/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/scalars/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/scalars/</loc>
   </url>
   
@@ -2064,6 +3044,18 @@
   
   <url>
     <loc>/hotelx/reference/interfaces/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/interfaces/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/interfaces/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/interfaces/</loc>
   </url>
   
   <url>
@@ -2135,6 +3127,18 @@
   </url>
   
   <url>
+    <loc>/mappea/reference/inputobjects/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/inputobjects/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/inputobjects/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/</loc>
   </url>
   
@@ -2180,6 +3184,18 @@
   
   <url>
     <loc>/hotelx/reference/enums/</loc>
+  </url>
+  
+  <url>
+    <loc>/mappea/reference/enums/</loc>
+  </url>
+  
+  <url>
+    <loc>/paymentx/reference/enums/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/enums/</loc>
   </url>
   
   <url>
