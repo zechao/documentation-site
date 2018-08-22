@@ -219,6 +219,11 @@
           <span>AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/travelgatex/reference/objects/advisemessage/" class="dd-item">
+        <a href="/travelgatex/reference/objects/advisemessage/">
+          <span>AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
         <a href="/travelgatex/reference/objects/airport/">
           <span>Airport</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1004,6 +1009,11 @@
           <span>Surcharge</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/travelgatex/reference/objects/text/" class="dd-item">
+        <a href="/travelgatex/reference/objects/text/">
+          <span>Text</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/travelgatex/reference/objects/transactions/" class="dd-item">
         <a href="/travelgatex/reference/objects/transactions/">
           <span>Transactions</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1118,11 +1128,6 @@
         <span>Interfaces</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
-      <li data-nav-id="/travelgatex/reference/interfaces/advisemessage/" class="dd-item">
-        <a href="/travelgatex/reference/interfaces/advisemessage/">
-          <span>AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
       <li data-nav-id="/travelgatex/reference/interfaces/bookableoptionsearch/" class="dd-item">
         <a href="/travelgatex/reference/interfaces/bookableoptionsearch/">
           <span>BookableOptionSearch</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1146,11 +1151,6 @@
       <li data-nav-id="/travelgatex/reference/interfaces/response/" class="dd-item">
         <a href="/travelgatex/reference/interfaces/response/">
           <span>Response</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/travelgatex/reference/interfaces/text/" class="dd-item">
-        <a href="/travelgatex/reference/interfaces/text/">
-          <span>Text</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -1840,6 +1840,11 @@
           <span>AddOns</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/hotelx/reference/objects/advisemessage/" class="dd-item">
+        <a href="/hotelx/reference/objects/advisemessage/">
+          <span>AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/hotelx/reference/objects/airport/" class="dd-item">
         <a href="/hotelx/reference/objects/airport/">
           <span>Airport</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2215,6 +2220,11 @@
           <span>Surcharge</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/hotelx/reference/objects/text/" class="dd-item">
+        <a href="/hotelx/reference/objects/text/">
+          <span>Text</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/hotelx/reference/objects/transactions/" class="dd-item">
         <a href="/hotelx/reference/objects/transactions/">
           <span>Transactions</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2299,11 +2309,6 @@
         <span>Interfaces</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
-      <li data-nav-id="/hotelx/reference/interfaces/advisemessage/" class="dd-item">
-        <a href="/hotelx/reference/interfaces/advisemessage/">
-          <span>AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
       <li data-nav-id="/hotelx/reference/interfaces/bookableoptionsearch/" class="dd-item">
         <a href="/hotelx/reference/interfaces/bookableoptionsearch/">
           <span>BookableOptionSearch</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2322,11 +2327,6 @@
       <li data-nav-id="/hotelx/reference/interfaces/response/" class="dd-item">
         <a href="/hotelx/reference/interfaces/response/">
           <span>Response</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/hotelx/reference/interfaces/text/" class="dd-item">
-        <a href="/hotelx/reference/interfaces/text/">
-          <span>Text</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -2937,18 +2937,9 @@
 
      $('#TableOfContents a[href^="#"]').click(function() {
       var target = $(this.hash);
-      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
-      if (target.length == 0) target = $('html');
       $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
       return false;
-  });
-
-    $('a[href^="#"].gotop').on('click',function (e) {
-	    e.preventDefault();
-      $('html, body').animate({
-        scrollTop: 0
-      }, 500);
-	  });
+    });
   })
 
 </script>
@@ -3143,6 +3134,133 @@
     <span class="tab">
         <span class="tab">
 <span class="meta">codeStartsWith</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+
+                        <li>
+                            <span class="tab">
+                                ): <a class="support type" href="/travelgatex/reference/objects/groupconnection">GroupConnection</a> 
+                            </span>
+                        </li>
+                    
+                
+            
+        
+            
+                
+                    
+                        <li>
+                            <span class="tab">
+                                <span class="meta">descendents</span>(
+                            </span>
+                        </li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">codes</span>: <a class="support type" href="/travelgatex/reference/scalars/id">[ID!]</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">type</span>: <a class="support type" href="/travelgatex/reference/enums/grouptype">GroupType</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">first</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">last</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">before</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">after</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">codeStartsWith</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+
+                        <li>
+                            <span class="tab">
+                                ): <a class="support type" href="/travelgatex/reference/objects/groupconnection">GroupConnection</a> 
+                            </span>
+                        </li>
+                    
+                
+            
+        
+            
+                
+                    
+                        <li>
+                            <span class="tab">
+                                <span class="meta">parents</span>(
+                            </span>
+                        </li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">codes</span>: <a class="support type" href="/travelgatex/reference/scalars/id">[ID!]</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">type</span>: <a class="support type" href="/travelgatex/reference/enums/grouptype">GroupType</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">first</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">last</span>: <a class="support type" href="/travelgatex/reference/scalars/int">Int</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">before</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
+        </span>
+    </span>
+</li>
+<li>
+    <span class="tab">
+        <span class="tab">
+<span class="meta">after</span>: <a class="support type" href="/travelgatex/reference/scalars/string">String</a>,
         </span>
     </span>
 </li>
@@ -3620,6 +3738,10 @@
         
             
         
+            
+        
+            
+        
         </div>
         <li>}</li>
     </ul>
@@ -3672,6 +3794,16 @@
     <li class="lifields">
         <a href="/travelgatex/reference/objects/groupconnection">children(GroupConnection):</a>
         <span class="description">Only responses folders.(non-hierarchically)</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/groupconnection">descendents(GroupConnection):</a>
+        <span class="description">Response all descendents groups nodes in this group (nom-hierarchically)</span>
+    </li>
+    
+    <li class="lifields">
+        <a href="/travelgatex/reference/objects/groupconnection">parents(GroupConnection):</a>
+        <span class="description">Response all parents groups nodes for this group (nom-hierarchically)</span>
     </li>
     
     <li class="lifields">
@@ -3856,7 +3988,7 @@
   </div>
 </footer>
 <script>
-    $('.js-gotop').on('click', function(event){
+    $('#footer_docs > a.js-gotop').on('click', function(event){
 
         event.preventDefault();
 

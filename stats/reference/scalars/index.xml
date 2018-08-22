@@ -17,7 +17,7 @@
       
       <guid>/stats/reference/scalars/boolean/</guid>
       <description>The Boolean scalar type represents true or false.
-GraphQL schema definition scalar BooleanRequired by PageInfo: OperationDetailed: Stats information per operationAccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeGroupData: Member: You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform.</description>
+GraphQL schema definition scalar BooleanRequired by PageInfo: OperationDetailed: Stats information per operationAccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeOrganizationData: Member: You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform.</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@ GraphQL schema definition scalar IntRequired by Ratios: Ratios detailsOper
       
       <guid>/stats/reference/scalars/string/</guid>
       <description> The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar StringRequired by StatsEdge: PageInfo: AdviseMessage: List of advise messages.AccessData: Error: Application errorsParameter: Parameters for additional information for the supplier&amp;#39;s configuration.SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeAccessEdge: GroupEdge: GroupData: GroupCommonData: MemberData: MemberEdge: APIEdge: APIData: ResourceEdge: ResourceData: OperationEdge: OperationData: ManagedGroupEdge: RoleData: SupplierEdge: ClientEdge: RoleEdge: ClientData: ExternalMessage:  </description>
+GraphQL schema definition scalar StringRequired by StatsEdge: PageInfo: AdviseMessage: List of advise messages.AccessData: Error: Application errorsParameter: Parameters for additional information for the supplier&amp;#39;s configuration.SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeAccessEdge: OrganizationData: GroupCommonData: MemberData: RoleEdge: RoleData: ResourceEdge: ResourceData: MemberEdge: APIEdge: APIData: OperationEdge: OperationData: ProductEdge: ProductData: SupplierEdge: ClientEdge: GroupEdge: GroupData: ManagedGroupEdge: ClientData: ExternalMessage:  </description>
     </item>
     
     <item>

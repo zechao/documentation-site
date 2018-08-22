@@ -54,7 +54,7 @@
       
       <guid>/mappea/reference/objects/apiconnection/</guid>
       <description>GraphQL schema definition type APIConnection {edges: [APIEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([APIEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData: ResourceData:</description>
+Required by OrganizationData: GroupCommonData: ResourceData: ProductData: GroupData:</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ Required by GroupData: GroupCommonData: ResourceData:</description>
       
       <guid>/paymentx/reference/objects/apiconnection/</guid>
       <description>GraphQL schema definition type APIConnection {edges: [APIEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([APIEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData: ResourceData:</description>
+Required by GroupData: GroupCommonData: ResourceData: OrganizationData: ProductData:</description>
     </item>
     
     <item>
@@ -74,7 +74,7 @@ Required by GroupData: GroupCommonData: ResourceData:</description>
       
       <guid>/stats/reference/objects/apiconnection/</guid>
       <description>GraphQL schema definition type APIConnection {edges: [APIEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([APIEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData: ResourceData:</description>
+Required by OrganizationData: GroupCommonData: ResourceData: ProductData: GroupData:</description>
     </item>
     
     <item>
@@ -84,7 +84,7 @@ Required by GroupData: GroupCommonData: ResourceData:</description>
       
       <guid>/travelgatex/reference/objects/apiconnection/</guid>
       <description>GraphQL schema definition type APIConnection {edges: [APIEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([APIEdge]):pageInfo(PageInfo!):
-Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.GroupData: GroupCommonData: ResourceData: OrganizationData: ProductData:</description>
+Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.OrganizationData: GroupCommonData: GroupData: ResourceData: ProductData:</description>
     </item>
     
     <item>
@@ -210,7 +210,7 @@ GraphQL schema definition type Access {code: ID! accessData: AccessData 
       
       <guid>/mappea/reference/objects/accessconnection/</guid>
       <description>GraphQL schema definition type AccessConnection {edges: [AccessEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([AccessEdge]):pageInfo(PageInfo!):
-Required by SupplierData: GroupData: GroupCommonData:</description>
+Required by SupplierData: OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -220,7 +220,7 @@ Required by SupplierData: GroupData: GroupCommonData:</description>
       
       <guid>/paymentx/reference/objects/accessconnection/</guid>
       <description>GraphQL schema definition type AccessConnection {edges: [AccessEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([AccessEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData: SupplierData:</description>
+Required by GroupData: GroupCommonData: SupplierData: OrganizationData:</description>
     </item>
     
     <item>
@@ -230,7 +230,7 @@ Required by GroupData: GroupCommonData: SupplierData:</description>
       
       <guid>/stats/reference/objects/accessconnection/</guid>
       <description>GraphQL schema definition type AccessConnection {edges: [AccessEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([AccessEdge]):pageInfo(PageInfo!):
-Required by SupplierData: GroupData: GroupCommonData:</description>
+Required by SupplierData: OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -240,7 +240,7 @@ Required by SupplierData: GroupData: GroupCommonData:</description>
       
       <guid>/travelgatex/reference/objects/accessconnection/</guid>
       <description>GraphQL schema definition type AccessConnection {edges: [AccessEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([AccessEdge]):pageInfo(PageInfo!):
-Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.SupplierData: GroupData: GroupCommonData: OrganizationData:</description>
+Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.SupplierData: OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -249,7 +249,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/objects/accessdata/</guid>
-      <description>GraphQL schema definition type AccessData {name: String! isActive: Boolean! code: ID! supplier: Supplier! isTest: Boolean! user: String password: String urls: Urls parameters: [Parameter] markets: [String!] rateRules: [RateRulesType!] shared: Access groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
+      <description>GraphQL schema definition type AccessData {name: String! isActive: Boolean! code: ID! supplier: Supplier! isTest: Boolean! user: String password: String urls: Urls parameters: [Parameter] markets: [String!] rateRules: [RateRulesType!] shared: Access owner: Organization isShedulerActive: Boolean groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
     </item>
     
     <item>
@@ -258,7 +258,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/objects/accessdata/</guid>
-      <description>GraphQL schema definition type AccessData {name: String! isActive: Boolean! code: ID! supplier: Supplier! isTest: Boolean! user: String password: String urls: Urls parameters: [Parameter] markets: [String!] rateRules: [RateRulesType!] shared: Access groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
+      <description>GraphQL schema definition type AccessData {name: String! isActive: Boolean! code: ID! supplier: Supplier! isTest: Boolean! user: String password: String urls: Urls parameters: [Parameter] markets: [String!] rateRules: [RateRulesType!] shared: Access owner: Organization isShedulerActive: Boolean groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
     </item>
     
     <item>
@@ -267,7 +267,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/accessdata/</guid>
-      <description>GraphQL schema definition type AccessData {name: String! isActive: Boolean! code: ID! supplier: Supplier! isTest: Boolean! user: String password: String urls: Urls parameters: [Parameter] markets: [String!] rateRules: [RateRulesType!] shared: Access groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
+      <description>GraphQL schema definition type AccessData {name: String! isActive: Boolean! code: ID! supplier: Supplier! isTest: Boolean! user: String password: String urls: Urls parameters: [Parameter] markets: [String!] rateRules: [RateRulesType!] shared: Access owner: Organization isShedulerActive: Boolean groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
     </item>
     
     <item>
@@ -276,7 +276,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/accessdata/</guid>
-      <description>GraphQL schema definition type AccessData {name: String! isActive: Boolean! code: ID! supplier: Supplier! isTest: Boolean! user: String password: String urls: Urls parameters: [Parameter] markets: [String!] rateRules: [RateRulesType!] shared: Access groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
+      <description>GraphQL schema definition type AccessData {name: String! isActive: Boolean! code: ID! supplier: Supplier! isTest: Boolean! user: String password: String urls: Urls parameters: [Parameter] markets: [String!] rateRules: [RateRulesType!] shared: Access owner: Organization isShedulerActive: Boolean groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
     </item>
     
     <item>
@@ -325,7 +325,7 @@ Required by AccessConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/accessfilter/</guid>
-      <description>GraphQL schema definition type AccessFilter {accessID: [ID] group: [ID] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields accessID([ID]):group([ID]):</description>
+      <description>GraphQL schema definition type AccessFilter {accessID: [ID] group: [ID] owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields accessID([ID]):group([ID]):owner([ID!]):</description>
     </item>
     
     <item>
@@ -355,7 +355,7 @@ GraphQL schema definition type AccessFilterInput {includes: [ID!] excludes:
       
       <guid>/travelgatex/reference/inputobjects/accessinput/</guid>
       <description>Access input
-GraphQL schema definition type AccessInput {name: String isActive: Boolean code: ID supplier: String isTest: Boolean user: String password: String urls: UrlsInput parameters: [ParameterInput] markets: [String!] rateRules: [RateRulesType!] shared: String group: ID Show deprecated fields}window.</description>
+GraphQL schema definition type AccessInput {name: String isActive: Boolean code: ID supplier: String isTest: Boolean user: String password: String urls: UrlsInput parameters: [ParameterInput] markets: [String!] rateRules: [RateRulesType!] shared: String group: ID owner: ID Show deprecated fields}window.</description>
     </item>
     
     <item>
@@ -420,52 +420,52 @@ GraphQL schema definition type AdminQuery {jwt: JWT accesses(first: Int
     
     <item>
       <title>AdviseMessage</title>
-      <link>/hotelx/reference/interfaces/advisemessage/</link>
+      <link>/hotelx/reference/objects/advisemessage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotelx/reference/interfaces/advisemessage/</guid>
+      <guid>/hotelx/reference/objects/advisemessage/</guid>
       <description>List of advise messages.
-GraphQL schema definition interface AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
+GraphQL schema definition type AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
       <title>AdviseMessage</title>
-      <link>/mappea/reference/interfaces/advisemessage/</link>
+      <link>/mappea/reference/objects/advisemessage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/mappea/reference/interfaces/advisemessage/</guid>
+      <guid>/mappea/reference/objects/advisemessage/</guid>
       <description>List of advise messages.
-GraphQL schema definition interface AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
+GraphQL schema definition type AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
       <title>AdviseMessage</title>
-      <link>/paymentx/reference/interfaces/advisemessage/</link>
+      <link>/paymentx/reference/objects/advisemessage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/paymentx/reference/interfaces/advisemessage/</guid>
+      <guid>/paymentx/reference/objects/advisemessage/</guid>
       <description>List of advise messages.
-GraphQL schema definition interface AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
+GraphQL schema definition type AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
       <title>AdviseMessage</title>
-      <link>/stats/reference/interfaces/advisemessage/</link>
+      <link>/stats/reference/objects/advisemessage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/stats/reference/interfaces/advisemessage/</guid>
+      <guid>/stats/reference/objects/advisemessage/</guid>
       <description>List of advise messages.
-GraphQL schema definition interface AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
+GraphQL schema definition type AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
       <title>AdviseMessage</title>
-      <link>/travelgatex/reference/interfaces/advisemessage/</link>
+      <link>/travelgatex/reference/objects/advisemessage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/interfaces/advisemessage/</guid>
+      <guid>/travelgatex/reference/objects/advisemessage/</guid>
       <description>List of advise messages.
-GraphQL schema definition interface AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
+GraphQL schema definition type AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
@@ -888,7 +888,7 @@ GraphQL schema definition scalar BooleanRequired by HotelSettingsInput: Sett
       
       <guid>/mappea/reference/scalars/boolean/</guid>
       <description>The Boolean scalar type represents true or false.
-GraphQL schema definition scalar BooleanRequired by SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimePageInfo: AccessData: GroupData: Member: You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform.</description>
+GraphQL schema definition scalar BooleanRequired by SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimePageInfo: AccessData: OrganizationData: Member: You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform.</description>
     </item>
     
     <item>
@@ -908,7 +908,7 @@ GraphQL schema definition scalar BooleanRequired by PageInfo: GroupData: 
       
       <guid>/stats/reference/scalars/boolean/</guid>
       <description>The Boolean scalar type represents true or false.
-GraphQL schema definition scalar BooleanRequired by PageInfo: OperationDetailed: Stats information per operationAccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeGroupData: Member: You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform.</description>
+GraphQL schema definition scalar BooleanRequired by PageInfo: OperationDetailed: Stats information per operationAccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeOrganizationData: Member: You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform.</description>
     </item>
     
     <item>
@@ -918,7 +918,7 @@ GraphQL schema definition scalar BooleanRequired by PageInfo: OperationDet
       
       <guid>/travelgatex/reference/scalars/boolean/</guid>
       <description>The Boolean scalar type represents true or false.
-GraphQL schema definition scalar BooleanRequired by SupplierFilter: ClientFilter: PageInfo: AccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeClientData: GroupData: Member: You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform.</description>
+GraphQL schema definition scalar BooleanRequired by SupplierFilter: ClientFilter: PageInfo: AccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeOrganizationData: Member: You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform.</description>
     </item>
     
     <item>
@@ -1229,7 +1229,7 @@ GraphQL schema definition type Client {code: ID! clientData: ClientData 
       
       <guid>/mappea/reference/objects/clientconnection/</guid>
       <description>GraphQL schema definition type ClientConnection {edges: [ClientEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ClientEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData:</description>
+Required by OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -1239,7 +1239,7 @@ Required by GroupData: GroupCommonData:</description>
       
       <guid>/paymentx/reference/objects/clientconnection/</guid>
       <description>GraphQL schema definition type ClientConnection {edges: [ClientEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ClientEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData:</description>
+Required by GroupData: GroupCommonData: OrganizationData:</description>
     </item>
     
     <item>
@@ -1249,7 +1249,7 @@ Required by GroupData: GroupCommonData:</description>
       
       <guid>/stats/reference/objects/clientconnection/</guid>
       <description>GraphQL schema definition type ClientConnection {edges: [ClientEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ClientEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData:</description>
+Required by OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -1259,7 +1259,7 @@ Required by GroupData: GroupCommonData:</description>
       
       <guid>/travelgatex/reference/objects/clientconnection/</guid>
       <description>GraphQL schema definition type ClientConnection {edges: [ClientEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ClientEdge]):pageInfo(PageInfo!):
-Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.GroupData: GroupCommonData: OrganizationData:</description>
+Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -1268,7 +1268,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/objects/clientdata/</guid>
-      <description>GraphQL schema definition type ClientData {code: ID! name: String! isActive: Boolean! group: Group Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID identifier of a Clientname(String!):Client complete nameisActive(Boolean!</description>
+      <description>GraphQL schema definition type ClientData {code: ID! name: String! isActive: Boolean! group: Group owner: Organization Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID identifier of a Clientname(String!</description>
     </item>
     
     <item>
@@ -1277,7 +1277,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/objects/clientdata/</guid>
-      <description>GraphQL schema definition type ClientData {code: ID! name: String! isActive: Boolean! group: Group Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID identifier of a Clientname(String!):Client complete nameisActive(Boolean!</description>
+      <description>GraphQL schema definition type ClientData {code: ID! name: String! isActive: Boolean! group: Group owner: Organization Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID identifier of a Clientname(String!</description>
     </item>
     
     <item>
@@ -1286,7 +1286,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/clientdata/</guid>
-      <description>GraphQL schema definition type ClientData {code: ID! name: String! isActive: Boolean! group: Group Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID identifier of a Clientname(String!):Client complete nameisActive(Boolean!</description>
+      <description>GraphQL schema definition type ClientData {code: ID! name: String! isActive: Boolean! group: Group owner: Organization Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID identifier of a Clientname(String!</description>
     </item>
     
     <item>
@@ -1295,7 +1295,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/clientdata/</guid>
-      <description>GraphQL schema definition type ClientData {code: ID! name: String! isActive: Boolean! group: Group Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID identifier of a Clientname(String!):Client complete nameisActive(Boolean!</description>
+      <description>GraphQL schema definition type ClientData {code: ID! name: String! isActive: Boolean! group: Group owner: Organization Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID identifier of a Clientname(String!</description>
     </item>
     
     <item>
@@ -1344,7 +1344,7 @@ Required by ClientConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/clientfilter/</guid>
-      <description>GraphQL schema definition type ClientFilter {clientID: [ID] name: [String!] groupID: [ID] isActive: Boolean Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields clientID([ID]):name([String!]):groupID([ID]):isActive(Boolean):</description>
+      <description>GraphQL schema definition type ClientFilter {clientID: [ID] name: [String!] groupID: [ID] isActive: Boolean owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields clientID([ID]):name([String!]):groupID([ID]):isActive(Boolean):owner([ID!</description>
     </item>
     
     <item>
@@ -1456,7 +1456,7 @@ GraphQL schema definition scalar CountryRequired by HotelCriteriaSearchInput:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/createclientinput/</guid>
-      <description>GraphQL schema definition type CreateClientInput {name: String! isActive: Boolean! group: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields name(String!):Client complete nameisActive(Boolean!):Indicates whether a Client is active or inactivegroup(String!</description>
+      <description>GraphQL schema definition type CreateClientInput {name: String! isActive: Boolean! group: String! owner: ID Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields name(String!):Client complete nameisActive(Boolean!):Indicates whether a Client is active or inactivegroup(String!</description>
     </item>
     
     <item>
@@ -1492,7 +1492,7 @@ GraphQL schema definition scalar CountryRequired by HotelCriteriaSearchInput:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/createprofileinput/</guid>
-      <description>GraphQL schema definition type CreateProfileInput {label: String! group: String! entities: EntitiesInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields label(String!):Label of the Profilegroup(String!):Group where Profile has to be placedentities(EntitiesInput):Entities of the Profile</description>
+      <description>GraphQL schema definition type CreateProfileInput {label: String! group: String! entities: EntitiesInput owner: ID Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields label(String!):Label of the Profilegroup(String!):Group where Profile has to be placedentities(EntitiesInput):Entities of the Profileowner(ID):Profile owner</description>
     </item>
     
     <item>
@@ -1622,7 +1622,7 @@ GraphQL schema definition scalar DateTimeRequired by HotelXHotelFilterInput: 
       
       <guid>/mappea/reference/scalars/datetime/</guid>
       <description>The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
-GraphQL schema definition scalar DateTimeRequired by Supplier: A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected BuyersNode: Access: An Access is a set of credentials and configuration in order to access the system of a Supplier.</description>
+GraphQL schema definition scalar DateTimeRequired by Supplier: A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected BuyersNode: Organization: Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.</description>
     </item>
     
     <item>
@@ -1652,7 +1652,7 @@ GraphQL schema definition scalar DateTimeRequired by StatsFilterInput: Filte
       
       <guid>/travelgatex/reference/scalars/datetime/</guid>
       <description>The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
-GraphQL schema definition scalar DateTimeRequired by Access: An Access is a set of credentials and configuration in order to access the system of a Supplier.Node: Supplier: A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected BuyersClient: Client identifies who is making the request and holds the configuration assigned to it.</description>
+GraphQL schema definition scalar DateTimeRequired by Access: An Access is a set of credentials and configuration in order to access the system of a Supplier.Node: Supplier: A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected BuyersOrganization: Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.</description>
     </item>
     
     <item>
@@ -1918,7 +1918,7 @@ Required by EntityConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/entityfilter/</guid>
-      <description>GraphQL schema definition type EntityFilter {codes: [ID!] groups: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields codes([ID!]):groups([ID!]):</description>
+      <description>GraphQL schema definition type EntityFilter {codes: [ID!] groups: [ID!] owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields codes([ID!]):groups([ID!]):owner([ID!]):</description>
     </item>
     
     <item>
@@ -2113,7 +2113,7 @@ Required by GetUploadedFilesData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/reference/inputobjects/filterinput/</guid>
-      <description>Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses. You must choose one of them, include or exclude, or the other alternative isn&amp;rsquo;t specified anything. If input both, you will receive a validation error that indicates this error.
+      <description>Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses. You must choose one of them, include or exclude, or the other alternative isn&amp;rsquo;t specified anything. If input both, you will receive a validation error that indicates this error. @deprecated(reason: &amp;ldquo;deprecated from 2018-08-20. Please, use filterSearch&amp;rdquo;)
 GraphQL schema definition type FilterInput {access: AccessFilterInput rateRules: RateRulesFilterInput Show deprecated fields}window.</description>
     </item>
     
@@ -2123,7 +2123,7 @@ GraphQL schema definition type FilterInput {access: AccessFilterInput rateR
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/filterinput/</guid>
-      <description>Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses. You must choose one of them, include or exclude, or the other alternative isn&amp;rsquo;t specified anything. If input both, you will receive a validation error that indicates this error.
+      <description>Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses. You must choose one of them, include or exclude, or the other alternative isn&amp;rsquo;t specified anything. If input both, you will receive a validation error that indicates this error. @deprecated(reason: &amp;ldquo;deprecated from 2018-08-20. Please, use filterSearch&amp;rdquo;)
 GraphQL schema definition type FilterInput {access: AccessFilterInput rateRules: RateRulesFilterInput Show deprecated fields}window.</description>
     </item>
     
@@ -2308,7 +2308,7 @@ GraphQL schema definition type Group {code: ID! groupData: GroupData adv
       
       <guid>/mappea/reference/objects/groupconnection/</guid>
       <description>GraphQL schema definition type GroupConnection {edges: [GroupEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([GroupEdge]):pageInfo(PageInfo!):
-Required by SupplierData: AccessData: GroupData: GroupCommonData: MemberData: APIData:</description>
+Required by SupplierData: AccessData: OrganizationData: GroupCommonData: MemberData: APIData: GroupData:</description>
     </item>
     
     <item>
@@ -2318,7 +2318,7 @@ Required by SupplierData: AccessData: GroupData: GroupCommonData: Me
       
       <guid>/paymentx/reference/objects/groupconnection/</guid>
       <description>GraphQL schema definition type GroupConnection {edges: [GroupEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([GroupEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData: MemberData: APIData: AccessData: SupplierData:</description>
+Required by GroupData: GroupCommonData: MemberData: APIData: AccessData: SupplierData: OrganizationData:</description>
     </item>
     
     <item>
@@ -2328,7 +2328,7 @@ Required by GroupData: GroupCommonData: MemberData: APIData: AccessD
       
       <guid>/stats/reference/objects/groupconnection/</guid>
       <description>GraphQL schema definition type GroupConnection {edges: [GroupEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([GroupEdge]):pageInfo(PageInfo!):
-Required by AccessData: SupplierData: GroupData: GroupCommonData: MemberData: APIData:</description>
+Required by AccessData: SupplierData: OrganizationData: GroupCommonData: MemberData: APIData: GroupData:</description>
     </item>
     
     <item>
@@ -2338,7 +2338,7 @@ Required by AccessData: SupplierData: GroupData: GroupCommonData: Me
       
       <guid>/travelgatex/reference/objects/groupconnection/</guid>
       <description>GraphQL schema definition type GroupConnection {edges: [GroupEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([GroupEdge]):pageInfo(PageInfo!):
-Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.AccessData: SupplierData: GroupData: GroupCommonData: MemberData: APIData: OrganizationData:</description>
+Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.AccessData: SupplierData: OrganizationData: GroupCommonData: MemberData: GroupData: APIData:</description>
     </item>
     
     <item>
@@ -2347,7 +2347,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/objects/groupdata/</guid>
-      <description>GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection parents(codes: [ID!</description>
+      <description>GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection descendents(codes: [ID!</description>
     </item>
     
     <item>
@@ -2356,7 +2356,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/objects/groupdata/</guid>
-      <description>GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection parents(codes: [ID!</description>
+      <description>GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection descendents(codes: [ID!</description>
     </item>
     
     <item>
@@ -2365,7 +2365,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/groupdata/</guid>
-      <description>GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection parents(codes: [ID!</description>
+      <description>GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection descendents(codes: [ID!</description>
     </item>
     
     <item>
@@ -2374,7 +2374,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/groupdata/</guid>
-      <description>GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection parents(codes: [ID!</description>
+      <description>GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection descendents(codes: [ID!</description>
     </item>
     
     <item>
@@ -2432,7 +2432,7 @@ Required by GroupConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/enums/grouptype/</guid>
-      <description>GraphQL schema definition enumGroupType{ROOT,ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by GroupData: GroupCommonData:</description>
+      <description>GraphQL schema definition enumGroupType{ROOT,ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -2441,7 +2441,7 @@ Required by GroupConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/enums/grouptype/</guid>
-      <description>GraphQL schema definition enumGroupType{ROOT,ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by GroupData: GroupCommonData:</description>
+      <description>GraphQL schema definition enumGroupType{ROOT,ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by GroupData: GroupCommonData: OrganizationData:</description>
     </item>
     
     <item>
@@ -2450,7 +2450,7 @@ Required by GroupConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/grouptype/</guid>
-      <description>GraphQL schema definition enumGroupType{ROOT,ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by GroupData: GroupCommonData:</description>
+      <description>GraphQL schema definition enumGroupType{ROOT,ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -2459,7 +2459,7 @@ Required by GroupConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/enums/grouptype/</guid>
-      <description>GraphQL schema definition enumGroupType{ROOT,ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by GroupData: GroupCommonData: OrganizationData:</description>
+      <description>GraphQL schema definition enumGroupType{ROOT,ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -3120,7 +3120,7 @@ GraphQL schema definition scalar IDRequired by HotelXBoardQueryInput: Hote
       
       <guid>/mappea/reference/scalars/id/</guid>
       <description>The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL schema definition scalar IDRequired by MappeaMapSupplierInput: # MapSupplierMappeaSupplierConfirmedInput: SupplierDetected: Supplier: A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected BuyersSupplierData: Node: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeAccess: An Access is a set of credentials and configuration in order to access the system of a Supplier.</description>
+GraphQL schema definition scalar IDRequired by MappeaMapSupplierInput: # MapSupplierMappeaSupplierConfirmedInput: SupplierDetected: Supplier: A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected BuyersSupplierData: Node: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeOrganization: Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.</description>
     </item>
     
     <item>
@@ -3355,7 +3355,7 @@ Required by GroupData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/objects/managedgroupdata/</guid>
-      <description>GraphQL schema definition type ManagedGroupData {code: ID! group: Group! api: API! resource: Resource! roles: Role! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):group(Group!):api(API!</description>
+      <description>GraphQL schema definition type ManagedGroupData {code: ID! group: Group! api: API! resource: Resource! role: Role! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):group(Group!):api(API!</description>
     </item>
     
     <item>
@@ -3364,7 +3364,7 @@ Required by GroupData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/objects/managedgroupdata/</guid>
-      <description>GraphQL schema definition type ManagedGroupData {code: ID! group: Group! api: API! resource: Resource! roles: Role! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):group(Group!):api(API!</description>
+      <description>GraphQL schema definition type ManagedGroupData {code: ID! group: Group! api: API! resource: Resource! role: Role! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):group(Group!):api(API!</description>
     </item>
     
     <item>
@@ -3373,7 +3373,7 @@ Required by GroupData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/managedgroupdata/</guid>
-      <description>GraphQL schema definition type ManagedGroupData {code: ID! group: Group! api: API! resource: Resource! roles: Role! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):group(Group!):api(API!</description>
+      <description>GraphQL schema definition type ManagedGroupData {code: ID! group: Group! api: API! resource: Resource! role: Role! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):group(Group!):api(API!</description>
     </item>
     
     <item>
@@ -3382,7 +3382,7 @@ Required by GroupData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/managedgroupdata/</guid>
-      <description>GraphQL schema definition type ManagedGroupData {code: ID! group: Group! api: API! resource: Resource! roles: Role! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):group(Group!):api(API!</description>
+      <description>GraphQL schema definition type ManagedGroupData {code: ID! group: Group! api: API! resource: Resource! role: Role! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):group(Group!):api(API!</description>
     </item>
     
     <item>
@@ -3730,7 +3730,7 @@ GraphQL schema definition type Member {code: ID!</description>
       
       <guid>/mappea/reference/objects/memberconnection/</guid>
       <description>GraphQL schema definition type MemberConnection {edges: [MemberEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([MemberEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData:</description>
+Required by OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -3740,7 +3740,7 @@ Required by GroupData: GroupCommonData:</description>
       
       <guid>/paymentx/reference/objects/memberconnection/</guid>
       <description>GraphQL schema definition type MemberConnection {edges: [MemberEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([MemberEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData:</description>
+Required by GroupData: GroupCommonData: OrganizationData:</description>
     </item>
     
     <item>
@@ -3750,7 +3750,7 @@ Required by GroupData: GroupCommonData:</description>
       
       <guid>/stats/reference/objects/memberconnection/</guid>
       <description>GraphQL schema definition type MemberConnection {edges: [MemberEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([MemberEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData:</description>
+Required by OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -3760,7 +3760,7 @@ Required by GroupData: GroupCommonData:</description>
       
       <guid>/travelgatex/reference/objects/memberconnection/</guid>
       <description>GraphQL schema definition type MemberConnection {edges: [MemberEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([MemberEdge]):pageInfo(PageInfo!):
-Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.GroupData: GroupCommonData: OrganizationData:</description>
+Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -4179,6 +4179,36 @@ Required by OperationConnection:</description>
     
     <item>
       <title>Organization</title>
+      <link>/mappea/reference/objects/organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mappea/reference/objects/organization/</guid>
+      <description>Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
+GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.</description>
+    </item>
+    
+    <item>
+      <title>Organization</title>
+      <link>/paymentx/reference/objects/organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/objects/organization/</guid>
+      <description>Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
+GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.</description>
+    </item>
+    
+    <item>
+      <title>Organization</title>
+      <link>/stats/reference/objects/organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/organization/</guid>
+      <description>Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
+GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.</description>
+    </item>
+    
+    <item>
+      <title>Organization</title>
       <link>/travelgatex/reference/objects/organization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4199,11 +4229,38 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
     
     <item>
       <title>OrganizationData</title>
+      <link>/mappea/reference/objects/organizationdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mappea/reference/objects/organizationdata/</guid>
+      <description>GraphQL schema definition type OrganizationData {id: ID! code: ID! label: String type: GroupType! info: String children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection descendents(codes: [ID!</description>
+    </item>
+    
+    <item>
+      <title>OrganizationData</title>
+      <link>/paymentx/reference/objects/organizationdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/objects/organizationdata/</guid>
+      <description>GraphQL schema definition type OrganizationData {id: ID! code: ID! label: String type: GroupType! info: String children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection descendents(codes: [ID!</description>
+    </item>
+    
+    <item>
+      <title>OrganizationData</title>
+      <link>/stats/reference/objects/organizationdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/organizationdata/</guid>
+      <description>GraphQL schema definition type OrganizationData {id: ID! code: ID! label: String type: GroupType! info: String children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection descendents(codes: [ID!</description>
+    </item>
+    
+    <item>
+      <title>OrganizationData</title>
       <link>/travelgatex/reference/objects/organizationdata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/organizationdata/</guid>
-      <description>GraphQL schema definition type OrganizationData {id: ID! code: ID! label: String type: GroupType! info: String children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection owner: Member isEditable: Boolean!</description>
+      <description>GraphQL schema definition type OrganizationData {id: ID! code: ID! label: String type: GroupType! info: String children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection descendents(codes: [ID!</description>
     </item>
     
     <item>
@@ -4795,7 +4852,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/objects/pointofsaledata/</guid>
-      <description>GraphQL schema definition type PointOfSaleData {code: ID! name: String Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):POS Identifiername(String):POS Name
+      <description>GraphQL schema definition type PointOfSaleData {code: ID! name: String owner: Organization Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):POS Identifiername(String):POS Nameowner(Organization):POS owner
 Required by PointOfSale:</description>
     </item>
     
@@ -4805,7 +4862,7 @@ Required by PointOfSale:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/pointofsaledata/</guid>
-      <description>GraphQL schema definition type PointOfSaleData {code: ID! name: String Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):POS Identifiername(String):POS Name
+      <description>GraphQL schema definition type PointOfSaleData {code: ID! name: String owner: Organization Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):POS Identifiername(String):POS Nameowner(Organization):POS owner
 Required by PointOfSale:</description>
     </item>
     
@@ -4825,7 +4882,7 @@ Required by PointOfSaleConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/pointofsalefilter/</guid>
-      <description>GraphQL schema definition type PointOfSaleFilter {code: [ID] groupID: [ID] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code([ID]):groupID([ID]):</description>
+      <description>GraphQL schema definition type PointOfSaleFilter {code: [ID] groupID: [ID] owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code([ID]):groupID([ID]):owner([ID!]):</description>
     </item>
     
     <item>
@@ -4888,12 +4945,72 @@ GraphQL schema definition type PriceBreakdown {effectiveDate: Date! expireD
     
     <item>
       <title>Product</title>
+      <link>/mappea/reference/objects/product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mappea/reference/objects/product/</guid>
+      <description>An APIs collection.
+GraphQL schema definition type Product {code: ID! productData: ProductData! error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):productData(ProductData!</description>
+    </item>
+    
+    <item>
+      <title>Product</title>
+      <link>/paymentx/reference/objects/product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/objects/product/</guid>
+      <description>An APIs collection.
+GraphQL schema definition type Product {code: ID! productData: ProductData! error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):productData(ProductData!</description>
+    </item>
+    
+    <item>
+      <title>Product</title>
+      <link>/stats/reference/objects/product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/product/</guid>
+      <description>An APIs collection.
+GraphQL schema definition type Product {code: ID! productData: ProductData! error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):productData(ProductData!</description>
+    </item>
+    
+    <item>
+      <title>Product</title>
       <link>/travelgatex/reference/objects/product/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/product/</guid>
       <description>An APIs collection.
 GraphQL schema definition type Product {code: ID! productData: ProductData! error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):productData(ProductData!</description>
+    </item>
+    
+    <item>
+      <title>ProductConnection</title>
+      <link>/mappea/reference/objects/productconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mappea/reference/objects/productconnection/</guid>
+      <description>GraphQL schema definition type ProductConnection {edges: [ProductEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ProductEdge]):pageInfo(PageInfo!):
+Required by OrganizationData:</description>
+    </item>
+    
+    <item>
+      <title>ProductConnection</title>
+      <link>/paymentx/reference/objects/productconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/objects/productconnection/</guid>
+      <description>GraphQL schema definition type ProductConnection {edges: [ProductEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ProductEdge]):pageInfo(PageInfo!):
+Required by OrganizationData:</description>
+    </item>
+    
+    <item>
+      <title>ProductConnection</title>
+      <link>/stats/reference/objects/productconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/productconnection/</guid>
+      <description>GraphQL schema definition type ProductConnection {edges: [ProductEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ProductEdge]):pageInfo(PageInfo!):
+Required by OrganizationData:</description>
     </item>
     
     <item>
@@ -4908,11 +5025,68 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
     
     <item>
       <title>ProductData</title>
+      <link>/mappea/reference/objects/productdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mappea/reference/objects/productdata/</guid>
+      <description>GraphQL schema definition type ProductData {id: ID! code: ID! label: String apis(codes: [ID!],first: Int,last: Int,before: String,after: String,): APIConnection Show deprecated fields}window.</description>
+    </item>
+    
+    <item>
+      <title>ProductData</title>
+      <link>/paymentx/reference/objects/productdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/objects/productdata/</guid>
+      <description>GraphQL schema definition type ProductData {id: ID! code: ID! label: String apis(codes: [ID!],first: Int,last: Int,before: String,after: String,): APIConnection Show deprecated fields}window.</description>
+    </item>
+    
+    <item>
+      <title>ProductData</title>
+      <link>/stats/reference/objects/productdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/productdata/</guid>
+      <description>GraphQL schema definition type ProductData {id: ID! code: ID! label: String apis(codes: [ID!],first: Int,last: Int,before: String,after: String,): APIConnection Show deprecated fields}window.</description>
+    </item>
+    
+    <item>
+      <title>ProductData</title>
       <link>/travelgatex/reference/objects/productdata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/productdata/</guid>
       <description>GraphQL schema definition type ProductData {id: ID! code: ID! label: String apis(codes: [ID!],first: Int,last: Int,before: String,after: String,): APIConnection Show deprecated fields}window.</description>
+    </item>
+    
+    <item>
+      <title>ProductEdge</title>
+      <link>/mappea/reference/objects/productedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mappea/reference/objects/productedge/</guid>
+      <description>GraphQL schema definition type ProductEdge {node: Product cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Product):cursor(String!):
+Required by ProductConnection:</description>
+    </item>
+    
+    <item>
+      <title>ProductEdge</title>
+      <link>/paymentx/reference/objects/productedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/objects/productedge/</guid>
+      <description>GraphQL schema definition type ProductEdge {node: Product cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Product):cursor(String!):
+Required by ProductConnection:</description>
+    </item>
+    
+    <item>
+      <title>ProductEdge</title>
+      <link>/stats/reference/objects/productedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/productedge/</guid>
+      <description>GraphQL schema definition type ProductEdge {node: Product cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Product):cursor(String!):
+Required by ProductConnection:</description>
     </item>
     
     <item>
@@ -4951,7 +5125,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       
       <guid>/travelgatex/reference/objects/profiledata/</guid>
       <description>Profile data
-GraphQL schema definition type ProfileData {code: ID! label: String entities: EntityConnection group: Group Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):Profile Identifierlabel(String):Profile labelentities(EntityConnection):Profile Entities (suppliers/clients)group(Group):Indicates the group where the Client belongs</description>
+GraphQL schema definition type ProfileData {code: ID! label: String entities: EntityConnection group: Group owner: Organization Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):Profile Identifierlabel(String):Profile labelentities(EntityConnection):Profile Entities (suppliers/clients)group(Group):Indicates the group where the Client belongsowner(Organization):Profile owner</description>
     </item>
     
     <item>
@@ -4970,7 +5144,7 @@ Required by ProfileConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/profilefilter/</guid>
-      <description>GraphQL schema definition type ProfileFilter {profileIDs: [ID] groupIDs: [ID] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields profileIDs([ID]):groupIDs([ID]):</description>
+      <description>GraphQL schema definition type ProfileFilter {profileIDs: [ID] groupIDs: [ID] owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields profileIDs([ID]):groupIDs([ID]):owner([ID!]):</description>
     </item>
     
     <item>
@@ -5292,7 +5466,7 @@ GraphQL schema definition type Resource {code: ID! resourceData: ResourceDa
       
       <guid>/mappea/reference/objects/resourceconnection/</guid>
       <description>GraphQL schema definition type ResourceConnection {edges: [ResourceEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ResourceEdge]):pageInfo(PageInfo!):
-Required by APIData: RoleData:</description>
+Required by RoleData: APIData:</description>
     </item>
     
     <item>
@@ -5312,7 +5486,7 @@ Required by APIData: RoleData:</description>
       
       <guid>/stats/reference/objects/resourceconnection/</guid>
       <description>GraphQL schema definition type ResourceConnection {edges: [ResourceEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ResourceEdge]):pageInfo(PageInfo!):
-Required by APIData: RoleData:</description>
+Required by RoleData: APIData:</description>
     </item>
     
     <item>
@@ -5488,7 +5662,7 @@ GraphQL schema definition type Role {code: ID! roleData: RoleData error:
       
       <guid>/mappea/reference/objects/roleconnection/</guid>
       <description>GraphQL schema definition type RoleConnection {edges: [RoleEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([RoleEdge]):pageInfo(PageInfo!):
-Required by GroupData: MemberData: ResourceData:</description>
+Required by MemberData: ResourceData: GroupData:</description>
     </item>
     
     <item>
@@ -5508,7 +5682,7 @@ Required by GroupData: MemberData: ResourceData:</description>
       
       <guid>/stats/reference/objects/roleconnection/</guid>
       <description>GraphQL schema definition type RoleConnection {edges: [RoleEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([RoleEdge]):pageInfo(PageInfo!):
-Required by GroupData: MemberData: ResourceData:</description>
+Required by MemberData: ResourceData: GroupData:</description>
     </item>
     
     <item>
@@ -5518,7 +5692,7 @@ Required by GroupData: MemberData: ResourceData:</description>
       
       <guid>/travelgatex/reference/objects/roleconnection/</guid>
       <description>GraphQL schema definition type RoleConnection {edges: [RoleEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([RoleEdge]):pageInfo(PageInfo!):
-Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.GroupData: MemberData: ResourceData:</description>
+Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.MemberData: GroupData: ResourceData:</description>
     </item>
     
     <item>
@@ -6260,7 +6434,7 @@ GraphQL schema definition scalar StringRequired by AdviseMessage: List of ad
       
       <guid>/stats/reference/scalars/string/</guid>
       <description> The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar StringRequired by StatsEdge: PageInfo: AdviseMessage: List of advise messages.AccessData: Error: Application errorsParameter: Parameters for additional information for the supplier&amp;#39;s configuration.SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeAccessEdge: GroupEdge: GroupData: GroupCommonData: MemberData: MemberEdge: APIEdge: APIData: ResourceEdge: ResourceData: OperationEdge: OperationData: ManagedGroupEdge: RoleData: SupplierEdge: ClientEdge: RoleEdge: ClientData: ExternalMessage:  </description>
+GraphQL schema definition scalar StringRequired by StatsEdge: PageInfo: AdviseMessage: List of advise messages.AccessData: Error: Application errorsParameter: Parameters for additional information for the supplier&amp;#39;s configuration.SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeAccessEdge: OrganizationData: GroupCommonData: MemberData: RoleEdge: RoleData: ResourceEdge: ResourceData: MemberEdge: APIEdge: APIData: OperationEdge: OperationData: ProductEdge: ProductData: SupplierEdge: ClientEdge: GroupEdge: GroupData: ManagedGroupEdge: ClientData: ExternalMessage:  </description>
     </item>
     
     <item>
@@ -6371,7 +6545,7 @@ GraphQL schema definition type Supplier {code: ID! supplierData: SupplierDa
       
       <guid>/mappea/reference/objects/supplierconnection/</guid>
       <description>GraphQL schema definition type SupplierConnection {edges: [SupplierEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([SupplierEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData:</description>
+Required by OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -6381,7 +6555,7 @@ Required by GroupData: GroupCommonData:</description>
       
       <guid>/paymentx/reference/objects/supplierconnection/</guid>
       <description>GraphQL schema definition type SupplierConnection {edges: [SupplierEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([SupplierEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData:</description>
+Required by GroupData: GroupCommonData: OrganizationData:</description>
     </item>
     
     <item>
@@ -6391,7 +6565,7 @@ Required by GroupData: GroupCommonData:</description>
       
       <guid>/stats/reference/objects/supplierconnection/</guid>
       <description>GraphQL schema definition type SupplierConnection {edges: [SupplierEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([SupplierEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData:</description>
+Required by OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -6401,7 +6575,7 @@ Required by GroupData: GroupCommonData:</description>
       
       <guid>/travelgatex/reference/objects/supplierconnection/</guid>
       <description>GraphQL schema definition type SupplierConnection {edges: [SupplierEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([SupplierEdge]):pageInfo(PageInfo!):
-Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.GroupData: GroupCommonData: OrganizationData:</description>
+Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL interface.OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -6410,7 +6584,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/objects/supplierdata/</guid>
-      <description>GraphQL schema definition type SupplierData {code: ID! name: String! isActive: Boolean! provider: Provider! context: String! serviceApi: Int! supplierGroup: ID accesses: AccessConnection groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
+      <description>GraphQL schema definition type SupplierData {code: ID! name: String! isActive: Boolean! provider: Provider! context: String! serviceApi: Int! supplierGroup: ID accesses: AccessConnection owner: Organization groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
     </item>
     
     <item>
@@ -6419,7 +6593,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/objects/supplierdata/</guid>
-      <description>GraphQL schema definition type SupplierData {code: ID! name: String! isActive: Boolean! provider: Provider! context: String! serviceApi: Int! supplierGroup: ID accesses: AccessConnection groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
+      <description>GraphQL schema definition type SupplierData {code: ID! name: String! isActive: Boolean! provider: Provider! context: String! serviceApi: Int! supplierGroup: ID accesses: AccessConnection owner: Organization groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
     </item>
     
     <item>
@@ -6428,7 +6602,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/supplierdata/</guid>
-      <description>GraphQL schema definition type SupplierData {code: ID! name: String! isActive: Boolean! provider: Provider! context: String! serviceApi: Int! supplierGroup: ID accesses: AccessConnection groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
+      <description>GraphQL schema definition type SupplierData {code: ID! name: String! isActive: Boolean! provider: Provider! context: String! serviceApi: Int! supplierGroup: ID accesses: AccessConnection owner: Organization groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
     </item>
     
     <item>
@@ -6437,7 +6611,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/supplierdata/</guid>
-      <description>GraphQL schema definition type SupplierData {code: ID! name: String! isActive: Boolean! provider: Provider! context: String! serviceApi: Int! supplierGroup: ID accesses: AccessConnection groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
+      <description>GraphQL schema definition type SupplierData {code: ID! name: String! isActive: Boolean! provider: Provider! context: String! serviceApi: Int! supplierGroup: ID accesses: AccessConnection owner: Organization groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
     </item>
     
     <item>
@@ -6504,7 +6678,7 @@ Required by SupplierConnection:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/supplierfilter/</guid>
-      <description>GraphQL schema definition type SupplierFilter {supplierID: [ID] accessID: [ID] groupID: [ID] isActive: Boolean serviceAPI: [Int] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields supplierID([ID]):accessID([ID]):groupID([ID]):isActive(Boolean):serviceAPI([Int]):</description>
+      <description>GraphQL schema definition type SupplierFilter {supplierID: [ID] accessID: [ID] groupID: [ID] isActive: Boolean serviceAPI: [Int] owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields supplierID([ID]):accessID([ID]):groupID([ID]):isActive(Boolean):serviceAPI([Int]):owner([ID!</description>
     </item>
     
     <item>
@@ -6538,20 +6712,20 @@ GraphQL schema definition type Surcharge {chargeType: ChargeType! mandatory
     
     <item>
       <title>Text</title>
-      <link>/hotelx/reference/interfaces/text/</link>
+      <link>/hotelx/reference/objects/text/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotelx/reference/interfaces/text/</guid>
-      <description>GraphQL schema definition interface Text {text: String! language: Language! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields text(String!):language(Language!):</description>
+      <guid>/hotelx/reference/objects/text/</guid>
+      <description>GraphQL schema definition type Text {text: String! language: Language! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields text(String!):language(Language!):</description>
     </item>
     
     <item>
       <title>Text</title>
-      <link>/travelgatex/reference/interfaces/text/</link>
+      <link>/travelgatex/reference/objects/text/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/interfaces/text/</guid>
-      <description>GraphQL schema definition interface Text {text: String! language: Language! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields text(String!):language(Language!):</description>
+      <guid>/travelgatex/reference/objects/text/</guid>
+      <description>GraphQL schema definition type Text {text: String! language: Language! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields text(String!):language(Language!):</description>
     </item>
     
     <item>
@@ -6650,7 +6824,7 @@ GraphQL schema definition enumUnitTimeType{DAY,HOUR,}  Required by 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/updateclientinput/</guid>
-      <description>GraphQL schema definition type UpdateClientInput {code: ID! name: String isActive: Boolean Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID identifier of a Clientname(String):Client complete nameisActive(Boolean):Indicates whether a Client is active or inactive</description>
+      <description>GraphQL schema definition type UpdateClientInput {code: ID! name: String isActive: Boolean owner: ID Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID identifier of a Clientname(String):Client complete nameisActive(Boolean):Indicates whether a Client is active or inactiveowner(ID):Client owner</description>
     </item>
     
     <item>
@@ -6686,7 +6860,7 @@ GraphQL schema definition enumUnitTimeType{DAY,HOUR,}  Required by 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/updateprofileinput/</guid>
-      <description>GraphQL schema definition type UpdateProfileInput {code: ID! label: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):Profile Codelabel(String!):Label of the Profile</description>
+      <description>GraphQL schema definition type UpdateProfileInput {code: ID! label: String! owner: ID Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):Profile Codelabel(String!):Label of the Profileowner(ID):Profile owner</description>
     </item>
     
     <item>
@@ -6890,7 +7064,7 @@ HotelX Settings In HotelX we have differents configuration level settings for a 
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on HotelX product.
-All notable changes on our platform will be documented in this page.2018-07-24  New plugin, safety margin. You can see the documentation here.   2018-07-18  Hotel, board, room and rate maps caches are now updated synchronously. This will improve the user experience when 1st time debugging operations.</description>
+All notable changes on our platform will be documented in this page.2018-08-22  New input field in hotels query filter. This allows to filter the response by hotel&amp;rsquo;s country. GraphQL Schema updated.   2018-07-24  New plugin, safety margin. You can see the documentation here.   2018-07-18  Hotel, board, room and rate maps caches are now updated synchronously.</description>
     </item>
     
     <item>
@@ -6900,7 +7074,7 @@ All notable changes on our platform will be documented in this page.2018-07-24 
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page.2018-08-14  GraphQL Schema updated.   2018-08-13  GraphQL Schema updated.   2018-08-08  GraphQL Schema updated.    TGX Headers page Support basic Tracing by request using header TGX-Tracing: 1 Return groups codes on entities queries (accessData,suppierData,clientData,profileData).</description>
+All notable changes on TravelgateX platform will be documented in this page.2018-08-22  GraphQL Schema updated.    Entity&amp;rsquo;s Owner and its relates Filters, queries and mutations. parents and descendents queries for Group and Organization.    Basic Audit by request using header TGX-Audit: 1 See more: TGX Headers page   2018-08-14  GraphQL Schema updated.</description>
     </item>
     
     <item>
@@ -7103,9 +7277,9 @@ Under construction!We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-08-14 🛑 Type for argument input on field PaymentXMutation.storeCard changed from PaymentXStoreCardInput! to PaymentXStoredCardInput!
-🛑 Field PaymentXMutation.storeCard changed type from StoredCard! to PaymentXStoredCard!
-🛑 Field deleteCard was removed from object type PaymentXMutation</description>
+2018-08-22 🛑 Text kind changed from INTERFACE to OBJECT
+🛑 AdviseMessage kind changed from INTERFACE to OBJECT
+✅ Input field owner was added to input object type UpdateProfileInput</description>
     </item>
     
     <item>
@@ -7268,7 +7442,7 @@ In this case you can search the bookings with references or by dates, the dates 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.Expected removal on 2018-08-19.   2018-07-26  Removed useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12 . Removed connectUser from HotelSettingsInput.</description>
+      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon.   2018-07-26  Removed useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12 . Removed connectUser from HotelSettingsInput.</description>
     </item>
     
     <item>
@@ -7304,7 +7478,7 @@ In this case you can search the bookings with references or by dates, the dates 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of error from Group. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-01.Expected removal on 2018-10-30. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.Expected removal on 2018-08-19.   2018-08-14  Removed organization from PaymentXBookingInfoFilterInput.</description>
+      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of error from Group. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-01.Expected removal on 2018-10-30.   2018-08-22  Removed organization from PaymentXBookingInfoFilterInput.</description>
     </item>
     
     <item>

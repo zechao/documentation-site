@@ -17,7 +17,7 @@
       
       <guid>/travelgatex/reference/scalars/boolean/</guid>
       <description>The Boolean scalar type represents true or false.
-GraphQL schema definition scalar BooleanRequired by SupplierFilter: ClientFilter: PageInfo: AccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeClientData: GroupData: Member: You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform.</description>
+GraphQL schema definition scalar BooleanRequired by SupplierFilter: ClientFilter: PageInfo: AccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeOrganizationData: Member: You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform.</description>
     </item>
     
     <item>
@@ -75,7 +75,7 @@ GraphQL schema definition scalar DateRequired by HotelCriteriaSearchInput: S
       
       <guid>/travelgatex/reference/scalars/datetime/</guid>
       <description>The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
-GraphQL schema definition scalar DateTimeRequired by Access: An Access is a set of credentials and configuration in order to access the system of a Supplier.Node: Supplier: A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected BuyersClient: Client identifies who is making the request and holds the configuration assigned to it.</description>
+GraphQL schema definition scalar DateTimeRequired by Access: An Access is a set of credentials and configuration in order to access the system of a Supplier.Node: Supplier: A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected BuyersOrganization: Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.</description>
     </item>
     
     <item>

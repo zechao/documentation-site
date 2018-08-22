@@ -31,6 +31,16 @@ GraphQL schema definition type AddOns {distribution: [AddOn!] Show deprecate
     </item>
     
     <item>
+      <title>AdviseMessage</title>
+      <link>/hotelx/reference/objects/advisemessage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/objects/advisemessage/</guid>
+      <description>List of advise messages.
+GraphQL schema definition type AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
+    </item>
+    
+    <item>
       <title>Airport</title>
       <link>/hotelx/reference/objects/airport/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -779,6 +789,15 @@ GraphQL schema definition type Supplement {code: String! name: String de
       <guid>/hotelx/reference/objects/surcharge/</guid>
       <description>Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.
 GraphQL schema definition type Surcharge {chargeType: ChargeType! mandatory: Boolean! price: Price! description: String Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
+    </item>
+    
+    <item>
+      <title>Text</title>
+      <link>/hotelx/reference/objects/text/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/objects/text/</guid>
+      <description>GraphQL schema definition type Text {text: String! language: Language! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields text(String!):language(Language!):</description>
     </item>
     
     <item>

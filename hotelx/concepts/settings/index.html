@@ -216,6 +216,11 @@
           <span>AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/travelgatex/reference/objects/advisemessage/" class="dd-item">
+        <a href="/travelgatex/reference/objects/advisemessage/">
+          <span>AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
         <a href="/travelgatex/reference/objects/airport/">
           <span>Airport</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1001,6 +1006,11 @@
           <span>Surcharge</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/travelgatex/reference/objects/text/" class="dd-item">
+        <a href="/travelgatex/reference/objects/text/">
+          <span>Text</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/travelgatex/reference/objects/transactions/" class="dd-item">
         <a href="/travelgatex/reference/objects/transactions/">
           <span>Transactions</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1115,11 +1125,6 @@
         <span>Interfaces</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
-      <li data-nav-id="/travelgatex/reference/interfaces/advisemessage/" class="dd-item">
-        <a href="/travelgatex/reference/interfaces/advisemessage/">
-          <span>AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
       <li data-nav-id="/travelgatex/reference/interfaces/bookableoptionsearch/" class="dd-item">
         <a href="/travelgatex/reference/interfaces/bookableoptionsearch/">
           <span>BookableOptionSearch</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1143,11 +1148,6 @@
       <li data-nav-id="/travelgatex/reference/interfaces/response/" class="dd-item">
         <a href="/travelgatex/reference/interfaces/response/">
           <span>Response</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/travelgatex/reference/interfaces/text/" class="dd-item">
-        <a href="/travelgatex/reference/interfaces/text/">
-          <span>Text</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -1838,6 +1838,11 @@
           <span>AddOns</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/hotelx/reference/objects/advisemessage/" class="dd-item">
+        <a href="/hotelx/reference/objects/advisemessage/">
+          <span>AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/hotelx/reference/objects/airport/" class="dd-item">
         <a href="/hotelx/reference/objects/airport/">
           <span>Airport</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2213,6 +2218,11 @@
           <span>Surcharge</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/hotelx/reference/objects/text/" class="dd-item">
+        <a href="/hotelx/reference/objects/text/">
+          <span>Text</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/hotelx/reference/objects/transactions/" class="dd-item">
         <a href="/hotelx/reference/objects/transactions/">
           <span>Transactions</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2297,11 +2307,6 @@
         <span>Interfaces</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
-      <li data-nav-id="/hotelx/reference/interfaces/advisemessage/" class="dd-item">
-        <a href="/hotelx/reference/interfaces/advisemessage/">
-          <span>AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
       <li data-nav-id="/hotelx/reference/interfaces/bookableoptionsearch/" class="dd-item">
         <a href="/hotelx/reference/interfaces/bookableoptionsearch/">
           <span>BookableOptionSearch</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2320,11 +2325,6 @@
       <li data-nav-id="/hotelx/reference/interfaces/response/" class="dd-item">
         <a href="/hotelx/reference/interfaces/response/">
           <span>Response</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/hotelx/reference/interfaces/text/" class="dd-item">
-        <a href="/hotelx/reference/interfaces/text/">
-          <span>Text</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -2936,18 +2936,9 @@
 
      $('#TableOfContents a[href^="#"]').click(function() {
       var target = $(this.hash);
-      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
-      if (target.length == 0) target = $('html');
       $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
       return false;
-  });
-
-    $('a[href^="#"].gotop').on('click',function (e) {
-	    e.preventDefault();
-      $('html, body').animate({
-        scrollTop: 0
-      }, 500);
-	  });
+    });
   })
 
 </script>
@@ -3137,7 +3128,7 @@
 <li><p><strong>Book</strong></p>
 
 <ul>
-<li>Example : <a href="/hotelx/quickstart#search">Search setting example</a></li>
+<li>Example : <a href="/hotelx/quickstart#book">Book setting example</a></li>
 </ul></li>
 
 <li><p><strong>Cancel</strong></p>
@@ -3325,7 +3316,7 @@ graph LR;
   </div>
 </footer>
 <script>
-    $('.js-gotop').on('click', function(event){
+    $('#footer_docs > a.js-gotop').on('click', function(event){
 
         event.preventDefault();
 

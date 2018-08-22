@@ -26,7 +26,7 @@
       
       <guid>/stats/reference/objects/apiconnection/</guid>
       <description>GraphQL schema definition type APIConnection {edges: [APIEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([APIEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData: ResourceData:</description>
+Required by OrganizationData: GroupCommonData: ResourceData: ProductData: GroupData:</description>
     </item>
     
     <item>
@@ -65,7 +65,7 @@ GraphQL schema definition type Access {code: ID! accessData: AccessData 
       
       <guid>/stats/reference/objects/accessconnection/</guid>
       <description>GraphQL schema definition type AccessConnection {edges: [AccessEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([AccessEdge]):pageInfo(PageInfo!):
-Required by SupplierData: GroupData: GroupCommonData:</description>
+Required by SupplierData: OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -74,7 +74,7 @@ Required by SupplierData: GroupData: GroupCommonData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/accessdata/</guid>
-      <description>GraphQL schema definition type AccessData {name: String! isActive: Boolean! code: ID! supplier: Supplier! isTest: Boolean! user: String password: String urls: Urls parameters: [Parameter] markets: [String!] rateRules: [RateRulesType!] shared: Access groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
+      <description>GraphQL schema definition type AccessData {name: String! isActive: Boolean! code: ID! supplier: Supplier! isTest: Boolean! user: String password: String urls: Urls parameters: [Parameter] markets: [String!] rateRules: [RateRulesType!] shared: Access owner: Organization isShedulerActive: Boolean groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
     </item>
     
     <item>
@@ -85,6 +85,16 @@ Required by SupplierData: GroupData: GroupCommonData:</description>
       <guid>/stats/reference/objects/accessedge/</guid>
       <description>GraphQL schema definition type AccessEdge {node: Access cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Access):cursor(String!):
 Required by AccessConnection:</description>
+    </item>
+    
+    <item>
+      <title>AdviseMessage</title>
+      <link>/stats/reference/objects/advisemessage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/advisemessage/</guid>
+      <description>List of advise messages.
+GraphQL schema definition type AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
@@ -104,7 +114,7 @@ GraphQL schema definition type Client {code: ID! clientData: ClientData 
       
       <guid>/stats/reference/objects/clientconnection/</guid>
       <description>GraphQL schema definition type ClientConnection {edges: [ClientEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ClientEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData:</description>
+Required by OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -113,7 +123,7 @@ Required by GroupData: GroupCommonData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/clientdata/</guid>
-      <description>GraphQL schema definition type ClientData {code: ID! name: String! isActive: Boolean! group: Group Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID identifier of a Clientname(String!):Client complete nameisActive(Boolean!</description>
+      <description>GraphQL schema definition type ClientData {code: ID! name: String! isActive: Boolean! group: Group owner: Organization Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID identifier of a Clientname(String!</description>
     </item>
     
     <item>
@@ -163,7 +173,7 @@ GraphQL schema definition type Group {code: ID! groupData: GroupData adv
       
       <guid>/stats/reference/objects/groupconnection/</guid>
       <description>GraphQL schema definition type GroupConnection {edges: [GroupEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([GroupEdge]):pageInfo(PageInfo!):
-Required by AccessData: SupplierData: GroupData: GroupCommonData: MemberData: APIData:</description>
+Required by AccessData: SupplierData: OrganizationData: GroupCommonData: MemberData: APIData: GroupData:</description>
     </item>
     
     <item>
@@ -172,7 +182,7 @@ Required by AccessData: SupplierData: GroupData: GroupCommonData: Me
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/groupdata/</guid>
-      <description>GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection parents(codes: [ID!</description>
+      <description>GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection descendents(codes: [ID!</description>
     </item>
     
     <item>
@@ -210,7 +220,7 @@ Required by GroupData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/managedgroupdata/</guid>
-      <description>GraphQL schema definition type ManagedGroupData {code: ID! group: Group! api: API! resource: Resource! roles: Role! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):group(Group!):api(API!</description>
+      <description>GraphQL schema definition type ManagedGroupData {code: ID! group: Group! api: API! resource: Resource! role: Role! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):group(Group!):api(API!</description>
     </item>
     
     <item>
@@ -240,7 +250,7 @@ GraphQL schema definition type Member {code: ID!</description>
       
       <guid>/stats/reference/objects/memberconnection/</guid>
       <description>GraphQL schema definition type MemberConnection {edges: [MemberEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([MemberEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData:</description>
+Required by OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -311,6 +321,25 @@ Required by OperationConnection:</description>
     </item>
     
     <item>
+      <title>Organization</title>
+      <link>/stats/reference/objects/organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/organization/</guid>
+      <description>Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
+GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.</description>
+    </item>
+    
+    <item>
+      <title>OrganizationData</title>
+      <link>/stats/reference/objects/organizationdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/organizationdata/</guid>
+      <description>GraphQL schema definition type OrganizationData {id: ID! code: ID! label: String type: GroupType! info: String children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection descendents(codes: [ID!</description>
+    </item>
+    
+    <item>
       <title>PageInfo</title>
       <link>/stats/reference/objects/pageinfo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -327,6 +356,45 @@ Required by OperationConnection:</description>
       <guid>/stats/reference/objects/parameter/</guid>
       <description>Parameters for additional information for the supplier&amp;rsquo;s configuration.
 GraphQL schema definition type Parameter {key: ID! value: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields key(ID!):Contains the keyword/Id to identify a parameter. This information is mandatory.value(String!</description>
+    </item>
+    
+    <item>
+      <title>Product</title>
+      <link>/stats/reference/objects/product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/product/</guid>
+      <description>An APIs collection.
+GraphQL schema definition type Product {code: ID! productData: ProductData! error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):productData(ProductData!</description>
+    </item>
+    
+    <item>
+      <title>ProductConnection</title>
+      <link>/stats/reference/objects/productconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/productconnection/</guid>
+      <description>GraphQL schema definition type ProductConnection {edges: [ProductEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ProductEdge]):pageInfo(PageInfo!):
+Required by OrganizationData:</description>
+    </item>
+    
+    <item>
+      <title>ProductData</title>
+      <link>/stats/reference/objects/productdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/productdata/</guid>
+      <description>GraphQL schema definition type ProductData {id: ID! code: ID! label: String apis(codes: [ID!],first: Int,last: Int,before: String,after: String,): APIConnection Show deprecated fields}window.</description>
+    </item>
+    
+    <item>
+      <title>ProductEdge</title>
+      <link>/stats/reference/objects/productedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/productedge/</guid>
+      <description>GraphQL schema definition type ProductEdge {node: Product cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Product):cursor(String!):
+Required by ProductConnection:</description>
     </item>
     
     <item>
@@ -366,7 +434,7 @@ GraphQL schema definition type Resource {code: ID! resourceData: ResourceDa
       
       <guid>/stats/reference/objects/resourceconnection/</guid>
       <description>GraphQL schema definition type ResourceConnection {edges: [ResourceEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ResourceEdge]):pageInfo(PageInfo!):
-Required by APIData: RoleData:</description>
+Required by RoleData: APIData:</description>
     </item>
     
     <item>
@@ -405,7 +473,7 @@ GraphQL schema definition type Role {code: ID! roleData: RoleData error:
       
       <guid>/stats/reference/objects/roleconnection/</guid>
       <description>GraphQL schema definition type RoleConnection {edges: [RoleEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([RoleEdge]):pageInfo(PageInfo!):
-Required by GroupData: MemberData: ResourceData:</description>
+Required by MemberData: ResourceData: GroupData:</description>
     </item>
     
     <item>
@@ -503,7 +571,7 @@ GraphQL schema definition type Supplier {code: ID! supplierData: SupplierDa
       
       <guid>/stats/reference/objects/supplierconnection/</guid>
       <description>GraphQL schema definition type SupplierConnection {edges: [SupplierEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([SupplierEdge]):pageInfo(PageInfo!):
-Required by GroupData: GroupCommonData:</description>
+Required by OrganizationData: GroupCommonData: GroupData:</description>
     </item>
     
     <item>
@@ -512,7 +580,7 @@ Required by GroupData: GroupCommonData:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/supplierdata/</guid>
-      <description>GraphQL schema definition type SupplierData {code: ID! name: String! isActive: Boolean! provider: Provider! context: String! serviceApi: Int! supplierGroup: ID accesses: AccessConnection groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
+      <description>GraphQL schema definition type SupplierData {code: ID! name: String! isActive: Boolean! provider: Provider! context: String! serviceApi: Int! supplierGroup: ID accesses: AccessConnection owner: Organization groups(first: Int,last: Int,before: String,after: String,): GroupConnection Show deprecated fields}window.</description>
     </item>
     
     <item>

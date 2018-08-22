@@ -217,6 +217,11 @@
           <span>AdminQuery</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/travelgatex/reference/objects/advisemessage/" class="dd-item">
+        <a href="/travelgatex/reference/objects/advisemessage/">
+          <span>AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/travelgatex/reference/objects/airport/" class="dd-item">
         <a href="/travelgatex/reference/objects/airport/">
           <span>Airport</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1002,6 +1007,11 @@
           <span>Surcharge</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/travelgatex/reference/objects/text/" class="dd-item">
+        <a href="/travelgatex/reference/objects/text/">
+          <span>Text</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/travelgatex/reference/objects/transactions/" class="dd-item">
         <a href="/travelgatex/reference/objects/transactions/">
           <span>Transactions</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1116,11 +1126,6 @@
         <span>Interfaces</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
-      <li data-nav-id="/travelgatex/reference/interfaces/advisemessage/" class="dd-item">
-        <a href="/travelgatex/reference/interfaces/advisemessage/">
-          <span>AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
       <li data-nav-id="/travelgatex/reference/interfaces/bookableoptionsearch/" class="dd-item">
         <a href="/travelgatex/reference/interfaces/bookableoptionsearch/">
           <span>BookableOptionSearch</span><i class="fa fa-circle-thin read-icon"></i>
@@ -1144,11 +1149,6 @@
       <li data-nav-id="/travelgatex/reference/interfaces/response/" class="dd-item">
         <a href="/travelgatex/reference/interfaces/response/">
           <span>Response</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/travelgatex/reference/interfaces/text/" class="dd-item">
-        <a href="/travelgatex/reference/interfaces/text/">
-          <span>Text</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -1839,6 +1839,11 @@
           <span>AddOns</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/hotelx/reference/objects/advisemessage/" class="dd-item">
+        <a href="/hotelx/reference/objects/advisemessage/">
+          <span>AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/hotelx/reference/objects/airport/" class="dd-item">
         <a href="/hotelx/reference/objects/airport/">
           <span>Airport</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2214,6 +2219,11 @@
           <span>Surcharge</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/hotelx/reference/objects/text/" class="dd-item">
+        <a href="/hotelx/reference/objects/text/">
+          <span>Text</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/hotelx/reference/objects/transactions/" class="dd-item">
         <a href="/hotelx/reference/objects/transactions/">
           <span>Transactions</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2298,11 +2308,6 @@
         <span>Interfaces</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
-      <li data-nav-id="/hotelx/reference/interfaces/advisemessage/" class="dd-item">
-        <a href="/hotelx/reference/interfaces/advisemessage/">
-          <span>AdviseMessage</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
       <li data-nav-id="/hotelx/reference/interfaces/bookableoptionsearch/" class="dd-item">
         <a href="/hotelx/reference/interfaces/bookableoptionsearch/">
           <span>BookableOptionSearch</span><i class="fa fa-circle-thin read-icon"></i>
@@ -2321,11 +2326,6 @@
       <li data-nav-id="/hotelx/reference/interfaces/response/" class="dd-item">
         <a href="/hotelx/reference/interfaces/response/">
           <span>Response</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/hotelx/reference/interfaces/text/" class="dd-item">
-        <a href="/hotelx/reference/interfaces/text/">
-          <span>Text</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -2936,18 +2936,9 @@
 
      $('#TableOfContents a[href^="#"]').click(function() {
       var target = $(this.hash);
-      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
-      if (target.length == 0) target = $('html');
       $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
       return false;
-  });
-
-    $('a[href^="#"].gotop').on('click',function (e) {
-	    e.preventDefault();
-      $('html, body').animate({
-        scrollTop: 0
-      }, 500);
-	  });
+    });
   })
 
 </script>
@@ -3037,6 +3028,62 @@
 <p>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.</p>
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
+
+<h2 id="2018-08-22">2018-08-22</h2>
+
+<p>🛑  <code>Text</code> kind changed from <code>INTERFACE</code> to <code>OBJECT</code></p>
+
+<p>🛑  <code>AdviseMessage</code> kind changed from <code>INTERFACE</code> to <code>OBJECT</code></p>
+
+<p>✅  Input field <code>owner</code> was added to input object type <code>UpdateProfileInput</code></p>
+
+<p>✅  Input field <code>owner</code> was added to input object type <code>CreateProfileInput</code></p>
+
+<p>✅  Input field <code>owner</code> was added to input object type <code>UpdateClientInput</code></p>
+
+<p>✅  Input field <code>owner</code> was added to input object type <code>CreateClientInput</code></p>
+
+<p>✅  Input field <code>owner</code> was added to input object type <code>AccessInput</code></p>
+
+<p>✅  Field <code>parents</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Field <code>descendents</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Input field <code>owner</code> was added to input object type <code>EntityFilter</code></p>
+
+<p>✅  Input field <code>owner</code> was added to input object type <code>ProfileFilter</code></p>
+
+<p>✅  Field <code>owner</code> was added to object type <code>ProfileData</code></p>
+
+<p>✅  Input field <code>owner</code> was added to input object type <code>PointOfSaleFilter</code></p>
+
+<p>✅  Field <code>owner</code> was added to object type <code>PointOfSaleData</code></p>
+
+<p>✅  Input field <code>owner</code> was added to input object type <code>ClientFilter</code></p>
+
+<p>✅  Input field <code>owner</code> was added to input object type <code>SupplierFilter</code></p>
+
+<p>✅  Input field <code>owner</code> was added to input object type <code>AccessFilter</code></p>
+
+<p>✅  Field <code>owner</code> was added to object type <code>ClientData</code></p>
+
+<p>✅  Field <code>GroupData.parents</code> description changed from <code>Recursive call with all ascendant parents tree</code> to <code>Response all parents groups nodes for this group (nom-hierarchically)</code></p>
+
+<p>✅  Field <code>descendents</code> was added to object type <code>GroupData</code></p>
+
+<p>✅  Field <code>owner</code> was added to object type <code>SupplierData</code></p>
+
+<p>✅  Field <code>isShedulerActive</code> was added to object type <code>AccessData</code></p>
+
+<p>✅  Field <code>owner</code> was added to object type <code>AccessData</code></p>
+
+<p>✅  Type <code>HotelXFilterSearchInput</code> was added</p>
+
+<p>✅  Type <code>HotelXFilterPluginTypeInput</code> was added</p>
+
+<p>✅  Type <code>HotelXPluginFilterInput</code> was added</p>
+
+<p>✅  Type <code>HotelXFilterInput</code> was added</p>
 
 <h2 id="2018-08-14">2018-08-14</h2>
 
@@ -5596,6 +5643,7 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
 <ul>
 <li>
 <ul>
+<li><a href="#2018-08-22">2018-08-22</a></li>
 <li><a href="#2018-08-14">2018-08-14</a></li>
 <li><a href="#2018-08-13">2018-08-13</a></li>
 <li><a href="#2018-08-08">2018-08-08</a></li>
@@ -5741,7 +5789,7 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
   </div>
 </footer>
 <script>
-    $('.js-gotop').on('click', function(event){
+    $('#footer_docs > a.js-gotop').on('click', function(event){
 
         event.preventDefault();
 
