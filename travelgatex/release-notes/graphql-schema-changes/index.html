@@ -3084,6 +3084,60 @@
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
 
+<h2 id="2018-08-27">2018-08-27</h2>
+
+<p>✅  Description <code>Input delta price, indicates price variation permitted by the client. An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue (price is lower or equal to the price showed in valuation).This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation will be done automatically in reservation method.</code>
+on type <code>DeltaPriceInput</code> has changed to
+<code>Input delta price, indicates price variation permitted by the client An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue (price is lower or equal to the price showed in valuation). This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation  will be done automatically in reservation method.</code></p>
+
+<p>✅  Argument <code>filter: HotelXFilterInput</code> added to field <code>HotelXMutation.cancel</code></p>
+
+<p>✅  Argument <code>filter: HotelXFilterInput</code> added to field <code>HotelXMutation.book</code></p>
+
+<p>✅  Field <code>PaymentXQuery.storedCard</code> description changed from <code>Returns a stored card information.</code> to <code>Returns a stored card information.</code></p>
+
+<p>✅  Field <code>PaymentXQuery.allStoredCards</code> description changed from <code>Returns the stored card list. For security, this query never will return clear card information.</code> to <code>Returns the stored card list. For security, this query never will return clear card information.</code></p>
+
+<p>✅  Input field <code>HotelSettingsInput.clientTokens</code> description changed from <code>Used to identify the origin of the request, this is only used in plugins.</code> to <code>Used to identify the origin of the request, this is only used in plugins.</code></p>
+
+<p>✅  Argument <code>filter: HotelXFilterInput</code> added to field <code>HotelXQuery.booking</code></p>
+
+<p>✅  Argument <code>filter: HotelXFilterInput</code> added to field <code>HotelXQuery.quote</code></p>
+
+<p>✅  Argument <code>filterSearch: HotelXFilterSearchInput</code> added to field <code>HotelXQuery.search</code></p>
+
+<p>✅  Deprecation reason on field <code>Product.error</code> has changed from `<code>to</code>deprecated from 2018-08-22. Sustituted by adviseMessage`</p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>Product</code></p>
+
+<p>✅  Deprecation reason on field <code>Operation.error</code> has changed from `<code>to</code>deprecated from 2018-08-22. Sustituted by adviseMessage`</p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>Operation</code></p>
+
+<p>✅  Deprecation reason on field <code>API.error</code> has changed from `<code>to</code>deprecated from 2018-08-22. Sustituted by adviseMessage`</p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>API</code></p>
+
+<p>✅  Deprecation reason on field <code>Resource.error</code> has changed from `<code>to</code>deprecated from 2018-08-22. Sustituted by adviseMessage`</p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>Resource</code></p>
+
+<p>✅  Deprecation reason on field <code>Role.error</code> has changed from `<code>to</code>deprecated from 2018-08-22. Sustituted by adviseMessage`</p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>Role</code></p>
+
+<p>✅  Deprecation reason on field <code>Member.error</code> has changed from `<code>to</code>deprecated from 2018-08-22. Sustituted by adviseMessage`</p>
+
+<p>✅  Field <code>Member.error</code> description changed from `<code>to</code>Errors that abort services`</p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>Member</code></p>
+
+<p>✅  Deprecation reason on field <code>Organization.error</code> has changed from `<code>to</code>deprecated from 2018-08-22. Sustituted by adviseMessage`</p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>Organization</code></p>
+
+<p>✅  Field <code>AdminQuery.products</code> description changed from <code>Product catalog; specify products codes to filter</code> to <code>Product catalog; specify products codes to filter</code></p>
+
 <h2 id="2018-08-22">2018-08-22</h2>
 
 <p>🛑  <code>Text</code> kind changed from <code>INTERFACE</code> to <code>OBJECT</code></p>
@@ -5698,6 +5752,7 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
 <ul>
 <li>
 <ul>
+<li><a href="#2018-08-27">2018-08-27</a></li>
 <li><a href="#2018-08-22">2018-08-22</a></li>
 <li><a href="#2018-08-14">2018-08-14</a></li>
 <li><a href="#2018-08-13">2018-08-13</a></li>
