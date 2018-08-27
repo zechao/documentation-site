@@ -17,7 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/objects/api/</guid>
-      <description>GraphQL schema definition type API {code: ID! apiData: APIData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):apiData(APIData):error([Error!</description>
+      <description>GraphQL schema definition type API {code: ID! apiData: APIData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/objects/api/</guid>
-      <description>GraphQL schema definition type API {code: ID! apiData: APIData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):apiData(APIData):error([Error!</description>
+      <description>GraphQL schema definition type API {code: ID! apiData: APIData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/api/</guid>
-      <description>GraphQL schema definition type API {code: ID! apiData: APIData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):apiData(APIData):error([Error!</description>
+      <description>GraphQL schema definition type API {code: ID! apiData: APIData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/api/</guid>
-      <description>GraphQL schema definition type API {code: ID! apiData: APIData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):apiData(APIData):error([Error!</description>
+      <description>GraphQL schema definition type API {code: ID! apiData: APIData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
@@ -3001,6 +3001,60 @@ GraphQL schema definition type HotelXAccessInput {accessId: ID! configurati
     </item>
     
     <item>
+      <title>HotelXFilterInput</title>
+      <link>/hotelx/reference/inputobjects/hotelxfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelxfilterinput/</guid>
+      <description>GraphQL schema definition type HotelXFilterInput {plugin: HotelXPluginFilterInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields plugin(HotelXPluginFilterInput):Only is possible to specify one of this filters, it allows to filter which plugins have to be executed or excluded</description>
+    </item>
+    
+    <item>
+      <title>HotelXFilterInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxfilterinput/</guid>
+      <description>GraphQL schema definition type HotelXFilterInput {plugin: HotelXPluginFilterInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields plugin(HotelXPluginFilterInput):Only is possible to specify one of this filters, it allows to filter which plugins have to be executed or excluded</description>
+    </item>
+    
+    <item>
+      <title>HotelXFilterPluginTypeInput</title>
+      <link>/hotelx/reference/inputobjects/hotelxfilterplugintypeinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelxfilterplugintypeinput/</guid>
+      <description>GraphQL schema definition type HotelXFilterPluginTypeInput {step: PluginStepType! type: String! name: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields step(PluginStepType!):The Step of the plugin to filtertype(String!):The Type of the plugin to filtername(String!</description>
+    </item>
+    
+    <item>
+      <title>HotelXFilterPluginTypeInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxfilterplugintypeinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxfilterplugintypeinput/</guid>
+      <description>GraphQL schema definition type HotelXFilterPluginTypeInput {step: PluginStepType! type: String! name: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields step(PluginStepType!):The Step of the plugin to filtertype(String!):The Type of the plugin to filtername(String!</description>
+    </item>
+    
+    <item>
+      <title>HotelXFilterSearchInput</title>
+      <link>/hotelx/reference/inputobjects/hotelxfiltersearchinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelxfiltersearchinput/</guid>
+      <description>GraphQL schema definition type HotelXFilterSearchInput {access: AccessFilterInput rateRules: RateRulesFilterInput plugin: HotelXPluginFilterInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields access(AccessFilterInput):You can specify one of the filters or any of them. In this latter case, all the configurated accesses will be executed.</description>
+    </item>
+    
+    <item>
+      <title>HotelXFilterSearchInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxfiltersearchinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxfiltersearchinput/</guid>
+      <description>GraphQL schema definition type HotelXFilterSearchInput {access: AccessFilterInput rateRules: RateRulesFilterInput plugin: HotelXPluginFilterInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields access(AccessFilterInput):You can specify one of the filters or any of them. In this latter case, all the configurated accesses will be executed.</description>
+    </item>
+    
+    <item>
       <title>HotelXHotelFilterInput</title>
       <link>/hotelx/reference/inputobjects/hotelxhotelfilterinput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3044,7 +3098,27 @@ GraphQL schema definition type HotelXHotelFilterInput {AND: [HotelXHotelFilter
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/hotelxmutation/</guid>
-      <description>GraphQL schema definition type HotelXMutation {book(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload cancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload Show deprecated fieldsloadFile(input: String!,): String! }window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields book(HotelBookPayload):Creates a new hotel booking consisting of an option of 1 or more rooms.</description>
+      <description>GraphQL schema definition type HotelXMutation {book(input: HotelBookInput!,settings: HotelSettingsInput,filter: HotelXFilterInput,): HotelBookPayload cancel(input: HotelCancelInput!,settings: HotelSettingsInput,filter: HotelXFilterInput,): HotelCancelPayload Show deprecated fieldsloadFile(input: String!,): String!</description>
+    </item>
+    
+    <item>
+      <title>HotelXPluginFilterInput</title>
+      <link>/hotelx/reference/inputobjects/hotelxpluginfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/inputobjects/hotelxpluginfilterinput/</guid>
+      <description>GraphQL schema definition type HotelXPluginFilterInput {includes: [HotelXFilterPluginTypeInput!] excludes: [HotelXFilterPluginTypeInput!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields includes([HotelXFilterPluginTypeInput!]):Plugins to include (only these plugins will be executed)excludes([HotelXFilterPluginTypeInput!]):Plugins to exclude
+Required by HotelXFilterSearchInput: HotelXFilterInput:</description>
+    </item>
+    
+    <item>
+      <title>HotelXPluginFilterInput</title>
+      <link>/travelgatex/reference/inputobjects/hotelxpluginfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/inputobjects/hotelxpluginfilterinput/</guid>
+      <description>GraphQL schema definition type HotelXPluginFilterInput {includes: [HotelXFilterPluginTypeInput!] excludes: [HotelXFilterPluginTypeInput!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields includes([HotelXFilterPluginTypeInput!]):Plugins to include (only these plugins will be executed)excludes([HotelXFilterPluginTypeInput!]):Plugins to exclude
+Required by HotelXFilterSearchInput: HotelXFilterInput:</description>
     </item>
     
     <item>
@@ -3975,7 +4049,7 @@ Required by MappeaMutation:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/objects/operation/</guid>
-      <description>GraphQL schema definition type Operation {code: ID! operationData: OperationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):operationData(OperationData):error([Error!</description>
+      <description>GraphQL schema definition type Operation {code: ID! operationData: OperationData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
@@ -3984,7 +4058,7 @@ Required by MappeaMutation:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/objects/operation/</guid>
-      <description>GraphQL schema definition type Operation {code: ID! operationData: OperationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):operationData(OperationData):error([Error!</description>
+      <description>GraphQL schema definition type Operation {code: ID! operationData: OperationData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
@@ -3993,7 +4067,7 @@ Required by MappeaMutation:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/operation/</guid>
-      <description>GraphQL schema definition type Operation {code: ID! operationData: OperationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):operationData(OperationData):error([Error!</description>
+      <description>GraphQL schema definition type Operation {code: ID! operationData: OperationData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
@@ -4002,7 +4076,7 @@ Required by MappeaMutation:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/operation/</guid>
-      <description>GraphQL schema definition type Operation {code: ID! operationData: OperationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):operationData(OperationData):error([Error!</description>
+      <description>GraphQL schema definition type Operation {code: ID! operationData: OperationData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
@@ -4184,7 +4258,7 @@ Required by OperationConnection:</description>
       
       <guid>/mappea/reference/objects/organization/</guid>
       <description>Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
-GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.</description>
+GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.</description>
     </item>
     
     <item>
@@ -4194,7 +4268,7 @@ GraphQL schema definition type Organization {code: ID! organizationData: Or
       
       <guid>/paymentx/reference/objects/organization/</guid>
       <description>Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
-GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.</description>
+GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.</description>
     </item>
     
     <item>
@@ -4204,7 +4278,7 @@ GraphQL schema definition type Organization {code: ID! organizationData: Or
       
       <guid>/stats/reference/objects/organization/</guid>
       <description>Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
-GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.</description>
+GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.</description>
     </item>
     
     <item>
@@ -4214,7 +4288,7 @@ GraphQL schema definition type Organization {code: ID! organizationData: Or
       
       <guid>/travelgatex/reference/objects/organization/</guid>
       <description>Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
-GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.</description>
+GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.</description>
     </item>
     
     <item>
@@ -4765,7 +4839,7 @@ GraphQL schema definition type PluginStepInput {step: PluginStepType! plugi
       
       <guid>/hotelx/reference/enums/pluginsteptype/</guid>
       <description>Plugin Step Type. https://docs.travelgatex.com/hotelx/plugins/overview/
-GraphQL schema definition enumPluginStepType{REQUEST,REQUEST_ACCESS,RESPONSE_OPTION,RESPONSE_ACCESS,RESPONSE,}  Required by PluginStepInput: Plugin to execute.</description>
+GraphQL schema definition enumPluginStepType{REQUEST,REQUEST_ACCESS,RESPONSE_OPTION,RESPONSE_ACCESS,RESPONSE,}  Required by PluginStepInput: Plugin to execute.HotelXFilterPluginTypeInput:</description>
     </item>
     
     <item>
@@ -4775,7 +4849,7 @@ GraphQL schema definition enumPluginStepType{REQUEST,REQUEST_ACCESS,
       
       <guid>/travelgatex/reference/enums/pluginsteptype/</guid>
       <description>Plugin Step Type. https://docs.travelgatex.com/hotelx/plugins/overview/
-GraphQL schema definition enumPluginStepType{REQUEST,REQUEST_ACCESS,RESPONSE_OPTION,RESPONSE_ACCESS,RESPONSE,}  Required by PluginStepInput: Plugin to execute.</description>
+GraphQL schema definition enumPluginStepType{REQUEST,REQUEST_ACCESS,RESPONSE_OPTION,RESPONSE_ACCESS,RESPONSE,}  Required by PluginStepInput: Plugin to execute.HotelXFilterPluginTypeInput:</description>
     </item>
     
     <item>
@@ -4950,7 +5024,7 @@ GraphQL schema definition type PriceBreakdown {effectiveDate: Date! expireD
       
       <guid>/mappea/reference/objects/product/</guid>
       <description>An APIs collection.
-GraphQL schema definition type Product {code: ID! productData: ProductData! error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):productData(ProductData!</description>
+GraphQL schema definition type Product {code: ID! productData: ProductData! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.</description>
     </item>
     
     <item>
@@ -4960,7 +5034,7 @@ GraphQL schema definition type Product {code: ID! productData: ProductData!
       
       <guid>/paymentx/reference/objects/product/</guid>
       <description>An APIs collection.
-GraphQL schema definition type Product {code: ID! productData: ProductData! error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):productData(ProductData!</description>
+GraphQL schema definition type Product {code: ID! productData: ProductData! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.</description>
     </item>
     
     <item>
@@ -4970,7 +5044,7 @@ GraphQL schema definition type Product {code: ID! productData: ProductData!
       
       <guid>/stats/reference/objects/product/</guid>
       <description>An APIs collection.
-GraphQL schema definition type Product {code: ID! productData: ProductData! error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):productData(ProductData!</description>
+GraphQL schema definition type Product {code: ID! productData: ProductData! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.</description>
     </item>
     
     <item>
@@ -4980,7 +5054,7 @@ GraphQL schema definition type Product {code: ID! productData: ProductData!
       
       <guid>/travelgatex/reference/objects/product/</guid>
       <description>An APIs collection.
-GraphQL schema definition type Product {code: ID! productData: ProductData! error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):productData(ProductData!</description>
+GraphQL schema definition type Product {code: ID! productData: ProductData! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.</description>
     </item>
     
     <item>
@@ -5426,7 +5500,7 @@ GraphQL schema definition type Resort {code: String! name: String descri
       
       <guid>/mappea/reference/objects/resource/</guid>
       <description>Resources are those used in APIs and Products.
-GraphQL schema definition type Resource {code: ID! resourceData: ResourceData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!</description>
+GraphQL schema definition type Resource {code: ID! resourceData: ResourceData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.</description>
     </item>
     
     <item>
@@ -5436,7 +5510,7 @@ GraphQL schema definition type Resource {code: ID! resourceData: ResourceDa
       
       <guid>/paymentx/reference/objects/resource/</guid>
       <description>Resources are those used in APIs and Products.
-GraphQL schema definition type Resource {code: ID! resourceData: ResourceData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!</description>
+GraphQL schema definition type Resource {code: ID! resourceData: ResourceData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.</description>
     </item>
     
     <item>
@@ -5446,7 +5520,7 @@ GraphQL schema definition type Resource {code: ID! resourceData: ResourceDa
       
       <guid>/stats/reference/objects/resource/</guid>
       <description>Resources are those used in APIs and Products.
-GraphQL schema definition type Resource {code: ID! resourceData: ResourceData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!</description>
+GraphQL schema definition type Resource {code: ID! resourceData: ResourceData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.</description>
     </item>
     
     <item>
@@ -5456,7 +5530,7 @@ GraphQL schema definition type Resource {code: ID! resourceData: ResourceDa
       
       <guid>/travelgatex/reference/objects/resource/</guid>
       <description>Resources are those used in APIs and Products.
-GraphQL schema definition type Resource {code: ID! resourceData: ResourceData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!</description>
+GraphQL schema definition type Resource {code: ID! resourceData: ResourceData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.</description>
     </item>
     
     <item>
@@ -5622,7 +5696,7 @@ The Project has a few columns that act as the status whereas cards are the items
       
       <guid>/mappea/reference/objects/role/</guid>
       <description>Permissions determine what operations are allowed on a resource
-GraphQL schema definition type Role {code: ID! roleData: RoleData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!</description>
+GraphQL schema definition type Role {code: ID! roleData: RoleData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.</description>
     </item>
     
     <item>
@@ -5632,7 +5706,7 @@ GraphQL schema definition type Role {code: ID! roleData: RoleData error:
       
       <guid>/paymentx/reference/objects/role/</guid>
       <description>Permissions determine what operations are allowed on a resource
-GraphQL schema definition type Role {code: ID! roleData: RoleData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!</description>
+GraphQL schema definition type Role {code: ID! roleData: RoleData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.</description>
     </item>
     
     <item>
@@ -5642,7 +5716,7 @@ GraphQL schema definition type Role {code: ID! roleData: RoleData error:
       
       <guid>/stats/reference/objects/role/</guid>
       <description>Permissions determine what operations are allowed on a resource
-GraphQL schema definition type Role {code: ID! roleData: RoleData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!</description>
+GraphQL schema definition type Role {code: ID! roleData: RoleData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.</description>
     </item>
     
     <item>
@@ -5652,7 +5726,7 @@ GraphQL schema definition type Role {code: ID! roleData: RoleData error:
       
       <guid>/travelgatex/reference/objects/role/</guid>
       <description>Permissions determine what operations are allowed on a resource
-GraphQL schema definition type Role {code: ID! roleData: RoleData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!</description>
+GraphQL schema definition type Role {code: ID! roleData: RoleData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.</description>
     </item>
     
     <item>
@@ -7064,7 +7138,7 @@ HotelX Settings In HotelX we have differents configuration level settings for a 
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on HotelX product.
-All notable changes on our platform will be documented in this page.2018-08-22  New input field in hotels query filter. This allows to filter the response by hotel&amp;rsquo;s country. GraphQL Schema updated.   2018-07-24  New plugin, safety margin. You can see the documentation here.   2018-07-18  Hotel, board, room and rate maps caches are now updated synchronously.</description>
+All notable changes on our platform will be documented in this page.2018-08-22  Settings heritage. Guide Plugins filter Fix bugs   2018-08-21  New input field in hotels query filter. This allows to filter the response by hotel&amp;rsquo;s country. GraphQL Schema updated.   2018-07-24  New plugin, safety margin.</description>
     </item>
     
     <item>
@@ -7126,7 +7200,7 @@ All notable changes to this product will be documented in this page.Under const
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/reference/schema/mutation/</guid>
-      <description>GraphQL schema definition type HotelXMutation {book(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload cancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload Show deprecated fieldsloadFile(input: String!,): String! }window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields book(HotelBookPayload):Creates a new hotel booking consisting of an option of 1 or more rooms.</description>
+      <description>GraphQL schema definition type HotelXMutation {book(input: HotelBookInput!,settings: HotelSettingsInput,filter: HotelXFilterInput,): HotelBookPayload cancel(input: HotelCancelInput!,settings: HotelSettingsInput,filter: HotelXFilterInput,): HotelCancelPayload Show deprecated fieldsloadFile(input: String!,): String!</description>
     </item>
     
     <item>
@@ -7451,7 +7525,7 @@ In this case you can search the bookings with references or by dates, the dates 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of error from Group. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-01.Expected removal on 2018-10-30.   2018-08-08  Removed distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21 . Removed distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21 . Removed distribute from AddOns. Reason: You can find it in distribution AddOn.</description>
+      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Organization. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Product.</description>
     </item>
     
     <item>
@@ -7460,7 +7534,7 @@ In this case you can search the bookings with references or by dates, the dates 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of error from Group. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-01.Expected removal on 2018-10-30.   2018-08-03  Deprecated pointOfSaleCode from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-07-31 . Deprecated organization from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-07-31 .   2018-08-01  Deprecated error from Group. Reason: Sustituted by adviseMessage. Expected removal on 2018-10-30 .</description>
+      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Organization. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Product.</description>
     </item>
     
     <item>
@@ -7478,7 +7552,7 @@ In this case you can search the bookings with references or by dates, the dates 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of error from Group. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-01.Expected removal on 2018-10-30.   2018-08-22  Removed organization from PaymentXBookingInfoFilterInput.</description>
+      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Operation.</description>
     </item>
     
     <item>
@@ -7621,6 +7695,30 @@ Destination Idem hotel.</description>
     </item>
     
     <item>
+      <title>Supplier Order</title>
+      <link>/hotelx/plugins/format-files/supplier_order/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/format-files/supplier_order/</guid>
+      <description>The supplier order file should be in the below format:
+ Encoding: UTF-8 File Name:  supplier_order  Extension file: csv Headers:
+ ruleId → rule identifier supplierCodes → supplier code  List file fields
+|Field | Mandatory | Excluded fileds* | Multi-value | |---|---|---|---| |ruleId| Yes | - | No | |supplierCodes| Yes | - | Yes |  Delimiter: Comma (“,”)
+ Separator for multiples codes in the same row: Semicolon (&amp;ldquo;;&amp;rdquo;)</description>
+    </item>
+    
+    <item>
+      <title>Net compare</title>
+      <link>/hotelx/plugins/format-files/netcompare/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/format-files/netcompare/</guid>
+      <description>The net compare file should be in the below format:
+ Encoding: UTF-8 File Name:  context sequential netCompare  Extension file: csv Headers:
+ ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code bookingDateFrom → booking date from bookingDateTo → booking date to startDateFrom → start date from startDateTo → start date to hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.</description>
+    </item>
+    
+    <item>
       <title>Stats</title>
       <link>/travelgatex/release-notes/products-changelogs/changelog-stats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7629,6 +7727,17 @@ Destination Idem hotel.</description>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on the product.
 Product Page Link
 All notable changes to this product will be documented in this page.Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
+    </item>
+    
+    <item>
+      <title>Tolerance</title>
+      <link>/hotelx/plugins/format-files/tolerance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/format-files/tolerance/</guid>
+      <description>The preference file should be in the below format:
+ Encoding: UTF-8 File Name:  context sequential tolerance  Extension file: csv Headers:
+ ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code bookingDateFrom → booking date from bookingDateTo → booking date to startDateFrom → start date from startDateTo → start date to hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.</description>
     </item>
     
     <item>

@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/api/</guid>
-      <description>GraphQL schema definition type API {code: ID! apiData: APIData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):apiData(APIData):error([Error!</description>
+      <description>GraphQL schema definition type API {code: ID! apiData: APIData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
@@ -721,7 +721,7 @@ GraphQL schema definition type HotelSearch {context: String stats(token: S
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/hotelxmutation/</guid>
-      <description>GraphQL schema definition type HotelXMutation {book(input: HotelBookInput!,settings: HotelSettingsInput,): HotelBookPayload cancel(input: HotelCancelInput!,settings: HotelSettingsInput,): HotelCancelPayload Show deprecated fieldsloadFile(input: String!,): String! }window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields book(HotelBookPayload):Creates a new hotel booking consisting of an option of 1 or more rooms.</description>
+      <description>GraphQL schema definition type HotelXMutation {book(input: HotelBookInput!,settings: HotelSettingsInput,filter: HotelXFilterInput,): HotelBookPayload cancel(input: HotelCancelInput!,settings: HotelSettingsInput,filter: HotelXFilterInput,): HotelCancelPayload Show deprecated fieldsloadFile(input: String!,): String!</description>
     </item>
     
     <item>
@@ -925,7 +925,7 @@ Required by MappeaMutation:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/operation/</guid>
-      <description>GraphQL schema definition type Operation {code: ID! operationData: OperationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):operationData(OperationData):error([Error!</description>
+      <description>GraphQL schema definition type Operation {code: ID! operationData: OperationData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.</description>
     </item>
     
     <item>
@@ -974,7 +974,7 @@ Required by OperationConnection:</description>
       
       <guid>/travelgatex/reference/objects/organization/</guid>
       <description>Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
-GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.</description>
+GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.</description>
     </item>
     
     <item>
@@ -1169,7 +1169,7 @@ GraphQL schema definition type PriceBreakdown {effectiveDate: Date! expireD
       
       <guid>/travelgatex/reference/objects/product/</guid>
       <description>An APIs collection.
-GraphQL schema definition type Product {code: ID! productData: ProductData! error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):productData(ProductData!</description>
+GraphQL schema definition type Product {code: ID! productData: ProductData! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.</description>
     </item>
     
     <item>
@@ -1319,7 +1319,7 @@ GraphQL schema definition type Resort {code: String! name: String descri
       
       <guid>/travelgatex/reference/objects/resource/</guid>
       <description>Resources are those used in APIs and Products.
-GraphQL schema definition type Resource {code: ID! resourceData: ResourceData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!</description>
+GraphQL schema definition type Resource {code: ID! resourceData: ResourceData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.</description>
     </item>
     
     <item>
@@ -1358,7 +1358,7 @@ Required by ResourceConnection:</description>
       
       <guid>/travelgatex/reference/objects/role/</guid>
       <description>Permissions determine what operations are allowed on a resource
-GraphQL schema definition type Role {code: ID! roleData: RoleData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!</description>
+GraphQL schema definition type Role {code: ID! roleData: RoleData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // deprecated from2018-08-22Sustituted by adviseMessage}window.onload = _ = {const deprecatedContainer = document.</description>
     </item>
     
     <item>

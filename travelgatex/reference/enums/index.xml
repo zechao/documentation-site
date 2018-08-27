@@ -200,7 +200,7 @@ GraphQL schema definition enumPaymentType{MERCHANT,DIRECT,CARD_BOOK
       
       <guid>/travelgatex/reference/enums/pluginsteptype/</guid>
       <description>Plugin Step Type. https://docs.travelgatex.com/hotelx/plugins/overview/
-GraphQL schema definition enumPluginStepType{REQUEST,REQUEST_ACCESS,RESPONSE_OPTION,RESPONSE_ACCESS,RESPONSE,}  Required by PluginStepInput: Plugin to execute.</description>
+GraphQL schema definition enumPluginStepType{REQUEST,REQUEST_ACCESS,RESPONSE_OPTION,RESPONSE_ACCESS,RESPONSE,}  Required by PluginStepInput: Plugin to execute.HotelXFilterPluginTypeInput:</description>
     </item>
     
     <item>

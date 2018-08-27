@@ -1223,6 +1223,30 @@
   </url>
   
   <url>
+    <loc>/hotelx/reference/inputobjects/hotelxfilterinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/hotelxfilterinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/hotelxfilterplugintypeinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/hotelxfilterplugintypeinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/hotelxfiltersearchinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/hotelxfiltersearchinput/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/inputobjects/hotelxhotelfilterinput/</loc>
   </url>
   
@@ -1240,6 +1264,14 @@
   
   <url>
     <loc>/travelgatex/reference/objects/hotelxmutation/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/reference/inputobjects/hotelxpluginfilterinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/hotelxpluginfilterinput/</loc>
   </url>
   
   <url>
@@ -3335,7 +3367,19 @@
   </url>
   
   <url>
+    <loc>/hotelx/plugins/format-files/supplier_order/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/format-files/netcompare/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/release-notes/products-changelogs/changelog-stats/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/plugins/format-files/tolerance/</loc>
   </url>
   
   <url>
