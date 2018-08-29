@@ -4335,8 +4335,8 @@ HotelX Settings In HotelX we have differents configuration level settings for a 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/release-notes/changelog/</guid>
-      <description>To make it easier for users and contributors to see precisely what notable changes have been made on HotelX product.
-All notable changes on our platform will be documented in this page. 2018-08-22  Settings heritage. Guide Plugins filter Fix bugs   2018-08-21  New input field in hotels query filter. This allows to filter the response by hotel&amp;rsquo;s country. GraphQL Schema updated.   2018-07-24  New plugin, safety margin.</description>
+      <description>It makes it easier for users and contributors to see the most notable changes that have been made on HotelX product.
+All notable changes on our platform will be documented on this page. 2018-08-22  Settings heritage. Guide Plugins filter Fix bugs   2018-08-21  New input field in Hotels Query filter. This allows to filter the response by hotel&amp;rsquo;s country. GraphQL Schema updated.   2018-07-24  New plugin, safety margin.</description>
     </item>
     
     <item>

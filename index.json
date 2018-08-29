@@ -3097,8 +3097,8 @@
 	"uri": "/hotelx/release-notes/changelog/",
 	"title": "Changelog",
 	"tags": ["products-changelog"],
-	"description": "Contains a curated, chronologically ordered list of notable changes",
-	"content": " To make it easier for users and contributors to see precisely what notable changes have been made on HotelX product.\nAll notable changes on our platform will be documented in this page. 2018-08-22  Settings heritage. Guide Plugins filter Fix bugs   2018-08-21  New input field in hotels query filter. This allows to filter the response by hotel\u0026rsquo;s country. GraphQL Schema updated.   2018-07-24  New plugin, safety margin. You can see the documentation here.   2018-07-18  Hotel, board, room and rate maps caches are now updated synchronously. This will improve the user experience when 1st time debugging operations. Hotel maps cache refactoring to reduce number of cached items and cache operations. Hotel maps cache requests are now pipelined to reduce Round Trip Time.   2018-07-16  HotelX concepts content examples.   2018-07-11  Improvement of the Rooms schema with paged list and max number of elements per page. By defect are 1000 rooms.   2018-07-04  Wrong behaviour that made options to be discarded when price in supplements was empty in Search query.   "
+	"description": "Contains an accurated, chronologically-ordered list of notable changes",
+	"content": " It makes it easier for users and contributors to see the most notable changes that have been made on HotelX product.\nAll notable changes on our platform will be documented on this page. 2018-08-22  Settings heritage. Guide Plugins filter Fix bugs   2018-08-21  New input field in Hotels Query filter. This allows to filter the response by hotel\u0026rsquo;s country. GraphQL Schema updated.   2018-07-24  New plugin, safety margin. You can see the documentation here.   2018-07-18  Hotel, board, room and rate maps caches are now updated synchronously. This will improve the user\u0026rsquo;s experience when 1st time debugging operations. Hotel maps cache refactoring to reduce the number of cached items and cached operations. Hotel maps cached requests are now pipelined to reduce Round Trip Time.   2018-07-16  HotelX concepts content examples.   2018-07-11  Improvement of the Rooms Schema with paginated list and max number of elements per page. By defect are 1000 rooms.   2018-07-04  Wrong behaviour that made options to be discarded when price in supplements was empty in Search query.   "
 },
 {
 	"uri": "/travelgatex/release-notes/changelog/",
@@ -3630,7 +3630,7 @@
 	"title": "Release Notes",
 	"tags": ["release-notes"],
 	"description": "New Updates &amp; Releases",
-	"content": "   Roadmap We have put together a GitHub Project where we will keep updating on the things we’ve in our plans.\n     Changelog Contains a curated, chronologically ordered list of notable changes\n     GraphQL Schema Changes It includes backwards-compatible changes, schema previews, and upcoming breaking changes.\n     GraphQL Schema breaking changes Changes history of deprecated notes previously announced\n    "
+	"content": "   Roadmap We have put together a GitHub Project where we will keep updating on the things we’ve in our plans.\n     Changelog Contains an accurated, chronologically-ordered list of notable changes\n     GraphQL Schema Changes It includes backwards-compatible changes, schema previews, and upcoming breaking changes.\n     GraphQL Schema breaking changes Changes history of deprecated notes previously announced\n    "
 },
 {
 	"uri": "/travelgatex/release-notes/",
