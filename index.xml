@@ -4908,13 +4908,13 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Tolerance</title>
-      <link>/hotelx/plugins/format-files/tolerance/</link>
+      <title>Preference</title>
+      <link>/hotelx/plugins/format-files/preference/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotelx/plugins/format-files/tolerance/</guid>
+      <guid>/hotelx/plugins/format-files/preference/</guid>
       <description>The preference file should be in the below format:
- Encoding: UTF-8 File Name:  context sequential tolerance  Extension file: csv Headers:
+ Encoding: UTF-8 File Name:  context sequential preference  Extension file: csv Headers:
  ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code bookingDateFrom → booking date from bookingDateTo → booking date to startDateFrom → start date from startDateTo → start date to hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.</description>
     </item>
     
