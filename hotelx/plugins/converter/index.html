@@ -2989,11 +2989,11 @@
               
 
 
-<p>Currency converter is an optional plugin and permits to apply currency conversion over all the prices in one Option.</p>
+<p>Currency converter is an optional plugin and allows to apply currency conversion over all the prices in one Option.</p>
 
 <h2 id="currencyx">CurrencyX</h2>
 
-<p>This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp. Is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned. The node in graphQL that indicates the currency exchange rate is:</p>
+<p>This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file located in our ftp. Is mandatory that this file exists in the ftp and satisfies all the requirements below. Otherwise, an error will be returned. The node in graphQL that indicates the currency exchange rate is:</p>
 
 <pre><code>&quot;exchange&quot;: {
     &quot;currency&quot;: &quot;currency&quot;,
@@ -3009,7 +3009,7 @@
 },
 </code></pre>
 
-<p>else, you will receive:</p>
+<p>otherwise, you will receive:</p>
 
 <pre><code>&quot;exchange&quot;: {
     &quot;currency&quot;: &quot;EUR&quot;,   //New currency
@@ -3053,11 +3053,11 @@ USD,1.29
 
 <p>The rate with value 1.00 is the base rate. Other rates are calculated from it.</p>
 
-<p>The value of step, type, and name is always the specified in the example below. The two parameters are mandatory and its value means:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&ldquo;currency&rdquo;:</strong> is a string value in ISO 4217 standard (&ldquo;XXX&rdquo;). Is the currency to which you want to convert.<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&ldquo;exclude&rdquo;:</strong> is a Boolean value (true / false). This parameter only has an effect on the search query. It determine, if the options on which the currency change can not be applied (no currency found in ftp), are excluded. <br /></p>
+<p>The value of step, type, and name is always the specified in the example below. The two parameters are mandatory and their value means:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&ldquo;currency&rdquo;:</strong> It is a string value in ISO 4217 standard (&ldquo;XXX&rdquo;). It is the currency to which you want to convert.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&ldquo;exclude&rdquo;:</strong> is a Boolean value (true / false). This parameter only has an effect on the search query. It determines if the options on which the currency change cannot be applied (no currency found in ftp) are excluded. <br /></p>
 
-<p>In addition, is necessary that option and parameter currencies are in ftp file.</p>
+<p>In addition, it is necessary that option and parameter currencies are in ftp file.</p>
 
 <h3 id="execution-example">Execution example</h3>
 

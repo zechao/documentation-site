@@ -4614,8 +4614,8 @@ Search Single Mode This mode is used when the client only wants to get options f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/converter/</guid>
-      <description>Currency converter is an optional plugin and permits to apply currency conversion over all the prices in one Option.
-CurrencyX This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp. Is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned.</description>
+      <description>Currency converter is an optional plugin and allows to apply currency conversion over all the prices in one Option.
+CurrencyX This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file located in our ftp. Is mandatory that this file exists in the ftp and satisfies all the requirements below. Otherwise, an error will be returned.</description>
     </item>
     
     <item>
