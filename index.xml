@@ -4336,7 +4336,8 @@ HotelX Settings In HotelX we have differents configuration level settings for a 
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>It makes it easier for users and contributors to see the most notable changes that have been made on HotelX product.
-All notable changes on our platform will be documented on this page. 2018-09-03  Fix Exchange node empty if not CurrencyX (see doc in https://docs.travelgatex.com/hotelx/plugins/converter/) Fix bugs in Quote   2018-08-22  Settings heritage. Guide Plugins filter Fix bugs   2018-08-21  New input field in Hotels Query filter.</description>
+All notable changes on our platform will be documented on this page. 2018-09-03  Fix Exchange node empty if not CurrencyX (see doc in https://docs.travelgatex.com/hotelx/plugins/converter/) Fix bugs in Quote   2018-08-22  Settings heritage. Guide Plugins filter    Fix bugs  
+2018-08-21  New input field in Hotels Query filter.</description>
     </item>
     
     <item>
