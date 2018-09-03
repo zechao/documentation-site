@@ -2993,7 +2993,26 @@
 
 <h2 id="currencyx">CurrencyX</h2>
 
-<p>This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp. Is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned.</p>
+<p>This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp. Is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned. The node in graphQL that indicates the currency exchange rate is:</p>
+
+<p>&ldquo;exchange&rdquo;: {
+    &ldquo;currency&rdquo;: &ldquo;currency&rdquo;,
+    &ldquo;rate&rdquo;: 1
+},</p>
+
+<p>If the plugin is not executed, you will receive:</p>
+
+<p>&ldquo;exchange&rdquo;: {
+    &ldquo;currency&rdquo;: &ldquo;EUR&rdquo;,   //Same currency of option with no currency exchange applied
+    &ldquo;rate&rdquo;: 1            //No currency exchange applied
+},</p>
+
+<p>else, you will receive:</p>
+
+<p>&ldquo;exchange&rdquo;: {
+    &ldquo;currency&rdquo;: &ldquo;EUR&rdquo;,   //New currency
+    &ldquo;rate&rdquo;: 0.86         //Rate exchange applied
+},</p>
 
 <h3 id="file-format">File Format</h3>
 
