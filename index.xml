@@ -4445,6 +4445,17 @@ GraphQL schema definition type Mutation {  admin: AdminMutation    hotelX: Hotel
     </item>
     
     <item>
+      <title>Quickstart 2</title>
+      <link>/hotelx/quickstart2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/quickstart2/</guid>
+      <description>6972ecae51e849fe8c49305bf0032dfe First tab /6972ecae51e849fe8c49305bf0032dfe
+034dcbeb8affb2c4875b2046ea385c0d Fifth tab /034dcbeb8affb2c4875b2046ea385c0d
+   #tab-holder { transform: scale(0); position: absolute; } #tab-holder.show-tabs { transform: scale(1); position: initial; } ul.tab-pannel-nav { margin-bottom: -32px; } ul.tabs { border-bottom: 1px solid #dee2e6; } li.tab { margin-bottom: -6px; } li.tab, li.tablabel { cursor: pointer; } li.tablabel { border: 1px solid transparent; border-top-left-radius: .25rem; border-top-right-radius: .25rem; display: block; padding: .5rem 1rem; } li.tab:hoverlabel { border-color: #e9ecef #e9ecef #dee2e6; } li.</description>
+    </item>
+    
+    <item>
       <title>Quotas &amp; Limits</title>
       <link>/travelgatex/concepts/quotas-limits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4689,7 +4700,7 @@ In this case you can search the bookings with references or by dates, the dates 
     </item>
     
     <item>
-      <title>GraphQL Schema breaking changes</title>
+      <title>GraphQL Schema breaking changes: hotelx</title>
       <link>/hotelx/release-notes/breaking-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4698,7 +4709,7 @@ In this case you can search the bookings with references or by dates, the dates 
     </item>
     
     <item>
-      <title>GraphQL Schema breaking changes</title>
+      <title>GraphQL Schema breaking changes: mappea</title>
       <link>/mappea/release-notes/breaking-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4707,7 +4718,7 @@ In this case you can search the bookings with references or by dates, the dates 
     </item>
     
     <item>
-      <title>GraphQL Schema breaking changes</title>
+      <title>GraphQL Schema breaking changes: paymentx</title>
       <link>/paymentx/release-notes/breaking-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4716,7 +4727,7 @@ In this case you can search the bookings with references or by dates, the dates 
     </item>
     
     <item>
-      <title>GraphQL Schema breaking changes</title>
+      <title>GraphQL Schema breaking changes: stats</title>
       <link>/stats/release-notes/breaking-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4725,7 +4736,7 @@ In this case you can search the bookings with references or by dates, the dates 
     </item>
     
     <item>
-      <title>GraphQL Schema breaking changes</title>
+      <title>GraphQL Schema breaking changes: travelgatex</title>
       <link>/travelgatex/release-notes/breaking-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
