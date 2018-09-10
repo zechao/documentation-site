@@ -19,7 +19,7 @@
       <description>RoadmapWe have put together a GitHub Project where we will keep updating on the things we’ve in our plans.
 ChangelogContains an accurated, chronologically-ordered list of notable changes
 GraphQL Schema ChangesIt includes backwards-compatible changes, schema previews, and upcoming breaking changes.
-GraphQL Schema breaking changes: HotelXChanges history of deprecated notes previously announced</description>
+GraphQL Schema breaking changesChanges history of deprecated notes previously announced</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <description>RoadmapWe have put together a GitHub Project where we will keep updating on the things we’ve in our plans.
 ChangelogContains a curated, chronologically ordered list of notable changes
 GraphQL Schema ChangesIt includes backwards-compatible changes, schema previews, and upcoming breaking changes.
-GraphQL Schema breaking changes: travelgatexChanges history of deprecated notes previously announced</description>
+GraphQL Schema breaking changesChanges history of deprecated notes previously announced</description>
     </item>
     
   </channel>
