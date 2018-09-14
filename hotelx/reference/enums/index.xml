@@ -40,6 +40,26 @@ GraphQL schema definition  enum BookStatusType{   OK,    KO,    ON_REQUEST,    C
     </item>
     
     <item>
+      <title>BookingCriteriaType</title>
+      <link>/hotelx/reference/enums/bookingcriteriatype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/enums/bookingcriteriatype/</guid>
+      <description>Indicates the type of criteria in the request of the booking list
+GraphQL schema definition  enum BookingCriteriaType{   DATES,    REFERENCES,   }   Required by HotelCriteriaBookingInput:  Criteria of book contains basic information to find a book or books.</description>
+    </item>
+    
+    <item>
+      <title>BusinessRulesType</title>
+      <link>/hotelx/reference/enums/businessrulestype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/enums/businessrulestype/</guid>
+      <description>Business rules type
+GraphQL schema definition  enum BusinessRulesType{   CHEAPER_AMOUNT,    ROOM_TYPE,   }   Required by BusinessRulesInput:  List of business rules to use as filter on the options.</description>
+    </item>
+    
+    <item>
       <title>CancelPenaltyType</title>
       <link>/hotelx/reference/enums/cancelpenaltytype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -57,6 +77,16 @@ GraphQL schema definition  enum CancelPenaltyType{   NIGHTS,    PERCENT,    IMPO
       <guid>/hotelx/reference/enums/chargetype/</guid>
       <description>Charge Type
 GraphQL schema definition  enum ChargeType{   INCLUDE,    EXCLUDE,   }   Required by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  Surcharge:  Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.</description>
+    </item>
+    
+    <item>
+      <title>DateType</title>
+      <link>/hotelx/reference/enums/datetype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/enums/datetype/</guid>
+      <description>Indicates the type of dates
+GraphQL schema definition  enum DateType{   ARRIVAL,    BOOKING,   }   Required by CriteriaBookingDatesInput:  Criteria by dates</description>
     </item>
     
     <item>
@@ -100,6 +130,16 @@ GraphQL schema definition  enum MarkupRuleType{   PERCENT,    IMPORT,   }   Requ
     </item>
     
     <item>
+      <title>MetadataType</title>
+      <link>/hotelx/reference/enums/metadatatype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/enums/metadatatype/</guid>
+      <description>Indicates value type of current paramter
+GraphQL schema definition  enum MetadataType{   STRING,    NUMERIC,    BOOLEAN,    XML,    URI,   }   Required by HotelRuntimeParameter:  template of all fields used by the supplier</description>
+    </item>
+    
+    <item>
       <title>PaymentType</title>
       <link>/hotelx/reference/enums/paymenttype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -107,6 +147,26 @@ GraphQL schema definition  enum MarkupRuleType{   PERCENT,    IMPORT,   }   Requ
       <guid>/hotelx/reference/enums/paymenttype/</guid>
       <description>Options payment type
 GraphQL schema definition  enum PaymentType{   MERCHANT,    DIRECT,    CARD_BOOKING,    CARD_CHECK_IN,   }   Required by HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description</description>
+    </item>
+    
+    <item>
+      <title>PluginStepType</title>
+      <link>/hotelx/reference/enums/pluginsteptype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/enums/pluginsteptype/</guid>
+      <description>Plugin Step Type. https://docs.travelgatex.com/hotelx/plugins/overview/
+GraphQL schema definition  enum PluginStepType{   REQUEST,    REQUEST_ACCESS,    RESPONSE_OPTION,    RESPONSE_ACCESS,    RESPONSE,   }   Required by PluginStepInput:  Plugin to execute.  HotelXFilterPluginTypeInput:</description>
+    </item>
+    
+    <item>
+      <title>PluginType</title>
+      <link>/hotelx/reference/enums/plugintype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/enums/plugintype/</guid>
+      <description>Plugin Type. https://docs.travelgatex.com/hotelx/plugins/overview/
+GraphQL schema definition  enum PluginType{   PRE_STEP,    HOTEL_MAP,    BOARD_MAP,    ROOM_MAP,    CURRENCY_CONVERSION,    MARKUP,    AGGREGATION,    POST_STEP,   }   Required by PluginsInput:  Plugin to execute.</description>
     </item>
     
     <item>
@@ -137,6 +197,16 @@ GraphQL schema definition  enum StatusType{   OK,    RQ,   }   Required by Hotel
       <guid>/hotelx/reference/enums/supplementtype/</guid>
       <description>Supplement Type
 GraphQL schema definition  enum SupplementType{   SKI_PASS,    LESSONS,    MEALS,    EQUIPMENT,    TICKET,    TRANSFERS,    GALA,    ACTIVITY,   }   Required by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.</description>
+    </item>
+    
+    <item>
+      <title>TagRuntimeType</title>
+      <link>/hotelx/reference/enums/tagruntimetype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/enums/tagruntimetype/</guid>
+      <description>Indicates xml tag used by the current parameter
+GraphQL schema definition  enum TagRuntimeType{   USER,    PASSWORD,    URLAVAIL,    URLVALUATION,    URLRESERVATION,    URLGENERIC,    PARAMETER,   }   Required by HotelRuntimeParameter:  template of all fields used by the supplier</description>
     </item>
     
     <item>

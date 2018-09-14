@@ -31,6 +31,16 @@ GraphQL schema definition type AddOns {  distribution: [AddOn!]   Show deprecate
     </item>
     
     <item>
+      <title>AdviseMessage</title>
+      <link>/hotelx/reference/objects/advisemessage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/objects/advisemessage/</guid>
+      <description>List of advise messages.
+GraphQL schema definition type AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! // deprecated from 2018-06-01     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
+    </item>
+    
+    <item>
       <title>Airport</title>
       <link>/hotelx/reference/objects/airport/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -118,7 +128,7 @@ GraphQL schema definition type BoardData {  code: ID!    boardCode: String!    t
       
       <guid>/hotelx/reference/objects/boardedge/</guid>
       <description>BoardList Edge definition
-GraphQL schema definition type BoardEdge {  cursor: String!    node: Board   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields cursor(String!):   node(Board):   
+GraphQL schema definition type BoardEdge {  node: Board    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Board):   cursor(String!):   
 Required by BoardConnection:  BoardList definition</description>
     </item>
     
@@ -198,7 +208,7 @@ GraphQL schema definition type CategoryData {  code: ID!    categoryCode: String
       
       <guid>/hotelx/reference/objects/categoryedge/</guid>
       <description>CategoryList Edge definition
-GraphQL schema definition type CategoryEdge {  cursor: String!    node: Category   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields cursor(String!):   node(Category):   
+GraphQL schema definition type CategoryEdge {  node: Category    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Category):   cursor(String!):   
 Required by CategoryConnection:  CategoryList definition</description>
     </item>
     
@@ -280,7 +290,7 @@ GraphQL schema definition type DestinationData {  code: ID!    available: Boolea
       
       <guid>/hotelx/reference/objects/destinationedge/</guid>
       <description>DestinationList Edge definition
-GraphQL schema definition type DestinationEdge {  cursor: String!    node: Destination   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields cursor(String!):   node(Destination):   
+GraphQL schema definition type DestinationEdge {  node: Destination    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Destination):   cursor(String!):   
 Required by DestinationConnection:  DestinationList definition</description>
     </item>
     
@@ -409,7 +419,7 @@ GraphQL schema definition type HotelData {  code: ID!    hotelCode: String!    h
       
       <guid>/hotelx/reference/objects/hoteledge/</guid>
       <description>HotelList Edge definition
-GraphQL schema definition type HotelEdge {  cursor: String!    node: Hotel   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields cursor(String!):   node(Hotel):   
+GraphQL schema definition type HotelEdge {  node: Hotel    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Hotel):   cursor(String!):   
 Required by HotelConnection:  HotelList definition</description>
     </item>
     
@@ -440,6 +450,35 @@ GraphQL schema definition type HotelOptionSearch {  supplierCode: String!    acc
       
       <guid>/hotelx/reference/objects/hotelquote/</guid>
       <description>GraphQL schema definition type HotelQuote {  stats( token: String!, ): StatsRequest    auditData: AuditData    optionQuote: HotelOptionQuote    errors: [Error!]    warnings: [Warning!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields stats(StatsRequest): Application stats in string format  auditData(AuditData): Data sent and received in the supplier&amp;#39;s native format.</description>
+    </item>
+    
+    <item>
+      <title>HotelRuntimeConfiguration</title>
+      <link>/hotelx/reference/objects/hotelruntimeconfiguration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/objects/hotelruntimeconfiguration/</guid>
+      <description>GraphQL schema definition type HotelRuntimeConfiguration {  code: ID!    hotelRuntimeConfigurationData: HotelRuntimeConfigurationData    createdAt: DateTime!    updatedAt: DateTime!    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!): Stored card ID  hotelRuntimeConfigurationData(HotelRuntimeConfigurationData): HotelRuntimeConfigurationData information  createdAt(DateTime!</description>
+    </item>
+    
+    <item>
+      <title>HotelRuntimeConfigurationData</title>
+      <link>/hotelx/reference/objects/hotelruntimeconfigurationdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/objects/hotelruntimeconfigurationdata/</guid>
+      <description>GraphQL schema definition type HotelRuntimeConfigurationData {  hotelRuntimeParameters: [HotelRuntimeParameter!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields hotelRuntimeParameters([HotelRuntimeParameter!]!): List of parameters object  
+Required by HotelRuntimeConfiguration:</description>
+    </item>
+    
+    <item>
+      <title>HotelRuntimeParameter</title>
+      <link>/hotelx/reference/objects/hotelruntimeparameter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/objects/hotelruntimeparameter/</guid>
+      <description>template of all fields used by the supplier
+GraphQL schema definition type HotelRuntimeParameter {  tagRuntime: TagRuntimeType!    providerTagName: String!    show: Boolean!    pattern: String    description: String!    type: MetadataType!    key: String    defaultValue: String    exampleValue: String    possibleValues: [String]!   Show deprecated fields   }    window.</description>
     </item>
     
     <item>
@@ -670,7 +709,7 @@ GraphQL schema definition type RoomData {  code: ID!    roomCode: String!    tex
       
       <guid>/hotelx/reference/objects/roomedge/</guid>
       <description>RoomList Edge definition
-GraphQL schema definition type RoomEdge {  cursor: String!    node: RoomStatic   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields cursor(String!):   node(RoomStatic):   
+GraphQL schema definition type RoomEdge {  node: RoomStatic    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(RoomStatic):   cursor(String!):   
 Required by RoomConnection:  RoomList definition</description>
     </item>
     
@@ -779,6 +818,15 @@ GraphQL schema definition type Supplement {  code: String!    name: String    de
       <guid>/hotelx/reference/objects/surcharge/</guid>
       <description>Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.
 GraphQL schema definition type Surcharge {  chargeType: ChargeType!    mandatory: Boolean!    price: Price!    description: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
+    </item>
+    
+    <item>
+      <title>Text</title>
+      <link>/hotelx/reference/objects/text/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/reference/objects/text/</guid>
+      <description>GraphQL schema definition type Text {  text: String!    language: Language!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields text(String!):   language(Language!):</description>
     </item>
     
     <item>
