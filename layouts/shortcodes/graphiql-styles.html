@@ -43,6 +43,8 @@
   .display {
     max-height: 70vh;
     overflow: auto;
+    z-index: 0;
+    margin: 3.3rem 0 3.3rem 0;
   }
 
   .tab-panel,
@@ -55,13 +57,7 @@
   .active-tab-panel,
   .display.active {
     transform: scale(1) !important;
-    position: initial !important;
-  }
-
-  .graphiql.display {
-    position: relative;
-    z-index: 0;
-    margin: 3.3rem 0 3.3rem 0;
+    position: relative !important;
   }
 
   .explanation {
@@ -73,8 +69,8 @@
     position: relative;
   }
 
-  div.graphiql.display>button,
-  div.graphiql-display>button {
+  div.graphiql.display>button.execute-button,
+  div.graphiql-display>button.execute-button {
     width: 47.5px !important;
     height: 47.5px !important;
     background-color: #b6bbbf !important;
@@ -83,26 +79,36 @@
     cursor: pointer;
     margin: 0;
     padding: 0;
-    position: absolute;
+    position: fixed;
     top: 100px;
     left: 50%;
     z-index: 1004;
     transform: translateX(-37%);
   }
 
-  div.graphiql.display>button svg,
-  div.graphiql-display>button svg {
+  div.graphiql.display>button.execute-button svg,
+  div.graphiql-display>button.execute-button svg {
     fill: #fff !important;
     width: 30px;
     height: 28px;
   }
 
-  div.graphiql.display>button:hover {
+  div.graphiql.display>button.execute-button:hover {
     background-color: #98a0a6 !important;
   }
 
-  div.graphiql.display>button:focus {
+  div.graphiql.display>button.execute-button:focus {
     outline: none;
+  }
+
+  div.rq-code.display > button {
+    border: none;
+  }
+
+  div.rq-code.display > code {
+    display: block;
+    width: 100%;
+    padding: 1.2rem 2.4rem;
   }
 
   div.topBarWrap,
@@ -119,6 +125,21 @@
     display: none;
   }
 
+  input.text-to-copy {
+    position: absolute; left: -1000px; top: -1000px;
+  }
+
+  button.copy-button {
+    position: fixed;
+    top: .5rem;
+    height: 35px;
+    width: 35px;
+    right: .5rem;
+    font-size: 1.5rem;
+    z-index: 9000;
+  }
+
+/* Animations and gifs */
   #pulse-holder {
     width: 100px;
     height: 100px;
