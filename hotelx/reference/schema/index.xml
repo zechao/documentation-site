@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/reference/schema/query/</guid>
-      <description>GraphQL schema definition type HotelXQuery {  boards( criteria: HotelXBoardQueryInput!, relay: RelayInput!, ): BoardConnection!    categories( criteria: HotelXCategoryQueryInput!, relay: RelayInput!, ): CategoryConnection!    hotels(    criteria: HotelXHotelListInput!,     relay: RelayInput!,     token: String,     filter: HotelXHotelFilterInput,     ): HotelConnection!    rooms(    criteria: HotelXRoomQueryInput!,     relay: RelayInput!</description>
+      <description>GraphQL schema definition type HotelXQuery {boards(criteria: HotelXBoardQueryInput!,relay: RelayInput!,): BoardConnection! categories(criteria: HotelXCategoryQueryInput!,relay: RelayInput!,): CategoryConnection! hotels(criteria: HotelXHotelListInput!,relay: RelayInput!,token: String,filter: HotelXHotelFilterInput,): HotelConnection! rooms(criteria: HotelXRoomQueryInput!,relay: RelayInput!</description>
     </item>
     
     <item>
@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/reference/schema/mutation/</guid>
-      <description>GraphQL schema definition type HotelXMutation {  book(    input: HotelBookInput!,     settings: HotelSettingsInput,     filter: HotelXFilterInput,     ): HotelBookPayload    cancel(    input: HotelCancelInput!,     settings: HotelSettingsInput,     filter: HotelXFilterInput,     ): HotelCancelPayload   Show deprecated fields   loadFile( input: String!, ): String!</description>
+      <description>GraphQL schema definition type HotelXMutation {book(input: HotelBookInput!,settings: HotelSettingsInput,filter: HotelXFilterInput,): HotelBookPayload cancel(input: HotelCancelInput!,settings: HotelSettingsInput,filter: HotelXFilterInput,): HotelCancelPayload Show deprecated fieldsloadFile(input: String!,): String!</description>
     </item>
     
   </channel>
