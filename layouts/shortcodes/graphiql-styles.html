@@ -1,5 +1,4 @@
 <style>
-  /* "graphiql display" and "graphiql-display" target two different components*/
   #tab-holder {
     transform: scale(0);
     position: absolute;
@@ -65,12 +64,12 @@
     margin-bottom: 1.5rem;
   }
 
-  div.graphiql-display {
+  div.graphiql-standalone-display {
     position: relative;
   }
 
   div.graphiql.display>button.execute-button,
-  div.graphiql-display>button.execute-button {
+  div.graphiql-standalone-display>button.execute-button {
     width: 47.5px !important;
     height: 47.5px !important;
     background-color: #b6bbbf !important;
@@ -79,15 +78,22 @@
     cursor: pointer;
     margin: 0;
     padding: 0;
-    position: fixed;
     top: 100px;
     left: 50%;
     z-index: 1004;
-    transform: translateX(-37%);
+    transform: translateX(-48%);
+  }
+
+  div.graphiql.display>button.execute-button  {
+    position: fixed;
+  }
+
+  div.graphiql-standalone-display>button.execute-button {
+    position: absolute;
   }
 
   div.graphiql.display>button.execute-button svg,
-  div.graphiql-display>button.execute-button svg {
+  div.graphiql-standalone-display>button.execute-button svg {
     fill: #fff !important;
     width: 30px;
     height: 28px;
@@ -140,7 +146,7 @@
   }
 
 /* Animations and gifs */
-  #pulse-holder {
+  .gif-tgx {
     width: 100px;
     height: 100px;
     display: inline-block;
@@ -166,7 +172,7 @@
     animation: none;
   }
 
-  div#pulse-holder>img {
+  div.gif-tgx>img {
     width: 100%;
     animation: rotation 2s infinite linear;
   }
