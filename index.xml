@@ -1492,7 +1492,7 @@ GraphQL schema definition scalar CountryRequired by HotelCriteriaSearchInput:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/createprofileinput/</guid>
-      <description>GraphQL schema definition type CreateProfileInput {label: String! group: String! entities: EntitiesInput owner: ID Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields label(String!):Label of the Profilegroup(String!):Group where Profile has to be placedentities(EntitiesInput):Entities of the Profileowner(ID):Profile owner</description>
+      <description>GraphQL schema definition type CreateProfileInput {label: String! group: String! entities: EntitiesInput owner: ID isActive: Boolean isPublished: Boolean Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields label(String!</description>
     </item>
     
     <item>
@@ -5277,7 +5277,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       
       <guid>/travelgatex/reference/objects/profiledata/</guid>
       <description>Profile data
-GraphQL schema definition type ProfileData {code: ID! label: String entities: EntityConnection group: Group owner: Organization Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):Profile Identifierlabel(String):Profile labelentities(EntityConnection):Profile Entities (suppliers/clients)group(Group):Indicates the group where the Client belongsowner(Organization):Profile owner</description>
+GraphQL schema definition type ProfileData {code: ID! label: String entities: EntityConnection group: Group owner: Organization isActive: Boolean isPublished: Boolean Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.</description>
     </item>
     
     <item>
@@ -7030,7 +7030,7 @@ GraphQL schema definition enumUnitTimeType{DAY,HOUR,}  Required by 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/inputobjects/updateprofileinput/</guid>
-      <description>GraphQL schema definition type UpdateProfileInput {code: ID! label: String! owner: ID Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):Profile Codelabel(String!):Label of the Profileowner(ID):Profile owner</description>
+      <description>GraphQL schema definition type UpdateProfileInput {code: ID! label: String owner: ID isActive: Boolean isPublished: Boolean Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):Profile Codelabel(String):Label of the Profileowner(ID):Profile ownerisActive(Boolean):Active profileisPublished(Boolean):Profile is published</description>
     </item>
     
     <item>
@@ -7244,7 +7244,7 @@ All notable changes on our platform will be documented on this page.2018-09-06 
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page.2018-09-10  GraphQL Schema updated.   2018-08-29  Added pagination to partners list   2018-08-27  GraphQL Schema updated.   2018-08-22  GraphQL Schema updated.    Entity&amp;rsquo;s Owner and its related Filters, queries and mutations.</description>
+All notable changes on TravelgateX platform will be documented in this page.2018-09-20  GraphQL Schema updated.   2018-09-10  GraphQL Schema updated.   2018-08-29  Added pagination to partners list   2018-08-27  GraphQL Schema updated.   2018-08-22  GraphQL Schema updated.    Entity&amp;rsquo;s Owner and its related Filters, queries and mutations.</description>
     </item>
     
     <item>
@@ -7447,7 +7447,9 @@ Under construction!We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-09-10 ✅ Description Input delta price, indicates price variation permitted by the client An error will be returned if the new price does not abide to DeltaPrice.</description>
+2018-09-20 ✅ Input field UpdateProfileInput.label changed type from String! to String
+✅ Input field isPublished was added to input object type UpdateProfileInput
+✅ Input field isActive was added to input object type UpdateProfileInput</description>
     </item>
     
     <item>

@@ -1256,7 +1256,7 @@ Required by AdminQuery: The admin query root of TravelgateX&amp;#39;s GraphQL i
       
       <guid>/travelgatex/reference/objects/profiledata/</guid>
       <description>Profile data
-GraphQL schema definition type ProfileData {code: ID! label: String entities: EntityConnection group: Group owner: Organization Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):Profile Identifierlabel(String):Profile labelentities(EntityConnection):Profile Entities (suppliers/clients)group(Group):Indicates the group where the Client belongsowner(Organization):Profile owner</description>
+GraphQL schema definition type ProfileData {code: ID! label: String entities: EntityConnection group: Group owner: Organization isActive: Boolean isPublished: Boolean Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.</description>
     </item>
     
     <item>
