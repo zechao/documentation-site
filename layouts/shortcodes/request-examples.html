@@ -1,0 +1,41 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<div id="request-examples">
+    <div v-for="gist in gists">
+        <p v-text="gist.g"></p>
+    </div>
+    <button v-on:click="log">Log</button>
+    <div id="tabs-text" style="display:none">{{.Inner}}</div>
+</div>
+
+<!-- 
+        
+        CODE START 
+    
+    -->
+<script>
+    const token = {{ $.Page.Params.default_ak }};
+    const default_user = {{ $.Page.Params.default_user }};
+    const gists = {{ $.Page.Params.gists }};
+    const default_options = {{ $.Page.Params.default_options }};
+
+    var app = new Vue({
+        el: '#request-examples',
+        data: {
+            token: '',
+            default_user: '',
+            gists: [],
+            default_options: []
+        },
+        methods: {
+            log: function() {
+                console.log(this.gists);
+            }
+        }
+    });
+
+    app.token = token;
+                app.default_user = default_user;
+                app.gists = gists;
+                app.default_options = default_options;
+
+</script>
