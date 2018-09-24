@@ -816,6 +816,16 @@ GraphQL schema definition  enum BookStatusType{   OK,    KO,    ON_REQUEST,    C
     </item>
     
     <item>
+      <title>Booking flow</title>
+      <link>/hotelx/howtos/bookingflow/flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/bookingflow/flow/</guid>
+      <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.
+ --                                            1. SEARCH  2. QUOTE  3.</description>
+    </item>
+    
+    <item>
       <title>BookingCriteriaType</title>
       <link>/hotelx/reference/enums/bookingcriteriatype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1149,6 +1159,15 @@ Required by CategoryConnection:  CategoryList definition</description>
       <description>CategoryList Edge definition
 GraphQL schema definition type CategoryEdge {  node: Category    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Category):   cursor(String!):   
 Required by CategoryConnection:  CategoryList definition</description>
+    </item>
+    
+    <item>
+      <title>Certification Goals</title>
+      <link>/hotelx/howtos/certification_process/goals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/certification_process/goals/</guid>
+      <description>The Certification process intention is to test and ensure that your integration is performed correctly, this means, that functionality and implementation of the relevant and mandatory information are done correctly and without errors. All of this is focused to avoid issues with the final consumer, or he/she being misled by any incorrect information or not desirable API uses. Before starting the certification process, make sure you have followed the Welcome Pack instructions.</description>
     </item>
     
     <item>
@@ -7207,17 +7226,6 @@ File Format The file should be in the below format:
     </item>
     
     <item>
-      <title>Book</title>
-      <link>/hotelx/howtos/howto-book/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/howtos/howto-book/</guid>
-      <description>Flow to book
-HotelX Settings In HotelX we have differents configuration level settings for a request. With settings, you can configure some aspect of the request:
-   Field Description     Context Indicates the context codes that you want to send and to receive.   Timeout Set request timeout in the differents call types:* search * quote * book (includes book, cancel and booking)    Language What language you want to do the request.</description>
-    </item>
-    
-    <item>
       <title>Booking Flow</title>
       <link>/hotelx/concepts/search-mode/booking-flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7297,6 +7305,17 @@ All notable changes to this product will be documented in this page. Under const
       
       <guid>/hotelx/reference/schema/mutation/</guid>
       <description>GraphQL schema definition type HotelXMutation {  book(    input: HotelBookInput!,     settings: HotelSettingsInput,     filter: HotelXFilterInput,     ): HotelBookPayload    cancel(    input: HotelCancelInput!,     settings: HotelSettingsInput,     filter: HotelXFilterInput,     ): HotelCancelPayload   Show deprecated fields   loadFile( input: String!, ): String!</description>
+    </item>
+    
+    <item>
+      <title>How to apply</title>
+      <link>/hotelx/howtos/certification_process/howtoapply/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/certification_process/howtoapply/</guid>
+      <description>Our Certification Process should be completed once you have finished the development.
+Once Certification Process logs have been delivered through our Customer Care service desk, we will review it and advise you once the integration is certified.
+ Within your WelcomePack email you should have received a user to access our customer care portal. Click on Certification Process option and upload or drag and drop your logs. You will be issued a WECARE ticket number.</description>
     </item>
     
     <item>
@@ -7392,6 +7411,17 @@ It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
       <guid>/learning-graphql/basic_concepts/</guid>
       <description>What are Queries &amp;amp; Mutations There are two basic operations in GraphQL schemas:  Queries: Requesting data from a data model. An example Query would be: checking availability of hotels for a particular date and location  Mutations: Making changes and carrying out transactions on data in the data model. An example Mutation would be: making a booking to reserve a hotel room on a particular date.
 Queries Queries ask the system to provide some data, based on specfic parameters.</description>
+    </item>
+    
+    <item>
+      <title>Check configuration</title>
+      <link>/hotelx/checkconfig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/checkconfig/</guid>
+      <description>This call allows you to retrieve relevant information like supplier access code (link a lo que es el access), supplier name, supplier configuration, supplier context, know whether the connection is test or not, know if the connection is active or not. So you can use it to perform other calls.
+Add information about how to ask for the request. APIkey&amp;hellip; 
+{ admin{ accesses{ edges{ node{ accessData{ name isActive code supplier{ supplierData{ code name isActive provider{ code name isActive isPublic } context } } isTest user password parameters{ key value } } } } } } }  </description>
     </item>
     
     <item>
@@ -7527,6 +7557,15 @@ Margin safe Goals The safety margin plugin discards those options that have a co
     </item>
     
     <item>
+      <title>Search</title>
+      <link>/hotelx/howtos/bookingflow/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/bookingflow/search/</guid>
+      <description>{&amp;ldquo;gists&amp;rdquo;: [ { &amp;ldquo;n&amp;rdquo;:&amp;ldquo;1 Room - 2 Adults&amp;rdquo;, &amp;ldquo;g&amp;rdquo;:&amp;ldquo;6972ecae51e849fe8c49305bf0032dfe&amp;rdquo;, &amp;ldquo;o&amp;rdquo;:[&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;], &amp;ldquo;u&amp;rdquo;:&amp;ldquo;tgx-bot&amp;rdquo;, &amp;ldquo;ak&amp;rdquo;:&amp;ldquo;64780338-49c8-4439-7c7d-d03c2033b145&amp;rdquo; }, { &amp;ldquo;n&amp;rdquo;:&amp;ldquo;1 Room - 2 Adults + 1 child&amp;rdquo;, &amp;ldquo;g&amp;rdquo;:&amp;ldquo;533a8e1259e5245a4c3f590964ec506d&amp;rdquo;, &amp;ldquo;o&amp;rdquo;:[&amp;ldquo;curl&amp;rdquo;,&amp;ldquo;graphiql&amp;rdquo;], &amp;ldquo;u&amp;rdquo;:&amp;ldquo;tgx-bot&amp;rdquo;, &amp;ldquo;ak&amp;rdquo;:&amp;ldquo;64780338-49c8-4439-7c7d-d03c2033b145&amp;rdquo; }, { &amp;ldquo;n&amp;rdquo;:&amp;ldquo;Two&amp;rdquo;, &amp;ldquo;g&amp;rdquo;:&amp;ldquo;b4e691b2b1567c0a80f5926b833170e1&amp;rdquo;, &amp;ldquo;o&amp;rdquo;:[&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;], &amp;ldquo;u&amp;rdquo;:&amp;ldquo;tgx-bot&amp;rdquo;, &amp;ldquo;ak&amp;rdquo;:&amp;ldquo;64780338-49c8-4439-7c7d-d03c2033b145&amp;rdquo; }, { &amp;ldquo;n&amp;rdquo;:&amp;ldquo;Three&amp;rdquo;, &amp;ldquo;g&amp;rdquo;:&amp;ldquo;bbbb043c0cdfe1adb33a897f69a04e2f&amp;rdquo;, &amp;ldquo;o&amp;rdquo;:[&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;], &amp;ldquo;u&amp;rdquo;:&amp;ldquo;tgx-bot&amp;rdquo;, &amp;ldquo;ak&amp;rdquo;:&amp;ldquo;64780338-49c8-4439-7c7d-d03c2033b145&amp;rdquo; }, { &amp;ldquo;n&amp;rdquo;:&amp;ldquo;Four&amp;rdquo;, &amp;ldquo;g&amp;rdquo;:&amp;ldquo;034dcbeb8affb2c4875b2046ea385c0d&amp;rdquo;, &amp;ldquo;o&amp;rdquo;:[&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;], &amp;ldquo;u&amp;rdquo;:&amp;ldquo;tgx-bot&amp;rdquo;, &amp;ldquo;ak&amp;rdquo;:&amp;ldquo;64780338-49c8-4439-7c7d-d03c2033b145&amp;rdquo; }, { &amp;ldquo;n&amp;rdquo;:&amp;ldquo;Five&amp;rdquo;, &amp;ldquo;g&amp;rdquo;:&amp;ldquo;36e1ade6d5eb2a074dc6cb1141ac2136&amp;rdquo;, &amp;ldquo;o&amp;rdquo;:[&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;], &amp;ldquo;u&amp;rdquo;:&amp;ldquo;tgx-bot&amp;rdquo;, &amp;ldquo;ak&amp;rdquo;:&amp;ldquo;64780338-49c8-4439-7c7d-d03c2033b145&amp;rdquo; } ]}  #tab-holder { transform: scale(0); position: absolute; } #tab-holder.</description>
+    </item>
+    
+    <item>
       <title>Search Single Mode &amp; Multi Mode</title>
       <link>/hotelx/concepts/search-mode/search-single-mode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7534,6 +7573,26 @@ Margin safe Goals The safety margin plugin discards those options that have a co
       <guid>/hotelx/concepts/search-mode/search-single-mode/</guid>
       <description>On this page you will learn about Transactional Booking Flow to Search, quote and confirm a reservation. You will also see the difference between the Search Single Mode VS Search Multi Mode.
 Search Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use.</description>
+    </item>
+    
+    <item>
+      <title>Search Single Mode &amp; Multi Mode</title>
+      <link>/hotelx/concepts/search-single-mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/concepts/search-single-mode/</guid>
+      <description>On this page you will learn about Transactional Booking Flow to Search, quote and confirm a reservation. You will also see the difference between the Search Single Mode VS Search Multi Mode.
+Search Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use.</description>
+    </item>
+    
+    <item>
+      <title>Use cases</title>
+      <link>/hotelx/howtos/certification_process/usecases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/certification_process/usecases/</guid>
+      <description>To ensure that your connection to our HotelX API is set up correctly, you’ll need to make the following test scenario. You can choose the hotel and dates you prefer:
+ Case 1: 1 room with 2 Adults for a Package rate rule. Case 2: 1 room with 2 Adults and 1 room with 2 adults + 1 Child 5 years old for a non-refundable rate. Case 3: 1 room with 2 Adults and 1 room with 2 adults + 1 Child 5 years old and 1 room for 3 adults for a refundable rate.</description>
     </item>
     
     <item>
@@ -7591,6 +7650,17 @@ In this case you can search the bookings with references or by dates, the dates 
     </item>
     
     <item>
+      <title>Quote</title>
+      <link>/hotelx/howtos/bookingflow/quote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/bookingflow/quote/</guid>
+      <description>Quote is an operation used to assess and valuate the rate before the actual booking. It returns the same information as the Search response for a hotel rate with up-to-date price, along with additional information regarding the rate: rate breakdown and cancellation policies.
+Advanced criteria Explain different parameters can be set up on the request (indicate which ones are mandatory)
+ optionRefId: Identifier of the option chosen in the search.</description>
+    </item>
+    
+    <item>
       <title>Search by destination</title>
       <link>/hotelx/plugins/search_by_destination/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7606,6 +7676,17 @@ In this case you can search the bookings with references or by dates, the dates 
       
       <guid>/learning-graphql/thinking_in_graphql/</guid>
       <description>A Paradigm Shift GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. With GraphQL, you can choose exactly what data you want to retrieve. GraphQL is a typed query language. That means that it has a lot of predictability, as each piece of data has its own type, so we know what sort of data we will be getting back.</description>
+    </item>
+    
+    <item>
+      <title>Book</title>
+      <link>/hotelx/howtos/bookingflow/book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/bookingflow/book/</guid>
+      <description> The Book operation requests a reservation confirmation for the specified optionId.
+Advanced criteria Detail advanced criteria if it’s necessary auditTransactions: Returns all the transactions exchanged with the supplier. to send register to &amp;ldquo;true&amp;rdquo; and return provider traces to claim them It would be good to &amp;ldquo;true&amp;rdquo; it in order to make these claims to supplier
+How to confirm a reservation </description>
     </item>
     
     <item>
@@ -7696,6 +7777,17 @@ Schemas Design  APIs Guru&amp;rsquo;s graphql-faker  Go Packages Nowadays most o
     </item>
     
     <item>
+      <title>Booking List</title>
+      <link>/hotelx/howtos/bookingflow/booklist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/bookingflow/booklist/</guid>
+      <description>The Booking operation allows to retrieve a booking (or bookings) with all its details from the booking reference locator. The most important information returned for each booking in the list is: - Booking reference - Booking holder - Booking pax - Hotel, rooms and boards confirmed - Booking rates
+Advanced criteria Explain different parameters can be set up on the request (indicate which ones are mandatory)
+Different ways to request Attach different use cases</description>
+    </item>
+    
+    <item>
       <title>Commission</title>
       <link>/hotelx/plugins/format-files/commission/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7766,6 +7858,27 @@ The main goal of this process is to create a hotel ranking and divide the whole 
       <guid>/learning-graphql/tutorials_resources/</guid>
       <description>Although GraphQL is a very young technology, it&amp;rsquo;s quickly gaining momentum and already has a fast growing yet vast ecosystem. Apart from Facebook&amp;rsquo;s and Graphql.org&amp;rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.
 We want to be part of this community and hopefully help you discover this new technology and its features.</description>
+    </item>
+    
+    <item>
+      <title>Book</title>
+      <link>/hotelx/howtos/howto-book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/howto-book/</guid>
+      <description>Flow to book
+HotelX Settings In HotelX we have differents configuration level settings for a request. With settings, you can configure some aspect of the request:
+   Field Description     Context Indicates the context codes that you want to send and to receive.   Timeout Set request timeout in the differents call types:* search * quote * book (includes book, cancel and booking)    Language What language you want to do the request.</description>
+    </item>
+    
+    <item>
+      <title>Cancellation</title>
+      <link>/hotelx/howtos/bookingflow/cancellation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/bookingflow/cancellation/</guid>
+      <description>Cancellation operation that cancel the booking. Which time zone applies for the cancellation policies? NOTE: Cancellation always take into account day and time of the destination in order to calculate what cancellation policy should be applied. UTC time
+ When the booking is cancelled, details of the cancelled booking are returned with the following information: The booking status: CANCELLED Cancellation fees if applicable Hotel, rooms and rates of the cancelled booking Holder name  Advanced criteria Explain different parameters can be set up on the request (indicate which ones are mandatory)</description>
     </item>
     
     <item>
@@ -7855,7 +7968,7 @@ All notable changes to this product will be documented in this page. Under const
       <guid>/travelgatex/release-notes/products-changelogs/changelog-web/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on the web.
 Web site Link
-All notable changes to this product will be documented in this page. Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
+All notable changes to this product will be documented in this page. 2018-09-20  New public press section.   Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
     </item>
     
     <item>

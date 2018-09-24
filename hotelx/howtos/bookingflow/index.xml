@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Integrate on TravelgateX Documentation</title>
+    <link>/hotelx/howtos/bookingflow/</link>
+    <description>Recent content in Integrate on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/hotelx/howtos/bookingflow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Booking flow</title>
+      <link>/hotelx/howtos/bookingflow/flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/bookingflow/flow/</guid>
+      <description>Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.
+ --                                            1. SEARCH  2. QUOTE  3.</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>/hotelx/howtos/bookingflow/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/bookingflow/search/</guid>
+      <description>{&amp;ldquo;gists&amp;rdquo;: [ { &amp;ldquo;n&amp;rdquo;:&amp;ldquo;1 Room - 2 Adults&amp;rdquo;, &amp;ldquo;g&amp;rdquo;:&amp;ldquo;6972ecae51e849fe8c49305bf0032dfe&amp;rdquo;, &amp;ldquo;o&amp;rdquo;:[&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;], &amp;ldquo;u&amp;rdquo;:&amp;ldquo;tgx-bot&amp;rdquo;, &amp;ldquo;ak&amp;rdquo;:&amp;ldquo;64780338-49c8-4439-7c7d-d03c2033b145&amp;rdquo; }, { &amp;ldquo;n&amp;rdquo;:&amp;ldquo;1 Room - 2 Adults + 1 child&amp;rdquo;, &amp;ldquo;g&amp;rdquo;:&amp;ldquo;533a8e1259e5245a4c3f590964ec506d&amp;rdquo;, &amp;ldquo;o&amp;rdquo;:[&amp;ldquo;curl&amp;rdquo;,&amp;ldquo;graphiql&amp;rdquo;], &amp;ldquo;u&amp;rdquo;:&amp;ldquo;tgx-bot&amp;rdquo;, &amp;ldquo;ak&amp;rdquo;:&amp;ldquo;64780338-49c8-4439-7c7d-d03c2033b145&amp;rdquo; }, { &amp;ldquo;n&amp;rdquo;:&amp;ldquo;Two&amp;rdquo;, &amp;ldquo;g&amp;rdquo;:&amp;ldquo;b4e691b2b1567c0a80f5926b833170e1&amp;rdquo;, &amp;ldquo;o&amp;rdquo;:[&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;], &amp;ldquo;u&amp;rdquo;:&amp;ldquo;tgx-bot&amp;rdquo;, &amp;ldquo;ak&amp;rdquo;:&amp;ldquo;64780338-49c8-4439-7c7d-d03c2033b145&amp;rdquo; }, { &amp;ldquo;n&amp;rdquo;:&amp;ldquo;Three&amp;rdquo;, &amp;ldquo;g&amp;rdquo;:&amp;ldquo;bbbb043c0cdfe1adb33a897f69a04e2f&amp;rdquo;, &amp;ldquo;o&amp;rdquo;:[&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;], &amp;ldquo;u&amp;rdquo;:&amp;ldquo;tgx-bot&amp;rdquo;, &amp;ldquo;ak&amp;rdquo;:&amp;ldquo;64780338-49c8-4439-7c7d-d03c2033b145&amp;rdquo; }, { &amp;ldquo;n&amp;rdquo;:&amp;ldquo;Four&amp;rdquo;, &amp;ldquo;g&amp;rdquo;:&amp;ldquo;034dcbeb8affb2c4875b2046ea385c0d&amp;rdquo;, &amp;ldquo;o&amp;rdquo;:[&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;], &amp;ldquo;u&amp;rdquo;:&amp;ldquo;tgx-bot&amp;rdquo;, &amp;ldquo;ak&amp;rdquo;:&amp;ldquo;64780338-49c8-4439-7c7d-d03c2033b145&amp;rdquo; }, { &amp;ldquo;n&amp;rdquo;:&amp;ldquo;Five&amp;rdquo;, &amp;ldquo;g&amp;rdquo;:&amp;ldquo;36e1ade6d5eb2a074dc6cb1141ac2136&amp;rdquo;, &amp;ldquo;o&amp;rdquo;:[&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;], &amp;ldquo;u&amp;rdquo;:&amp;ldquo;tgx-bot&amp;rdquo;, &amp;ldquo;ak&amp;rdquo;:&amp;ldquo;64780338-49c8-4439-7c7d-d03c2033b145&amp;rdquo; } ]}  #tab-holder { transform: scale(0); position: absolute; } #tab-holder.</description>
+    </item>
+    
+    <item>
+      <title>Quote</title>
+      <link>/hotelx/howtos/bookingflow/quote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/bookingflow/quote/</guid>
+      <description>Quote is an operation used to assess and valuate the rate before the actual booking. It returns the same information as the Search response for a hotel rate with up-to-date price, along with additional information regarding the rate: rate breakdown and cancellation policies.
+Advanced criteria Explain different parameters can be set up on the request (indicate which ones are mandatory)
+ optionRefId: Identifier of the option chosen in the search.</description>
+    </item>
+    
+    <item>
+      <title>Book</title>
+      <link>/hotelx/howtos/bookingflow/book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/bookingflow/book/</guid>
+      <description> The Book operation requests a reservation confirmation for the specified optionId.
+Advanced criteria Detail advanced criteria if it’s necessary auditTransactions: Returns all the transactions exchanged with the supplier. to send register to &amp;ldquo;true&amp;rdquo; and return provider traces to claim them It would be good to &amp;ldquo;true&amp;rdquo; it in order to make these claims to supplier
+How to confirm a reservation </description>
+    </item>
+    
+    <item>
+      <title>Booking List</title>
+      <link>/hotelx/howtos/bookingflow/booklist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/bookingflow/booklist/</guid>
+      <description>The Booking operation allows to retrieve a booking (or bookings) with all its details from the booking reference locator. The most important information returned for each booking in the list is: - Booking reference - Booking holder - Booking pax - Hotel, rooms and boards confirmed - Booking rates
+Advanced criteria Explain different parameters can be set up on the request (indicate which ones are mandatory)
+Different ways to request Attach different use cases</description>
+    </item>
+    
+    <item>
+      <title>Cancellation</title>
+      <link>/hotelx/howtos/bookingflow/cancellation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/bookingflow/cancellation/</guid>
+      <description>Cancellation operation that cancel the booking. Which time zone applies for the cancellation policies? NOTE: Cancellation always take into account day and time of the destination in order to calculate what cancellation policy should be applied. UTC time
+ When the booking is cancelled, details of the cancelled booking are returned with the following information: The booking status: CANCELLED Cancellation fees if applicable Hotel, rooms and rates of the cancelled booking Holder name  Advanced criteria Explain different parameters can be set up on the request (indicate which ones are mandatory)</description>
+    </item>
+    
+  </channel>
+</rss>

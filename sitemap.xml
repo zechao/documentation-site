@@ -331,6 +331,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/howtos/bookingflow/flow/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/enums/bookingcriteriatype/</loc>
   </url>
   
@@ -464,6 +468,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/categoryedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/howtos/certification_process/goals/</loc>
   </url>
   
   <url>
@@ -2975,10 +2983,6 @@
   </url>
   
   <url>
-    <loc>/hotelx/howtos/howto-book/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/concepts/search-mode/booking-flow/</loc>
   </url>
   
@@ -3015,7 +3019,15 @@
   </url>
   
   <url>
+    <loc>/hotelx/howtos/certification_process/howtoapply/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/security/identity-access-management/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/howtos/bookingflow/</loc>
   </url>
   
   <url>
@@ -3099,6 +3111,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/checkconfig/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/plugins/net-price/</loc>
   </url>
   
@@ -3171,7 +3187,23 @@
   </url>
   
   <url>
+    <loc>/hotelx/howtos/bookingflow/search/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/concepts/search-mode/search-single-mode/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/concepts/search-single-mode/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/howtos/certification_process/usecases/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/howtos/certification_process/</loc>
   </url>
   
   <url>
@@ -3223,6 +3255,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/howtos/bookingflow/quote/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/plugins/search_by_destination/</loc>
   </url>
   
@@ -3232,6 +3268,10 @@
   
   <url>
     <loc>/learning-graphql/thinking_in_graphql/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/howtos/bookingflow/book/</loc>
   </url>
   
   <url>
@@ -3315,6 +3355,10 @@
   </url>
   
   <url>
+    <loc>/hotelx/howtos/bookingflow/booklist/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/plugins/format-files/commission/</loc>
   </url>
   
@@ -3388,6 +3432,14 @@
   
   <url>
     <loc>/learning-graphql/tutorials_resources/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/howtos/howto-book/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/howtos/bookingflow/cancellation/</loc>
   </url>
   
   <url>
