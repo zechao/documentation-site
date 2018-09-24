@@ -7420,7 +7420,7 @@ Queries Queries ask the system to provide some data, based on specfic parameters
       
       <guid>/hotelx/checkconfig/</guid>
       <description>This call allows you to retrieve relevant information like supplier access code (link a lo que es el access), supplier name, supplier configuration, supplier context, know whether the connection is test or not, know if the connection is active or not. So you can use it to perform other calls.
-Add information about how to ask for the request. APIkey&amp;hellip; 
+To run this query you have to send within the headers your Apikey
 { admin{ accesses{ edges{ node{ accessData{ name isActive code supplier{ supplierData{ code name isActive provider{ code name isActive isPublic } context } } isTest user password parameters{ key value } } } } } } }  </description>
     </item>
     
@@ -7562,8 +7562,9 @@ Margin safe Goals The safety margin plugin discards those options that have a co
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/howtos/bookingflow/search/</guid>
-      <description>Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
-       #tab-holder { transform: scale(0); position: absolute; } #tab-holder.show-tabs { transform: scale(1); position: initial; } ul.tab-pannel-nav { margin-bottom: -32px; } ul.tabs { border-bottom: 1px solid #dee2e6; } li.</description>
+      <description>Search is the first operation in the booking flow. It jallows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
+Advanced criteria Explain different parameters can be set up on the request Mandatory
+ CheckIn: check-in date for booking. Format: YYYY-MM-DD CheckOut: check-out date for booking. Format YYYY-MM-DD Hotels*: List of hotel codes Destinations*: List of destination codes Occupancies: The occupancy you want to ask for each room.</description>
     </item>
     
     <item>
@@ -7685,9 +7686,7 @@ Advanced criteria Explain different parameters can be set up on the request (ind
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/howtos/bookingflow/book/</guid>
-      <description> The Book operation requests a reservation confirmation for the specified optionId.
-Advanced criteria Detail advanced criteria if it’s necessary auditTransactions: Returns all the transactions exchanged with the supplier. to send register to &amp;ldquo;true&amp;rdquo; and return provider traces to claim them It would be good to &amp;ldquo;true&amp;rdquo; it in order to make these claims to supplier
-How to confirm a reservation </description>
+      <description>const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;64780338-49c8-4439-7c7d-d03c2033b145&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/31d4d32ea8e8bc8ab5d7bc3910df72c0\/raw\x22,\x22divname\x22:\x22div_booking\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.</description>
     </item>
     
     <item>
@@ -7785,7 +7784,7 @@ Schemas Design  APIs Guru&amp;rsquo;s graphql-faker  Go Packages Nowadays most o
       <guid>/hotelx/howtos/bookingflow/booklist/</guid>
       <description>The Booking operation allows to retrieve a booking (or bookings) with all its details from the booking reference locator. The most important information returned for each booking in the list is: - Booking reference - Booking holder - Booking pax - Hotel, rooms and boards confirmed - Booking rates
 Advanced criteria Explain different parameters can be set up on the request (indicate which ones are mandatory)
-Different ways to request Attach different use cases</description>
+How to request     a5b25332a7a5683d602efeb87233a9c7 You can ask for bookings by client reference (XTG-XXXXXX) or by supplier reference.</description>
     </item>
     
     <item>
@@ -7878,8 +7877,7 @@ HotelX Settings In HotelX we have differents configuration level settings for a 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/howtos/bookingflow/cancellation/</guid>
-      <description>Cancellation operation that cancel the booking. Which time zone applies for the cancellation policies? NOTE: Cancellation always take into account day and time of the destination in order to calculate what cancellation policy should be applied. UTC time
- When the booking is cancelled, details of the cancelled booking are returned with the following information: The booking status: CANCELLED Cancellation fees if applicable Hotel, rooms and rates of the cancelled booking Holder name  Advanced criteria Explain different parameters can be set up on the request (indicate which ones are mandatory)</description>
+      <description>const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;64780338-49c8-4439-7c7d-d03c2033b145&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/1b160cfcf47b1c4d1deada1a18ae98b6\/raw\x22,\x22divname\x22:\x22div_cancellation\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.</description>
     </item>
     
     <item>
