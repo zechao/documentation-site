@@ -7861,17 +7861,6 @@ We want to be part of this community and hopefully help you discover this new te
     </item>
     
     <item>
-      <title>Book</title>
-      <link>/hotelx/howtos/howto-book/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/howtos/howto-book/</guid>
-      <description>Flow to book
-HotelX Settings In HotelX we have differents configuration level settings for a request. With settings, you can configure some aspect of the request:
-   Field Description     Context Indicates the context codes that you want to send and to receive.   Timeout Set request timeout in the differents call types:* search * quote * book (includes book, cancel and booking)    Language What language you want to do the request.</description>
-    </item>
-    
-    <item>
       <title>Cancellation</title>
       <link>/hotelx/howtos/bookingflow/cancellation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7911,6 +7900,16 @@ Destination Idem hotel.</description>
       
       <guid>/travelgatex/frequently-asked-questions/</guid>
       <description>What is TravelgateX? TravelgateX platform provides a single API endpoint for all of our API products. This makes it easy for you to integrate our full travel catalog and services into your applications (regardless of whether you are integrating to a website, mobile app, widget, or other interface). Instead of having to deal with REST APIs, you&amp;rsquo;ll be able to use full poser of GraphQL to interact with your data.</description>
+    </item>
+    
+    <item>
+      <title>Good to know</title>
+      <link>/hotelx/howtos/howto-book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/howto-book/</guid>
+      <description>HotelX Settings In HotelX we have differents configuration level settings for a request. With settings, you can configure some aspect of the request:
+   Field Description     Context Indicates the context codes that you want to send and to receive.   Timeout Set request timeout in the differents call types:* search * quote * book (includes book, cancel and booking)    Language What language you want to do the request.</description>
     </item>
     
     <item>

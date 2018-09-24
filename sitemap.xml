@@ -3435,10 +3435,6 @@
   </url>
   
   <url>
-    <loc>/hotelx/howtos/howto-book/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/howtos/bookingflow/cancellation/</loc>
   </url>
   
@@ -3456,6 +3452,10 @@
   
   <url>
     <loc>/travelgatex/frequently-asked-questions/</loc>
+  </url>
+  
+  <url>
+    <loc>/hotelx/howtos/howto-book/</loc>
   </url>
   
   <url>
