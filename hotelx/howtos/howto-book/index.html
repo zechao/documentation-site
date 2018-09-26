@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Good to know | TravelgateX Documentation</title>
+    <title>Useful information | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.40.1" />
-<title>Good to know :: TravelgateX Documentation</title>
+<title>Useful information :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -2968,7 +2968,7 @@
         </li>
           <li data-nav-id="/hotelx/howtos/howto-book/" class="dd-item active">
             <a href="/hotelx/howtos/howto-book/">
-              <span style="padding-left: 8px;">Good to know</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Useful information</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -3324,7 +3324,7 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Good to know</h1>
+              <h1 class="pageTitle">Useful information</h1>
 
               
                 
@@ -3343,7 +3343,7 @@
 
 <h2 id="hotelx-settings">HotelX Settings</h2>
 
-<p>In HotelX we have differents configuration level settings for a request. With settings, you can configure some aspect of the request:</p>
+<p>In HotelX we have different configuration level settings for a request. With settings, you can configure some aspect of the request:</p>
 
 <table>
 <thead>
@@ -3356,66 +3356,66 @@
 <tbody>
 <tr>
 <td>Context</td>
-<td>Indicates the context codes that you want to send and to receive.</td>
+<td>It indicates the context codes that you want to send and to receive.</td>
 </tr>
 
 <tr>
 <td>Timeout</td>
-<td>Set request timeout in the differents call types:* search * quote * book (includes book, cancel and booking) </td>
+<td>It sets request timeout in the differents query and mutation types:* search * quote * book (includes book, cancel and booking) </td>
 </tr>
 
 <tr>
 <td>Language</td>
-<td>What language you want to do the request.</td>
+<td>The language you want to use in the request.</td>
 </tr>
 
 <tr>
 <td>Currency</td>
-<td>Indicates the currency to send to the suppliers.</td>
+<td>It indicates the currency you are going to send to the suppliers.</td>
 </tr>
 
 <tr>
 <td>Nationality</td>
-<td>Indicates the nationality to send to the suppliers.</td>
+<td>It indicates the nationality to send to the suppliers.</td>
 </tr>
 
 <tr>
 <td>Market</td>
-<td>Indicates the market to send to the suppliers.</td>
+<td>It indicates the market to send to the suppliers.</td>
 </tr>
 
 <tr>
 <td>Business Rules</td>
-<td>This rules are used to send directly to the integration, and affected to the supplier response.<br>* Options Quota: number of options returned via integration.<br>* Type: Choose priority of product</td>
+<td>These rules are sent directly via the integration, and affect the supplier&rsquo;s response.<br>* Options Quota: number of options returned via the integration.<br>* Type: Choose priority of product</td>
 </tr>
 </tbody>
 </table>
 
-<p>How we have said some lines before, we have three ways to indicated this settings.</p>
+<p>As we have previously stated, we have three ways to indicate these settings.</p>
 
-<p>We are going to begin with the most specific until the most general.</p>
+<p>We are going to start with the most specific until the most general.</p>
 
 <h3 id="settings-per-request">Settings per request</h3>
 
-<p>This setting overwrites all others.</p>
+<p>These settings overwrite all others.</p>
 
 <p>You must have permission to overwrite settings, if you don&rsquo;t have this permission you won&rsquo;t be able to change the configuration on runtime, that is, to each request.</p>
 
-<p>The fields are the same in the three levels, only that the information is overwritten in lower levels. So, request settings overwrite all others settings.</p>
+<p>These fields are the same in the three levels, only that the information is overwritten in lower levels. So, request settings overwrite all other settings.</p>
 
 <h3 id="settings-per-client">Settings per client</h3>
 
 <p>The settings in this level are used when you don’t overwrite settings to request level.</p>
 
-<p>However, if you have the same client in different groups, you can set different settings to each one. In this case, you must specify which group you want to use in the request, to choose which configuration to use.</p>
+<p>However, if you have the same client in different groups, you can set different settings to each one. In this case, you should specify which group you want to use in the request, in order to choose which configuration to use.</p>
 
 <h3 id="settings-per-hotelx">Settings per HotelX</h3>
 
-<p>And the last one, settings per hotelX instance. These settings are in the higher level, in the case that you haven&rsquo;t got client settings and you don&rsquo;t specify it in the request, the settings are got from hotelX instance, this setting is mandatory.</p>
+<p>And the last one, settings per HotelX instance. These settings are in the higher level, in the case that you don&rsquo;t have client&rsquo;s settings and you don&rsquo;t specify them in the request, settings are got from HotelX instance, this setting is mandatory.</p>
 
-<h2 id="execute-a-plugin">Execute a plugin</h2>
+<h2 id="how-to-execute-a-plugin">How to execute a plugin</h2>
 
-<p>A plugin execution can be specified in any request’s HotelSettingsInput and must specify in which step has to be executed. The plugin type and name are mandatory in order to identify a plugin instance.</p>
+<p>A plugin execution can be specified in any request’s HotelSettingsInput and it must specify in which step it has to be executed. The plugin type and name are mandatory in order to identify a plugin instance.</p>
 
 <pre><code>&quot;plugins&quot;: {
 
@@ -3461,7 +3461,7 @@
 <li><a href="#settings-per-client">Settings per client</a></li>
 <li><a href="#settings-per-hotelx">Settings per HotelX</a></li>
 </ul></li>
-<li><a href="#execute-a-plugin">Execute a plugin</a></li>
+<li><a href="#how-to-execute-a-plugin">How to execute a plugin</a></li>
 <li><a href="#develop-your-own-plugin">Develop your own plugin</a></li>
 </ul></li>
 </ul>

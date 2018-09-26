@@ -7903,16 +7903,6 @@ Destination Idem hotel.</description>
     </item>
     
     <item>
-      <title>Good to know</title>
-      <link>/hotelx/howtos/howto-book/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/howtos/howto-book/</guid>
-      <description>HotelX Settings In HotelX we have differents configuration level settings for a request. With settings, you can configure some aspect of the request:
-   Field Description     Context Indicates the context codes that you want to send and to receive.   Timeout Set request timeout in the differents call types:* search * quote * book (includes book, cancel and booking)    Language What language you want to do the request.</description>
-    </item>
-    
-    <item>
       <title>Supplier Order</title>
       <link>/hotelx/plugins/format-files/supplier_order/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7923,6 +7913,16 @@ Destination Idem hotel.</description>
  ruleId → rule identifier supplierCodes → supplier code  List file fields
 |Field | Mandatory | Excluded fileds* | Multi-value | |---|---|---|---| |ruleId| Yes | - | No | |supplierCodes| Yes | - | Yes |  Delimiter: Comma (“,”)
  Separator for multiples codes in the same row: Semicolon (&amp;ldquo;;&amp;rdquo;)</description>
+    </item>
+    
+    <item>
+      <title>Useful information</title>
+      <link>/hotelx/howtos/howto-book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/howtos/howto-book/</guid>
+      <description>HotelX Settings In HotelX we have different configuration level settings for a request. With settings, you can configure some aspect of the request:
+   Field Description     Context It indicates the context codes that you want to send and to receive.   Timeout It sets request timeout in the differents query and mutation types:* search * quote * book (includes book, cancel and booking)    Language The language you want to use in the request.</description>
     </item>
     
     <item>
