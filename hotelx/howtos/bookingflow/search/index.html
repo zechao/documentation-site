@@ -3342,30 +3342,30 @@
               
 
 
-<p>Search is the first operation in the booking flow. It jallows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.</p>
+<p>Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.</p>
 
 <h2 id="advanced-criteria">Advanced criteria</h2>
 
-<p>Explain different parameters can be set up on the request
+<p>It explains different parameters that can be set up in the request
 Mandatory</p>
 
 <ul>
-<li>CheckIn: check-in date for booking. <em>Format: YYYY-MM-DD</em></li>
-<li>CheckOut: check-out date for booking. <em>Format YYYY-MM-DD</em></li>
+<li>CheckIn: check-in date for the booking. <em>Format: YYYY-MM-DD</em></li>
+<li>CheckOut: check-out date for the booking. <em>Format YYYY-MM-DD</em></li>
 <li>Hotels*: List of hotel codes</li>
 <li>Destinations*: List of destination codes</li>
-<li>Occupancies: The occupancy you want to ask for each room.
+<li>Occupancies: The occupancy you are requesting for each room.
 
 <ul>
-<li>For multi-room bookings, this array will contain multiple elements (rooms). For each room you have to specify its own occupancy.</li>
+<li>For multi-room bookings, this array will contain multiple elements (rooms). For each room you should specify its own occupancy.</li>
 </ul></li>
 </ul>
 
-<p><em>* Hotels and Destinations parametres are excludent between them</em></p>
+<p><em>* Hotels and Destinations parameters are exclusive between them</em></p>
 
 <h2 id="how-to-request">How to request</h2>
 
-<p>There are different ways to request a Search. Below is shown different examples for different casuistry.</p>
+<p>There are different ways to request a Search. Below are shown different examples for different casuistry:</p>
 
 
 <div id="pulse-holder">
@@ -3379,7 +3379,7 @@ Mandatory</p>
     <div id="tabContent"></div>
 
     <div id="tabsText" style="display:none"><p>002160e4c2822635ef3b1a3c81b1d44d
-In this availability case, you won&rsquo;t get results due to the hotel you&rsquo;re asking for has a minimmum stay restriction. So, if you change the date range to 3 days or more, you will get availability
+In this availability case, you will not receive results due to the hotel&rsquo;s restriction of minimum stay. In this case, if you change the date range to 3 days or more, you will receive availability
 /002160e4c2822635ef3b1a3c81b1d44d</p>
 </div>
 </div>
@@ -3813,7 +3813,7 @@ In this availability case, you won&rsquo;t get results due to the hotel you&rsqu
 <p><div class="alert 
 alert-warning"
  
-role="alert"><p>Please, bear in mind that within the room structure response there is a <strong>refundable</strong> field. If that field is filled with <em>false</em> it means that the room have 100% cancellation cost, so the room is not refundable.
+role="alert"><p>Please, bear in mind that within the room structure response there is a <strong>refundable</strong> field. If that field is filled with <em>false</em> it means that the room has 100% cancellation cost, so the room is not refundable.
 If the field returns a <em>null value</em> it means that the provider is not able to return this info at this step.</p>
 </div>
 </p>

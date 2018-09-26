@@ -26,9 +26,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/howtos/bookingflow/search/</guid>
-      <description>Search is the first operation in the booking flow. It jallows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
-Advanced criteria Explain different parameters can be set up on the request Mandatory
- CheckIn: check-in date for booking. Format: YYYY-MM-DD CheckOut: check-out date for booking. Format YYYY-MM-DD Hotels*: List of hotel codes Destinations*: List of destination codes Occupancies: The occupancy you want to ask for each room.</description>
+      <description>Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
+Advanced criteria It explains different parameters that can be set up in the request Mandatory
+ CheckIn: check-in date for the booking. Format: YYYY-MM-DD CheckOut: check-out date for the booking.</description>
     </item>
     
     <item>
@@ -38,8 +38,8 @@ Advanced criteria Explain different parameters can be set up on the request Mand
       
       <guid>/hotelx/howtos/bookingflow/quote/</guid>
       <description>Quote is an operation used to assess and valuate the rate before the actual booking. It returns the same information as the Search response for a hotel rate with up-to-date price, along with additional information regarding the rate: rate breakdown and cancellation policies.
-Advanced criteria Explain different parameters can be set up on the request (indicate which ones are mandatory)
- optionRefId: Identifier of the option chosen in the search.</description>
+Advanced criteria It explains different parameters that can be set up in the request (it indicates which ones are mandatory)
+ optionRefId: Identifier of the option chosen in Search.</description>
     </item>
     
     <item>
