@@ -57,7 +57,7 @@ GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:  S
       
       <guid>/hotelx/reference/scalars/datetime/</guid>
       <description>The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
-GraphQL schema definition scalar DateTime   Required by HotelXHotelFilterInput:  By default: Logical AND on all given filters.  HotelRuntimeConfiguration:    Board:  Board type.  Node:    Category:  Category Type  Hotel:  Hotel Type  Media:  Contains media information.</description>
+GraphQL schema definition scalar DateTime   Required by HotelXHotelFilterInput:  By default: Logical AND on all given filters.  Board:  Board type.  Node:    Category:  Category Type  Hotel:  Hotel Type  Media:  Contains media information.</description>
     </item>
     
     <item>

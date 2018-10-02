@@ -17,7 +17,7 @@
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>It makes it easier for users and contributors to see the most notable changes that have been made on HotelX product.
-All notable changes on our platform will be documented on this page. 2018-09-25  Status tipification to be able to differentiate from critical to non-critical external services    Commission and currency rates are now keep unchanged between Quote and Book    Operation and Access processes have been updated to register times of their different execution steps and their processed options.</description>
+All notable changes on our platform will be documented on this page. 2018-10-02  Allow relay at the query hotel Count field in HotelConnection to retrieve the number of HotelEdges that match the filter, pagination doesn&amp;rsquo;t affect Count.   2018-09-25  Status tipification to be able to differentiate from critical to non-critical external services    Commission and currency rates are now keep unchanged between Quote and Book    Operation and Access processes have been updated to register times of their different execution steps and their processed options.</description>
     </item>
     
     <item>
