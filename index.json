@@ -5478,7 +5478,7 @@
 	"title": "travelgatex.com",
 	"tags": [],
 	"description": "Contains a chronologically ordered list of notable changes at our website",
-	"content": " To make it easier for users and contributors to see precisely what notable changes have been made on the web.\nWeb site Link\nAll notable changes to this product will be documented in this page. 2018-09-25  Added admin toggle to entities to allow the creation of accesses, clients and suppliers. Added link button on accesses, clients and suppliers toggles, to link the resource at the current group level.   "
+	"content": " To make it easier for users and contributors to see precisely what notable changes have been made on the web.\nWeb site Link\nAll notable changes to this product will be documented in this page. 2018-10-09  Added press module with releases, asses, medias, newsletter, blog and contact. Added the possiblity to add apis to a team. Added second functional version of stats.    Changed the query to obtain team permissions.    Minor styling and logic global fixes.   2018-09-25  Added admin toggle to entities to allow the creation of accesses, clients and suppliers. Added link button on accesses, clients and suppliers toggles, to link the resource at the current group level.   "
 },
 {
 	"uri": "/learning-graphql/",
