@@ -18,7 +18,7 @@
       <guid>/hotelx/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the HotelX GraphQL API.
-Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
+Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
     </item>
     
     <item>
@@ -29,9 +29,9 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-09-26 🛑 Input field mode was added to input object type StatsFilterInput
-✅ Input field clients was added to input object type StatsFilterInput
-✅ Field count was added to object type HotelConnection</description>
+2018-10-18 🛑 Input field type was added to input object type CreateProfileInput
+🛑 Field errors was removed from object type HotelXCommonSettings
+🛑 Field warnings was removed from object type HotelXCommonSettings</description>
     </item>
     
   </channel>
