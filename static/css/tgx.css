@@ -1855,9 +1855,7 @@ div.alert.alert-info + h3#unreleased {
 }
 
 div#stars {
-  width: 20%;
-  min-width: 200px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   display: inline-block;
   margin-left: 20px;
 }
@@ -1867,6 +1865,10 @@ div#stars {
     display: block;
     margin-left: 0;
   }
+}
+
+div#stars > span {
+  cursor: pointer;
 }
 
 div#stars > span.checked {

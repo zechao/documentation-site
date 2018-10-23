@@ -143,25 +143,25 @@
     });
 
     $('span.fa.fa-star').on("mouseover", function (e) {
-            $('span.fa.fa-star').removeClass('active');
+      $('span.fa.fa-star').removeClass('active');
 
-            const stars = $(e.target).prevAll();
-            stars.push(e.target);
+      const stars = $(e.target).prevAll();
+      stars.push(e.target);
 
-            $(stars).addClass('active');
+      $(stars).addClass('active');
+    });
 
-        });
-        $('span.fa.fa-star').on("click", function (e) {
-            $('span.fa.fa-star').removeClass('checked');
-            const stars = $(e.target).prevAll();
-            stars.push(e.target);
+    $('div#stars').on("mouseleave", function () {
+        $('span.fa.fa-star').removeClass('active');
+    });
 
-            $(stars).addClass('checked');
+    $('span.fa.fa-star').on("click", function (e) {
+      $('span.fa.fa-star').removeClass('checked');
+      const stars = $(e.target).prevAll();
+      stars.push(e.target);
 
-        });
-        $('div#stars').on("mouseleave", function () {
-            $('span.fa.fa-star').removeClass('active');
-        });
+      $(stars).addClass('checked');
+    });
   })
 
 </script>
