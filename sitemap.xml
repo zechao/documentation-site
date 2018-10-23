@@ -1571,6 +1571,10 @@
   </url>
   
   <url>
+    <loc>/channelx/overview/</loc>
+  </url>
+  
+  <url>
     <loc>/flightx/overview/</loc>
   </url>
   
@@ -2927,6 +2931,10 @@
   </url>
   
   <url>
+    <loc>/channelx/release-notes/breaking-changes/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/concepts/content/</loc>
   </url>
   
@@ -3088,6 +3096,10 @@
   
   <url>
     <loc>/hotelx/howtos/bookingflow/cancellation/</loc>
+  </url>
+  
+  <url>
+    <loc>/channelx/</loc>
   </url>
   
   <url>
