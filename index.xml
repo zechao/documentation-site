@@ -6427,7 +6427,7 @@ All notable changes on our platform will be documented on this page. 2018-10-02 
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page. 2018-10-18  GraphQL Schema updated.    Profile type    Supplier, Client and Access entities resources content.   2018-10-17  Search by destination no return options   2018-09-26  GraphQL Schema updated.   2018-09-20  GraphQL Schema updated.</description>
+All notable changes on TravelgateX platform will be documented in this page. 2018-10-25  GraphQL Schema updated.    New field Geoname in Hotels query, which provides hotel&amp;rsquo;s geographical information   2018-10-18  GraphQL Schema updated.    Profile type    Supplier, Client and Access entities resources content.</description>
     </item>
     
     <item>
