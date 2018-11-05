@@ -27,7 +27,7 @@
       
       <guid>/hotelx/howtos/howto-book/</guid>
       <description>HotelX Settings In HotelX we have different configuration level settings for a request. With settings, you can configure some aspect of the request:
-   Field Description     Context It indicates the context codes that you want to send and to receive.   Timeout It sets request timeout in the differents query and mutation types:* search * quote * book (includes book, cancel and booking)    Language The language you want to use in the request.</description>
+   Field Description     context It indicates the context codes that you want to send and to receive.   Timeout It sets request timeout in the differents query and mutation types:* search * quote * book (includes book, cancel and booking)    Language The language you want to use in the request.</description>
     </item>
     
   </channel>

@@ -3258,7 +3258,7 @@
 
 <h2 id="hotelx-settings">HotelX Settings</h2>
 
-<p>In HotelX we have different configuration level settings for a request. With settings, you can configure some aspect of the request:</p>
+<p>In <a href="/hotelx/">HotelX</a> we have different configuration level settings for a request. With settings, you can configure some aspect of the request:</p>
 
 <table>
 <thead>
@@ -3270,7 +3270,7 @@
 
 <tbody>
 <tr>
-<td>Context</td>
+<td><a href="/hotelx/concepts/accesses-supplier-context/#context">context</a></td>
 <td>It indicates the context codes that you want to send and to receive.</td>
 </tr>
 
@@ -3312,25 +3312,25 @@
 
 <h3 id="settings-per-request">Settings per request</h3>
 
-<p>These settings overwrite all others.</p>
+<p>These <a href="/hotelx/concepts/settings/">settings</a> overwrite all others.</p>
 
-<p>You must have permission to overwrite settings, if you don&rsquo;t have this permission you won&rsquo;t be able to change the configuration on runtime, that is, to each request.</p>
+<p>You must have permission to overwrite <a href="/hotelx/concepts/settings/">settings</a>, if you don&rsquo;t have this permission you won&rsquo;t be able to change the configuration on runtime, that is, to each request.</p>
 
-<p>These fields are the same in the three levels, only that the information is overwritten in lower levels. So, request settings overwrite all other settings.</p>
+<p>These fields are the same in the three levels, only that the information is overwritten in lower levels. So, request <a href="/hotelx/concepts/settings/">settings</a> overwrite all other settings.</p>
 
 <h3 id="settings-per-client">Settings per client</h3>
 
-<p>The settings in this level are used when you don’t overwrite settings to request level.</p>
+<p>The <a href="/hotelx/concepts/settings/">settings</a> in this level are used when you don’t overwrite settings to request level.</p>
 
 <p>However, if you have the same client in different groups, you can set different settings to each one. In this case, you should specify which group you want to use in the request, in order to choose which configuration to use.</p>
 
 <h3 id="settings-per-hotelx">Settings per HotelX</h3>
 
-<p>And the last one, settings per HotelX instance. These settings are in the higher level, in the case that you don&rsquo;t have client&rsquo;s settings and you don&rsquo;t specify them in the request, settings are got from HotelX instance, this setting is mandatory.</p>
+<p>And the last one, settings per <a href="/hotelx/">HotelX</a> instance. These settings are in the higher level, in the case that you don&rsquo;t have client&rsquo;s <a href="/hotelx/concepts/settings/">settings</a> and you don&rsquo;t specify them in the request, settings are got from HotelX instance, this setting is mandatory.</p>
 
 <h2 id="how-to-execute-a-plugin">How to execute a plugin</h2>
 
-<p>A plugin execution can be specified in any request’s HotelSettingsInput and it must specify in which step it has to be executed. The plugin type and name are mandatory in order to identify a plugin instance.</p>
+<p>A <a href="/hotelx/plugins/">plugin</a> execution can be specified in any request’s HotelSettingsInput and it must specify in which step it has to be executed. The plugin type and name are mandatory in order to identify a plugin instance.</p>
 
 <pre><code>&quot;plugins&quot;: {
 
