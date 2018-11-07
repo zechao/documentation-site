@@ -156,11 +156,15 @@
     });
 
     $('span.fa.fa-star').on("click", function (e) {
+      const starCount = $('span.fa.fa-star.checked').length;
+      console.log(starCount);
       $('span.fa.fa-star').removeClass('checked');
       const stars = $(e.target).prevAll();
       stars.push(e.target);
 
       $(stars).addClass('checked');
+      console.log(stars.length);
+      // https://www.travelgatex.com/cms/getAllPressreleases
     });
   })
 
