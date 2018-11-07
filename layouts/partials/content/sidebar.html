@@ -89,6 +89,7 @@
 
 
 <script type="text/javascript">
+  let processingRating = false;
  // Functions
   function resizeElements(){
     const footer = $('#footer_docs');
@@ -142,30 +143,47 @@
       return false;
     });
 
-    $('span.fa.fa-star').on("mouseover", function (e) {
-      $('span.fa.fa-star').removeClass('active');
+    manageStarRatings();
+  });
 
-      const stars = $(e.target).prevAll();
-      stars.push(e.target);
+  function manageStarRatings() {
+    if (!processingRating) {
+        processingRating = true;
 
-      $(stars).addClass('active');
-    });
+        $('span.fa.fa-star').on("mouseover", function (e) {
+            $('span.fa.fa-star').removeClass('active');
 
-    $('div#stars').on("mouseleave", function () {
-        $('span.fa.fa-star').removeClass('active');
-    });
+            const stars = $(e.target).prevAll();
+            stars.push(e.target);
 
-    $('span.fa.fa-star').on("click", function (e) {
-      const starCount = $('span.fa.fa-star.checked').length;
-      console.log(starCount);
-      $('span.fa.fa-star').removeClass('checked');
-      const stars = $(e.target).prevAll();
-      stars.push(e.target);
+            $(stars).addClass('active');
+        });
 
-      $(stars).addClass('checked');
-      console.log(stars.length);
-      // https://www.travelgatex.com/cms/getAllPressreleases
-    });
-  })
+        $('div#stars').on("mouseleave", function () {
+            $('span.fa.fa-star').removeClass('active');
+        });
+
+        $('span.fa.fa-star').on("click", function (e) {
+            const starCount = $('span.fa.fa-star.checked').length;
+            $('span.fa.fa-star').removeClass('checked');
+            const stars = $(e.target).prevAll();
+            stars.push(e.target);
+
+            $(stars).addClass('checked');
+            // https://www.travelgatex.com/cms/getAllPressreleases
+
+            if (window.location.href.includes('localhost')) {
+                fetch("http://localhost:3000/cms/ratePage?stars=" + stars.length + "&url=" + window.location.pathname)
+                    .then(r => r.json())
+                    .then(r => processingRating = false);
+            } else {
+                fetch("https://www.travelgatex.com/cms/ratePage?stars=" + stars.length + "&url=" + window.location.pathname)
+                    .then(r => r.json())
+                    .then(r => processingRating = false);;
+            }
+        });
+    }
+  }
+
 
 </script>
