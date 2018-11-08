@@ -6417,7 +6417,7 @@ File Format The file should be in the below format:
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>It makes it easier for users and contributors to see the most notable changes that have been made on HotelX product.
-All notable changes on our platform will be documented on this page. 2018-11-02  Fix price discrepancy between Quote and Book   2018-10-02  Allow relay at the query hotel Count field in HotelConnection to retrieve the number of HotelEdges that match the filter, pagination doesn&amp;rsquo;t affect Count.</description>
+All notable changes on our platform will be documented on this page. 2018-11-08  Fix blacklist (by supplier) plugin   2018-11-02  Fix price discrepancy between Quote and Book   2018-10-02  Allow relay at the query hotel Count field in HotelConnection to retrieve the number of HotelEdges that match the filter, pagination doesn&amp;rsquo;t affect Count.</description>
     </item>
     
     <item>
@@ -6427,7 +6427,7 @@ All notable changes on our platform will be documented on this page. 2018-11-02 
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page. 2018-10-25  GraphQL Schema updated.    New field Geoname in Hotels query, which provides hotel&amp;rsquo;s geographical information   2018-10-18  GraphQL Schema updated.    Profile type    Supplier, Client and Access entities resources content.</description>
+All notable changes on TravelgateX platform will be documented in this page. 2018-11-07  GraphQL Schema updated.   2018-10-28  GraphQL Schema updated.    New field Geoname in Hotels query, which provides hotel&amp;rsquo;s geographical information   2018-10-18  GraphQL Schema updated.    Profile type    Supplier, Client and Access entities resources content.</description>
     </item>
     
     <item>
@@ -6573,9 +6573,7 @@ GraphQL schema definition type Mutation {  admin: AdminMutation    hotelX: Hotel
       <description>Aggregation plugins extends HotelX allowing filtering Supplier options and responses using different business rules.
 KeyFilter Filters Supplier options based on field keys applying a selector function over field values.
 It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
- Field Keys as a combination of:
- SupplierCode  HotelCode BoardCode RoomCode Refundable Market PaymentType Promotion Supplement Surcharges Rate rules   Functions:
- Min Max  Field Values:</description>
+ Field Keys as a combination of:  SupplierCode  HotelCode BoardCode RoomCode Refundable Market PaymentType Promotion Supplement Surcharges Rate rules    Parameters    key value type condition description     primaryKey string mandatory is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:</description>
     </item>
     
     <item>
@@ -6652,9 +6650,10 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-10-18 🛑 Input field type was added to input object type CreateProfileInput
-🛑 Field errors was removed from object type HotelXCommonSettings
-🛑 Field warnings was removed from object type HotelXCommonSettings</description>
+2018-11-07 🛑 Field asserts was removed from object type StatsInfo
+🛑 Type StatsAssert was removed
+✅ Field assets was added to object type StatsInfo
+✅ Type StatsAsset was added</description>
     </item>
     
     <item>
@@ -6898,7 +6897,7 @@ Advanced criteria It explains different parameters that can be set up in the req
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announced Unreleased  Removal of error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Organization. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Product.</description>
+      <description>Changes history of deprecated notes previously announced Unreleased  Removal of error from Group. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-01.To be removed soon. Removal of error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Organization.</description>
     </item>
     
     <item>
@@ -6907,7 +6906,7 @@ Advanced criteria It explains different parameters that can be set up in the req
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announced Unreleased  Removal of error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Organization. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Product.</description>
+      <description>Changes history of deprecated notes previously announced Unreleased  Removal of error from Group. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-01.To be removed soon. Removal of error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Organization.</description>
     </item>
     
     <item>
@@ -6925,7 +6924,7 @@ Advanced criteria It explains different parameters that can be set up in the req
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announced Unreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.Expected removal on 2018-11-20. Removal of error from Operation.</description>
+      <description>Changes history of deprecated notes previously announced Unreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of error from Group. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-01.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of error from Operation.</description>
     </item>
     
     <item>

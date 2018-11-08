@@ -29,9 +29,10 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-10-18 🛑 Input field type was added to input object type CreateProfileInput
-🛑 Field errors was removed from object type HotelXCommonSettings
-🛑 Field warnings was removed from object type HotelXCommonSettings</description>
+2018-11-07 🛑 Field asserts was removed from object type StatsInfo
+🛑 Type StatsAssert was removed
+✅ Field assets was added to object type StatsInfo
+✅ Type StatsAsset was added</description>
     </item>
     
   </channel>
