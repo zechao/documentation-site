@@ -2,3 +2,6 @@
 	path = public
 	url = git@github.com:travelgateX/travelgatex.github.io.git
 	branch = master
+[submodule "themes/hugo-docs"]
+	path = themes/hugo-docs
+	url = https://github.com/dgraph-io/hugo-docs
