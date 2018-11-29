@@ -2,5 +2,11 @@
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 <link href="{{"css/tgx.css" | relURL}}" rel="stylesheet">
+<link href="{{"css/runnable.css" | relURL}}" rel="stylesheet">
+<script src="{{"js/runnable.js" | relURL}}"></script>
+<link href="{{"css/codemirror-5.25.0.css" | relURL}}" rel="stylesheet">
+<script src="{{"js/codemirror-5.25.0.js" | relURL}}"></script>
+<script src="{{"js/codemirror.mode.js" | relURL}}"></script>
+<script src="{{"js/closebrackets.js" | relURL}}"></script>
 <link href="{{"mermaid/mermaid.css" | relURL}}" rel="stylesheet">
 <script src="{{"mermaid/mermaid.js" | relURL}}"></script>
