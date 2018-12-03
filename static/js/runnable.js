@@ -36,11 +36,11 @@ function eraseCookie(name) {
   createCookie(name, "", -1);
 }
 
-(function() {
+$(document).ready(function () {
   // Initialize languages
   var preferredLang = readCookie("lang");
   if (preferredLang) {
-    $(".runnable").each(function() {
+    $(".runnable").each(function () {
       var $runnable = $(this);
 
       navToRunnableTab($runnable, preferredLang);
@@ -57,7 +57,7 @@ function eraseCookie(name) {
       '.code-btn[data-action="copy-code"]'
     )[0];
     var codeClip = new Clipboard(codeClipEl, {
-      text: function(trigger) {
+      text: function (trigger) {
         var $runnable = $(trigger).closest(".runnable");
         var text = $runnable
           .find(".runnable-code .runnable-tab-content.active")
@@ -67,24 +67,24 @@ function eraseCookie(name) {
       }
     });
 
-    codeClip.on("success", function(e) {
+    codeClip.on("success", function (e) {
       e.clearSelection();
       $(e.trigger)
         .text("Copied")
         .addClass("copied");
 
-      window.setTimeout(function() {
+      window.setTimeout(function () {
         $(e.trigger)
           .text("Copy")
           .removeClass("copied");
       }, 2000);
     });
 
-    codeClip.on("error", function(e) {
+    codeClip.on("error", function (e) {
       e.clearSelection();
       $(e.trigger).text("Error copying");
 
-      window.setTimeout(function() {
+      window.setTimeout(function () {
         $(e.trigger).text("Copy");
       }, 2000);
     });
@@ -93,7 +93,7 @@ function eraseCookie(name) {
       '.code-btn[data-action="copy-output"]'
     )[0];
     var outputClip = new Clipboard(outputClipEl, {
-      text: function(trigger) {
+      text: function (trigger) {
         var $runnable = $(trigger).closest(".runnable");
         var $output = $runnable.find(".output");
 
@@ -102,24 +102,24 @@ function eraseCookie(name) {
       }
     });
 
-    outputClip.on("success", function(e) {
+    outputClip.on("success", function (e) {
       e.clearSelection();
       $(e.trigger)
         .text("Copied")
         .addClass("copied");
 
-      window.setTimeout(function() {
+      window.setTimeout(function () {
         $(e.trigger)
           .text("Copy")
           .removeClass("copied");
       }, 2000);
     });
 
-    outputClip.on("error", function(e) {
+    outputClip.on("error", function (e) {
       e.clearSelection();
       $(e.trigger).text("Error copying");
 
-      window.setTimeout(function() {
+      window.setTimeout(function () {
         $(e.trigger).text("Copy");
       }, 2000);
     });
@@ -189,7 +189,7 @@ function eraseCookie(name) {
     createCookie("lang", language, 365);
 
     // Navigate all runnable tabs to the langauge
-    $(".runnable").each(function() {
+    $(".runnable").each(function () {
       var $runnable = $(this);
 
       navToRunnableTab($runnable, language);
@@ -208,7 +208,7 @@ function eraseCookie(name) {
       tabSize: 2
     });
 
-    cm.on("change", function(c) {
+    cm.on("change", function (c) {
       var val = c.doc.getValue();
       $runnable.attr("data-unsaved", val);
       c.save();
@@ -315,7 +315,7 @@ function eraseCookie(name) {
   }
 
   // Running code
-  $(document).on("click", '.runnable [data-action="run"]', function(e) {
+  $(document).on("click", '.runnable [data-action="run"]', function (e) {
     e.preventDefault();
 
     // there can be at most two instances of a same runnable because users can
@@ -335,30 +335,27 @@ function eraseCookie(name) {
       .attr("data-vars");
 
     var auth = $(this)
-    .closest(".runnable")
-    .data("auth");
+      .closest(".runnable")
+      .data("auth");
 
     $runnables.find(".output-container").removeClass("empty error");
     codeEl.text("Waiting for the server response...");
 
     var startTime;
-    console.log('post!');
-    console.log(auth);
-    console.log(typeof query);
-    console.log({operationName:null, query:query.trim(), variables: null});
-    window.q = query;
-    window.r = {operationName:null, query:query.trim(), variables: null};
+
+    const data = JSON.stringify({ operationName: null, query: query, variables: null });
 
     $.post({
       url: DGRAPH_ENDPOINT,
-      headers: { "X-Dgraph-Vars": vars, "Authorization": auth },
-      data: {operationName:null, query:"" + query.trim(), variables: null},
+      headers: { "X-Dgraph-Vars": vars, "Authorization": auth, 'Content-Type': 'application/json' },
+      data: data,
       dataType: "json",
-      beforeSend: function() {
+      contentType: 'application/json',
+      beforeSend: function () {
         startTime = new Date().getTime();
       }
     })
-      .done(function(res) {
+      .done(function (res) {
         var now = new Date().getTime();
         var networkLatency = now - startTime;
         var serverLatencyInfo = res.extensions && res.extensions.server_latency;
@@ -394,7 +391,7 @@ function eraseCookie(name) {
           launchRunnableModal(currentRunnableEl);
         }
       })
-      .fail(function(xhr, status, error) {
+      .fail(function (xhr, status, error) {
         $runnables.find(".output-container").addClass("error");
 
         var errorText = xhr.responseText || error;
@@ -410,7 +407,7 @@ function eraseCookie(name) {
   });
 
   // Refresh code
-  $(document).on("click", '.runnable [data-action="reset"]', function(e) {
+  $(document).on("click", '.runnable [data-action="reset"]', function (e) {
     e.preventDefault();
 
     var $runnable = $(this).closest(".runnable");
@@ -424,12 +421,12 @@ function eraseCookie(name) {
 
     initCodeMirror($runnable);
 
-    window.setTimeout(function() {
+    window.setTimeout(function () {
       $runnable.find(".query-content-editable").text(initialQuery);
     }, 80);
   });
 
-  $(document).on("click", '.runnable [data-action="save"]', function(e) {
+  $(document).on("click", '.runnable [data-action="save"]', function (e) {
     e.preventDefault();
 
     var checksum = $(this)
@@ -459,7 +456,7 @@ function eraseCookie(name) {
     navToRunnableTab($currentRunnable, dest);
   });
 
-  $(document).on("click", '.runnable [data-action="discard"]', function(e) {
+  $(document).on("click", '.runnable [data-action="discard"]', function (e) {
     e.preventDefault();
 
     var $runnable = $(this).closest(".runnable");
@@ -476,7 +473,7 @@ function eraseCookie(name) {
     navToRunnableTab($runnable, dest);
   });
 
-  $(document).on("click", '.runnable [data-action="expand"]', function(e) {
+  $(document).on("click", '.runnable [data-action="expand"]', function (e) {
     e.preventDefault();
 
     var $runnable = $(this).closest(".runnable");
@@ -484,7 +481,7 @@ function eraseCookie(name) {
     launchRunnableModal(runnableEl);
   });
 
-  $(document).on("click", '.runnable [data-action="edit"]', function(e) {
+  $(document).on("click", '.runnable [data-action="edit"]', function (e) {
     e.preventDefault();
 
     var $runnable = $(this).closest(".runnable");
@@ -500,7 +497,7 @@ function eraseCookie(name) {
     }
   });
 
-  $(document).on("click", '.runnable [data-action="nav-lang"]', function(e) {
+  $(document).on("click", '.runnable [data-action="nav-lang"]', function (e) {
     e.preventDefault();
     var targetTab = $(this).data("target");
     var $runnable = $(this).closest(".runnable");
@@ -509,7 +506,7 @@ function eraseCookie(name) {
   });
 
   // Runnable modal event hooks
-  $("#runnable-modal").on("hidden.bs.modal", function(e) {
+  $("#runnable-modal").on("hidden.bs.modal", function (e) {
     $(this)
       .find(".server-latency-tooltip-trigger")
       .tooltip("dispose");
@@ -518,7 +515,7 @@ function eraseCookie(name) {
       .html("");
   });
 
-  $("#runnable-modal").on("shown.bs.modal", function() {
+  $("#runnable-modal").on("shown.bs.modal", function () {
     var $runnable = $(this).find(".runnable");
 
     // Focus the output so that it is scrollable by keyboard
@@ -545,7 +542,7 @@ function eraseCookie(name) {
   /********** On page load **/
 
   // Initialize runnables
-  $(".runnable").each(function() {
+  $(".runnable").each(function () {
     // First, we reinitialize the query contents because some languages require
     // specific formatting
     var $runnable = $(this);
@@ -559,5 +556,5 @@ function eraseCookie(name) {
 
   // Get clipboard.js to work inside bootstrap modal
   // http://stackoverflow.com/questions/38398070/bootstrap-modal-does-not-work-with-clipboard-js-on-firefox
-  $.fn.modal.Constructor.prototype._enforceFocus = function() {};
-})();
+  $.fn.modal.Constructor.prototype._enforceFocus = function () { };
+})
