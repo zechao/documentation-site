@@ -1,11 +1,13 @@
 {{ $code := trim .Inner "\n" }}
 {{ $checksum := md5 $code }}
 
-{{ $customExampleGoGRPC := replace (.Get "customExampleGoGRPC") "\\n" "\n" }}
+{{ $exampleCURL := replace (.Get "exampleCURL") "\\n" "\n" }}
+{{ $exampleJS := replace (.Get "exampleJS") "\\n" "\n" }}
+{{ $exampleCSHARP := replace (.Get "exampleCSHARP") "\\n" "\n" }}
+{{ $exampleGO := replace (.Get "exampleGO") "\\n" "\n" }}
 
 <p>{{ $checksum }}</p>
 <p>{{ $code }}</p>
-<p>{{ $customExampleGoGRPC }}</p>
 <p>{{ (.Get "auth") }}</p>
 
 <div class="runnable" data-auth='{{ (.Get "auth") }}' data-checksum="{{ $checksum }}" data-initial="{{ $code }}" data-current="{{ $code }}" data-dirty="false"{{ with .Get "vars" }} data-vars="{{ . }}"{{end}}>
@@ -14,14 +16,23 @@
       <div class="runnable-col runnable-col-code col-12 col-sm-12 col-md-12 col-lg-6 nopadding">
         <div class="runnable-pane">
           <div class="topbar">
-
             <div class="normal-header">
               <div class="row">
                 <div class="col-10">
                   <nav class="nav-languages">
                     <a class="language active" data-action="nav-lang" data-target="query" href="#">Query</a>
-                    <a class="language" data-action="nav-lang" data-target="go-grpc" href="#">Go</a>
-                    <a class="language" data-action="nav-lang" data-target="curl" href="#">Curl</a>
+                    {{ if $exampleCURL }}
+                      <a class="language" data-action="nav-lang" data-target="curl" href="#">Curl</a>
+                    {{ end }}
+                    {{ if $exampleJS }}
+                      <a class="language" data-action="nav-lang" data-target="js" href="#">Javascript</a>
+                    {{ end }}
+                    {{ if $exampleCSHARP }}
+                      <a class="language" data-action="nav-lang" data-target="csharp" href="#">C#</a>
+                    {{ end }}
+                    {{ if $exampleGO }}
+                      <a class="language" data-action="nav-lang" data-target="go" href="#">Go</a>
+                    {{ end }}
                   </nav>
                 </div>
                 <div class="col-2">
@@ -41,31 +52,35 @@
                 </div>
               </div>
             </div>
-
           </div>
 
           <div class="runnable-content runnable-code">
             <div class="runnable-tab-content active" data-tab="query">
               <pre><code class="no-copy"><span class="query-content">{{ $code }}</span></code></pre>
-
             </div>
-
             <div class="runnable-tab-content" data-tab="edit">
               <textarea class="query-content-editable">{{ $code }}</textarea>
             </div>
-
-            <div class="runnable-tab-content" data-tab="curl">
-              <pre><code class="no-copy" tabindex="-1">curl localhost:8080/query -XPOST {{ with .Get "vars" }}-H 'X-Dgraph-Vars: {{.}}' {{ end }}-d '<br/><span class="query-content">{{ $code }}</span>' | python -m json.tool | less
-              </code></pre>
-            </div>
-            <div class="runnable-tab-content" data-tab="go-grpc">
-              {{ if eq $customExampleGoGRPC "" }}
-                {{ partial "example-go-grpc" ( dict "Content" . "Code" "blahblah" "Vars" ( .Get "vars" ) ) }}
-              {{ else }}
-                <pre><code class="no-copy" tabindex="-1">{{ $customExampleGoGRPC }}
-                </pre></code>
-              {{ end }}
-            </div>
+            {{ if $exampleCURL }}
+              <div class="runnable-tab-content" data-tab="curl">
+                <pre><code class="no-copy" tabindex="-1">{{ $exampleCURL }} </code></pre>
+              </div>
+            {{ end }}
+            {{ if $exampleJS }}
+              <div class="runnable-tab-content" data-tab="js">
+                <pre><code class="no-copy" tabindex="-1">{{ $exampleJS }} </code></pre>
+              </div>
+            {{ end }}
+            {{ if $exampleCSHARP }}
+              <div class="runnable-tab-content" data-tab="csharp">
+                <pre><code class="no-copy" tabindex="-1">{{ $exampleCSHARP }} </code></pre>
+              </div>
+            {{ end }}
+            {{ if $exampleGO }}
+              <div class="runnable-tab-content" data-tab="go">
+                <pre><code class="no-copy" tabindex="-1">{{ $exampleGO }} </code></pre>
+              </div>
+            {{ end }}
           </div>
 
           <div class="row footer">
